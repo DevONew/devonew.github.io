@@ -1,0 +1,263 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d47aee26b7dbdcd2.css","style"]
+0:{"P":null,"b":"JWJa_OuTGPE9QsmSSxV8C","p":"","c":["","posts","portfolio","election-map-cartogram-part-1",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","portfolio","d"],{"children":[["slug","election-map-cartogram-part-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d47aee26b7dbdcd2.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2025," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","portfolio","d"],"$L8",{"children":[["slug","election-map-cartogram-part-1","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T2a13,
+## 프로젝트 배경
+
+이 프로젝트는 원래 회사 뉴스 섹션에 사용될 예정이었으나 데이터 문제로 보류되었던 페이지입니다. 기존에는 2022년 대선 페이지에 사용되었던 Vue.js 소스를 바탕으로 작업되었지만, 새로운 기술 학습과 복습을 위해 React로 완전히 마이그레이션했습니다.
+
+### 데이터 처리 과정
+
+원래는 공공 데이터 포털에서 실시간 투표 결과 API를 연동할 계획이었습니다. 하지만 프로젝트 개발 당시 2025년도 선거 데이터가 공공 데이터 API에 아직 활성화되지 않은 상태였습니다.
+
+이 문제를 해결하기 위해 다음과 같은 단계를 거쳤습니다:
+
+1. **초기 개발 단계**: Mock Service Worker(MSW)를 사용해 가상의 선거 데이터로 프론트엔드 로직 구현
+2. **데이터 확보**: 중앙선거관리위원회에서 제공하는 엑셀(Excel) 형식의 선거 결과 파일 다운로드
+3. **데이터 변환**: 엑셀 파일을 파싱하여 JSON 형식으로 변환
+4. **최종 적용**: 변환된 실제 데이터를 Mock API에 주입하여 3,981줄의 상세한 시군구별 선거 결과 구현
+
+이러한 과정을 통해 실제 공공 API가 활성화되기 전에도 완전히 동작하는 프로토타입을 완성할 수 있었으며, 향후 실제 API가 제공되면 데이터 소스만 교체하면 되도록 구조화했습니다.
+
+**배포 사이트**: https://vote2025-h8fx.vercel.app/
+
+![2025 대선 카토그램 전체 화면](/image/full.png)
+
+## 카토그램이란?
+
+일반적인 지도는 물리적 면적을 기준으로 지역을 표시합니다. 하지만 선거 데이터를 표현할 때는 면적보다 **인구수**나 **유권자 수**가 더 중요한 지표입니다.
+
+카토그램(Cartogram)은 지역의 크기를 특정 통계값에 비례하게 왜곡하여 표시하는 시각화 기법으로, 다음과 같은 장점이 있습니다:
+
+- 인구가 많은 지역(서울, 경기)을 더 크게 표시
+- 인구가 적은 지역(강원, 제주)을 상대적으로 작게 표시
+- 실제 선거 결과의 영향력을 시각적으로 정확히 반영
+
+예를 들어 일반 지도에서는 면적이 넓은 강원도가 크게 보이지만, 카토그램에서는 유권자가 많은 서울이나 경기가 더 크게 표시되어 실제 선거 영향력을 직관적으로 전달할 수 있습니다.
+
+## 기술 스택
+
+### React & Next.js
+컴포넌트 기반 구조로 지도, 카드, 데이터 로직을 모듈화했습니다. Client Component를 활용해 인터랙티브한 UI를 구현했으며, Next.js 15.3.4의 최신 기능들을 적극 활용했습니다.
+
+**선택 이유**:
+- 컴포넌트 재사용성을 통한 효율적인 개발
+- React 19의 개선된 성능과 동시성 기능
+- Next.js의 서버 사이드 렌더링으로 초기 로딩 최적화
+
+### TypeScript
+Mock 데이터 구조(`ElectionData` 타입)와 props 타입을 명확히 정의해 런타임 오류를 방지하고, 지역 매칭 로직의 안정성을 높이기 위해 도입했습니다.
+
+```typescript
+interface ElectionData {
+  sdName: string;        // 시도명
+  cityName: string;      // 시군구명
+  sunsu: number;         // 선거인 수
+  tusu: number;          // 투표 수
+  yutusu: number;        // 유효 투표 수
+  dugsu01: number;       // 1번 후보 득표 수
+  dugsu02: number;       // 2번 후보 득표 수
+  dugsu03: number;       // 3번 후보 득표 수
+  jd01: string;          // 1번 후보 정당
+  jd02: string;          // 2번 후보 정당
+  jd03: string;          // 3번 후보 정당
+  hbj01: string;         // 1번 후보명
+  hbj02: string;         // 2번 후보명
+  hbj03: string;         // 3번 후보명
+  turnout: number;       // 투표율
+  vote01: number;        // 1번 후보 득표율
+  vote02: number;        // 2번 후보 득표율
+  vote03: number;        // 3번 후보 득표율
+}
+```
+
+### SVG
+250개 시군구 폴리곤 좌표 기반 지도 렌더링과 세밀한 스타일 제어(테두리, 색상, 라벨 배치)를 위해 네이티브 SVG를 활용했습니다. Canvas나 라이브러리 대신 SVG를 선택한 이유는 다음과 같습니다:
+
+- DOM 기반이라 React의 상태 관리와 이벤트 처리가 자연스러움
+- 벡터 그래픽이라 확대/축소 시에도 선명함 유지
+- CSS를 통한 스타일링과 애니메이션 적용이 용이
+- 각 지역(폴리곤)을 개별 엘리먼트로 제어 가능
+
+### Tailwind CSS
+빠른 스타일링과 `hover:` 유틸리티를 통한 인터랙션 구현을 위해 사용했습니다. 유틸리티 퍼스트 방식으로 일관된 디자인 시스템을 유지하면서도 빠르게 프로토타이핑할 수 있었습니다.
+
+### Mock Service Worker (MSW)
+개발 환경에서 실제 API 없이 선거 데이터를 제공하기 위해 MSW 2.10.2를 도입했습니다. 3,981줄의 상세한 선거 데이터를 Mock API로 제공하여 실제 서버 없이도 완전한 기능 테스트가 가능했습니다.
+
+## 프로젝트 구조
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── catogram/
+│   │   │   └── CatogramRegion.tsx       # 지도 렌더링
+│   │   ├── layout/
+│   │   │   ├── Header.tsx
+│   │   │   └── Footer.tsx
+│   │   ├── ui/
+│   │   │   ├── CandidateCard.tsx        # 후보자 카드
+│   │   │   ├── ElectionTurnoutCard.tsx  # 전국 투표율
+│   │   │   └── RegionTurnout.tsx        # 지역 투표율
+│   │   └── MSWProvider.tsx
+│   ├── page.tsx                         # 메인 페이지
+│   └── globals.css
+├── constants/
+│   ├── candidateMeta.ts                 # 후보자 정보
+│   └── regions.ts                       # 지역 SVG 좌표
+├── hook/
+│   └── useElectionData.ts               # 데이터 페칭
+├── utils/
+│   └── colorUtils.ts                    # 색상 계산
+└── mocks/
+    ├── browser.ts
+    ├── handler.ts
+    └── mock-data.ts                     # 3,981줄의 선거 데이터
+```
+
+SVG 기반 전국 지도 컴포넌트, 후보자 카드, 지역별 투표 정보 패널을 각각 분리해 개발했으며, 각 컴포넌트는 독립적으로 동작하면서도 상태를 공유할 수 있도록 설계했습니다.
+
+## 핵심 구현 1: 지역 데이터 매칭
+
+시군구별 폴리곤 좌표 데이터를 정의하고 SVG로 렌더링했습니다. 가장 먼저 해결해야 했던 문제는 지역 ID(폴리곤)와 선거 데이터를 정확하게 매칭하는 것이었습니다.
+
+```typescript
+export function findRegionData(
+  regionId: string, 
+  electionData: ElectionData[]
+) {
+  return electionData.find((data) => {
+    const fullName = data.sdName + data.cityName;
+    return fullName.includes(regionId) || 
+           regionId.includes(data.cityName);
+  });
+}
+```
+
+이 함수는 다음과 같은 로직으로 동작합니다:
+1. 시도명과 시군구명을 합쳐 전체 지역명 생성
+2. 폴리곤의 `regionId`와 전체 지역명을 양방향 비교
+3. 부분 문자열 매칭으로 유연한 검색 지원
+
+예를 들어 `regionId`가 "중구"일 때, "서울특별시중구"를 찾거나, 반대로 "서울특별시중구"가 "중구"를 포함하는지 확인합니다.
+
+## 핵심 구현 2: 1위 후보 색상 계산
+
+각 지역별 득표 데이터에서 1위 후보를 계산하고, 해당 정당 색상을 지도에 자동으로 적용했습니다.
+
+```typescript
+export function getWinnerColor(
+  regionData: ElectionData | undefined
+): string {
+  if (!regionData) return '#e0e0e0';  // 데이터 없음 = 회색
+  
+  const votes = [
+    { candidate: regionData.hbj01, vote: regionData.vote01 },
+    { candidate: regionData.hbj02, vote: regionData.vote02 },
+    { candidate: regionData.hbj03, vote: regionData.vote03 },
+  ];
+  
+  const winner = votes.reduce((prev, current) => 
+    (prev.vote > current.vote ? prev : current)
+  );
+  
+  return candidateMeta[winner.candidate]?.partyColor || '#e0e0e0';
+}
+```
+
+**동작 원리**:
+1. 3명의 후보자 득표율을 배열로 구성
+2. `reduce`를 사용해 가장 높은 득표율의 후보 찾기
+3. 1위 후보의 `candidateMeta`에서 정당 색상 반환
+4. 데이터가 없거나 매칭 실패 시 회색 반환
+
+**후보자 메타데이터 구조**:
+```typescript
+const candidateMeta = {
+  '이재명': {
+    image: '/images/candidate/이재명.png',
+    partyColor: '#1E7DD6',  // 더불어민주당 파랑
+  },
+  '김문수': {
+    image: '/images/candidate/김문수.png',
+    partyColor: '#E61D1D',  // 국민의힘 빨강
+  },
+  '이준석': {
+    image: '/images/candidate/이준석.png',
+    partyColor: '#F9A825',  // 개혁신당 노랑
+  }
+};
+```
+
+![후보자 카드 컴포넌트](/image/candidate card.png)
+
+이렇게 하면 전국 250개 시군구가 각각 1위 후보의 정당 색상으로 자동 칠해져, 한눈에 어느 정당이 어느 지역에서 강세인지 파악할 수 있습니다.
+
+## 핵심 구현 3: 지역명 자동 배치
+
+폴리곤 좌표에서 중심점(Centroid)을 자동 계산해 지역명을 정확한 위치에 배치했습니다.
+
+```typescript
+function getCentroid(pointsStr: string) {
+  const coords = pointsStr.trim().split(' ').map(Number);
+  const xs = coords.filter((_, i) => i % 2 === 0);
+  const ys = coords.filter((_, i) => i % 2 === 1);
+  
+  const centerX = xs.reduce((a, b) => a + b, 0) / xs.length;
+  const centerY = ys.reduce((a, b) => a + b, 0) / ys.length;
+  
+  return { centerX, centerY };
+}
+```
+
+**계산 과정**:
+1. SVG 폴리곤의 `points` 문자열을 파싱 (예: "100 200 150 250 ...")
+2. X 좌표와 Y 좌표를 분리 (짝수 인덱스 = X, 홀수 인덱스 = Y)
+3. 각각의 평균을 구해 중심점 계산
+
+지역명을 시/군/구 단위로 자동 분리하고, 줄 수에 따라 폰트 크기와 간격을 동적 조정했습니다:
+
+```typescript
+function getLabelLayout(lines: string[]) {
+  const fontSize = lines.length >= 3 ? 7 : 8;
+  const dyOffset = lines.length >= 3 
+    ? -(lines.length - 1) * 0.55 
+    : -(lines.length - 1) * 0.7;
+  return { fontSize, dyOffset };
+}
+```
+
+**레이아웃 로직**:
+- 3줄 이상인 경우: 폰트 크기 7, 줄 간격 0.55
+- 2줄 이하인 경우: 폰트 크기 8, 줄 간격 0.7
+- 중심점 기준으로 위로 오프셋 적용해 시각적 균형 유지
+
+예를 들어 "서울특별시 중구"는 "서울특별시"와 "중구" 두 줄로 분리되어 표시됩니다.
+
+---
+
+Part 2에서는 인터랙티브 기능 구현, 호버 이벤트 처리, 동적 데이터 렌더링, 그리고 프로젝트를 진행하며 마주한 문제들과 해결 방법을 다룰 예정입니다.d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"2025 대선 지도 - 카토그램 만들기 Part 1: 프로젝트 개요와 핵심 구현"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 9월 2일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","포트폴리오",{"href":"/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"포트폴리오"}],["$","$L3","그래프",{"href":"/tags/%EA%B7%B8%EB%9E%98%ED%94%84","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"그래프"}],["$","$L3","Next.js",{"href":"/tags/Next.js","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Next.js"}],["$","$L3","React",{"href":"/tags/React","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"React"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1a:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"2025 대선 지도 - 카토그램 만들기 Part 1: 프로젝트 개요와 핵심 구현 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"대한민국 대통령 선거 시각화 웹 애플리케이션"}],["$","meta","2",{"property":"og:title","content":"2025 대선 지도 - 카토그램 만들기 Part 1: 프로젝트 개요와 핵심 구현"}],["$","meta","3",{"property":"og:description","content":"대한민국 대통령 선거 시각화 웹 애플리케이션"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-09-02"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"2025 대선 지도 - 카토그램 만들기 Part 1: 프로젝트 개요와 핵심 구현"}],["$","meta","8",{"name":"twitter:description","content":"대한민국 대통령 선거 시각화 웹 애플리케이션"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1a","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

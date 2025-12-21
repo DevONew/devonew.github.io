@@ -1,0 +1,301 @@
+<!DOCTYPE html><!--JWJa_OuTGPE9QsmSSxV8C--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d47aee26b7dbdcd2.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-491ef1393c1a736d.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-afbc61cff1e5478f.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>2025 대선 지도 - 카토그램 만들기 Part 2: 인터랙티브 기능과 데이터 플로우 | DevONew Blog</title><meta name="description" content="대한민국 대통령 선거 시각화 웹 애플리케이션"/><meta property="og:title" content="2025 대선 지도 - 카토그램 만들기 Part 2: 인터랙티브 기능과 데이터 플로우"/><meta property="og:description" content="대한민국 대통령 선거 시각화 웹 애플리케이션"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-09-04"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="2025 대선 지도 - 카토그램 만들기 Part 2: 인터랙티브 기능과 데이터 플로우"/><meta name="twitter:description" content="대한민국 대통령 선거 시각화 웹 애플리케이션"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">2025 대선 지도 - 카토그램 만들기 Part 2: 인터랙티브 기능과 데이터 플로우</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 9월 4일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4/">포트폴리오</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%EA%B7%B8%EB%9E%98%ED%94%84/">그래프</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Next.js">Next.js</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/React/">React</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><p>Part 1에서는 프로젝트 배경, 기술 스택, 그리고 지역 데이터 매칭과 색상 계산 등 기본적인 구현을 다뤘습니다. Part 2에서는 사용자 인터랙션을 구현하고, 전체 데이터 플로우를 완성하는 과정을 소개합니다.</p>
+<h2 id="핵심-구현-4-호버-이벤트-처리"><a aria-hidden="true" tabindex="-1" href="#핵심-구현-4-호버-이벤트-처리"><span class="icon icon-link"></span></a>핵심 구현 4: 호버 이벤트 처리</h2>
+<p>폴리곤 호버 시 이벤트 핸들러로 지역 ID를 저장하고, CSS로 테두리 강조 및 밝기 증가 효과를 적용했습니다.</p>
+<pre><code class="hljs language-tsx">&lt;polygon
+  points={points}
+  fill={regionColor}
+  onMouseEnter={<span class="hljs-function">() =&gt;</span> onRegionHover?.(region.<span class="hljs-property">id</span>)}
+  onMouseLeave={<span class="hljs-function">() =&gt;</span> onRegionHover?.(<span class="hljs-literal">null</span>)}
+  className=<span class="hljs-string">&quot;hover:stroke-[#d4c4a8] hover:stroke-[3] hover:brightness-110 
+             transition-all duration-200 cursor-pointer&quot;</span>
+/&gt;
+</code></pre>
+<p><strong>구현 포인트</strong>:</p>
+<ul>
+<li><code>onMouseEnter</code>: 마우스가 지역 위로 올라갈 때 해당 지역 ID 전달</li>
+<li><code>onMouseLeave</code>: 마우스가 떠날 때 <code>null</code>로 초기화</li>
+<li>Tailwind CSS의 <code>hover:</code> 유틸리티로 시각적 피드백 제공<!-- -->
+<ul>
+<li><code>stroke-[#d4c4a8]</code>: 베이지색 테두리</li>
+<li><code>stroke-[3]</code>: 두께 3px</li>
+<li><code>brightness-110</code>: 10% 밝게</li>
+<li><code>transition-all</code>: 부드러운 전환 효과</li>
+<li><code>cursor-pointer</code>: 마우스 커서 변경</li>
+</ul>
+</li>
+</ul>
+<p>![호버 인터랙션과 폴리곤 강조 효과](/image/hover and polygon.png)</p>
+<p>이렇게 하면 사용자가 지도 위에 마우스를 올렸을 때 즉각적인 시각적 피드백을 받을 수 있습니다.</p>
+<h2 id="핵심-구현-5-동적-데이터-표시"><a aria-hidden="true" tabindex="-1" href="#핵심-구현-5-동적-데이터-표시"><span class="icon icon-link"></span></a>핵심 구현 5: 동적 데이터 표시</h2>
+<p>메인 페이지(<code>page.tsx</code>)에서 호버 상태를 관리하고, 우측 패널에 동적으로 데이터를 표시합니다.</p>
+<pre><code class="hljs language-tsx"><span class="hljs-keyword">const</span> [hoveredRegionId, setHoveredRegionId] = useState&lt;<span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span>&gt;(<span class="hljs-literal">null</span>);
+
+<span class="hljs-keyword">const</span> hoveredRegionData = hoveredRegionId
+  ? data.<span class="hljs-title function_">find</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> fullName = item.<span class="hljs-property">sdName</span> + item.<span class="hljs-property">cityName</span>;
+      <span class="hljs-keyword">return</span> fullName.<span class="hljs-title function_">includes</span>(hoveredRegionId);
+    })
+  : <span class="hljs-literal">null</span>;
+
+<span class="hljs-keyword">const</span> displayData = hoveredRegionData || 
+  data.<span class="hljs-title function_">find</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =&gt;</span> 
+    item.<span class="hljs-property">sdName</span> === <span class="hljs-string">&#x27;서울특별시&#x27;</span> &amp;&amp; item.<span class="hljs-property">cityName</span> === <span class="hljs-string">&#x27;중구&#x27;</span>
+  ) || 
+  data[<span class="hljs-number">0</span>];
+</code></pre>
+<p><strong>데이터 선택 로직</strong>:</p>
+<ol>
+<li><strong>호버된 지역이 있으면</strong>: 해당 지역 데이터 표시</li>
+<li><strong>호버된 지역이 없으면</strong>: 서울 중구 데이터를 기본값으로 표시</li>
+<li><strong>서울 중구 데이터도 없으면</strong>: 전국 데이터(0번 인덱스) 표시</li>
+</ol>
+<p>이러한 폴백(fallback) 처리로 항상 의미 있는 데이터가 표시되도록 보장합니다.</p>
+<h2 id="핵심-구현-6-후보자-카드-동적-렌더링"><a aria-hidden="true" tabindex="-1" href="#핵심-구현-6-후보자-카드-동적-렌더링"><span class="icon icon-link"></span></a>핵심 구현 6: 후보자 카드 동적 렌더링</h2>
+<p>선거 데이터에서 후보자 메타데이터(이미지, 정당 색상)를 매핑해 후보자 카드를 동적으로 렌더링했습니다.</p>
+<pre><code class="hljs language-tsx"><span class="hljs-keyword">const</span> topCandidates = [
+  {
+    <span class="hljs-attr">name</span>: displayData.<span class="hljs-property">hbj01</span>,
+    <span class="hljs-attr">vote</span>: displayData.<span class="hljs-property">vote01</span>,
+    <span class="hljs-attr">count</span>: displayData.<span class="hljs-property">dugsu01</span>,
+    <span class="hljs-attr">party</span>: displayData.<span class="hljs-property">jd01</span>,
+    <span class="hljs-attr">meta</span>: candidateMeta[displayData.<span class="hljs-property">hbj01</span>] || candidateMeta[<span class="hljs-string">&quot;이재명&quot;</span>]
+  },
+  {
+    <span class="hljs-attr">name</span>: displayData.<span class="hljs-property">hbj02</span>,
+    <span class="hljs-attr">vote</span>: displayData.<span class="hljs-property">vote02</span>,
+    <span class="hljs-attr">count</span>: displayData.<span class="hljs-property">dugsu02</span>,
+    <span class="hljs-attr">party</span>: displayData.<span class="hljs-property">jd02</span>,
+    <span class="hljs-attr">meta</span>: candidateMeta[displayData.<span class="hljs-property">hbj02</span>] || candidateMeta[<span class="hljs-string">&quot;김문수&quot;</span>]
+  },
+  {
+    <span class="hljs-attr">name</span>: displayData.<span class="hljs-property">hbj03</span>,
+    <span class="hljs-attr">vote</span>: displayData.<span class="hljs-property">vote03</span>,
+    <span class="hljs-attr">count</span>: displayData.<span class="hljs-property">dugsu03</span>,
+    <span class="hljs-attr">party</span>: displayData.<span class="hljs-property">jd03</span>,
+    <span class="hljs-attr">meta</span>: candidateMeta[displayData.<span class="hljs-property">hbj03</span>] || candidateMeta[<span class="hljs-string">&quot;이준석&quot;</span>]
+  },
+].<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> b.<span class="hljs-property">vote</span> - a.<span class="hljs-property">vote</span>);
+</code></pre>
+<p><strong>구현 세부사항</strong>:</p>
+<ol>
+<li>각 후보자의 득표 데이터를 배열로 구성</li>
+<li><code>candidateMeta</code>에서 이미지와 정당 색상을 가져옴</li>
+<li>메타데이터가 없을 경우 기본값 사용</li>
+<li>득표율 내림차순으로 정렬</li>
+<li>정렬된 순서대로 1위, 2위, 3위 카드 표시</li>
+</ol>
+<p>이렇게 하면 지역이 바뀔 때마다 해당 지역의 득표 순위가 자동으로 재계산되어 표시됩니다.</p>
+<h2 id="전체-데이터-플로우"><a aria-hidden="true" tabindex="-1" href="#전체-데이터-플로우"><span class="icon icon-link"></span></a>전체 데이터 플로우</h2>
+<p>프로젝트의 전체 데이터 흐름은 다음과 같습니다:</p>
+<pre><code>1. MSWProvider
+   ↓
+   Service Worker 초기화
+   ↓
+2. useElectionData Hook
+   ↓
+   /api/election 호출
+   ↓
+   MSW가 요청을 가로채서 mock-data 반환
+   ↓
+3. page.tsx
+   ↓
+   데이터 수신 및 상태 관리 (useState)
+   ↓
+4. 사용자가 지도에 마우스 호버
+   ↓
+   hoveredRegionId 상태 변경
+   ↓
+5. React 리렌더링
+   ↓
+   - CatogramRegion: 호버된 지역 시각적 강조
+   - CandidateCard: 호버된 지역의 후보자 정보 표시
+   - RegionTurnout: 호버된 지역의 투표율 표시
+   ↓
+6. 실시간 업데이트 완료
+</code></pre>
+<h3 id="mock-service-worker-msw-설정"><a aria-hidden="true" tabindex="-1" href="#mock-service-worker-msw-설정"><span class="icon icon-link"></span></a>Mock Service Worker (MSW) 설정</h3>
+<p>개발 환경에서 실제 API 없이 테스트하기 위해 MSW를 사용했습니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// mocks/handler.ts</span>
+<span class="hljs-keyword">import</span> { http, <span class="hljs-title class_">HttpResponse</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;msw&#x27;</span>;
+<span class="hljs-keyword">import</span> { mockElectionData } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./mock-data&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> handlers = [
+  http.<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;/api/election&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">HttpResponse</span>.<span class="hljs-title function_">json</span>(mockElectionData);
+  }),
+];
+</code></pre>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// app/components/MSWProvider.tsx</span>
+<span class="hljs-string">&#x27;use client&#x27;</span>;
+
+<span class="hljs-keyword">import</span> { useEffect, useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">MSWProvider</span>(<span class="hljs-params">{ children }: { children: React.ReactNode }</span>) {
+  <span class="hljs-keyword">const</span> [mswReady, setMswReady] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">initMSW</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> <span class="hljs-variable language_">window</span> !== <span class="hljs-string">&#x27;undefined&#x27;</span>) {
+        <span class="hljs-keyword">const</span> { worker } = <span class="hljs-keyword">await</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;@/mocks/browser&#x27;</span>);
+        <span class="hljs-keyword">await</span> worker.<span class="hljs-title function_">start</span>({
+          <span class="hljs-attr">onUnhandledRequest</span>: <span class="hljs-string">&#x27;bypass&#x27;</span>,
+        });
+        <span class="hljs-title function_">setMswReady</span>(<span class="hljs-literal">true</span>);
+      }
+    };
+
+    <span class="hljs-title function_">initMSW</span>();
+  }, []);
+
+  <span class="hljs-keyword">if</span> (!mswReady) {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;&gt;</span>{children}<span class="hljs-tag">&lt;/&gt;</span></span>;
+}
+</code></pre>
+<p>MSW를 사용하면:</p>
+<ul>
+<li>백엔드 API 없이 프론트엔드 개발 가능</li>
+<li>실제 API와 동일한 인터페이스로 테스트</li>
+<li>네트워크 요청을 브라우저 레벨에서 가로채기</li>
+<li>3,981줄의 상세한 선거 데이터를 즉시 사용 가능</li>
+</ul>
+<h3 id="데이터-페칭-hook"><a aria-hidden="true" tabindex="-1" href="#데이터-페칭-hook"><span class="icon icon-link"></span></a>데이터 페칭 Hook</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// hook/useElectionData.ts</span>
+<span class="hljs-keyword">import</span> { useState, useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">ElectionData</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@/types&#x27;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">useElectionData</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [data, setData] = useState&lt;<span class="hljs-title class_">ElectionData</span>[]&gt;([]);
+  <span class="hljs-keyword">const</span> [loading, setLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+  <span class="hljs-keyword">const</span> [error, setError] = useState&lt;<span class="hljs-title class_">Error</span> | <span class="hljs-literal">null</span>&gt;(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchData</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;/api/election&#x27;</span>);
+        <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;Failed to fetch&#x27;</span>);
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+        <span class="hljs-title function_">setData</span>(result);
+      } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-title function_">setError</span>(err <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">Error</span> ? err : <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;Unknown error&#x27;</span>));
+      } <span class="hljs-keyword">finally</span> {
+        <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>);
+      }
+    };
+
+    <span class="hljs-title function_">fetchData</span>();
+  }, []);
+
+  <span class="hljs-keyword">return</span> { data, loading, error };
+}
+</code></pre>
+<p>이 Hook은:</p>
+<ul>
+<li>컴포넌트 마운트 시 한 번만 데이터 페칭</li>
+<li>로딩, 에러 상태 관리</li>
+<li>타입 안정성 보장</li>
+</ul>
+<h2 id="성능-최적화"><a aria-hidden="true" tabindex="-1" href="#성능-최적화"><span class="icon icon-link"></span></a>성능 최적화</h2>
+<h3 id="1-메모이제이션"><a aria-hidden="true" tabindex="-1" href="#1-메모이제이션"><span class="icon icon-link"></span></a>1. 메모이제이션</h3>
+<p>불필요한 재계산을 방지하기 위해 <code>useMemo</code>를 활용했습니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">const</span> regionColors = <span class="hljs-title function_">useMemo</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-keyword">return</span> regions.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">region</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> regionData = <span class="hljs-title function_">findRegionData</span>(region.<span class="hljs-property">id</span>, data);
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">getWinnerColor</span>(regionData);
+  });
+}, [data]);
+</code></pre>
+<h3 id="2-이벤트-핸들러-최적화"><a aria-hidden="true" tabindex="-1" href="#2-이벤트-핸들러-최적화"><span class="icon icon-link"></span></a>2. 이벤트 핸들러 최적화</h3>
+<p><code>useCallback</code>으로 이벤트 핸들러를 메모이제이션해 불필요한 리렌더링 방지:</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">const</span> handleRegionHover = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">regionId</span>: <span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span></span>) =&gt;</span> {
+  <span class="hljs-title function_">setHoveredRegionId</span>(regionId);
+}, []);
+</code></pre>
+<h3 id="3-css-트랜지션"><a aria-hidden="true" tabindex="-1" href="#3-css-트랜지션"><span class="icon icon-link"></span></a>3. CSS 트랜지션</h3>
+<p>JavaScript 애니메이션 대신 CSS 트랜지션을 사용해 성능 향상:</p>
+<pre><code class="hljs language-css"><span class="hljs-selector-class">.region-polygon</span> {
+  <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.2s</span> ease-in-out;
+}
+</code></pre>
+<h3 id="4-조건부-렌더링"><a aria-hidden="true" tabindex="-1" href="#4-조건부-렌더링"><span class="icon icon-link"></span></a>4. 조건부 렌더링</h3>
+<p>데이터가 로딩 중일 때는 스켈레톤 UI 표시:</p>
+<pre><code class="hljs language-tsx">{loading ? (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;animate-pulse&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;h-8 bg-gray-200 rounded mb-4&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;h-64 bg-gray-200 rounded&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+) : (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">CatogramRegion</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> <span class="hljs-attr">onRegionHover</span>=<span class="hljs-string">{handleRegionHover}</span> /&gt;</span></span>
+)}
+</code></pre>
+<h2 id="마주한-문제와-해결"><a aria-hidden="true" tabindex="-1" href="#마주한-문제와-해결"><span class="icon icon-link"></span></a>마주한 문제와 해결</h2>
+<h3 id="문제-1-지역명-매칭-불일치"><a aria-hidden="true" tabindex="-1" href="#문제-1-지역명-매칭-불일치"><span class="icon icon-link"></span></a>문제 1: 지역명 매칭 불일치</h3>
+<p><strong>문제</strong>: 폴리곤의 지역 ID와 선거 데이터의 지역명이 정확히 일치하지 않는 경우가 많았습니다. 예를 들어 &quot;중구&quot;라는 ID가 서울, 부산, 대구에 모두 존재합니다.</p>
+<p><strong>해결</strong>:</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">findRegionData</span>(<span class="hljs-params"><span class="hljs-attr">regionId</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">electionData</span>: <span class="hljs-title class_">ElectionData</span>[]</span>) {
+  <span class="hljs-keyword">return</span> electionData.<span class="hljs-title function_">find</span>(<span class="hljs-function">(<span class="hljs-params">data</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> fullName = data.<span class="hljs-property">sdName</span> + data.<span class="hljs-property">cityName</span>;
+    <span class="hljs-comment">// 양방향 부분 문자열 매칭</span>
+    <span class="hljs-keyword">return</span> fullName.<span class="hljs-title function_">includes</span>(regionId) || regionId.<span class="hljs-title function_">includes</span>(data.<span class="hljs-property">cityName</span>);
+  });
+}
+</code></pre>
+<p>시도명과 시군구명을 합쳐서 비교하고, 양방향 부분 문자열 매칭으로 유연성을 확보했습니다.</p>
+<h3 id="문제-2-svg-텍스트-줄바꿈"><a aria-hidden="true" tabindex="-1" href="#문제-2-svg-텍스트-줄바꿈"><span class="icon icon-link"></span></a>문제 2: SVG 텍스트 줄바꿈</h3>
+<p><strong>문제</strong>: SVG <code>&lt;text&gt;</code> 요소는 HTML과 달리 자동 줄바꿈을 지원하지 않습니다.</p>
+<p><strong>해결</strong>:</p>
+<pre><code class="hljs language-tsx">{labelLines.<span class="hljs-title function_">map</span>(<span class="hljs-function">(<span class="hljs-params">line, i</span>) =&gt;</span> (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">tspan</span>
+    <span class="hljs-attr">key</span>=<span class="hljs-string">{i}</span>
+    <span class="hljs-attr">x</span>=<span class="hljs-string">{centroid.centerX}</span>
+    <span class="hljs-attr">dy</span>=<span class="hljs-string">{i</span> === <span class="hljs-string">0</span> ? `${<span class="hljs-attr">dyOffset</span>}<span class="hljs-attr">em</span>` <span class="hljs-attr">:</span> &quot;<span class="hljs-attr">1.2em</span>&quot;}
+    <span class="hljs-attr">textAnchor</span>=<span class="hljs-string">&quot;middle&quot;</span>
+  &gt;</span>
+    {line}
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tspan</span>&gt;</span></span>
+))}
+</code></pre>
+<p><code>&lt;tspan&gt;</code> 요소를 사용해 수동으로 줄을 나누고, <code>dy</code> 속성으로 줄 간격을 조정했습니다.</p>
+<h3 id="문제-3-호버-시-깜빡임"><a aria-hidden="true" tabindex="-1" href="#문제-3-호버-시-깜빡임"><span class="icon icon-link"></span></a>문제 3: 호버 시 깜빡임</h3>
+<p><strong>문제</strong>: 폴리곤 경계에서 마우스가 움직일 때 <code>onMouseEnter</code>와 <code>onMouseLeave</code>가 반복적으로 발생해 깜빡이는 현상이 있었습니다.</p>
+<p><strong>해결</strong>:</p>
+<pre><code class="hljs language-css"><span class="hljs-attribute">pointer-events</span>: bounding-box;
+</code></pre>
+<p>SVG의 <code>pointer-events</code> 속성을 조정하고, 이벤트 버블링을 적절히 제어해 해결했습니다.</p>
+<h3 id="문제-4-mock-데이터-크기"><a aria-hidden="true" tabindex="-1" href="#문제-4-mock-데이터-크기"><span class="icon icon-link"></span></a>문제 4: Mock 데이터 크기</h3>
+<p><strong>문제</strong>: 3,981줄의 데이터를 한 번에 로드하면 초기 로딩이 느려질 수 있습니다.</p>
+<p><strong>해결</strong>:</p>
+<ul>
+<li>MSW의 Service Worker를 사용해 백그라운드에서 로딩</li>
+<li>첫 로딩 시 전국 데이터(0번 인덱스)만 먼저 표시</li>
+<li>나머지 데이터는 비동기로 로드하면서 사용자는 즉시 인터랙션 가능</li>
+</ul>
+<h2 id="프로젝트-회고"><a aria-hidden="true" tabindex="-1" href="#프로젝트-회고"><span class="icon icon-link"></span></a>프로젝트 회고</h2>
+<h3 id="배운-점"><a aria-hidden="true" tabindex="-1" href="#배운-점"><span class="icon icon-link"></span></a>배운 점</h3>
+<ol>
+<li><strong>Vue.js에서 React로의 마이그레이션</strong>: 두 프레임워크의 차이점과 각각의 장단점을 깊이 이해할 수 있었습니다.</li>
+<li><strong>SVG 기반 데이터 시각화</strong>: Canvas나 라이브러리 없이 네이티브 SVG로 복잡한 지도를 구현하는 경험.</li>
+<li><strong>Mock 기반 개발</strong>: MSW를 활용해 백엔드 의존성 없이 효율적으로 개발하는 방법.</li>
+<li><strong>타입 안정성</strong>: TypeScript로 대규모 데이터 구조를 안전하게 관리하는 방법.</li>
+</ol>
+<h3 id="아쉬운-점"><a aria-hidden="true" tabindex="-1" href="#아쉬운-점"><span class="icon icon-link"></span></a>아쉬운 점</h3>
+<ul>
+<li>초기에 좌표 데이터 정리에 많은 시간 소요</li>
+<li>250개 폴리곤 각각의 라벨 위치를 수동 조정해야 했던 부분</li>
+<li>모바일 반응형이 아직 완벽하지 않음</li>
+</ul>
+<h3 id="개선하고-싶은-점"><a aria-hidden="true" tabindex="-1" href="#개선하고-싶은-점"><span class="icon icon-link"></span></a>개선하고 싶은 점</h3>
+<ul>
+<li>지역 계층 구조를 더 명확하게 표현</li>
+<li>애니메이션과 전환 효과 추가</li>
+<li>접근성(Accessibility) 개선</li>
+<li>성능 최적화 (특히 모바일)</li>
+</ul>
+<h2 id="마치며"><a aria-hidden="true" tabindex="-1" href="#마치며"><span class="icon icon-link"></span></a>마치며</h2>
+<p>이 프로젝트는 단순한 데이터 시각화를 넘어, 사용자 인터랙션, 상태 관리, 성능 최적화 등 프론트엔드 개발의 여러 측면을 종합적으로 경험할 수 있는 좋은 기회였습니다.</p>
+<p>특히 Vue.js로 작성된 기존 코드를 React로 마이그레이션하면서, 단순히 문법을 바꾸는 것이 아니라 React의 철학에 맞게 컴포넌트를 재설계하고 상태 관리 방식을 개선하는 과정에서 많은 것을 배울 수 있었습니다.</p>
+<p><strong>프로젝트 링크</strong>: <a href="https://vote2025-h8fx.vercel.app/">https://vote2025-h8fx.vercel.app/</a></p>
+<p><strong>GitHub 저장소</strong>: (저장소 링크)</p>
+<p>질문이나 피드백은 언제든 환영합니다!</p></div><nav class="mt-12 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2025<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d47aee26b7dbdcd2.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"JWJa_OuTGPE9QsmSSxV8C\",\"p\":\"\",\"c\":[\"\",\"posts\",\"portfolio\",\"election-map-cartogram-part-2\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"portfolio\",\"d\"],{\"children\":[[\"slug\",\"election-map-cartogram-part-2\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d47aee26b7dbdcd2.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2025,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"portfolio\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"election-map-cartogram-part-2\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T2c03,"])</script><script>self.__next_f.push([1,"\nPart 1에서는 프로젝트 배경, 기술 스택, 그리고 지역 데이터 매칭과 색상 계산 등 기본적인 구현을 다뤘습니다. Part 2에서는 사용자 인터랙션을 구현하고, 전체 데이터 플로우를 완성하는 과정을 소개합니다.\n\n## 핵심 구현 4: 호버 이벤트 처리\n\n폴리곤 호버 시 이벤트 핸들러로 지역 ID를 저장하고, CSS로 테두리 강조 및 밝기 증가 효과를 적용했습니다.\n\n```tsx\n\u003cpolygon\n  points={points}\n  fill={regionColor}\n  onMouseEnter={() =\u003e onRegionHover?.(region.id)}\n  onMouseLeave={() =\u003e onRegionHover?.(null)}\n  className=\"hover:stroke-[#d4c4a8] hover:stroke-[3] hover:brightness-110 \n             transition-all duration-200 cursor-pointer\"\n/\u003e\n```\n\n**구현 포인트**:\n- `onMouseEnter`: 마우스가 지역 위로 올라갈 때 해당 지역 ID 전달\n- `onMouseLeave`: 마우스가 떠날 때 `null`로 초기화\n- Tailwind CSS의 `hover:` 유틸리티로 시각적 피드백 제공\n  - `stroke-[#d4c4a8]`: 베이지색 테두리\n  - `stroke-[3]`: 두께 3px\n  - `brightness-110`: 10% 밝게\n  - `transition-all`: 부드러운 전환 효과\n  - `cursor-pointer`: 마우스 커서 변경\n\n![호버 인터랙션과 폴리곤 강조 효과](/image/hover and polygon.png)\n\n이렇게 하면 사용자가 지도 위에 마우스를 올렸을 때 즉각적인 시각적 피드백을 받을 수 있습니다.\n\n## 핵심 구현 5: 동적 데이터 표시\n\n메인 페이지(`page.tsx`)에서 호버 상태를 관리하고, 우측 패널에 동적으로 데이터를 표시합니다.\n\n```tsx\nconst [hoveredRegionId, setHoveredRegionId] = useState\u003cstring | null\u003e(null);\n\nconst hoveredRegionData = hoveredRegionId\n  ? data.find((item) =\u003e {\n      const fullName = item.sdName + item.cityName;\n      return fullName.includes(hoveredRegionId);\n    })\n  : null;\n\nconst displayData = hoveredRegionData || \n  data.find((item) =\u003e \n    item.sdName === '서울특별시' \u0026\u0026 item.cityName === '중구'\n  ) || \n  data[0];\n```\n\n**데이터 선택 로직**:\n1. **호버된 지역이 있으면**: 해당 지역 데이터 표시\n2. **호버된 지역이 없으면**: 서울 중구 데이터를 기본값으로 표시\n3. **서울 중구 데이터도 없으면**: 전국 데이터(0번 인덱스) 표시\n\n이러한 폴백(fallback) 처리로 항상 의미 있는 데이터가 표시되도록 보장합니다.\n\n## 핵심 구현 6: 후보자 카드 동적 렌더링\n\n선거 데이터에서 후보자 메타데이터(이미지, 정당 색상)를 매핑해 후보자 카드를 동적으로 렌더링했습니다.\n\n```tsx\nconst topCandidates = [\n  {\n    name: displayData.hbj01,\n    vote: displayData.vote01,\n    count: displayData.dugsu01,\n    party: displayData.jd01,\n    meta: candidateMeta[displayData.hbj01] || candidateMeta[\"이재명\"]\n  },\n  {\n    name: displayData.hbj02,\n    vote: displayData.vote02,\n    count: displayData.dugsu02,\n    party: displayData.jd02,\n    meta: candidateMeta[displayData.hbj02] || candidateMeta[\"김문수\"]\n  },\n  {\n    name: displayData.hbj03,\n    vote: displayData.vote03,\n    count: displayData.dugsu03,\n    party: displayData.jd03,\n    meta: candidateMeta[displayData.hbj03] || candidateMeta[\"이준석\"]\n  },\n].sort((a, b) =\u003e b.vote - a.vote);\n```\n\n**구현 세부사항**:\n1. 각 후보자의 득표 데이터를 배열로 구성\n2. `candidateMeta`에서 이미지와 정당 색상을 가져옴\n3. 메타데이터가 없을 경우 기본값 사용\n4. 득표율 내림차순으로 정렬\n5. 정렬된 순서대로 1위, 2위, 3위 카드 표시\n\n이렇게 하면 지역이 바뀔 때마다 해당 지역의 득표 순위가 자동으로 재계산되어 표시됩니다.\n\n## 전체 데이터 플로우\n\n프로젝트의 전체 데이터 흐름은 다음과 같습니다:\n\n```\n1. MSWProvider\n   ↓\n   Service Worker 초기화\n   ↓\n2. useElectionData Hook\n   ↓\n   /api/election 호출\n   ↓\n   MSW가 요청을 가로채서 mock-data 반환\n   ↓\n3. page.tsx\n   ↓\n   데이터 수신 및 상태 관리 (useState)\n   ↓\n4. 사용자가 지도에 마우스 호버\n   ↓\n   hoveredRegionId 상태 변경\n   ↓\n5. React 리렌더링\n   ↓\n   - CatogramRegion: 호버된 지역 시각적 강조\n   - CandidateCard: 호버된 지역의 후보자 정보 표시\n   - RegionTurnout: 호버된 지역의 투표율 표시\n   ↓\n6. 실시간 업데이트 완료\n```\n\n### Mock Service Worker (MSW) 설정\n\n개발 환경에서 실제 API 없이 테스트하기 위해 MSW를 사용했습니다.\n\n```typescript\n// mocks/handler.ts\nimport { http, HttpResponse } from 'msw';\nimport { mockElectionData } from './mock-data';\n\nexport const handlers = [\n  http.get('/api/election', () =\u003e {\n    return HttpResponse.json(mockElectionData);\n  }),\n];\n```\n\n```typescript\n// app/components/MSWProvider.tsx\n'use client';\n\nimport { useEffect, useState } from 'react';\n\nexport function MSWProvider({ children }: { children: React.ReactNode }) {\n  const [mswReady, setMswReady] = useState(false);\n\n  useEffect(() =\u003e {\n    const initMSW = async () =\u003e {\n      if (typeof window !== 'undefined') {\n        const { worker } = await import('@/mocks/browser');\n        await worker.start({\n          onUnhandledRequest: 'bypass',\n        });\n        setMswReady(true);\n      }\n    };\n\n    initMSW();\n  }, []);\n\n  if (!mswReady) {\n    return \u003cdiv\u003eLoading...\u003c/div\u003e;\n  }\n\n  return \u003c\u003e{children}\u003c/\u003e;\n}\n```\n\nMSW를 사용하면:\n- 백엔드 API 없이 프론트엔드 개발 가능\n- 실제 API와 동일한 인터페이스로 테스트\n- 네트워크 요청을 브라우저 레벨에서 가로채기\n- 3,981줄의 상세한 선거 데이터를 즉시 사용 가능\n\n### 데이터 페칭 Hook\n\n```typescript\n// hook/useElectionData.ts\nimport { useState, useEffect } from 'react';\nimport { ElectionData } from '@/types';\n\nexport function useElectionData() {\n  const [data, setData] = useState\u003cElectionData[]\u003e([]);\n  const [loading, setLoading] = useState(true);\n  const [error, setError] = useState\u003cError | null\u003e(null);\n\n  useEffect(() =\u003e {\n    const fetchData = async () =\u003e {\n      try {\n        const response = await fetch('/api/election');\n        if (!response.ok) throw new Error('Failed to fetch');\n        const result = await response.json();\n        setData(result);\n      } catch (err) {\n        setError(err instanceof Error ? err : new Error('Unknown error'));\n      } finally {\n        setLoading(false);\n      }\n    };\n\n    fetchData();\n  }, []);\n\n  return { data, loading, error };\n}\n```\n\n이 Hook은:\n- 컴포넌트 마운트 시 한 번만 데이터 페칭\n- 로딩, 에러 상태 관리\n- 타입 안정성 보장\n\n## 성능 최적화\n\n### 1. 메모이제이션\n불필요한 재계산을 방지하기 위해 `useMemo`를 활용했습니다.\n\n```typescript\nconst regionColors = useMemo(() =\u003e {\n  return regions.map(region =\u003e {\n    const regionData = findRegionData(region.id, data);\n    return getWinnerColor(regionData);\n  });\n}, [data]);\n```\n\n### 2. 이벤트 핸들러 최적화\n`useCallback`으로 이벤트 핸들러를 메모이제이션해 불필요한 리렌더링 방지:\n\n```typescript\nconst handleRegionHover = useCallback((regionId: string | null) =\u003e {\n  setHoveredRegionId(regionId);\n}, []);\n```\n\n### 3. CSS 트랜지션\nJavaScript 애니메이션 대신 CSS 트랜지션을 사용해 성능 향상:\n\n```css\n.region-polygon {\n  transition: all 0.2s ease-in-out;\n}\n```\n\n### 4. 조건부 렌더링\n데이터가 로딩 중일 때는 스켈레톤 UI 표시:\n\n```tsx\n{loading ? (\n  \u003cdiv className=\"animate-pulse\"\u003e\n    \u003cdiv className=\"h-8 bg-gray-200 rounded mb-4\"\u003e\u003c/div\u003e\n    \u003cdiv className=\"h-64 bg-gray-200 rounded\"\u003e\u003c/div\u003e\n  \u003c/div\u003e\n) : (\n  \u003cCatogramRegion data={data} onRegionHover={handleRegionHover} /\u003e\n)}\n```\n\n## 마주한 문제와 해결\n\n### 문제 1: 지역명 매칭 불일치\n**문제**: 폴리곤의 지역 ID와 선거 데이터의 지역명이 정확히 일치하지 않는 경우가 많았습니다. 예를 들어 \"중구\"라는 ID가 서울, 부산, 대구에 모두 존재합니다.\n\n**해결**: \n```typescript\nfunction findRegionData(regionId: string, electionData: ElectionData[]) {\n  return electionData.find((data) =\u003e {\n    const fullName = data.sdName + data.cityName;\n    // 양방향 부분 문자열 매칭\n    return fullName.includes(regionId) || regionId.includes(data.cityName);\n  });\n}\n```\n\n시도명과 시군구명을 합쳐서 비교하고, 양방향 부분 문자열 매칭으로 유연성을 확보했습니다.\n\n### 문제 2: SVG 텍스트 줄바꿈\n**문제**: SVG `\u003ctext\u003e` 요소는 HTML과 달리 자동 줄바꿈을 지원하지 않습니다.\n\n**해결**:\n```tsx\n{labelLines.map((line, i) =\u003e (\n  \u003ctspan\n    key={i}\n    x={centroid.centerX}\n    dy={i === 0 ? `${dyOffset}em` : \"1.2em\"}\n    textAnchor=\"middle\"\n  \u003e\n    {line}\n  \u003c/tspan\u003e\n))}\n```\n\n`\u003ctspan\u003e` 요소를 사용해 수동으로 줄을 나누고, `dy` 속성으로 줄 간격을 조정했습니다.\n\n### 문제 3: 호버 시 깜빡임\n**문제**: 폴리곤 경계에서 마우스가 움직일 때 `onMouseEnter`와 `onMouseLeave`가 반복적으로 발생해 깜빡이는 현상이 있었습니다.\n\n**해결**:\n```css\npointer-events: bounding-box;\n```\n\nSVG의 `pointer-events` 속성을 조정하고, 이벤트 버블링을 적절히 제어해 해결했습니다.\n\n### 문제 4: Mock 데이터 크기\n**문제**: 3,981줄의 데이터를 한 번에 로드하면 초기 로딩이 느려질 수 있습니다.\n\n**해결**:\n- MSW의 Service Worker를 사용해 백그라운드에서 로딩\n- 첫 로딩 시 전국 데이터(0번 인덱스)만 먼저 표시\n- 나머지 데이터는 비동기로 로드하면서 사용자는 즉시 인터랙션 가능\n\n## 프로젝트 회고\n\n### 배운 점\n1. **Vue.js에서 React로의 마이그레이션**: 두 프레임워크의 차이점과 각각의 장단점을 깊이 이해할 수 있었습니다.\n2. **SVG 기반 데이터 시각화**: Canvas나 라이브러리 없이 네이티브 SVG로 복잡한 지도를 구현하는 경험.\n3. **Mock 기반 개발**: MSW를 활용해 백엔드 의존성 없이 효율적으로 개발하는 방법.\n4. **타입 안정성**: TypeScript로 대규모 데이터 구조를 안전하게 관리하는 방법.\n\n### 아쉬운 점\n- 초기에 좌표 데이터 정리에 많은 시간 소요\n- 250개 폴리곤 각각의 라벨 위치를 수동 조정해야 했던 부분\n- 모바일 반응형이 아직 완벽하지 않음\n\n### 개선하고 싶은 점\n- 지역 계층 구조를 더 명확하게 표현\n- 애니메이션과 전환 효과 추가\n- 접근성(Accessibility) 개선\n- 성능 최적화 (특히 모바일)\n\n## 마치며\n\n이 프로젝트는 단순한 데이터 시각화를 넘어, 사용자 인터랙션, 상태 관리, 성능 최적화 등 프론트엔드 개발의 여러 측면을 종합적으로 경험할 수 있는 좋은 기회였습니다.\n\n특히 Vue.js로 작성된 기존 코드를 React로 마이그레이션하면서, 단순히 문법을 바꾸는 것이 아니라 React의 철학에 맞게 컴포넌트를 재설계하고 상태 관리 방식을 개선하는 과정에서 많은 것을 배울 수 있었습니다.\n\n**프로젝트 링크**: https://vote2025-h8fx.vercel.app/\n\n**GitHub 저장소**: (저장소 링크)\n\n질문이나 피드백은 언제든 환영합니다!"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"2025 대선 지도 - 카토그램 만들기 Part 2: 인터랙티브 기능과 데이터 플로우\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 9월 4일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"포트폴리오\",{\"href\":\"/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"포트폴리오\"}],[\"$\",\"$L3\",\"그래프\",{\"href\":\"/tags/%EA%B7%B8%EB%9E%98%ED%94%84\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"그래프\"}],[\"$\",\"$L3\",\"Next.js\",{\"href\":\"/tags/Next.js\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Next.js\"}],[\"$\",\"$L3\",\"React\",{\"href\":\"/tags/React\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"React\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1a:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"2025 대선 지도 - 카토그램 만들기 Part 2: 인터랙티브 기능과 데이터 플로우 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"대한민국 대통령 선거 시각화 웹 애플리케이션\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"2025 대선 지도 - 카토그램 만들기 Part 2: 인터랙티브 기능과 데이터 플로우\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"대한민국 대통령 선거 시각화 웹 애플리케이션\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-09-04\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"2025 대선 지도 - 카토그램 만들기 Part 2: 인터랙티브 기능과 데이터 플로우\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"대한민국 대통령 선거 시각화 웹 애플리케이션\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1a\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>

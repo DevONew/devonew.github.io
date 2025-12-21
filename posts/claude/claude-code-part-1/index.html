@@ -1,0 +1,241 @@
+<!DOCTYPE html><!--JWJa_OuTGPE9QsmSSxV8C--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d47aee26b7dbdcd2.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-491ef1393c1a736d.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-afbc61cff1e5478f.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>Claude Code 시작하기1 | DevONew Blog</title><meta name="description" content="Claude Code만의 차별점과 실전 프롬프트 가이드."/><meta property="og:title" content="Claude Code 시작하기1"/><meta property="og:description" content="Claude Code만의 차별점과 실전 프롬프트 가이드."/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-09-19"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Claude Code 시작하기1"/><meta name="twitter:description" content="Claude Code만의 차별점과 실전 프롬프트 가이드."/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">Claude Code 시작하기1</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 9월 19일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Claude/">Claude</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/AI/">AI</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%EA%B0%9C%EB%B0%9C/">개발</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><h2 id="왜-claude-code인가"><a aria-hidden="true" tabindex="-1" href="#왜-claude-code인가"><span class="icon icon-link"></span></a>왜 Claude Code인가?</h2>
+<p>ChatGPT, GitHub Copilot, Cursor 등 여러 AI 코딩 도구가 있는데, 왜 Claude Code를 배워야 할까요?</p>
+<h3 id="chatgptcopilot과의-결정적-차이"><a aria-hidden="true" tabindex="-1" href="#chatgptcopilot과의-결정적-차이"><span class="icon icon-link"></span></a>ChatGPT/Copilot과의 결정적 차이</h3>
+<p><strong>1. 실행 권한이 있는 AI</strong></p>
+<p>물론 많은 코드들이 정말 좋지만 ChatGPT는 코드를 &quot;제안&quot;만 하지 복사-붙여넣기 및 적용은 본인이 해야한다.</p>
+<pre><code>ChatGPT: &quot;이 코드를 사용하세요&quot;
+개발자: 복사 → 에디터 열기 → 붙여넣기 → 실행
+</code></pre>
+<p>Claude Code는 <strong>직접 파일을 수정하고 실행</strong>한다!!:</p>
+<pre><code class="hljs language-bash">&gt; 인증 버그 고쳐줘
+
+Claude Code:
+1. 파일 읽기 (auth.ts)
+2. 문제 진단
+3. 코드 수정
+4. 테스트 실행
+5. 결과 확인
+→ 모두 자동으로 수행
+</code></pre>
+<p><strong>2. 프로젝트 전체 컨텍스트 이해</strong></p>
+<p>Copilot은 현재 열린 파일만 탐색이 가능하지만 Claude Code는 <strong>전체 코드베이스를 이해</strong>한다:</p>
+<pre><code class="hljs language-bash">&gt; 로그인 기능이 어디서 처리되는지 찾아줘
+
+Claude Code:
+- Grep으로 프로젝트 전체 검색
+- 관련 파일 찾기 (auth.ts, login.tsx, api.ts)
+- 각 파일의 연관 관계 파악
+- 데이터 플로우 설명
+</code></pre>
+<p><strong>3. 학습 가능한 AI</strong></p>
+<p>ChatGPT나 gemini는 기존 웹서치를 이용한 방대한 데이터들을 학습하지만 상대적으로 개인 프로젝트 학습이 쉽지않고 오래걸린다.
+그렇지만 그에 비해 Claude Code는 <strong>프로젝트별 학습</strong>이 가능하다.:</p>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 팀의 코딩 규칙을 저장</span>
+.claude/skills/coding-style/SKILL.md
+
+<span class="hljs-comment"># 이제 Claude는 항상 팀 규칙을 따름</span>
+&gt; 새 컴포넌트 만들어줘
+[자동으로 팀 스타일 가이드 적용]
+</code></pre>
+<p><strong>4. 자율적 문제 해결</strong></p>
+<p>Claude Code는 스스로 파일을 탐색하며 어떤 부분에서 에러가 나는지 확인하고 스스로 해결한다.</p>
+<pre><code class="hljs language-bash">&gt; 테스트 실패 원인 찾아줘
+
+Claude Code:
+1. 테스트 실행
+2. 에러 로그 분석
+3. 관련 코드 검사
+4. 문제 발견
+5. 수정 적용
+6. 재실행으로 검증
+→ 결과만 보고
+</code></pre>
+<h3 id="브라우저-vs-터미널-근본적인-차이"><a aria-hidden="true" tabindex="-1" href="#브라우저-vs-터미널-근본적인-차이"><span class="icon icon-link"></span></a>브라우저 vs 터미널: 근본적인 차이</h3>
+<p><strong>브라우저 AI (ChatGPT, Claude.ai)</strong>:</p>
+<ul>
+<li>복사-붙여넣기 워크플로우</li>
+<li>컨텍스트 제한적</li>
+<li>매번 새로 설명 필요</li>
+</ul>
+<p><strong>터미널 AI (Claude Code)</strong>:</p>
+<ul>
+<li>직접 파일 시스템 접근</li>
+<li>프로젝트 컨텍스트 유지</li>
+<li>학습된 워크플로우 재사용</li>
+</ul>
+<h2 id="claude-code-시작하기"><a aria-hidden="true" tabindex="-1" href="#claude-code-시작하기"><span class="icon icon-link"></span></a>Claude Code 시작하기</h2>
+<h3 id="설치"><a aria-hidden="true" tabindex="-1" href="#설치"><span class="icon icon-link"></span></a>설치</h3>
+<pre><code class="hljs language-bash">npm install -g @anthropic-ai/claude-code
+</code></pre>
+<h3 id="첫-실행"><a aria-hidden="true" tabindex="-1" href="#첫-실행"><span class="icon icon-link"></span></a>첫 실행</h3>
+<pre><code class="hljs language-bash">claude
+</code></pre>
+<p>프롬프트가 나타나면 질문을 입력하세요:</p>
+<pre><code class="hljs language-bash">&gt; 이 프로젝트 구조 설명해줘
+</code></pre>
+<h3 id="실행-가능한-도구들"><a aria-hidden="true" tabindex="-1" href="#실행-가능한-도구들"><span class="icon icon-link"></span></a>실행 가능한 도구들</h3>
+<p>Claude Code는 다음 도구를 사용할 수 있다:</p>
+<ul>
+<li><strong>Read/Write</strong>: 파일 읽기/쓰기</li>
+<li><strong>Edit</strong>: 코드 수정 (정확한 위치 지정)</li>
+<li><strong>Bash</strong>: 모든 터미널 명령 실행</li>
+<li><strong>Grep/Glob</strong>: 프로젝트 전체 검색</li>
+<li><strong>Git</strong>: 버전 관리 자동화</li>
+</ul>
+<h2 id="슬래시-커맨드-가이드"><a aria-hidden="true" tabindex="-1" href="#슬래시-커맨드-가이드"><span class="icon icon-link"></span></a>슬래시 커맨드 가이드</h2>
+<p>특수 커맨드로 작업을 더 효율적으로 수행 할 수 있고 이것은 앞으로 내가 계슉 학습하고 적용해야하는 일이다.</p>
+<h3 id="필수-커맨드"><a aria-hidden="true" tabindex="-1" href="#필수-커맨드"><span class="icon icon-link"></span></a>필수 커맨드</h3>
+<p><strong><code>/add</code> - 파일 컨텍스트 추가</strong></p>
+<pre><code class="hljs language-bash">/add src/auth.ts
+
+<span class="hljs-comment"># 특정 파일을 대화 컨텍스트에 추가</span>
+<span class="hljs-comment"># 이후 질문은 이 파일 기준으로 답변</span>
+</code></pre>
+<p><strong><code>/drop</code> - 파일 컨텍스트 제거</strong></p>
+<pre><code class="hljs language-bash">/drop src/old-code.ts
+
+<span class="hljs-comment"># 더 이상 필요 없는 파일을 컨텍스트에서 제거</span>
+</code></pre>
+<p><strong><code>/clear</code> - 컨텍스트 초기화</strong></p>
+<pre><code class="hljs language-bash">/clear
+
+<span class="hljs-comment"># 대화 기록 지우고 새로 시작</span>
+<span class="hljs-comment"># 토큰 초과 시 유용</span>
+</code></pre>
+<p><strong><code>/help</code> - 도움말</strong></p>
+<pre><code class="hljs language-bash">/help
+
+<span class="hljs-comment"># 모든 커맨드와 사용법 표시</span>
+</code></pre>
+<h3 id="고급-커맨드"><a aria-hidden="true" tabindex="-1" href="#고급-커맨드"><span class="icon icon-link"></span></a>고급 커맨드</h3>
+<p><strong><code>/architect</code> - 아키텍처 설계</strong></p>
+<pre><code class="hljs language-bash">/architect
+
+<span class="hljs-comment"># 실행 없이 계획만 세움</span>
+<span class="hljs-comment"># 큰 변경 전 구조 설계할 때 유용</span>
+</code></pre>
+<p><strong><code>/review</code> - 코드 리뷰</strong></p>
+<pre><code class="hljs language-bash">/review
+
+<span class="hljs-comment"># 최근 변경사항 리뷰</span>
+<span class="hljs-comment"># git diff 기반으로 자동 분석</span>
+</code></pre>
+<p><strong><code>/debug</code> - 디버그 모드</strong></p>
+<pre><code class="hljs language-bash">/debug
+
+<span class="hljs-comment"># 상세한 로그 출력</span>
+<span class="hljs-comment"># 문제 해결 시 유용</span>
+</code></pre>
+<h2 id="실전-프롬프트-예시"><a aria-hidden="true" tabindex="-1" href="#실전-프롬프트-예시"><span class="icon icon-link"></span></a>실전 프롬프트 예시</h2>
+<h3 id="초보자용-기본-작업"><a aria-hidden="true" tabindex="-1" href="#초보자용-기본-작업"><span class="icon icon-link"></span></a>초보자용: 기본 작업</h3>
+<p><strong>파일 탐색</strong></p>
+<pre><code class="hljs language-bash">&gt; 이 프로젝트 구조 설명해줘
+&gt; API 관련 파일들이 어디 있어?
+&gt; 테스트 파일 찾아줘
+</code></pre>
+<p><strong>코드 이해</strong></p>
+<pre><code class="hljs language-bash">&gt; 이 함수가 뭐하는 거야? (특정 함수 보면서)
+&gt; 로그인 플로우 전체 설명해줘
+&gt; 이 에러는 왜 나는 거야?
+</code></pre>
+<p><strong>간단한 수정</strong></p>
+<pre><code class="hljs language-bash">&gt; 이 변수명 더 명확하게 바꿔줘
+&gt; 주석 추가해줘
+&gt; console.log 다 지워줘
+</code></pre>
+<h3 id="중급자용-복잡한-작업"><a aria-hidden="true" tabindex="-1" href="#중급자용-복잡한-작업"><span class="icon icon-link"></span></a>중급자용: 복잡한 작업</h3>
+<p><strong>기능 구현</strong></p>
+<pre><code class="hljs language-bash">&gt; 사용자 프로필 편집 기능 만들어줘. 
+  기존 스타일 따라서 하고, 
+  유효성 검사도 추가해줘
+
+&gt; 다크모드 지원 추가해줘. 
+  localStorage에 설정 저장하고,
+  시스템 설정도 따라가게
+
+&gt; 무한 스크롤 구현해줘.
+  Intersection Observer 사용하고,
+  로딩 상태도 표시
+</code></pre>
+<p><strong>리팩토링</strong></p>
+<pre><code class="hljs language-bash">&gt; 이 컴포넌트 너무 커. 작은 컴포넌트들로 쪼개줘
+&gt; 중복 코드 제거하고 유틸 함수로 만들어줘
+&gt; 이 코드 TypeScript로 변환해줘
+</code></pre>
+<p><strong>디버깅</strong></p>
+<pre><code class="hljs language-bash">&gt; 로그인 후 리다이렉트가 안 돼. 원인 찾아줘
+&gt; 메모리 누수 있는지 확인해줘
+&gt; 왜 이 테스트가 간헐적으로 실패하는지 분석해줘
+</code></pre>
+<h3 id="고급자용-프로젝트-수준-작업"><a aria-hidden="true" tabindex="-1" href="#고급자용-프로젝트-수준-작업"><span class="icon icon-link"></span></a>고급자용: 프로젝트 수준 작업</h3>
+<p><strong>아키텍처 변경</strong></p>
+<pre><code class="hljs language-bash">&gt; Redux를 Zustand로 마이그레이션해줘.
+  기존 기능 유지하면서 단계적으로 진행
+
+&gt; 모놀리식 API를 MSA로 분리하고 싶어.
+  먼저 분리 계획 세워주고, 
+  인증 서비스부터 분리해줘
+</code></pre>
+<p><strong>성능 최적화</strong></p>
+<pre><code class="hljs language-bash">&gt; Lighthouse 점수 90점 이상 만들어줘.
+  번들 사이즈 분석부터 시작
+
+&gt; 이 페이지 초기 로딩 2초 이내로 줄여줘.
+  Code splitting, lazy loading 다 적용
+</code></pre>
+<p><strong>자동화</strong></p>
+<pre><code class="hljs language-bash">&gt; PR 전에 자동으로 체크할 GitHub Action 만들어줘.
+  린트, 테스트, 빌드 확인하고 커버리지 체크
+
+&gt; 배포 파이프라인 구축해줘.
+  dev, staging, prod 환경 분리하고
+  자동 롤백 기능도 추가
+</code></pre>
+<h2 id="실전-워크플로우"><a aria-hidden="true" tabindex="-1" href="#실전-워크플로우"><span class="icon icon-link"></span></a>실전 워크플로우</h2>
+<h3 id="커맨드-조합-새-기능-개발"><a aria-hidden="true" tabindex="-1" href="#커맨드-조합-새-기능-개발"><span class="icon icon-link"></span></a>커맨드 조합: 새 기능 개발</h3>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 1. 계획 세우기</span>
+/architect
+&gt; 사용자 알림 기능 구현 계획 세워줘
+
+<span class="hljs-comment"># 2. 관련 파일 추가</span>
+/add src/components/Notification.tsx
+/add src/hooks/useNotification.ts
+
+<span class="hljs-comment"># 3. 구현</span>
+&gt; 계획대로 구현해줘
+
+<span class="hljs-comment"># 4. 리뷰</span>
+/review
+&gt; 방금 작업 리뷰해줘
+
+<span class="hljs-comment"># 5. 테스트</span>
+&gt; 테스트 작성하고 실행해줘
+</code></pre>
+<h3 id="커맨드-조합-버그-수정"><a aria-hidden="true" tabindex="-1" href="#커맨드-조합-버그-수정"><span class="icon icon-link"></span></a>커맨드 조합: 버그 수정</h3>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 1. 디버그 모드 활성화</span>
+/debug
+
+<span class="hljs-comment"># 2. 문제 재현</span>
+&gt; 로그인 버그 재현해줘
+
+<span class="hljs-comment"># 3. 원인 분석</span>
+&gt; 로그 보고 원인 찾아줘
+
+<span class="hljs-comment"># 4. 수정</span>
+&gt; 원인 해결하고 테스트해줘
+
+<span class="hljs-comment"># 5. 정리</span>
+/clear
+</code></pre>
+<h2 id="다음-단계"><a aria-hidden="true" tabindex="-1" href="#다음-단계"><span class="icon icon-link"></span></a>다음 단계</h2>
+<p>이제 기본적인 사용법을 서술했다. 다음은 아래 내용들을 정리했다:</p>
+<ul>
+<li><strong>서브에이전트</strong>: 특화된 AI 워커 만들기</li>
+<li><strong>Agent Skills</strong>: 팀 규칙을 AI에게 학습시키기</li>
+<li><strong>팀 협업</strong>: .claude/ 디렉토리로 지식 공유하기</li>
+</ul>
+<p><strong>참고 자료</strong>:</p>
+<ul>
+<li><a href="https://code.claude.com/docs">Claude Code 공식 문서</a></li>
+<li><a href="https://docs.anthropic.com/claude/docs/prompt-engineering">프롬프트 엔지니어링 가이드</a></li>
+</ul></div><nav class="mt-12 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2025<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d47aee26b7dbdcd2.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"JWJa_OuTGPE9QsmSSxV8C\",\"p\":\"\",\"c\":[\"\",\"posts\",\"claude\",\"claude-code-part-1\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"claude\",\"d\"],{\"children\":[[\"slug\",\"claude-code-part-1\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d47aee26b7dbdcd2.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2025,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"claude\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"claude-code-part-1\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T1c36,"])</script><script>self.__next_f.push([1,"\n## 왜 Claude Code인가?\n\nChatGPT, GitHub Copilot, Cursor 등 여러 AI 코딩 도구가 있는데, 왜 Claude Code를 배워야 할까요?\n\n### ChatGPT/Copilot과의 결정적 차이\n\n**1. 실행 권한이 있는 AI**\n\n물론 많은 코드들이 정말 좋지만 ChatGPT는 코드를 \"제안\"만 하지 복사-붙여넣기 및 적용은 본인이 해야한다.\n\n```\nChatGPT: \"이 코드를 사용하세요\"\n개발자: 복사 → 에디터 열기 → 붙여넣기 → 실행\n```\n\nClaude Code는 **직접 파일을 수정하고 실행**한다!!:\n\n```bash\n\u003e 인증 버그 고쳐줘\n\nClaude Code:\n1. 파일 읽기 (auth.ts)\n2. 문제 진단\n3. 코드 수정\n4. 테스트 실행\n5. 결과 확인\n→ 모두 자동으로 수행\n```\n\n**2. 프로젝트 전체 컨텍스트 이해**\n\nCopilot은 현재 열린 파일만 탐색이 가능하지만 Claude Code는 **전체 코드베이스를 이해**한다:\n\n```bash\n\u003e 로그인 기능이 어디서 처리되는지 찾아줘\n\nClaude Code:\n- Grep으로 프로젝트 전체 검색\n- 관련 파일 찾기 (auth.ts, login.tsx, api.ts)\n- 각 파일의 연관 관계 파악\n- 데이터 플로우 설명\n```\n\n**3. 학습 가능한 AI**\n\nChatGPT나 gemini는 기존 웹서치를 이용한 방대한 데이터들을 학습하지만 상대적으로 개인 프로젝트 학습이 쉽지않고 오래걸린다. \n그렇지만 그에 비해 Claude Code는 **프로젝트별 학습**이 가능하다.:\n\n```bash\n# 팀의 코딩 규칙을 저장\n.claude/skills/coding-style/SKILL.md\n\n# 이제 Claude는 항상 팀 규칙을 따름\n\u003e 새 컴포넌트 만들어줘\n[자동으로 팀 스타일 가이드 적용]\n```\n\n**4. 자율적 문제 해결**\n\nClaude Code는 스스로 파일을 탐색하며 어떤 부분에서 에러가 나는지 확인하고 스스로 해결한다.\n\n```bash\n\u003e 테스트 실패 원인 찾아줘\n\nClaude Code:\n1. 테스트 실행\n2. 에러 로그 분석\n3. 관련 코드 검사\n4. 문제 발견\n5. 수정 적용\n6. 재실행으로 검증\n→ 결과만 보고\n```\n\n### 브라우저 vs 터미널: 근본적인 차이\n\n**브라우저 AI (ChatGPT, Claude.ai)**:\n- 복사-붙여넣기 워크플로우\n- 컨텍스트 제한적\n- 매번 새로 설명 필요\n\n**터미널 AI (Claude Code)**:\n- 직접 파일 시스템 접근\n- 프로젝트 컨텍스트 유지\n- 학습된 워크플로우 재사용\n\n\n## Claude Code 시작하기\n\n### 설치\n\n```bash\nnpm install -g @anthropic-ai/claude-code\n```\n\n### 첫 실행\n\n```bash\nclaude\n```\n\n프롬프트가 나타나면 질문을 입력하세요:\n\n```bash\n\u003e 이 프로젝트 구조 설명해줘\n```\n\n### 실행 가능한 도구들\n\nClaude Code는 다음 도구를 사용할 수 있다:\n\n- **Read/Write**: 파일 읽기/쓰기\n- **Edit**: 코드 수정 (정확한 위치 지정)\n- **Bash**: 모든 터미널 명령 실행\n- **Grep/Glob**: 프로젝트 전체 검색\n- **Git**: 버전 관리 자동화\n\n## 슬래시 커맨드 가이드\n\n특수 커맨드로 작업을 더 효율적으로 수행 할 수 있고 이것은 앞으로 내가 계슉 학습하고 적용해야하는 일이다.\n\n### 필수 커맨드\n\n**`/add` - 파일 컨텍스트 추가**\n```bash\n/add src/auth.ts\n\n# 특정 파일을 대화 컨텍스트에 추가\n# 이후 질문은 이 파일 기준으로 답변\n```\n\n**`/drop` - 파일 컨텍스트 제거**\n```bash\n/drop src/old-code.ts\n\n# 더 이상 필요 없는 파일을 컨텍스트에서 제거\n```\n\n**`/clear` - 컨텍스트 초기화**\n```bash\n/clear\n\n# 대화 기록 지우고 새로 시작\n# 토큰 초과 시 유용\n```\n\n**`/help` - 도움말**\n```bash\n/help\n\n# 모든 커맨드와 사용법 표시\n```\n\n### 고급 커맨드\n\n**`/architect` - 아키텍처 설계**\n```bash\n/architect\n\n# 실행 없이 계획만 세움\n# 큰 변경 전 구조 설계할 때 유용\n```\n\n**`/review` - 코드 리뷰**\n```bash\n/review\n\n# 최근 변경사항 리뷰\n# git diff 기반으로 자동 분석\n```\n\n**`/debug` - 디버그 모드**\n```bash\n/debug\n\n# 상세한 로그 출력\n# 문제 해결 시 유용\n```\n\n## 실전 프롬프트 예시\n\n### 초보자용: 기본 작업\n\n**파일 탐색**\n```bash\n\u003e 이 프로젝트 구조 설명해줘\n\u003e API 관련 파일들이 어디 있어?\n\u003e 테스트 파일 찾아줘\n```\n\n**코드 이해**\n```bash\n\u003e 이 함수가 뭐하는 거야? (특정 함수 보면서)\n\u003e 로그인 플로우 전체 설명해줘\n\u003e 이 에러는 왜 나는 거야?\n```\n\n**간단한 수정**\n```bash\n\u003e 이 변수명 더 명확하게 바꿔줘\n\u003e 주석 추가해줘\n\u003e console.log 다 지워줘\n```\n\n### 중급자용: 복잡한 작업\n\n**기능 구현**\n```bash\n\u003e 사용자 프로필 편집 기능 만들어줘. \n  기존 스타일 따라서 하고, \n  유효성 검사도 추가해줘\n\n\u003e 다크모드 지원 추가해줘. \n  localStorage에 설정 저장하고,\n  시스템 설정도 따라가게\n\n\u003e 무한 스크롤 구현해줘.\n  Intersection Observer 사용하고,\n  로딩 상태도 표시\n```\n\n**리팩토링**\n```bash\n\u003e 이 컴포넌트 너무 커. 작은 컴포넌트들로 쪼개줘\n\u003e 중복 코드 제거하고 유틸 함수로 만들어줘\n\u003e 이 코드 TypeScript로 변환해줘\n```\n\n**디버깅**\n```bash\n\u003e 로그인 후 리다이렉트가 안 돼. 원인 찾아줘\n\u003e 메모리 누수 있는지 확인해줘\n\u003e 왜 이 테스트가 간헐적으로 실패하는지 분석해줘\n```\n\n### 고급자용: 프로젝트 수준 작업\n\n**아키텍처 변경**\n```bash\n\u003e Redux를 Zustand로 마이그레이션해줘.\n  기존 기능 유지하면서 단계적으로 진행\n\n\u003e 모놀리식 API를 MSA로 분리하고 싶어.\n  먼저 분리 계획 세워주고, \n  인증 서비스부터 분리해줘\n```\n\n**성능 최적화**\n```bash\n\u003e Lighthouse 점수 90점 이상 만들어줘.\n  번들 사이즈 분석부터 시작\n\n\u003e 이 페이지 초기 로딩 2초 이내로 줄여줘.\n  Code splitting, lazy loading 다 적용\n```\n\n**자동화**\n```bash\n\u003e PR 전에 자동으로 체크할 GitHub Action 만들어줘.\n  린트, 테스트, 빌드 확인하고 커버리지 체크\n\n\u003e 배포 파이프라인 구축해줘.\n  dev, staging, prod 환경 분리하고\n  자동 롤백 기능도 추가\n```\n\n## 실전 워크플로우\n\n### 커맨드 조합: 새 기능 개발\n\n```bash\n# 1. 계획 세우기\n/architect\n\u003e 사용자 알림 기능 구현 계획 세워줘\n\n# 2. 관련 파일 추가\n/add src/components/Notification.tsx\n/add src/hooks/useNotification.ts\n\n# 3. 구현\n\u003e 계획대로 구현해줘\n\n# 4. 리뷰\n/review\n\u003e 방금 작업 리뷰해줘\n\n# 5. 테스트\n\u003e 테스트 작성하고 실행해줘\n```\n\n### 커맨드 조합: 버그 수정\n\n```bash\n# 1. 디버그 모드 활성화\n/debug\n\n# 2. 문제 재현\n\u003e 로그인 버그 재현해줘\n\n# 3. 원인 분석\n\u003e 로그 보고 원인 찾아줘\n\n# 4. 수정\n\u003e 원인 해결하고 테스트해줘\n\n# 5. 정리\n/clear\n```\n\n## 다음 단계\n\n이제 기본적인 사용법을 서술했다. 다음은 아래 내용들을 정리했다:\n- **서브에이전트**: 특화된 AI 워커 만들기\n- **Agent Skills**: 팀 규칙을 AI에게 학습시키기\n- **팀 협업**: .claude/ 디렉토리로 지식 공유하기\n\n\n**참고 자료**:\n- [Claude Code 공식 문서](https://code.claude.com/docs)\n- [프롬프트 엔지니어링 가이드](https://docs.anthropic.com/claude/docs/prompt-engineering)"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"Claude Code 시작하기1\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 9월 19일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"Claude\",{\"href\":\"/tags/Claude\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Claude\"}],[\"$\",\"$L3\",\"AI\",{\"href\":\"/tags/AI\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"AI\"}],[\"$\",\"$L3\",\"개발\",{\"href\":\"/tags/%EA%B0%9C%EB%B0%9C\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"개발\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1a:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Claude Code 시작하기1 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Claude Code만의 차별점과 실전 프롬프트 가이드.\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"Claude Code 시작하기1\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"Claude Code만의 차별점과 실전 프롬프트 가이드.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-09-19\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"Claude Code 시작하기1\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"Claude Code만의 차별점과 실전 프롬프트 가이드.\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1a\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>

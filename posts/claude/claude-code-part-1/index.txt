@@ -1,0 +1,347 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d47aee26b7dbdcd2.css","style"]
+0:{"P":null,"b":"JWJa_OuTGPE9QsmSSxV8C","p":"","c":["","posts","claude","claude-code-part-1",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","claude","d"],{"children":[["slug","claude-code-part-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d47aee26b7dbdcd2.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2025," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","claude","d"],"$L8",{"children":[["slug","claude-code-part-1","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T1c36,
+## 왜 Claude Code인가?
+
+ChatGPT, GitHub Copilot, Cursor 등 여러 AI 코딩 도구가 있는데, 왜 Claude Code를 배워야 할까요?
+
+### ChatGPT/Copilot과의 결정적 차이
+
+**1. 실행 권한이 있는 AI**
+
+물론 많은 코드들이 정말 좋지만 ChatGPT는 코드를 "제안"만 하지 복사-붙여넣기 및 적용은 본인이 해야한다.
+
+```
+ChatGPT: "이 코드를 사용하세요"
+개발자: 복사 → 에디터 열기 → 붙여넣기 → 실행
+```
+
+Claude Code는 **직접 파일을 수정하고 실행**한다!!:
+
+```bash
+> 인증 버그 고쳐줘
+
+Claude Code:
+1. 파일 읽기 (auth.ts)
+2. 문제 진단
+3. 코드 수정
+4. 테스트 실행
+5. 결과 확인
+→ 모두 자동으로 수행
+```
+
+**2. 프로젝트 전체 컨텍스트 이해**
+
+Copilot은 현재 열린 파일만 탐색이 가능하지만 Claude Code는 **전체 코드베이스를 이해**한다:
+
+```bash
+> 로그인 기능이 어디서 처리되는지 찾아줘
+
+Claude Code:
+- Grep으로 프로젝트 전체 검색
+- 관련 파일 찾기 (auth.ts, login.tsx, api.ts)
+- 각 파일의 연관 관계 파악
+- 데이터 플로우 설명
+```
+
+**3. 학습 가능한 AI**
+
+ChatGPT나 gemini는 기존 웹서치를 이용한 방대한 데이터들을 학습하지만 상대적으로 개인 프로젝트 학습이 쉽지않고 오래걸린다. 
+그렇지만 그에 비해 Claude Code는 **프로젝트별 학습**이 가능하다.:
+
+```bash
+# 팀의 코딩 규칙을 저장
+.claude/skills/coding-style/SKILL.md
+
+# 이제 Claude는 항상 팀 규칙을 따름
+> 새 컴포넌트 만들어줘
+[자동으로 팀 스타일 가이드 적용]
+```
+
+**4. 자율적 문제 해결**
+
+Claude Code는 스스로 파일을 탐색하며 어떤 부분에서 에러가 나는지 확인하고 스스로 해결한다.
+
+```bash
+> 테스트 실패 원인 찾아줘
+
+Claude Code:
+1. 테스트 실행
+2. 에러 로그 분석
+3. 관련 코드 검사
+4. 문제 발견
+5. 수정 적용
+6. 재실행으로 검증
+→ 결과만 보고
+```
+
+### 브라우저 vs 터미널: 근본적인 차이
+
+**브라우저 AI (ChatGPT, Claude.ai)**:
+- 복사-붙여넣기 워크플로우
+- 컨텍스트 제한적
+- 매번 새로 설명 필요
+
+**터미널 AI (Claude Code)**:
+- 직접 파일 시스템 접근
+- 프로젝트 컨텍스트 유지
+- 학습된 워크플로우 재사용
+
+
+## Claude Code 시작하기
+
+### 설치
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+### 첫 실행
+
+```bash
+claude
+```
+
+프롬프트가 나타나면 질문을 입력하세요:
+
+```bash
+> 이 프로젝트 구조 설명해줘
+```
+
+### 실행 가능한 도구들
+
+Claude Code는 다음 도구를 사용할 수 있다:
+
+- **Read/Write**: 파일 읽기/쓰기
+- **Edit**: 코드 수정 (정확한 위치 지정)
+- **Bash**: 모든 터미널 명령 실행
+- **Grep/Glob**: 프로젝트 전체 검색
+- **Git**: 버전 관리 자동화
+
+## 슬래시 커맨드 가이드
+
+특수 커맨드로 작업을 더 효율적으로 수행 할 수 있고 이것은 앞으로 내가 계슉 학습하고 적용해야하는 일이다.
+
+### 필수 커맨드
+
+**`/add` - 파일 컨텍스트 추가**
+```bash
+/add src/auth.ts
+
+# 특정 파일을 대화 컨텍스트에 추가
+# 이후 질문은 이 파일 기준으로 답변
+```
+
+**`/drop` - 파일 컨텍스트 제거**
+```bash
+/drop src/old-code.ts
+
+# 더 이상 필요 없는 파일을 컨텍스트에서 제거
+```
+
+**`/clear` - 컨텍스트 초기화**
+```bash
+/clear
+
+# 대화 기록 지우고 새로 시작
+# 토큰 초과 시 유용
+```
+
+**`/help` - 도움말**
+```bash
+/help
+
+# 모든 커맨드와 사용법 표시
+```
+
+### 고급 커맨드
+
+**`/architect` - 아키텍처 설계**
+```bash
+/architect
+
+# 실행 없이 계획만 세움
+# 큰 변경 전 구조 설계할 때 유용
+```
+
+**`/review` - 코드 리뷰**
+```bash
+/review
+
+# 최근 변경사항 리뷰
+# git diff 기반으로 자동 분석
+```
+
+**`/debug` - 디버그 모드**
+```bash
+/debug
+
+# 상세한 로그 출력
+# 문제 해결 시 유용
+```
+
+## 실전 프롬프트 예시
+
+### 초보자용: 기본 작업
+
+**파일 탐색**
+```bash
+> 이 프로젝트 구조 설명해줘
+> API 관련 파일들이 어디 있어?
+> 테스트 파일 찾아줘
+```
+
+**코드 이해**
+```bash
+> 이 함수가 뭐하는 거야? (특정 함수 보면서)
+> 로그인 플로우 전체 설명해줘
+> 이 에러는 왜 나는 거야?
+```
+
+**간단한 수정**
+```bash
+> 이 변수명 더 명확하게 바꿔줘
+> 주석 추가해줘
+> console.log 다 지워줘
+```
+
+### 중급자용: 복잡한 작업
+
+**기능 구현**
+```bash
+> 사용자 프로필 편집 기능 만들어줘. 
+  기존 스타일 따라서 하고, 
+  유효성 검사도 추가해줘
+
+> 다크모드 지원 추가해줘. 
+  localStorage에 설정 저장하고,
+  시스템 설정도 따라가게
+
+> 무한 스크롤 구현해줘.
+  Intersection Observer 사용하고,
+  로딩 상태도 표시
+```
+
+**리팩토링**
+```bash
+> 이 컴포넌트 너무 커. 작은 컴포넌트들로 쪼개줘
+> 중복 코드 제거하고 유틸 함수로 만들어줘
+> 이 코드 TypeScript로 변환해줘
+```
+
+**디버깅**
+```bash
+> 로그인 후 리다이렉트가 안 돼. 원인 찾아줘
+> 메모리 누수 있는지 확인해줘
+> 왜 이 테스트가 간헐적으로 실패하는지 분석해줘
+```
+
+### 고급자용: 프로젝트 수준 작업
+
+**아키텍처 변경**
+```bash
+> Redux를 Zustand로 마이그레이션해줘.
+  기존 기능 유지하면서 단계적으로 진행
+
+> 모놀리식 API를 MSA로 분리하고 싶어.
+  먼저 분리 계획 세워주고, 
+  인증 서비스부터 분리해줘
+```
+
+**성능 최적화**
+```bash
+> Lighthouse 점수 90점 이상 만들어줘.
+  번들 사이즈 분석부터 시작
+
+> 이 페이지 초기 로딩 2초 이내로 줄여줘.
+  Code splitting, lazy loading 다 적용
+```
+
+**자동화**
+```bash
+> PR 전에 자동으로 체크할 GitHub Action 만들어줘.
+  린트, 테스트, 빌드 확인하고 커버리지 체크
+
+> 배포 파이프라인 구축해줘.
+  dev, staging, prod 환경 분리하고
+  자동 롤백 기능도 추가
+```
+
+## 실전 워크플로우
+
+### 커맨드 조합: 새 기능 개발
+
+```bash
+# 1. 계획 세우기
+/architect
+> 사용자 알림 기능 구현 계획 세워줘
+
+# 2. 관련 파일 추가
+/add src/components/Notification.tsx
+/add src/hooks/useNotification.ts
+
+# 3. 구현
+> 계획대로 구현해줘
+
+# 4. 리뷰
+/review
+> 방금 작업 리뷰해줘
+
+# 5. 테스트
+> 테스트 작성하고 실행해줘
+```
+
+### 커맨드 조합: 버그 수정
+
+```bash
+# 1. 디버그 모드 활성화
+/debug
+
+# 2. 문제 재현
+> 로그인 버그 재현해줘
+
+# 3. 원인 분석
+> 로그 보고 원인 찾아줘
+
+# 4. 수정
+> 원인 해결하고 테스트해줘
+
+# 5. 정리
+/clear
+```
+
+## 다음 단계
+
+이제 기본적인 사용법을 서술했다. 다음은 아래 내용들을 정리했다:
+- **서브에이전트**: 특화된 AI 워커 만들기
+- **Agent Skills**: 팀 규칙을 AI에게 학습시키기
+- **팀 협업**: .claude/ 디렉토리로 지식 공유하기
+
+
+**참고 자료**:
+- [Claude Code 공식 문서](https://code.claude.com/docs)
+- [프롬프트 엔지니어링 가이드](https://docs.anthropic.com/claude/docs/prompt-engineering)d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"Claude Code 시작하기1"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 9월 19일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","Claude",{"href":"/tags/Claude","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Claude"}],["$","$L3","AI",{"href":"/tags/AI","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"AI"}],["$","$L3","개발",{"href":"/tags/%EA%B0%9C%EB%B0%9C","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"개발"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1a:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"Claude Code 시작하기1 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"Claude Code만의 차별점과 실전 프롬프트 가이드."}],["$","meta","2",{"property":"og:title","content":"Claude Code 시작하기1"}],["$","meta","3",{"property":"og:description","content":"Claude Code만의 차별점과 실전 프롬프트 가이드."}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-09-19"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Claude Code 시작하기1"}],["$","meta","8",{"name":"twitter:description","content":"Claude Code만의 차별점과 실전 프롬프트 가이드."}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1a","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

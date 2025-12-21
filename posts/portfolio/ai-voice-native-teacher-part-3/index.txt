@@ -1,0 +1,356 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d47aee26b7dbdcd2.css","style"]
+0:{"P":null,"b":"JWJa_OuTGPE9QsmSSxV8C","p":"","c":["","posts","portfolio","ai-voice-native-teacher-part-3",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","portfolio","d"],{"children":[["slug","ai-voice-native-teacher-part-3","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d47aee26b7dbdcd2.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2025," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","portfolio","d"],"$L8",{"children":[["slug","ai-voice-native-teacher-part-3","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T335d,
+Part 2에서는 AI 응답 생성, TTS 통합, 그리고 성능 최적화를 다뤘습니다. Part 3에서는 Web Audio API의 깊이 있는 활용법과 프로젝트 회고를 살펴보겠습니다.
+
+## Web Audio API 심화
+
+이 프로젝트에서 Web Audio API는 단순히 오디오를 재생하는 것을 넘어, **실시간 음량 분석**과 **침묵 감지**에 핵심적으로 사용됩니다.
+
+### 마이크 입력 캡처
+
+먼저 사용자의 마이크 입력을 캡처합니다:
+
+```typescript
+const stream = await navigator.mediaDevices.getUserMedia({ 
+  audio: {
+    echoCancellation: true,     // 에코 제거
+    noiseSuppression: true,     // 노이즈 억제
+    autoGainControl: true       // 자동 게인 조절
+  } 
+});
+```
+
+**오디오 설정 옵션**:
+- `echoCancellation`: 스피커에서 나오는 소리가 마이크로 다시 들어가는 것 방지
+- `noiseSuppression`: 배경 소음 자동 제거
+- `autoGainControl`: 음량 자동 조절 (너무 크거나 작은 소리 보정)
+
+### AudioContext와 AnalyserNode
+
+```typescript
+const audioContext = getAudioContext();  // Singleton
+const analyser = audioContext.createAnalyser();
+const source = audioContext.createMediaStreamSource(stream);
+
+// FFT 설정
+analyser.fftSize = 256;
+analyser.smoothingTimeConstant = 0.8;
+
+// 노드 연결
+source.connect(analyser);
+```
+
+**FFT (Fast Fourier Transform)**:
+- 시간 도메인 신호를 주파수 도메인으로 변환
+- `fftSize = 256`: 128개의 주파수 데이터 생성 (fftSize / 2)
+- 값이 클수록 정밀하지만 처리 부하 증가
+
+**smoothingTimeConstant**:
+- 0~1 사이의 값
+- 0.8: 이전 값의 80%와 현재 값의 20%를 섞음
+- 급격한 변화를 부드럽게 만들어 깜빡임 방지
+
+### 실시간 음량 분석
+
+FFT 데이터에서 실시간으로 음량을 계산합니다:
+
+```typescript
+const dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+const getVolumeLevel = () => {
+  analyser.getByteFrequencyData(dataArray);
+  
+  // 모든 주파수 데이터의 평균 계산
+  const sum = dataArray.reduce((a, b) => a + b, 0);
+  const average = sum / dataArray.length;
+  
+  // 0-100 범위로 정규화
+  return Math.min(100, average * 1.5);
+};
+```
+
+**동작 원리**:
+1. `getByteFrequencyData()`: 주파수별 강도를 0-255 범위로 반환
+2. 모든 주파수 강도의 평균 계산
+3. 1.5배 증폭 후 100으로 클램핑 (사용자 인터페이스에 적합한 범위)
+
+### 침묵 감지 (VAD - Voice Activity Detection)
+
+음량 데이터를 바탕으로 침묵을 감지합니다:
+
+```typescript
+const SILENCE_THRESHOLD = 15;    // 임계값
+const SILENCE_DURATION = 1500;   // 1.5초
+
+let silenceStartTime: number | null = null;
+
+// 실시간 체크 (매 100ms)
+setInterval(() => {
+  const volume = getVolumeLevel();
+  
+  if (volume < SILENCE_THRESHOLD) {
+    // 침묵 시작
+    if (!silenceStartTime) {
+      silenceStartTime = Date.now();
+    }
+    
+    // 침묵 지속 시간 체크
+    const silenceDuration = Date.now() - silenceStartTime;
+    if (silenceDuration >= SILENCE_DURATION) {
+      stopRecording();  // 자동 종료
+    }
+  } else {
+    // 음성 감지 → 타이머 리셋
+    silenceStartTime = null;
+  }
+}, 100);
+```
+
+**임계값 결정 과정**:
+
+초기에는 `SILENCE_THRESHOLD = 10`으로 설정했으나, 배경 소음(에어컨, 자판 소리 등)에도 반응하는 문제가 있었습니다. 여러 환경에서 테스트한 결과 **15**가 가장 적절한 값임을 발견했습니다:
+
+- 10 이하: 배경 소음에 민감
+- 15: 적절한 감도
+- 20 이상: 작은 목소리를 침묵으로 오인
+
+### 음량 기반 시각적 피드백
+
+음량에 따라 버튼 크기를 동적으로 변화시켜 사용자에게 시각적 피드백을 제공합니다:
+
+```tsx
+<motion.div
+  animate={{
+    scale: 1 + (volumeLevel / 100) * 0.5,
+    opacity: 0.7 + (volumeLevel / 100) * 0.3
+  }}
+  transition={{ duration: 0.1, ease: "easeOut" }}
+  className="rounded-full bg-black"
+>
+  {/* 버튼 내용 */}
+</motion.div>
+```
+
+**효과**:
+- 음량 0: 기본 크기 (scale: 1.0)
+- 음량 50: 1.25배 크기
+- 음량 100: 1.5배 크기
+- 불투명도도 함께 변화 (0.7 → 1.0)
+
+이렇게 하면 사용자가 말할 때 버튼이 **펄스처럼 커졌다 작아지는** 효과를 볼 수 있어, 마이크가 제대로 작동하고 있음을 직관적으로 알 수 있습니다.
+
+## 프로젝트 구조
+
+전체 프로젝트 구조를 정리하면 다음과 같습니다:
+
+```
+app/
+├── api/                        # 백엔드 API Routes
+│   ├── chat/route.ts          # Claude Chat API
+│   ├── stt/route.ts           # ElevenLabs STT
+│   └── tts/route.ts           # ElevenLabs TTS
+├── components/                 # React 컴포넌트
+│   ├── VoiceButton.tsx        # 중앙 원형 버튼
+│   ├── StateTextDisplay.tsx   # 상태 텍스트 표시
+│   └── AudioPlayer.tsx        # TTS 음성 재생
+├── hooks/                      # Custom Hooks
+│   ├── useVoiceRecorderStreaming.ts  # STT 음성 녹음
+│   ├── useChatHandler.ts             # Chat API 처리
+│   └── useAppState.ts                # 전역 상태 관리
+├── utils/                      # 유틸리티 함수
+│   ├── audio-context.ts       # Singleton AudioContext
+│   ├── tts-cache.ts           # LRU TTS 캐시
+│   └── language-detector.ts   # 언어 자동 감지
+├── config/                     # 설정 파일
+│   └── system-prompt.ts       # Claude 시스템 프롬프트
+├── constants/                  # 상수 정의
+│   ├── audio.ts               # 오디오 설정
+│   └── ui.ts                  # UI 설정
+└── page.tsx                    # 메인 페이지
+```
+
+### 각 모듈의 역할
+
+**page.tsx**: 전체 앱을 오케스트레이션하는 메인 컴포넌트. 모든 상태와 훅을 통합합니다.
+
+**useVoiceRecorderStreaming**: 마이크 입력을 캡처하고, 실시간 음량을 분석하며, 침묵을 감지하여 STT API를 호출합니다.
+
+**useChatHandler**: Claude API를 호출하고, 대화 히스토리를 관리하며, TTS API를 호출합니다.
+
+**VoiceButton**: 중앙 원형 버튼으로, 음량에 따라 크기가 동적으로 변합니다.
+
+**AudioPlayer**: TTS로 생성된 음성을 재생하고, iOS Safari 호환성을 처리합니다.
+
+## 성능 지표
+
+실제 사용 환경에서 측정한 성능 지표입니다.
+
+### 전체 응답 시간
+
+| 시나리오 | 최적화 전 | 최적화 후 | 개선율 |
+|---------|----------|----------|--------|
+| 새로운 응답 | 5-7초 | 3-4초 | **30%** |
+| 캐시된 응답 | 5-7초 | 2-3초 | **60%** |
+| 평균 | 6초 | 3.5초 | **42%** |
+
+### 단계별 소요 시간
+
+```
+사용자 음성 입력: 2-5초 (사용자 의존)
+  ↓
+STT 음성 인식: 1-2초
+  ↓
+결과 표시: 2초 (고정)
+  ↓
+Chat API 처리: 1-2초
+  ↓
+TTS 음성 생성: 1-2초 (캐시 시 0.1초)
+  ↓
+음성 재생: 2-4초 (응답 길이에 따라)
+```
+
+### API 비용 절감
+
+```
+월 1000회 대화 기준:
+
+일반 방식:
+  Claude: 1000회 × $0.003 = $3.00
+  TTS: 1000회 × $0.016 = $16.00
+  총: $19.00
+
+최적화 후:
+  Claude (Prompt Caching): 1000회 × $0.0006 = $0.60 (80% 절감)
+  TTS (LRU 캐싱 50%): 500회 × $0.016 = $8.00 (50% 절감)
+  총: $8.60 (55% 절감)
+
+연간 절약: ($19 - $8.6) × 12 = $124.80
+```
+
+실제로 Prompt Caching과 TTS 캐싱을 적용한 결과, API 비용이 절반 이상 절감되었습니다.
+
+## 프로젝트 회고
+
+### 배운 점
+
+**1. Next.js App Router 아키텍처**
+
+Server Component와 Client Component를 명확히 분리하고, API Routes로 백엔드 로직을 구현하는 방법을 익혔습니다. 특히 환경 변수를 서버에서만 관리하여 API 키 보안을 강화하는 방법이 인상적이었습니다.
+
+**2. React 고급 패턴**
+
+Custom Hooks로 비즈니스 로직을 모듈화하고, `useCallback`으로 의존성을 정확히 관리하는 법을 배웠습니다. 상태 머신 패턴으로 복잡한 상태 전환을 명확하게 표현할 수 있었습니다.
+
+**3. 음성 처리 기술**
+
+Web Audio API를 깊이 있게 활용하여 실시간 음량 분석과 침묵 감지를 구현했습니다. FFT의 원리를 이해하고, 실제 프로덕션에 적용할 수 있었습니다.
+
+**4. 성능 최적화**
+
+LRU 캐시와 Singleton 패턴을 실제로 구현하고, API 비용을 80% 이상 절감하는 경험을 했습니다. 이론으로만 알던 최적화 기법을 실전에 적용하니 효과가 확실했습니다.
+
+**5. 실전 문제 해결**
+
+무한루프 디버깅, MP3 병합 이슈, iOS Safari 호환성 등 실제 개발에서 마주하는 문제들을 직접 해결하는 과정에서 많이 성장했습니다.
+
+### 아쉬운 점
+
+**실시간 텍스트 업데이트 부재**
+
+ElevenLabs STT가 HTTP 방식이라 실시간 중간 결과를 제공하지 못한 점이 아쉬웠습니다. WebSocket 스트리밍을 구현하면 더 나은 UX를 제공할 수 있을 것 같습니다.
+
+**초기 로딩 시간**
+
+첫 번째 API 호출 시 Prompt Caching이 적용되지 않아 응답이 느린 편입니다. 앱 시작 시 Warm-up 요청을 보내는 방식으로 개선할 수 있을 것 같습니다.
+
+**다국어 TTS 음성 품질**
+
+ElevenLabs의 다국어 TTS는 훌륭하지만, 가끔 특정 언어(특히 한국어)에서 억양이 부자연스러운 경우가 있었습니다. 언어별로 다른 voice ID를 사용하면 개선될 수 있을 것입니다.
+
+### 개선하고 싶은 점
+
+**대화 기록 저장**
+
+현재는 대화 히스토리가 메모리에만 저장되어 페이지를 새로고침하면 사라집니다. IndexedDB나 localStorage에 저장하여 이전 대화를 복습할 수 있게 하고 싶습니다.
+
+**언어별 음성 선택**
+
+사용자가 원하는 성별(남성/여성)과 억양(미국식/영국식 등)을 선택할 수 있는 UI를 추가하고 싶습니다.
+
+**재생 속도 조절**
+
+현재는 1.2배속으로 고정되어 있지만, 사용자가 0.75배~2.0배 사이에서 자유롭게 조절할 수 있도록 슬라이더를 추가하고 싶습니다.
+
+**오프라인 모드**
+
+PWA(Progressive Web App)로 만들어 오프라인에서도 캐시된 응답을 재생할 수 있게 하고 싶습니다.
+
+## 기술적 도전과 성취
+
+### 가장 어려웠던 부분
+
+**무한루프 디버깅**이 가장 어려웠습니다. `useEffect`의 의존성 배열을 잘못 설정하여 상태가 무한히 반복되는 문제가 발생했고, 이를 해결하기 위해 React의 라이프사이클과 의존성 관리에 대해 깊이 공부하게 되었습니다.
+
+콜백 패턴으로 전환하면서 상태 전환이 단방향으로 흐르도록 설계한 것이 해결의 핵심이었습니다.
+
+### 가장 만족스러운 부분
+
+**TTS 캐싱 시스템**이 가장 만족스럽습니다. LRU 캐시를 직접 구현하고, 실제로 API 비용이 50% 가까이 절감되는 것을 확인했을 때 큰 보람을 느꼈습니다.
+
+특히 같은 인사말("안녕하세요", "Hello")이 반복될 때 즉시 응답하는 것을 보며, 사용자 경험과 비용 절감을 동시에 달성한 것에 뿌듯함을 느꼈습니다.
+
+### Web Speech API를 사용하지 않은 결정
+
+이 프로젝트의 핵심 결정 중 하나는 **Web Speech API 대신 ElevenLabs STT를 선택한 것**입니다.
+
+Web Speech API는 브라우저 내장 기능으로 무료이고 실시간 중간 결과를 제공하지만, **한 번에 한 언어만 인식**한다는 치명적인 한계가 있습니다.
+
+```typescript
+// Web Speech API - 언어 전환 필요
+const recognition = new webkitSpeechRecognition();
+recognition.lang = 'ko-KR';  // 한국어만
+// 영어로 말하면 인식 안 됨 ❌
+```
+
+언어 학습 앱의 핵심은 **다국어 동시 인식**입니다. 사용자가 "이탈리아 여행 갈 건데 'Quanto costa?'는 뭐예요?"라고 한국어와 이탈리아어를 섞어 말할 때도 인식할 수 있어야 합니다.
+
+ElevenLabs STT는 이를 완벽하게 해결해주며, 약간의 비용과 실시간 업데이트 부재라는 트레이드오프를 감수할 가치가 있었습니다.
+
+## 마치며
+
+이 프로젝트는 친구의 요청으로 시작했지만, 결과적으로 Next.js, React, Web Audio API, AI API 통합 등 프론트엔드 개발의 여러 측면을 깊이 있게 경험할 수 있는 좋은 기회였습니다.
+
+특히 **기존에 구독 중인 서비스를 조합하여 새로운 가치를 창출**한 경험이 의미 있었습니다. Claude API와 ElevenLabs API만으로도 충분히 실용적인 언어 학습 도구를 만들 수 있다는 것을 증명했습니다.
+
+무엇보다 상태 관리, 성능 최적화, 문제 해결 과정에서 많은 것을 배웠고, 이론으로만 알던 개념들을 실제로 구현하면서 깊이 이해할 수 있었습니다.
+
+앞으로 이 프로젝트를 더욱 발전시켜 실제로 언어 학습에 도움이 되는 도구로 만들고 싶습니다.
+
+**GitHub 저장소**: [링크 추가 예정]
+
+질문이나 피드백은 언제든 환영합니다!d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"AI 음성 원어민 선생님 만들기 Part 3: Web Audio API와 프로젝트 회고"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 12월 11일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","포트폴리오",{"href":"/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"포트폴리오"}],["$","$L3","AI",{"href":"/tags/AI","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"AI"}],["$","$L3","Next.js",{"href":"/tags/Next.js","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Next.js"}],["$","$L3","React",{"href":"/tags/React","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"React"}],["$","$L3","ElevenLabs",{"href":"/tags/ElevenLabs","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"ElevenLabs"}],["$","$L3","Claude",{"href":"/tags/Claude","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Claude"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1a:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"AI 음성 원어민 선생님 만들기 Part 3: Web Audio API와 프로젝트 회고 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","meta","2",{"property":"og:title","content":"AI 음성 원어민 선생님 만들기 Part 3: Web Audio API와 프로젝트 회고"}],["$","meta","3",{"property":"og:description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-12-11"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"AI 음성 원어민 선생님 만들기 Part 3: Web Audio API와 프로젝트 회고"}],["$","meta","8",{"name":"twitter:description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1a","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"
