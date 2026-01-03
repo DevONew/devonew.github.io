@@ -1,0 +1,2003 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/dfd93458d4eb6967.css","style"]
+0:{"P":null,"b":"nrRloE8nMkMSs56tAB1BQ","p":"","c":["","posts","frontend","typescript-practical-types",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","frontend","d"],{"children":[["slug","typescript-practical-types","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/dfd93458d4eb6967.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","frontend","d"],"$L8",{"children":[["slug","typescript-practical-types","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:Taaa9,
+JavaScript에서 TypeScript로 넘어오면서 가장 헷갈리는 부분이 바로 타입입니다. 특히 실무에서는 API 응답, 이벤트 핸들러, 복잡한 상태 관리 등 다양한 상황에서 타입을 정의해야 합니다. 
+
+이 글에서는 실무에서 가장 자주 사용하는 타입 패턴들과, 많은 개발자들이 어려워하는 `any`를 안전하게 다루는 방법까지 총정리했습니다.
+
+## 기본 타입 (Primitive Types)
+
+TypeScript의 기본 타입부터 차근차근 살펴보겠습니다.
+
+### 기본 타입 정의
+
+```typescript
+// 문자열
+const name: string = 'Alice';
+const greeting: string = `Hello, ${name}`;
+
+// 숫자
+const age: number = 25;
+const price: number = 19.99;
+const binary: number = 0b1010; // 2진수
+const hex: number = 0xf00d; // 16진수
+
+// 불리언
+const isActive: boolean = true;
+const hasPermission: boolean = false;
+
+// null과 undefined
+const nothing: null = null;
+const notDefined: undefined = undefined;
+
+// symbol (ES6)
+const sym: symbol = Symbol('unique');
+
+// bigint (ES2020)
+const bigNumber: bigint = 100n;
+```
+
+**실무 팁**: `strictNullChecks` 옵션을 켜면 `null`과 `undefined`를 명시적으로 처리해야 합니다.
+
+```typescript
+// strictNullChecks: true일 때
+let name: string = 'Alice';
+name = null; // ❌ 에러!
+
+let nullableName: string | null = 'Bob';
+nullableName = null; // ✅ OK
+```
+
+### 배열 타입
+
+```typescript
+// 방법 1: 타입[]
+const numbers: number[] = [1, 2, 3, 4, 5];
+const names: string[] = ['Alice', 'Bob', 'Charlie'];
+
+// 방법 2: Array<타입>
+const scores: Array<number> = [90, 85, 95];
+const emails: Array<string> = ['a@test.com', 'b@test.com'];
+
+// 다차원 배열
+const matrix: number[][] = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+// 읽기 전용 배열
+const readonlyArr: readonly number[] = [1, 2, 3];
+// readonlyArr.push(4); // ❌ 에러!
+
+// ReadonlyArray 타입
+const readonlyArr2: ReadonlyArray<string> = ['a', 'b', 'c'];
+```
+
+**실무 활용**: React에서 상태를 불변으로 관리할 때 readonly 사용
+
+```typescript
+interface State {
+  readonly items: readonly string[];
+}
+
+// 새 배열을 반환해야 함
+function addItem(state: State, item: string): State {
+  return {
+    items: [...state.items, item]
+  };
+}
+```
+
+### 튜플 (Tuple)
+
+고정된 개수와 타입의 배열을 표현합니다.
+
+```typescript
+// 기본 튜플
+const user: [string, number] = ['Alice', 25];
+const user2: [string, number] = [25, 'Alice']; // ❌ 타입 순서 불일치
+
+// 튜플 요소 접근
+const name = user[0]; // string
+const age = user[1];  // number
+
+// 라벨이 있는 튜플 (TS 4.0+)
+type User = [name: string, age: number, isAdmin: boolean];
+const admin: User = ['Alice', 25, true];
+
+// 선택적 요소
+type Response = [status: number, data: string, error?: string];
+const success: Response = [200, 'OK'];
+const failure: Response = [500, 'Server Error', 'Internal error'];
+
+// Rest 요소
+type StringNumberBooleans = [string, number, ...boolean[]];
+const example: StringNumberBooleans = ['hello', 1, true, false, true];
+
+// 실무 예시: React useState
+const [count, setCount] = useState(0); // [number, Dispatch<SetStateAction<number>>]
+```
+
+**실무 활용**: 함수에서 여러 값을 반환할 때
+
+```typescript
+function getUser(id: number): [User | null, Error | null] {
+  try {
+    const user = fetchUser(id);
+    return [user, null];
+  } catch (error) {
+    return [null, error as Error];
+  }
+}
+
+const [user, error] = getUser(1);
+if (error) {
+  console.error(error);
+} else {
+  console.log(user?.name);
+}
+```
+
+## 객체 타입
+
+### Interface vs Type Alias
+
+```typescript
+// Interface
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+// Type Alias
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+};
+```
+
+**언제 무엇을 사용할까?**
+
+**Interface를 사용하는 경우:**
+- 객체의 형태를 정의할 때
+- 확장(extends)이 필요할 때
+- 선언 병합(declaration merging)이 필요할 때
+
+```typescript
+interface Animal {
+  name: string;
+}
+
+// 확장
+interface Dog extends Animal {
+  bark(): void;
+}
+
+// 선언 병합
+interface User {
+  id: number;
+}
+
+interface User {
+  name: string;
+}
+
+// 자동으로 병합됨
+const user: User = {
+  id: 1,
+  name: 'Alice'
+};
+```
+
+**Type Alias를 사용하는 경우:**
+- Union, Intersection 타입
+- Tuple, Primitive 타입에 이름 붙일 때
+- 복잡한 타입 조합
+
+```typescript
+// Union
+type Status = 'pending' | 'approved' | 'rejected';
+
+// Intersection
+type Admin = User & {
+  role: 'admin';
+  permissions: string[];
+};
+
+// Tuple
+type Point = [number, number];
+
+// Mapped type
+type Readonly<T> = {
+  readonly [P in keyof T]: T[P];
+};
+```
+
+### 선택적 프로퍼티와 읽기 전용
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email?: string; // 선택적
+  readonly createdAt: Date; // 읽기 전용
+  age?: number;
+}
+
+const user: User = {
+  id: 1,
+  name: 'Alice',
+  createdAt: new Date()
+};
+
+// user.createdAt = new Date(); // ❌ 읽기 전용 속성 변경 불가
+user.email = 'alice@example.com'; // ✅ 선택적 속성 추가 가능
+```
+
+### 인덱스 시그니처
+
+동적 프로퍼티를 가진 객체의 타입을 정의합니다.
+
+```typescript
+// 문자열 인덱스
+interface StringMap {
+  [key: string]: string;
+}
+
+const translations: StringMap = {
+  hello: '안녕하세요',
+  goodbye: '안녕히 가세요',
+  thanks: '감사합니다'
+};
+
+// 숫자 인덱스
+interface NumberMap {
+  [index: number]: string;
+}
+
+const items: NumberMap = {
+  0: 'first',
+  1: 'second',
+  2: 'third'
+};
+
+// 혼합 (특정 키 + 인덱스)
+interface Config {
+  port: number; // 필수 속성
+  [key: string]: number | string; // 추가 속성
+}
+
+const config: Config = {
+  port: 3000,
+  host: 'localhost',
+  timeout: 5000
+};
+
+// Record 유틸리티 타입으로 대체 가능
+type ErrorMessages = Record<string, string>;
+const errors: ErrorMessages = {
+  required: '필수 항목입니다',
+  email: '이메일 형식이 올바르지 않습니다'
+};
+```
+
+## 함수 타입
+
+### 함수 선언과 타입
+
+```typescript
+// 기본 함수 타입
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+// 화살표 함수
+const multiply = (a: number, b: number): number => {
+  return a * b;
+};
+
+// 함수 타입 정의
+type MathOperation = (a: number, b: number) => number;
+
+const subtract: MathOperation = (a, b) => a - b;
+const divide: MathOperation = (a, b) => a / b;
+
+// 선택적 매개변수
+function greet(name: string, greeting?: string): string {
+  return `${greeting || 'Hello'}, ${name}!`;
+}
+
+greet('Alice'); // "Hello, Alice!"
+greet('Bob', 'Hi'); // "Hi, Bob!"
+
+// 기본값 매개변수
+function createUser(name: string, age: number = 18): User {
+  return { id: Date.now(), name, age };
+}
+
+// Rest 매개변수
+function sum(...numbers: number[]): number {
+  return numbers.reduce((total, n) => total + n, 0);
+}
+
+sum(1, 2, 3, 4, 5); // 15
+```
+
+### 함수 오버로딩
+
+같은 이름의 함수에 여러 시그니처를 제공합니다.
+
+```typescript
+// 오버로드 시그니처
+function format(value: string): string;
+function format(value: number): string;
+function format(value: Date): string;
+
+// 구현 시그니처
+function format(value: string | number | Date): string {
+  if (typeof value === 'string') {
+    return value.toUpperCase();
+  }
+  if (typeof value === 'number') {
+    return value.toFixed(2);
+  }
+  return value.toISOString();
+}
+
+format('hello'); // "HELLO"
+format(42); // "42.00"
+format(new Date()); // "2024-10-08T..."
+
+// 실무 예시: API 함수
+function fetchData(id: number): Promise<User>;
+function fetchData(ids: number[]): Promise<User[]>;
+
+async function fetchData(input: number | number[]): Promise<User | User[]> {
+  if (Array.isArray(input)) {
+    return Promise.all(input.map(id => fetchUser(id)));
+  }
+  return fetchUser(input);
+}
+```
+
+### void, never, unknown 반환 타입
+
+```typescript
+// void - 반환값 없음
+function log(message: string): void {
+  console.log(message);
+  // return 문이 없거나 return;만 가능
+}
+
+// never - 절대 반환하지 않음
+function throwError(message: string): never {
+  throw new Error(message);
+}
+
+function infiniteLoop(): never {
+  while (true) {
+    // 무한 루프
+  }
+}
+
+// never는 모든 타입의 서브타입 (유니온에서 제거됨)
+type T1 = string | never; // string
+type T2 = number | never; // number
+
+// unknown - 타입 안전한 any
+function parseJSON(json: string): unknown {
+  return JSON.parse(json);
+}
+
+const result = parseJSON('{"name": "Alice"}');
+// result.name; // ❌ 에러! unknown 타입은 바로 사용 불가
+
+// 타입 체크 후 사용
+if (typeof result === 'object' && result !== null && 'name' in result) {
+  console.log((result as { name: string }).name);
+}
+```
+
+## Union과 Intersection 타입
+
+### Union Types (|)
+
+여러 타입 중 하나를 가질 수 있습니다.
+
+```typescript
+// 기본 Union
+type ID = string | number;
+
+let userId: ID = 123;
+userId = 'abc-123';
+
+// 리터럴 타입 Union
+type Status = 'idle' | 'loading' | 'success' | 'error';
+
+function handleStatus(status: Status) {
+  switch (status) {
+    case 'idle':
+      return '대기 중';
+    case 'loading':
+      return '로딩 중...';
+    case 'success':
+      return '완료!';
+    case 'error':
+      return '오류 발생';
+  }
+}
+
+// 객체 Union
+type Circle = {
+  kind: 'circle';
+  radius: number;
+};
+
+type Rectangle = {
+  kind: 'rectangle';
+  width: number;
+  height: number;
+};
+
+type Shape = Circle | Rectangle;
+
+function getArea(shape: Shape): number {
+  switch (shape.kind) {
+    case 'circle':
+      return Math.PI * shape.radius ** 2;
+    case 'rectangle':
+      return shape.width * shape.height;
+  }
+}
+
+// Discriminated Union (태그된 유니온)
+type Success<T> = {
+  type: 'success';
+  data: T;
+};
+
+type Failure = {
+  type: 'error';
+  error: string;
+};
+
+type Result<T> = Success<T> | Failure;
+
+function handleResult<T>(result: Result<T>) {
+  if (result.type === 'success') {
+    console.log(result.data); // T 타입으로 좁혀짐
+  } else {
+    console.error(result.error); // string 타입
+  }
+}
+```
+
+### Intersection Types (&)
+
+여러 타입을 모두 만족해야 합니다.
+
+```typescript
+// 기본 Intersection
+type Person = {
+  name: string;
+  age: number;
+};
+
+type Employee = {
+  employeeId: number;
+  department: string;
+};
+
+type Worker = Person & Employee;
+
+const worker: Worker = {
+  name: 'Alice',
+  age: 30,
+  employeeId: 12345,
+  department: 'Engineering'
+};
+
+// Mixin 패턴
+interface Timestamped {
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+interface Deletable {
+  deletedAt?: Date;
+}
+
+type Post = {
+  id: number;
+  title: string;
+  content: string;
+} & Timestamped & Deletable;
+
+const post: Post = {
+  id: 1,
+  title: 'Hello',
+  content: 'World',
+  createdAt: new Date(),
+  updatedAt: new Date()
+};
+
+// 함수 타입 Intersection
+type Logger = {
+  log: (message: string) => void;
+};
+
+type Formatter = {
+  format: (data: unknown) => string;
+};
+
+type LoggerWithFormatter = Logger & Formatter;
+
+const logger: LoggerWithFormatter = {
+  log: (message) => console.log(message),
+  format: (data) => JSON.stringify(data)
+};
+```
+
+## Type Narrowing (타입 좁히기)
+
+TypeScript가 타입을 더 구체적으로 추론하도록 돕는 기법입니다.
+
+### typeof 타입 가드
+
+```typescript
+function processValue(value: string | number) {
+  if (typeof value === 'string') {
+    // 이 블록 안에서 value는 string 타입
+    return value.toUpperCase();
+  }
+  // 이 블록 안에서 value는 number 타입
+  return value.toFixed(2);
+}
+
+// 실무 예시: 다양한 타입 처리
+function formatInput(input: string | number | boolean): string {
+  if (typeof input === 'string') {
+    return input.trim();
+  }
+  if (typeof input === 'number') {
+    return input.toString();
+  }
+  return input ? 'Yes' : 'No';
+}
+```
+
+### instanceof 타입 가드
+
+```typescript
+class Dog {
+  bark() {
+    console.log('Woof!');
+  }
+}
+
+class Cat {
+  meow() {
+    console.log('Meow!');
+  }
+}
+
+function makeSound(animal: Dog | Cat) {
+  if (animal instanceof Dog) {
+    animal.bark();
+  } else {
+    animal.meow();
+  }
+}
+
+// 에러 처리
+function handleError(error: Error | string) {
+  if (error instanceof Error) {
+    console.error(error.message);
+    console.error(error.stack);
+  } else {
+    console.error(error);
+  }
+}
+
+// 날짜 처리
+function formatDate(date: Date | string): string {
+  if (date instanceof Date) {
+    return date.toISOString();
+  }
+  return new Date(date).toISOString();
+}
+```
+
+### in 연산자 타입 가드
+
+```typescript
+type Fish = {
+  swim: () => void;
+};
+
+type Bird = {
+  fly: () => void;
+};
+
+function move(animal: Fish | Bird) {
+  if ('swim' in animal) {
+    animal.swim();
+  } else {
+    animal.fly();
+  }
+}
+
+// 실무 예시: 옵셔널 체이닝 대신
+interface User {
+  name: string;
+  address?: {
+    city: string;
+    country: string;
+  };
+}
+
+function getUserCity(user: User): string {
+  if ('address' in user && user.address) {
+    return user.address.city;
+  }
+  return 'Unknown';
+}
+```
+
+### 사용자 정의 타입 가드
+
+```typescript
+// 기본 타입 가드
+function isString(value: unknown): value is string {
+  return typeof value === 'string';
+}
+
+function isNumber(value: unknown): value is number {
+  return typeof value === 'number';
+}
+
+// 객체 타입 가드
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+function isUser(obj: unknown): obj is User {
+  return (
+    typeof obj === 'object' &&
+    obj !== null &&
+    'id' in obj &&
+    typeof (obj as User).id === 'number' &&
+    'name' in obj &&
+    typeof (obj as User).name === 'string' &&
+    'email' in obj &&
+    typeof (obj as User).email === 'string'
+  );
+}
+
+// 사용
+const data: unknown = fetchData();
+
+if (isUser(data)) {
+  console.log(data.name); // ✅ User 타입으로 안전하게 사용
+}
+
+// 배열 타입 가드
+function isStringArray(value: unknown): value is string[] {
+  return (
+    Array.isArray(value) &&
+    value.every(item => typeof item === 'string')
+  );
+}
+
+// 제네릭 타입 가드
+function isArrayOf<T>(
+  arr: unknown,
+  check: (item: unknown) => item is T
+): arr is T[] {
+  return Array.isArray(arr) && arr.every(check);
+}
+
+const data: unknown = ['a', 'b', 'c'];
+if (isArrayOf(data, isString)) {
+  data.forEach(str => console.log(str.toUpperCase()));
+}
+```
+
+### Discriminated Union 패턴
+
+```typescript
+// API 응답 타입
+type ApiResponse<T> =
+  | { status: 'loading' }
+  | { status: 'success'; data: T }
+  | { status: 'error'; error: string };
+
+function handleResponse<T>(response: ApiResponse<T>) {
+  switch (response.status) {
+    case 'loading':
+      console.log('Loading...');
+      break;
+    case 'success':
+      console.log(response.data); // T 타입
+      break;
+    case 'error':
+      console.error(response.error); // string 타입
+      break;
+  }
+}
+
+// 실무 예시: 폼 필드 타입
+type TextField = {
+  type: 'text';
+  value: string;
+  placeholder?: string;
+};
+
+type NumberField = {
+  type: 'number';
+  value: number;
+  min?: number;
+  max?: number;
+};
+
+type SelectField = {
+  type: 'select';
+  value: string;
+  options: string[];
+};
+
+type FormField = TextField | NumberField | SelectField;
+
+function renderField(field: FormField) {
+  switch (field.type) {
+    case 'text':
+      return `<input type="text" value="${field.value}" placeholder="${field.placeholder || ''}" />`;
+    case 'number':
+      return `<input type="number" value="${field.value}" min="${field.min}" max="${field.max}" />`;
+    case 'select':
+      return `<select>${field.options.map(opt => `<option>${opt}</option>`).join('')}</select>`;
+  }
+}
+```
+
+## 제네릭 (Generics)
+
+재사용 가능한 타입을 만드는 강력한 도구입니다.
+
+### 기본 제네릭
+
+```typescript
+// 기본 제네릭 함수
+function identity<T>(value: T): T {
+  return value;
+}
+
+const num = identity<number>(42); // number
+const str = identity<string>('hello'); // string
+const auto = identity(true); // boolean (타입 추론)
+
+// 배열 제네릭
+function getFirstElement<T>(arr: T[]): T | undefined {
+  return arr[0];
+}
+
+const first = getFirstElement([1, 2, 3]); // number | undefined
+const firstStr = getFirstElement(['a', 'b']); // string | undefined
+
+// 여러 제네릭 파라미터
+function pair<T, U>(first: T, second: U): [T, U] {
+  return [first, second];
+}
+
+const p1 = pair(1, 'hello'); // [number, string]
+const p2 = pair('id', { name: 'Alice' }); // [string, { name: string }]
+```
+
+### 제네릭 인터페이스와 타입
+
+```typescript
+// 제네릭 인터페이스
+interface Box<T> {
+  value: T;
+}
+
+const numBox: Box<number> = { value: 42 };
+const strBox: Box<string> = { value: 'hello' };
+
+// 제네릭 타입 별칭
+type Result<T, E = Error> = 
+  | { success: true; value: T }
+  | { success: false; error: E };
+
+const success: Result<User> = {
+  success: true,
+  value: { id: 1, name: 'Alice', email: 'alice@example.com' }
+};
+
+const failure: Result<User, string> = {
+  success: false,
+  error: 'User not found'
+};
+
+// 제네릭 클래스
+class Stack<T> {
+  private items: T[] = [];
+
+  push(item: T): void {
+    this.items.push(item);
+  }
+
+  pop(): T | undefined {
+    return this.items.pop();
+  }
+
+  peek(): T | undefined {
+    return this.items[this.items.length - 1];
+  }
+
+  get size(): number {
+    return this.items.length;
+  }
+}
+
+const numberStack = new Stack<number>();
+numberStack.push(1);
+numberStack.push(2);
+console.log(numberStack.pop()); // 2
+```
+
+### 제네릭 제약 조건
+
+```typescript
+// extends로 제약
+interface HasId {
+  id: number;
+}
+
+function findById<T extends HasId>(items: T[], id: number): T | undefined {
+  return items.find(item => item.id === id);
+}
+
+const users = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Bob' }
+];
+
+const user = findById(users, 1); // { id: number; name: string } | undefined
+
+// findById(['a', 'b'], 1); // ❌ 에러! string은 HasId를 만족하지 않음
+
+// keyof 제약
+function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
+  return obj[key];
+}
+
+const user = { id: 1, name: 'Alice', age: 25 };
+const name = getProperty(user, 'name'); // string
+const age = getProperty(user, 'age'); // number
+// getProperty(user, 'invalid'); // ❌ 에러!
+
+// 여러 제약 조건
+interface Lengthwise {
+  length: number;
+}
+
+function logLength<T extends Lengthwise>(item: T): void {
+  console.log(item.length);
+}
+
+logLength('hello'); // ✅ string은 length 속성 있음
+logLength([1, 2, 3]); // ✅ 배열도 length 속성 있음
+logLength({ length: 10, value: 'test' }); // ✅ 명시적으로 length 있음
+// logLength(42); // ❌ number는 length 속성 없음
+```
+
+### 실무 제네릭 패턴
+
+```typescript
+// API 함수
+async function fetchData<T>(url: string): Promise<T> {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json();
+}
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+const user = await fetchData<User>('/api/user/1');
+console.log(user.name);
+
+// 페이지네이션
+interface PaginatedResponse<T> {
+  data: T[];
+  page: number;
+  pageSize: number;
+  total: number;
+  hasMore: boolean;
+}
+
+async function fetchPaginated<T>(
+  url: string,
+  page: number,
+  pageSize: number
+): Promise<PaginatedResponse<T>> {
+  return fetchData<PaginatedResponse<T>>(
+    `${url}?page=${page}&pageSize=${pageSize}`
+  );
+}
+
+// 캐시
+class Cache<K, V> {
+  private store = new Map<K, V>();
+
+  set(key: K, value: V): void {
+    this.store.set(key, value);
+  }
+
+  get(key: K): V | undefined {
+    return this.store.get(key);
+  }
+
+  has(key: K): boolean {
+    return this.store.has(key);
+  }
+
+  delete(key: K): boolean {
+    return this.store.delete(key);
+  }
+}
+
+const userCache = new Cache<number, User>();
+userCache.set(1, { id: 1, name: 'Alice', email: 'alice@example.com' });
+
+// Promise 래퍼
+async function retry<T>(
+  fn: () => Promise<T>,
+  maxAttempts: number = 3,
+  delay: number = 1000
+): Promise<T> {
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      if (attempt === maxAttempts) throw error;
+      await new Promise(resolve => setTimeout(resolve, delay));
+    }
+  }
+  throw new Error('Max attempts reached');
+}
+
+// 사용
+const data = await retry(() => fetchData<User>('/api/user/1'), 3, 2000);
+```
+
+## 유틸리티 타입
+
+TypeScript가 제공하는 내장 유틸리티 타입들입니다.
+
+### Partial<T>
+
+모든 속성을 선택적으로 만듭니다.
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+// 일부 필드만 업데이트
+type UpdateUser = Partial<User>;
+
+const updates: UpdateUser = {
+  name: 'Bob',
+  age: 30
+}; // id와 email은 없어도 OK
+
+// 실무 활용: 업데이트 함수
+function updateUser(id: number, updates: Partial<User>): User {
+  const currentUser = getUserById(id);
+  return { ...currentUser, ...updates };
+}
+
+updateUser(1, { name: 'New Name' });
+updateUser(1, { age: 26, email: 'new@example.com' });
+```
+
+### Required<T>
+
+모든 속성을 필수로 만듭니다.
+
+```typescript
+interface Config {
+  host?: string;
+  port?: number;
+  timeout?: number;
+}
+
+type RequiredConfig = Required<Config>;
+
+const config: RequiredConfig = {
+  host: 'localhost',
+  port: 3000,
+  timeout: 5000
+}; // 모든 필드 필수
+```
+
+### Readonly<T>
+
+모든 속성을 읽기 전용으로 만듭니다.
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+}
+
+type ReadonlyUser = Readonly<User>;
+
+const user: ReadonlyUser = { id: 1, name: 'Alice' };
+// user.name = 'Bob'; // ❌ 읽기 전용 속성 변경 불가
+
+// 실무 활용: 불변 상태
+type ImmutableState<T> = Readonly<T>;
+
+interface AppState {
+  count: number;
+  user: User | null;
+}
+
+const state: ImmutableState<AppState> = {
+  count: 0,
+  user: null
+};
+
+// state.count = 1; // ❌ 에러
+```
+
+### Pick<T, K>
+
+특정 속성만 선택합니다.
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+  address: string;
+}
+
+// 미리보기용 타입
+type UserPreview = Pick<User, 'id' | 'name'>;
+// { id: number; name: string }
+
+// 로그인 응답용 타입
+type LoginResponse = Pick<User, 'id' | 'name' | 'email'>;
+
+const preview: UserPreview = {
+  id: 1,
+  name: 'Alice'
+};
+```
+
+### Omit<T, K>
+
+특정 속성을 제외합니다.
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+}
+
+// 비밀번호 제외한 공개 정보
+type PublicUser = Omit<User, 'password'>;
+// { id: number; name: string; email: string }
+
+// 실무: API 응답에서 민감한 정보 제외
+type UserDTO = Omit<User, 'password'>;
+
+function getUserDTO(user: User): UserDTO {
+  const { password, ...rest } = user;
+  return rest;
+}
+
+// 생성 시 id 제외
+type CreateUserDTO = Omit<User, 'id'>;
+
+async function createUser(data: CreateUserDTO): Promise<User> {
+  const id = generateId();
+  return { id, ...data };
+}
+```
+
+### Record<K, T>
+
+키-값 쌍의 타입을 정의합니다.
+
+```typescript
+// 기본 사용
+type UserMap = Record<number, User>;
+
+const users: UserMap = {
+  1: { id: 1, name: 'Alice', email: 'alice@example.com', age: 25 },
+  2: { id: 2, name: 'Bob', email: 'bob@example.com', age: 30 }
+};
+
+// 문자열 키
+type ErrorMessages = Record<string, string>;
+
+const errors: ErrorMessages = {
+  required: '필수 입력 항목입니다',
+  email: '올바른 이메일 형식이 아닙니다',
+  minLength: '최소 8자 이상 입력해주세요',
+  maxLength: '최대 100자까지 입력 가능합니다'
+};
+
+// 리터럴 유니온 키
+type Status = 'pending' | 'approved' | 'rejected';
+type StatusConfig = Record<Status, { label: string; color: string }>;
+
+const statusConfig: StatusConfig = {
+  pending: { label: '대기중', color: 'yellow' },
+  approved: { label: '승인됨', color: 'green' },
+  rejected: { label: '거부됨', color: 'red' }
+};
+
+// 실무: i18n
+type Translations = Record<string, Record<string, string>>;
+
+const translations: Translations = {
+  en: {
+    greeting: 'Hello',
+    farewell: 'Goodbye'
+  },
+  ko: {
+    greeting: '안녕하세요',
+    farewell: '안녕히 가세요'
+  }
+};
+```
+
+### Extract<T, U>와 Exclude<T, U>
+
+```typescript
+type T1 = 'a' | 'b' | 'c';
+type T2 = 'a' | 'c' | 'd';
+
+// Extract - 교집합
+type Common = Extract<T1, T2>; // 'a' | 'c'
+
+// Exclude - 차집합
+type Unique = Exclude<T1, T2>; // 'b'
+
+// 실무 예시: 특정 타입 필터링
+type Primitive = string | number | boolean | null | undefined;
+type NonNullable<T> = Exclude<T, null | undefined>;
+
+type Value = string | number | null | undefined;
+type SafeValue = NonNullable<Value>; // string | number
+
+// 함수 타입에서 특정 파라미터 제외
+type EventType = 'click' | 'scroll' | 'resize' | 'keydown';
+type MouseEvent = Extract<EventType, 'click' | 'scroll'>; // 'click' | 'scroll'
+type KeyboardEvent = Exclude<EventType, MouseEvent>; // 'resize' | 'keydown'
+```
+
+### ReturnType<T>와 Parameters<T>
+
+```typescript
+// ReturnType - 함수의 반환 타입 추출
+function getUser() {
+  return { id: 1, name: 'Alice', email: 'alice@example.com' };
+}
+
+type User = ReturnType<typeof getUser>;
+// { id: number; name: string; email: string }
+
+// 제네릭 함수
+async function fetchData<T>(url: string): Promise<T> {
+  const response = await fetch(url);
+  return response.json();
+}
+
+type FetchReturn = ReturnType<typeof fetchData<User>>; // Promise<User>
+
+// Parameters - 함수의 파라미터 타입 추출
+function createUser(name: string, age: number, email: string) {
+  return { id: Date.now(), name, age, email };
+}
+
+type CreateUserParams = Parameters<typeof createUser>;
+// [name: string, age: number, email: string]
+
+// 실무: 함수 래퍼
+function withLogging<T extends (...args: any[]) => any>(fn: T) {
+  return (...args: Parameters<T>): ReturnType<T> => {
+    console.log('Calling function with:', args);
+    const result = fn(...args);
+    console.log('Function returned:', result);
+    return result;
+  };
+}
+
+const loggedCreateUser = withLogging(createUser);
+```
+
+## any 완벽 정복
+
+`any`는 TypeScript의 타입 시스템을 완전히 우회하는 escape hatch입니다. 편리하지만 위험하므로, 올바르게 사용하는 방법을 알아야 합니다.
+
+### any가 위험한 이유
+
+```typescript
+// ❌ any는 모든 타입 체크를 무력화
+let data: any = 'hello';
+
+data.toUpperCase(); // OK
+data.toFixed(); // OK... 런타임에서 에러!
+data.nonExistentMethod(); // OK... 런타임에서 에러!
+
+// 컴파일 타임에 잡히지 않는 버그
+function processUser(user: any) {
+  console.log(user.name.toUpperCase()); // user.name이 없으면?
+  console.log(user.age + 1); // age가 문자열이면?
+}
+
+processUser({}); // 런타임 에러!
+processUser({ name: 123 }); // 런타임 에러!
+
+// 타입 추론 망가뜨림
+const result: any = fetchData();
+const value = result.data; // value는 any 타입
+const doubled = value * 2; // doubled도 any 타입
+```
+
+### unknown: 안전한 any
+
+`unknown`은 any와 비슷하지만 타입 체크를 강제합니다.
+
+```typescript
+// ✅ unknown은 안전
+let value: unknown = 'hello';
+
+// 타입 체크 없이는 사용 불가
+// value.toUpperCase(); // ❌ 에러!
+
+// 타입 체크 후 사용 가능
+if (typeof value === 'string') {
+  console.log(value.toUpperCase()); // ✅ OK
+}
+
+// 실무 예시: JSON 파싱
+function safeJsonParse(json: string): unknown {
+  try {
+    return JSON.parse(json);
+  } catch {
+    return null;
+  }
+}
+
+const data = safeJsonParse('{"name": "Alice"}');
+
+// 타입 가드로 안전하게 사용
+if (isUser(data)) {
+  console.log(data.name);
+}
+
+// API 응답
+async function fetchAPI(url: string): Promise<unknown> {
+  const response = await fetch(url);
+  return response.json();
+}
+
+const result = await fetchAPI('/api/user');
+
+if (isUser(result)) {
+  // result는 User 타입
+  console.log(result.email);
+}
+```
+
+### any를 unknown으로 대체하기
+
+```typescript
+// ❌ any 사용
+function processData(data: any) {
+  return data.value * 2;
+}
+
+// ✅ unknown + 타입 가드
+function processData(data: unknown): number {
+  if (
+    typeof data === 'object' &&
+    data !== null &&
+    'value' in data &&
+    typeof (data as { value: unknown }).value === 'number'
+  ) {
+    return (data as { value: number }).value * 2;
+  }
+  throw new Error('Invalid data format');
+}
+
+// 더 나은 방법: 타입 가드 함수
+interface DataWithValue {
+  value: number;
+}
+
+function isDataWithValue(data: unknown): data is DataWithValue {
+  return (
+    typeof data === 'object' &&
+    data !== null &&
+    'value' in data &&
+    typeof (data as DataWithValue).value === 'number'
+  );
+}
+
+function processData(data: unknown): number {
+  if (isDataWithValue(data)) {
+    return data.value * 2;
+  }
+  throw new Error('Invalid data format');
+}
+```
+
+### Type Assertion 최소화
+
+```typescript
+// ❌ 나쁜 예: 검증 없는 단언
+const user = JSON.parse(userString) as User;
+console.log(user.name); // user가 User 타입이 아니면 에러!
+
+// ✅ 좋은 예: 검증 후 사용
+function parseUser(json: string): User | null {
+  try {
+    const data = JSON.parse(json);
+    if (isUser(data)) {
+      return data;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+const user = parseUser(userString);
+if (user) {
+  console.log(user.name); // 안전
+}
+
+// ❌ 나쁜 예: 과도한 단언
+const element = document.getElementById('myId') as HTMLInputElement;
+element.value = 'test'; // element가 input이 아니면?
+
+// ✅ 좋은 예: 타입 체크
+const element = document.getElementById('myId');
+if (element instanceof HTMLInputElement) {
+  element.value = 'test';
+}
+
+// 또는 옵셔널 체이닝
+const value = (element as HTMLInputElement | null)?.value;
+```
+
+### 제네릭으로 대체하기
+
+```typescript
+// ❌ any 사용
+function wrapInArray(value: any): any[] {
+  return [value];
+}
+
+const nums = wrapInArray(42); // any[]
+const first = nums[0]; // any
+
+// ✅ 제네릭 사용
+function wrapInArray<T>(value: T): T[] {
+  return [value];
+}
+
+const nums = wrapInArray(42); // number[]
+const first = nums[0]; // number
+
+// ❌ any 사용
+function identity(value: any): any {
+  return value;
+}
+
+// ✅ 제네릭 사용
+function identity<T>(value: T): T {
+  return value;
+}
+
+// 복잡한 예시
+function mapObject(obj: any, fn: any): any {
+  const result: any = {};
+  for (const key in obj) {
+    result[key] = fn(obj[key]);
+  }
+  return result;
+}
+
+// 제네릭으로 개선
+function mapObject<T extends Record<string, any>, U>(
+  obj: T,
+  fn: (value: T[keyof T]) => U
+): Record<keyof T, U> {
+  const result = {} as Record<keyof T, U>;
+  for (const key in obj) {
+    result[key] = fn(obj[key]);
+  }
+  return result;
+}
+
+const nums = { a: 1, b: 2, c: 3 };
+const doubled = mapObject(nums, x => x * 2); // Record<"a" | "b" | "c", number>
+```
+
+### 점진적 마이그레이션 전략
+
+레거시 코드를 TypeScript로 마이그레이션할 때의 전략입니다.
+
+```typescript
+// Step 1: any로 시작
+function fetchLegacyData(): any {
+  // 기존 JavaScript 코드
+  return { id: 1, name: 'Test' };
+}
+
+let data: any = fetchLegacyData();
+
+// Step 2: 사용 패턴 파악 및 타입 정의
+interface LegacyData {
+  id: number;
+  name: string;
+  // 점진적으로 필드 추가
+}
+
+// Step 3: 타입 가드 작성
+function isLegacyData(data: unknown): data is LegacyData {
+  return (
+    typeof data === 'object' &&
+    data !== null &&
+    'id' in data &&
+    typeof (data as LegacyData).id === 'number' &&
+    'name' in data &&
+    typeof (data as LegacyData).name === 'string'
+  );
+}
+
+// Step 4: 점진적으로 타입 적용
+function fetchLegacyData(): unknown {
+  return { id: 1, name: 'Test' };
+}
+
+const data = fetchLegacyData();
+if (isLegacyData(data)) {
+  console.log(data.name); // 타입 안전
+}
+
+// Step 5: 완전한 타입 시스템으로 전환
+function fetchLegacyData(): LegacyData {
+  const data = { id: 1, name: 'Test' };
+  // 내부적으로 검증 로직 추가
+  if (!isLegacyData(data)) {
+    throw new Error('Invalid data format');
+  }
+  return data;
+}
+```
+
+### any가 허용되는 경우
+
+완전히 피할 수 없는 경우도 있습니다.
+
+```typescript
+// 1. 외부 라이브러리 타입이 없을 때 (임시)
+declare module 'some-untyped-library' {
+  export function doSomething(param: any): any;
+}
+
+// 더 나은 방법: @types 패키지 만들거나 기여
+
+// 2. 정말 동적인 데이터 (주석으로 명시)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function logAnything(data: any): void {
+  console.log(JSON.stringify(data, null, 2));
+}
+
+// 3. 테스트 모킹
+const mockFn = jest.fn() as any;
+
+// 4. 타입이 너무 복잡해서 현실적으로 정의 불가능한 경우
+// 단, 주석으로 이유를 명확히 작성
+// TODO: 더 나은 타입 정의 필요
+const complexData: any = getVeryComplexNestedData();
+```
+
+## 실무 타입 패턴
+
+### API 타입 정의
+
+```typescript
+// 공통 응답 구조
+interface ApiResponse<T> {
+  success: boolean;
+  data?: T;
+  error?: ApiError;
+  message?: string;
+}
+
+interface ApiError {
+  code: string;
+  message: string;
+  details?: unknown;
+}
+
+// 페이지네이션
+interface PaginatedResponse<T> {
+  items: T[];
+  total: number;
+  page: number;
+  pageSize: number;
+  hasNext: boolean;
+  hasPrevious: boolean;
+}
+
+// CRUD DTO
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  role: 'user' | 'admin';
+  createdAt: string;
+  updatedAt: string;
+}
+
+type CreateUserDTO = Omit<User, 'id' | 'createdAt' | 'updatedAt'>;
+type UpdateUserDTO = Partial<CreateUserDTO>;
+type UserListItem = Pick<User, 'id' | 'name' | 'email' | 'role'>;
+
+// API 함수
+async function getUsers(
+  page: number = 1,
+  pageSize: number = 20
+): Promise<PaginatedResponse<UserListItem>> {
+  const response = await fetch(
+    `/api/users?page=${page}&pageSize=${pageSize}`
+  );
+  return response.json();
+}
+
+async function getUser(id: number): Promise<User> {
+  const response = await fetch(`/api/users/${id}`);
+  const result: ApiResponse<User> = await response.json();
+  if (!result.success || !result.data) {
+    throw new Error(result.error?.message || 'Failed to fetch user');
+  }
+  return result.data;
+}
+
+async function createUser(data: CreateUserDTO): Promise<User> {
+  const response = await fetch('/api/users', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  const result: ApiResponse<User> = await response.json();
+  if (!result.success || !result.data) {
+    throw new Error(result.error?.message || 'Failed to create user');
+  }
+  return result.data;
+}
+
+async function updateUser(
+  id: number,
+  data: UpdateUserDTO
+): Promise<User> {
+  const response = await fetch(`/api/users/${id}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  });
+  const result: ApiResponse<User> = await response.json();
+  if (!result.success || !result.data) {
+    throw new Error(result.error?.message || 'Failed to update user');
+  }
+  return result.data;
+}
+
+async function deleteUser(id: number): Promise<void> {
+  const response = await fetch(`/api/users/${id}`, {
+    method: 'DELETE'
+  });
+  const result: ApiResponse<void> = await response.json();
+  if (!result.success) {
+    throw new Error(result.error?.message || 'Failed to delete user');
+  }
+}
+```
+
+### React 컴포넌트 타입
+
+```typescript
+// Props 타입
+interface ButtonProps {
+  children: React.ReactNode;
+  onClick: () => void;
+  variant?: 'primary' | 'secondary' | 'danger';
+  size?: 'small' | 'medium' | 'large';
+  disabled?: boolean;
+  loading?: boolean;
+}
+
+function Button({
+  children,
+  onClick,
+  variant = 'primary',
+  size = 'medium',
+  disabled = false,
+  loading = false
+}: ButtonProps) {
+  return (
+    <button
+      onClick={onClick}
+      disabled={disabled || loading}
+      className={`btn btn-${variant} btn-${size}`}
+    >
+      {loading ? 'Loading...' : children}
+    </button>
+  );
+}
+
+// 제네릭 컴포넌트
+interface ListProps<T> {
+  items: T[];
+  renderItem: (item: T, index: number) => React.ReactNode;
+  keyExtractor: (item: T) => string | number;
+  emptyMessage?: string;
+}
+
+function List<T>({
+  items,
+  renderItem,
+  keyExtractor,
+  emptyMessage = 'No items'
+}: ListProps<T>) {
+  if (items.length === 0) {
+    return <div>{emptyMessage}</div>;
+  }
+
+  return (
+    <ul>
+      {items.map((item, index) => (
+        <li key={keyExtractor(item)}>
+          {renderItem(item, index)}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+// 사용
+<List
+  items={users}
+  renderItem={(user) => <div>{user.name}</div>}
+  keyExtractor={(user) => user.id}
+/>
+
+// 폼 관련 타입
+interface FormValues {
+  name: string;
+  email: string;
+  age: number;
+}
+
+interface FormErrors {
+  [K in keyof FormValues]?: string;
+}
+
+interface FormProps {
+  initialValues: FormValues;
+  onSubmit: (values: FormValues) => void | Promise<void>;
+  validate?: (values: FormValues) => FormErrors;
+}
+
+// 이벤트 핸들러 타입
+interface InputProps {
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void;
+  onFocus?: (e: React.FocusEvent<HTMLInputElement>) => void;
+}
+
+interface SelectProps {
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  options: Array<{ value: string; label: string }>;
+}
+
+// Context 타입
+interface AuthContextType {
+  user: User | null;
+  isAuthenticated: boolean;
+  login: (email: string, password: string) => Promise<void>;
+  logout: () => void;
+  isLoading: boolean;
+}
+
+const AuthContext = React.createContext<AuthContextType | undefined>(
+  undefined
+);
+
+function useAuth() {
+  const context = React.useContext(AuthContext);
+  if (context === undefined) {
+    throw new Error('useAuth must be used within AuthProvider');
+  }
+  return context;
+}
+```
+
+### 상태 관리 타입 (Redux/Zustand)
+
+```typescript
+// Redux
+interface AppState {
+  user: User | null;
+  isLoading: boolean;
+  error: string | null;
+  posts: Post[];
+  comments: Record<number, Comment[]>;
+}
+
+// Action Types
+type Action =
+  | { type: 'USER_LOGIN'; payload: User }
+  | { type: 'USER_LOGOUT' }
+  | { type: 'SET_LOADING'; payload: boolean }
+  | { type: 'SET_ERROR'; payload: string }
+  | { type: 'ADD_POST'; payload: Post }
+  | { type: 'UPDATE_POST'; payload: { id: number; updates: Partial<Post> } }
+  | { type: 'DELETE_POST'; payload: number }
+  | { type: 'ADD_COMMENT'; payload: { postId: number; comment: Comment } };
+
+// Reducer
+function reducer(state: AppState, action: Action): AppState {
+  switch (action.type) {
+    case 'USER_LOGIN':
+      return { ...state, user: action.payload, error: null };
+
+    case 'USER_LOGOUT':
+      return { ...state, user: null };
+
+    case 'SET_LOADING':
+      return { ...state, isLoading: action.payload };
+
+    case 'SET_ERROR':
+      return { ...state, error: action.payload };
+
+    case 'ADD_POST':
+      return { ...state, posts: [...state.posts, action.payload] };
+
+    case 'UPDATE_POST':
+      return {
+        ...state,
+        posts: state.posts.map(post =>
+          post.id === action.payload.id
+            ? { ...post, ...action.payload.updates }
+            : post
+        )
+      };
+
+    case 'DELETE_POST':
+      return {
+        ...state,
+        posts: state.posts.filter(post => post.id !== action.payload)
+      };
+
+    case 'ADD_COMMENT':
+      const { postId, comment } = action.payload;
+      return {
+        ...state,
+        comments: {
+          ...state.comments,
+          [postId]: [...(state.comments[postId] || []), comment]
+        }
+      };
+
+    default:
+      return state;
+  }
+}
+
+// Zustand
+interface StoreState {
+  count: number;
+  user: User | null;
+  increment: () => void;
+  decrement: () => void;
+  setUser: (user: User | null) => void;
+  reset: () => void;
+}
+
+const useStore = create<StoreState>((set) => ({
+  count: 0,
+  user: null,
+  increment: () => set((state) => ({ count: state.count + 1 })),
+  decrement: () => set((state) => ({ count: state.count - 1 })),
+  setUser: (user) => set({ user }),
+  reset: () => set({ count: 0, user: null })
+}));
+```
+
+## 고급 타입 패턴
+
+### Mapped Types
+
+```typescript
+// 모든 속성을 선택적으로
+type Optional<T> = {
+  [P in keyof T]?: T[P];
+};
+
+// 모든 속성을 nullable로
+type Nullable<T> = {
+  [P in keyof T]: T[P] | null;
+};
+
+// 특정 키만 선택적으로
+type PartialBy<T, K extends keyof T> = Omit<T, K> & Partial<Pick<T, K>>;
+
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
+
+// name과 email만 선택적
+type UserWithOptionalContact = PartialBy<User, 'name' | 'email'>;
+
+// 함수 타입을 Promise로 변환
+type Promisify<T> = {
+  [P in keyof T]: T[P] extends (...args: infer A) => infer R
+    ? (...args: A) => Promise<R>
+    : T[P];
+};
+
+interface API {
+  getUser: (id: number) => User;
+  deleteUser: (id: number) => void;
+}
+
+type AsyncAPI = Promisify<API>;
+// {
+//   getUser: (id: number) => Promise<User>;
+//   deleteUser: (id: number) => Promise<void>;
+// }
+```
+
+### Conditional Types
+
+```typescript
+// 기본 조건부 타입
+type IsString<T> = T extends string ? true : false;
+
+type A = IsString<string>; // true
+type B = IsString<number>; // false
+
+// 실용적 예시
+type NonNullable<T> = T extends null | undefined ? never : T;
+
+type T1 = NonNullable<string | null>; // string
+type T2 = NonNullable<number | undefined>; // number
+
+// 중첩 조건부 타입
+type TypeName<T> = 
+  T extends string ? 'string' :
+  T extends number ? 'number' :
+  T extends boolean ? 'boolean' :
+  T extends undefined ? 'undefined' :
+  T extends Function ? 'function' :
+  'object';
+
+type T3 = TypeName<string>; // 'string'
+type T4 = TypeName<() => void>; // 'function'
+
+// Flatten 타입 (배열을 펼침)
+type Flatten<T> = T extends Array<infer U> ? U : T;
+
+type T5 = Flatten<string[]>; // string
+type T6 = Flatten<number>; // number
+```
+
+### Template Literal Types
+
+```typescript
+// 기본 사용
+type World = 'world';
+type Greeting = `hello ${World}`; // 'hello world'
+
+// 이벤트 핸들러 타입
+type EventName = 'click' | 'scroll' | 'mousemove';
+type Handler = `on${Capitalize<EventName>}`;
+// 'onClick' | 'onScroll' | 'onMousemove'
+
+// CSS 속성
+type CSSProperty = 'color' | 'font-size' | 'background';
+type CSSVariable = `--${CSSProperty}`;
+// '--color' | '--font-size' | '--background'
+
+// CRUD 액션
+type Entity = 'user' | 'post' | 'comment';
+type Action = 'create' | 'read' | 'update' | 'delete';
+type Permission = `${Action}_${Entity}`;
+// 'create_user' | 'create_post' | ... | 'delete_comment'
+
+// API 엔드포인트
+type Method = 'GET' | 'POST' | 'PUT' | 'DELETE';
+type Endpoint = '/users' | '/posts';
+type Route = `${Method} ${Endpoint}`;
+// 'GET /users' | 'POST /users' | ...
+```
+
+## 마치며
+
+TypeScript의 타입 시스템은 강력하지만, 올바르게 사용하는 것이 중요합니다.
+
+**핵심 원칙:**
+1. **any 최소화**: unknown, 제네릭, 유틸리티 타입으로 대체
+2. **타입 좁히기**: typeof, in, instanceof, 사용자 정의 타입 가드 활용
+3. **재사용성**: 제네릭과 유틸리티 타입으로 DRY 원칙 지키기
+4. **점진적 적용**: 레거시 코드는 단계적으로 마이그레이션
+5. **명확한 의도**: 타입이 복잡할 땐 주석으로 설명
+
+처음에는 타입 정의가 번거롭게 느껴질 수 있지만, 한번 제대로 정의해두면:
+- 자동완성으로 개발 속도 향상
+- 리팩토링이 안전하고 쉬워짐
+- 런타임 에러가 컴파일 타임에 잡힘
+- 코드가 문서화되어 협업이 쉬워짐
+
+**any는 정말 어쩔 수 없을 때만 사용하고, 그것도 최소한으로만!** 대부분의 경우 unknown, 제네릭, 유틸리티 타입으로 충분히 해결할 수 있습니다.
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"TypeScript 실무 타입 정리 + any 지양하기"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 10월 8일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","프론트엔드",{"href":"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"프론트엔드"}],["$","$L3","TypeScript",{"href":"/tags/TypeScript","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"TypeScript"}],["$","$L3","타입",{"href":"/tags/%ED%83%80%EC%9E%85","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"타입"}],["$","$L3","타입안전성",{"href":"/tags/%ED%83%80%EC%9E%85%EC%95%88%EC%A0%84%EC%84%B1","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"타입안전성"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/frontend/react-hooks-part1","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"React Hooks 모음 1"}]]}],["$","$L3",null,{"href":"/posts/claude/claude-code-part-2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"Claude Code 시작하기2"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"TypeScript 실무 타입 정리 + any 지양하기 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"실무에서 자주 사용하는 TypeScript 타입 패턴과 any를 올바르게 다루는 방법 정리."}],["$","meta","2",{"property":"og:title","content":"TypeScript 실무 타입 정리 + any 지양하기"}],["$","meta","3",{"property":"og:description","content":"실무에서 자주 사용하는 TypeScript 타입 패턴과 any를 올바르게 다루는 방법 정리."}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-10-08"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"TypeScript 실무 타입 정리 + any 지양하기"}],["$","meta","8",{"name":"twitter:description","content":"실무에서 자주 사용하는 TypeScript 타입 패턴과 any를 올바르게 다루는 방법 정리."}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

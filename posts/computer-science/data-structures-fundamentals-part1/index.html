@@ -1,0 +1,746 @@
+<!DOCTYPE html><!--nrRloE8nMkMSs56tAB1BQ--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/dfd93458d4eb6967.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-491ef1393c1a736d.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-afbc61cff1e5478f.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>자료구조 완벽 가이드 Part 1: 선형 자료구조 | DevONew Blog</title><meta name="description" content="자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등"/><meta property="og:title" content="자료구조 완벽 가이드 Part 1: 선형 자료구조"/><meta property="og:description" content="자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-09-14"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="자료구조 완벽 가이드 Part 1: 선형 자료구조"/><meta name="twitter:description" content="자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">자료구조 완벽 가이드 Part 1: 선형 자료구조</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 9월 14일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Computer%20Science/">Computer Science</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/">자료구조</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><p>자료구조는 데이터를 효율적으로 저장하고 관리하기 위한 방법론입니다. 올바른 자료구조를 선택하는 것은 알고리즘의 성능을 결정하는 핵심 요소입니다.</p>
+<p>이 글에서는 <strong>선형 자료구조</strong>들을 다룹니다. Part 2에서는 트리, 힙, 그래프와 같은 비선형 자료구조를 다룰 예정입니다.</p>
+<h2 id="배열-array"><a aria-hidden="true" tabindex="-1" href="#배열-array"><span class="icon icon-link"></span></a>배열 (Array)</h2>
+<p>배열은 가장 기본적이면서도 강력한 자료구조입니다. 연속된 메모리 공간에 동일한 타입의 데이터를 저장합니다.</p>
+<h3 id="메모리-구조"><a aria-hidden="true" tabindex="-1" href="#메모리-구조"><span class="icon icon-link"></span></a>메모리 구조</h3>
+<p>배열의 가장 큰 특징은 <strong>연속된 메모리 할당</strong>입니다. 각 요소가 메모리상에서 바로 옆에 위치하기 때문에, 시작 주소와 인덱스만 알면 O(1) 시간에 어떤 요소든 접근할 수 있습니다.</p>
+<pre><code>인덱스:  [0]  [1]  [2]  [3]  [4]
+값:      10   20   30   40   50
+메모리:  100  104  108  10C  110  (16진수 주소)
+         ↑
+      시작 주소
+
+접근 공식: 주소 = 시작주소 + (인덱스 × 요소크기)
+예: arr[2] = 0x100 + (2 × 4) = 0x108
+</code></pre>
+<h3 id="정적-배열-vs-동적-배열"><a aria-hidden="true" tabindex="-1" href="#정적-배열-vs-동적-배열"><span class="icon icon-link"></span></a>정적 배열 vs 동적 배열</h3>
+<p><strong>정적 배열 (Static Array)</strong>:</p>
+<ul>
+<li>크기가 컴파일 타임에 고정됨</li>
+<li>스택 메모리에 할당 (빠름)</li>
+<li>크기 변경 불가능</li>
+</ul>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// C/Java 스타일 (개념적 예시)</span>
+int arr[<span class="hljs-number">5</span>]; <span class="hljs-comment">// 크기 5로 고정</span>
+</code></pre>
+<p><strong>동적 배열 (Dynamic Array)</strong>:</p>
+<ul>
+<li>크기가 런타임에 변경 가능</li>
+<li>힙 메모리에 할당</li>
+<li>내부적으로 크기 부족 시 재할당 (일반적으로 2배 확장)</li>
+<li>JavaScript의 Array, Java의 ArrayList, C++의 vector</li>
+</ul>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// JavaScript의 동적 배열</span>
+<span class="hljs-keyword">const</span> arr = [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>];
+arr.<span class="hljs-title function_">push</span>(<span class="hljs-number">40</span>); <span class="hljs-comment">// 자동으로 크기 확장</span>
+</code></pre>
+<p><strong>동적 배열의 확장 과정</strong>:</p>
+<pre><code>초기 (용량: 4, 사용: 3)
+[10][20][30][ ]
+
+push(40) - 용량 충분, O(1)
+[10][20][30][40]
+
+push(50) - 용량 부족!
+1. 새 배열 생성 (용량 8)
+2. 기존 요소 복사 - O(n)
+3. 50 추가
+[10][20][30][40][50][ ][ ][ ]
+</code></pre>
+<h3 id="캐시-지역성-cache-locality"><a aria-hidden="true" tabindex="-1" href="#캐시-지역성-cache-locality"><span class="icon icon-link"></span></a>캐시 지역성 (Cache Locality)</h3>
+<p>배열의 연속된 메모리 구조는 CPU 캐시를 효율적으로 활용합니다:</p>
+<ol>
+<li><strong>공간 지역성 (Spatial Locality)</strong>: 한 요소에 접근하면 인접 요소들도 캐시에 로드됨</li>
+<li><strong>시간 지역성 (Temporal Locality)</strong>: 최근 접근한 데이터는 다시 접근할 가능성이 높음</li>
+</ol>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 캐시 친화적 - 순차 접근</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.<span class="hljs-property">length</span>; i++) {
+  sum += arr[i]; <span class="hljs-comment">// 다음 요소가 이미 캐시에 있을 가능성 높음</span>
+}
+
+<span class="hljs-comment">// 캐시 비친화적 - 랜덤 접근</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; arr.<span class="hljs-property">length</span>; i++) {
+  sum += arr[<span class="hljs-title function_">randomIndex</span>()]; <span class="hljs-comment">// 매번 메모리 접근 필요</span>
+}
+</code></pre>
+<h3 id="시간-복잡도"><a aria-hidden="true" tabindex="-1" href="#시간-복잡도"><span class="icon icon-link"></span></a>시간 복잡도</h3>
+<table><thead><tr><th>연산</th><th>시간 복잡도</th></tr></thead><tbody><tr><td>접근 (Access)</td><td>O(1)</td></tr><tr><td>검색 (Search)</td><td>O(n)</td></tr><tr><td>삽입 (Insert)</td><td>O(n)</td></tr><tr><td>삭제 (Delete)</td><td>O(n)</td></tr></tbody></table>
+<h3 id="장단점"><a aria-hidden="true" tabindex="-1" href="#장단점"><span class="icon icon-link"></span></a>장단점</h3>
+<p><strong>장점:</strong></p>
+<ul>
+<li>빠른 인덱스 접근</li>
+<li>캐시 지역성(Cache Locality)이 좋아 메모리 접근 효율적</li>
+<li>구현이 간단하고 직관적</li>
+</ul>
+<p><strong>단점:</strong></p>
+<ul>
+<li>크기 변경이 어려움 (정적 배열의 경우)</li>
+<li>중간 요소 삽입/삭제 시 O(n) 시간 소요</li>
+<li>메모리 낭비 가능성 (사용하지 않는 공간)</li>
+</ul>
+<h3 id="사용-사례"><a aria-hidden="true" tabindex="-1" href="#사용-사례"><span class="icon icon-link"></span></a>사용 사례</h3>
+<ul>
+<li>순차적 데이터 저장</li>
+<li>빠른 인덱스 접근이 필요한 경우</li>
+<li>크기가 고정되어 있거나 예측 가능한 경우</li>
+</ul>
+<h3 id="코드-예시"><a aria-hidden="true" tabindex="-1" href="#코드-예시"><span class="icon icon-link"></span></a>코드 예시</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 배열의 기본 연산</span>
+<span class="hljs-keyword">const</span> numbers = [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>, <span class="hljs-number">50</span>];
+
+<span class="hljs-comment">// O(1) - 인덱스 접근</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(numbers[<span class="hljs-number">2</span>]); <span class="hljs-comment">// 30</span>
+
+<span class="hljs-comment">// O(n) - 선형 검색</span>
+<span class="hljs-keyword">const</span> index = numbers.<span class="hljs-title function_">indexOf</span>(<span class="hljs-number">30</span>); <span class="hljs-comment">// 2</span>
+
+<span class="hljs-comment">// O(n) - 중간 삽입 (요소 이동 필요)</span>
+numbers.<span class="hljs-title function_">splice</span>(<span class="hljs-number">2</span>, <span class="hljs-number">0</span>, <span class="hljs-number">25</span>); <span class="hljs-comment">// [10, 20, 25, 30, 40, 50]</span>
+
+<span class="hljs-comment">// O(n) - 중간 삭제 (요소 이동 필요)</span>
+numbers.<span class="hljs-title function_">splice</span>(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>); <span class="hljs-comment">// [10, 20, 30, 40, 50]</span>
+
+<span class="hljs-comment">// O(1) - 끝에 추가 (동적 배열, 재할당 제외)</span>
+numbers.<span class="hljs-title function_">push</span>(<span class="hljs-number">60</span>); <span class="hljs-comment">// [10, 20, 30, 40, 50, 60]</span>
+</code></pre>
+<hr/>
+<h2 id="연결-리스트-linked-list"><a aria-hidden="true" tabindex="-1" href="#연결-리스트-linked-list"><span class="icon icon-link"></span></a>연결 리스트 (Linked List)</h2>
+<p>연결 리스트는 노드들이 포인터로 연결된 선형 자료구조입니다. 각 노드는 데이터와 다음 노드를 가리키는 포인터로 구성됩니다.</p>
+<h3 id="노드-구조"><a aria-hidden="true" tabindex="-1" href="#노드-구조"><span class="icon icon-link"></span></a>노드 구조</h3>
+<p>연결 리스트의 기본 단위는 **노드(Node)**입니다. 배열과 달리 메모리상에서 불연속적으로 배치되며, 포인터를 통해 연결됩니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 단일 연결 리스트 노드</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Node</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">data</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span> = data;      <span class="hljs-comment">// 실제 데이터</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">next</span> = <span class="hljs-literal">null</span>;      <span class="hljs-comment">// 다음 노드 참조</span>
+  }
+}
+
+<span class="hljs-comment">// 이중 연결 리스트 노드</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">DoublyNode</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">data</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">data</span> = data;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">prev</span> = <span class="hljs-literal">null</span>;      <span class="hljs-comment">// 이전 노드 참조</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">next</span> = <span class="hljs-literal">null</span>;      <span class="hljs-comment">// 다음 노드 참조</span>
+  }
+}
+</code></pre>
+<h3 id="종류와-시각화"><a aria-hidden="true" tabindex="-1" href="#종류와-시각화"><span class="icon icon-link"></span></a>종류와 시각화</h3>
+<p><strong>1. 단일 연결 리스트 (Singly Linked List)</strong></p>
+<p>각 노드가 다음 노드만 가리키며, 한 방향으로만 순회 가능합니다.</p>
+<pre><code>Head
+ ↓
+[10|●]→[20|●]→[30|●]→[40|null]
+ data next
+
+메모리 구조 (비연속적):
+주소: 0x200  0x150  0x300  0x100
+값:   [10]   [20]   [30]   [40]
+      ↓      ↓      ↓
+다음: 0x150  0x300  0x100  null
+</code></pre>
+<p><strong>2. 이중 연결 리스트 (Doubly Linked List)</strong></p>
+<p>각 노드가 이전과 다음 노드를 모두 가리키며, 양방향 순회가 가능합니다.</p>
+<pre><code>       Head
+        ↓
+null←[●|10|●]↔[●|20|●]↔[●|30|●]→null
+     prev data next
+
+장점: 양방향 탐색, 노드 삭제가 용이
+단점: 메모리 사용량 증가 (포인터 2개)
+</code></pre>
+<p><strong>3. 원형 연결 리스트 (Circular Linked List)</strong></p>
+<p>마지막 노드가 첫 번째 노드를 가리켜 순환 구조를 형성합니다.</p>
+<pre><code>    Head
+     ↓
+    [10]→[20]→[30]→[40]
+     ↑              ↓
+     └──────────────┘
+
+사용 예: 라운드 로빈 스케줄링, 순환 버퍼
+</code></pre>
+<h3 id="배열-vs-연결-리스트-비교"><a aria-hidden="true" tabindex="-1" href="#배열-vs-연결-리스트-비교"><span class="icon icon-link"></span></a>배열 vs 연결 리스트 비교</h3>
+<pre><code>배열:
+메모리: [10][20][30][40] (연속)
+접근: O(1), 삽입/삭제: O(n)
+크기: 고정 또는 재할당 필요
+
+연결 리스트:
+메모리: [10]→[20]→[30]→[40] (비연속)
+접근: O(n), 삽입/삭제: O(1) (위치를 알 때)
+크기: 동적 확장 용이
+</code></pre>
+<h3 id="시간-복잡도-1"><a aria-hidden="true" tabindex="-1" href="#시간-복잡도-1"><span class="icon icon-link"></span></a>시간 복잡도</h3>
+<table><thead><tr><th>연산</th><th>시간 복잡도</th></tr></thead><tbody><tr><td>접근 (Access)</td><td>O(n)</td></tr><tr><td>검색 (Search)</td><td>O(n)</td></tr><tr><td>삽입 (Insert)</td><td>O(1)*</td></tr><tr><td>삭제 (Delete)</td><td>O(1)*</td></tr></tbody></table>
+<p>*위치를 알고 있을 때의 시간 복잡도</p>
+<h3 id="장단점-1"><a aria-hidden="true" tabindex="-1" href="#장단점-1"><span class="icon icon-link"></span></a>장단점</h3>
+<p><strong>장점:</strong></p>
+<ul>
+<li>동적 크기 조정 용이</li>
+<li>삽입/삭제가 효율적 (O(1), 위치를 알고 있을 때)</li>
+<li>메모리 효율적 사용 (필요한 만큼만 할당)</li>
+</ul>
+<p><strong>단점:</strong></p>
+<ul>
+<li>인덱스 접근 불가능 (O(n) 시간 소요)</li>
+<li>추가 메모리 필요 (포인터 저장)</li>
+<li>캐시 지역성이 낮음</li>
+</ul>
+<h3 id="사용-사례-1"><a aria-hidden="true" tabindex="-1" href="#사용-사례-1"><span class="icon icon-link"></span></a>사용 사례</h3>
+<ul>
+<li>동적 메모리 할당이 필요한 경우</li>
+<li>빈번한 삽입/삭제가 발생하는 경우</li>
+<li>크기를 예측할 수 없는 데이터</li>
+<li>스택, 큐의 구현</li>
+</ul>
+<h3 id="코드-예시-1"><a aria-hidden="true" tabindex="-1" href="#코드-예시-1"><span class="icon icon-link"></span></a>코드 예시</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">LinkedList</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span> = <span class="hljs-literal">null</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span> = <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-comment">// O(1) - 맨 앞에 삽입</span>
+  <span class="hljs-title function_">prepend</span>(<span class="hljs-params">data</span>) {
+    <span class="hljs-keyword">const</span> newNode = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>(data);
+    newNode.<span class="hljs-property">next</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span> = newNode;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span>++;
+  }
+
+  <span class="hljs-comment">// O(n) - 맨 끝에 삽입 (tail 포인터 없이)</span>
+  <span class="hljs-title function_">append</span>(<span class="hljs-params">data</span>) {
+    <span class="hljs-keyword">const</span> newNode = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>(data);
+    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span> = newNode;
+      <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-keyword">let</span> current = <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>;
+    <span class="hljs-keyword">while</span> (current.<span class="hljs-property">next</span>) {
+      current = current.<span class="hljs-property">next</span>;
+    }
+    current.<span class="hljs-property">next</span> = newNode;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span>++;
+  }
+
+  <span class="hljs-comment">// O(1) - 특정 노드 다음에 삽입 (노드를 알 때)</span>
+  <span class="hljs-title function_">insertAfter</span>(<span class="hljs-params">node, data</span>) {
+    <span class="hljs-keyword">const</span> newNode = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>(data);
+    newNode.<span class="hljs-property">next</span> = node.<span class="hljs-property">next</span>;
+    node.<span class="hljs-property">next</span> = newNode;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span>++;
+  }
+
+  <span class="hljs-comment">// O(1) - 맨 앞 삭제</span>
+  <span class="hljs-title function_">removeFirst</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">const</span> removed = <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">head</span>.<span class="hljs-property">next</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span>--;
+    <span class="hljs-keyword">return</span> removed.<span class="hljs-property">data</span>;
+  }
+}
+
+<span class="hljs-comment">// 사용 예시</span>
+<span class="hljs-keyword">const</span> list = <span class="hljs-keyword">new</span> <span class="hljs-title class_">LinkedList</span>();
+list.<span class="hljs-title function_">prepend</span>(<span class="hljs-number">10</span>);  <span class="hljs-comment">// [10]</span>
+list.<span class="hljs-title function_">append</span>(<span class="hljs-number">20</span>);   <span class="hljs-comment">// [10]→[20]</span>
+list.<span class="hljs-title function_">prepend</span>(<span class="hljs-number">5</span>);   <span class="hljs-comment">// [5]→[10]→[20]</span>
+</code></pre>
+<p><strong>실제 활용 예시</strong>:</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 브라우저 히스토리 (이중 연결 리스트)</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">BrowserHistory</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span> = <span class="hljs-literal">null</span>;
+  }
+
+  <span class="hljs-title function_">visit</span>(<span class="hljs-params">url</span>) {
+    <span class="hljs-keyword">const</span> page = <span class="hljs-keyword">new</span> <span class="hljs-title class_">DoublyNode</span>(url);
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>.<span class="hljs-property">next</span> = page;
+      page.<span class="hljs-property">prev</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>;
+    }
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span> = page;
+  }
+
+  <span class="hljs-title function_">back</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>?.<span class="hljs-property">prev</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>.<span class="hljs-property">prev</span>;
+      <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>.<span class="hljs-property">data</span>;
+    }
+  }
+
+  <span class="hljs-title function_">forward</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>?.<span class="hljs-property">next</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>.<span class="hljs-property">next</span>;
+      <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">current</span>.<span class="hljs-property">data</span>;
+    }
+  }
+}
+</code></pre>
+<hr/>
+<h2 id="스택-stack"><a aria-hidden="true" tabindex="-1" href="#스택-stack"><span class="icon icon-link"></span></a>스택 (Stack)</h2>
+<p>스택은 LIFO(Last In First Out) 원칙을 따르는 선형 자료구조입니다. 마지막에 추가된 요소가 가장 먼저 제거됩니다.</p>
+<h3 id="lifo-동작-원리"><a aria-hidden="true" tabindex="-1" href="#lifo-동작-원리"><span class="icon icon-link"></span></a>LIFO 동작 원리</h3>
+<p>스택은 접시를 쌓는 것과 같습니다. 가장 마지막에 놓은 접시를 가장 먼저 꺼내게 됩니다.</p>
+<pre><code>초기 상태:        push(1)         push(3)         push(7)
+                ┌───┐           ┌───┐           ┌───┐
+                │ 1 │           │ 3 │           │ 7 │  ← top
+                └───┘           ├───┤           ├───┤
+                                │ 1 │           │ 3 │
+                                └───┘           ├───┤
+                                                │ 1 │
+                                                └───┘
+
+pop() → 7       pop() → 3       pop() → 1
+                ┌───┐
+                │ 3 │  ← top
+                ├───┤           ┌───┐
+                │ 1 │           │ 1 │  ← top
+                └───┘           └───┘           Empty
+</code></pre>
+<h3 id="주요-연산"><a aria-hidden="true" tabindex="-1" href="#주요-연산"><span class="icon icon-link"></span></a>주요 연산</h3>
+<ul>
+<li><strong>push(item)</strong>: 스택의 맨 위에 요소 추가 (O(1))</li>
+<li><strong>pop()</strong>: 스택의 맨 위 요소 제거 및 반환 (O(1))</li>
+<li><strong>peek/top()</strong>: 스택의 맨 위 요소 확인 (제거하지 않음) (O(1))</li>
+<li><strong>isEmpty()</strong>: 스택이 비어있는지 확인 (O(1))</li>
+</ul>
+<h3 id="함수-호출-스택-call-stack"><a aria-hidden="true" tabindex="-1" href="#함수-호출-스택-call-stack"><span class="icon icon-link"></span></a>함수 호출 스택 (Call Stack)</h3>
+<p>프로그램 실행 시 함수 호출은 스택으로 관리됩니다. 이는 재귀와 함수 호출 순서를 이해하는 핵심입니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">first</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;first 시작&quot;</span>);
+  <span class="hljs-title function_">second</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;first 끝&quot;</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">second</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;second 시작&quot;</span>);
+  <span class="hljs-title function_">third</span>();
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;second 끝&quot;</span>);
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">third</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;third 실행&quot;</span>);
+}
+
+<span class="hljs-title function_">first</span>();
+</code></pre>
+<p><strong>호출 스택 변화</strong>:</p>
+<pre><code>1. first() 호출     2. second() 호출    3. third() 호출
+   ┌───────┐          ┌───────┐           ┌───────┐
+   │first()│          │second()│          │third()│
+   └───────┘          ├───────┤           ├───────┤
+                      │first()│           │second()│
+                      └───────┘           ├───────┤
+                                          │first()│
+                                          └───────┘
+
+4. third() 종료     5. second() 종료    6. first() 종료
+   ┌───────┐          ┌───────┐
+   │second()│          │first()│
+   ├───────┤          └───────┘          Empty
+   │first()│
+   └───────┘
+</code></pre>
+<p><strong>출력 순서</strong>:</p>
+<pre><code>first 시작
+second 시작
+third 실행
+second 끝
+first 끝
+</code></pre>
+<h3 id="스택-오버플로우-stack-overflow"><a aria-hidden="true" tabindex="-1" href="#스택-오버플로우-stack-overflow"><span class="icon icon-link"></span></a>스택 오버플로우 (Stack Overflow)</h3>
+<p>호출 스택의 크기는 제한되어 있습니다. 무한 재귀나 너무 깊은 재귀는 스택 오버플로우를 발생시킵니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 스택 오버플로우 예시</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">infiniteRecursion</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">infiniteRecursion</span>(); <span class="hljs-comment">// 종료 조건 없음!</span>
+}
+<span class="hljs-comment">// infiniteRecursion(); // RangeError: Maximum call stack size exceeded</span>
+
+<span class="hljs-comment">// 올바른 재귀 (종료 조건 있음)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">factorial</span>(<span class="hljs-params">n</span>) {
+  <span class="hljs-keyword">if</span> (n &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">1</span>;  <span class="hljs-comment">// 종료 조건</span>
+  <span class="hljs-keyword">return</span> n * <span class="hljs-title function_">factorial</span>(n - <span class="hljs-number">1</span>);
+}
+</code></pre>
+<h3 id="사용-사례-2"><a aria-hidden="true" tabindex="-1" href="#사용-사례-2"><span class="icon icon-link"></span></a>사용 사례</h3>
+<ul>
+<li><strong>함수 호출 스택</strong>: 프로그램 실행 시 함수 호출 관리</li>
+<li><strong>실행 취소(Undo) 기능</strong>: 이전 상태 복원</li>
+<li><strong>괄호 검사</strong>: 수식의 괄호 짝 맞추기</li>
+<li><strong>DFS (깊이 우선 탐색)</strong>: 그래프 순회 알고리즘</li>
+<li><strong>역순 문자열</strong>: 문자열 뒤집기</li>
+<li><strong>후위 표기법 계산</strong>: 수식 계산</li>
+</ul>
+<h3 id="실제-활용-예시"><a aria-hidden="true" tabindex="-1" href="#실제-활용-예시"><span class="icon icon-link"></span></a>실제 활용 예시</h3>
+<p><strong>1. 브라우저 뒤로가기</strong></p>
+<pre><code>방문 스택:
+┌───┐
+│ D │ ← 현재 페이지
+├───┤
+│ C │
+├───┤
+│ B │
+├───┤
+│ A │
+└───┘
+
+뒤로가기 클릭 → pop() → D 제거, C로 이동
+뒤로가기 클릭 → pop() → C 제거, B로 이동
+</code></pre>
+<p><strong>2. 괄호 검사</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">isValidParentheses</span>(<span class="hljs-params">str</span>) {
+  <span class="hljs-keyword">const</span> stack = [];
+  <span class="hljs-keyword">const</span> pairs = { <span class="hljs-string">&#x27;(&#x27;</span>: <span class="hljs-string">&#x27;)&#x27;</span>, <span class="hljs-string">&#x27;{&#x27;</span>: <span class="hljs-string">&#x27;}&#x27;</span>, <span class="hljs-string">&#x27;[&#x27;</span>: <span class="hljs-string">&#x27;]&#x27;</span> };
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> char <span class="hljs-keyword">of</span> str) {
+    <span class="hljs-keyword">if</span> (char <span class="hljs-keyword">in</span> pairs) {
+      stack.<span class="hljs-title function_">push</span>(char);  <span class="hljs-comment">// 여는 괄호</span>
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">values</span>(pairs).<span class="hljs-title function_">includes</span>(char)) {
+      <span class="hljs-keyword">if</span> (pairs[stack.<span class="hljs-title function_">pop</span>()] !== char) {
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;  <span class="hljs-comment">// 짝이 맞지 않음</span>
+      }
+    }
+  }
+  <span class="hljs-keyword">return</span> stack.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-title function_">isValidParentheses</span>(<span class="hljs-string">&quot;({[]})&quot;</span>);  <span class="hljs-comment">// true</span>
+<span class="hljs-title function_">isValidParentheses</span>(<span class="hljs-string">&quot;({[})&quot;</span>);   <span class="hljs-comment">// false</span>
+</code></pre>
+<p><strong>3. 실행 취소 (Undo) 기능</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">TextEditor</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">text</span> = <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">history</span> = [];  <span class="hljs-comment">// 실행 취소 스택</span>
+  }
+
+  <span class="hljs-title function_">type</span>(<span class="hljs-params">char</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">history</span>.<span class="hljs-title function_">push</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">text</span>);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">text</span> += char;
+  }
+
+  <span class="hljs-title function_">undo</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">history</span>.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">text</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">history</span>.<span class="hljs-title function_">pop</span>();
+    }
+  }
+}
+
+<span class="hljs-keyword">const</span> editor = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TextEditor</span>();
+editor.<span class="hljs-title function_">type</span>(<span class="hljs-string">&#x27;H&#x27;</span>);  <span class="hljs-comment">// &quot;H&quot;</span>
+editor.<span class="hljs-title function_">type</span>(<span class="hljs-string">&#x27;i&#x27;</span>);  <span class="hljs-comment">// &quot;Hi&quot;</span>
+editor.<span class="hljs-title function_">undo</span>();     <span class="hljs-comment">// &quot;H&quot;</span>
+editor.<span class="hljs-title function_">undo</span>();     <span class="hljs-comment">// &quot;&quot;</span>
+</code></pre>
+<hr/>
+<h2 id="큐-queue"><a aria-hidden="true" tabindex="-1" href="#큐-queue"><span class="icon icon-link"></span></a>큐 (Queue)</h2>
+<p>큐는 FIFO(First In First Out) 원칙을 따르는 선형 자료구조입니다. 먼저 추가된 요소가 먼저 제거됩니다.</p>
+<h3 id="fifo-동작-원리"><a aria-hidden="true" tabindex="-1" href="#fifo-동작-원리"><span class="icon icon-link"></span></a>FIFO 동작 원리</h3>
+<p>큐는 줄서기와 같습니다. 먼저 온 사람이 먼저 서비스를 받습니다.</p>
+<pre><code>초기 상태:  Empty
+
+enqueue(10)
+Front                    Rear
+  ↓                       ↓
+[10]
+
+enqueue(20)
+Front                    Rear
+  ↓                       ↓
+[10][20]
+
+enqueue(30)
+Front                    Rear
+  ↓                       ↓
+[10][20][30]
+
+dequeue() → 10
+     Front          Rear
+       ↓             ↓
+       [20][30]
+
+dequeue() → 20
+          Front &amp; Rear
+               ↓
+              [30]
+</code></pre>
+<h3 id="주요-연산-1"><a aria-hidden="true" tabindex="-1" href="#주요-연산-1"><span class="icon icon-link"></span></a>주요 연산</h3>
+<ul>
+<li><strong>enqueue(item)</strong>: 큐의 뒤에 요소 추가 (O(1))</li>
+<li><strong>dequeue()</strong>: 큐의 앞 요소 제거 및 반환 (O(1))</li>
+<li><strong>front/peek()</strong>: 큐의 앞 요소 확인 (제거하지 않음) (O(1))</li>
+<li><strong>isEmpty()</strong>: 큐가 비어있는지 확인 (O(1))</li>
+</ul>
+<h3 id="큐의-변형"><a aria-hidden="true" tabindex="-1" href="#큐의-변형"><span class="icon icon-link"></span></a>큐의 변형</h3>
+<p><strong>1. 원형 큐 (Circular Queue)</strong></p>
+<p>배열로 큐를 구현할 때, dequeue 후 앞 공간이 낭비되는 문제를 해결합니다.</p>
+<pre><code>일반 큐의 문제:
+[  ][  ][10][20][30]  ← front=2, rear=4, 앞 공간 낭비
+    ↑           ↑
+  낭비         사용중
+
+원형 큐:
+   front (2)
+      ↓
+    [30][  ][  ][10][20]
+          ↑
+       rear (0)
+
+인덱스를 순환: (index + 1) % capacity
+</code></pre>
+<p><strong>2. 우선순위 큐 (Priority Queue)</strong></p>
+<p>우선순위가 높은 요소가 먼저 나가며, 일반적으로 힙으로 구현합니다.</p>
+<pre><code>일반 큐:        우선순위 큐 (숫자가 작을수록 우선):
+enqueue(5)     enqueue(5, priority=3)
+enqueue(3)     enqueue(3, priority=1)  ← 높은 우선순위
+enqueue(7)     enqueue(7, priority=2)
+
+dequeue()      dequeue()
+→ 5 (FIFO)     → 3 (우선순위 1이 가장 높음)
+               → 7 (우선순위 2)
+               → 5 (우선순위 3)
+</code></pre>
+<p><strong>3. 덱 (Deque, Double-ended Queue)</strong></p>
+<p>양쪽 끝에서 삽입/삭제가 모두 가능한 자료구조입니다.</p>
+<pre><code>        addFront()    addRear()
+            ↓            ↓
+    Front [10][20][30] Rear
+            ↑            ↑
+      removeFront()  removeRear()
+
+활용: 슬라이딩 윈도우, 회문 검사
+</code></pre>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// Deque 예시</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Deque</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span> = [];
+  }
+
+  <span class="hljs-title function_">addFront</span>(<span class="hljs-params">item</span>) { <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">unshift</span>(item); }  <span class="hljs-comment">// 앞에 추가</span>
+  <span class="hljs-title function_">addRear</span>(<span class="hljs-params">item</span>) { <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">push</span>(item); }      <span class="hljs-comment">// 뒤에 추가</span>
+  <span class="hljs-title function_">removeFront</span>(<span class="hljs-params"></span>) { <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">shift</span>(); }  <span class="hljs-comment">// 앞에서 제거</span>
+  <span class="hljs-title function_">removeRear</span>(<span class="hljs-params"></span>) { <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">pop</span>(); }     <span class="hljs-comment">// 뒤에서 제거</span>
+}
+</code></pre>
+<h3 id="사용-사례-3"><a aria-hidden="true" tabindex="-1" href="#사용-사례-3"><span class="icon icon-link"></span></a>사용 사례</h3>
+<ul>
+<li><strong>작업 스케줄링</strong>: CPU 작업 관리, 프린터 대기열</li>
+<li><strong>BFS (너비 우선 탐색)</strong>: 그래프 순회 알고리즘</li>
+<li><strong>캐시 구현</strong>: LRU 캐시</li>
+<li><strong>비동기 처리</strong>: 메시지 큐, 이벤트 처리</li>
+<li><strong>버퍼링</strong>: 데이터 스트림 관리</li>
+</ul>
+<h3 id="코드-예시-2"><a aria-hidden="true" tabindex="-1" href="#코드-예시-2"><span class="icon icon-link"></span></a>코드 예시</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 연결 리스트 기반 큐 구현</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">Queue</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">front</span> = <span class="hljs-literal">null</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">rear</span> = <span class="hljs-literal">null</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span> = <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-comment">// O(1) - 뒤에 추가</span>
+  <span class="hljs-title function_">enqueue</span>(<span class="hljs-params">data</span>) {
+    <span class="hljs-keyword">const</span> newNode = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Node</span>(data);
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-title function_">isEmpty</span>()) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">front</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">rear</span> = newNode;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">rear</span>.<span class="hljs-property">next</span> = newNode;
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">rear</span> = newNode;
+    }
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span>++;
+  }
+
+  <span class="hljs-comment">// O(1) - 앞에서 제거</span>
+  <span class="hljs-title function_">dequeue</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-title function_">isEmpty</span>()) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">const</span> removed = <span class="hljs-variable language_">this</span>.<span class="hljs-property">front</span>.<span class="hljs-property">data</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">front</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">front</span>.<span class="hljs-property">next</span>;
+    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">front</span>) <span class="hljs-variable language_">this</span>.<span class="hljs-property">rear</span> = <span class="hljs-literal">null</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span>--;
+    <span class="hljs-keyword">return</span> removed;
+  }
+
+  <span class="hljs-title function_">peek</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">front</span>?.<span class="hljs-property">data</span>;
+  }
+
+  <span class="hljs-title function_">isEmpty</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">size</span> === <span class="hljs-number">0</span>;
+  }
+}
+
+<span class="hljs-comment">// 실제 활용: 작업 스케줄러</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">TaskScheduler</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">queue</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Queue</span>();
+  }
+
+  <span class="hljs-title function_">addTask</span>(<span class="hljs-params">task</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">queue</span>.<span class="hljs-title function_">enqueue</span>(task);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`작업 추가: <span class="hljs-subst">${task}</span>`</span>);
+  }
+
+  <span class="hljs-title function_">processTasks</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">while</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">queue</span>.<span class="hljs-title function_">isEmpty</span>()) {
+      <span class="hljs-keyword">const</span> task = <span class="hljs-variable language_">this</span>.<span class="hljs-property">queue</span>.<span class="hljs-title function_">dequeue</span>();
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`작업 처리: <span class="hljs-subst">${task}</span>`</span>);
+    }
+  }
+}
+
+<span class="hljs-keyword">const</span> scheduler = <span class="hljs-keyword">new</span> <span class="hljs-title class_">TaskScheduler</span>();
+scheduler.<span class="hljs-title function_">addTask</span>(<span class="hljs-string">&quot;이메일 전송&quot;</span>);
+scheduler.<span class="hljs-title function_">addTask</span>(<span class="hljs-string">&quot;파일 다운로드&quot;</span>);
+scheduler.<span class="hljs-title function_">addTask</span>(<span class="hljs-string">&quot;데이터 백업&quot;</span>);
+scheduler.<span class="hljs-title function_">processTasks</span>();
+<span class="hljs-comment">// 출력:</span>
+<span class="hljs-comment">// 작업 처리: 이메일 전송</span>
+<span class="hljs-comment">// 작업 처리: 파일 다운로드</span>
+<span class="hljs-comment">// 작업 처리: 데이터 백업</span>
+</code></pre>
+<hr/>
+<h2 id="해시-테이블-hash-table"><a aria-hidden="true" tabindex="-1" href="#해시-테이블-hash-table"><span class="icon icon-link"></span></a>해시 테이블 (Hash Table)</h2>
+<p>해시 테이블은 키-값 쌍을 저장하는 자료구조로, 해시 함수를 사용하여 키를 인덱스로 변환합니다.</p>
+<h3 id="동작-원리"><a aria-hidden="true" tabindex="-1" href="#동작-원리"><span class="icon icon-link"></span></a>동작 원리</h3>
+<p>해시 테이블은 키를 빠르게 값으로 매핑하기 위해 해시 함수를 사용합니다.</p>
+<pre><code>1. 키 입력: &quot;John&quot;
+2. 해시 함수 적용: hash(&quot;John&quot;) = 2
+3. 인덱스 2에 값 저장/조회
+
+해시 함수 예시 (간단한 버전):
+hash(key) = (각 문자의 ASCII 값 합) % 배열크기
+
+&quot;John&quot; → (74+111+104+110) % 10 = 399 % 10 = 9
+&quot;Alice&quot; → (65+108+105+99+101) % 10 = 478 % 10 = 8
+</code></pre>
+<p><strong>시각화</strong>:</p>
+<pre><code>키: &quot;Alice&quot; → hash(&quot;Alice&quot;) = 1
+
+Index  Buckets
+  0  → null
+  1  → [Alice: 30]  ← 저장 위치
+  2  → null
+  3  → [Bob: 25]
+  4  → null
+  ...
+</code></pre>
+<h3 id="해시-함수의-동작-예시"><a aria-hidden="true" tabindex="-1" href="#해시-함수의-동작-예시"><span class="icon icon-link"></span></a>해시 함수의 동작 예시</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 간단한 해시 함수 구현</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">simpleHash</span>(<span class="hljs-params">key, tableSize</span>) {
+  <span class="hljs-keyword">let</span> hash = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; key.<span class="hljs-property">length</span>; i++) {
+    hash += key.<span class="hljs-title function_">charCodeAt</span>(i);
+  }
+  <span class="hljs-keyword">return</span> hash % tableSize;
+}
+
+<span class="hljs-comment">// 예시</span>
+<span class="hljs-title function_">simpleHash</span>(<span class="hljs-string">&quot;John&quot;</span>, <span class="hljs-number">10</span>);   <span class="hljs-comment">// 9</span>
+<span class="hljs-title function_">simpleHash</span>(<span class="hljs-string">&quot;Alice&quot;</span>, <span class="hljs-number">10</span>);  <span class="hljs-comment">// 8</span>
+<span class="hljs-title function_">simpleHash</span>(<span class="hljs-string">&quot;Bob&quot;</span>, <span class="hljs-number">10</span>);    <span class="hljs-comment">// 1</span>
+</code></pre>
+<h3 id="해시-충돌-해결"><a aria-hidden="true" tabindex="-1" href="#해시-충돌-해결"><span class="icon icon-link"></span></a>해시 충돌 해결</h3>
+<p>서로 다른 키가 같은 해시 값을 가지는 경우를 **해시 충돌(Hash Collision)**이라고 합니다.</p>
+<pre><code>예시: hash(&quot;John&quot;) = 2, hash(&quot;Jane&quot;) = 2  ← 충돌!
+</code></pre>
+<p><strong>1. 체이닝 (Chaining)</strong></p>
+<p>같은 인덱스에 연결 리스트로 여러 값을 저장합니다.</p>
+<pre><code>Index  Buckets (Linked List)
+  0  → [Eve:28]
+  1  → [Alice:30] → [Bob:35] → [Charlie:40]  ← 체이닝
+  2  → [John:25]
+  3  → null
+</code></pre>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">HashTableChaining</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">size = <span class="hljs-number">10</span></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">table</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Array</span>(size);
+  }
+
+  <span class="hljs-title function_">set</span>(<span class="hljs-params">key, value</span>) {
+    <span class="hljs-keyword">const</span> index = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">hash</span>(key);
+    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">table</span>[index]) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">table</span>[index] = [];
+    }
+    <span class="hljs-comment">// 같은 키가 있으면 업데이트, 없으면 추가</span>
+    <span class="hljs-keyword">const</span> bucket = <span class="hljs-variable language_">this</span>.<span class="hljs-property">table</span>[index];
+    <span class="hljs-keyword">const</span> existing = bucket.<span class="hljs-title function_">find</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item.<span class="hljs-property">key</span> === key);
+    <span class="hljs-keyword">if</span> (existing) {
+      existing.<span class="hljs-property">value</span> = value;
+    } <span class="hljs-keyword">else</span> {
+      bucket.<span class="hljs-title function_">push</span>({ key, value });
+    }
+  }
+
+  <span class="hljs-title function_">get</span>(<span class="hljs-params">key</span>) {
+    <span class="hljs-keyword">const</span> index = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">hash</span>(key);
+    <span class="hljs-keyword">const</span> bucket = <span class="hljs-variable language_">this</span>.<span class="hljs-property">table</span>[index];
+    <span class="hljs-keyword">if</span> (!bucket) <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+    <span class="hljs-keyword">const</span> item = bucket.<span class="hljs-title function_">find</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item.<span class="hljs-property">key</span> === key);
+    <span class="hljs-keyword">return</span> item?.<span class="hljs-property">value</span>;
+  }
+}
+</code></pre>
+<p><strong>장점</strong>: 구현이 간단, 삭제가 용이
+<strong>단점</strong>: 추가 메모리 필요 (포인터), 최악의 경우 O(n)</p>
+<p><strong>2. 개방 주소법 (Open Addressing)</strong></p>
+<p>충돌 발생 시 다른 빈 슬롯을 찾아 저장합니다.</p>
+<p><strong>(a) 선형 탐사 (Linear Probing)</strong></p>
+<pre><code>hash(key) = 2, 이미 차 있음
+→ 2+1=3 확인 → 차 있음
+→ 2+2=4 확인 → 비어있음, 저장!
+
+Index  값
+  0  → [A]
+  1  → [B]
+  2  → [C]  ← hash(&quot;X&quot;) = 2, 충돌
+  3  → [D]  ← 차 있음
+  4  → [X]  ← 여기에 저장
+</code></pre>
+<p><strong>(b) 이차 탐사 (Quadratic Probing)</strong></p>
+<pre><code>충돌 시: (hash + 1²), (hash + 2²), (hash + 3²)...
+클러스터링 감소
+</code></pre>
+<p><strong>(c) 이중 해싱 (Double Hashing)</strong></p>
+<pre><code>두 번째 해시 함수 사용:
+index = (hash1(key) + i * hash2(key)) % size
+</code></pre>
+<h3 id="로드-팩터-load-factor"><a aria-hidden="true" tabindex="-1" href="#로드-팩터-load-factor"><span class="icon icon-link"></span></a>로드 팩터 (Load Factor)</h3>
+<p>로드 팩터 = (저장된 항목 수) / (테이블 크기)</p>
+<pre><code>테이블 크기: 10, 저장된 항목: 7
+로드 팩터 = 7 / 10 = 0.7 (70%)
+
+일반적으로 로드 팩터가 0.7~0.75를 초과하면
+테이블 크기를 확장 (재해싱, Rehashing)
+</code></pre>
+<p>재해싱 과정:</p>
+<ol>
+<li>더 큰 테이블 생성 (보통 2배)</li>
+<li>기존 모든 항목을 새 테이블에 재삽입</li>
+<li>기존 테이블 제거</li>
+</ol>
+<h3 id="시간-복잡도-2"><a aria-hidden="true" tabindex="-1" href="#시간-복잡도-2"><span class="icon icon-link"></span></a>시간 복잡도</h3>
+<table><thead><tr><th>연산</th><th>평균</th><th>최악</th></tr></thead><tbody><tr><td>검색</td><td>O(1)</td><td>O(n)</td></tr><tr><td>삽입</td><td>O(1)</td><td>O(n)</td></tr><tr><td>삭제</td><td>O(1)</td><td>O(n)</td></tr></tbody></table>
+<h3 id="좋은-해시-함수의-조건"><a aria-hidden="true" tabindex="-1" href="#좋은-해시-함수의-조건"><span class="icon icon-link"></span></a>좋은 해시 함수의 조건</h3>
+<ol>
+<li><strong>결정성</strong>: 같은 입력에 항상 같은 출력</li>
+<li><strong>균등 분포</strong>: 해시 값이 고르게 분포</li>
+<li><strong>효율성</strong>: 빠른 계산</li>
+<li><strong>충돌 최소화</strong>: 서로 다른 키에 대해 다른 해시 값</li>
+</ol>
+<h3 id="사용-사례-4"><a aria-hidden="true" tabindex="-1" href="#사용-사례-4"><span class="icon icon-link"></span></a>사용 사례</h3>
+<ul>
+<li><strong>데이터베이스 인덱싱</strong></li>
+<li><strong>캐싱</strong>: 빠른 데이터 접근</li>
+<li><strong>중복 검사</strong>: 고유성 확인</li>
+<li><strong>심볼 테이블</strong>: 컴파일러, 인터프리터</li>
+<li><strong>Set, Map 자료구조</strong></li>
+</ul>
+<hr/>
+<h2 id="시간-복잡도-비교"><a aria-hidden="true" tabindex="-1" href="#시간-복잡도-비교"><span class="icon icon-link"></span></a>시간 복잡도 비교</h2>
+<table><thead><tr><th>자료구조</th><th>접근</th><th>검색</th><th>삽입</th><th>삭제</th></tr></thead><tbody><tr><td>배열</td><td>O(1)</td><td>O(n)</td><td>O(n)</td><td>O(n)</td></tr><tr><td>연결 리스트</td><td>O(n)</td><td>O(n)</td><td>O(1)</td><td>O(1)</td></tr><tr><td>스택</td><td>O(n)</td><td>O(n)</td><td>O(1)</td><td>O(1)</td></tr><tr><td>큐</td><td>O(n)</td><td>O(n)</td><td>O(1)</td><td>O(1)</td></tr><tr><td>해시 테이블</td><td>-</td><td>O(1)</td><td>O(1)</td><td>O(1)</td></tr></tbody></table>
+<hr/>
+<h2 id="다음-편-예고"><a aria-hidden="true" tabindex="-1" href="#다음-편-예고"><span class="icon icon-link"></span></a>다음 편 예고</h2>
+<p>Part 2에서는 <strong>트리, 힙, 그래프</strong>와 같은 비선형 자료구조를 다룰 예정입니다. 이들은 계층적 구조와 복잡한 관계를 표현하는 데 최적화되어 있으며, 고급 알고리즘의 기초가 됩니다.</p></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group" href="/posts/computer-science/data-structures-fundamentals-part2/"><div class="text-sm text-muted-foreground mb-2">← 이전 글</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">자료구조 완벽 가이드 Part 2: 비선형 자료구조</div></a><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right" href="/posts/portfolio/election-map-cartogram-part-2/"><div class="text-sm text-muted-foreground mb-2">다음 글 →</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">2025 대선 지도 - 카토그램 만들기 Part 2: 후보자 카드 연동 및 회고</div></a></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/dfd93458d4eb6967.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"nrRloE8nMkMSs56tAB1BQ\",\"p\":\"\",\"c\":[\"\",\"posts\",\"computer-science\",\"data-structures-fundamentals-part1\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"computer-science\",\"d\"],{\"children\":[[\"slug\",\"data-structures-fundamentals-part1\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/dfd93458d4eb6967.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"computer-science\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"data-structures-fundamentals-part1\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T58f1,"])</script><script>self.__next_f.push([1,"\n자료구조는 데이터를 효율적으로 저장하고 관리하기 위한 방법론입니다. 올바른 자료구조를 선택하는 것은 알고리즘의 성능을 결정하는 핵심 요소입니다.\n\n이 글에서는 **선형 자료구조**들을 다룹니다. Part 2에서는 트리, 힙, 그래프와 같은 비선형 자료구조를 다룰 예정입니다.\n\n## 배열 (Array)\n\n배열은 가장 기본적이면서도 강력한 자료구조입니다. 연속된 메모리 공간에 동일한 타입의 데이터를 저장합니다.\n\n### 메모리 구조\n\n배열의 가장 큰 특징은 **연속된 메모리 할당**입니다. 각 요소가 메모리상에서 바로 옆에 위치하기 때문에, 시작 주소와 인덱스만 알면 O(1) 시간에 어떤 요소든 접근할 수 있습니다.\n\n```\n인덱스:  [0]  [1]  [2]  [3]  [4]\n값:      10   20   30   40   50\n메모리:  100  104  108  10C  110  (16진수 주소)\n         ↑\n      시작 주소\n\n접근 공식: 주소 = 시작주소 + (인덱스 × 요소크기)\n예: arr[2] = 0x100 + (2 × 4) = 0x108\n```\n\n### 정적 배열 vs 동적 배열\n\n**정적 배열 (Static Array)**:\n- 크기가 컴파일 타임에 고정됨\n- 스택 메모리에 할당 (빠름)\n- 크기 변경 불가능\n\n```javascript\n// C/Java 스타일 (개념적 예시)\nint arr[5]; // 크기 5로 고정\n```\n\n**동적 배열 (Dynamic Array)**:\n- 크기가 런타임에 변경 가능\n- 힙 메모리에 할당\n- 내부적으로 크기 부족 시 재할당 (일반적으로 2배 확장)\n- JavaScript의 Array, Java의 ArrayList, C++의 vector\n\n```javascript\n// JavaScript의 동적 배열\nconst arr = [10, 20, 30];\narr.push(40); // 자동으로 크기 확장\n```\n\n**동적 배열의 확장 과정**:\n```\n초기 (용량: 4, 사용: 3)\n[10][20][30][ ]\n\npush(40) - 용량 충분, O(1)\n[10][20][30][40]\n\npush(50) - 용량 부족!\n1. 새 배열 생성 (용량 8)\n2. 기존 요소 복사 - O(n)\n3. 50 추가\n[10][20][30][40][50][ ][ ][ ]\n```\n\n### 캐시 지역성 (Cache Locality)\n\n배열의 연속된 메모리 구조는 CPU 캐시를 효율적으로 활용합니다:\n\n1. **공간 지역성 (Spatial Locality)**: 한 요소에 접근하면 인접 요소들도 캐시에 로드됨\n2. **시간 지역성 (Temporal Locality)**: 최근 접근한 데이터는 다시 접근할 가능성이 높음\n\n```javascript\n// 캐시 친화적 - 순차 접근\nfor (let i = 0; i \u003c arr.length; i++) {\n  sum += arr[i]; // 다음 요소가 이미 캐시에 있을 가능성 높음\n}\n\n// 캐시 비친화적 - 랜덤 접근\nfor (let i = 0; i \u003c arr.length; i++) {\n  sum += arr[randomIndex()]; // 매번 메모리 접근 필요\n}\n```\n\n### 시간 복잡도\n\n| 연산 | 시간 복잡도 |\n|------|------------|\n| 접근 (Access) | O(1) |\n| 검색 (Search) | O(n) |\n| 삽입 (Insert) | O(n) |\n| 삭제 (Delete) | O(n) |\n\n### 장단점\n\n**장점:**\n- 빠른 인덱스 접근\n- 캐시 지역성(Cache Locality)이 좋아 메모리 접근 효율적\n- 구현이 간단하고 직관적\n\n**단점:**\n- 크기 변경이 어려움 (정적 배열의 경우)\n- 중간 요소 삽입/삭제 시 O(n) 시간 소요\n- 메모리 낭비 가능성 (사용하지 않는 공간)\n\n### 사용 사례\n\n- 순차적 데이터 저장\n- 빠른 인덱스 접근이 필요한 경우\n- 크기가 고정되어 있거나 예측 가능한 경우\n\n### 코드 예시\n\n```javascript\n// 배열의 기본 연산\nconst numbers = [10, 20, 30, 40, 50];\n\n// O(1) - 인덱스 접근\nconsole.log(numbers[2]); // 30\n\n// O(n) - 선형 검색\nconst index = numbers.indexOf(30); // 2\n\n// O(n) - 중간 삽입 (요소 이동 필요)\nnumbers.splice(2, 0, 25); // [10, 20, 25, 30, 40, 50]\n\n// O(n) - 중간 삭제 (요소 이동 필요)\nnumbers.splice(2, 1); // [10, 20, 30, 40, 50]\n\n// O(1) - 끝에 추가 (동적 배열, 재할당 제외)\nnumbers.push(60); // [10, 20, 30, 40, 50, 60]\n```\n\n---\n\n## 연결 리스트 (Linked List)\n\n연결 리스트는 노드들이 포인터로 연결된 선형 자료구조입니다. 각 노드는 데이터와 다음 노드를 가리키는 포인터로 구성됩니다.\n\n### 노드 구조\n\n연결 리스트의 기본 단위는 **노드(Node)**입니다. 배열과 달리 메모리상에서 불연속적으로 배치되며, 포인터를 통해 연결됩니다.\n\n```javascript\n// 단일 연결 리스트 노드\nclass Node {\n  constructor(data) {\n    this.data = data;      // 실제 데이터\n    this.next = null;      // 다음 노드 참조\n  }\n}\n\n// 이중 연결 리스트 노드\nclass DoublyNode {\n  constructor(data) {\n    this.data = data;\n    this.prev = null;      // 이전 노드 참조\n    this.next = null;      // 다음 노드 참조\n  }\n}\n```\n\n### 종류와 시각화\n\n**1. 단일 연결 리스트 (Singly Linked List)**\n\n각 노드가 다음 노드만 가리키며, 한 방향으로만 순회 가능합니다.\n\n```\nHead\n ↓\n[10|●]→[20|●]→[30|●]→[40|null]\n data next\n\n메모리 구조 (비연속적):\n주소: 0x200  0x150  0x300  0x100\n값:   [10]   [20]   [30]   [40]\n      ↓      ↓      ↓\n다음: 0x150  0x300  0x100  null\n```\n\n**2. 이중 연결 리스트 (Doubly Linked List)**\n\n각 노드가 이전과 다음 노드를 모두 가리키며, 양방향 순회가 가능합니다.\n\n```\n       Head\n        ↓\nnull←[●|10|●]↔[●|20|●]↔[●|30|●]→null\n     prev data next\n\n장점: 양방향 탐색, 노드 삭제가 용이\n단점: 메모리 사용량 증가 (포인터 2개)\n```\n\n**3. 원형 연결 리스트 (Circular Linked List)**\n\n마지막 노드가 첫 번째 노드를 가리켜 순환 구조를 형성합니다.\n\n```\n    Head\n     ↓\n    [10]→[20]→[30]→[40]\n     ↑              ↓\n     └──────────────┘\n\n사용 예: 라운드 로빈 스케줄링, 순환 버퍼\n```\n\n### 배열 vs 연결 리스트 비교\n\n```\n배열:\n메모리: [10][20][30][40] (연속)\n접근: O(1), 삽입/삭제: O(n)\n크기: 고정 또는 재할당 필요\n\n연결 리스트:\n메모리: [10]→[20]→[30]→[40] (비연속)\n접근: O(n), 삽입/삭제: O(1) (위치를 알 때)\n크기: 동적 확장 용이\n```\n\n### 시간 복잡도\n\n| 연산 | 시간 복잡도 |\n|------|------------|\n| 접근 (Access) | O(n) |\n| 검색 (Search) | O(n) |\n| 삽입 (Insert) | O(1)* |\n| 삭제 (Delete) | O(1)* |\n\n*위치를 알고 있을 때의 시간 복잡도\n\n### 장단점\n\n**장점:**\n- 동적 크기 조정 용이\n- 삽입/삭제가 효율적 (O(1), 위치를 알고 있을 때)\n- 메모리 효율적 사용 (필요한 만큼만 할당)\n\n**단점:**\n- 인덱스 접근 불가능 (O(n) 시간 소요)\n- 추가 메모리 필요 (포인터 저장)\n- 캐시 지역성이 낮음\n\n### 사용 사례\n\n- 동적 메모리 할당이 필요한 경우\n- 빈번한 삽입/삭제가 발생하는 경우\n- 크기를 예측할 수 없는 데이터\n- 스택, 큐의 구현\n\n### 코드 예시\n\n```javascript\nclass LinkedList {\n  constructor() {\n    this.head = null;\n    this.size = 0;\n  }\n\n  // O(1) - 맨 앞에 삽입\n  prepend(data) {\n    const newNode = new Node(data);\n    newNode.next = this.head;\n    this.head = newNode;\n    this.size++;\n  }\n\n  // O(n) - 맨 끝에 삽입 (tail 포인터 없이)\n  append(data) {\n    const newNode = new Node(data);\n    if (!this.head) {\n      this.head = newNode;\n      return;\n    }\n    let current = this.head;\n    while (current.next) {\n      current = current.next;\n    }\n    current.next = newNode;\n    this.size++;\n  }\n\n  // O(1) - 특정 노드 다음에 삽입 (노드를 알 때)\n  insertAfter(node, data) {\n    const newNode = new Node(data);\n    newNode.next = node.next;\n    node.next = newNode;\n    this.size++;\n  }\n\n  // O(1) - 맨 앞 삭제\n  removeFirst() {\n    if (!this.head) return null;\n    const removed = this.head;\n    this.head = this.head.next;\n    this.size--;\n    return removed.data;\n  }\n}\n\n// 사용 예시\nconst list = new LinkedList();\nlist.prepend(10);  // [10]\nlist.append(20);   // [10]→[20]\nlist.prepend(5);   // [5]→[10]→[20]\n```\n\n**실제 활용 예시**:\n```javascript\n// 브라우저 히스토리 (이중 연결 리스트)\nclass BrowserHistory {\n  constructor() {\n    this.current = null;\n  }\n\n  visit(url) {\n    const page = new DoublyNode(url);\n    if (this.current) {\n      this.current.next = page;\n      page.prev = this.current;\n    }\n    this.current = page;\n  }\n\n  back() {\n    if (this.current?.prev) {\n      this.current = this.current.prev;\n      return this.current.data;\n    }\n  }\n\n  forward() {\n    if (this.current?.next) {\n      this.current = this.current.next;\n      return this.current.data;\n    }\n  }\n}\n```\n\n---\n\n## 스택 (Stack)\n\n스택은 LIFO(Last In First Out) 원칙을 따르는 선형 자료구조입니다. 마지막에 추가된 요소가 가장 먼저 제거됩니다.\n\n### LIFO 동작 원리\n\n스택은 접시를 쌓는 것과 같습니다. 가장 마지막에 놓은 접시를 가장 먼저 꺼내게 됩니다.\n\n```\n초기 상태:        push(1)         push(3)         push(7)\n                ┌───┐           ┌───┐           ┌───┐\n                │ 1 │           │ 3 │           │ 7 │  ← top\n                └───┘           ├───┤           ├───┤\n                                │ 1 │           │ 3 │\n                                └───┘           ├───┤\n                                                │ 1 │\n                                                └───┘\n\npop() → 7       pop() → 3       pop() → 1\n                ┌───┐\n                │ 3 │  ← top\n                ├───┤           ┌───┐\n                │ 1 │           │ 1 │  ← top\n                └───┘           └───┘           Empty\n```\n\n### 주요 연산\n\n- **push(item)**: 스택의 맨 위에 요소 추가 (O(1))\n- **pop()**: 스택의 맨 위 요소 제거 및 반환 (O(1))\n- **peek/top()**: 스택의 맨 위 요소 확인 (제거하지 않음) (O(1))\n- **isEmpty()**: 스택이 비어있는지 확인 (O(1))\n\n### 함수 호출 스택 (Call Stack)\n\n프로그램 실행 시 함수 호출은 스택으로 관리됩니다. 이는 재귀와 함수 호출 순서를 이해하는 핵심입니다.\n\n```javascript\nfunction first() {\n  console.log(\"first 시작\");\n  second();\n  console.log(\"first 끝\");\n}\n\nfunction second() {\n  console.log(\"second 시작\");\n  third();\n  console.log(\"second 끝\");\n}\n\nfunction third() {\n  console.log(\"third 실행\");\n}\n\nfirst();\n```\n\n**호출 스택 변화**:\n```\n1. first() 호출     2. second() 호출    3. third() 호출\n   ┌───────┐          ┌───────┐           ┌───────┐\n   │first()│          │second()│          │third()│\n   └───────┘          ├───────┤           ├───────┤\n                      │first()│           │second()│\n                      └───────┘           ├───────┤\n                                          │first()│\n                                          └───────┘\n\n4. third() 종료     5. second() 종료    6. first() 종료\n   ┌───────┐          ┌───────┐\n   │second()│          │first()│\n   ├───────┤          └───────┘          Empty\n   │first()│\n   └───────┘\n```\n\n**출력 순서**:\n```\nfirst 시작\nsecond 시작\nthird 실행\nsecond 끝\nfirst 끝\n```\n\n### 스택 오버플로우 (Stack Overflow)\n\n호출 스택의 크기는 제한되어 있습니다. 무한 재귀나 너무 깊은 재귀는 스택 오버플로우를 발생시킵니다.\n\n```javascript\n// 스택 오버플로우 예시\nfunction infiniteRecursion() {\n  infiniteRecursion(); // 종료 조건 없음!\n}\n// infiniteRecursion(); // RangeError: Maximum call stack size exceeded\n\n// 올바른 재귀 (종료 조건 있음)\nfunction factorial(n) {\n  if (n \u003c= 1) return 1;  // 종료 조건\n  return n * factorial(n - 1);\n}\n```\n\n### 사용 사례\n\n- **함수 호출 스택**: 프로그램 실행 시 함수 호출 관리\n- **실행 취소(Undo) 기능**: 이전 상태 복원\n- **괄호 검사**: 수식의 괄호 짝 맞추기\n- **DFS (깊이 우선 탐색)**: 그래프 순회 알고리즘\n- **역순 문자열**: 문자열 뒤집기\n- **후위 표기법 계산**: 수식 계산\n\n### 실제 활용 예시\n\n**1. 브라우저 뒤로가기**\n```\n방문 스택:\n┌───┐\n│ D │ ← 현재 페이지\n├───┤\n│ C │\n├───┤\n│ B │\n├───┤\n│ A │\n└───┘\n\n뒤로가기 클릭 → pop() → D 제거, C로 이동\n뒤로가기 클릭 → pop() → C 제거, B로 이동\n```\n\n**2. 괄호 검사**\n```javascript\nfunction isValidParentheses(str) {\n  const stack = [];\n  const pairs = { '(': ')', '{': '}', '[': ']' };\n\n  for (const char of str) {\n    if (char in pairs) {\n      stack.push(char);  // 여는 괄호\n    } else if (Object.values(pairs).includes(char)) {\n      if (pairs[stack.pop()] !== char) {\n        return false;  // 짝이 맞지 않음\n      }\n    }\n  }\n  return stack.length === 0;\n}\n\nisValidParentheses(\"({[]})\");  // true\nisValidParentheses(\"({[})\");   // false\n```\n\n**3. 실행 취소 (Undo) 기능**\n```javascript\nclass TextEditor {\n  constructor() {\n    this.text = \"\";\n    this.history = [];  // 실행 취소 스택\n  }\n\n  type(char) {\n    this.history.push(this.text);\n    this.text += char;\n  }\n\n  undo() {\n    if (this.history.length \u003e 0) {\n      this.text = this.history.pop();\n    }\n  }\n}\n\nconst editor = new TextEditor();\neditor.type('H');  // \"H\"\neditor.type('i');  // \"Hi\"\neditor.undo();     // \"H\"\neditor.undo();     // \"\"\n```\n\n---\n\n## 큐 (Queue)\n\n큐는 FIFO(First In First Out) 원칙을 따르는 선형 자료구조입니다. 먼저 추가된 요소가 먼저 제거됩니다.\n\n### FIFO 동작 원리\n\n큐는 줄서기와 같습니다. 먼저 온 사람이 먼저 서비스를 받습니다.\n\n```\n초기 상태:  Empty\n\nenqueue(10)\nFront                    Rear\n  ↓                       ↓\n[10]\n\nenqueue(20)\nFront                    Rear\n  ↓                       ↓\n[10][20]\n\nenqueue(30)\nFront                    Rear\n  ↓                       ↓\n[10][20][30]\n\ndequeue() → 10\n     Front          Rear\n       ↓             ↓\n       [20][30]\n\ndequeue() → 20\n          Front \u0026 Rear\n               ↓\n              [30]\n```\n\n### 주요 연산\n\n- **enqueue(item)**: 큐의 뒤에 요소 추가 (O(1))\n- **dequeue()**: 큐의 앞 요소 제거 및 반환 (O(1))\n- **front/peek()**: 큐의 앞 요소 확인 (제거하지 않음) (O(1))\n- **isEmpty()**: 큐가 비어있는지 확인 (O(1))\n\n### 큐의 변형\n\n**1. 원형 큐 (Circular Queue)**\n\n배열로 큐를 구현할 때, dequeue 후 앞 공간이 낭비되는 문제를 해결합니다.\n\n```\n일반 큐의 문제:\n[  ][  ][10][20][30]  ← front=2, rear=4, 앞 공간 낭비\n    ↑           ↑\n  낭비         사용중\n\n원형 큐:\n   front (2)\n      ↓\n    [30][  ][  ][10][20]\n          ↑\n       rear (0)\n\n인덱스를 순환: (index + 1) % capacity\n```\n\n**2. 우선순위 큐 (Priority Queue)**\n\n우선순위가 높은 요소가 먼저 나가며, 일반적으로 힙으로 구현합니다.\n\n```\n일반 큐:        우선순위 큐 (숫자가 작을수록 우선):\nenqueue(5)     enqueue(5, priority=3)\nenqueue(3)     enqueue(3, priority=1)  ← 높은 우선순위\nenqueue(7)     enqueue(7, priority=2)\n\ndequeue()      dequeue()\n→ 5 (FIFO)     → 3 (우선순위 1이 가장 높음)\n               → 7 (우선순위 2)\n               → 5 (우선순위 3)\n```\n\n**3. 덱 (Deque, Double-ended Queue)**\n\n양쪽 끝에서 삽입/삭제가 모두 가능한 자료구조입니다.\n\n```\n        addFront()    addRear()\n            ↓            ↓\n    Front [10][20][30] Rear\n            ↑            ↑\n      removeFront()  removeRear()\n\n활용: 슬라이딩 윈도우, 회문 검사\n```\n\n```javascript\n// Deque 예시\nclass Deque {\n  constructor() {\n    this.items = [];\n  }\n\n  addFront(item) { this.items.unshift(item); }  // 앞에 추가\n  addRear(item) { this.items.push(item); }      // 뒤에 추가\n  removeFront() { return this.items.shift(); }  // 앞에서 제거\n  removeRear() { return this.items.pop(); }     // 뒤에서 제거\n}\n```\n\n### 사용 사례\n\n- **작업 스케줄링**: CPU 작업 관리, 프린터 대기열\n- **BFS (너비 우선 탐색)**: 그래프 순회 알고리즘\n- **캐시 구현**: LRU 캐시\n- **비동기 처리**: 메시지 큐, 이벤트 처리\n- **버퍼링**: 데이터 스트림 관리\n\n### 코드 예시\n\n```javascript\n// 연결 리스트 기반 큐 구현\nclass Queue {\n  constructor() {\n    this.front = null;\n    this.rear = null;\n    this.size = 0;\n  }\n\n  // O(1) - 뒤에 추가\n  enqueue(data) {\n    const newNode = new Node(data);\n    if (this.isEmpty()) {\n      this.front = this.rear = newNode;\n    } else {\n      this.rear.next = newNode;\n      this.rear = newNode;\n    }\n    this.size++;\n  }\n\n  // O(1) - 앞에서 제거\n  dequeue() {\n    if (this.isEmpty()) return null;\n    const removed = this.front.data;\n    this.front = this.front.next;\n    if (!this.front) this.rear = null;\n    this.size--;\n    return removed;\n  }\n\n  peek() {\n    return this.front?.data;\n  }\n\n  isEmpty() {\n    return this.size === 0;\n  }\n}\n\n// 실제 활용: 작업 스케줄러\nclass TaskScheduler {\n  constructor() {\n    this.queue = new Queue();\n  }\n\n  addTask(task) {\n    this.queue.enqueue(task);\n    console.log(`작업 추가: ${task}`);\n  }\n\n  processTasks() {\n    while (!this.queue.isEmpty()) {\n      const task = this.queue.dequeue();\n      console.log(`작업 처리: ${task}`);\n    }\n  }\n}\n\nconst scheduler = new TaskScheduler();\nscheduler.addTask(\"이메일 전송\");\nscheduler.addTask(\"파일 다운로드\");\nscheduler.addTask(\"데이터 백업\");\nscheduler.processTasks();\n// 출력:\n// 작업 처리: 이메일 전송\n// 작업 처리: 파일 다운로드\n// 작업 처리: 데이터 백업\n```\n\n---\n\n## 해시 테이블 (Hash Table)\n\n해시 테이블은 키-값 쌍을 저장하는 자료구조로, 해시 함수를 사용하여 키를 인덱스로 변환합니다.\n\n### 동작 원리\n\n해시 테이블은 키를 빠르게 값으로 매핑하기 위해 해시 함수를 사용합니다.\n\n```\n1. 키 입력: \"John\"\n2. 해시 함수 적용: hash(\"John\") = 2\n3. 인덱스 2에 값 저장/조회\n\n해시 함수 예시 (간단한 버전):\nhash(key) = (각 문자의 ASCII 값 합) % 배열크기\n\n\"John\" → (74+111+104+110) % 10 = 399 % 10 = 9\n\"Alice\" → (65+108+105+99+101) % 10 = 478 % 10 = 8\n```\n\n**시각화**:\n```\n키: \"Alice\" → hash(\"Alice\") = 1\n\nIndex  Buckets\n  0  → null\n  1  → [Alice: 30]  ← 저장 위치\n  2  → null\n  3  → [Bob: 25]\n  4  → null\n  ...\n```\n\n### 해시 함수의 동작 예시\n\n```javascript\n// 간단한 해시 함수 구현\nfunction simpleHash(key, tableSize) {\n  let hash = 0;\n  for (let i = 0; i \u003c key.length; i++) {\n    hash += key.charCodeAt(i);\n  }\n  return hash % tableSize;\n}\n\n// 예시\nsimpleHash(\"John\", 10);   // 9\nsimpleHash(\"Alice\", 10);  // 8\nsimpleHash(\"Bob\", 10);    // 1\n```\n\n### 해시 충돌 해결\n\n서로 다른 키가 같은 해시 값을 가지는 경우를 **해시 충돌(Hash Collision)**이라고 합니다.\n\n```\n예시: hash(\"John\") = 2, hash(\"Jane\") = 2  ← 충돌!\n```\n\n**1. 체이닝 (Chaining)**\n\n같은 인덱스에 연결 리스트로 여러 값을 저장합니다.\n\n```\nIndex  Buckets (Linked List)\n  0  → [Eve:28]\n  1  → [Alice:30] → [Bob:35] → [Charlie:40]  ← 체이닝\n  2  → [John:25]\n  3  → null\n```\n\n```javascript\nclass HashTableChaining {\n  constructor(size = 10) {\n    this.table = new Array(size);\n  }\n\n  set(key, value) {\n    const index = this.hash(key);\n    if (!this.table[index]) {\n      this.table[index] = [];\n    }\n    // 같은 키가 있으면 업데이트, 없으면 추가\n    const bucket = this.table[index];\n    const existing = bucket.find(item =\u003e item.key === key);\n    if (existing) {\n      existing.value = value;\n    } else {\n      bucket.push({ key, value });\n    }\n  }\n\n  get(key) {\n    const index = this.hash(key);\n    const bucket = this.table[index];\n    if (!bucket) return undefined;\n    const item = bucket.find(item =\u003e item.key === key);\n    return item?.value;\n  }\n}\n```\n\n**장점**: 구현이 간단, 삭제가 용이\n**단점**: 추가 메모리 필요 (포인터), 최악의 경우 O(n)\n\n**2. 개방 주소법 (Open Addressing)**\n\n충돌 발생 시 다른 빈 슬롯을 찾아 저장합니다.\n\n**(a) 선형 탐사 (Linear Probing)**\n```\nhash(key) = 2, 이미 차 있음\n→ 2+1=3 확인 → 차 있음\n→ 2+2=4 확인 → 비어있음, 저장!\n\nIndex  값\n  0  → [A]\n  1  → [B]\n  2  → [C]  ← hash(\"X\") = 2, 충돌\n  3  → [D]  ← 차 있음\n  4  → [X]  ← 여기에 저장\n```\n\n**(b) 이차 탐사 (Quadratic Probing)**\n```\n충돌 시: (hash + 1²), (hash + 2²), (hash + 3²)...\n클러스터링 감소\n```\n\n**(c) 이중 해싱 (Double Hashing)**\n```\n두 번째 해시 함수 사용:\nindex = (hash1(key) + i * hash2(key)) % size\n```\n\n### 로드 팩터 (Load Factor)\n\n로드 팩터 = (저장된 항목 수) / (테이블 크기)\n\n```\n테이블 크기: 10, 저장된 항목: 7\n로드 팩터 = 7 / 10 = 0.7 (70%)\n\n일반적으로 로드 팩터가 0.7~0.75를 초과하면\n테이블 크기를 확장 (재해싱, Rehashing)\n```\n\n재해싱 과정:\n1. 더 큰 테이블 생성 (보통 2배)\n2. 기존 모든 항목을 새 테이블에 재삽입\n3. 기존 테이블 제거\n\n### 시간 복잡도\n\n| 연산 | 평균 | 최악 |\n|------|------|------|\n| 검색 | O(1) | O(n) |\n| 삽입 | O(1) | O(n) |\n| 삭제 | O(1) | O(n) |\n\n### 좋은 해시 함수의 조건\n\n1. **결정성**: 같은 입력에 항상 같은 출력\n2. **균등 분포**: 해시 값이 고르게 분포\n3. **효율성**: 빠른 계산\n4. **충돌 최소화**: 서로 다른 키에 대해 다른 해시 값\n\n### 사용 사례\n\n- **데이터베이스 인덱싱**\n- **캐싱**: 빠른 데이터 접근\n- **중복 검사**: 고유성 확인\n- **심볼 테이블**: 컴파일러, 인터프리터\n- **Set, Map 자료구조**\n\n---\n\n## 시간 복잡도 비교\n\n| 자료구조 | 접근 | 검색 | 삽입 | 삭제 |\n|---------|------|------|------|------|\n| 배열 | O(1) | O(n) | O(n) | O(n) |\n| 연결 리스트 | O(n) | O(n) | O(1) | O(1) |\n| 스택 | O(n) | O(n) | O(1) | O(1) |\n| 큐 | O(n) | O(n) | O(1) | O(1) |\n| 해시 테이블 | - | O(1) | O(1) | O(1) |\n\n---\n\n## 다음 편 예고\n\nPart 2에서는 **트리, 힙, 그래프**와 같은 비선형 자료구조를 다룰 예정입니다. 이들은 계층적 구조와 복잡한 관계를 표현하는 데 최적화되어 있으며, 고급 알고리즘의 기초가 됩니다.\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"자료구조 완벽 가이드 Part 1: 선형 자료구조\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 9월 14일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"Computer Science\",{\"href\":\"/tags/Computer%20Science\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Computer Science\"}],[\"$\",\"$L3\",\"자료구조\",{\"href\":\"/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"자료구조\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/posts/computer-science/data-structures-fundamentals-part2\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"← 이전 글\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"자료구조 완벽 가이드 Part 2: 비선형 자료구조\"}]]}],[\"$\",\"$L3\",null,{\"href\":\"/posts/portfolio/election-map-cartogram-part-2\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"다음 글 →\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"2025 대선 지도 - 카토그램 만들기 Part 2: 후보자 카드 연동 및 회고\"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"자료구조 완벽 가이드 Part 1: 선형 자료구조 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"자료구조 완벽 가이드 Part 1: 선형 자료구조\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-09-14\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"자료구조 완벽 가이드 Part 1: 선형 자료구조\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>

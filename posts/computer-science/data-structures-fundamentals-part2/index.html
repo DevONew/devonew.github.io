@@ -1,0 +1,710 @@
+<!DOCTYPE html><!--nrRloE8nMkMSs56tAB1BQ--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/dfd93458d4eb6967.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-491ef1393c1a736d.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-afbc61cff1e5478f.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>자료구조 완벽 가이드 Part 2: 비선형 자료구조 | DevONew Blog</title><meta name="description" content="자료구조 학습 - 트리, 힙, 그래프 등 "/><meta property="og:title" content="자료구조 완벽 가이드 Part 2: 비선형 자료구조"/><meta property="og:description" content="자료구조 학습 - 트리, 힙, 그래프 등 "/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-09-14"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="자료구조 완벽 가이드 Part 2: 비선형 자료구조"/><meta name="twitter:description" content="자료구조 학습 - 트리, 힙, 그래프 등 "/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">자료구조 완벽 가이드 Part 2: 비선형 자료구조</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 9월 14일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Computer%20Science/">Computer Science</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/">자료구조</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><p>이 글은 <strong>자료구조 완벽 가이드</strong> 시리즈의 Part 2입니다. <a href="/computer-science/2025-09-14-data-structures-fundamentals-part1">Part 1</a>에서는 배열, 연결 리스트, 스택, 큐, 해시 테이블과 같은 선형 자료구조를 다뤘습니다.</p>
+<p>Part 2에서는 <strong>비선형 자료구조</strong>인 트리, 힙, 그래프를 다룹니다. 이들은 계층적 구조와 복잡한 관계를 표현하는 데 최적화되어 있으며, 고급 알고리즘의 기초가 됩니다.</p>
+<h2 id="트리-tree"><a aria-hidden="true" tabindex="-1" href="#트리-tree"><span class="icon icon-link"></span></a>트리 (Tree)</h2>
+<p>트리는 계층적 구조를 표현하는 비선형 자료구조입니다. 노드들이 부모-자식 관계로 연결되어 있습니다.</p>
+<h3 id="기본-용어와-시각화"><a aria-hidden="true" tabindex="-1" href="#기본-용어와-시각화"><span class="icon icon-link"></span></a>기본 용어와 시각화</h3>
+<pre><code>        A          ← Root (루트): 최상위 노드
+       / \
+      B   C        ← Level 1 (레벨 1)
+     / \   \
+    D   E   F      ← Level 2 (레벨 2)
+       /
+      G            ← Leaf (리프): 자식이 없는 노드
+
+용어 설명:
+- Root (루트): A (최상위 노드)
+- Leaf (리프): D, G, F (자식이 없는 노드)
+- Height (높이): 3 (루트에서 가장 깊은 리프까지의 거리)
+- Depth (깊이):
+  - A의 깊이: 0
+  - B의 깊이: 1
+  - D의 깊이: 2
+  - G의 깊이: 3
+- Parent (부모): B는 D와 E의 부모
+- Children (자식): D와 E는 B의 자식
+- Siblings (형제): D와 E는 형제 관계
+- Subtree (서브트리): B를 루트로 하는 서브트리 {B, D, E, G}
+</code></pre>
+<p><strong>실제 예시: 파일 시스템</strong></p>
+<pre><code>/                    ← 루트 디렉토리
+├── home/
+│   ├── user1/
+│   │   ├── documents/
+│   │   └── pictures/
+│   └── user2/
+└── var/
+    └── log/
+</code></pre>
+<h3 id="이진-트리-binary-tree"><a aria-hidden="true" tabindex="-1" href="#이진-트리-binary-tree"><span class="icon icon-link"></span></a>이진 트리 (Binary Tree)</h3>
+<p>각 노드가 최대 2개의 자식을 가지는 트리입니다.</p>
+<p><strong>종류:</strong></p>
+<ol>
+<li>
+<p><strong>완전 이진 트리 (Complete Binary Tree)</strong></p>
+<ul>
+<li>마지막 레벨을 제외한 모든 레벨이 완전히 채워짐</li>
+<li>마지막 레벨은 왼쪽부터 채워짐</li>
+</ul>
+</li>
+<li>
+<p><strong>포화 이진 트리 (Full Binary Tree)</strong></p>
+<ul>
+<li>모든 노드가 0개 또는 2개의 자식을 가짐</li>
+</ul>
+</li>
+<li>
+<p><strong>균형 이진 트리 (Balanced Binary Tree)</strong></p>
+<ul>
+<li>모든 리프의 깊이 차이가 1 이하</li>
+</ul>
+</li>
+</ol>
+<h3 id="이진-탐색-트리-binary-search-tree-bst"><a aria-hidden="true" tabindex="-1" href="#이진-탐색-트리-binary-search-tree-bst"><span class="icon icon-link"></span></a>이진 탐색 트리 (Binary Search Tree, BST)</h3>
+<p><strong>핵심 규칙</strong>: 왼쪽 서브트리의 모든 값 &lt; 루트 &lt; 오른쪽 서브트리의 모든 값</p>
+<pre><code>        50
+       /  \
+      30   70      ← 30 &lt; 50 &lt; 70
+     / \   / \
+    20 40 60 80    ← 모든 노드가 BST 규칙 만족
+
+검색 예시: 60 찾기
+50 → 60 &gt; 50, 오른쪽
+70 → 60 &lt; 70, 왼쪽
+60 → 찾음! (3번 비교)
+</code></pre>
+<p><strong>편향 트리 문제</strong>:</p>
+<pre><code>균형 트리 (O(log n)):     편향 트리 (O(n)):
+     50                        10
+    /  \                         \
+   30   70                       20
+  / \   / \                        \
+ 20 40 60 80                       30
+                                     \
+                                     40
+높이: 2                           높이: 3
+</code></pre>
+<p><strong>시간 복잡도:</strong></p>
+<ul>
+<li>평균: O(log n) - 균형 잡힌 경우</li>
+<li>최악: O(n) - 편향된 경우 (연결 리스트와 동일)</li>
+</ul>
+<p><strong>순회 방법:</strong></p>
+<pre><code>트리 예시:
+     4
+    / \
+   2   6
+  / \ / \
+ 1  3 5  7
+
+1. 전위 순회 (Preorder): Root → Left → Right
+   결과: 4 → 2 → 1 → 3 → 6 → 5 → 7
+   용도: 트리 복사, 전위 표기법
+
+2. 중위 순회 (Inorder): Left → Root → Right
+   결과: 1 → 2 → 3 → 4 → 5 → 6 → 7  ← 정렬된 순서!
+   용도: BST를 정렬된 배열로 변환
+
+3. 후위 순회 (Postorder): Left → Right → Root
+   결과: 1 → 3 → 2 → 5 → 7 → 6 → 4
+   용도: 트리 삭제, 후위 표기법
+</code></pre>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">BSTNode</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">value</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">value</span> = value;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">left</span> = <span class="hljs-literal">null</span>;
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">right</span> = <span class="hljs-literal">null</span>;
+  }
+}
+
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">BST</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">root</span> = <span class="hljs-literal">null</span>;
+  }
+
+  <span class="hljs-comment">// O(log n) 평균 - 삽입</span>
+  <span class="hljs-title function_">insert</span>(<span class="hljs-params">value</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">root</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_insertNode</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">root</span>, value);
+  }
+
+  <span class="hljs-title function_">_insertNode</span>(<span class="hljs-params">node, value</span>) {
+    <span class="hljs-keyword">if</span> (!node) <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BSTNode</span>(value);
+
+    <span class="hljs-keyword">if</span> (value &lt; node.<span class="hljs-property">value</span>) {
+      node.<span class="hljs-property">left</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_insertNode</span>(node.<span class="hljs-property">left</span>, value);
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (value &gt; node.<span class="hljs-property">value</span>) {
+      node.<span class="hljs-property">right</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_insertNode</span>(node.<span class="hljs-property">right</span>, value);
+    }
+    <span class="hljs-keyword">return</span> node;
+  }
+
+  <span class="hljs-comment">// 중위 순회 (정렬된 순서)</span>
+  <span class="hljs-title function_">inorderTraversal</span>(<span class="hljs-params">node = <span class="hljs-variable language_">this</span>.root, result = []</span>) {
+    <span class="hljs-keyword">if</span> (node) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">inorderTraversal</span>(node.<span class="hljs-property">left</span>, result);
+      result.<span class="hljs-title function_">push</span>(node.<span class="hljs-property">value</span>);
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">inorderTraversal</span>(node.<span class="hljs-property">right</span>, result);
+    }
+    <span class="hljs-keyword">return</span> result;
+  }
+}
+
+<span class="hljs-keyword">const</span> bst = <span class="hljs-keyword">new</span> <span class="hljs-title function_">BST</span>();
+bst.<span class="hljs-title function_">insert</span>(<span class="hljs-number">50</span>);
+bst.<span class="hljs-title function_">insert</span>(<span class="hljs-number">30</span>);
+bst.<span class="hljs-title function_">insert</span>(<span class="hljs-number">70</span>);
+bst.<span class="hljs-title function_">insert</span>(<span class="hljs-number">20</span>);
+bst.<span class="hljs-title function_">insert</span>(<span class="hljs-number">40</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(bst.<span class="hljs-title function_">inorderTraversal</span>());  <span class="hljs-comment">// [20, 30, 40, 50, 70]</span>
+</code></pre>
+<h3 id="avl-트리"><a aria-hidden="true" tabindex="-1" href="#avl-트리"><span class="icon icon-link"></span></a>AVL 트리</h3>
+<p>자가 균형 이진 탐색 트리로, 모든 노드의 왼쪽과 오른쪽 서브트리 높이 차이가 1 이하입니다.</p>
+<p><strong>균형 팩터 (Balance Factor) = 왼쪽 높이 - 오른쪽 높이</strong></p>
+<ul>
+<li>허용 범위: -1, 0, 1</li>
+<li>범위 벗어나면 회전(Rotation) 수행</li>
+</ul>
+<pre><code>균형 잡힌 트리:          불균형 트리:
+      30 (BF=0)               30 (BF=2) ← 불균형!
+     /  \                    /
+   20    40                20
+  (0)    (0)              /
+                        10
+                       (0)
+</code></pre>
+<p><strong>회전 연산 (Rotation)</strong></p>
+<p><strong>(1) 우회전 (Right Rotation)</strong> - 왼쪽이 무거울 때:</p>
+<pre><code>불균형:         우회전 →        균형:
+    30                          20
+   /                           /  \
+  20                          10  30
+ /
+10
+</code></pre>
+<p><strong>(2) 좌회전 (Left Rotation)</strong> - 오른쪽이 무거울 때:</p>
+<pre><code>불균형:         좌회전 →        균형:
+10                              20
+  \                            /  \
+  20                          10  30
+    \
+    30
+</code></pre>
+<p><strong>(3) 좌-우회전 (Left-Right)</strong> - 왼쪽 자식의 오른쪽이 무거울 때:</p>
+<pre><code>    30          좌회전(10) →      30        우회전(30) →    20
+   /                             /                        /  \
+  10                            20                       10  30
+    \                          /
+    20                        10
+</code></pre>
+<p><strong>특징:</strong></p>
+<ul>
+<li>회전(Rotation) 연산으로 자동 균형 유지</li>
+<li>검색, 삽입, 삭제 모두 <strong>O(log n) 보장</strong></li>
+<li>BST보다 약간 느린 삽입/삭제 (회전 오버헤드)</li>
+<li>검색 성능은 항상 우수</li>
+</ul>
+<h3 id="사용-사례"><a aria-hidden="true" tabindex="-1" href="#사용-사례"><span class="icon icon-link"></span></a>사용 사례</h3>
+<ul>
+<li><strong>파일 시스템</strong>: 디렉토리 구조</li>
+<li><strong>DOM 트리</strong>: HTML 문서 구조</li>
+<li><strong>데이터베이스 인덱싱</strong>: B-Tree, B+ Tree</li>
+<li><strong>의사 결정 트리</strong>: 머신러닝</li>
+<li><strong>라우팅 테이블</strong>: 네트워크</li>
+<li><strong>추상 구문 트리 (AST)</strong>: 컴파일러</li>
+</ul>
+<hr/>
+<h2 id="힙-heap"><a aria-hidden="true" tabindex="-1" href="#힙-heap"><span class="icon icon-link"></span></a>힙 (Heap)</h2>
+<p>힙은 완전 이진 트리 기반의 자료구조로, 특정 순서 속성을 만족합니다.</p>
+<h3 id="종류"><a aria-hidden="true" tabindex="-1" href="#종류"><span class="icon icon-link"></span></a>종류</h3>
+<p><strong>1. 최대 힙 (Max Heap)</strong>: 부모 노드 ≥ 자식 노드</p>
+<pre><code>        50           ← 루트가 최댓값
+       /  \
+      30   40        ← 30 ≤ 50, 40 ≤ 50
+     / \   /
+    10 20 35         ← 모든 부모 ≥ 자식
+</code></pre>
+<p><strong>2. 최소 힙 (Min Heap)</strong>: 부모 노드 ≤ 자식 노드</p>
+<pre><code>        10           ← 루트가 최솟값
+       /  \
+      20   30        ← 20 ≥ 10, 30 ≥ 10
+     / \   /
+    40 50 35         ← 모든 부모 ≤ 자식
+</code></pre>
+<h3 id="주요-연산"><a aria-hidden="true" tabindex="-1" href="#주요-연산"><span class="icon icon-link"></span></a>주요 연산</h3>
+<p><strong>삽입 (Insert)</strong> - O(log n)</p>
+<p>새 요소를 마지막에 추가하고 위로 올리며 힙 속성 복원 (heapify-up)</p>
+<pre><code>최대 힙에 60 삽입:
+
+1. 마지막 위치에 추가    2. 부모(40)와 비교     3. 부모(50)와 비교
+      50                      50                     60
+     /  \                    /  \                   /  \
+    30   40                30   40                50   40
+   / \   / \              / \   / \              / \   /
+  10 20 35 [60]         10 20 35 [60]          30 20 35
+                            ↓ swap                ↓ swap
+
+완료: 60이 루트가 됨 (최댓값)
+</code></pre>
+<p><strong>삭제 (Delete Max/Min)</strong> - O(log n)</p>
+<p>루트를 제거하고 마지막 노드를 루트로, 아래로 내리며 힙 속성 복원 (heapify-down)</p>
+<pre><code>최대 힙에서 루트(60) 삭제:
+
+1. 루트 제거           2. 마지막(20) 이동     3. 자식과 비교
+      60                     [20]                   50
+     /  \                   /  \                   /  \
+    50   40      →        50   40      →         20   40
+   / \   /               / \                     /  \
+  30 20 35              30 35                   30  35
+                            ↓ swap
+
+4. 다시 비교 (완료)
+      50
+     /  \
+    30   40
+   / \
+  20 35
+</code></pre>
+<p><strong>최대/최소값 조회 (Peek)</strong> - O(1)</p>
+<p>루트 노드가 항상 최댓값(최대 힙) 또는 최솟값(최소 힙)입니다.</p>
+<h3 id="배열-표현"><a aria-hidden="true" tabindex="-1" href="#배열-표현"><span class="icon icon-link"></span></a>배열 표현</h3>
+<p>힙은 <strong>완전 이진 트리</strong>이므로 배열로 효율적으로 표현할 수 있습니다.</p>
+<pre><code>트리 구조:
+        50
+       /  \
+      30   40
+     / \   /
+    10 20 35
+
+배열 표현:
+Index:  0   1   2   3   4   5
+값:    [50][30][40][10][20][35]
+
+관계 공식 (0-based index):
+- 노드 i의 부모: (i - 1) / 2
+- 노드 i의 왼쪽 자식: 2 * i + 1
+- 노드 i의 오른쪽 자식: 2 * i + 2
+
+예시:
+- 30 (index 1)의 부모: (1-1)/2 = 0 → 50
+- 30 (index 1)의 왼쪽 자식: 2*1+1 = 3 → 10
+- 30 (index 1)의 오른쪽 자식: 2*1+2 = 4 → 20
+</code></pre>
+<p><strong>배열 표현의 장점</strong>:</p>
+<ul>
+<li>포인터 불필요 (메모리 절약)</li>
+<li>캐시 친화적 (연속 메모리)</li>
+<li>부모/자식 접근이 간단한 산술 연산</li>
+</ul>
+<h3 id="사용-사례-1"><a aria-hidden="true" tabindex="-1" href="#사용-사례-1"><span class="icon icon-link"></span></a>사용 사례</h3>
+<ul>
+<li><strong>우선순위 큐 구현</strong></li>
+<li><strong>힙 정렬 (Heap Sort)</strong>: O(n log n)</li>
+<li><strong>다익스트라 알고리즘</strong>: 최단 경로 탐색</li>
+<li><strong>중앙값 찾기</strong>: 두 힙 사용</li>
+<li><strong>스케줄링</strong>: 작업 우선순위 관리</li>
+</ul>
+<h3 id="코드-예시"><a aria-hidden="true" tabindex="-1" href="#코드-예시"><span class="icon icon-link"></span></a>코드 예시</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">class</span> <span class="hljs-title class_">MaxHeap</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span> = [];
+  }
+
+  <span class="hljs-comment">// 부모/자식 인덱스 계산</span>
+  <span class="hljs-title function_">getParentIndex</span>(<span class="hljs-params">i</span>) { <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-title function_">floor</span>((i - <span class="hljs-number">1</span>) / <span class="hljs-number">2</span>); }
+  <span class="hljs-title function_">getLeftChildIndex</span>(<span class="hljs-params">i</span>) { <span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * i + <span class="hljs-number">1</span>; }
+  <span class="hljs-title function_">getRightChildIndex</span>(<span class="hljs-params">i</span>) { <span class="hljs-keyword">return</span> <span class="hljs-number">2</span> * i + <span class="hljs-number">2</span>; }
+
+  <span class="hljs-comment">// 삽입 - O(log n)</span>
+  <span class="hljs-title function_">insert</span>(<span class="hljs-params">value</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>.<span class="hljs-title function_">push</span>(value);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">heapifyUp</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>.<span class="hljs-property">length</span> - <span class="hljs-number">1</span>);
+  }
+
+  <span class="hljs-title function_">heapifyUp</span>(<span class="hljs-params">index</span>) {
+    <span class="hljs-keyword">let</span> current = index;
+    <span class="hljs-keyword">while</span> (current &gt; <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">const</span> parent = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getParentIndex</span>(current);
+      <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[current] &lt;= <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[parent]) <span class="hljs-keyword">break</span>;
+
+      <span class="hljs-comment">// 부모와 swap</span>
+      [<span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[current], <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[parent]] =
+        [<span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[parent], <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[current]];
+      current = parent;
+    }
+  }
+
+  <span class="hljs-comment">// 삭제 (최댓값) - O(log n)</span>
+  <span class="hljs-title function_">extractMax</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>.<span class="hljs-property">length</span> === <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>.<span class="hljs-title function_">pop</span>();
+
+    <span class="hljs-keyword">const</span> max = <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[<span class="hljs-number">0</span>];
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[<span class="hljs-number">0</span>] = <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>.<span class="hljs-title function_">pop</span>();
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">heapifyDown</span>(<span class="hljs-number">0</span>);
+    <span class="hljs-keyword">return</span> max;
+  }
+
+  <span class="hljs-title function_">heapifyDown</span>(<span class="hljs-params">index</span>) {
+    <span class="hljs-keyword">let</span> current = index;
+    <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+      <span class="hljs-keyword">const</span> left = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getLeftChildIndex</span>(current);
+      <span class="hljs-keyword">const</span> right = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getRightChildIndex</span>(current);
+      <span class="hljs-keyword">let</span> largest = current;
+
+      <span class="hljs-keyword">if</span> (left &lt; <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>.<span class="hljs-property">length</span> &amp;&amp;
+          <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[left] &gt; <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[largest]) {
+        largest = left;
+      }
+      <span class="hljs-keyword">if</span> (right &lt; <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>.<span class="hljs-property">length</span> &amp;&amp;
+          <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[right] &gt; <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[largest]) {
+        largest = right;
+      }
+
+      <span class="hljs-keyword">if</span> (largest === current) <span class="hljs-keyword">break</span>;
+
+      <span class="hljs-comment">// 자식과 swap</span>
+      [<span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[current], <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[largest]] =
+        [<span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[largest], <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[current]];
+      current = largest;
+    }
+  }
+
+  <span class="hljs-comment">// 최댓값 조회 - O(1)</span>
+  <span class="hljs-title function_">peek</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">heap</span>[<span class="hljs-number">0</span>];
+  }
+}
+
+<span class="hljs-comment">// 사용 예시</span>
+<span class="hljs-keyword">const</span> heap = <span class="hljs-keyword">new</span> <span class="hljs-title class_">MaxHeap</span>();
+heap.<span class="hljs-title function_">insert</span>(<span class="hljs-number">50</span>);
+heap.<span class="hljs-title function_">insert</span>(<span class="hljs-number">30</span>);
+heap.<span class="hljs-title function_">insert</span>(<span class="hljs-number">40</span>);
+heap.<span class="hljs-title function_">insert</span>(<span class="hljs-number">10</span>);
+heap.<span class="hljs-title function_">insert</span>(<span class="hljs-number">20</span>);
+heap.<span class="hljs-title function_">insert</span>(<span class="hljs-number">60</span>);  <span class="hljs-comment">// heapify-up 발생</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(heap.<span class="hljs-title function_">peek</span>());        <span class="hljs-comment">// 60 (최댓값)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(heap.<span class="hljs-title function_">extractMax</span>());  <span class="hljs-comment">// 60 (제거)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(heap.<span class="hljs-title function_">peek</span>());        <span class="hljs-comment">// 50 (새로운 최댓값)</span>
+</code></pre>
+<hr/>
+<h2 id="그래프-graph"><a aria-hidden="true" tabindex="-1" href="#그래프-graph"><span class="icon icon-link"></span></a>그래프 (Graph)</h2>
+<p>그래프는 정점(Vertex)과 간선(Edge)으로 구성된 비선형 자료구조입니다.</p>
+<h3 id="기본-개념과-시각화"><a aria-hidden="true" tabindex="-1" href="#기본-개념과-시각화"><span class="icon icon-link"></span></a>기본 개념과 시각화</h3>
+<p><strong>기본 구조</strong>:</p>
+<pre><code>정점 (Vertex/Node): A, B, C, D
+간선 (Edge): 정점을 연결하는 선
+
+   A --- B
+   |     |
+   |     |
+   C --- D
+
+정점 집합 V = {A, B, C, D}
+간선 집합 E = {(A,B), (A,C), (B,D), (C,D)}
+</code></pre>
+<h3 id="분류"><a aria-hidden="true" tabindex="-1" href="#분류"><span class="icon icon-link"></span></a>분류</h3>
+<p><strong>1. 방향성</strong></p>
+<p>무방향 그래프 (Undirected Graph):</p>
+<pre><code>   A ←→ B      양방향 이동 가능
+   ↕     ↕
+   C ←→ D
+
+간선: (A,B) = (B,A) (순서 무관)
+</code></pre>
+<p>방향 그래프 (Directed Graph, Digraph):</p>
+<pre><code>   A → B       일방향 이동만 가능
+   ↓   ↓
+   C → D
+
+간선: (A,B) ≠ (B,A) (순서 중요)
+예: 웹 페이지 링크, 트위터 팔로우
+</code></pre>
+<p><strong>2. 가중치</strong></p>
+<p>비가중 그래프:</p>
+<pre><code>   A --- B     모든 간선의 가중치 = 1
+   |     |
+   C --- D
+</code></pre>
+<p>가중 그래프 (Weighted Graph):</p>
+<pre><code>   A --5-- B    간선에 비용/거리 존재
+   |       |
+   3       2
+   |       |
+   C --4-- D
+
+사용: 도로 네트워크, 항공편 비용
+</code></pre>
+<p><strong>3. 연결성</strong></p>
+<p>연결 그래프:</p>
+<pre><code>   A --- B
+   |     |     모든 정점이 경로로 연결
+   C --- D
+</code></pre>
+<p>비연결 그래프:</p>
+<pre><code>   A --- B     E --- F    고립된 컴포넌트
+
+   C           G          존재
+</code></pre>
+<p><strong>4. 순환성</strong></p>
+<p>순환 그래프 (Cyclic):</p>
+<pre><code>   A --- B
+   |     |     사이클 존재: A→B→D→C→A
+   C --- D
+</code></pre>
+<p>비순환 그래프 (Acyclic):</p>
+<pre><code>   A → B
+   ↓   ↓       사이클 없음
+   C → D
+
+DAG (Directed Acyclic Graph): 방향이 있고 순환이 없음
+예: 작업 의존성, Git 커밋 히스토리
+</code></pre>
+<h3 id="표현-방법"><a aria-hidden="true" tabindex="-1" href="#표현-방법"><span class="icon icon-link"></span></a>표현 방법</h3>
+<p><strong>1. 인접 행렬 (Adjacency Matrix)</strong></p>
+<p>2차원 배열로 그래프를 표현합니다.</p>
+<pre><code>그래프:
+   A --- B
+   |     |
+   C --- D
+
+인접 행렬 (무방향):
+     A  B  C  D
+  A [0, 1, 1, 0]
+  B [1, 0, 0, 1]
+  C [1, 0, 0, 1]
+  D [0, 1, 1, 0]
+
+matrix[i][j] = 1: 간선 존재
+matrix[i][j] = 0: 간선 없음
+</code></pre>
+<p>가중 그래프:</p>
+<pre><code>   A --5-- B
+   |       |
+   3       2
+   |       |
+   C --4-- D
+
+     A  B  C  D
+  A [0, 5, 3, 0]
+  B [5, 0, 0, 2]
+  C [3, 0, 0, 4]
+  D [0, 2, 4, 0]
+</code></pre>
+<p><strong>특징</strong>:</p>
+<ul>
+<li>공간 복잡도: <strong>O(V²)</strong> (정점 수의 제곱)</li>
+<li>간선 존재 확인: <strong>O(1)</strong> (직접 인덱스 접근)</li>
+<li>모든 간선 순회: <strong>O(V²)</strong></li>
+<li><strong>밀집 그래프</strong>에 적합 (간선이 많을 때)</li>
+</ul>
+<p><strong>2. 인접 리스트 (Adjacency List)</strong></p>
+<p>각 정점마다 연결된 정점들의 리스트를 저장합니다.</p>
+<pre><code>그래프:
+   A --- B
+   |     |
+   C --- D
+
+인접 리스트:
+A: [B, C]
+B: [A, D]
+C: [A, D]
+D: [B, C]
+</code></pre>
+<p>가중 그래프:</p>
+<pre><code>A: [{node: B, weight: 5}, {node: C, weight: 3}]
+B: [{node: A, weight: 5}, {node: D, weight: 2}]
+C: [{node: A, weight: 3}, {node: D, weight: 4}]
+D: [{node: B, weight: 2}, {node: C, weight: 4}]
+</code></pre>
+<p><strong>특징</strong>:</p>
+<ul>
+<li>공간 복잡도: <strong>O(V + E)</strong> (정점 + 간선)</li>
+<li>간선 존재 확인: <strong>O(degree)</strong> ≈ O(V) 최악의 경우</li>
+<li>모든 간선 순회: <strong>O(V + E)</strong></li>
+<li><strong>희소 그래프</strong>에 적합 (간선이 적을 때)</li>
+</ul>
+<p><strong>선택 기준</strong>:</p>
+<pre><code>밀집 그래프 (간선 많음):
+E ≈ V² → 인접 행렬 사용
+예: 완전 그래프, 소셜 네트워크
+
+희소 그래프 (간선 적음):
+E &lt;&lt; V² → 인접 리스트 사용
+예: 웹 그래프, 도로 네트워크
+</code></pre>
+<h3 id="순회-알고리즘"><a aria-hidden="true" tabindex="-1" href="#순회-알고리즘"><span class="icon icon-link"></span></a>순회 알고리즘</h3>
+<p><strong>1. 깊이 우선 탐색 (DFS - Depth First Search)</strong></p>
+<p>스택 또는 재귀를 사용하여 한 경로를 끝까지 탐색한 후 돌아옵니다.</p>
+<pre><code>그래프:
+   A --- B
+   |     |
+   C --- D
+
+DFS 탐색 과정 (A 시작):
+1. A 방문 → 스택: [A]
+2. A의 이웃 B 방문 → 스택: [A, B]
+3. B의 이웃 D 방문 → 스택: [A, B, D]
+4. D의 이웃 C 방문 → 스택: [A, B, D, C]
+5. C는 더 갈 곳 없음, 백트랙
+
+순서: A → B → D → C
+</code></pre>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// DFS 구현 (재귀)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">dfs</span>(<span class="hljs-params">graph, start, visited = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Set</span>()</span>) {
+  visited.<span class="hljs-title function_">add</span>(start);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(start);
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> neighbor <span class="hljs-keyword">of</span> graph[start]) {
+    <span class="hljs-keyword">if</span> (!visited.<span class="hljs-title function_">has</span>(neighbor)) {
+      <span class="hljs-title function_">dfs</span>(graph, neighbor, visited);
+    }
+  }
+}
+
+<span class="hljs-comment">// DFS 구현 (스택)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">dfsIterative</span>(<span class="hljs-params">graph, start</span>) {
+  <span class="hljs-keyword">const</span> visited = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>();
+  <span class="hljs-keyword">const</span> stack = [start];
+
+  <span class="hljs-keyword">while</span> (stack.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> node = stack.<span class="hljs-title function_">pop</span>();
+    <span class="hljs-keyword">if</span> (visited.<span class="hljs-title function_">has</span>(node)) <span class="hljs-keyword">continue</span>;
+
+    visited.<span class="hljs-title function_">add</span>(node);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(node);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> neighbor <span class="hljs-keyword">of</span> graph[node]) {
+      <span class="hljs-keyword">if</span> (!visited.<span class="hljs-title function_">has</span>(neighbor)) {
+        stack.<span class="hljs-title function_">push</span>(neighbor);
+      }
+    }
+  }
+}
+</code></pre>
+<p><strong>시간 복잡도</strong>: O(V + E)
+<strong>사용 사례</strong>: 경로 찾기, 사이클 검출, 위상 정렬</p>
+<p><strong>2. 너비 우선 탐색 (BFS - Breadth First Search)</strong></p>
+<p>큐를 사용하여 레벨별로 탐색합니다.</p>
+<pre><code>그래프:
+     A
+    / \
+   B   C
+   |   |
+   D   E
+
+BFS 탐색 과정 (A 시작):
+1. A 방문 → 큐: [A]
+2. A의 모든 이웃 추가 → 큐: [B, C]
+3. B 방문, B의 이웃 추가 → 큐: [C, D]
+4. C 방문, C의 이웃 추가 → 큐: [D, E]
+5. D, E 순서대로 방문
+
+순서: A → B → C → D → E (레벨별)
+      ↑   ↑ ↑   ↑ ↑
+     L0  L1    L2
+
+최단 경로: A→D = 2 (A→B→D)
+</code></pre>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// BFS 구현</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">bfs</span>(<span class="hljs-params">graph, start</span>) {
+  <span class="hljs-keyword">const</span> visited = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>();
+  <span class="hljs-keyword">const</span> queue = [start];
+  visited.<span class="hljs-title function_">add</span>(start);
+
+  <span class="hljs-keyword">while</span> (queue.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> node = queue.<span class="hljs-title function_">shift</span>();
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(node);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> neighbor <span class="hljs-keyword">of</span> graph[node]) {
+      <span class="hljs-keyword">if</span> (!visited.<span class="hljs-title function_">has</span>(neighbor)) {
+        visited.<span class="hljs-title function_">add</span>(neighbor);
+        queue.<span class="hljs-title function_">push</span>(neighbor);
+      }
+    }
+  }
+}
+
+<span class="hljs-comment">// BFS로 최단 경로 찾기</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">shortestPath</span>(<span class="hljs-params">graph, start, end</span>) {
+  <span class="hljs-keyword">const</span> queue = [[start, [start]]];
+  <span class="hljs-keyword">const</span> visited = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Set</span>([start]);
+
+  <span class="hljs-keyword">while</span> (queue.<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">const</span> [node, path] = queue.<span class="hljs-title function_">shift</span>();
+
+    <span class="hljs-keyword">if</span> (node === end) {
+      <span class="hljs-keyword">return</span> path;  <span class="hljs-comment">// 최단 경로 반환</span>
+    }
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> neighbor <span class="hljs-keyword">of</span> graph[node]) {
+      <span class="hljs-keyword">if</span> (!visited.<span class="hljs-title function_">has</span>(neighbor)) {
+        visited.<span class="hljs-title function_">add</span>(neighbor);
+        queue.<span class="hljs-title function_">push</span>([neighbor, [...path, neighbor]]);
+      }
+    }
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+}
+</code></pre>
+<p><strong>시간 복잡도</strong>: O(V + E)
+<strong>사용 사례</strong>: 최단 경로 (비가중), 레벨별 순회, 연결 요소 찾기</p>
+<p><strong>DFS vs BFS 비교</strong>:</p>
+<pre><code>       A
+      / \
+     B   C
+    / \
+   D   E
+
+DFS: A → B → D → E → C (깊이 우선)
+     스택 사용, 메모리 효율적 (재귀 스택)
+
+BFS: A → B → C → D → E (너비 우선)
+     큐 사용, 최단 경로 보장
+
+선택 기준:
+- 모든 경로 탐색: DFS
+- 최단 경로: BFS
+- 메모리 제약: DFS (재귀)
+</code></pre>
+<h3 id="사용-사례-2"><a aria-hidden="true" tabindex="-1" href="#사용-사례-2"><span class="icon icon-link"></span></a>사용 사례</h3>
+<ul>
+<li><strong>소셜 네트워크</strong>: 친구 관계</li>
+<li><strong>지도/네비게이션</strong>: 최단 경로</li>
+<li><strong>웹 크롤링</strong>: 페이지 링크</li>
+<li><strong>의존성 관리</strong>: 패키지 매니저</li>
+<li><strong>추천 시스템</strong>: 연관 관계</li>
+</ul>
+<hr/>
+<h2 id="자료구조-선택-가이드"><a aria-hidden="true" tabindex="-1" href="#자료구조-선택-가이드"><span class="icon icon-link"></span></a>자료구조 선택 가이드</h2>
+<h3 id="시간-복잡도-비교"><a aria-hidden="true" tabindex="-1" href="#시간-복잡도-비교"><span class="icon icon-link"></span></a>시간 복잡도 비교</h3>
+<table><thead><tr><th>자료구조</th><th>접근</th><th>검색</th><th>삽입</th><th>삭제</th></tr></thead><tbody><tr><td>이진 탐색 트리</td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td></tr><tr><td>AVL 트리</td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td><td>O(log n)</td></tr><tr><td>힙</td><td>-</td><td>O(n)</td><td>O(log n)</td><td>O(log n)</td></tr></tbody></table>
+<h3 id="상황별-최적-선택"><a aria-hidden="true" tabindex="-1" href="#상황별-최적-선택"><span class="icon icon-link"></span></a>상황별 최적 선택</h3>
+<p><strong>범위 검색/정렬된 데이터</strong></p>
+<ul>
+<li>이진 탐색 트리</li>
+<li>AVL 트리</li>
+</ul>
+<p><strong>순서가 중요할 때</strong></p>
+<ul>
+<li>우선순위: 힙</li>
+</ul>
+<p><strong>계층 구조</strong></p>
+<ul>
+<li>트리</li>
+</ul>
+<p><strong>관계 표현</strong></p>
+<ul>
+<li>그래프</li>
+</ul>
+<hr/>
+<h2 id="결론"><a aria-hidden="true" tabindex="-1" href="#결론"><span class="icon icon-link"></span></a>결론</h2>
+<p>자료구조는 알고리즘의 효율성을 결정하는 핵심 요소입니다. Part 1의 선형 자료구조와 Part 2의 비선형 자료구조를 모두 이해하고, 각 자료구조의 특성과 시간/공간 복잡도를 파악하여 문제 상황에 맞는 최적의 자료구조를 선택하는 것이 중요합니다.</p>
+<p><strong>핵심 포인트:</strong></p>
+<ol>
+<li><strong>트레이드오프 이해</strong>: 시간 vs 공간, 접근 속도 vs 삽입/삭제 속도</li>
+<li><strong>문제 분석</strong>: 어떤 연산이 빈번한가? 데이터 크기는? 순서가 중요한가?</li>
+<li><strong>복잡도 고려</strong>: Big-O 표기법으로 성능 예측</li>
+<li><strong>실제 테스트</strong>: 이론과 실제 성능 차이 확인</li>
+</ol>
+<p>자료구조에 대한 깊은 이해는 효율적인 소프트웨어 개발의 기초입니다. 지속적인 학습과 실습을 통해 다양한 문제 상황에서 최적의 자료구조를 선택할 수 있는 능력을 키워나가시기 바랍니다.</p></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group" href="/posts/claude/claude-code-part-1/"><div class="text-sm text-muted-foreground mb-2">← 이전 글</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">Claude Code 시작하기1</div></a><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right" href="/posts/computer-science/data-structures-fundamentals-part1/"><div class="text-sm text-muted-foreground mb-2">다음 글 →</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">자료구조 완벽 가이드 Part 1: 선형 자료구조</div></a></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/dfd93458d4eb6967.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"nrRloE8nMkMSs56tAB1BQ\",\"p\":\"\",\"c\":[\"\",\"posts\",\"computer-science\",\"data-structures-fundamentals-part2\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"computer-science\",\"d\"],{\"children\":[[\"slug\",\"data-structures-fundamentals-part2\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/dfd93458d4eb6967.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"computer-science\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"data-structures-fundamentals-part2\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T4cfc,"])</script><script>self.__next_f.push([1,"\n이 글은 **자료구조 완벽 가이드** 시리즈의 Part 2입니다. [Part 1](/computer-science/2025-09-14-data-structures-fundamentals-part1)에서는 배열, 연결 리스트, 스택, 큐, 해시 테이블과 같은 선형 자료구조를 다뤘습니다.\n\nPart 2에서는 **비선형 자료구조**인 트리, 힙, 그래프를 다룹니다. 이들은 계층적 구조와 복잡한 관계를 표현하는 데 최적화되어 있으며, 고급 알고리즘의 기초가 됩니다.\n\n## 트리 (Tree)\n\n트리는 계층적 구조를 표현하는 비선형 자료구조입니다. 노드들이 부모-자식 관계로 연결되어 있습니다.\n\n### 기본 용어와 시각화\n\n```\n        A          ← Root (루트): 최상위 노드\n       / \\\n      B   C        ← Level 1 (레벨 1)\n     / \\   \\\n    D   E   F      ← Level 2 (레벨 2)\n       /\n      G            ← Leaf (리프): 자식이 없는 노드\n\n용어 설명:\n- Root (루트): A (최상위 노드)\n- Leaf (리프): D, G, F (자식이 없는 노드)\n- Height (높이): 3 (루트에서 가장 깊은 리프까지의 거리)\n- Depth (깊이):\n  - A의 깊이: 0\n  - B의 깊이: 1\n  - D의 깊이: 2\n  - G의 깊이: 3\n- Parent (부모): B는 D와 E의 부모\n- Children (자식): D와 E는 B의 자식\n- Siblings (형제): D와 E는 형제 관계\n- Subtree (서브트리): B를 루트로 하는 서브트리 {B, D, E, G}\n```\n\n**실제 예시: 파일 시스템**\n```\n/                    ← 루트 디렉토리\n├── home/\n│   ├── user1/\n│   │   ├── documents/\n│   │   └── pictures/\n│   └── user2/\n└── var/\n    └── log/\n```\n\n### 이진 트리 (Binary Tree)\n\n각 노드가 최대 2개의 자식을 가지는 트리입니다.\n\n**종류:**\n\n1. **완전 이진 트리 (Complete Binary Tree)**\n   - 마지막 레벨을 제외한 모든 레벨이 완전히 채워짐\n   - 마지막 레벨은 왼쪽부터 채워짐\n\n2. **포화 이진 트리 (Full Binary Tree)**\n   - 모든 노드가 0개 또는 2개의 자식을 가짐\n\n3. **균형 이진 트리 (Balanced Binary Tree)**\n   - 모든 리프의 깊이 차이가 1 이하\n\n### 이진 탐색 트리 (Binary Search Tree, BST)\n\n**핵심 규칙**: 왼쪽 서브트리의 모든 값 \u003c 루트 \u003c 오른쪽 서브트리의 모든 값\n\n```\n        50\n       /  \\\n      30   70      ← 30 \u003c 50 \u003c 70\n     / \\   / \\\n    20 40 60 80    ← 모든 노드가 BST 규칙 만족\n\n검색 예시: 60 찾기\n50 → 60 \u003e 50, 오른쪽\n70 → 60 \u003c 70, 왼쪽\n60 → 찾음! (3번 비교)\n```\n\n**편향 트리 문제**:\n```\n균형 트리 (O(log n)):     편향 트리 (O(n)):\n     50                        10\n    /  \\                         \\\n   30   70                       20\n  / \\   / \\                        \\\n 20 40 60 80                       30\n                                     \\\n                                     40\n높이: 2                           높이: 3\n```\n\n**시간 복잡도:**\n- 평균: O(log n) - 균형 잡힌 경우\n- 최악: O(n) - 편향된 경우 (연결 리스트와 동일)\n\n**순회 방법:**\n\n```\n트리 예시:\n     4\n    / \\\n   2   6\n  / \\ / \\\n 1  3 5  7\n\n1. 전위 순회 (Preorder): Root → Left → Right\n   결과: 4 → 2 → 1 → 3 → 6 → 5 → 7\n   용도: 트리 복사, 전위 표기법\n\n2. 중위 순회 (Inorder): Left → Root → Right\n   결과: 1 → 2 → 3 → 4 → 5 → 6 → 7  ← 정렬된 순서!\n   용도: BST를 정렬된 배열로 변환\n\n3. 후위 순회 (Postorder): Left → Right → Root\n   결과: 1 → 3 → 2 → 5 → 7 → 6 → 4\n   용도: 트리 삭제, 후위 표기법\n```\n\n```javascript\nclass BSTNode {\n  constructor(value) {\n    this.value = value;\n    this.left = null;\n    this.right = null;\n  }\n}\n\nclass BST {\n  constructor() {\n    this.root = null;\n  }\n\n  // O(log n) 평균 - 삽입\n  insert(value) {\n    this.root = this._insertNode(this.root, value);\n  }\n\n  _insertNode(node, value) {\n    if (!node) return new BSTNode(value);\n\n    if (value \u003c node.value) {\n      node.left = this._insertNode(node.left, value);\n    } else if (value \u003e node.value) {\n      node.right = this._insertNode(node.right, value);\n    }\n    return node;\n  }\n\n  // 중위 순회 (정렬된 순서)\n  inorderTraversal(node = this.root, result = []) {\n    if (node) {\n      this.inorderTraversal(node.left, result);\n      result.push(node.value);\n      this.inorderTraversal(node.right, result);\n    }\n    return result;\n  }\n}\n\nconst bst = new BST();\nbst.insert(50);\nbst.insert(30);\nbst.insert(70);\nbst.insert(20);\nbst.insert(40);\nconsole.log(bst.inorderTraversal());  // [20, 30, 40, 50, 70]\n```\n\n### AVL 트리\n\n자가 균형 이진 탐색 트리로, 모든 노드의 왼쪽과 오른쪽 서브트리 높이 차이가 1 이하입니다.\n\n**균형 팩터 (Balance Factor) = 왼쪽 높이 - 오른쪽 높이**\n- 허용 범위: -1, 0, 1\n- 범위 벗어나면 회전(Rotation) 수행\n\n```\n균형 잡힌 트리:          불균형 트리:\n      30 (BF=0)               30 (BF=2) ← 불균형!\n     /  \\                    /\n   20    40                20\n  (0)    (0)              /\n                        10\n                       (0)\n```\n\n**회전 연산 (Rotation)**\n\n**(1) 우회전 (Right Rotation)** - 왼쪽이 무거울 때:\n```\n불균형:         우회전 →        균형:\n    30                          20\n   /                           /  \\\n  20                          10  30\n /\n10\n```\n\n**(2) 좌회전 (Left Rotation)** - 오른쪽이 무거울 때:\n```\n불균형:         좌회전 →        균형:\n10                              20\n  \\                            /  \\\n  20                          10  30\n    \\\n    30\n```\n\n**(3) 좌-우회전 (Left-Right)** - 왼쪽 자식의 오른쪽이 무거울 때:\n```\n    30          좌회전(10) →      30        우회전(30) →    20\n   /                             /                        /  \\\n  10                            20                       10  30\n    \\                          /\n    20                        10\n```\n\n**특징:**\n- 회전(Rotation) 연산으로 자동 균형 유지\n- 검색, 삽입, 삭제 모두 **O(log n) 보장**\n- BST보다 약간 느린 삽입/삭제 (회전 오버헤드)\n- 검색 성능은 항상 우수\n\n### 사용 사례\n\n- **파일 시스템**: 디렉토리 구조\n- **DOM 트리**: HTML 문서 구조\n- **데이터베이스 인덱싱**: B-Tree, B+ Tree\n- **의사 결정 트리**: 머신러닝\n- **라우팅 테이블**: 네트워크\n- **추상 구문 트리 (AST)**: 컴파일러\n\n---\n\n## 힙 (Heap)\n\n힙은 완전 이진 트리 기반의 자료구조로, 특정 순서 속성을 만족합니다.\n\n### 종류\n\n**1. 최대 힙 (Max Heap)**: 부모 노드 ≥ 자식 노드\n```\n        50           ← 루트가 최댓값\n       /  \\\n      30   40        ← 30 ≤ 50, 40 ≤ 50\n     / \\   /\n    10 20 35         ← 모든 부모 ≥ 자식\n```\n\n**2. 최소 힙 (Min Heap)**: 부모 노드 ≤ 자식 노드\n```\n        10           ← 루트가 최솟값\n       /  \\\n      20   30        ← 20 ≥ 10, 30 ≥ 10\n     / \\   /\n    40 50 35         ← 모든 부모 ≤ 자식\n```\n\n### 주요 연산\n\n**삽입 (Insert)** - O(log n)\n\n새 요소를 마지막에 추가하고 위로 올리며 힙 속성 복원 (heapify-up)\n\n```\n최대 힙에 60 삽입:\n\n1. 마지막 위치에 추가    2. 부모(40)와 비교     3. 부모(50)와 비교\n      50                      50                     60\n     /  \\                    /  \\                   /  \\\n    30   40                30   40                50   40\n   / \\   / \\              / \\   / \\              / \\   /\n  10 20 35 [60]         10 20 35 [60]          30 20 35\n                            ↓ swap                ↓ swap\n\n완료: 60이 루트가 됨 (최댓값)\n```\n\n**삭제 (Delete Max/Min)** - O(log n)\n\n루트를 제거하고 마지막 노드를 루트로, 아래로 내리며 힙 속성 복원 (heapify-down)\n\n```\n최대 힙에서 루트(60) 삭제:\n\n1. 루트 제거           2. 마지막(20) 이동     3. 자식과 비교\n      60                     [20]                   50\n     /  \\                   /  \\                   /  \\\n    50   40      →        50   40      →         20   40\n   / \\   /               / \\                     /  \\\n  30 20 35              30 35                   30  35\n                            ↓ swap\n\n4. 다시 비교 (완료)\n      50\n     /  \\\n    30   40\n   / \\\n  20 35\n```\n\n**최대/최소값 조회 (Peek)** - O(1)\n\n루트 노드가 항상 최댓값(최대 힙) 또는 최솟값(최소 힙)입니다.\n\n### 배열 표현\n\n힙은 **완전 이진 트리**이므로 배열로 효율적으로 표현할 수 있습니다.\n\n```\n트리 구조:\n        50\n       /  \\\n      30   40\n     / \\   /\n    10 20 35\n\n배열 표현:\nIndex:  0   1   2   3   4   5\n값:    [50][30][40][10][20][35]\n\n관계 공식 (0-based index):\n- 노드 i의 부모: (i - 1) / 2\n- 노드 i의 왼쪽 자식: 2 * i + 1\n- 노드 i의 오른쪽 자식: 2 * i + 2\n\n예시:\n- 30 (index 1)의 부모: (1-1)/2 = 0 → 50\n- 30 (index 1)의 왼쪽 자식: 2*1+1 = 3 → 10\n- 30 (index 1)의 오른쪽 자식: 2*1+2 = 4 → 20\n```\n\n**배열 표현의 장점**:\n- 포인터 불필요 (메모리 절약)\n- 캐시 친화적 (연속 메모리)\n- 부모/자식 접근이 간단한 산술 연산\n\n### 사용 사례\n\n- **우선순위 큐 구현**\n- **힙 정렬 (Heap Sort)**: O(n log n)\n- **다익스트라 알고리즘**: 최단 경로 탐색\n- **중앙값 찾기**: 두 힙 사용\n- **스케줄링**: 작업 우선순위 관리\n\n### 코드 예시\n\n```javascript\nclass MaxHeap {\n  constructor() {\n    this.heap = [];\n  }\n\n  // 부모/자식 인덱스 계산\n  getParentIndex(i) { return Math.floor((i - 1) / 2); }\n  getLeftChildIndex(i) { return 2 * i + 1; }\n  getRightChildIndex(i) { return 2 * i + 2; }\n\n  // 삽입 - O(log n)\n  insert(value) {\n    this.heap.push(value);\n    this.heapifyUp(this.heap.length - 1);\n  }\n\n  heapifyUp(index) {\n    let current = index;\n    while (current \u003e 0) {\n      const parent = this.getParentIndex(current);\n      if (this.heap[current] \u003c= this.heap[parent]) break;\n\n      // 부모와 swap\n      [this.heap[current], this.heap[parent]] =\n        [this.heap[parent], this.heap[current]];\n      current = parent;\n    }\n  }\n\n  // 삭제 (최댓값) - O(log n)\n  extractMax() {\n    if (this.heap.length === 0) return null;\n    if (this.heap.length === 1) return this.heap.pop();\n\n    const max = this.heap[0];\n    this.heap[0] = this.heap.pop();\n    this.heapifyDown(0);\n    return max;\n  }\n\n  heapifyDown(index) {\n    let current = index;\n    while (true) {\n      const left = this.getLeftChildIndex(current);\n      const right = this.getRightChildIndex(current);\n      let largest = current;\n\n      if (left \u003c this.heap.length \u0026\u0026\n          this.heap[left] \u003e this.heap[largest]) {\n        largest = left;\n      }\n      if (right \u003c this.heap.length \u0026\u0026\n          this.heap[right] \u003e this.heap[largest]) {\n        largest = right;\n      }\n\n      if (largest === current) break;\n\n      // 자식과 swap\n      [this.heap[current], this.heap[largest]] =\n        [this.heap[largest], this.heap[current]];\n      current = largest;\n    }\n  }\n\n  // 최댓값 조회 - O(1)\n  peek() {\n    return this.heap[0];\n  }\n}\n\n// 사용 예시\nconst heap = new MaxHeap();\nheap.insert(50);\nheap.insert(30);\nheap.insert(40);\nheap.insert(10);\nheap.insert(20);\nheap.insert(60);  // heapify-up 발생\n\nconsole.log(heap.peek());        // 60 (최댓값)\nconsole.log(heap.extractMax());  // 60 (제거)\nconsole.log(heap.peek());        // 50 (새로운 최댓값)\n```\n\n---\n\n## 그래프 (Graph)\n\n그래프는 정점(Vertex)과 간선(Edge)으로 구성된 비선형 자료구조입니다.\n\n### 기본 개념과 시각화\n\n**기본 구조**:\n```\n정점 (Vertex/Node): A, B, C, D\n간선 (Edge): 정점을 연결하는 선\n\n   A --- B\n   |     |\n   |     |\n   C --- D\n\n정점 집합 V = {A, B, C, D}\n간선 집합 E = {(A,B), (A,C), (B,D), (C,D)}\n```\n\n### 분류\n\n**1. 방향성**\n\n무방향 그래프 (Undirected Graph):\n```\n   A ←→ B      양방향 이동 가능\n   ↕     ↕\n   C ←→ D\n\n간선: (A,B) = (B,A) (순서 무관)\n```\n\n방향 그래프 (Directed Graph, Digraph):\n```\n   A → B       일방향 이동만 가능\n   ↓   ↓\n   C → D\n\n간선: (A,B) ≠ (B,A) (순서 중요)\n예: 웹 페이지 링크, 트위터 팔로우\n```\n\n**2. 가중치**\n\n비가중 그래프:\n```\n   A --- B     모든 간선의 가중치 = 1\n   |     |\n   C --- D\n```\n\n가중 그래프 (Weighted Graph):\n```\n   A --5-- B    간선에 비용/거리 존재\n   |       |\n   3       2\n   |       |\n   C --4-- D\n\n사용: 도로 네트워크, 항공편 비용\n```\n\n**3. 연결성**\n\n연결 그래프:\n```\n   A --- B\n   |     |     모든 정점이 경로로 연결\n   C --- D\n```\n\n비연결 그래프:\n```\n   A --- B     E --- F    고립된 컴포넌트\n\n   C           G          존재\n```\n\n**4. 순환성**\n\n순환 그래프 (Cyclic):\n```\n   A --- B\n   |     |     사이클 존재: A→B→D→C→A\n   C --- D\n```\n\n비순환 그래프 (Acyclic):\n```\n   A → B\n   ↓   ↓       사이클 없음\n   C → D\n\nDAG (Directed Acyclic Graph): 방향이 있고 순환이 없음\n예: 작업 의존성, Git 커밋 히스토리\n```\n\n### 표현 방법\n\n**1. 인접 행렬 (Adjacency Matrix)**\n\n2차원 배열로 그래프를 표현합니다.\n\n```\n그래프:\n   A --- B\n   |     |\n   C --- D\n\n인접 행렬 (무방향):\n     A  B  C  D\n  A [0, 1, 1, 0]\n  B [1, 0, 0, 1]\n  C [1, 0, 0, 1]\n  D [0, 1, 1, 0]\n\nmatrix[i][j] = 1: 간선 존재\nmatrix[i][j] = 0: 간선 없음\n```\n\n가중 그래프:\n```\n   A --5-- B\n   |       |\n   3       2\n   |       |\n   C --4-- D\n\n     A  B  C  D\n  A [0, 5, 3, 0]\n  B [5, 0, 0, 2]\n  C [3, 0, 0, 4]\n  D [0, 2, 4, 0]\n```\n\n**특징**:\n- 공간 복잡도: **O(V²)** (정점 수의 제곱)\n- 간선 존재 확인: **O(1)** (직접 인덱스 접근)\n- 모든 간선 순회: **O(V²)**\n- **밀집 그래프**에 적합 (간선이 많을 때)\n\n**2. 인접 리스트 (Adjacency List)**\n\n각 정점마다 연결된 정점들의 리스트를 저장합니다.\n\n```\n그래프:\n   A --- B\n   |     |\n   C --- D\n\n인접 리스트:\nA: [B, C]\nB: [A, D]\nC: [A, D]\nD: [B, C]\n```\n\n가중 그래프:\n```\nA: [{node: B, weight: 5}, {node: C, weight: 3}]\nB: [{node: A, weight: 5}, {node: D, weight: 2}]\nC: [{node: A, weight: 3}, {node: D, weight: 4}]\nD: [{node: B, weight: 2}, {node: C, weight: 4}]\n```\n\n**특징**:\n- 공간 복잡도: **O(V + E)** (정점 + 간선)\n- 간선 존재 확인: **O(degree)** ≈ O(V) 최악의 경우\n- 모든 간선 순회: **O(V + E)**\n- **희소 그래프**에 적합 (간선이 적을 때)\n\n**선택 기준**:\n```\n밀집 그래프 (간선 많음):\nE ≈ V² → 인접 행렬 사용\n예: 완전 그래프, 소셜 네트워크\n\n희소 그래프 (간선 적음):\nE \u003c\u003c V² → 인접 리스트 사용\n예: 웹 그래프, 도로 네트워크\n```\n\n### 순회 알고리즘\n\n**1. 깊이 우선 탐색 (DFS - Depth First Search)**\n\n스택 또는 재귀를 사용하여 한 경로를 끝까지 탐색한 후 돌아옵니다.\n\n```\n그래프:\n   A --- B\n   |     |\n   C --- D\n\nDFS 탐색 과정 (A 시작):\n1. A 방문 → 스택: [A]\n2. A의 이웃 B 방문 → 스택: [A, B]\n3. B의 이웃 D 방문 → 스택: [A, B, D]\n4. D의 이웃 C 방문 → 스택: [A, B, D, C]\n5. C는 더 갈 곳 없음, 백트랙\n\n순서: A → B → D → C\n```\n\n```javascript\n// DFS 구현 (재귀)\nfunction dfs(graph, start, visited = new Set()) {\n  visited.add(start);\n  console.log(start);\n\n  for (const neighbor of graph[start]) {\n    if (!visited.has(neighbor)) {\n      dfs(graph, neighbor, visited);\n    }\n  }\n}\n\n// DFS 구현 (스택)\nfunction dfsIterative(graph, start) {\n  const visited = new Set();\n  const stack = [start];\n\n  while (stack.length \u003e 0) {\n    const node = stack.pop();\n    if (visited.has(node)) continue;\n\n    visited.add(node);\n    console.log(node);\n\n    for (const neighbor of graph[node]) {\n      if (!visited.has(neighbor)) {\n        stack.push(neighbor);\n      }\n    }\n  }\n}\n```\n\n**시간 복잡도**: O(V + E)\n**사용 사례**: 경로 찾기, 사이클 검출, 위상 정렬\n\n**2. 너비 우선 탐색 (BFS - Breadth First Search)**\n\n큐를 사용하여 레벨별로 탐색합니다.\n\n```\n그래프:\n     A\n    / \\\n   B   C\n   |   |\n   D   E\n\nBFS 탐색 과정 (A 시작):\n1. A 방문 → 큐: [A]\n2. A의 모든 이웃 추가 → 큐: [B, C]\n3. B 방문, B의 이웃 추가 → 큐: [C, D]\n4. C 방문, C의 이웃 추가 → 큐: [D, E]\n5. D, E 순서대로 방문\n\n순서: A → B → C → D → E (레벨별)\n      ↑   ↑ ↑   ↑ ↑\n     L0  L1    L2\n\n최단 경로: A→D = 2 (A→B→D)\n```\n\n```javascript\n// BFS 구현\nfunction bfs(graph, start) {\n  const visited = new Set();\n  const queue = [start];\n  visited.add(start);\n\n  while (queue.length \u003e 0) {\n    const node = queue.shift();\n    console.log(node);\n\n    for (const neighbor of graph[node]) {\n      if (!visited.has(neighbor)) {\n        visited.add(neighbor);\n        queue.push(neighbor);\n      }\n    }\n  }\n}\n\n// BFS로 최단 경로 찾기\nfunction shortestPath(graph, start, end) {\n  const queue = [[start, [start]]];\n  const visited = new Set([start]);\n\n  while (queue.length \u003e 0) {\n    const [node, path] = queue.shift();\n\n    if (node === end) {\n      return path;  // 최단 경로 반환\n    }\n\n    for (const neighbor of graph[node]) {\n      if (!visited.has(neighbor)) {\n        visited.add(neighbor);\n        queue.push([neighbor, [...path, neighbor]]);\n      }\n    }\n  }\n  return null;\n}\n```\n\n**시간 복잡도**: O(V + E)\n**사용 사례**: 최단 경로 (비가중), 레벨별 순회, 연결 요소 찾기\n\n**DFS vs BFS 비교**:\n```\n       A\n      / \\\n     B   C\n    / \\\n   D   E\n\nDFS: A → B → D → E → C (깊이 우선)\n     스택 사용, 메모리 효율적 (재귀 스택)\n\nBFS: A → B → C → D → E (너비 우선)\n     큐 사용, 최단 경로 보장\n\n선택 기준:\n- 모든 경로 탐색: DFS\n- 최단 경로: BFS\n- 메모리 제약: DFS (재귀)\n```\n\n### 사용 사례\n\n- **소셜 네트워크**: 친구 관계\n- **지도/네비게이션**: 최단 경로\n- **웹 크롤링**: 페이지 링크\n- **의존성 관리**: 패키지 매니저\n- **추천 시스템**: 연관 관계\n\n---\n\n## 자료구조 선택 가이드\n\n### 시간 복잡도 비교\n\n| 자료구조 | 접근 | 검색 | 삽입 | 삭제 |\n|---------|------|------|------|------|\n| 이진 탐색 트리 | O(log n) | O(log n) | O(log n) | O(log n) |\n| AVL 트리 | O(log n) | O(log n) | O(log n) | O(log n) |\n| 힙 | - | O(n) | O(log n) | O(log n) |\n\n### 상황별 최적 선택\n\n**범위 검색/정렬된 데이터**\n- 이진 탐색 트리\n- AVL 트리\n\n**순서가 중요할 때**\n- 우선순위: 힙\n\n**계층 구조**\n- 트리\n\n**관계 표현**\n- 그래프\n\n---\n\n## 결론\n\n자료구조는 알고리즘의 효율성을 결정하는 핵심 요소입니다. Part 1의 선형 자료구조와 Part 2의 비선형 자료구조를 모두 이해하고, 각 자료구조의 특성과 시간/공간 복잡도를 파악하여 문제 상황에 맞는 최적의 자료구조를 선택하는 것이 중요합니다.\n\n**핵심 포인트:**\n\n1. **트레이드오프 이해**: 시간 vs 공간, 접근 속도 vs 삽입/삭제 속도\n2. **문제 분석**: 어떤 연산이 빈번한가? 데이터 크기는? 순서가 중요한가?\n3. **복잡도 고려**: Big-O 표기법으로 성능 예측\n4. **실제 테스트**: 이론과 실제 성능 차이 확인\n\n자료구조에 대한 깊은 이해는 효율적인 소프트웨어 개발의 기초입니다. 지속적인 학습과 실습을 통해 다양한 문제 상황에서 최적의 자료구조를 선택할 수 있는 능력을 키워나가시기 바랍니다.\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"자료구조 완벽 가이드 Part 2: 비선형 자료구조\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 9월 14일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"Computer Science\",{\"href\":\"/tags/Computer%20Science\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Computer Science\"}],[\"$\",\"$L3\",\"자료구조\",{\"href\":\"/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"자료구조\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/posts/claude/claude-code-part-1\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"← 이전 글\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"Claude Code 시작하기1\"}]]}],[\"$\",\"$L3\",null,{\"href\":\"/posts/computer-science/data-structures-fundamentals-part1\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"다음 글 →\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"자료구조 완벽 가이드 Part 1: 선형 자료구조\"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"자료구조 완벽 가이드 Part 2: 비선형 자료구조 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"자료구조 학습 - 트리, 힙, 그래프 등 \"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"자료구조 완벽 가이드 Part 2: 비선형 자료구조\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"자료구조 학습 - 트리, 힙, 그래프 등 \"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-09-14\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"자료구조 완벽 가이드 Part 2: 비선형 자료구조\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"자료구조 학습 - 트리, 힙, 그래프 등 \"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>
