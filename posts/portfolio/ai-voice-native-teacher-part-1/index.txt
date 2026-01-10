@@ -1,0 +1,291 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/dfd93458d4eb6967.css","style"]
+0:{"P":null,"b":"5N38ekSihlAbqBMBNp1lx","p":"","c":["","posts","portfolio","ai-voice-native-teacher-part-1",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","portfolio","d"],{"children":[["slug","ai-voice-native-teacher-part-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/dfd93458d4eb6967.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","portfolio","d"],"$L8",{"children":[["slug","ai-voice-native-teacher-part-1","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T2d75,
+## 프로젝트 소개
+
+Voice AI App은 다국어 언어 학습을 위한 음성 기반 AI 튜터 애플리케이션입니다. 사용자가 음성으로 질문하면 AI가 원어민 선생님 역할로 답변하며, TTS(Text-to-Speech)로 자연스러운 음성으로 응답합니다.
+
+### 어쩌다 만들게 되었나
+
+친구가 언어 학습을 위한 나만의 원어민 AI 선생님이 필요하다고 했습니다. 시중에는 여러 AI 음성 서비스가 있지만, 새로운 서비스에 추가로 결제하기보다는 이미 결제해둔 AI 서비스(Claude와 ElevenLabs)를 활용하고 싶었습니다.
+게다가 이번 기회에 Claude Code도 학습해보고 싶었습니다. 프로젝트 초기 설정부터 컴포넌트 구조, 상태 관리까지 Claude Code와 함께 작업하며 AI 페어 프로그래밍 경험을 쌓을 수 있었습니다.
+
+
+## 전체 동작 플로우
+
+사용자가 앱을 사용하는 전체 과정은 다음과 같습니다:
+
+```
+1. 사용자가 마이크 버튼 클릭
+    ↓
+2. 음성 녹음 시작 (마이크 권한 요청)
+    ↓
+3. 실시간 음량 분석 (버튼 크기 동적 변화)
+    ↓
+4. 침묵 감지 (1.5초) → 자동 녹음 종료
+    ↓
+5. [STT] ElevenLabs API 호출
+    ↓
+6. 음성 → 텍스트 변환
+    ↓
+7. 변환된 텍스트 2초간 화면 표시
+    ↓
+8. [CHAT] Claude API 호출
+    ↓
+9. AI 응답 생성 (대화 히스토리 포함)
+    ↓
+10. 언어 자동 감지 (한국어/영어/일본어/중국어)
+    ↓
+11. [TTS] ElevenLabs API 호출 (또는 캐시에서 가져오기)
+    ↓
+12. 텍스트 → 음성 변환
+    ↓
+13. 음성 재생 + 텍스트 표시
+    ↓
+14. 재생 완료 → 초기 상태로 복귀
+```
+
+### 파일 구조
+
+```
+voice-ai-app/
+├── app/
+│   ├── api/                    # 백엔드 API 라우트 (Next.js App Router)
+│   │   ├── chat/
+│   │   │   └── route.ts        # Claude API 호출 (POST)
+│   │   ├── stt/
+│   │   │   └── route.ts        # ElevenLabs 음성 인식 (POST)
+│   │   ├── tts/
+│   │   │   └── route.ts        # ElevenLabs 음성 합성 (POST)
+│   │   └── verify/
+│   │       └── route.ts        # 사용 횟수 검증 (GET)
+│   │
+│   ├── components/             # React UI 컴포넌트
+│   │   ├── VoiceButton.tsx     # 중앙 마이크 버튼 (상태별 동적 크기)
+│   │   ├── StateViews.tsx      # 상태별 뷰 렌더링 (idle, listening, processing, speaking, error)
+│   │   ├── AudioPlayer.tsx     # TTS 음성 재생 컴포넌트
+│   │   ├── ChatContainer.tsx   # 대화 히스토리 컨테이너
+│   │   ├── ChatMessage.tsx     # 개별 채팅 메시지 (사용자/AI)
+│   │   ├── StateTextDisplay.tsx # 상태별 텍스트 표시
+│   │   ├── StatusText.tsx      # 상태 텍스트 (탭하여 시작, 듣는 중...)
+│   │   ├── ResponseDisplay.tsx # AI 응답 텍스트 표시
+│   │   ├── ErrorDisplay.tsx    # 에러 메시지 표시
+│   │   ├── PulseIndicator.tsx  # 펄스 애니메이션 (음량 시각화)
+│   │   ├── PasswordModal.tsx   # 비밀번호 입력 모달 (사용 제한)
+│   │   └── EmotionRegistry.tsx # Emotion CSS-in-JS 레지스트리
+│   │
+│   ├── hooks/                  # 핵심 비즈니스 로직
+│   │   ├── useAppState.ts      # 전역 상태 관리 (5가지 상태)
+│   │   ├── useVoiceRecorderStreaming.ts  # 마이크 녹음, 침묵 감지, STT 호출
+│   │   ├── useChatHandler.ts   # Chat API 호출, 언어 감지, TTS 오케스트레이션
+│   │   └── useAudioAPI.ts      # 오디오 재생 관리
+│   │
+│   ├── utils/                  # 유틸리티 함수
+│   │   ├── audio-context.ts    # Singleton AudioContext 패턴
+│   │   ├── tts-cache.ts        # LRU 캐시 (TTS 응답 저장, 50개)
+│   │   ├── language-detector.ts # 언어 자동 감지 (ko, en, ja, zh)
+│   │   ├── usage-limit.ts      # 일일 사용 횟수 제한
+│   │   └── platform-detect.ts  # 플랫폼 감지 (iOS, Android, Desktop)
+│   │
+│   ├── config/
+│   │   └── system-prompt.ts    # Claude 시스템 프롬프트 설정
+│   │
+│   ├── constants/              # 설정 상수
+│   │   ├── audio.ts            # 오디오 설정 (침묵 임계값: 15, FFT 크기: 256, 침묵 시간: 1500ms)
+│   │   ├── ui.ts               # UI 설정 (애니메이션, 색상)
+│   │   └── longPageTexts.ts    # 긴 텍스트 상수
+│   │
+│   ├── types/
+│   │   └── index.ts            # TypeScript 타입 정의 (AppState, ConversationHistory 등)
+│   │
+│   ├── layout.tsx              # 루트 레이아웃 (메타데이터, 폰트)
+│   └── page.tsx                # 메인 페이지
+│ 
+│      
+│
+├── public/                     # 정적 파일 (이미지, 아이콘)
+├── .storybook/                 # Storybook 설정
+├── stories/                    # Storybook 스토리
+├── package.json
+├── tailwind.config.ts          # Tailwind CSS 설정
+├── tsconfig.json               # TypeScript 설정
+└── next.config.ts              # Next.js 설정
+```
+
+## 핵심 구현: 상태 관리
+
+이 프로젝트에서 가장 중요한 부분은 **상태 관리**입니다. 앱은 5가지 상태를 가지며, 각 상태마다 UI와 동작이 완전히 다릅니다.
+
+### 상태 타입 정의
+
+```typescript
+type AppState = 'idle' | 'listening' | 'processing' | 'speaking' | 'error';
+
+interface UseAppStateReturn {
+  appState: AppState
+  displayText: string              // 사용자가 말한 내용 (STT 결과)
+  responseText: string             // AI 응답 텍스트
+  errorMessage: string
+  conversationHistory: ConversationHistory  // 대화 히스토리
+  audioBlob: Blob | null          // TTS 오디오
+  isAudioPlaying: boolean
+  currentLanguage: string         // 현재 언어 (kr, fr)
+  setAppState: (state: AppState) => void
+  setDisplayText: (text: string) => void
+  setResponseText: (text: string) => void
+  // ... 기타 setter 함수들
+  getStatusText: (appState: AppState, displayText: string, responseText: string) => string
+}
+```
+
+### 상태 전환 플로우
+
+```
+idle (대기 중)
+  ↓ [마이크 버튼 클릭]
+listening (듣는 중)
+  ↓ [침묵 감지 1.5초 → STT 완료]
+listening (STT 결과 표시 2초)
+  ↓ [2초 후 자동 전환]
+processing (생각하는 중)
+  ↓ [Chat API 응답 완료]
+speaking (말하는 중)
+  ↓ [TTS 재생 완료]
+idle (초기 상태 복귀)
+```
+
+### useAppState 훅 - 상태 관리 개선
+
+초기에는 `switch` 문으로 상태별 텍스트를 관리했지만, 실무에서는 객체 매핑 패턴을 더 많이 사용한다는 것을 알게 되었습니다. `switch` 문은 상태가 추가될 때마다 여러 줄의 코드를 수정해야 하고, TypeScript의 타입 체크를 완전히 활용하지 못하는 단점이 있습니다. 객체 매핑 패턴으로 리팩토링하면 `Record<AppState, ...>` 타입으로 모든 상태를 컴파일 타임에 보장할 수 있고, 데이터와 로직이 한곳에 모여 있어 유지보수가 훨씬 쉬워집니다.
+
+```typescript
+// 개선 후: 객체 매핑 패턴
+const getStatusText = useCallback((state: AppState, displayTxt: string, responseTxt: string): string => {
+  const statusTextMap: Record<AppState, string | ((displayTxt: string, responseTxt: string) => string)> = {
+    idle: '탭하여 시작',
+    listening: (displayTxt) => displayTxt || '듣는 중...',
+    processing: '생각하는 중...',
+    speaking: (_, responseTxt) => responseTxt,
+    error: '탭하여 시작',
+  }
+
+  const status = statusTextMap[state]
+  return typeof status === 'function' ? status(displayTxt, responseTxt) : status
+}, [])
+```
+
+이 패턴은 Redux, Zustand 같은 상태 관리 라이브러리에서도 널리 사용되며, 함수형 프로그래밍 패러다임과 잘 맞아 React 생태계에서 선호됩니다.
+
+### StateViews 컴포넌트 - 상태별 화면 렌더링
+
+각 상태별로 완전히 다른 UI를 렌더링하는 컴포넌트입니다. Framer Motion의 `AnimatePresence`를 활용해 상태 전환 시 부드러운 애니메이션을 구현했습니다.
+
+```typescript
+export function StateViews({ appState, transcript, responseText, volumeLevel, ... }: StateViewsProps) {
+  return (
+    <AnimatePresence mode="wait">
+      {/* listening 상태: 실시간 음량에 따라 버튼 크기 변화 */}
+      {appState === 'listening' && (
+        <div key="listening">
+          <p>{transcript || '듣는중'}</p>
+          <VoiceButton
+            scale={Math.min(0.8 + (volumeLevel / 100) * 0.3, 1.1)}
+            isListening={true}
+          />
+        </div>
+      )}
+
+      {/* speaking 상태: 응답 텍스트 + 작은 버튼 */}
+      {appState === 'speaking' && responseText && (
+        <motion.div key="speaking" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <ResponseDisplay text={responseText} />
+          <VoiceButton size={80} />
+        </motion.div>
+      )}
+
+      {/* idle, processing, error 상태 생략 */}
+    </AnimatePresence>
+  )
+}
+```
+
+`AnimatePresence`의 `mode="wait"` 옵션으로 이전 상태가 완전히 사라진 후 다음 상태가 나타나도록 했습니다. `listening` 상태에서는 실시간 `volumeLevel`에 따라 버튼 크기가 동적으로 변화하며, 각 상태별로 고유한 `key`를 부여해 React가 정확히 애니메이션을 처리하도록 구현했습니다.
+
+## 상태별 UI 구현
+
+각 상태마다 완전히 다른 UI를 표시합니다. 프로젝트에서 구현한 각 상태의 특징을 살펴보겠습니다.
+
+### 1. idle 상태 - 초기 화면
+
+![메인 페이지](/image/main-page.png)
+
+화면 중앙에 부드러운 그라데이션 원형 버튼이 위치하며, 그 아래 "탭하여 시작"이라는 안내 문구가 표시됩니다. 미니멀한 디자인으로 사용자가 직관적으로 버튼을 탭하도록 유도합니다.
+
+**디자인 문제와 해결**
+
+초기 디자인에서 몇 가지 크로스 브라우징 이슈가 발생했습니다:
+
+**문제 1: 박스 섀도우 번짐 현상**
+- 컴퓨터 화면에서는 사각형 보더가 보이지 않는데, 아이폰에서는 보더가 선명하게 보이는 문제
+- 확인해보니 `box-shadow` 값이 과도하게 설정되어 있었음
+
+```tsx
+// 개선 전: 과도한 box-shadow
+className="shadow-[0_0_40px_rgba(0,0,0,0.3)]"
+
+// 개선 후: 부드러운 그림자
+className="shadow-lg"  // Tailwind의 기본값 사용
+```
+
+**문제 2: iOS Safari 하단 바 겹침**
+- 아이폰 16 Pro에서 하단 네비게이션 바가 버튼을 가리는 문제
+- `padding-bottom`을 아무리 넣어도 해결되지 않음
+- `env(safe-area-inset-bottom)`을 활용하여 해결 (iOS의 홈 인디케이터 높이만큼 자동으로 패딩 추가)
+
+```tsx
+// 개선 후
+<div className="pb-[calc(2rem+env(safe-area-inset-bottom))]">
+  <VoiceButton />
+</div>
+```
+
+```tsx
+<motion.button
+  onClick={handleButtonClick}
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="w-32 h-32 rounded-full bg-gradient-to-br from-gray-800 to-black shadow-lg"
+>
+  탭하여 시작
+</motion.button>
+```
+
+Framer Motion을 활용해 버튼 hover 및 tap 시 부드러운 스케일 애니메이션을 적용했습니다.
+
+
+Part 2에서는 나머지 3가지 상태(`listening`, `processing`, `speaking`)의 구현을 다룹니다.d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"AI 음성 원어민 선생님 만들기 Part 1: 프로젝트 개요와 상태 관리"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 12월 10일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","포트폴리오",{"href":"/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"포트폴리오"}],["$","$L3","AI",{"href":"/tags/AI","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"AI"}],["$","$L3","Next.js",{"href":"/tags/Next.js","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Next.js"}],["$","$L3","React",{"href":"/tags/React","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"React"}],["$","$L3","ElevenLabs",{"href":"/tags/ElevenLabs","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"ElevenLabs"}],["$","$L3","Claude",{"href":"/tags/Claude","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Claude"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/portfolio/ai-voice-native-teacher-part-2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"AI 음성 원어민 선생님 만들기 Part 2: 음성 인식과 AI 대화 처리"}]]}],["$","$L3",null,{"href":"/posts/frontend/react-api-integration","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"React API 연동 모음"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"AI 음성 원어민 선생님 만들기 Part 1: 프로젝트 개요와 상태 관리 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","meta","2",{"property":"og:title","content":"AI 음성 원어민 선생님 만들기 Part 1: 프로젝트 개요와 상태 관리"}],["$","meta","3",{"property":"og:description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-12-10"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"AI 음성 원어민 선생님 만들기 Part 1: 프로젝트 개요와 상태 관리"}],["$","meta","8",{"name":"twitter:description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

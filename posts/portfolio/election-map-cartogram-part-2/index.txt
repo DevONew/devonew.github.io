@@ -1,0 +1,398 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/dfd93458d4eb6967.css","style"]
+0:{"P":null,"b":"5N38ekSihlAbqBMBNp1lx","p":"","c":["","posts","portfolio","election-map-cartogram-part-2",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","portfolio","d"],{"children":[["slug","election-map-cartogram-part-2","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/dfd93458d4eb6967.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","portfolio","d"],"$L8",{"children":[["slug","election-map-cartogram-part-2","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T36c5,## Part 1에서는...
+
+Part 1에서는 데이터 세팅 및 폴리곤 좌표로 화면에 지도를 그렸습니다. Part 2에서는 카드 컴포넌트와 호버 이벤트를 연동하고, Zustand를 활용한 상태관리 구조를 만들어보겠습니다. 마지막으로 프로젝트 회고를 작성해보겠습니다.
+
+## 폴리곤 1위 후보 색상 계산
+
+지난 시간에 폴리곤 좌표와 데이터 매칭을 했다면, 이번엔 각 지역에서 가장 많은 득표를 한 1위 후보자의 정당 색상으로 폴리곤을 채워보겠습니다.
+
+### 후보자 메타데이터 정의
+
+먼저 후보자별 색상과 이미지를 상수로 분리했습니다. 이 데이터는 지도 색상뿐만 아니라 후보자 카드 컴포넌트에서도 재사용됩니다.
+
+```typescript
+// src/constants/candidateMeta.ts
+export const candidateMeta = {
+  '이재명': {
+    image: '/images/candidate/이재명.png',
+    partyColor: '#1E7DD6', 
+  },
+  '김문수': {
+    image: '/images/candidate/김문수.png',
+    partyColor: '#E61D1D', 
+  },
+  '이준석': {
+    image: '/images/candidate/이준석.png',
+    partyColor: '#F9A825', 
+  }
+};
+```
+
+### 1위 후보 색상 로직 구현
+
+각 지역의 선거 데이터에서 3명 후보의 득표율을 비교하여 가장 높은 후보의 정당 색상을 반환하는 유틸 함수를 작성했습니다.
+
+```typescript
+// src/utils/colorUtils.ts
+export function getWinnerColor(regionData: ElectionData | undefined): string {
+  if (!regionData) return '#e0e0e0';
+
+  const votes = [
+    { candidate: regionData.hbj01, vote: regionData.vote01 },
+    { candidate: regionData.hbj02, vote: regionData.vote02 },
+    { candidate: regionData.hbj03, vote: regionData.vote03 },
+  ];
+
+  // 득표율이 가장 높은 후보 찾기
+  const winner = votes.reduce((prev, current) =>
+    (prev.vote > current.vote ? prev : current)
+  );
+
+  const winnerName = winner.candidate as keyof typeof candidateMeta;
+  return candidateMeta[winnerName]?.partyColor || '#e0e0e0';
+}
+```
+
+이 함수를 각 폴리곤의 `fill` 속성에 사용하여 1위 후보의 정당 색상으로 지도를 채웁니다.
+
+## 후보자 카드 컴포넌트
+
+후보자 정보를 표시하는 카드 컴포넌트를 만들었습니다. 이 컴포넌트는 여러 개의 작은 컴포넌트로 분리해서 재사용성과 유지보수성을 높였습니다.
+
+### 컴포넌트를 잘게 나눈 이유
+
+후보자 카드는 다음 요소들로 구성됩니다:
+- **후보자 이미지** (CandidateImage): 원형 프로필 이미지
+- **퍼센트 바** (PercentageBar): 득표율을 시각화하는 프로그레스 바
+- **카드 본체** (CandidateCard): 위 요소들을 조합한 메인 컴포넌트
+
+### CandidateImage 컴포넌트
+
+```tsx
+// src/components/ui/CandidateImage.tsx
+export default function CandidateImage({ src, alt = '후보자 이미지' }: Props) {
+  return (
+    <div className="w-[40px] h-[40px] relative rounded-full overflow-hidden">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className="object-cover object-[center_-3px]"
+        sizes="40px"
+      />
+    </div>
+  );
+}
+```
+
+Next.js의 `Image` 컴포넌트로 자동 최적화를 적용하고, `object-[center_-3px]`로 이미지 위치를 미세 조정해 얼굴이 중앙에 오도록 했습니다.
+
+### PercentageBar 컴포넌트
+
+```tsx
+// src/components/ui/PercentageBar.tsx
+export default function PercentageBar({percentage, color}: PercentageBarProps) {
+  const [animatedWidth, setAnimatedWidth] = useState(0);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setAnimatedWidth(percentage), 100);
+    return () => clearTimeout(timeout);
+  }, [percentage]);
+
+  return (
+    <div className="w-full h-1.5 bg-gray-200 rounded overflow-hidden">
+      <div
+        className="h-full transition-all duration-300 ease-in-out"
+        style={{ width: `${animatedWidth}%`, backgroundColor: color }}
+      />
+    </div>
+  );
+}
+```
+
+초기 `width`를 0으로 시작해서 실제 `percentage`로 애니메이션됩니다. `setTimeout`으로 100ms 지연을 줘야 CSS transition이 제대로 작동합니다.
+
+### CandidateCard 컴포넌트
+
+위 컴포넌트들을 조합한 최종 카드입니다. 후보자 이미지, 이름, 정당, 득표율, 득표수를 표시하고 하단에 PercentageBar를 배치합니다.
+
+## 호버 이벤트: 폴리곤 경계 깜빡임 해결
+
+250개 폴리곤에 마우스를 올릴 때 우측 카드가 업데이트되는 인터랙션을 구현했습니다. 하지만 폴리곤 경계에서 카드가 깜빡이는 버그가 발생했습니다.
+
+### 문제 상황
+
+```tsx
+//초기 구현
+<polygon
+  onMouseEnter={() => setHoveredRegion(region.id)}
+  onMouseLeave={() => setHoveredRegion(null)}
+/>
+```
+
+**원인**: SVG 폴리곤의 경계선은 1px도 안 되는 얇은 선입니다. 마우스를 경계를 따라 움직이면 `onMouseEnter` → `onMouseLeave` → `onMouseEnter`가 반복 발생하면서 우측 패널이 깜빡였습니다.
+
+### 해결 방법: CSS로 처리
+
+```tsx
+<polygon
+  points={points}
+  fill={regionColor}
+  onMouseEnter={() => setHoveredRegionId(region.id)}
+  onMouseLeave={() => setHoveredRegionId(null)}
+  style={{
+    cursor: 'pointer',
+    transition: 'all 0.2s ease',
+  }}
+  className="hover:stroke-[#d4c4a8] hover:stroke-[3] hover:brightness-110"
+/>
+```
+
+**핵심 해결책**:
+1. **CSS transition 사용**: JavaScript 상태 변경 대신 CSS로 호버 효과 처리
+2. **brightness 효과**: 호버 시 폴리곤이 살짝 밝아져 시각적 피드백 제공
+3. **테두리 강조**: 호버된 지역에 베이지색(`#d4c4a8`) 두꺼운 테두리로 구분
+
+호버 이벤트 자체는 Zustand 스토어로 관리하여 전역 상태로 처리했습니다.
+
+## 카드와 지도 데이터 연동
+
+### 기본값 설정: 서울 중구
+
+호버하지 않은 초기 상태에서 빈 화면을 보여주는 것은 좋지 않은 UX입니다. 따라서 기본값으로 **서울특별시 중구**를 선택했습니다.
+
+**중구를 선택한 이유**:
+지도의 중앙에 위치해서 시각적으로 자연스럽기 때문에 선정
+
+```tsx
+// src/app/page.tsx
+const displayData = hoveredRegionData
+  || data.find((item) => item.sdName === '서울특별시' && item.cityName === '중구')
+  || data[0];
+```
+
+호버된 지역이 없을 때는 서울 중구 데이터를 기본값으로 표시하고, 그마저도 없으면 전국 합계 데이터를 보여줍니다.
+
+### 지역명 텍스트 줄바꿈 처리
+
+지역명이 길어질 경우(예: "경상북도 영주시영양군봉화군울진군") 한 줄에 표시하면 레이아웃이 깨집니다. UI/UX를 고려해 공백 기준으로 분리하여 표시했습니다.
+
+```tsx
+// src/components/ui/RegionTurnout.tsx
+const regionParts = regionName.split(' ').filter(part => part !== '합계');
+
+<div className="text-2xl font-bold flex flex-wrap gap-x-[10px] gap-y-[6px]">
+  {regionParts.map((part, idx) => <div key={idx}>{part}</div>)}
+</div>
+```
+
+`flex-wrap`으로 자동 줄바꿈을 적용하고, "경상북도"와 "영주시영양군봉화군울진군"가 각각 분리되어 보기 좋게 표시됩니다.
+
+### 후보자 데이터 매칭
+
+선거 데이터의 후보자 정보를 카드 컴포넌트에 매핑합니다. 선관위 데이터는 후보자 번호 순서(1번, 2번, 3번)로 제공되므로, 이 순서를 그대로 유지합니다.
+
+```tsx
+// src/app/page.tsx
+const topCandidates = displayData ? [
+  {
+    name: displayData.hbj01,
+    vote: displayData.vote01,
+    count: displayData.dugsu01,
+    party: displayData.jd01,
+    meta: candidateMeta[displayData.hbj01] || candidateMeta["이재명"]
+  },
+  // hbj02, hbj03도 동일한 방식으로 매핑
+] : [];
+```
+
+후보자 이름을 키로 `candidateMeta`에서 이미지와 색상을 가져오고, 폴백으로 기본 메타를 제공하여 데이터 누락을 방어합니다.
+
+## 상태관리: Zustand 도입
+
+프로젝트 초기에는 `useState`로 상태를 관리했지만, 컴포넌트 간 상태 공유 문제가 발생했습니다.
+
+### Props Drilling 문제 발생
+
+지도 컴포넌트와 카드 컴포넌트가 분리되어 있어, 호버된 지역 ID를 여러 단계를 거쳐 전달해야 했습니다:
+
+```tsx
+<Page hoveredRegionId={id}>
+  <CatogramRegion setHoveredRegionId={setId} />
+  <RightPanel hoveredRegionId={id}>
+    <RegionTurnout hoveredRegionId={id} />
+    <CandidateCard hoveredRegionId={id} />
+  </RightPanel>
+</Page>
+```
+
+3~4단계 깊이의 Props 전달은 코드 가독성을 떨어뜨리고, 컴포넌트 재사용성을 해칩니다.
+
+### Zustand를 선택한 이유
+
+다른 상태관리 라이브러리와 비교:
+
+| 라이브러리 | 보일러플레이트 | 러닝 커브 | 번들 크기 | DevTools |
+|-----------|-------------|----------|-----------|----------|
+| **Zustand** | 최소 | 낮음 | 1.2KB | ✅ |
+| Recoil | 중간 | 중간 | 79KB | ✅ |
+| Context API | 많음 | 낮음 | 0KB (내장) | ❌ |
+| Jotai | 최소 | 중간 | 2.9KB | ✅ |
+
+**Zustand를 선택한 이유**:
+1. **Provider 불필요**: Context API처럼 `<Provider>`로 감쌀 필요 없음
+2. **작은 번들 크기**: 1.2KB로 성능 부담 없음 (Recoil의 1/65 크기)
+3. **간결한 문법**: `create()` 한 번으로 스토어 완성
+4. **TypeScript 친화적**: 타입 추론이 우수하고 별도 타입 정의 최소화
+5. **DevTools 지원**: Redux DevTools 연동으로 상태 변화 추적 가능
+
+### 선거 데이터 스토어
+
+전역에서 사용할 선거 데이터를 관리하는 스토어입니다. 데이터 fetching 로직과 loading/error 상태를 함께 관리합니다.
+
+```typescript
+// src/store/useElectionStore.ts
+import { create } from 'zustand';
+
+interface ElectionStore {
+  data: ElectionData[];
+  loading: boolean;
+  error: string | null;
+  fetchElectionData: () => Promise<void>;
+}
+
+export const useElectionStore = create<ElectionStore>((set) => ({
+  data: [],
+  loading: false,
+  error: null,
+
+  fetchElectionData: async () => {
+    set({ loading: true, error: null });
+    try {
+      const res = await fetch('/api/election');
+      if (!res.ok) throw new Error('API 응답 실패');
+      const json = await res.json();
+      set({ data: json, loading: false });
+    } catch (err) {
+      set({ error: '데이터 로딩 중 오류가 발생했습니다.', loading: false });
+    }
+  },
+}));
+```
+
+**핵심 포인트**:
+- `create()` 함수 하나로 스토어 완성
+- 상태(`data`, `loading`, `error`)와 액션(`fetchElectionData`)을 한 곳에서 관리
+- `set()` 함수로 상태 업데이트 (불변성 자동 처리)
+
+### 호버 상태 스토어
+
+지도의 호버 상태를 관리하는 가장 단순한 형태의 스토어입니다.
+
+```typescript
+// src/store/useHoverStore.ts
+import { create } from 'zustand';
+
+interface HoverStore {
+  hoveredRegionId: string | null;
+  setHoveredRegionId: (regionId: string | null) => void;
+}
+
+export const useHoverStore = create<HoverStore>((set) => ({
+  hoveredRegionId: null,
+  setHoveredRegionId: (regionId) => set({ hoveredRegionId: regionId }),
+}));
+```
+
+단 3줄로 전역 상태 관리가 완성됩니다. Context API였다면 `Provider`, `useContext`, `createContext` 등 훨씬 많은 보일러플레이트가 필요했을 것입니다.
+
+### 스토어 사용 예시
+
+```tsx
+// src/components/catogram/CatogramRegion.tsx
+import { useElectionStore, useHoverStore } from '@/store';
+
+const CartogramRegion = () => {
+  const { data: electionData } = useElectionStore();
+  const { setHoveredRegionId } = useHoverStore();
+
+  return (
+    <svg>
+      {regions.map((region) => (
+        <polygon
+          onMouseEnter={() => setHoveredRegionId(region.id)}
+          onMouseLeave={() => setHoveredRegionId(null)}
+        />
+      ))}
+    </svg>
+  );
+};
+```
+
+**Zustand 도입 후 개선 효과**:
+
+1. **코드 간결화**: Props를 3~4단계 전달하던 코드가 `const { hoveredRegionId } = useHoverStore()`로 단축
+2. **컴포넌트 독립성**: 각 컴포넌트가 필요한 상태만 구독하여 결합도 감소
+3. **리렌더링 최적화**: Zustand는 구독한 상태가 변경될 때만 리렌더링 (Context API는 전체 리렌더링)
+4. **테스트 용이성**: 스토어를 Mock하여 단위 테스트 작성 가능
+
+**실제 사용 경험**:
+- 처음에는 Context API를 고려했지만, `Provider` 중첩이 복잡해질 것 같아 Zustand 선택
+- 250개 폴리곤의 호버 이벤트에서도 성능 이슈 없음
+- Redux 대비 학습 비용이 거의 없어 빠르게 적용 가능했음
+
+## 회고 및 아쉬운 점
+
+### 디자인 완성도
+
+초기 디자인 시안과 완벽하게 일치하지 못한 부분이 있습니다. 특히 **도 단위 지역명 표시**를 구현하지 못한 점이 아쉽습니다.
+
+예를 들어 "경기도", "강원도" 같은 도 단위 라벨을 지도에 표시하려면 각 라벨을 `position: absolute`로 배치해야 했습니다. 하지만 17개 시도의 x, y 좌표를 일일이 하드코딩하는 것은 너무 손이 많이 가고 생산성이 떨어질 것 같아 포기했습니다.
+
+### 라이브러리 활용
+
+최소한의 기능만 구현한 첫 개인 프로젝트였기 때문에, 외부 라이브러리를 거의 사용하지 않았습니다. 다음 프로젝트에서는 **Framer Motion** 같은 애니메이션 라이브러리를 적극 활용해 더 부드러운 인터랙션을 만들고 싶습니다.
+
+예를 들어:
+- 지역 호버 시 카드가 fade-in 되는 효과
+- 득표율 바가 왼쪽에서 오른쪽으로 채워지는 애니메이션
+- 지역 클릭 시 해당 지역으로 줌인하는 효과
+
+### 학습 방향
+
+이번 프로젝트는 UI/UX 중심이었지만, 다음 프로젝트에서는 데이터 중심 학습을 하고 싶습니다:
+
+1. **최적화**: 250개 폴리곤 렌더링 최적화, 메모이제이션 전략
+2. **데이터 관리**: 대용량 데이터 처리, 가상화(Virtualization)
+3. **상태관리 심화**: Zustand의 미들웨어 활용, persist 기능
+
+
+**프로젝트 링크**: https://vote2025-h8fx.vercel.app/
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"2025 대선 지도 - 카토그램 만들기 Part 2: 후보자 카드 연동 및 회고"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 9월 4일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","포트폴리오",{"href":"/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"포트폴리오"}],["$","$L3","그래프",{"href":"/tags/%EA%B7%B8%EB%9E%98%ED%94%84","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"그래프"}],["$","$L3","Next.js",{"href":"/tags/Next.js","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Next.js"}],["$","$L3","React",{"href":"/tags/React","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"React"}],["$","$L3","Zustand",{"href":"/tags/Zustand","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Zustand"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-code:text-sm prose-code:font-mono prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/computer-science/data-structures-fundamentals-part1","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"자료구조 학습 1: 선형 자료구조"}]]}],["$","$L3",null,{"href":"/posts/portfolio/election-map-cartogram-part-1","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"2025 대선 지도 - 카토그램 만들기 Part 1: 폴리곤으로 지도 그리기"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"2025 대선 지도 - 카토그램 만들기 Part 2: 후보자 카드 연동 및 회고 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"대한민국 대통령 선거 시각화 웹 애플리케이션"}],["$","meta","2",{"property":"og:title","content":"2025 대선 지도 - 카토그램 만들기 Part 2: 후보자 카드 연동 및 회고"}],["$","meta","3",{"property":"og:description","content":"대한민국 대통령 선거 시각화 웹 애플리케이션"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-09-04"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"2025 대선 지도 - 카토그램 만들기 Part 2: 후보자 카드 연동 및 회고"}],["$","meta","8",{"name":"twitter:description","content":"대한민국 대통령 선거 시각화 웹 애플리케이션"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"
