@@ -1,0 +1,849 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-491ef1393c1a736d.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d5ebba4595249be0.css","style"]
+0:{"P":null,"b":"t_hGkcyjbHvFTtWQ9-4pp","p":"","c":["","posts","computer-science","data-structures-fundamentals-part2",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","computer-science","d"],{"children":[["slug","data-structures-fundamentals-part2","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d5ebba4595249be0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","computer-science","d"],"$L8",{"children":[["slug","data-structures-fundamentals-part2","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-afbc61cff1e5478f.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T4cfc,
+이 글은 **자료구조 완벽 가이드** 시리즈의 Part 2입니다. [Part 1](/computer-science/2025-09-14-data-structures-fundamentals-part1)에서는 배열, 연결 리스트, 스택, 큐, 해시 테이블과 같은 선형 자료구조를 다뤘습니다.
+
+Part 2에서는 **비선형 자료구조**인 트리, 힙, 그래프를 다룹니다. 이들은 계층적 구조와 복잡한 관계를 표현하는 데 최적화되어 있으며, 고급 알고리즘의 기초가 됩니다.
+
+## 트리 (Tree)
+
+트리는 계층적 구조를 표현하는 비선형 자료구조입니다. 노드들이 부모-자식 관계로 연결되어 있습니다.
+
+### 기본 용어와 시각화
+
+```
+        A          ← Root (루트): 최상위 노드
+       / \
+      B   C        ← Level 1 (레벨 1)
+     / \   \
+    D   E   F      ← Level 2 (레벨 2)
+       /
+      G            ← Leaf (리프): 자식이 없는 노드
+
+용어 설명:
+- Root (루트): A (최상위 노드)
+- Leaf (리프): D, G, F (자식이 없는 노드)
+- Height (높이): 3 (루트에서 가장 깊은 리프까지의 거리)
+- Depth (깊이):
+  - A의 깊이: 0
+  - B의 깊이: 1
+  - D의 깊이: 2
+  - G의 깊이: 3
+- Parent (부모): B는 D와 E의 부모
+- Children (자식): D와 E는 B의 자식
+- Siblings (형제): D와 E는 형제 관계
+- Subtree (서브트리): B를 루트로 하는 서브트리 {B, D, E, G}
+```
+
+**실제 예시: 파일 시스템**
+```
+/                    ← 루트 디렉토리
+├── home/
+│   ├── user1/
+│   │   ├── documents/
+│   │   └── pictures/
+│   └── user2/
+└── var/
+    └── log/
+```
+
+### 이진 트리 (Binary Tree)
+
+각 노드가 최대 2개의 자식을 가지는 트리입니다.
+
+**종류:**
+
+1. **완전 이진 트리 (Complete Binary Tree)**
+   - 마지막 레벨을 제외한 모든 레벨이 완전히 채워짐
+   - 마지막 레벨은 왼쪽부터 채워짐
+
+2. **포화 이진 트리 (Full Binary Tree)**
+   - 모든 노드가 0개 또는 2개의 자식을 가짐
+
+3. **균형 이진 트리 (Balanced Binary Tree)**
+   - 모든 리프의 깊이 차이가 1 이하
+
+### 이진 탐색 트리 (Binary Search Tree, BST)
+
+**핵심 규칙**: 왼쪽 서브트리의 모든 값 < 루트 < 오른쪽 서브트리의 모든 값
+
+```
+        50
+       /  \
+      30   70      ← 30 < 50 < 70
+     / \   / \
+    20 40 60 80    ← 모든 노드가 BST 규칙 만족
+
+검색 예시: 60 찾기
+50 → 60 > 50, 오른쪽
+70 → 60 < 70, 왼쪽
+60 → 찾음! (3번 비교)
+```
+
+**편향 트리 문제**:
+```
+균형 트리 (O(log n)):     편향 트리 (O(n)):
+     50                        10
+    /  \                         \
+   30   70                       20
+  / \   / \                        \
+ 20 40 60 80                       30
+                                     \
+                                     40
+높이: 2                           높이: 3
+```
+
+**시간 복잡도:**
+- 평균: O(log n) - 균형 잡힌 경우
+- 최악: O(n) - 편향된 경우 (연결 리스트와 동일)
+
+**순회 방법:**
+
+```
+트리 예시:
+     4
+    / \
+   2   6
+  / \ / \
+ 1  3 5  7
+
+1. 전위 순회 (Preorder): Root → Left → Right
+   결과: 4 → 2 → 1 → 3 → 6 → 5 → 7
+   용도: 트리 복사, 전위 표기법
+
+2. 중위 순회 (Inorder): Left → Root → Right
+   결과: 1 → 2 → 3 → 4 → 5 → 6 → 7  ← 정렬된 순서!
+   용도: BST를 정렬된 배열로 변환
+
+3. 후위 순회 (Postorder): Left → Right → Root
+   결과: 1 → 3 → 2 → 5 → 7 → 6 → 4
+   용도: 트리 삭제, 후위 표기법
+```
+
+```javascript
+class BSTNode {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+class BST {
+  constructor() {
+    this.root = null;
+  }
+
+  // O(log n) 평균 - 삽입
+  insert(value) {
+    this.root = this._insertNode(this.root, value);
+  }
+
+  _insertNode(node, value) {
+    if (!node) return new BSTNode(value);
+
+    if (value < node.value) {
+      node.left = this._insertNode(node.left, value);
+    } else if (value > node.value) {
+      node.right = this._insertNode(node.right, value);
+    }
+    return node;
+  }
+
+  // 중위 순회 (정렬된 순서)
+  inorderTraversal(node = this.root, result = []) {
+    if (node) {
+      this.inorderTraversal(node.left, result);
+      result.push(node.value);
+      this.inorderTraversal(node.right, result);
+    }
+    return result;
+  }
+}
+
+const bst = new BST();
+bst.insert(50);
+bst.insert(30);
+bst.insert(70);
+bst.insert(20);
+bst.insert(40);
+console.log(bst.inorderTraversal());  // [20, 30, 40, 50, 70]
+```
+
+### AVL 트리
+
+자가 균형 이진 탐색 트리로, 모든 노드의 왼쪽과 오른쪽 서브트리 높이 차이가 1 이하입니다.
+
+**균형 팩터 (Balance Factor) = 왼쪽 높이 - 오른쪽 높이**
+- 허용 범위: -1, 0, 1
+- 범위 벗어나면 회전(Rotation) 수행
+
+```
+균형 잡힌 트리:          불균형 트리:
+      30 (BF=0)               30 (BF=2) ← 불균형!
+     /  \                    /
+   20    40                20
+  (0)    (0)              /
+                        10
+                       (0)
+```
+
+**회전 연산 (Rotation)**
+
+**(1) 우회전 (Right Rotation)** - 왼쪽이 무거울 때:
+```
+불균형:         우회전 →        균형:
+    30                          20
+   /                           /  \
+  20                          10  30
+ /
+10
+```
+
+**(2) 좌회전 (Left Rotation)** - 오른쪽이 무거울 때:
+```
+불균형:         좌회전 →        균형:
+10                              20
+  \                            /  \
+  20                          10  30
+    \
+    30
+```
+
+**(3) 좌-우회전 (Left-Right)** - 왼쪽 자식의 오른쪽이 무거울 때:
+```
+    30          좌회전(10) →      30        우회전(30) →    20
+   /                             /                        /  \
+  10                            20                       10  30
+    \                          /
+    20                        10
+```
+
+**특징:**
+- 회전(Rotation) 연산으로 자동 균형 유지
+- 검색, 삽입, 삭제 모두 **O(log n) 보장**
+- BST보다 약간 느린 삽입/삭제 (회전 오버헤드)
+- 검색 성능은 항상 우수
+
+### 사용 사례
+
+- **파일 시스템**: 디렉토리 구조
+- **DOM 트리**: HTML 문서 구조
+- **데이터베이스 인덱싱**: B-Tree, B+ Tree
+- **의사 결정 트리**: 머신러닝
+- **라우팅 테이블**: 네트워크
+- **추상 구문 트리 (AST)**: 컴파일러
+
+---
+
+## 힙 (Heap)
+
+힙은 완전 이진 트리 기반의 자료구조로, 특정 순서 속성을 만족합니다.
+
+### 종류
+
+**1. 최대 힙 (Max Heap)**: 부모 노드 ≥ 자식 노드
+```
+        50           ← 루트가 최댓값
+       /  \
+      30   40        ← 30 ≤ 50, 40 ≤ 50
+     / \   /
+    10 20 35         ← 모든 부모 ≥ 자식
+```
+
+**2. 최소 힙 (Min Heap)**: 부모 노드 ≤ 자식 노드
+```
+        10           ← 루트가 최솟값
+       /  \
+      20   30        ← 20 ≥ 10, 30 ≥ 10
+     / \   /
+    40 50 35         ← 모든 부모 ≤ 자식
+```
+
+### 주요 연산
+
+**삽입 (Insert)** - O(log n)
+
+새 요소를 마지막에 추가하고 위로 올리며 힙 속성 복원 (heapify-up)
+
+```
+최대 힙에 60 삽입:
+
+1. 마지막 위치에 추가    2. 부모(40)와 비교     3. 부모(50)와 비교
+      50                      50                     60
+     /  \                    /  \                   /  \
+    30   40                30   40                50   40
+   / \   / \              / \   / \              / \   /
+  10 20 35 [60]         10 20 35 [60]          30 20 35
+                            ↓ swap                ↓ swap
+
+완료: 60이 루트가 됨 (최댓값)
+```
+
+**삭제 (Delete Max/Min)** - O(log n)
+
+루트를 제거하고 마지막 노드를 루트로, 아래로 내리며 힙 속성 복원 (heapify-down)
+
+```
+최대 힙에서 루트(60) 삭제:
+
+1. 루트 제거           2. 마지막(20) 이동     3. 자식과 비교
+      60                     [20]                   50
+     /  \                   /  \                   /  \
+    50   40      →        50   40      →         20   40
+   / \   /               / \                     /  \
+  30 20 35              30 35                   30  35
+                            ↓ swap
+
+4. 다시 비교 (완료)
+      50
+     /  \
+    30   40
+   / \
+  20 35
+```
+
+**최대/최소값 조회 (Peek)** - O(1)
+
+루트 노드가 항상 최댓값(최대 힙) 또는 최솟값(최소 힙)입니다.
+
+### 배열 표현
+
+힙은 **완전 이진 트리**이므로 배열로 효율적으로 표현할 수 있습니다.
+
+```
+트리 구조:
+        50
+       /  \
+      30   40
+     / \   /
+    10 20 35
+
+배열 표현:
+Index:  0   1   2   3   4   5
+값:    [50][30][40][10][20][35]
+
+관계 공식 (0-based index):
+- 노드 i의 부모: (i - 1) / 2
+- 노드 i의 왼쪽 자식: 2 * i + 1
+- 노드 i의 오른쪽 자식: 2 * i + 2
+
+예시:
+- 30 (index 1)의 부모: (1-1)/2 = 0 → 50
+- 30 (index 1)의 왼쪽 자식: 2*1+1 = 3 → 10
+- 30 (index 1)의 오른쪽 자식: 2*1+2 = 4 → 20
+```
+
+**배열 표현의 장점**:
+- 포인터 불필요 (메모리 절약)
+- 캐시 친화적 (연속 메모리)
+- 부모/자식 접근이 간단한 산술 연산
+
+### 사용 사례
+
+- **우선순위 큐 구현**
+- **힙 정렬 (Heap Sort)**: O(n log n)
+- **다익스트라 알고리즘**: 최단 경로 탐색
+- **중앙값 찾기**: 두 힙 사용
+- **스케줄링**: 작업 우선순위 관리
+
+### 코드 예시
+
+```javascript
+class MaxHeap {
+  constructor() {
+    this.heap = [];
+  }
+
+  // 부모/자식 인덱스 계산
+  getParentIndex(i) { return Math.floor((i - 1) / 2); }
+  getLeftChildIndex(i) { return 2 * i + 1; }
+  getRightChildIndex(i) { return 2 * i + 2; }
+
+  // 삽입 - O(log n)
+  insert(value) {
+    this.heap.push(value);
+    this.heapifyUp(this.heap.length - 1);
+  }
+
+  heapifyUp(index) {
+    let current = index;
+    while (current > 0) {
+      const parent = this.getParentIndex(current);
+      if (this.heap[current] <= this.heap[parent]) break;
+
+      // 부모와 swap
+      [this.heap[current], this.heap[parent]] =
+        [this.heap[parent], this.heap[current]];
+      current = parent;
+    }
+  }
+
+  // 삭제 (최댓값) - O(log n)
+  extractMax() {
+    if (this.heap.length === 0) return null;
+    if (this.heap.length === 1) return this.heap.pop();
+
+    const max = this.heap[0];
+    this.heap[0] = this.heap.pop();
+    this.heapifyDown(0);
+    return max;
+  }
+
+  heapifyDown(index) {
+    let current = index;
+    while (true) {
+      const left = this.getLeftChildIndex(current);
+      const right = this.getRightChildIndex(current);
+      let largest = current;
+
+      if (left < this.heap.length &&
+          this.heap[left] > this.heap[largest]) {
+        largest = left;
+      }
+      if (right < this.heap.length &&
+          this.heap[right] > this.heap[largest]) {
+        largest = right;
+      }
+
+      if (largest === current) break;
+
+      // 자식과 swap
+      [this.heap[current], this.heap[largest]] =
+        [this.heap[largest], this.heap[current]];
+      current = largest;
+    }
+  }
+
+  // 최댓값 조회 - O(1)
+  peek() {
+    return this.heap[0];
+  }
+}
+
+// 사용 예시
+const heap = new MaxHeap();
+heap.insert(50);
+heap.insert(30);
+heap.insert(40);
+heap.insert(10);
+heap.insert(20);
+heap.insert(60);  // heapify-up 발생
+
+console.log(heap.peek());        // 60 (최댓값)
+console.log(heap.extractMax());  // 60 (제거)
+console.log(heap.peek());        // 50 (새로운 최댓값)
+```
+
+---
+
+## 그래프 (Graph)
+
+그래프는 정점(Vertex)과 간선(Edge)으로 구성된 비선형 자료구조입니다.
+
+### 기본 개념과 시각화
+
+**기본 구조**:
+```
+정점 (Vertex/Node): A, B, C, D
+간선 (Edge): 정점을 연결하는 선
+
+   A --- B
+   |     |
+   |     |
+   C --- D
+
+정점 집합 V = {A, B, C, D}
+간선 집합 E = {(A,B), (A,C), (B,D), (C,D)}
+```
+
+### 분류
+
+**1. 방향성**
+
+무방향 그래프 (Undirected Graph):
+```
+   A ←→ B      양방향 이동 가능
+   ↕     ↕
+   C ←→ D
+
+간선: (A,B) = (B,A) (순서 무관)
+```
+
+방향 그래프 (Directed Graph, Digraph):
+```
+   A → B       일방향 이동만 가능
+   ↓   ↓
+   C → D
+
+간선: (A,B) ≠ (B,A) (순서 중요)
+예: 웹 페이지 링크, 트위터 팔로우
+```
+
+**2. 가중치**
+
+비가중 그래프:
+```
+   A --- B     모든 간선의 가중치 = 1
+   |     |
+   C --- D
+```
+
+가중 그래프 (Weighted Graph):
+```
+   A --5-- B    간선에 비용/거리 존재
+   |       |
+   3       2
+   |       |
+   C --4-- D
+
+사용: 도로 네트워크, 항공편 비용
+```
+
+**3. 연결성**
+
+연결 그래프:
+```
+   A --- B
+   |     |     모든 정점이 경로로 연결
+   C --- D
+```
+
+비연결 그래프:
+```
+   A --- B     E --- F    고립된 컴포넌트
+
+   C           G          존재
+```
+
+**4. 순환성**
+
+순환 그래프 (Cyclic):
+```
+   A --- B
+   |     |     사이클 존재: A→B→D→C→A
+   C --- D
+```
+
+비순환 그래프 (Acyclic):
+```
+   A → B
+   ↓   ↓       사이클 없음
+   C → D
+
+DAG (Directed Acyclic Graph): 방향이 있고 순환이 없음
+예: 작업 의존성, Git 커밋 히스토리
+```
+
+### 표현 방법
+
+**1. 인접 행렬 (Adjacency Matrix)**
+
+2차원 배열로 그래프를 표현합니다.
+
+```
+그래프:
+   A --- B
+   |     |
+   C --- D
+
+인접 행렬 (무방향):
+     A  B  C  D
+  A [0, 1, 1, 0]
+  B [1, 0, 0, 1]
+  C [1, 0, 0, 1]
+  D [0, 1, 1, 0]
+
+matrix[i][j] = 1: 간선 존재
+matrix[i][j] = 0: 간선 없음
+```
+
+가중 그래프:
+```
+   A --5-- B
+   |       |
+   3       2
+   |       |
+   C --4-- D
+
+     A  B  C  D
+  A [0, 5, 3, 0]
+  B [5, 0, 0, 2]
+  C [3, 0, 0, 4]
+  D [0, 2, 4, 0]
+```
+
+**특징**:
+- 공간 복잡도: **O(V²)** (정점 수의 제곱)
+- 간선 존재 확인: **O(1)** (직접 인덱스 접근)
+- 모든 간선 순회: **O(V²)**
+- **밀집 그래프**에 적합 (간선이 많을 때)
+
+**2. 인접 리스트 (Adjacency List)**
+
+각 정점마다 연결된 정점들의 리스트를 저장합니다.
+
+```
+그래프:
+   A --- B
+   |     |
+   C --- D
+
+인접 리스트:
+A: [B, C]
+B: [A, D]
+C: [A, D]
+D: [B, C]
+```
+
+가중 그래프:
+```
+A: [{node: B, weight: 5}, {node: C, weight: 3}]
+B: [{node: A, weight: 5}, {node: D, weight: 2}]
+C: [{node: A, weight: 3}, {node: D, weight: 4}]
+D: [{node: B, weight: 2}, {node: C, weight: 4}]
+```
+
+**특징**:
+- 공간 복잡도: **O(V + E)** (정점 + 간선)
+- 간선 존재 확인: **O(degree)** ≈ O(V) 최악의 경우
+- 모든 간선 순회: **O(V + E)**
+- **희소 그래프**에 적합 (간선이 적을 때)
+
+**선택 기준**:
+```
+밀집 그래프 (간선 많음):
+E ≈ V² → 인접 행렬 사용
+예: 완전 그래프, 소셜 네트워크
+
+희소 그래프 (간선 적음):
+E << V² → 인접 리스트 사용
+예: 웹 그래프, 도로 네트워크
+```
+
+### 순회 알고리즘
+
+**1. 깊이 우선 탐색 (DFS - Depth First Search)**
+
+스택 또는 재귀를 사용하여 한 경로를 끝까지 탐색한 후 돌아옵니다.
+
+```
+그래프:
+   A --- B
+   |     |
+   C --- D
+
+DFS 탐색 과정 (A 시작):
+1. A 방문 → 스택: [A]
+2. A의 이웃 B 방문 → 스택: [A, B]
+3. B의 이웃 D 방문 → 스택: [A, B, D]
+4. D의 이웃 C 방문 → 스택: [A, B, D, C]
+5. C는 더 갈 곳 없음, 백트랙
+
+순서: A → B → D → C
+```
+
+```javascript
+// DFS 구현 (재귀)
+function dfs(graph, start, visited = new Set()) {
+  visited.add(start);
+  console.log(start);
+
+  for (const neighbor of graph[start]) {
+    if (!visited.has(neighbor)) {
+      dfs(graph, neighbor, visited);
+    }
+  }
+}
+
+// DFS 구현 (스택)
+function dfsIterative(graph, start) {
+  const visited = new Set();
+  const stack = [start];
+
+  while (stack.length > 0) {
+    const node = stack.pop();
+    if (visited.has(node)) continue;
+
+    visited.add(node);
+    console.log(node);
+
+    for (const neighbor of graph[node]) {
+      if (!visited.has(neighbor)) {
+        stack.push(neighbor);
+      }
+    }
+  }
+}
+```
+
+**시간 복잡도**: O(V + E)
+**사용 사례**: 경로 찾기, 사이클 검출, 위상 정렬
+
+**2. 너비 우선 탐색 (BFS - Breadth First Search)**
+
+큐를 사용하여 레벨별로 탐색합니다.
+
+```
+그래프:
+     A
+    / \
+   B   C
+   |   |
+   D   E
+
+BFS 탐색 과정 (A 시작):
+1. A 방문 → 큐: [A]
+2. A의 모든 이웃 추가 → 큐: [B, C]
+3. B 방문, B의 이웃 추가 → 큐: [C, D]
+4. C 방문, C의 이웃 추가 → 큐: [D, E]
+5. D, E 순서대로 방문
+
+순서: A → B → C → D → E (레벨별)
+      ↑   ↑ ↑   ↑ ↑
+     L0  L1    L2
+
+최단 경로: A→D = 2 (A→B→D)
+```
+
+```javascript
+// BFS 구현
+function bfs(graph, start) {
+  const visited = new Set();
+  const queue = [start];
+  visited.add(start);
+
+  while (queue.length > 0) {
+    const node = queue.shift();
+    console.log(node);
+
+    for (const neighbor of graph[node]) {
+      if (!visited.has(neighbor)) {
+        visited.add(neighbor);
+        queue.push(neighbor);
+      }
+    }
+  }
+}
+
+// BFS로 최단 경로 찾기
+function shortestPath(graph, start, end) {
+  const queue = [[start, [start]]];
+  const visited = new Set([start]);
+
+  while (queue.length > 0) {
+    const [node, path] = queue.shift();
+
+    if (node === end) {
+      return path;  // 최단 경로 반환
+    }
+
+    for (const neighbor of graph[node]) {
+      if (!visited.has(neighbor)) {
+        visited.add(neighbor);
+        queue.push([neighbor, [...path, neighbor]]);
+      }
+    }
+  }
+  return null;
+}
+```
+
+**시간 복잡도**: O(V + E)
+**사용 사례**: 최단 경로 (비가중), 레벨별 순회, 연결 요소 찾기
+
+**DFS vs BFS 비교**:
+```
+       A
+      / \
+     B   C
+    / \
+   D   E
+
+DFS: A → B → D → E → C (깊이 우선)
+     스택 사용, 메모리 효율적 (재귀 스택)
+
+BFS: A → B → C → D → E (너비 우선)
+     큐 사용, 최단 경로 보장
+
+선택 기준:
+- 모든 경로 탐색: DFS
+- 최단 경로: BFS
+- 메모리 제약: DFS (재귀)
+```
+
+### 사용 사례
+
+- **소셜 네트워크**: 친구 관계
+- **지도/네비게이션**: 최단 경로
+- **웹 크롤링**: 페이지 링크
+- **의존성 관리**: 패키지 매니저
+- **추천 시스템**: 연관 관계
+
+---
+
+## 자료구조 선택 가이드
+
+### 시간 복잡도 비교
+
+| 자료구조 | 접근 | 검색 | 삽입 | 삭제 |
+|---------|------|------|------|------|
+| 이진 탐색 트리 | O(log n) | O(log n) | O(log n) | O(log n) |
+| AVL 트리 | O(log n) | O(log n) | O(log n) | O(log n) |
+| 힙 | - | O(n) | O(log n) | O(log n) |
+
+### 상황별 최적 선택
+
+**범위 검색/정렬된 데이터**
+- 이진 탐색 트리
+- AVL 트리
+
+**순서가 중요할 때**
+- 우선순위: 힙
+
+**계층 구조**
+- 트리
+
+**관계 표현**
+- 그래프
+
+---
+
+## 결론
+
+자료구조는 알고리즘의 효율성을 결정하는 핵심 요소입니다. Part 1의 선형 자료구조와 Part 2의 비선형 자료구조를 모두 이해하고, 각 자료구조의 특성과 시간/공간 복잡도를 파악하여 문제 상황에 맞는 최적의 자료구조를 선택하는 것이 중요합니다.
+
+**핵심 포인트:**
+
+1. **트레이드오프 이해**: 시간 vs 공간, 접근 속도 vs 삽입/삭제 속도
+2. **문제 분석**: 어떤 연산이 빈번한가? 데이터 크기는? 순서가 중요한가?
+3. **복잡도 고려**: Big-O 표기법으로 성능 예측
+4. **실제 테스트**: 이론과 실제 성능 차이 확인
+
+자료구조에 대한 깊은 이해는 효율적인 소프트웨어 개발의 기초입니다. 지속적인 학습과 실습을 통해 다양한 문제 상황에서 최적의 자료구조를 선택할 수 있는 능력을 키워나가시기 바랍니다.
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"자료구조 학습 2: 비선형 자료구조"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 9월 14일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","Computer Science",{"href":"/tags/Computer%20Science","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Computer Science"}],["$","$L3","자료구조",{"href":"/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"자료구조"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/claude/claude-code-part-1","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"Claude Code 시작하기1"}]]}],["$","$L3",null,{"href":"/posts/computer-science/data-structures-fundamentals-part1","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"자료구조 학습 1: 선형 자료구조"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"자료구조 학습 2: 비선형 자료구조 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"자료구조 학습 - 트리, 힙, 그래프 등 "}],["$","meta","2",{"property":"og:title","content":"자료구조 학습 2: 비선형 자료구조"}],["$","meta","3",{"property":"og:description","content":"자료구조 학습 - 트리, 힙, 그래프 등 "}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-09-14"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"자료구조 학습 2: 비선형 자료구조"}],["$","meta","8",{"name":"twitter:description","content":"자료구조 학습 - 트리, 힙, 그래프 등 "}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

@@ -1,0 +1,915 @@
+<!DOCTYPE html><!--t_hGkcyjbHvFTtWQ9_4pp--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d5ebba4595249be0.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-491ef1393c1a736d.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-afbc61cff1e5478f.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>React Hooks 모음 2 | DevONew Blog</title><meta name="description" content="useReducer, useMemo, useCallback, 커스텀 Hook과 최신 트렌드"/><meta property="og:title" content="React Hooks 모음 2"/><meta property="og:description" content="useReducer, useMemo, useCallback, 커스텀 Hook과 최신 트렌드"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-11-25"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="React Hooks 모음 2"/><meta name="twitter:description" content="useReducer, useMemo, useCallback, 커스텀 Hook과 최신 트렌드"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">React Hooks 모음 2</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 11월 25일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/">프론트엔드</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/React/">React</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Hooks/">Hooks</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/JavaScript/">JavaScript</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><p>1에서 기본 Hooks를 다뤘다면, 이번에는 더 고급 패턴과 성능 최적화, 그리고 실무에서의 최신 트렌드를 살펴봅니다.</p>
+<h2 id="usereducer---복잡한-상태-로직"><a aria-hidden="true" tabindex="-1" href="#usereducer---복잡한-상태-로직"><span class="icon icon-link"></span></a>useReducer - 복잡한 상태 로직</h2>
+<p>여러 개의 연관된 상태를 관리하거나 복잡한 업데이트 로직이 있다면 useReducer가 useState보다 적합합니다. Redux와 같은 패턴을 사용합니다.</p>
+<h3 id="기본-사용법"><a aria-hidden="true" tabindex="-1" href="#기본-사용법"><span class="icon icon-link"></span></a>기본 사용법</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { useReducer } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-comment">// reducer 함수</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">counterReducer</span>(<span class="hljs-params">state, action</span>) {
+  <span class="hljs-keyword">switch</span> (action.<span class="hljs-property">type</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;increment&#x27;</span>:
+      <span class="hljs-keyword">return</span> { <span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span> + <span class="hljs-number">1</span> };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;decrement&#x27;</span>:
+      <span class="hljs-keyword">return</span> { <span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span> - <span class="hljs-number">1</span> };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;reset&#x27;</span>:
+      <span class="hljs-keyword">return</span> { <span class="hljs-attr">count</span>: <span class="hljs-number">0</span> };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;set&#x27;</span>:
+      <span class="hljs-keyword">return</span> { <span class="hljs-attr">count</span>: action.<span class="hljs-property">payload</span> };
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-keyword">return</span> state;
+  }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [state, dispatch] = <span class="hljs-title function_">useReducer</span>(counterReducer, { <span class="hljs-attr">count</span>: <span class="hljs-number">0</span> });
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {state.count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> dispatch({ type: &#x27;increment&#x27; })}&gt;+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> dispatch({ type: &#x27;decrement&#x27; })}&gt;-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> dispatch({ type: &#x27;reset&#x27; })}&gt;Reset<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> dispatch({ type: &#x27;set&#x27;, payload: 100 })}&gt;
+        Set to 100
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="폼-상태-관리"><a aria-hidden="true" tabindex="-1" href="#폼-상태-관리"><span class="icon icon-link"></span></a>폼 상태 관리</h3>
+<p>여러 개의 입력 필드와 유효성 검사가 있는 폼을 관리할 때 useReducer가 빛을 발합니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> initialState = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;&#x27;</span>,
+  <span class="hljs-attr">email</span>: <span class="hljs-string">&#x27;&#x27;</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-string">&#x27;&#x27;</span>,
+  <span class="hljs-attr">errors</span>: {}
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">formReducer</span>(<span class="hljs-params">state, action</span>) {
+  <span class="hljs-keyword">switch</span> (action.<span class="hljs-property">type</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;SET_FIELD&#x27;</span>:
+      <span class="hljs-keyword">return</span> {
+        ...state,
+        [action.<span class="hljs-property">field</span>]: action.<span class="hljs-property">value</span>,
+        <span class="hljs-attr">errors</span>: { ...state.<span class="hljs-property">errors</span>, [action.<span class="hljs-property">field</span>]: <span class="hljs-string">&#x27;&#x27;</span> }
+      };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;SET_ERROR&#x27;</span>:
+      <span class="hljs-keyword">return</span> {
+        ...state,
+        <span class="hljs-attr">errors</span>: { ...state.<span class="hljs-property">errors</span>, [action.<span class="hljs-property">field</span>]: action.<span class="hljs-property">error</span> }
+      };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;SET_ERRORS&#x27;</span>:
+      <span class="hljs-keyword">return</span> { ...state, <span class="hljs-attr">errors</span>: action.<span class="hljs-property">errors</span> };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;RESET&#x27;</span>:
+      <span class="hljs-keyword">return</span> initialState;
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-keyword">return</span> state;
+  }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">RegistrationForm</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [state, dispatch] = <span class="hljs-title function_">useReducer</span>(formReducer, initialState);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleChange</span> = (<span class="hljs-params">field</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+    <span class="hljs-title function_">dispatch</span>({
+      <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;SET_FIELD&#x27;</span>,
+      field,
+      <span class="hljs-attr">value</span>: e.<span class="hljs-property">target</span>.<span class="hljs-property">value</span>
+    });
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">validate</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-keyword">const</span> errors = {};
+    <span class="hljs-keyword">if</span> (!state.<span class="hljs-property">name</span>) errors.<span class="hljs-property">name</span> = <span class="hljs-string">&#x27;Name is required&#x27;</span>;
+    <span class="hljs-keyword">if</span> (!state.<span class="hljs-property">email</span>) errors.<span class="hljs-property">email</span> = <span class="hljs-string">&#x27;Email is required&#x27;</span>;
+    <span class="hljs-keyword">if</span> (state.<span class="hljs-property">age</span> &amp;&amp; <span class="hljs-built_in">isNaN</span>(state.<span class="hljs-property">age</span>)) errors.<span class="hljs-property">age</span> = <span class="hljs-string">&#x27;Age must be a number&#x27;</span>;
+
+    <span class="hljs-title function_">dispatch</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;SET_ERRORS&#x27;</span>, errors });
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(errors).<span class="hljs-property">length</span> === <span class="hljs-number">0</span>;
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleSubmit</span> = (<span class="hljs-params">e</span>) =&gt; {
+    e.<span class="hljs-title function_">preventDefault</span>();
+    <span class="hljs-keyword">if</span> (<span class="hljs-title function_">validate</span>()) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Form submitted:&#x27;</span>, state);
+      <span class="hljs-title function_">dispatch</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;RESET&#x27;</span> });
+    }
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{handleSubmit}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+          <span class="hljs-attr">value</span>=<span class="hljs-string">{state.name}</span>
+          <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange(</span>&#x27;<span class="hljs-attr">name</span>&#x27;)}
+          <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Name&quot;</span>
+        /&gt;</span>
+        {state.errors.name &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{state.errors.name}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+          <span class="hljs-attr">value</span>=<span class="hljs-string">{state.email}</span>
+          <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange(</span>&#x27;<span class="hljs-attr">email</span>&#x27;)}
+          <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Email&quot;</span>
+        /&gt;</span>
+        {state.errors.email &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{state.errors.email}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+          <span class="hljs-attr">value</span>=<span class="hljs-string">{state.age}</span>
+          <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange(</span>&#x27;<span class="hljs-attr">age</span>&#x27;)}
+          <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Age&quot;</span>
+        /&gt;</span>
+        {state.errors.age &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{state.errors.age}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> dispatch({ type: &#x27;RESET&#x27; })}&gt;
+        Reset
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="비동기-데이터-fetching"><a aria-hidden="true" tabindex="-1" href="#비동기-데이터-fetching"><span class="icon icon-link"></span></a>비동기 데이터 fetching</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> initialState = {
+  <span class="hljs-attr">data</span>: <span class="hljs-literal">null</span>,
+  <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span>
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">dataReducer</span>(<span class="hljs-params">state, action</span>) {
+  <span class="hljs-keyword">switch</span> (action.<span class="hljs-property">type</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;FETCH_START&#x27;</span>:
+      <span class="hljs-keyword">return</span> { ...state, <span class="hljs-attr">loading</span>: <span class="hljs-literal">true</span>, <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span> };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;FETCH_SUCCESS&#x27;</span>:
+      <span class="hljs-keyword">return</span> { <span class="hljs-attr">data</span>: action.<span class="hljs-property">payload</span>, <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>, <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span> };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;FETCH_ERROR&#x27;</span>:
+      <span class="hljs-keyword">return</span> { ...state, <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>, <span class="hljs-attr">error</span>: action.<span class="hljs-property">payload</span> };
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-keyword">return</span> state;
+  }
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserList</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [state, dispatch] = <span class="hljs-title function_">useReducer</span>(dataReducer, initialState);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchUsers</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-title function_">dispatch</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;FETCH_START&#x27;</span> });
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;/api/users&#x27;</span>);
+        <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+        <span class="hljs-title function_">dispatch</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;FETCH_SUCCESS&#x27;</span>, <span class="hljs-attr">payload</span>: data });
+      } <span class="hljs-keyword">catch</span> (error) {
+        <span class="hljs-title function_">dispatch</span>({ <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;FETCH_ERROR&#x27;</span>, <span class="hljs-attr">payload</span>: error.<span class="hljs-property">message</span> });
+      }
+    }
+
+    <span class="hljs-title function_">fetchUsers</span>();
+  }, []);
+
+  <span class="hljs-keyword">if</span> (state.<span class="hljs-property">loading</span>) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (state.<span class="hljs-property">error</span>) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Error: {state.error}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (!state.<span class="hljs-property">data</span>) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>No data<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      {state.data.map(user =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{user.id}</span>&gt;</span>{user.name}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      ))}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h2 id="usememo---값-메모이제이션"><a aria-hidden="true" tabindex="-1" href="#usememo---값-메모이제이션"><span class="icon icon-link"></span></a>useMemo - 값 메모이제이션</h2>
+<p>계산 비용이 큰 작업의 결과를 캐싱하여 불필요한 재계산을 방지합니다. 단, 모든 계산에 useMemo를 쓸 필요는 없습니다.</p>
+<h3 id="기본-사용법-1"><a aria-hidden="true" tabindex="-1" href="#기본-사용법-1"><span class="icon icon-link"></span></a>기본 사용법</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { useState, useMemo } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ExpensiveCalculation</span>(<span class="hljs-params">{ items }</span>) {
+  <span class="hljs-keyword">const</span> [filter, setFilter] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;&#x27;</span>);
+
+  <span class="hljs-comment">// 매 렌더링마다 계산</span>
+  <span class="hljs-keyword">const</span> filteredItems = items.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span>
+    item.<span class="hljs-property">name</span>.<span class="hljs-title function_">toLowerCase</span>().<span class="hljs-title function_">includes</span>(filter.<span class="hljs-title function_">toLowerCase</span>())
+  );
+
+  <span class="hljs-comment">// filter나 items가 변경될 때만 계산</span>
+  <span class="hljs-keyword">const</span> filteredItems = <span class="hljs-title function_">useMemo</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Filtering...&#x27;</span>);
+    <span class="hljs-keyword">return</span> items.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span>
+      item.<span class="hljs-property">name</span>.<span class="hljs-title function_">toLowerCase</span>().<span class="hljs-title function_">includes</span>(filter.<span class="hljs-title function_">toLowerCase</span>())
+    );
+  }, [items, filter]);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{filter}</span>
+        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> setFilter(e.target.value)}
+        placeholder=&quot;Filter...&quot;
+      /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        {filteredItems.map(item =&gt; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>&gt;</span>{item.name}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        ))}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="정렬-메모이제이션"><a aria-hidden="true" tabindex="-1" href="#정렬-메모이제이션"><span class="icon icon-link"></span></a>정렬 메모이제이션</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">SortedList</span>(<span class="hljs-params">{ items, sortBy }</span>) {
+  <span class="hljs-keyword">const</span> sortedItems = <span class="hljs-title function_">useMemo</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Sorting...&#x27;</span>);
+    <span class="hljs-keyword">return</span> [...items].<span class="hljs-title function_">sort</span>(<span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> {
+      <span class="hljs-keyword">if</span> (sortBy === <span class="hljs-string">&#x27;name&#x27;</span>) {
+        <span class="hljs-keyword">return</span> a.<span class="hljs-property">name</span>.<span class="hljs-title function_">localeCompare</span>(b.<span class="hljs-property">name</span>);
+      }
+      <span class="hljs-keyword">if</span> (sortBy === <span class="hljs-string">&#x27;price&#x27;</span>) {
+        <span class="hljs-keyword">return</span> a.<span class="hljs-property">price</span> - b.<span class="hljs-property">price</span>;
+      }
+      <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    });
+  }, [items, sortBy]);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      {sortedItems.map(item =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>&gt;</span>
+          {item.name} - ${item.price}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      ))}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="객체-참조-안정화"><a aria-hidden="true" tabindex="-1" href="#객체-참조-안정화"><span class="icon icon-link"></span></a>객체 참조 안정화</h3>
+<p>JavaScript에서 객체는 매번 새로 생성되면 참조가 달라집니다. useEffect의 의존성 배열에 객체를 넣을 때 useMemo를 사용하면 불필요한 재실행을 방지할 수 있습니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-comment">// 매 렌더링마다 새 객체 생성</span>
+  <span class="hljs-keyword">const</span> config = { userId, <span class="hljs-attr">theme</span>: <span class="hljs-string">&#x27;dark&#x27;</span> };
+
+  <span class="hljs-comment">// userId가 변경될 때만 새 객체 생성</span>
+  <span class="hljs-keyword">const</span> config = <span class="hljs-title function_">useMemo</span>(<span class="hljs-function">() =&gt;</span> ({
+    userId,
+    <span class="hljs-attr">theme</span>: <span class="hljs-string">&#x27;dark&#x27;</span>
+  }), [userId]);
+
+  <span class="hljs-comment">// config를 의존성으로 사용하는 effect</span>
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">fetchUserWithConfig</span>(config);
+  }, [config]);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<h2 id="usecallback---함수-메모이제이션"><a aria-hidden="true" tabindex="-1" href="#usecallback---함수-메모이제이션"><span class="icon icon-link"></span></a>useCallback - 함수 메모이제이션</h2>
+<p>함수도 객체처럼 매번 새로 생성되면 참조가 달라집니다. useCallback으로 함수를 메모이제이션하면 자식 컴포넌트의 불필요한 리렌더링을 방지할 수 있습니다.</p>
+<h3 id="기본-사용법-2"><a aria-hidden="true" tabindex="-1" href="#기본-사용법-2"><span class="icon icon-link"></span></a>기본 사용법</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { useState, useCallback } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+<span class="hljs-keyword">import</span> { memo } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Parent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> [other, setOther] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-comment">// 매 렌더링마다 새 함수 생성</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleClick</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-title function_">setCount</span>(<span class="hljs-function"><span class="hljs-params">c</span> =&gt;</span> c + <span class="hljs-number">1</span>);
+  };
+
+  <span class="hljs-comment">// 함수 메모이제이션 (의존성 없으면 재생성 안됨)</span>
+  <span class="hljs-keyword">const</span> handleClick = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">setCount</span>(<span class="hljs-function"><span class="hljs-params">c</span> =&gt;</span> c + <span class="hljs-number">1</span>);
+  }, []);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Other: {other}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Child</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setOther(o =&gt; o + 1)}&gt;
+        Change Other
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// memo로 최적화된 자식 컴포넌트</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Child</span> = <span class="hljs-title function_">memo</span>(<span class="hljs-function">(<span class="hljs-params">{ onClick }</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Child rendered&#x27;</span>);
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{onClick}</span>&gt;</span>Increment<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>;
+});
+</code></pre>
+<h3 id="이벤트-핸들러-최적화"><a aria-hidden="true" tabindex="-1" href="#이벤트-핸들러-최적화"><span class="icon icon-link"></span></a>이벤트 핸들러 최적화</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">TodoList</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [todos, setTodos] = <span class="hljs-title function_">useState</span>([]);
+
+  <span class="hljs-keyword">const</span> handleToggle = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">(<span class="hljs-params">id</span>) =&gt;</span> {
+    <span class="hljs-title function_">setTodos</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> prev.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">todo</span> =&gt;</span>
+      todo.<span class="hljs-property">id</span> === id
+        ? { ...todo, <span class="hljs-attr">completed</span>: !todo.<span class="hljs-property">completed</span> }
+        : todo
+    ));
+  }, []);
+
+  <span class="hljs-keyword">const</span> handleDelete = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">(<span class="hljs-params">id</span>) =&gt;</span> {
+    <span class="hljs-title function_">setTodos</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> prev.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">todo</span> =&gt;</span> todo.<span class="hljs-property">id</span> !== id));
+  }, []);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      {todos.map(todo =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">TodoItem</span>
+          <span class="hljs-attr">key</span>=<span class="hljs-string">{todo.id}</span>
+          <span class="hljs-attr">todo</span>=<span class="hljs-string">{todo}</span>
+          <span class="hljs-attr">onToggle</span>=<span class="hljs-string">{handleToggle}</span>
+          <span class="hljs-attr">onDelete</span>=<span class="hljs-string">{handleDelete}</span>
+        /&gt;</span>
+      ))}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">TodoItem</span> = <span class="hljs-title function_">memo</span>(<span class="hljs-function">(<span class="hljs-params">{ todo, onToggle, onDelete }</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`TodoItem <span class="hljs-subst">${todo.id}</span> rendered`</span>);
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
+        <span class="hljs-attr">checked</span>=<span class="hljs-string">{todo.completed}</span>
+        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{()</span> =&gt;</span> onToggle(todo.id)}
+      /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{todo.text}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> onDelete(todo.id)}&gt;Delete<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+  );
+});
+</code></pre>
+<h2 id="커스텀-hook---로직-재사용"><a aria-hidden="true" tabindex="-1" href="#커스텀-hook---로직-재사용"><span class="icon icon-link"></span></a>커스텀 Hook - 로직 재사용</h2>
+<p>여러 컴포넌트에서 같은 로직을 반복한다면 커스텀 Hook을 만들어보세요. 코드 재사용성이 크게 향상됩니다.</p>
+<h3 id="usefetch---데이터-fetching"><a aria-hidden="true" tabindex="-1" href="#usefetch---데이터-fetching"><span class="icon icon-link"></span></a>useFetch - 데이터 fetching</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">useFetch</span>(<span class="hljs-params">url</span>) {
+  <span class="hljs-keyword">const</span> [data, setData] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [loading, setLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+  <span class="hljs-keyword">const</span> [error, setError] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">let</span> cancelled = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">true</span>);
+        <span class="hljs-title function_">setError</span>(<span class="hljs-literal">null</span>);
+        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url);
+        <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) {
+          <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">`HTTP error! status: <span class="hljs-subst">${response.status}</span>`</span>);
+        }
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+        <span class="hljs-keyword">if</span> (!cancelled) {
+          <span class="hljs-title function_">setData</span>(result);
+        }
+      } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-keyword">if</span> (!cancelled) {
+          <span class="hljs-title function_">setError</span>(err.<span class="hljs-property">message</span>);
+        }
+      } <span class="hljs-keyword">finally</span> {
+        <span class="hljs-keyword">if</span> (!cancelled) {
+          <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>);
+        }
+      }
+    }
+
+    <span class="hljs-title function_">fetchData</span>();
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> {
+      cancelled = <span class="hljs-literal">true</span>;
+    };
+  }, [url]);
+
+  <span class="hljs-keyword">return</span> { data, loading, error };
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: user, loading, error } = <span class="hljs-title function_">useFetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${userId}</span>`</span>);
+
+  <span class="hljs-keyword">if</span> (loading) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (error) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Error: {error}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>No user found<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{user.name}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{user.email}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="usetoggle---불리언-상태-토글"><a aria-hidden="true" tabindex="-1" href="#usetoggle---불리언-상태-토글"><span class="icon icon-link"></span></a>useToggle - 불리언 상태 토글</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">useToggle</span>(<span class="hljs-params">initialValue = <span class="hljs-literal">false</span></span>) {
+  <span class="hljs-keyword">const</span> [value, setValue] = <span class="hljs-title function_">useState</span>(initialValue);
+
+  <span class="hljs-keyword">const</span> toggle = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">setValue</span>(<span class="hljs-function"><span class="hljs-params">v</span> =&gt;</span> !v);
+  }, []);
+
+  <span class="hljs-keyword">const</span> setTrue = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">setValue</span>(<span class="hljs-literal">true</span>);
+  }, []);
+
+  <span class="hljs-keyword">const</span> setFalse = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">setValue</span>(<span class="hljs-literal">false</span>);
+  }, []);
+
+  <span class="hljs-keyword">return</span> [value, { toggle, setTrue, setFalse, setValue }];
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Modal</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [isOpen, { toggle, setTrue, setFalse }] = <span class="hljs-title function_">useToggle</span>(<span class="hljs-literal">false</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{setTrue}</span>&gt;</span>Open Modal<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      {isOpen &amp;&amp; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;modal&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Modal Content<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{setFalse}</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      )}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="usedebounce---값-디바운싱"><a aria-hidden="true" tabindex="-1" href="#usedebounce---값-디바운싱"><span class="icon icon-link"></span></a>useDebounce - 값 디바운싱</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">useDebounce</span>(<span class="hljs-params">value, delay = <span class="hljs-number">500</span></span>) {
+  <span class="hljs-keyword">const</span> [debouncedValue, setDebouncedValue] = <span class="hljs-title function_">useState</span>(value);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> handler = <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-title function_">setDebouncedValue</span>(value);
+    }, delay);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-built_in">clearTimeout</span>(handler);
+    };
+  }, [value, delay]);
+
+  <span class="hljs-keyword">return</span> debouncedValue;
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">SearchComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [searchTerm, setSearchTerm] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;&#x27;</span>);
+  <span class="hljs-keyword">const</span> debouncedSearchTerm = <span class="hljs-title function_">useDebounce</span>(searchTerm, <span class="hljs-number">300</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">if</span> (debouncedSearchTerm) {
+      <span class="hljs-comment">// API 호출</span>
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Searching for:&#x27;</span>, debouncedSearchTerm);
+    }
+  }, [debouncedSearchTerm]);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">{searchTerm}</span>
+      <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> setSearchTerm(e.target.value)}
+      placeholder=&quot;Search...&quot;
+    /&gt;</span>
+  );
+}
+</code></pre>
+<h3 id="useintersectionobserver---무한-스크롤"><a aria-hidden="true" tabindex="-1" href="#useintersectionobserver---무한-스크롤"><span class="icon icon-link"></span></a>useIntersectionObserver - 무한 스크롤</h3>
+<p>Intersection Observer API를 Hook으로 감싸면 무한 스크롤, 지연 로딩 등을 쉽게 구현할 수 있습니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">useIntersectionObserver</span>(<span class="hljs-params">options</span>) {
+  <span class="hljs-keyword">const</span> [entry, setEntry] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [node, setNode] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">const</span> observer = <span class="hljs-title function_">useRef</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">if</span> (observer.<span class="hljs-property">current</span>) observer.<span class="hljs-property">current</span>.<span class="hljs-title function_">disconnect</span>();
+
+    observer.<span class="hljs-property">current</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">IntersectionObserver</span>(<span class="hljs-function">(<span class="hljs-params">[entry]</span>) =&gt;</span> {
+      <span class="hljs-title function_">setEntry</span>(entry);
+    }, options);
+
+    <span class="hljs-keyword">const</span> currentObserver = observer.<span class="hljs-property">current</span>;
+
+    <span class="hljs-keyword">if</span> (node) currentObserver.<span class="hljs-title function_">observe</span>(node);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> {
+      currentObserver.<span class="hljs-title function_">disconnect</span>();
+    };
+  }, [node, options]);
+
+  <span class="hljs-keyword">return</span> [setNode, entry];
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">InfiniteScroll</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [items, setItems] = <span class="hljs-title function_">useState</span>([]);
+  <span class="hljs-keyword">const</span> [page, setPage] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">1</span>);
+  <span class="hljs-keyword">const</span> [loading, setLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+
+  <span class="hljs-keyword">const</span> [sentryRef, entry] = <span class="hljs-title function_">useIntersectionObserver</span>({
+    <span class="hljs-attr">threshold</span>: <span class="hljs-number">1.0</span>
+  });
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">if</span> (entry?.<span class="hljs-property">isIntersecting</span> &amp;&amp; !loading) {
+      <span class="hljs-title function_">loadMore</span>();
+    }
+  }, [entry?.<span class="hljs-property">isIntersecting</span>]);
+
+  <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">loadMore</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">true</span>);
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/items?page=<span class="hljs-subst">${page}</span>`</span>);
+    <span class="hljs-keyword">const</span> newItems = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+    <span class="hljs-title function_">setItems</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> [...prev, ...newItems]);
+    <span class="hljs-title function_">setPage</span>(<span class="hljs-function"><span class="hljs-params">p</span> =&gt;</span> p + <span class="hljs-number">1</span>);
+    <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>);
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      {items.map(item =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>&gt;</span>{item.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      ))}
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{sentryRef}</span>&gt;</span>
+        {loading &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Loading more...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h2 id="hooks-규칙과-베스트-프랙티스"><a aria-hidden="true" tabindex="-1" href="#hooks-규칙과-베스트-프랙티스"><span class="icon icon-link"></span></a>Hooks 규칙과 베스트 프랙티스</h2>
+<p>Hooks를 올바르게 사용하려면 반드시 지켜야 할 규칙이 있습니다. 이를 어기면 버그가 발생할 수 있습니다.</p>
+<h3 id="hooks의-두-가지-규칙"><a aria-hidden="true" tabindex="-1" href="#hooks의-두-가지-규칙"><span class="icon icon-link"></span></a>Hooks의 두 가지 규칙</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 잘못된 예</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">BadComponent</span>(<span class="hljs-params">{ condition }</span>) {
+  <span class="hljs-keyword">if</span> (condition) {
+    <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>); <span class="hljs-comment">// 조건부 호출 금지!</span>
+  }
+
+  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) {
+    <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {}); <span class="hljs-comment">// 반복문 안에서 호출 금지!</span>
+  }
+
+  <span class="hljs-keyword">function</span> <span class="hljs-title function_">handleClick</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> [name, setName] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;&#x27;</span>); <span class="hljs-comment">// 일반 함수 안에서 호출 금지!</span>
+  }
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+
+<span class="hljs-comment">// 올바른 예</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">GoodComponent</span>(<span class="hljs-params">{ condition }</span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-comment">// 조건부 로직은 Hook 안에서</span>
+    <span class="hljs-keyword">if</span> (condition) {
+      <span class="hljs-comment">// ...</span>
+    }
+  }, [condition]);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<p><strong>규칙:</strong></p>
+<ol>
+<li>최상위 레벨에서만 Hook 호출</li>
+<li>React 함수 컴포넌트나 커스텀 Hook에서만 호출</li>
+</ol>
+<h3 id="의존성-배열-올바르게-사용하기"><a aria-hidden="true" tabindex="-1" href="#의존성-배열-올바르게-사용하기"><span class="icon icon-link"></span></a>의존성 배열 올바르게 사용하기</h3>
+<p>useEffect, useMemo, useCallback의 의존성 배열은 정확하게 관리해야 합니다. ESLint의 <code>react-hooks/exhaustive-deps</code> 규칙을 활용하세요.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 나쁜 예: 의존성 누락</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">BadComponent</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">fetchUser</span>(userId).<span class="hljs-title function_">then</span>(setUser);
+  }, []); <span class="hljs-comment">// userId 변경 시 업데이트 안됨!</span>
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{user?.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+
+<span class="hljs-comment">// 좋은 예</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">GoodComponent</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-title function_">fetchUser</span>(userId).<span class="hljs-title function_">then</span>(setUser);
+  }, [userId]); <span class="hljs-comment">// userId가 변경되면 다시 fetch</span>
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{user?.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+
+<span class="hljs-comment">// 함수형 업데이트로 의존성 제거</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params">{ step }</span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> interval = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-title function_">setCount</span>(<span class="hljs-function"><span class="hljs-params">c</span> =&gt;</span> c + step); <span class="hljs-comment">// step에 의존</span>
+    }, <span class="hljs-number">1000</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">clearInterval</span>(interval);
+  }, [step]); <span class="hljs-comment">// step이 변경되면 interval 재설정</span>
+
+  <span class="hljs-comment">// 또는 ref 사용</span>
+  <span class="hljs-keyword">const</span> stepRef = <span class="hljs-title function_">useRef</span>(step);
+  stepRef.<span class="hljs-property">current</span> = step;
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> interval = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-title function_">setCount</span>(<span class="hljs-function"><span class="hljs-params">c</span> =&gt;</span> c + stepRef.<span class="hljs-property">current</span>);
+    }, <span class="hljs-number">1000</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">clearInterval</span>(interval);
+  }, []); <span class="hljs-comment">// 의존성 없음</span>
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Count: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<h3 id="성능-최적화-팁"><a aria-hidden="true" tabindex="-1" href="#성능-최적화-팁"><span class="icon icon-link"></span></a>성능 최적화 팁</h3>
+<p>성능 최적화는 측정 후에 필요한 곳에만 적용하기. 모든 곳에 메모이제이션을 적용하면 오히려 성능이 저하될 수 있습니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { memo } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-comment">// 1. memo로 불필요한 리렌더링 방지</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">ExpensiveComponent</span> = <span class="hljs-title function_">memo</span>(<span class="hljs-keyword">function</span> <span class="hljs-title function_">ExpensiveComponent</span>(<span class="hljs-params">{ data }</span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;ExpensiveComponent rendered&#x27;</span>);
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{/* 복잡한 렌더링 */}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+});
+
+<span class="hljs-comment">// 2. useMemo로 비용 큰 계산 메모이제이션</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">DataTable</span>(<span class="hljs-params">{ data, filter }</span>) {
+  <span class="hljs-keyword">const</span> filteredData = <span class="hljs-title function_">useMemo</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">return</span> data.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item.<span class="hljs-property">name</span>.<span class="hljs-title function_">includes</span>(filter));
+  }, [data, filter]);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>{/* ... */}<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span>;
+}
+
+<span class="hljs-comment">// 3. useCallback으로 함수 안정화</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Parent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> handleClick = <span class="hljs-title function_">useCallback</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;clicked&#x27;</span>);
+  }, []);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Child</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleClick}</span> /&gt;</span></span>;
+}
+
+<span class="hljs-comment">// 4. 상태를 나누어 관리</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Form</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 하나의 큰 객체</span>
+  <span class="hljs-keyword">const</span> [form, setForm] = <span class="hljs-title function_">useState</span>({ <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;&#x27;</span>, <span class="hljs-attr">email</span>: <span class="hljs-string">&#x27;&#x27;</span>, <span class="hljs-attr">address</span>: <span class="hljs-string">&#x27;&#x27;</span> });
+
+  <span class="hljs-comment">// 독립적인 상태로 분리</span>
+  <span class="hljs-keyword">const</span> [name, setName] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;&#x27;</span>);
+  <span class="hljs-keyword">const</span> [email, setEmail] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;&#x27;</span>);
+  <span class="hljs-keyword">const</span> [address, setAddress] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;&#x27;</span>);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{/* ... */}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<h2 id="오래된-패턴들-요즘엔-거의-안-씀"><a aria-hidden="true" tabindex="-1" href="#오래된-패턴들-요즘엔-거의-안-씀"><span class="icon icon-link"></span></a>오래된 패턴들 (요즘엔 거의 안 씀)</h2>
+<p>이 글에 나온 패턴들은 Hooks의 기본 원리를 이해하는 데는 좋지만, 실무에서는 더 나은 대안들이 있습니다.</p>
+<h3 id="1-useeffect--fetch로-데이터-가져오기"><a aria-hidden="true" tabindex="-1" href="#1-useeffect--fetch로-데이터-가져오기"><span class="icon icon-link"></span></a>1. useEffect + fetch로 데이터 가져오기</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 2019년 패턴</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [loading, setLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+  <span class="hljs-keyword">const</span> [error, setError] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">let</span> cancelled = <span class="hljs-literal">false</span>;
+    <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${userId}</span>`</span>)
+      .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> res.<span class="hljs-title function_">json</span>())
+      .<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">data</span> =&gt;</span> {
+        <span class="hljs-keyword">if</span> (!cancelled) <span class="hljs-title function_">setUser</span>(data);
+      })
+      .<span class="hljs-title function_">catch</span>(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> {
+        <span class="hljs-keyword">if</span> (!cancelled) <span class="hljs-title function_">setError</span>(err);
+      })
+      .<span class="hljs-title function_">finally</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-keyword">if</span> (!cancelled) <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>);
+      });
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> { cancelled = <span class="hljs-literal">true</span>; };
+  }, [userId]);
+
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<p><strong>요즘 방식: TanStack Query (React Query)</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 2025년 패턴</span>
+<span class="hljs-keyword">import</span> { useQuery } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@tanstack/react-query&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: user, isLoading, error } = <span class="hljs-title function_">useQuery</span>({
+    <span class="hljs-attr">queryKey</span>: [<span class="hljs-string">&#x27;user&#x27;</span>, userId],
+    <span class="hljs-attr">queryFn</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${userId}</span>`</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> res.<span class="hljs-title function_">json</span>())
+  });
+
+  <span class="hljs-comment">// 캐싱, 재시도, 백그라운드 refetch 등 자동 처리</span>
+}
+</code></pre>
+<p><strong>왜 바뀌었나?</strong></p>
+<ul>
+<li>캐싱, 중복 요청 제거, 백그라운드 업데이트 자동 처리</li>
+<li>로딩/에러 상태 관리 단순화</li>
+<li>데이터 동기화, 낙관적 업데이트 등 고급 기능 내장</li>
+</ul>
+<h3 id="2-context-api로-전역-상태-관리"><a aria-hidden="true" tabindex="-1" href="#2-context-api로-전역-상태-관리"><span class="icon icon-link"></span></a>2. Context API로 전역 상태 관리</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 복잡하고 보일러플레이트 많은 Context 패턴</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">AuthContext</span> = <span class="hljs-title function_">createContext</span>();
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">AuthProvider</span>(<span class="hljs-params">{ children }</span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">login</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params">email, password</span>) =&gt; {
+    <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">login</span>(email, password);
+    <span class="hljs-title function_">setUser</span>(user);
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">logout</span> = (<span class="hljs-params"></span>) =&gt; <span class="hljs-title function_">setUser</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">AuthContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">user</span>, <span class="hljs-attr">login</span>, <span class="hljs-attr">logout</span> }}&gt;</span>
+      {children}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">AuthContext.Provider</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useAuth</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> context = <span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">AuthContext</span>);
+  <span class="hljs-keyword">if</span> (!context) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;useAuth must be used within AuthProvider&#x27;</span>);
+  <span class="hljs-keyword">return</span> context;
+}
+</code></pre>
+<p><strong>요즘 방식: Zustand</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 간결한 Zustand</span>
+<span class="hljs-keyword">import</span> { create } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;zustand&#x27;</span>;
+
+<span class="hljs-keyword">const</span> useAuthStore = <span class="hljs-title function_">create</span>(<span class="hljs-function">(<span class="hljs-params">set</span>) =&gt;</span> ({
+  <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span>,
+  <span class="hljs-attr">login</span>: <span class="hljs-title function_">async</span> (email, password) =&gt; {
+    <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">login</span>(email, password);
+    <span class="hljs-title function_">set</span>({ user });
+  },
+  <span class="hljs-attr">logout</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">set</span>({ <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span> })
+}));
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Header</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { user, logout } = <span class="hljs-title function_">useAuthStore</span>();
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<p><strong>왜 바뀌었나?</strong></p>
+<ul>
+<li>Provider 지옥 제거</li>
+<li>보일러플레이트 90% 감소</li>
+<li>성능 최적화 자동 (선택적 구독)</li>
+<li>DevTools, 미들웨어 등 풍부한 생태계</li>
+</ul>
+<h3 id="3-usereducer로-복잡한-폼-관리"><a aria-hidden="true" tabindex="-1" href="#3-usereducer로-복잡한-폼-관리"><span class="icon icon-link"></span></a>3. useReducer로 복잡한 폼 관리</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 장황한 reducer 패턴</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">formReducer</span> = (<span class="hljs-params">state, action</span>) =&gt; {
+  <span class="hljs-keyword">switch</span> (action.<span class="hljs-property">type</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;SET_FIELD&#x27;</span>:
+      <span class="hljs-keyword">return</span> { ...state, [action.<span class="hljs-property">field</span>]: action.<span class="hljs-property">value</span> };
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;SET_ERROR&#x27;</span>:
+      <span class="hljs-keyword">return</span> { ...state, <span class="hljs-attr">errors</span>: { ...state.<span class="hljs-property">errors</span>, [action.<span class="hljs-property">field</span>]: action.<span class="hljs-property">error</span> }};
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;RESET&#x27;</span>:
+      <span class="hljs-keyword">return</span> initialState;
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-keyword">return</span> state;
+  }
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">RegistrationForm</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [state, dispatch] = <span class="hljs-title function_">useReducer</span>(formReducer, initialState);
+  <span class="hljs-comment">// 수십 줄의 validation 로직...</span>
+}
+</code></pre>
+<p><strong>요즘 방식: React Hook Form</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 선언적인 React Hook Form</span>
+<span class="hljs-keyword">import</span> { useForm } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-hook-form&#x27;</span>;
+<span class="hljs-keyword">import</span> { zodResolver } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@hookform/resolvers/zod&#x27;</span>;
+<span class="hljs-keyword">import</span> { z } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;zod&#x27;</span>;
+
+<span class="hljs-keyword">const</span> schema = z.<span class="hljs-title function_">object</span>({
+  <span class="hljs-attr">name</span>: z.<span class="hljs-title function_">string</span>().<span class="hljs-title function_">min</span>(<span class="hljs-number">1</span>, <span class="hljs-string">&#x27;Name is required&#x27;</span>),
+  <span class="hljs-attr">email</span>: z.<span class="hljs-title function_">string</span>().<span class="hljs-title function_">email</span>(<span class="hljs-string">&#x27;Invalid email&#x27;</span>),
+  <span class="hljs-attr">age</span>: z.<span class="hljs-title function_">number</span>().<span class="hljs-title function_">positive</span>()
+});
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">RegistrationForm</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { register, handleSubmit, <span class="hljs-attr">formState</span>: { errors } } = <span class="hljs-title function_">useForm</span>({
+    <span class="hljs-attr">resolver</span>: <span class="hljs-title function_">zodResolver</span>(schema)
+  });
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">onSubmit</span> = (<span class="hljs-params">data</span>) =&gt; <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(data);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{handleSubmit(onSubmit)}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> {<span class="hljs-attr">...register</span>(&#x27;<span class="hljs-attr">name</span>&#x27;)} /&gt;</span>
+      {errors.name &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{errors.name.message}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}
+      {/* ... */}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><strong>왜 바뀌었나?</strong></p>
+<ul>
+<li>불필요한 리렌더링 제거 (비제어 컴포넌트)</li>
+<li>유효성 검사 라이브러리(Zod, Yup) 통합</li>
+<li>코드량 70% 감소</li>
+</ul>
+<h3 id="4-lodash-debounce-사용"><a aria-hidden="true" tabindex="-1" href="#4-lodash-debounce-사용"><span class="icon icon-link"></span></a>4. lodash debounce 사용</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 외부 라이브러리 의존</span>
+<span class="hljs-keyword">import</span> { debounce } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;lodash&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">SearchInput</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> handleSearch = <span class="hljs-title function_">useCallback</span>(
+    <span class="hljs-title function_">debounce</span>(<span class="hljs-title function_">async</span> (query) =&gt; {
+      <span class="hljs-comment">// search logic</span>
+    }, <span class="hljs-number">300</span>),
+    []
+  );
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<p><strong>요즘 방식: useDeferredValue (React 18+)</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 네이티브 React 기능</span>
+<span class="hljs-keyword">import</span> { useDeferredValue, useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">SearchInput</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [query, setQuery] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;&#x27;</span>);
+  <span class="hljs-keyword">const</span> deferredQuery = <span class="hljs-title function_">useDeferredValue</span>(query);
+
+  <span class="hljs-comment">// deferredQuery는 자동으로 디바운스됨</span>
+  <span class="hljs-keyword">const</span> results = <span class="hljs-title function_">useQuery</span>({
+    <span class="hljs-attr">queryKey</span>: [<span class="hljs-string">&#x27;search&#x27;</span>, deferredQuery],
+    <span class="hljs-attr">queryFn</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">searchAPI</span>(deferredQuery)
+  });
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{query}</span> <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> setQuery(e.target.value)} /&gt;</span>;
+}
+</code></pre>
+<p><strong>왜 바뀌었나?</strong></p>
+<ul>
+<li>추가 라이브러리 불필요</li>
+<li>React의 동시성 기능과 통합</li>
+<li>더 나은 사용자 경험 (긴급 업데이트 우선 처리)</li>
+</ul>
+<h3 id="5-reactmemo-남발"><a aria-hidden="true" tabindex="-1" href="#5-reactmemo-남발"><span class="icon icon-link"></span></a>5. React.memo 남발</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { memo } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-comment">// 모든 컴포넌트를 memo로 감싸기</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">TodoItem</span> = <span class="hljs-title function_">memo</span>(<span class="hljs-function">(<span class="hljs-params">{ todo, onToggle, onDelete }</span>) =&gt;</span> {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{todo.text}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>;
+});
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">TodoList</span> = <span class="hljs-title function_">memo</span>(<span class="hljs-function">(<span class="hljs-params">{ todos }</span>) =&gt;</span> {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>{todos.map(todo =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">TodoItem</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{todo.id}</span> <span class="hljs-attr">todo</span>=<span class="hljs-string">{todo}</span> /&gt;</span>)}<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>;
+});
+</code></pre>
+<p><strong>요즘 방식: React Compiler (React 19)</strong></p>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// 컴파일러가 자동 최적화 (수동 memo 불필요)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">TodoItem</span>(<span class="hljs-params">{ todo, onToggle, onDelete }</span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{todo.text}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">TodoList</span>(<span class="hljs-params">{ todos }</span>) {
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>{todos.map(todo =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">TodoItem</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{todo.id}</span> <span class="hljs-attr">todo</span>=<span class="hljs-string">{todo}</span> /&gt;</span>)}<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>;
+}
+
+<span class="hljs-comment">// React Compiler가 필요한 곳에만 자동으로 메모이제이션 추가</span>
+</code></pre>
+<p><strong>왜 바뀌었나?</strong></p>
+<ul>
+<li>React 19의 컴파일러가 자동으로 최적화</li>
+<li>개발자가 성능 걱정 없이 코드 작성 가능</li>
+<li>과도한 최적화로 인한 버그 감소</li>
+</ul>
+<h2 id="정리"><a aria-hidden="true" tabindex="-1" href="#정리"><span class="icon icon-link"></span></a>정리</h2>
+<p>기본 Hooks는 여전히 중요합니다:</p>
+<ul>
+<li><code>useState</code>, <code>useEffect</code>, <code>useRef</code>, <code>useContext</code> - 기본 개념 필수</li>
+<li><code>useReducer</code>, <code>useMemo</code>, <code>useCallback</code> - 필요할 때만 사용</li>
+<li>하지만 사용 방식과 주변 생태계가 크게 발전했습니다</li>
+</ul>
+<p>요즘 실무 스택:</p>
+<ul>
+<li>데이터 페칭: TanStack Query, SWR</li>
+<li>전역 상태: Zustand, Jotai, Recoil</li>
+<li>폼 관리: React Hook Form + Zod</li>
+<li>디바운스: useDeferredValue, useTransition</li>
+<li>최적화: React Compiler (자동)</li>
+</ul>
+<p>Hooks 자체는 여전히 React의 핵심이지만, 직접 구현하기보다는 검증된 라이브러리를 활용하는 게 2025년 트렌드입니다.</p>
+<p><del>공부 할게 산더미..</del></p></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group" href="/posts/frontend/react-api-integration/"><div class="text-sm text-muted-foreground mb-2">← 이전 글</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">React API 연동 모음</div></a><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right" href="/posts/frontend/react-hooks-part1/"><div class="text-sm text-muted-foreground mb-2">다음 글 →</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">React Hooks 모음 1</div></a></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d5ebba4595249be0.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"t_hGkcyjbHvFTtWQ9-4pp\",\"p\":\"\",\"c\":[\"\",\"posts\",\"frontend\",\"react-hooks-part2\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"frontend\",\"d\"],{\"children\":[[\"slug\",\"react-hooks-part2\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d5ebba4595249be0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"frontend\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"react-hooks-part2\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T5f07,"])</script><script>self.__next_f.push([1,"\n1에서 기본 Hooks를 다뤘다면, 이번에는 더 고급 패턴과 성능 최적화, 그리고 실무에서의 최신 트렌드를 살펴봅니다.\n\n## useReducer - 복잡한 상태 로직\n\n여러 개의 연관된 상태를 관리하거나 복잡한 업데이트 로직이 있다면 useReducer가 useState보다 적합합니다. Redux와 같은 패턴을 사용합니다.\n\n### 기본 사용법\n\n```javascript\nimport { useReducer } from 'react';\n\n// reducer 함수\nfunction counterReducer(state, action) {\n  switch (action.type) {\n    case 'increment':\n      return { count: state.count + 1 };\n    case 'decrement':\n      return { count: state.count - 1 };\n    case 'reset':\n      return { count: 0 };\n    case 'set':\n      return { count: action.payload };\n    default:\n      return state;\n  }\n}\n\nfunction Counter() {\n  const [state, dispatch] = useReducer(counterReducer, { count: 0 });\n\n  return (\n    \u003cdiv\u003e\n      \u003cp\u003eCount: {state.count}\u003c/p\u003e\n      \u003cbutton onClick={() =\u003e dispatch({ type: 'increment' })}\u003e+\u003c/button\u003e\n      \u003cbutton onClick={() =\u003e dispatch({ type: 'decrement' })}\u003e-\u003c/button\u003e\n      \u003cbutton onClick={() =\u003e dispatch({ type: 'reset' })}\u003eReset\u003c/button\u003e\n      \u003cbutton onClick={() =\u003e dispatch({ type: 'set', payload: 100 })}\u003e\n        Set to 100\n      \u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### 폼 상태 관리\n\n여러 개의 입력 필드와 유효성 검사가 있는 폼을 관리할 때 useReducer가 빛을 발합니다.\n\n```javascript\nconst initialState = {\n  name: '',\n  email: '',\n  age: '',\n  errors: {}\n};\n\nfunction formReducer(state, action) {\n  switch (action.type) {\n    case 'SET_FIELD':\n      return {\n        ...state,\n        [action.field]: action.value,\n        errors: { ...state.errors, [action.field]: '' }\n      };\n    case 'SET_ERROR':\n      return {\n        ...state,\n        errors: { ...state.errors, [action.field]: action.error }\n      };\n    case 'SET_ERRORS':\n      return { ...state, errors: action.errors };\n    case 'RESET':\n      return initialState;\n    default:\n      return state;\n  }\n}\n\nfunction RegistrationForm() {\n  const [state, dispatch] = useReducer(formReducer, initialState);\n\n  const handleChange = (field) =\u003e (e) =\u003e {\n    dispatch({\n      type: 'SET_FIELD',\n      field,\n      value: e.target.value\n    });\n  };\n\n  const validate = () =\u003e {\n    const errors = {};\n    if (!state.name) errors.name = 'Name is required';\n    if (!state.email) errors.email = 'Email is required';\n    if (state.age \u0026\u0026 isNaN(state.age)) errors.age = 'Age must be a number';\n\n    dispatch({ type: 'SET_ERRORS', errors });\n    return Object.keys(errors).length === 0;\n  };\n\n  const handleSubmit = (e) =\u003e {\n    e.preventDefault();\n    if (validate()) {\n      console.log('Form submitted:', state);\n      dispatch({ type: 'RESET' });\n    }\n  };\n\n  return (\n    \u003cform onSubmit={handleSubmit}\u003e\n      \u003cdiv\u003e\n        \u003cinput\n          value={state.name}\n          onChange={handleChange('name')}\n          placeholder=\"Name\"\n        /\u003e\n        {state.errors.name \u0026\u0026 \u003cspan\u003e{state.errors.name}\u003c/span\u003e}\n      \u003c/div\u003e\n      \u003cdiv\u003e\n        \u003cinput\n          value={state.email}\n          onChange={handleChange('email')}\n          placeholder=\"Email\"\n        /\u003e\n        {state.errors.email \u0026\u0026 \u003cspan\u003e{state.errors.email}\u003c/span\u003e}\n      \u003c/div\u003e\n      \u003cdiv\u003e\n        \u003cinput\n          value={state.age}\n          onChange={handleChange('age')}\n          placeholder=\"Age\"\n        /\u003e\n        {state.errors.age \u0026\u0026 \u003cspan\u003e{state.errors.age}\u003c/span\u003e}\n      \u003c/div\u003e\n      \u003cbutton type=\"submit\"\u003eSubmit\u003c/button\u003e\n      \u003cbutton type=\"button\" onClick={() =\u003e dispatch({ type: 'RESET' })}\u003e\n        Reset\n      \u003c/button\u003e\n    \u003c/form\u003e\n  );\n}\n```\n\n### 비동기 데이터 fetching\n\n```javascript\nconst initialState = {\n  data: null,\n  loading: false,\n  error: null\n};\n\nfunction dataReducer(state, action) {\n  switch (action.type) {\n    case 'FETCH_START':\n      return { ...state, loading: true, error: null };\n    case 'FETCH_SUCCESS':\n      return { data: action.payload, loading: false, error: null };\n    case 'FETCH_ERROR':\n      return { ...state, loading: false, error: action.payload };\n    default:\n      return state;\n  }\n}\n\nfunction UserList() {\n  const [state, dispatch] = useReducer(dataReducer, initialState);\n\n  useEffect(() =\u003e {\n    async function fetchUsers() {\n      dispatch({ type: 'FETCH_START' });\n      try {\n        const response = await fetch('/api/users');\n        const data = await response.json();\n        dispatch({ type: 'FETCH_SUCCESS', payload: data });\n      } catch (error) {\n        dispatch({ type: 'FETCH_ERROR', payload: error.message });\n      }\n    }\n\n    fetchUsers();\n  }, []);\n\n  if (state.loading) return \u003cdiv\u003eLoading...\u003c/div\u003e;\n  if (state.error) return \u003cdiv\u003eError: {state.error}\u003c/div\u003e;\n  if (!state.data) return \u003cdiv\u003eNo data\u003c/div\u003e;\n\n  return (\n    \u003cul\u003e\n      {state.data.map(user =\u003e (\n        \u003cli key={user.id}\u003e{user.name}\u003c/li\u003e\n      ))}\n    \u003c/ul\u003e\n  );\n}\n```\n\n## useMemo - 값 메모이제이션\n\n계산 비용이 큰 작업의 결과를 캐싱하여 불필요한 재계산을 방지합니다. 단, 모든 계산에 useMemo를 쓸 필요는 없습니다.\n\n### 기본 사용법\n\n```javascript\nimport { useState, useMemo } from 'react';\n\nfunction ExpensiveCalculation({ items }) {\n  const [filter, setFilter] = useState('');\n\n  // 매 렌더링마다 계산\n  const filteredItems = items.filter(item =\u003e\n    item.name.toLowerCase().includes(filter.toLowerCase())\n  );\n\n  // filter나 items가 변경될 때만 계산\n  const filteredItems = useMemo(() =\u003e {\n    console.log('Filtering...');\n    return items.filter(item =\u003e\n      item.name.toLowerCase().includes(filter.toLowerCase())\n    );\n  }, [items, filter]);\n\n  return (\n    \u003cdiv\u003e\n      \u003cinput\n        value={filter}\n        onChange={(e) =\u003e setFilter(e.target.value)}\n        placeholder=\"Filter...\"\n      /\u003e\n      \u003cul\u003e\n        {filteredItems.map(item =\u003e (\n          \u003cli key={item.id}\u003e{item.name}\u003c/li\u003e\n        ))}\n      \u003c/ul\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### 정렬 메모이제이션\n\n```javascript\nfunction SortedList({ items, sortBy }) {\n  const sortedItems = useMemo(() =\u003e {\n    console.log('Sorting...');\n    return [...items].sort((a, b) =\u003e {\n      if (sortBy === 'name') {\n        return a.name.localeCompare(b.name);\n      }\n      if (sortBy === 'price') {\n        return a.price - b.price;\n      }\n      return 0;\n    });\n  }, [items, sortBy]);\n\n  return (\n    \u003cul\u003e\n      {sortedItems.map(item =\u003e (\n        \u003cli key={item.id}\u003e\n          {item.name} - ${item.price}\n        \u003c/li\u003e\n      ))}\n    \u003c/ul\u003e\n  );\n}\n```\n\n### 객체 참조 안정화\n\nJavaScript에서 객체는 매번 새로 생성되면 참조가 달라집니다. useEffect의 의존성 배열에 객체를 넣을 때 useMemo를 사용하면 불필요한 재실행을 방지할 수 있습니다.\n\n```javascript\nfunction UserProfile({ userId }) {\n  // 매 렌더링마다 새 객체 생성\n  const config = { userId, theme: 'dark' };\n\n  // userId가 변경될 때만 새 객체 생성\n  const config = useMemo(() =\u003e ({\n    userId,\n    theme: 'dark'\n  }), [userId]);\n\n  // config를 의존성으로 사용하는 effect\n  useEffect(() =\u003e {\n    fetchUserWithConfig(config);\n  }, [config]);\n\n  return \u003cdiv\u003e...\u003c/div\u003e;\n}\n```\n\n## useCallback - 함수 메모이제이션\n\n함수도 객체처럼 매번 새로 생성되면 참조가 달라집니다. useCallback으로 함수를 메모이제이션하면 자식 컴포넌트의 불필요한 리렌더링을 방지할 수 있습니다.\n\n### 기본 사용법\n\n```javascript\nimport { useState, useCallback } from 'react';\nimport { memo } from 'react';\n\nfunction Parent() {\n  const [count, setCount] = useState(0);\n  const [other, setOther] = useState(0);\n\n  // 매 렌더링마다 새 함수 생성\n  const handleClick = () =\u003e {\n    setCount(c =\u003e c + 1);\n  };\n\n  // 함수 메모이제이션 (의존성 없으면 재생성 안됨)\n  const handleClick = useCallback(() =\u003e {\n    setCount(c =\u003e c + 1);\n  }, []);\n\n  return (\n    \u003cdiv\u003e\n      \u003cp\u003eCount: {count}\u003c/p\u003e\n      \u003cp\u003eOther: {other}\u003c/p\u003e\n      \u003cChild onClick={handleClick} /\u003e\n      \u003cbutton onClick={() =\u003e setOther(o =\u003e o + 1)}\u003e\n        Change Other\n      \u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n\n// memo로 최적화된 자식 컴포넌트\nconst Child = memo(({ onClick }) =\u003e {\n  console.log('Child rendered');\n  return \u003cbutton onClick={onClick}\u003eIncrement\u003c/button\u003e;\n});\n```\n\n### 이벤트 핸들러 최적화\n\n```javascript\nfunction TodoList() {\n  const [todos, setTodos] = useState([]);\n\n  const handleToggle = useCallback((id) =\u003e {\n    setTodos(prev =\u003e prev.map(todo =\u003e\n      todo.id === id\n        ? { ...todo, completed: !todo.completed }\n        : todo\n    ));\n  }, []);\n\n  const handleDelete = useCallback((id) =\u003e {\n    setTodos(prev =\u003e prev.filter(todo =\u003e todo.id !== id));\n  }, []);\n\n  return (\n    \u003cul\u003e\n      {todos.map(todo =\u003e (\n        \u003cTodoItem\n          key={todo.id}\n          todo={todo}\n          onToggle={handleToggle}\n          onDelete={handleDelete}\n        /\u003e\n      ))}\n    \u003c/ul\u003e\n  );\n}\n\nconst TodoItem = memo(({ todo, onToggle, onDelete }) =\u003e {\n  console.log(`TodoItem ${todo.id} rendered`);\n  return (\n    \u003cli\u003e\n      \u003cinput\n        type=\"checkbox\"\n        checked={todo.completed}\n        onChange={() =\u003e onToggle(todo.id)}\n      /\u003e\n      \u003cspan\u003e{todo.text}\u003c/span\u003e\n      \u003cbutton onClick={() =\u003e onDelete(todo.id)}\u003eDelete\u003c/button\u003e\n    \u003c/li\u003e\n  );\n});\n```\n\n## 커스텀 Hook - 로직 재사용\n\n여러 컴포넌트에서 같은 로직을 반복한다면 커스텀 Hook을 만들어보세요. 코드 재사용성이 크게 향상됩니다.\n\n### useFetch - 데이터 fetching\n\n```javascript\nfunction useFetch(url) {\n  const [data, setData] = useState(null);\n  const [loading, setLoading] = useState(true);\n  const [error, setError] = useState(null);\n\n  useEffect(() =\u003e {\n    let cancelled = false;\n\n    async function fetchData() {\n      try {\n        setLoading(true);\n        setError(null);\n        const response = await fetch(url);\n        if (!response.ok) {\n          throw new Error(`HTTP error! status: ${response.status}`);\n        }\n        const result = await response.json();\n        if (!cancelled) {\n          setData(result);\n        }\n      } catch (err) {\n        if (!cancelled) {\n          setError(err.message);\n        }\n      } finally {\n        if (!cancelled) {\n          setLoading(false);\n        }\n      }\n    }\n\n    fetchData();\n\n    return () =\u003e {\n      cancelled = true;\n    };\n  }, [url]);\n\n  return { data, loading, error };\n}\n\n// 사용\nfunction UserProfile({ userId }) {\n  const { data: user, loading, error } = useFetch(`/api/users/${userId}`);\n\n  if (loading) return \u003cdiv\u003eLoading...\u003c/div\u003e;\n  if (error) return \u003cdiv\u003eError: {error}\u003c/div\u003e;\n  if (!user) return \u003cdiv\u003eNo user found\u003c/div\u003e;\n\n  return (\n    \u003cdiv\u003e\n      \u003ch1\u003e{user.name}\u003c/h1\u003e\n      \u003cp\u003e{user.email}\u003c/p\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### useToggle - 불리언 상태 토글\n\n```javascript\nfunction useToggle(initialValue = false) {\n  const [value, setValue] = useState(initialValue);\n\n  const toggle = useCallback(() =\u003e {\n    setValue(v =\u003e !v);\n  }, []);\n\n  const setTrue = useCallback(() =\u003e {\n    setValue(true);\n  }, []);\n\n  const setFalse = useCallback(() =\u003e {\n    setValue(false);\n  }, []);\n\n  return [value, { toggle, setTrue, setFalse, setValue }];\n}\n\n// 사용\nfunction Modal() {\n  const [isOpen, { toggle, setTrue, setFalse }] = useToggle(false);\n\n  return (\n    \u003cdiv\u003e\n      \u003cbutton onClick={setTrue}\u003eOpen Modal\u003c/button\u003e\n      {isOpen \u0026\u0026 (\n        \u003cdiv className=\"modal\"\u003e\n          \u003ch2\u003eModal Content\u003c/h2\u003e\n          \u003cbutton onClick={setFalse}\u003eClose\u003c/button\u003e\n        \u003c/div\u003e\n      )}\n    \u003c/div\u003e\n  );\n}\n```\n\n### useDebounce - 값 디바운싱\n\n```javascript\nfunction useDebounce(value, delay = 500) {\n  const [debouncedValue, setDebouncedValue] = useState(value);\n\n  useEffect(() =\u003e {\n    const handler = setTimeout(() =\u003e {\n      setDebouncedValue(value);\n    }, delay);\n\n    return () =\u003e {\n      clearTimeout(handler);\n    };\n  }, [value, delay]);\n\n  return debouncedValue;\n}\n\n// 사용\nfunction SearchComponent() {\n  const [searchTerm, setSearchTerm] = useState('');\n  const debouncedSearchTerm = useDebounce(searchTerm, 300);\n\n  useEffect(() =\u003e {\n    if (debouncedSearchTerm) {\n      // API 호출\n      console.log('Searching for:', debouncedSearchTerm);\n    }\n  }, [debouncedSearchTerm]);\n\n  return (\n    \u003cinput\n      value={searchTerm}\n      onChange={(e) =\u003e setSearchTerm(e.target.value)}\n      placeholder=\"Search...\"\n    /\u003e\n  );\n}\n```\n\n### useIntersectionObserver - 무한 스크롤\n\nIntersection Observer API를 Hook으로 감싸면 무한 스크롤, 지연 로딩 등을 쉽게 구현할 수 있습니다.\n\n```javascript\nfunction useIntersectionObserver(options) {\n  const [entry, setEntry] = useState(null);\n  const [node, setNode] = useState(null);\n\n  const observer = useRef(null);\n\n  useEffect(() =\u003e {\n    if (observer.current) observer.current.disconnect();\n\n    observer.current = new IntersectionObserver(([entry]) =\u003e {\n      setEntry(entry);\n    }, options);\n\n    const currentObserver = observer.current;\n\n    if (node) currentObserver.observe(node);\n\n    return () =\u003e {\n      currentObserver.disconnect();\n    };\n  }, [node, options]);\n\n  return [setNode, entry];\n}\n\n// 사용\nfunction InfiniteScroll() {\n  const [items, setItems] = useState([]);\n  const [page, setPage] = useState(1);\n  const [loading, setLoading] = useState(false);\n\n  const [sentryRef, entry] = useIntersectionObserver({\n    threshold: 1.0\n  });\n\n  useEffect(() =\u003e {\n    if (entry?.isIntersecting \u0026\u0026 !loading) {\n      loadMore();\n    }\n  }, [entry?.isIntersecting]);\n\n  async function loadMore() {\n    setLoading(true);\n    const response = await fetch(`/api/items?page=${page}`);\n    const newItems = await response.json();\n    setItems(prev =\u003e [...prev, ...newItems]);\n    setPage(p =\u003e p + 1);\n    setLoading(false);\n  }\n\n  return (\n    \u003cdiv\u003e\n      {items.map(item =\u003e (\n        \u003cdiv key={item.id}\u003e{item.name}\u003c/div\u003e\n      ))}\n      \u003cdiv ref={sentryRef}\u003e\n        {loading \u0026\u0026 \u003cdiv\u003eLoading more...\u003c/div\u003e}\n      \u003c/div\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n## Hooks 규칙과 베스트 프랙티스\n\nHooks를 올바르게 사용하려면 반드시 지켜야 할 규칙이 있습니다. 이를 어기면 버그가 발생할 수 있습니다.\n\n### Hooks의 두 가지 규칙\n\n```javascript\n// 잘못된 예\nfunction BadComponent({ condition }) {\n  if (condition) {\n    const [count, setCount] = useState(0); // 조건부 호출 금지!\n  }\n\n  for (let i = 0; i \u003c 5; i++) {\n    useEffect(() =\u003e {}); // 반복문 안에서 호출 금지!\n  }\n\n  function handleClick() {\n    const [name, setName] = useState(''); // 일반 함수 안에서 호출 금지!\n  }\n\n  return \u003cdiv\u003e...\u003c/div\u003e;\n}\n\n// 올바른 예\nfunction GoodComponent({ condition }) {\n  const [count, setCount] = useState(0);\n\n  useEffect(() =\u003e {\n    // 조건부 로직은 Hook 안에서\n    if (condition) {\n      // ...\n    }\n  }, [condition]);\n\n  return \u003cdiv\u003e...\u003c/div\u003e;\n}\n```\n\n**규칙:**\n1. 최상위 레벨에서만 Hook 호출\n2. React 함수 컴포넌트나 커스텀 Hook에서만 호출\n\n### 의존성 배열 올바르게 사용하기\n\nuseEffect, useMemo, useCallback의 의존성 배열은 정확하게 관리해야 합니다. ESLint의 `react-hooks/exhaustive-deps` 규칙을 활용하세요.\n\n```javascript\n// 나쁜 예: 의존성 누락\nfunction BadComponent({ userId }) {\n  const [user, setUser] = useState(null);\n\n  useEffect(() =\u003e {\n    fetchUser(userId).then(setUser);\n  }, []); // userId 변경 시 업데이트 안됨!\n\n  return \u003cdiv\u003e{user?.name}\u003c/div\u003e;\n}\n\n// 좋은 예\nfunction GoodComponent({ userId }) {\n  const [user, setUser] = useState(null);\n\n  useEffect(() =\u003e {\n    fetchUser(userId).then(setUser);\n  }, [userId]); // userId가 변경되면 다시 fetch\n\n  return \u003cdiv\u003e{user?.name}\u003c/div\u003e;\n}\n\n// 함수형 업데이트로 의존성 제거\nfunction Counter({ step }) {\n  const [count, setCount] = useState(0);\n\n  useEffect(() =\u003e {\n    const interval = setInterval(() =\u003e {\n      setCount(c =\u003e c + step); // step에 의존\n    }, 1000);\n    return () =\u003e clearInterval(interval);\n  }, [step]); // step이 변경되면 interval 재설정\n\n  // 또는 ref 사용\n  const stepRef = useRef(step);\n  stepRef.current = step;\n\n  useEffect(() =\u003e {\n    const interval = setInterval(() =\u003e {\n      setCount(c =\u003e c + stepRef.current);\n    }, 1000);\n    return () =\u003e clearInterval(interval);\n  }, []); // 의존성 없음\n\n  return \u003cdiv\u003eCount: {count}\u003c/div\u003e;\n}\n```\n\n### 성능 최적화 팁\n\n성능 최적화는 측정 후에 필요한 곳에만 적용하기. 모든 곳에 메모이제이션을 적용하면 오히려 성능이 저하될 수 있습니다.\n\n```javascript\nimport { memo } from 'react';\n\n// 1. memo로 불필요한 리렌더링 방지\nconst ExpensiveComponent = memo(function ExpensiveComponent({ data }) {\n  console.log('ExpensiveComponent rendered');\n  return \u003cdiv\u003e{/* 복잡한 렌더링 */}\u003c/div\u003e;\n});\n\n// 2. useMemo로 비용 큰 계산 메모이제이션\nfunction DataTable({ data, filter }) {\n  const filteredData = useMemo(() =\u003e {\n    return data.filter(item =\u003e item.name.includes(filter));\n  }, [data, filter]);\n\n  return \u003ctable\u003e{/* ... */}\u003c/table\u003e;\n}\n\n// 3. useCallback으로 함수 안정화\nfunction Parent() {\n  const handleClick = useCallback(() =\u003e {\n    console.log('clicked');\n  }, []);\n\n  return \u003cChild onClick={handleClick} /\u003e;\n}\n\n// 4. 상태를 나누어 관리\nfunction Form() {\n  // 하나의 큰 객체\n  const [form, setForm] = useState({ name: '', email: '', address: '' });\n\n  // 독립적인 상태로 분리\n  const [name, setName] = useState('');\n  const [email, setEmail] = useState('');\n  const [address, setAddress] = useState('');\n\n  return \u003cdiv\u003e{/* ... */}\u003c/div\u003e;\n}\n```\n\n## 오래된 패턴들 (요즘엔 거의 안 씀)\n\n이 글에 나온 패턴들은 Hooks의 기본 원리를 이해하는 데는 좋지만, 실무에서는 더 나은 대안들이 있습니다.\n\n### 1. useEffect + fetch로 데이터 가져오기\n\n```javascript\n// 2019년 패턴\nfunction UserProfile({ userId }) {\n  const [user, setUser] = useState(null);\n  const [loading, setLoading] = useState(true);\n  const [error, setError] = useState(null);\n\n  useEffect(() =\u003e {\n    let cancelled = false;\n    fetch(`/api/users/${userId}`)\n      .then(res =\u003e res.json())\n      .then(data =\u003e {\n        if (!cancelled) setUser(data);\n      })\n      .catch(err =\u003e {\n        if (!cancelled) setError(err);\n      })\n      .finally(() =\u003e {\n        if (!cancelled) setLoading(false);\n      });\n\n    return () =\u003e { cancelled = true; };\n  }, [userId]);\n\n  // ...\n}\n```\n\n**요즘 방식: TanStack Query (React Query)**\n\n```javascript\n// 2025년 패턴\nimport { useQuery } from '@tanstack/react-query';\n\nfunction UserProfile({ userId }) {\n  const { data: user, isLoading, error } = useQuery({\n    queryKey: ['user', userId],\n    queryFn: () =\u003e fetch(`/api/users/${userId}`).then(res =\u003e res.json())\n  });\n\n  // 캐싱, 재시도, 백그라운드 refetch 등 자동 처리\n}\n```\n\n**왜 바뀌었나?**\n- 캐싱, 중복 요청 제거, 백그라운드 업데이트 자동 처리\n- 로딩/에러 상태 관리 단순화\n- 데이터 동기화, 낙관적 업데이트 등 고급 기능 내장\n\n### 2. Context API로 전역 상태 관리\n\n```javascript\n// 복잡하고 보일러플레이트 많은 Context 패턴\nconst AuthContext = createContext();\n\nfunction AuthProvider({ children }) {\n  const [user, setUser] = useState(null);\n\n  const login = async (email, password) =\u003e {\n    const user = await api.login(email, password);\n    setUser(user);\n  };\n\n  const logout = () =\u003e setUser(null);\n\n  return (\n    \u003cAuthContext.Provider value={{ user, login, logout }}\u003e\n      {children}\n    \u003c/AuthContext.Provider\u003e\n  );\n}\n\nfunction useAuth() {\n  const context = useContext(AuthContext);\n  if (!context) throw new Error('useAuth must be used within AuthProvider');\n  return context;\n}\n```\n\n**요즘 방식: Zustand**\n\n```javascript\n// 간결한 Zustand\nimport { create } from 'zustand';\n\nconst useAuthStore = create((set) =\u003e ({\n  user: null,\n  login: async (email, password) =\u003e {\n    const user = await api.login(email, password);\n    set({ user });\n  },\n  logout: () =\u003e set({ user: null })\n}));\n\n// 사용\nfunction Header() {\n  const { user, logout } = useAuthStore();\n  // ...\n}\n```\n\n**왜 바뀌었나?**\n- Provider 지옥 제거\n- 보일러플레이트 90% 감소\n- 성능 최적화 자동 (선택적 구독)\n- DevTools, 미들웨어 등 풍부한 생태계\n\n### 3. useReducer로 복잡한 폼 관리\n\n```javascript\n// 장황한 reducer 패턴\nconst formReducer = (state, action) =\u003e {\n  switch (action.type) {\n    case 'SET_FIELD':\n      return { ...state, [action.field]: action.value };\n    case 'SET_ERROR':\n      return { ...state, errors: { ...state.errors, [action.field]: action.error }};\n    case 'RESET':\n      return initialState;\n    default:\n      return state;\n  }\n};\n\nfunction RegistrationForm() {\n  const [state, dispatch] = useReducer(formReducer, initialState);\n  // 수십 줄의 validation 로직...\n}\n```\n\n**요즘 방식: React Hook Form**\n\n```javascript\n// 선언적인 React Hook Form\nimport { useForm } from 'react-hook-form';\nimport { zodResolver } from '@hookform/resolvers/zod';\nimport { z } from 'zod';\n\nconst schema = z.object({\n  name: z.string().min(1, 'Name is required'),\n  email: z.string().email('Invalid email'),\n  age: z.number().positive()\n});\n\nfunction RegistrationForm() {\n  const { register, handleSubmit, formState: { errors } } = useForm({\n    resolver: zodResolver(schema)\n  });\n\n  const onSubmit = (data) =\u003e console.log(data);\n\n  return (\n    \u003cform onSubmit={handleSubmit(onSubmit)}\u003e\n      \u003cinput {...register('name')} /\u003e\n      {errors.name \u0026\u0026 \u003cspan\u003e{errors.name.message}\u003c/span\u003e}\n      {/* ... */}\n    \u003c/form\u003e\n  );\n}\n```\n\n**왜 바뀌었나?**\n- 불필요한 리렌더링 제거 (비제어 컴포넌트)\n- 유효성 검사 라이브러리(Zod, Yup) 통합\n- 코드량 70% 감소\n\n### 4. lodash debounce 사용\n\n```javascript\n// 외부 라이브러리 의존\nimport { debounce } from 'lodash';\n\nfunction SearchInput() {\n  const handleSearch = useCallback(\n    debounce(async (query) =\u003e {\n      // search logic\n    }, 300),\n    []\n  );\n  // ...\n}\n```\n\n**요즘 방식: useDeferredValue (React 18+)**\n\n```javascript\n// 네이티브 React 기능\nimport { useDeferredValue, useState } from 'react';\n\nfunction SearchInput() {\n  const [query, setQuery] = useState('');\n  const deferredQuery = useDeferredValue(query);\n\n  // deferredQuery는 자동으로 디바운스됨\n  const results = useQuery({\n    queryKey: ['search', deferredQuery],\n    queryFn: () =\u003e searchAPI(deferredQuery)\n  });\n\n  return \u003cinput value={query} onChange={(e) =\u003e setQuery(e.target.value)} /\u003e;\n}\n```\n\n**왜 바뀌었나?**\n- 추가 라이브러리 불필요\n- React의 동시성 기능과 통합\n- 더 나은 사용자 경험 (긴급 업데이트 우선 처리)\n\n### 5. React.memo 남발\n\n```javascript\nimport { memo } from 'react';\n\n// 모든 컴포넌트를 memo로 감싸기\nconst TodoItem = memo(({ todo, onToggle, onDelete }) =\u003e {\n  return \u003cli\u003e{todo.text}\u003c/li\u003e;\n});\n\nconst TodoList = memo(({ todos }) =\u003e {\n  return \u003cul\u003e{todos.map(todo =\u003e \u003cTodoItem key={todo.id} todo={todo} /\u003e)}\u003c/ul\u003e;\n});\n```\n\n**요즘 방식: React Compiler (React 19)**\n\n```javascript\n// 컴파일러가 자동 최적화 (수동 memo 불필요)\nfunction TodoItem({ todo, onToggle, onDelete }) {\n  return \u003cli\u003e{todo.text}\u003c/li\u003e;\n}\n\nfunction TodoList({ todos }) {\n  return \u003cul\u003e{todos.map(todo =\u003e \u003cTodoItem key={todo.id} todo={todo} /\u003e)}\u003c/ul\u003e;\n}\n\n// React Compiler가 필요한 곳에만 자동으로 메모이제이션 추가\n```\n\n**왜 바뀌었나?**\n- React 19의 컴파일러가 자동으로 최적화\n- 개발자가 성능 걱정 없이 코드 작성 가능\n- 과도한 최적화로 인한 버그 감소\n\n## 정리\n\n기본 Hooks는 여전히 중요합니다:\n- `useState`, `useEffect`, `useRef`, `useContext` - 기본 개념 필수\n- `useReducer`, `useMemo`, `useCallback` - 필요할 때만 사용\n- 하지만 사용 방식과 주변 생태계가 크게 발전했습니다\n\n요즘 실무 스택:\n- 데이터 페칭: TanStack Query, SWR\n- 전역 상태: Zustand, Jotai, Recoil\n- 폼 관리: React Hook Form + Zod\n- 디바운스: useDeferredValue, useTransition\n- 최적화: React Compiler (자동)\n\nHooks 자체는 여전히 React의 핵심이지만, 직접 구현하기보다는 검증된 라이브러리를 활용하는 게 2025년 트렌드입니다.\n\n~~공부 할게 산더미..~~\n\n\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"React Hooks 모음 2\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 11월 25일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"프론트엔드\",{\"href\":\"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"프론트엔드\"}],[\"$\",\"$L3\",\"React\",{\"href\":\"/tags/React\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"React\"}],[\"$\",\"$L3\",\"Hooks\",{\"href\":\"/tags/Hooks\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Hooks\"}],[\"$\",\"$L3\",\"JavaScript\",{\"href\":\"/tags/JavaScript\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"JavaScript\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/react-api-integration\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"← 이전 글\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"React API 연동 모음\"}]]}],[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/react-hooks-part1\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"다음 글 →\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"React Hooks 모음 1\"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"React Hooks 모음 2 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"useReducer, useMemo, useCallback, 커스텀 Hook과 최신 트렌드\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"React Hooks 모음 2\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"useReducer, useMemo, useCallback, 커스텀 Hook과 최신 트렌드\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-11-25\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"React Hooks 모음 2\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"useReducer, useMemo, useCallback, 커스텀 Hook과 최신 트렌드\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>

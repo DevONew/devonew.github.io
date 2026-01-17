@@ -1,0 +1,284 @@
+<!DOCTYPE html><!--t_hGkcyjbHvFTtWQ9_4pp--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d5ebba4595249be0.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-491ef1393c1a736d.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-afbc61cff1e5478f.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>Claude Code 시작하기2 | DevONew Blog</title><meta name="description" content="서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법."/><meta property="og:title" content="Claude Code 시작하기2"/><meta property="og:description" content="서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법."/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-09-21"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Claude Code 시작하기2"/><meta name="twitter:description" content="서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법."/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">Claude Code 시작하기2</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 9월 21일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Claude/">Claude</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/AI/">AI</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%EA%B0%9C%EB%B0%9C/">개발</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><p>Part 1에서는 Claude Code의 차별점과 기본 사용법을 배웠다. Part 2에서는 Claude Code의 고급 기능을 다룰것이다.</p>
+<h2 id="ai를-프로젝트에-학습시키기"><a aria-hidden="true" tabindex="-1" href="#ai를-프로젝트에-학습시키기"><span class="icon icon-link"></span></a>AI를 프로젝트에 학습시키기</h2>
+<p>Claude Code의 진짜 힘은 <strong>프로젝트별로 AI를 학습</strong>시킬 수 있다는 점이다.</p>
+<h3 id="claude-디렉토리-팀의-ai-지식-베이스"><a aria-hidden="true" tabindex="-1" href="#claude-디렉토리-팀의-ai-지식-베이스"><span class="icon icon-link"></span></a>.claude/ 디렉토리: 팀의 AI 지식 베이스</h3>
+<pre><code>your-project/
+├── .claude/
+│   ├── agents/           # 서브에이전트
+│   │   ├── code-reviewer.md
+│   │   └── test-runner.md
+│   ├── skills/           # 워크플로우 지식
+│   │   ├── coding-style/
+│   │   ├── git-workflow/
+│   │   └── deployment/
+│   └── prompts/          # 재사용 프롬프트
+└── ...
+</code></pre>
+<p>이 디렉토리를 <strong>Git에 커밋</strong>하면:</p>
+<ul>
+<li>팀 전체가 같은 AI 경험 공유</li>
+<li>신입이 와도 즉시 팀 규칙 학습됨</li>
+<li>프로젝트 컨텍스트가 코드와 함께 버전 관리됨</li>
+</ul>
+<h2 id="서브에이전트-sub-agents"><a aria-hidden="true" tabindex="-1" href="#서브에이전트-sub-agents"><span class="icon icon-link"></span></a>서브에이전트 (Sub-agents)</h2>
+<h3 id="서브에이전트란"><a aria-hidden="true" tabindex="-1" href="#서브에이전트란"><span class="icon icon-link"></span></a>서브에이전트란?</h3>
+<p>서브에이전트는 <strong>특정 작업을 처리하는 특화된 AI 워커</strong>다. 마치 팀에서 각자 전문 분야가 있는 개발자들처럼, 각 서브에이전트는 자신의 역할에 최적화된 지침과 도구를 가진다.</p>
+<h3 id="왜-서브에이전트인가"><a aria-hidden="true" tabindex="-1" href="#왜-서브에이전트인가"><span class="icon icon-link"></span></a>왜 서브에이전트인가?</h3>
+<p><strong>1. 컨텍스트 보존</strong></p>
+<p>각 서브에이전트는 별도 컨텍스트에서 작동합니다:</p>
+<pre><code>주 대화: &quot;인증 모듈 리팩토링해줘&quot;
+  ↓
+서브에이전트 (code-reviewer): 별도 컨텍스트에서 리뷰
+  ↓
+주 대화: 리뷰 결과만 받음 (세부 과정은 주 컨텍스트 오염 안 함)
+</code></pre>
+<p><strong>2. 특화된 전문성</strong></p>
+<p>각 서브에이전트는 특정 도메인에 집중:</p>
+<ul>
+<li><strong>code-reviewer</strong>: 코드 품질, 보안, 베스트 프랙티스</li>
+<li><strong>debugger</strong>: 루트 원인 분석, 에러 해결</li>
+<li><strong>test-runner</strong>: 테스트 실행, 실패 수정</li>
+</ul>
+<p><strong>3. 재사용성</strong></p>
+<p>한 번 만들면 모든 프로젝트에서 재사용 가능하다.</p>
+<h3 id="서브에이전트-생성하기"><a aria-hidden="true" tabindex="-1" href="#서브에이전트-생성하기"><span class="icon icon-link"></span></a>서브에이전트 생성하기</h3>
+<pre><code class="hljs language-bash">/agents
+</code></pre>
+<p>대화형 메뉴가 열립니다:</p>
+<ul>
+<li>모든 서브에이전트 보기</li>
+<li>새 서브에이전트 생성</li>
+<li>기존 서브에이전트 편집</li>
+<li>도구 권한 관리</li>
+</ul>
+<p><strong>권장 방법</strong>: Claude에게 먼저 생성 요청</p>
+<pre><code class="hljs language-bash">/agents
+&gt; code-reviewer 서브에이전트 만들어줘
+
+Claude가 자동으로:
+1. 적절한 description 작성
+2. 필요한 도구 선택 (Read, Grep, Glob, Bash)
+3. 시스템 프롬프트 생성
+</code></pre>
+<h3 id="서브에이전트-파일-구조"><a aria-hidden="true" tabindex="-1" href="#서브에이전트-파일-구조"><span class="icon icon-link"></span></a>서브에이전트 파일 구조</h3>
+<p>서브에이전트는 마크다운 파일로 저장된다:</p>
+<pre><code class="hljs language-markdown">---
+name: code-reviewer
+description: 코드 품질, 보안, 유지보수성 리뷰. 코드 작성/수정 직후 자동 사용.
+tools: Read, Grep, Glob, Bash
+<span class="hljs-section">model: sonnet
+---</span>
+
+시니어 코드 리뷰어로서 높은 품질 기준을 보장한다.
+
+호출 시:
+<span class="hljs-bullet">1.</span> git diff로 최근 변경사항 확인
+<span class="hljs-bullet">2.</span> 수정된 파일에 집중
+<span class="hljs-bullet">3.</span> 즉시 리뷰 시작
+
+리뷰 우선순위:
+<span class="hljs-bullet">-</span> 심각한 문제 (반드시 수정)
+<span class="hljs-bullet">-</span> 경고 (수정 권장)
+<span class="hljs-bullet">-</span> 제안 (개선 고려)
+</code></pre>
+<h3 id="저장-위치"><a aria-hidden="true" tabindex="-1" href="#저장-위치"><span class="icon icon-link"></span></a>저장 위치</h3>
+<table><thead><tr><th>유형</th><th>위치</th><th>범위</th></tr></thead><tbody><tr><td>프로젝트</td><td><code>.claude/agents/</code></td><td>현재 프로젝트 (팀 공유)</td></tr><tr><td>개인</td><td><code>~/.claude/agents/</code></td><td>모든 프로젝트 (개인용)</td></tr></tbody></table>
+<h3 id="서브에이전트-사용하기"><a aria-hidden="true" tabindex="-1" href="#서브에이전트-사용하기"><span class="icon icon-link"></span></a>서브에이전트 사용하기</h3>
+<p><strong>자동 위임</strong></p>
+<p>Claude가 자동으로 적절한 서브에이전트 호출:</p>
+<pre><code class="hljs language-bash">&gt; 최근 변경사항 코드 리뷰해줘
+[자동으로 code-reviewer 서브에이전트 사용]
+</code></pre>
+<p><strong>명시적 호출</strong></p>
+<p>특정 서브에이전트를 직접 요청:</p>
+<pre><code class="hljs language-bash">&gt; code-reviewer 서브에이전트로 PR 리뷰해줘
+&gt; test-runner 서브에이전트로 실패한 테스트 고쳐줘
+&gt; debugger 서브에이전트로 이 에러 조사해줘
+</code></pre>
+<h3 id="실전-서브에이전트-예시"><a aria-hidden="true" tabindex="-1" href="#실전-서브에이전트-예시"><span class="icon icon-link"></span></a>실전 서브에이전트 예시</h3>
+<p><strong>디버거</strong></p>
+<pre><code class="hljs language-markdown">---
+name: debugger
+description: 에러, 테스트 실패, 예상치 못한 동작 디버깅. 문제 발생 시 자동 사용.
+<span class="hljs-section">tools: Read, Edit, Bash, Grep, Glob
+---</span>
+
+루트 원인 분석 전문 디버거입니다.
+
+호출 시:
+<span class="hljs-bullet">1.</span> 에러 메시지와 스택 트레이스 캡처
+<span class="hljs-bullet">2.</span> 재현 단계 식별
+<span class="hljs-bullet">3.</span> 실패 위치 격리
+<span class="hljs-bullet">4.</span> 최소한의 수정 구현
+<span class="hljs-bullet">5.</span> 솔루션 검증
+
+각 문제에 대해:
+<span class="hljs-bullet">-</span> 루트 원인 설명
+<span class="hljs-bullet">-</span> 진단을 뒷받침하는 증거
+<span class="hljs-bullet">-</span> 구체적인 코드 수정
+<span class="hljs-bullet">-</span> 테스트 접근법
+<span class="hljs-bullet">-</span> 재발 방지 권장사항
+</code></pre>
+<p><strong>테스트 러너</strong></p>
+<pre><code class="hljs language-markdown">---
+name: test-runner  
+description: 테스트 자동 실행 및 실패 수정. 코드 변경 후 자동 사용.
+<span class="hljs-section">tools: Bash, Read, Edit, Grep
+---</span>
+
+테스트 자동화 전문가입니다.
+
+코드 변경 감지 시:
+<span class="hljs-bullet">1.</span> 관련 테스트 자동 실행
+<span class="hljs-bullet">2.</span> 실패 시 원인 분석
+<span class="hljs-bullet">3.</span> 원래 테스트 의도 유지하며 수정
+<span class="hljs-bullet">4.</span> 재실행으로 검증
+</code></pre>
+<h2 id="agent-skills"><a aria-hidden="true" tabindex="-1" href="#agent-skills"><span class="icon icon-link"></span></a>Agent Skills</h2>
+<h3 id="agent-skills란"><a aria-hidden="true" tabindex="-1" href="#agent-skills란"><span class="icon icon-link"></span></a>Agent Skills란?</h3>
+<p>Agent Skills는 <strong>팀의 워크플로우와 규칙을 AI에게 가르치는 방법</strong>입니다. 서브에이전트가 &quot;누구&quot;라면, Skills는 &quot;무엇을 어떻게&quot;를 정의합니다.</p>
+<h3 id="skills가-호출되는-방식"><a aria-hidden="true" tabindex="-1" href="#skills가-호출되는-방식"><span class="icon icon-link"></span></a>Skills가 호출되는 방식</h3>
+<p>Skills는 <strong>자동으로 발견</strong>됩니다:</p>
+<pre><code>사용자: &quot;새 컴포넌트 만들어줘&quot;
+  ↓
+Claude: &quot;team-coding-style&quot; Skill 발견
+  ↓
+Claude: Skill 지침 읽고 자동 적용
+  ↓
+결과: 팀 스타일 가이드를 따르는 컴포넌트
+</code></pre>
+<h3 id="skill-생성하기"><a aria-hidden="true" tabindex="-1" href="#skill-생성하기"><span class="icon icon-link"></span></a>Skill 생성하기</h3>
+<p><strong>Personal Skill (개인용)</strong></p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">mkdir</span> -p ~/.claude/skills/my-skill
+</code></pre>
+<p><strong>Project Skill (팀 공유)</strong></p>
+<pre><code class="hljs language-bash"><span class="hljs-built_in">mkdir</span> -p .claude/skills/team-coding-style
+</code></pre>
+<h3 id="skillmd-작성"><a aria-hidden="true" tabindex="-1" href="#skillmd-작성"><span class="icon icon-link"></span></a>SKILL.md 작성</h3>
+<pre><code class="hljs language-markdown">---
+name: team-coding-style
+<span class="hljs-section">description: 우리 팀 코딩 스타일. 모든 코드 작성 시 자동 적용.
+---</span>
+
+<span class="hljs-section"># 팀 코딩 스타일 가이드</span>
+
+<span class="hljs-section">## React 컴포넌트</span>
+
+<span class="hljs-bullet">1.</span> <span class="hljs-strong">**함수형 컴포넌트 사용**</span> (클래스형 X)
+<span class="hljs-bullet">2.</span> <span class="hljs-strong">**Props는 interface로 정의**</span>
+<span class="hljs-bullet">3.</span> <span class="hljs-strong">**파일명은 PascalCase**</span> (Button.tsx)
+<span class="hljs-bullet">4.</span> <span class="hljs-strong">**styled-components 사용**</span> (CSS 파일 X)
+
+<span class="hljs-code">```typescript
+// ✅ 좋은 예
+interface ButtonProps {
+  label: string;
+  onClick: () =&gt; void;
+}
+
+export const Button: React.FC&lt;ButtonProps&gt; = ({ label, onClick }) =&gt; {
+  return &lt;StyledButton onClick={onClick}&gt;{label}&lt;/StyledButton&gt;;
+};
+</span></code></pre>
+<h2 id="네이밍"><a aria-hidden="true" tabindex="-1" href="#네이밍"><span class="icon icon-link"></span></a>네이밍</h2>
+<ul>
+<li>변수/함수: camelCase</li>
+<li>상수: UPPER_SNAKE_CASE</li>
+<li>타입/인터페이스: PascalCase</li>
+</ul>
+<h2 id="api-호출"><a aria-hidden="true" tabindex="-1" href="#api-호출"><span class="icon icon-link"></span></a>API 호출</h2>
+<ul>
+<li>axios 사용 (fetch X)</li>
+<li>/api 폴더에 집중</li>
+<li>에러 처리 필수</li>
+</ul>
+<pre><code>
+### 팀과 Skills 공유
+
+```bash
+# 1. Skill 생성
+mkdir -p .claude/skills/git-workflow
+
+# 2. SKILL.md 작성
+# (커밋 메시지 규칙, 브랜치 전략 등)
+
+# 3. Git 커밋
+git add .claude/
+git commit -m &quot;Add team Git workflow Skill&quot;
+git push
+
+# 4. 팀원이 자동으로 받기
+git pull
+# 이제 Claude는 팀 Git 규칙 자동 적용
+</code></pre>
+<h3 id="실전-skill-예시-git-워크플로우"><a aria-hidden="true" tabindex="-1" href="#실전-skill-예시-git-워크플로우"><span class="icon icon-link"></span></a>실전 Skill 예시: Git 워크플로우</h3>
+<pre><code class="hljs language-markdown">---
+name: git-workflow
+<span class="hljs-section">description: 팀 Git 커밋/PR 규칙. 커밋 메시지 작성 시 자동 적용.
+---</span>
+
+<span class="hljs-section"># Git 워크플로우</span>
+
+<span class="hljs-section">## 브랜치 전략</span>
+
+<span class="hljs-bullet">-</span> <span class="hljs-code">`main`</span>: 프로덕션
+<span class="hljs-bullet">-</span> <span class="hljs-code">`develop`</span>: 개발
+<span class="hljs-bullet">-</span> <span class="hljs-code">`feature/기능명`</span>: 기능 개발
+<span class="hljs-bullet">-</span> <span class="hljs-code">`hotfix/문제명`</span>: 긴급 수정
+
+<span class="hljs-section">## 커밋 메시지</span>
+
+</code></pre>
+<p>type: subject (50자 이내)</p>
+<p>body (선택사항)</p>
+<p>Refs: #이슈번호</p>
+<pre><code>
+**Type**:
+- feat: 새 기능
+- fix: 버그 수정
+- docs: 문서
+- refactor: 리팩토링
+- test: 테스트
+
+**예시**:
+</code></pre>
+<p>feat: 사용자 프로필 편집 기능 추가</p>
+<ul>
+<li>프로필 이미지 업로드</li>
+<li>닉네임/소개 수정</li>
+<li>유효성 검사 추가</li>
+</ul>
+<p>Refs: #123</p>
+<pre><code></code></pre>
+<p>이제 Claude는:</p>
+<ul>
+<li>커밋 메시지를 자동으로 팀 형식으로 작성</li>
+<li>적절한 브랜치 이름 제안</li>
+<li>PR 템플릿 자동 작성</li>
+</ul>
+<h3 id="skill-도구-권한-제한"><a aria-hidden="true" tabindex="-1" href="#skill-도구-권한-제한"><span class="icon icon-link"></span></a>Skill 도구 권한 제한</h3>
+<p>보안을 위해 Skill이 사용할 도구를 제한할 수 있습니다:</p>
+<pre><code class="hljs language-markdown">---
+name: safe-file-reader
+description: 읽기 전용 파일 접근. 변경 없이 확인만 필요할 때 사용.
+<span class="hljs-section">allowed-tools: Read, Grep, Glob
+---</span>
+
+<span class="hljs-section"># Safe File Reader</span>
+
+읽기 전용 파일 접근을 제공합니다.
+
+<span class="hljs-section">## Instructions</span>
+<span class="hljs-bullet">1.</span> Read로 파일 내용 확인
+<span class="hljs-bullet">2.</span> Grep으로 파일 내 검색
+<span class="hljs-bullet">3.</span> Glob으로 패턴별 파일 찾기
+
+파일 수정은 불가능합니다.
+</code></pre>
+<p>이 Skill이 활성화되면 Claude는 <strong>권한 요청 없이</strong> Read, Grep, Glob만 사용합니다.</p>
+<p><strong>참고 자료</strong>:</p>
+<ul>
+<li><a href="https://code.claude.com/docs">Claude Code 공식 문서</a></li>
+<li><a href="https://code.claude.com/docs/ko/sub-agents">서브에이전트 가이드</a></li>
+<li><a href="https://code.claude.com/docs/ko/skills">Agent Skills 가이드</a></li>
+</ul></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group" href="/posts/frontend/typescript-basics-part1/"><div class="text-sm text-muted-foreground mb-2">← 이전 글</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">TypeScript 기초 타입 학습</div></a><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right" href="/posts/claude/claude-code-part-1/"><div class="text-sm text-muted-foreground mb-2">다음 글 →</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">Claude Code 시작하기1</div></a></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-491ef1393c1a736d.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d5ebba4595249be0.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"t_hGkcyjbHvFTtWQ9-4pp\",\"p\":\"\",\"c\":[\"\",\"posts\",\"claude\",\"claude-code-part-2\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"claude\",\"d\"],{\"children\":[[\"slug\",\"claude-code-part-2\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d5ebba4595249be0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"claude\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"claude-code-part-2\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-afbc61cff1e5478f.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T2042,"])</script><script>self.__next_f.push([1,"\nPart 1에서는 Claude Code의 차별점과 기본 사용법을 배웠다. Part 2에서는 Claude Code의 고급 기능을 다룰것이다.\n\n## AI를 프로젝트에 학습시키기\n\nClaude Code의 진짜 힘은 **프로젝트별로 AI를 학습**시킬 수 있다는 점이다.\n\n### .claude/ 디렉토리: 팀의 AI 지식 베이스\n\n```\nyour-project/\n├── .claude/\n│   ├── agents/           # 서브에이전트\n│   │   ├── code-reviewer.md\n│   │   └── test-runner.md\n│   ├── skills/           # 워크플로우 지식\n│   │   ├── coding-style/\n│   │   ├── git-workflow/\n│   │   └── deployment/\n│   └── prompts/          # 재사용 프롬프트\n└── ...\n```\n\n이 디렉토리를 **Git에 커밋**하면:\n- 팀 전체가 같은 AI 경험 공유\n- 신입이 와도 즉시 팀 규칙 학습됨\n- 프로젝트 컨텍스트가 코드와 함께 버전 관리됨\n\n## 서브에이전트 (Sub-agents)\n\n### 서브에이전트란?\n\n서브에이전트는 **특정 작업을 처리하는 특화된 AI 워커**다. 마치 팀에서 각자 전문 분야가 있는 개발자들처럼, 각 서브에이전트는 자신의 역할에 최적화된 지침과 도구를 가진다.\n\n### 왜 서브에이전트인가?\n\n**1. 컨텍스트 보존**\n\n각 서브에이전트는 별도 컨텍스트에서 작동합니다:\n\n```\n주 대화: \"인증 모듈 리팩토링해줘\"\n  ↓\n서브에이전트 (code-reviewer): 별도 컨텍스트에서 리뷰\n  ↓\n주 대화: 리뷰 결과만 받음 (세부 과정은 주 컨텍스트 오염 안 함)\n```\n\n**2. 특화된 전문성**\n\n각 서브에이전트는 특정 도메인에 집중:\n- **code-reviewer**: 코드 품질, 보안, 베스트 프랙티스\n- **debugger**: 루트 원인 분석, 에러 해결\n- **test-runner**: 테스트 실행, 실패 수정\n\n**3. 재사용성**\n\n한 번 만들면 모든 프로젝트에서 재사용 가능하다.\n\n### 서브에이전트 생성하기\n\n```bash\n/agents\n```\n\n대화형 메뉴가 열립니다:\n- 모든 서브에이전트 보기\n- 새 서브에이전트 생성\n- 기존 서브에이전트 편집\n- 도구 권한 관리\n\n**권장 방법**: Claude에게 먼저 생성 요청\n\n```bash\n/agents\n\u003e code-reviewer 서브에이전트 만들어줘\n\nClaude가 자동으로:\n1. 적절한 description 작성\n2. 필요한 도구 선택 (Read, Grep, Glob, Bash)\n3. 시스템 프롬프트 생성\n```\n\n### 서브에이전트 파일 구조\n\n서브에이전트는 마크다운 파일로 저장된다:\n\n```markdown\n---\nname: code-reviewer\ndescription: 코드 품질, 보안, 유지보수성 리뷰. 코드 작성/수정 직후 자동 사용.\ntools: Read, Grep, Glob, Bash\nmodel: sonnet\n---\n\n시니어 코드 리뷰어로서 높은 품질 기준을 보장한다.\n\n호출 시:\n1. git diff로 최근 변경사항 확인\n2. 수정된 파일에 집중\n3. 즉시 리뷰 시작\n\n리뷰 우선순위:\n- 심각한 문제 (반드시 수정)\n- 경고 (수정 권장)\n- 제안 (개선 고려)\n```\n\n### 저장 위치\n\n| 유형 | 위치 | 범위 |\n|------|------|------|\n| 프로젝트 | `.claude/agents/` | 현재 프로젝트 (팀 공유) |\n| 개인 | `~/.claude/agents/` | 모든 프로젝트 (개인용) |\n\n### 서브에이전트 사용하기\n\n**자동 위임**\n\nClaude가 자동으로 적절한 서브에이전트 호출:\n\n```bash\n\u003e 최근 변경사항 코드 리뷰해줘\n[자동으로 code-reviewer 서브에이전트 사용]\n```\n\n**명시적 호출**\n\n특정 서브에이전트를 직접 요청:\n\n```bash\n\u003e code-reviewer 서브에이전트로 PR 리뷰해줘\n\u003e test-runner 서브에이전트로 실패한 테스트 고쳐줘\n\u003e debugger 서브에이전트로 이 에러 조사해줘\n```\n\n### 실전 서브에이전트 예시\n\n**디버거**\n\n```markdown\n---\nname: debugger\ndescription: 에러, 테스트 실패, 예상치 못한 동작 디버깅. 문제 발생 시 자동 사용.\ntools: Read, Edit, Bash, Grep, Glob\n---\n\n루트 원인 분석 전문 디버거입니다.\n\n호출 시:\n1. 에러 메시지와 스택 트레이스 캡처\n2. 재현 단계 식별\n3. 실패 위치 격리\n4. 최소한의 수정 구현\n5. 솔루션 검증\n\n각 문제에 대해:\n- 루트 원인 설명\n- 진단을 뒷받침하는 증거\n- 구체적인 코드 수정\n- 테스트 접근법\n- 재발 방지 권장사항\n```\n\n**테스트 러너**\n\n```markdown\n---\nname: test-runner  \ndescription: 테스트 자동 실행 및 실패 수정. 코드 변경 후 자동 사용.\ntools: Bash, Read, Edit, Grep\n---\n\n테스트 자동화 전문가입니다.\n\n코드 변경 감지 시:\n1. 관련 테스트 자동 실행\n2. 실패 시 원인 분석\n3. 원래 테스트 의도 유지하며 수정\n4. 재실행으로 검증\n```\n\n## Agent Skills\n\n### Agent Skills란?\n\nAgent Skills는 **팀의 워크플로우와 규칙을 AI에게 가르치는 방법**입니다. 서브에이전트가 \"누구\"라면, Skills는 \"무엇을 어떻게\"를 정의합니다.\n\n### Skills가 호출되는 방식\n\nSkills는 **자동으로 발견**됩니다:\n\n```\n사용자: \"새 컴포넌트 만들어줘\"\n  ↓\nClaude: \"team-coding-style\" Skill 발견\n  ↓\nClaude: Skill 지침 읽고 자동 적용\n  ↓\n결과: 팀 스타일 가이드를 따르는 컴포넌트\n```\n\n### Skill 생성하기\n\n**Personal Skill (개인용)**\n```bash\nmkdir -p ~/.claude/skills/my-skill\n```\n\n**Project Skill (팀 공유)**\n```bash\nmkdir -p .claude/skills/team-coding-style\n```\n\n### SKILL.md 작성\n\n```markdown\n---\nname: team-coding-style\ndescription: 우리 팀 코딩 스타일. 모든 코드 작성 시 자동 적용.\n---\n\n# 팀 코딩 스타일 가이드\n\n## React 컴포넌트\n\n1. **함수형 컴포넌트 사용** (클래스형 X)\n2. **Props는 interface로 정의**\n3. **파일명은 PascalCase** (Button.tsx)\n4. **styled-components 사용** (CSS 파일 X)\n\n```typescript\n// ✅ 좋은 예\ninterface ButtonProps {\n  label: string;\n  onClick: () =\u003e void;\n}\n\nexport const Button: React.FC\u003cButtonProps\u003e = ({ label, onClick }) =\u003e {\n  return \u003cStyledButton onClick={onClick}\u003e{label}\u003c/StyledButton\u003e;\n};\n```\n\n## 네이밍\n\n- 변수/함수: camelCase\n- 상수: UPPER_SNAKE_CASE\n- 타입/인터페이스: PascalCase\n\n## API 호출\n\n- axios 사용 (fetch X)\n- /api 폴더에 집중\n- 에러 처리 필수\n```\n\n### 팀과 Skills 공유\n\n```bash\n# 1. Skill 생성\nmkdir -p .claude/skills/git-workflow\n\n# 2. SKILL.md 작성\n# (커밋 메시지 규칙, 브랜치 전략 등)\n\n# 3. Git 커밋\ngit add .claude/\ngit commit -m \"Add team Git workflow Skill\"\ngit push\n\n# 4. 팀원이 자동으로 받기\ngit pull\n# 이제 Claude는 팀 Git 규칙 자동 적용\n```\n\n### 실전 Skill 예시: Git 워크플로우\n\n```markdown\n---\nname: git-workflow\ndescription: 팀 Git 커밋/PR 규칙. 커밋 메시지 작성 시 자동 적용.\n---\n\n# Git 워크플로우\n\n## 브랜치 전략\n\n- `main`: 프로덕션\n- `develop`: 개발\n- `feature/기능명`: 기능 개발\n- `hotfix/문제명`: 긴급 수정\n\n## 커밋 메시지\n\n```\ntype: subject (50자 이내)\n\nbody (선택사항)\n\nRefs: #이슈번호\n```\n\n**Type**:\n- feat: 새 기능\n- fix: 버그 수정\n- docs: 문서\n- refactor: 리팩토링\n- test: 테스트\n\n**예시**:\n```\nfeat: 사용자 프로필 편집 기능 추가\n\n- 프로필 이미지 업로드\n- 닉네임/소개 수정\n- 유효성 검사 추가\n\nRefs: #123\n```\n```\n\n이제 Claude는:\n- 커밋 메시지를 자동으로 팀 형식으로 작성\n- 적절한 브랜치 이름 제안\n- PR 템플릿 자동 작성\n\n### Skill 도구 권한 제한\n\n보안을 위해 Skill이 사용할 도구를 제한할 수 있습니다:\n\n```markdown\n---\nname: safe-file-reader\ndescription: 읽기 전용 파일 접근. 변경 없이 확인만 필요할 때 사용.\nallowed-tools: Read, Grep, Glob\n---\n\n# Safe File Reader\n\n읽기 전용 파일 접근을 제공합니다.\n\n## Instructions\n1. Read로 파일 내용 확인\n2. Grep으로 파일 내 검색\n3. Glob으로 패턴별 파일 찾기\n\n파일 수정은 불가능합니다.\n```\n\n이 Skill이 활성화되면 Claude는 **권한 요청 없이** Read, Grep, Glob만 사용합니다.\n\n**참고 자료**:\n- [Claude Code 공식 문서](https://code.claude.com/docs)\n- [서브에이전트 가이드](https://code.claude.com/docs/ko/sub-agents)\n- [Agent Skills 가이드](https://code.claude.com/docs/ko/skills)"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"Claude Code 시작하기2\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 9월 21일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"Claude\",{\"href\":\"/tags/Claude\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Claude\"}],[\"$\",\"$L3\",\"AI\",{\"href\":\"/tags/AI\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"AI\"}],[\"$\",\"$L3\",\"개발\",{\"href\":\"/tags/%EA%B0%9C%EB%B0%9C\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"개발\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/typescript-basics-part1\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"← 이전 글\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"TypeScript 기초 타입 학습\"}]]}],[\"$\",\"$L3\",null,{\"href\":\"/posts/claude/claude-code-part-1\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"다음 글 →\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"Claude Code 시작하기1\"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Claude Code 시작하기2 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법.\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"Claude Code 시작하기2\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법.\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-09-21\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"Claude Code 시작하기2\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법.\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>
