@@ -1,0 +1,1467 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d5ebba4595249be0.css","style"]
+0:{"P":null,"b":"rq94cetZS17rr6VXyxt_m","p":"","c":["","posts","frontend","react-api-integration",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","frontend","d"],{"children":[["slug","react-api-integration","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d5ebba4595249be0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","frontend","d"],"$L8",{"children":[["slug","react-api-integration","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T7bac,
+현대 웹 애플리케이션은 거의 대부분 API와 통신합니다. React에서 API를 효율적으로 다루는 것은 필수 스킬! 
+이 글에서는 기본적인 fetch부터 React Query 같은 고급 라이브러리까지, 실무에서 API를 다루는 모든 방법을 정리해보았습니다.
+
+## fetch API - 기본기
+
+브라우저 내장 API인 fetch로 시작해봅시다.
+
+### 기본 GET 요청
+
+```javascript
+import { useState, useEffect } from 'react';
+
+function UserList() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchUsers() {
+      try {
+        const response = await fetch('https://api.example.com/users');
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        setUsers(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchUsers();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  return (
+    <ul>
+      {users.map(user => (
+        <li key={user.id}>{user.name}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+### POST 요청
+
+```javascript
+function CreateUser() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: ''
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+    setSuccess(false);
+
+    try {
+      const response = await fetch('https://api.example.com/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || 'Failed to create user');
+      }
+
+      const data = await response.json();
+      console.log('User created:', data);
+      setSuccess(true);
+      setFormData({ name: '', email: '' }); // 폼 초기화
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        value={formData.name}
+        onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+        placeholder="Name"
+        required
+      />
+      <input
+        type="email"
+        value={formData.email}
+        onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+        placeholder="Email"
+        required
+      />
+      <button type="submit" disabled={loading}>
+        {loading ? 'Creating...' : 'Create User'}
+      </button>
+      {error && <div className="error">{error}</div>}
+      {success && <div className="success">User created successfully!</div>}
+    </form>
+  );
+}
+```
+
+### PUT/PATCH, DELETE 요청
+
+```javascript
+function UserActions({ userId }) {
+  // 업데이트
+  const updateUser = async (updates) => {
+    try {
+      const response = await fetch(`https://api.example.com/users/${userId}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updates)
+      });
+
+      if (!response.ok) throw new Error('Update failed');
+      
+      const data = await response.json();
+      return data;
+    } catch (err) {
+      console.error(err);
+      throw err;
+    }
+  };
+
+  // 삭제
+  const deleteUser = async () => {
+    try {
+      const response = await fetch(`https://api.example.com/users/${userId}`, {
+        method: 'DELETE'
+      });
+
+      if (!response.ok) throw new Error('Delete failed');
+      
+      return true;
+    } catch (err) {
+      console.error(err);
+      throw err;
+    }
+  };
+
+  return (
+    <div>
+      <button onClick={() => updateUser({ name: 'New Name' })}>
+        Update
+      </button>
+      <button onClick={deleteUser}>Delete</button>
+    </div>
+  );
+}
+```
+
+### 인증 토큰 포함
+
+```javascript
+// 로컬 스토리지에서 토큰 가져오기
+const getAuthToken = () => {
+  return localStorage.getItem('authToken');
+};
+
+// 인증 헤더 포함 요청
+async function fetchProtectedData() {
+  const token = getAuthToken();
+
+  const response = await fetch('https://api.example.com/protected', {
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    }
+  });
+
+  if (response.status === 401) {
+    // 토큰 만료 처리
+    localStorage.removeItem('authToken');
+    window.location.href = '/login';
+    return;
+  }
+
+  if (!response.ok) {
+    throw new Error('Failed to fetch protected data');
+  }
+
+  return response.json();
+}
+```
+
+### 취소 가능한 요청 (AbortController)
+
+```javascript
+function SearchComponent() {
+  const [query, setQuery] = useState('');
+  const [results, setResults] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!query) {
+      setResults([]);
+      return;
+    }
+
+    const abortController = new AbortController();
+    const signal = abortController.signal;
+
+    async function search() {
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `https://api.example.com/search?q=${query}`,
+          { signal }
+        );
+        const data = await response.json();
+        setResults(data);
+      } catch (err) {
+        if (err.name === 'AbortError') {
+          console.log('Request aborted');
+        } else {
+          console.error('Search failed:', err);
+        }
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    search();
+
+    // 클린업: 컴포넌트 언마운트 또는 query 변경 시 이전 요청 취소
+    return () => {
+      abortController.abort();
+    };
+  }, [query]);
+
+  return (
+    <div>
+      <input
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search..."
+      />
+      {loading && <div>Loading...</div>}
+      <ul>
+        {results.map(result => (
+          <li key={result.id}>{result.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+## 커스텀 Hook으로 추상화
+
+반복되는 API 로직을 재사용 가능한 Hook으로 만듭니다.
+
+### useFetch Hook
+
+```javascript
+function useFetch(url, options = {}) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function fetchData() {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const response = await fetch(url, options);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+
+        if (!cancelled) {
+          setData(result);
+        }
+      } catch (err) {
+        if (!cancelled) {
+          setError(err.message);
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    }
+
+    fetchData();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [url, JSON.stringify(options)]);
+
+  return { data, loading, error };
+}
+
+// 사용
+function UserProfile({ userId }) {
+  const { data: user, loading, error } = useFetch(
+    `https://api.example.com/users/${userId}`
+  );
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!user) return <div>No user found</div>;
+
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <p>{user.email}</p>
+    </div>
+  );
+}
+```
+
+### useApi Hook (CRUD 지원)
+
+```javascript
+function useApi(baseUrl) {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const request = async (endpoint, options = {}) => {
+    setLoading(true);
+    setError(null);
+
+    try {
+      const token = localStorage.getItem('authToken');
+      const headers = {
+        'Content-Type': 'application/json',
+        ...options.headers
+      };
+
+      if (token) {
+        headers['Authorization'] = `Bearer ${token}`;
+      }
+
+      const response = await fetch(`${baseUrl}${endpoint}`, {
+        ...options,
+        headers
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data;
+    } catch (err) {
+      setError(err.message);
+      throw err;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const get = (endpoint) => request(endpoint);
+
+  const post = (endpoint, data) => request(endpoint, {
+    method: 'POST',
+    body: JSON.stringify(data)
+  });
+
+  const put = (endpoint, data) => request(endpoint, {
+    method: 'PUT',
+    body: JSON.stringify(data)
+  });
+
+  const patch = (endpoint, data) => request(endpoint, {
+    method: 'PATCH',
+    body: JSON.stringify(data)
+  });
+
+  const del = (endpoint) => request(endpoint, {
+    method: 'DELETE'
+  });
+
+  return {
+    loading,
+    error,
+    get,
+    post,
+    put,
+    patch,
+    delete: del
+  };
+}
+
+// 사용
+function UserManagement() {
+  const api = useApi('https://api.example.com');
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    loadUsers();
+  }, []);
+
+  const loadUsers = async () => {
+    try {
+      const data = await api.get('/users');
+      setUsers(data);
+    } catch (err) {
+      console.error('Failed to load users:', err);
+    }
+  };
+
+  const createUser = async (userData) => {
+    try {
+      const newUser = await api.post('/users', userData);
+      setUsers(prev => [...prev, newUser]);
+    } catch (err) {
+      console.error('Failed to create user:', err);
+    }
+  };
+
+  const updateUser = async (userId, updates) => {
+    try {
+      const updated = await api.patch(`/users/${userId}`, updates);
+      setUsers(prev => prev.map(u => u.id === userId ? updated : u));
+    } catch (err) {
+      console.error('Failed to update user:', err);
+    }
+  };
+
+  const deleteUser = async (userId) => {
+    try {
+      await api.delete(`/users/${userId}`);
+      setUsers(prev => prev.filter(u => u.id !== userId));
+    } catch (err) {
+      console.error('Failed to delete user:', err);
+    }
+  };
+
+  return (
+    <div>
+      {api.loading && <div>Loading...</div>}
+      {api.error && <div>Error: {api.error}</div>}
+      {/* UI */}
+    </div>
+  );
+}
+```
+
+## axios 라이브러리
+
+fetch보다 편리한 기능을 제공하는 HTTP 클라이언트입니다.
+
+### 기본 설정
+
+```bash
+npm install axios
+```
+
+```javascript
+import axios from 'axios';
+
+// 기본 인스턴스 생성
+const api = axios.create({
+  baseURL: 'https://api.example.com',
+  timeout: 10000,
+  headers: {
+    'Content-Type': 'application/json'
+  }
+});
+
+// 요청 인터셉터
+api.interceptors.request.use(
+  (config) => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+// 응답 인터셉터
+api.interceptors.response.use(
+  (response) => {
+    return response.data; // 자동으로 data 추출
+  },
+  (error) => {
+    if (error.response?.status === 401) {
+      localStorage.removeItem('authToken');
+      window.location.href = '/login';
+    }
+    return Promise.reject(error);
+  }
+);
+
+export default api;
+```
+
+### axios 사용 예시
+
+```javascript
+import api from './api';
+
+function UserList() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    async function fetchUsers() {
+      try {
+        const data = await api.get('/users');
+        setUsers(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchUsers();
+  }, []);
+
+  // POST 요청
+  const createUser = async (userData) => {
+    try {
+      const newUser = await api.post('/users', userData);
+      setUsers(prev => [...prev, newUser]);
+    } catch (err) {
+      console.error('Failed to create user:', err);
+    }
+  };
+
+  // PATCH 요청
+  const updateUser = async (userId, updates) => {
+    try {
+      const updated = await api.patch(`/users/${userId}`, updates);
+      setUsers(prev => prev.map(u => u.id === userId ? updated : u));
+    } catch (err) {
+      console.error('Failed to update user:', err);
+    }
+  };
+
+  // DELETE 요청
+  const deleteUser = async (userId) => {
+    try {
+      await api.delete(`/users/${userId}`);
+      setUsers(prev => prev.filter(u => u.id !== userId));
+    } catch (err) {
+      console.error('Failed to delete user:', err);
+    }
+  };
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+
+  return (
+    <ul>
+      {users.map(user => (
+        <li key={user.id}>
+          {user.name}
+          <button onClick={() => deleteUser(user.id)}>Delete</button>
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
+
+### 동시 요청
+
+```javascript
+function Dashboard() {
+  const [data, setData] = useState({
+    users: [],
+    posts: [],
+    comments: []
+  });
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchAll() {
+      try {
+        const [users, posts, comments] = await Promise.all([
+          api.get('/users'),
+          api.get('/posts'),
+          api.get('/comments')
+        ]);
+
+        setData({ users, posts, comments });
+      } catch (err) {
+        console.error('Failed to fetch data:', err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchAll();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+
+  return (
+    <div>
+      <h2>Users: {data.users.length}</h2>
+      <h2>Posts: {data.posts.length}</h2>
+      <h2>Comments: {data.comments.length}</h2>
+    </div>
+  );
+}
+```
+
+## React Query - 서버 상태 관리
+
+React Query는 서버 상태를 관리하는 강력한 라이브러리입니다.
+
+### 설치 및 설정
+
+```bash
+npm install @tanstack/react-query
+```
+
+```javascript
+// App.js
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5, // 5분
+      cacheTime: 1000 * 60 * 30, // 30분
+      retry: 1,
+      refetchOnWindowFocus: false
+    }
+  }
+});
+
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <YourApp />
+      <ReactQueryDevtools initialIsOpen={false} />
+    </QueryClientProvider>
+  );
+}
+```
+
+### useQuery - 데이터 가져오기
+
+```javascript
+import { useQuery } from '@tanstack/react-query';
+import api from './api';
+
+function UserList() {
+  const {
+    data: users,
+    isLoading,
+    isError,
+    error,
+    refetch
+  } = useQuery({
+    queryKey: ['users'],
+    queryFn: () => api.get('/users')
+  });
+
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error: {error.message}</div>;
+
+  return (
+    <div>
+      <button onClick={refetch}>Refresh</button>
+      <ul>
+        {users.map(user => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+// 파라미터가 있는 쿼리
+function UserProfile({ userId }) {
+  const { data: user, isLoading } = useQuery({
+    queryKey: ['user', userId],
+    queryFn: () => api.get(`/users/${userId}`),
+    enabled: !!userId // userId가 있을 때만 실행
+  });
+
+  if (isLoading) return <div>Loading...</div>;
+
+  return (
+    <div>
+      <h1>{user.name}</h1>
+      <p>{user.email}</p>
+    </div>
+  );
+}
+```
+
+### useMutation - 데이터 변경
+
+```javascript
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+
+function CreateUser() {
+  const queryClient = useQueryClient();
+
+  const mutation = useMutation({
+    mutationFn: (userData) => api.post('/users', userData),
+    onSuccess: () => {
+      // 쿼리 무효화하여 자동 리페치
+      queryClient.invalidateQueries({ queryKey: ['users'] });
+    },
+    onError: (error) => {
+      console.error('Failed to create user:', error);
+    }
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const userData = {
+      name: formData.get('name'),
+      email: formData.get('email')
+    };
+    mutation.mutate(userData);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input name="name" placeholder="Name" required />
+      <input name="email" type="email" placeholder="Email" required />
+      <button type="submit" disabled={mutation.isPending}>
+        {mutation.isPending ? 'Creating...' : 'Create'}
+      </button>
+      {mutation.isError && (
+        <div>Error: {mutation.error.message}</div>
+      )}
+      {mutation.isSuccess && (
+        <div>User created successfully!</div>
+      )}
+    </form>
+  );
+}
+```
+
+### Optimistic Update
+
+```javascript
+function TodoList() {
+  const queryClient = useQueryClient();
+
+  const { data: todos } = useQuery({
+    queryKey: ['todos'],
+    queryFn: () => api.get('/todos')
+  });
+
+  const toggleMutation = useMutation({
+    mutationFn: ({ id, completed }) =>
+      api.patch(`/todos/${id}`, { completed }),
+    
+    // Optimistic update
+    onMutate: async ({ id, completed }) => {
+      // 진행 중인 리페치 취소
+      await queryClient.cancelQueries({ queryKey: ['todos'] });
+
+      // 이전 데이터 저장
+      const previousTodos = queryClient.getQueryData(['todos']);
+
+      // 낙관적 업데이트
+      queryClient.setQueryData(['todos'], (old) =>
+        old.map(todo =>
+          todo.id === id ? { ...todo, completed } : todo
+        )
+      );
+
+      return { previousTodos };
+    },
+
+    // 에러 시 롤백
+    onError: (err, variables, context) => {
+      queryClient.setQueryData(['todos'], context.previousTodos);
+    },
+
+    // 완료 후 리페치
+    onSettled: () => {
+      queryClient.invalidateQueries({ queryKey: ['todos'] });
+    }
+  });
+
+  const handleToggle = (id, completed) => {
+    toggleMutation.mutate({ id, completed: !completed });
+  };
+
+  return (
+    <ul>
+      {todos?.map(todo => (
+        <li key={todo.id}>
+          <input
+            type="checkbox"
+            checked={todo.completed}
+            onChange={() => handleToggle(todo.id, todo.completed)}
+          />
+          {todo.title}
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
+
+### 무한 스크롤
+
+```javascript
+import { useInfiniteQuery } from '@tanstack/react-query';
+
+function InfiniteList() {
+  const {
+    data,
+    fetchNextPage,
+    hasNextPage,
+    isFetchingNextPage
+  } = useInfiniteQuery({
+    queryKey: ['posts'],
+    queryFn: ({ pageParam = 1 }) =>
+      api.get(`/posts?page=${pageParam}&limit=20`),
+    getNextPageParam: (lastPage, pages) => {
+      return lastPage.hasMore ? pages.length + 1 : undefined;
+    }
+  });
+
+  return (
+    <div>
+      {data?.pages.map((page, i) => (
+        <div key={i}>
+          {page.data.map(post => (
+            <div key={post.id}>{post.title}</div>
+          ))}
+        </div>
+      ))}
+      
+      {hasNextPage && (
+        <button
+          onClick={() => fetchNextPage()}
+          disabled={isFetchingNextPage}
+        >
+          {isFetchingNextPage ? 'Loading...' : 'Load More'}
+        </button>
+      )}
+    </div>
+  );
+}
+```
+
+## SWR - 또 다른 선택지
+
+Vercel에서 만든 데이터 페칭 라이브러리입니다.
+
+### 설치 및 기본 사용
+
+```bash
+npm install swr
+```
+
+```javascript
+import useSWR from 'swr';
+import api from './api';
+
+const fetcher = (url) => api.get(url);
+
+function UserList() {
+  const { data: users, error, isLoading, mutate } = useSWR(
+    '/users',
+    fetcher
+  );
+
+  if (isLoading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+
+  return (
+    <div>
+      <button onClick={() => mutate()}>Refresh</button>
+      <ul>
+        {users.map(user => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+### 자동 재검증
+
+```javascript
+import useSWR from 'swr';
+
+function RealtimeData() {
+  const { data } = useSWR(
+    '/api/data',
+    fetcher,
+    {
+      refreshInterval: 1000, // 1초마다 재검증
+      revalidateOnFocus: true, // 포커스 시 재검증
+      revalidateOnReconnect: true // 재연결 시 재검증
+    }
+  );
+
+  return <div>{data?.value}</div>;
+}
+```
+
+### Mutation
+
+```javascript
+import useSWR, { useSWRConfig } from 'swr';
+
+function TodoList() {
+  const { data: todos } = useSWR('/todos', fetcher);
+  const { mutate } = useSWRConfig();
+
+  const addTodo = async (text) => {
+    // Optimistic update
+    mutate(
+      '/todos',
+      [...todos, { id: Date.now(), text, completed: false }],
+      false
+    );
+
+    // API 호출
+    await api.post('/todos', { text });
+
+    // 재검증
+    mutate('/todos');
+  };
+
+  const deleteTodo = async (id) => {
+    // Optimistic update
+    mutate(
+      '/todos',
+      todos.filter(t => t.id !== id),
+      false
+    );
+
+    // API 호출
+    await api.delete(`/todos/${id}`);
+
+    // 재검증
+    mutate('/todos');
+  };
+
+  return (
+    <ul>
+      {todos?.map(todo => (
+        <li key={todo.id}>
+          {todo.text}
+          <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
+
+## 에러 처리 패턴
+
+### 전역 에러 핸들러
+
+```javascript
+// ErrorBoundary.js
+import { Component } from 'react';
+
+class ErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error, errorInfo) {
+    console.error('Error caught by boundary:', error, errorInfo);
+    // 에러 로깅 서비스로 전송
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div>
+          <h1>Something went wrong</h1>
+          <p>{this.state.error?.message}</p>
+          <button onClick={() => this.setState({ hasError: false })}>
+            Try again
+          </button>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
+
+// App.js
+function App() {
+  return (
+    <ErrorBoundary>
+      <YourApp />
+    </ErrorBoundary>
+  );
+}
+```
+
+### API 에러 처리
+
+```javascript
+// api.js - axios 인터셉터
+api.interceptors.response.use(
+  (response) => response.data,
+  (error) => {
+    const message = error.response?.data?.message || error.message;
+    const status = error.response?.status;
+
+    // 에러 타입별 처리
+    switch (status) {
+      case 400:
+        console.error('Bad Request:', message);
+        break;
+      case 401:
+        localStorage.removeItem('authToken');
+        window.location.href = '/login';
+        break;
+      case 403:
+        console.error('Forbidden:', message);
+        break;
+      case 404:
+        console.error('Not Found:', message);
+        break;
+      case 500:
+        console.error('Server Error:', message);
+        break;
+      default:
+        console.error('API Error:', message);
+    }
+
+    return Promise.reject({
+      message,
+      status,
+      originalError: error
+    });
+  }
+);
+```
+
+### React Query 에러 처리
+
+```javascript
+import { QueryClient } from '@tanstack/react-query';
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: (failureCount, error) => {
+        // 4xx 에러는 재시도하지 않음
+        if (error.status >= 400 && error.status < 500) {
+          return false;
+        }
+        // 최대 3번 재시도
+        return failureCount < 3;
+      },
+      onError: (error) => {
+        console.error('Query error:', error);
+        // 토스트 메시지 표시
+        showToast(`Error: ${error.message}`);
+      }
+    },
+    mutations: {
+      onError: (error) => {
+        console.error('Mutation error:', error);
+        showToast(`Failed: ${error.message}`);
+      }
+    }
+  }
+});
+```
+
+## 로딩 상태 관리
+
+### Suspense 활용
+
+```javascript
+import { Suspense } from 'react';
+
+function App() {
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <UserList />
+    </Suspense>
+  );
+}
+
+// React Query with Suspense
+function UserList() {
+  const { data: users } = useQuery({
+    queryKey: ['users'],
+    queryFn: () => api.get('/users'),
+    suspense: true // Suspense 모드 활성화
+  });
+
+  return (
+    <ul>
+      {users.map(user => (
+        <li key={user.id}>{user.name}</li>
+      ))}
+    </ul>
+  );
+}
+```
+
+### 스켈레톤 UI
+
+```javascript
+function UserListSkeleton() {
+  return (
+    <div className="skeleton">
+      {[...Array(5)].map((_, i) => (
+        <div key={i} className="skeleton-item">
+          <div className="skeleton-avatar" />
+          <div className="skeleton-text" />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function UserList() {
+  const { data: users, isLoading } = useQuery({
+    queryKey: ['users'],
+    queryFn: () => api.get('/users')
+  });
+
+  if (isLoading) return <UserListSkeleton />;
+
+  return (
+    <ul>
+      {users.map(user => (
+        <li key={user.id}>
+          <img src={user.avatar} alt={user.name} />
+          <span>{user.name}</span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+```
+
+## 캐싱 전략
+
+### React Query 캐시 관리
+
+```javascript
+import { useQueryClient } from '@tanstack/react-query';
+
+function UserManagement() {
+  const queryClient = useQueryClient();
+
+  // 캐시 무효화
+  const invalidateUsers = () => {
+    queryClient.invalidateQueries({ queryKey: ['users'] });
+  };
+
+  // 캐시 직접 업데이트
+  const updateUserCache = (userId, updates) => {
+    queryClient.setQueryData(['user', userId], (old) => ({
+      ...old,
+      ...updates
+    }));
+  };
+
+  // 캐시에서 데이터 읽기
+  const getUserFromCache = (userId) => {
+    return queryClient.getQueryData(['user', userId]);
+  };
+
+  // 캐시 프리페치
+  const prefetchUser = (userId) => {
+    queryClient.prefetchQuery({
+      queryKey: ['user', userId],
+      queryFn: () => api.get(`/users/${userId}`)
+    });
+  };
+
+  return <div>{/* UI */}</div>;
+}
+```
+
+### 조건부 페칭
+
+```javascript
+function UserProfile({ userId }) {
+  const [enabled, setEnabled] = useState(false);
+
+  const { data: user } = useQuery({
+    queryKey: ['user', userId],
+    queryFn: () => api.get(`/users/${userId}`),
+    enabled: enabled && !!userId // enabled가 true이고 userId가 있을 때만 실행
+  });
+
+  return (
+    <div>
+      <button onClick={() => setEnabled(true)}>
+        Load User
+      </button>
+      {user && <div>{user.name}</div>}
+    </div>
+  );
+}
+```
+
+## 실무 패턴
+
+### API 서비스 레이어
+
+```javascript
+// services/userService.js
+import api from '../api';
+
+export const userService = {
+  getAll: () => api.get('/users'),
+  
+  getById: (id) => api.get(`/users/${id}`),
+  
+  create: (userData) => api.post('/users', userData),
+  
+  update: (id, updates) => api.patch(`/users/${id}`, updates),
+  
+  delete: (id) => api.delete(`/users/${id}`),
+  
+  search: (query) => api.get(`/users/search?q=${query}`)
+};
+
+// hooks/useUsers.js
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+import { userService } from '../services/userService';
+
+export function useUsers() {
+  return useQuery({
+    queryKey: ['users'],
+    queryFn: userService.getAll
+  });
+}
+
+export function useUser(userId) {
+  return useQuery({
+    queryKey: ['user', userId],
+    queryFn: () => userService.getById(userId),
+    enabled: !!userId
+  });
+}
+
+export function useCreateUser() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: userService.create,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['users'] });
+    }
+  });
+}
+
+export function useUpdateUser() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: ({ id, updates }) => userService.update(id, updates),
+    onSuccess: (_, { id }) => {
+      queryClient.invalidateQueries({ queryKey: ['user', id] });
+      queryClient.invalidateQueries({ queryKey: ['users'] });
+    }
+  });
+}
+
+export function useDeleteUser() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: userService.delete,
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['users'] });
+    }
+  });
+}
+
+// 컴포넌트에서 사용
+function UserManagement() {
+  const { data: users, isLoading } = useUsers();
+  const createUser = useCreateUser();
+  const updateUser = useUpdateUser();
+  const deleteUser = useDeleteUser();
+
+  const handleCreate = (userData) => {
+    createUser.mutate(userData);
+  };
+
+  const handleUpdate = (id, updates) => {
+    updateUser.mutate({ id, updates });
+  };
+
+  const handleDelete = (id) => {
+    deleteUser.mutate(id);
+  };
+
+  if (isLoading) return <div>Loading...</div>;
+
+  return (
+    <div>
+      {users.map(user => (
+        <div key={user.id}>
+          {user.name}
+          <button onClick={() => handleUpdate(user.id, { name: 'New Name' })}>
+            Update
+          </button>
+          <button onClick={() => handleDelete(user.id)}>
+            Delete
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+}
+```
+
+### 요청 디바운싱
+
+```javascript
+import { useState, useEffect } from 'react';
+import { useQuery } from '@tanstack/react-query';
+
+function useDebounce(value, delay = 500) {
+  const [debouncedValue, setDebouncedValue] = useState(value);
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
+
+    return () => clearTimeout(handler);
+  }, [value, delay]);
+
+  return debouncedValue;
+}
+
+function SearchUsers() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const debouncedSearchTerm = useDebounce(searchTerm, 300);
+
+  const { data: results } = useQuery({
+    queryKey: ['users', 'search', debouncedSearchTerm],
+    queryFn: () => api.get(`/users/search?q=${debouncedSearchTerm}`),
+    enabled: debouncedSearchTerm.length > 0
+  });
+
+  return (
+    <div>
+      <input
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+        placeholder="Search users..."
+      />
+      <ul>
+        {results?.map(user => (
+          <li key={user.id}>{user.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```
+
+### 폴링 (주기적 업데이트)
+
+```javascript
+function RealtimeDashboard() {
+  const { data: stats } = useQuery({
+    queryKey: ['dashboard-stats'],
+    queryFn: () => api.get('/stats'),
+    refetchInterval: 5000, // 5초마다 자동 리페치
+    refetchIntervalInBackground: true // 백그라운드에서도 리페치
+  });
+
+  return (
+    <div>
+      <h1>Live Stats</h1>
+      <p>Active Users: {stats?.activeUsers}</p>
+      <p>Total Revenue: ${stats?.revenue}</p>
+    </div>
+  );
+}
+```
+
+## 마치며
+
+지금까지 실무에서 썼던 패턴+학습한 패턴들을 나열해보았습니다. 
+리액트 쿼리는 첫회사 펫 데이터 관리 시 도입했으나 사실 리액트 쿼리를 쓸만한 규모의 서비스가 아니었고 캐시관리도 그렇게 빡빡하지 않았었습니다. 
+또한 기존 회사에서는 리액트 쿼리나 swr은 거의 상용에서 사용하지 않았지만(대규모 서비스가 거의 없었으며 vercel을 이용한 배포를 하지 않았기 때문에)
+실무에서 써보길 희망합니다. 
+
+**방법별 추천:**
+- **간단한 프로젝트**: fetch + 커스텀 Hook
+- **중간 규모**: axios + 커스텀 Hook
+- **복잡한 프로젝트**: React Query 또는 SWR
+
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"React API 연동 모음"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 11월 26일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","프론트엔드",{"href":"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"프론트엔드"}],["$","$L3","React",{"href":"/tags/React","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"React"}],["$","$L3","API",{"href":"/tags/API","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"API"}],["$","$L3","HTTP",{"href":"/tags/HTTP","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"HTTP"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/portfolio/ai-voice-native-teacher-part-1","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"AI 음성 원어민 선생님 만들기 Part 1: 프로젝트 개요와 상태 관리"}]]}],["$","$L3",null,{"href":"/posts/frontend/react-hooks-part2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"React Hooks 모음 2"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"React API 연동 모음 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"React에서 API를 연동 정리"}],["$","meta","2",{"property":"og:title","content":"React API 연동 모음"}],["$","meta","3",{"property":"og:description","content":"React에서 API를 연동 정리"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-11-26"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"React API 연동 모음"}],["$","meta","8",{"name":"twitter:description","content":"React에서 API를 연동 정리"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

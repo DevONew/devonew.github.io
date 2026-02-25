@@ -1,0 +1,394 @@
+<!DOCTYPE html><!--rq94cetZS17rr6VXyxt_m--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d5ebba4595249be0.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-91788950a704a307.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-80ecaa68f6a0b226.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>React 코드 스플리팅과 Lazy Loading: 언제, 왜 써야 할까? | DevONew Blog</title><meta name="description" content="번들 크기를 줄이고 초기 로딩 속도를 개선하는 코드 스플리팅"/><meta property="og:title" content="React 코드 스플리팅과 Lazy Loading: 언제, 왜 써야 할까?"/><meta property="og:description" content="번들 크기를 줄이고 초기 로딩 속도를 개선하는 코드 스플리팅"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2026-01-12"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="React 코드 스플리팅과 Lazy Loading: 언제, 왜 써야 할까?"/><meta name="twitter:description" content="번들 크기를 줄이고 초기 로딩 속도를 개선하는 코드 스플리팅"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">React 코드 스플리팅과 Lazy Loading: 언제, 왜 써야 할까?</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2026년 1월 12일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/React/">React</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/frontend/">frontend</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94/">성능최적화</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/CodeSplitting/">CodeSplitting</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><h2 id="왜-코드-스플리팅이-필요한가"><a aria-hidden="true" tabindex="-1" href="#왜-코드-스플리팅이-필요한가"><span class="icon icon-link"></span></a>왜 코드 스플리팅이 필요한가?</h2>
+<p>React 앱을 배포하고 나면, 모든 JavaScript 코드가 하나의 큰 번들 파일로 합쳐집니다.
+앱이 작을 때는 문제없지만, 기능이 추가될수록 번들 크기는 계속 커집니다.</p>
+<p>문제는 사용자가 첫 화면을 보기 위해 앱 전체를 다운로드해야 한다는 것입니다.</p>
+<p>로그인 페이지를 보려는 사용자가 관리자 대시보드, 설정 페이지, 통계 차트 라이브러리까지 모두 다운로드해야 한다면? 너무 낭비라 생각합니다.</p>
+<p>이럴 때 필요한 코드만 필요한 시점에 로드하는 것이 코드 스플리팅!</p>
+<h2 id="코드-스플리팅이-필요한-신호"><a aria-hidden="true" tabindex="-1" href="#코드-스플리팅이-필요한-신호"><span class="icon icon-link"></span></a>코드 스플리팅이 필요한 신호</h2>
+<h3 id="1-번들-크기가-500kb를-넘어갈-때"><a aria-hidden="true" tabindex="-1" href="#1-번들-크기가-500kb를-넘어갈-때"><span class="icon icon-link"></span></a>1. 번들 크기가 500KB를 넘어갈 때</h3>
+<pre><code class="hljs language-bash"><span class="hljs-comment"># 빌드 후 번들 크기 확인</span>
+npm run build
+
+<span class="hljs-comment"># 출력 예시</span>
+File sizes after gzip:
+  1.2 MB  build/static/js/main.abc123.js  <span class="hljs-comment">#크다..</span>
+  50 KB   build/static/css/main.def456.css
+</code></pre>
+<p>일반적으로 gzip 압축 후 번들 크기가 500KB를 넘어가면, 코드 스플리팅을 고려해야 합니다.
+모바일 3G 환경에서는 1MB 다운로드에 10초 이상 걸릴 수 있습니다.</p>
+<h3 id="2-특정-페이지나-기능을-일부-사용자만-사용할-때"><a aria-hidden="true" tabindex="-1" href="#2-특정-페이지나-기능을-일부-사용자만-사용할-때"><span class="icon icon-link"></span></a>2. 특정 페이지나 기능을 일부 사용자만 사용할 때</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">//  모든 사용자가 관리자 페이지 코드를 다운로드</span>
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">AdminDashboard</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./pages/AdminDashboard&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">UserDashboard</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./pages/UserDashboard&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/user&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">UserDashboard</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/admin&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">AdminDashboard</span> /&gt;</span>} /&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p>일반 사용자는 관리자 페이지에 접근조차 하지 않는데, 해당 코드를 다운로드하는 건 낭비입니다.</p>
+<h3 id="3-무거운-라이브러리를-사용할-때"><a aria-hidden="true" tabindex="-1" href="#3-무거운-라이브러리를-사용할-때"><span class="icon icon-link"></span></a>3. 무거운 라이브러리를 사용할 때</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 차트가 필요 없는 페이지에서도 Chart.js 다운로드</span>
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">Chart</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;chart.js&#x27;</span>;  
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">PDFViewer</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-pdf&#x27;</span>; 
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">Editor</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@monaco-editor/react&#x27;</span>; 
+</code></pre>
+<p>차트, PDF 뷰어, 코드 에디터 같은 무거운 라이브러리는 필요한 페이지에서만 로드해야 합니다.</p>
+<h2 id="reactlazy와-suspense-사용법"><a aria-hidden="true" tabindex="-1" href="#reactlazy와-suspense-사용법"><span class="icon icon-link"></span></a>React.lazy()와 Suspense 사용법</h2>
+<h3 id="기본-구조"><a aria-hidden="true" tabindex="-1" href="#기본-구조"><span class="icon icon-link"></span></a>기본 구조</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> { lazy, <span class="hljs-title class_">Suspense</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-comment">// 동적 import로 코드 스플리팅</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">AdminDashboard</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/AdminDashboard&#x27;</span>));
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">LoadingSpinner</span> /&gt;</span>}&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/admin&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">AdminDashboard</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><code>lazy()</code>로 감싼 컴포넌트는 별도의 청크 파일로 분리되어, 해당 라우트에 접근할 때만 다운로드됩니다.</p>
+<h3 id="라우트-기반-스플리팅"><a aria-hidden="true" tabindex="-1" href="#라우트-기반-스플리팅"><span class="icon icon-link"></span></a>라우트 기반 스플리팅</h3>
+<p>가장 흔하고 효과적인 패턴입니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> { lazy, <span class="hljs-title class_">Suspense</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">Routes</span>, <span class="hljs-title class_">Route</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-router-dom&#x27;</span>;
+
+<span class="hljs-comment">// 각 페이지를 별도로 분리</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Home</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/Home&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">About</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/About&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Dashboard</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/Dashboard&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Settings</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/Settings&#x27;</span>));
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">PageLoader</span> /&gt;</span>}&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Home</span> /&gt;</span>} /&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/about&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">About</span> /&gt;</span>} /&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/dashboard&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Dashboard</span> /&gt;</span>} /&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/settings&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Settings</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><strong>빌드 결과:</strong></p>
+<pre><code>main.js (50KB) - 앱 코어
+home.js (30KB)
+about.js (20KB)
+dashboard.js (100KB)
+settings.js (80KB)
+</code></pre>
+<p>이제 홈페이지 방문자는 50KB + 30KB = 80KB만 다운로드하면 됩니다. (기존: 280KB)</p>
+<h3 id="컴포넌트-레벨-스플리팅"><a aria-hidden="true" tabindex="-1" href="#컴포넌트-레벨-스플리팅"><span class="icon icon-link"></span></a>컴포넌트 레벨 스플리팅</h3>
+<p>특정 기능이 무거울 때 사용합니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> { lazy, <span class="hljs-title class_">Suspense</span>, useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-comment">// 차트 컴포넌트를 lazy로 분리</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">HeavyChart</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/HeavyChart&#x27;</span>));
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Dashboard</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [showChart, setShowChart] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>대시보드<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setShowChart(true)}&gt;
+        차트 보기
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+      {showChart &amp;&amp; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">div</span>&gt;</span>차트 로딩 중...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>}&gt;
+          <span class="hljs-tag">&lt;<span class="hljs-name">HeavyChart</span> /&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span>
+      )}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p>사용자가 &quot;차트 보기&quot; 버튼을 누를 때만 차트 라이브러리를 다운로드합니다.</p>
+<h2 id="언제-코드-스플리팅을-적용할까"><a aria-hidden="true" tabindex="-1" href="#언제-코드-스플리팅을-적용할까"><span class="icon icon-link"></span></a>언제 코드 스플리팅을 적용할까?</h2>
+<h3 id="적용하면-좋은-경우"><a aria-hidden="true" tabindex="-1" href="#적용하면-좋은-경우"><span class="icon icon-link"></span></a>적용하면 좋은 경우</h3>
+<ol>
+<li>
+<p><strong>라우트별 분리</strong></p>
+<ul>
+<li>모든 페이지를 한 번에 로드할 필요 없음</li>
+<li>가장 확실한 효과</li>
+</ul>
+</li>
+<li>
+<p><strong>권한별 분리</strong></p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">AdminPanel</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./admin/AdminPanel&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">UserPanel</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./user/UserPanel&#x27;</span>));
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Dashboard</span>(<span class="hljs-params">{ role }: { role: <span class="hljs-string">&#x27;admin&#x27;</span> | <span class="hljs-string">&#x27;user&#x27;</span> }</span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Loading</span> /&gt;</span>}&gt;
+      {role === &#x27;admin&#x27; ? <span class="hljs-tag">&lt;<span class="hljs-name">AdminPanel</span> /&gt;</span> : <span class="hljs-tag">&lt;<span class="hljs-name">UserPanel</span> /&gt;</span>}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span></span>
+  );
+}
+</code></pre>
+</li>
+<li>
+<p><strong>무거운 라이브러리</strong></p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">PDFViewer</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/PDFViewer&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">VideoEditor</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/VideoEditor&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">CodeEditor</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/CodeEditor&#x27;</span>));
+</code></pre>
+</li>
+<li>
+<p><strong>모달/다이얼로그</strong></p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">SettingsModal</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./modals/SettingsModal&#x27;</span>));
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [showSettings, setShowSettings] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setShowSettings(true)}&gt;설정<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      {showSettings &amp;&amp; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{null}</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">SettingsModal</span> <span class="hljs-attr">onClose</span>=<span class="hljs-string">{()</span> =&gt;</span> setShowSettings(false)} /&gt;
+        <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span>
+      )}
+    <span class="hljs-tag">&lt;/&gt;</span></span>
+  );
+}
+</code></pre>
+</li>
+</ol>
+<h3 id="적용하지-말아야-할-경우"><a aria-hidden="true" tabindex="-1" href="#적용하지-말아야-할-경우"><span class="icon icon-link"></span></a>적용하지 말아야 할 경우</h3>
+<ol>
+<li>
+<p><strong>작은 컴포넌트 (&lt; 10KB)</strong></p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 불필요한 분리 - 오히려 HTTP 요청만 늘어남</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Button</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/Button&#x27;</span>));
+</code></pre>
+</li>
+<li>
+<p><strong>첫 화면에 바로 보이는 컴포넌트</strong></p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 첫 화면 깜빡임 발생</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Header</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/Header&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Hero</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/Hero&#x27;</span>));
+</code></pre>
+</li>
+<li>
+<p><strong>자주 함께 사용되는 컴포넌트</strong></p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 항상 같이 쓰인다면 분리할 필요 X</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Form</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/Form&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">FormInput</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/FormInput&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">FormButton</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./components/FormButton&#x27;</span>));
+</code></pre>
+</li>
+</ol>
+<h2 id="suspense-fallback-전략"><a aria-hidden="true" tabindex="-1" href="#suspense-fallback-전략"><span class="icon icon-link"></span></a>Suspense Fallback 전략</h2>
+<h3 id="1-페이지-레벨-로딩"><a aria-hidden="true" tabindex="-1" href="#1-페이지-레벨-로딩"><span class="icon icon-link"></span></a>1. 페이지 레벨 로딩</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">PageLoader</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;flex items-center justify-center min-h-screen&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600&quot;</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+&lt;<span class="hljs-title class_">Suspense</span> fallback={<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">PageLoader</span> /&gt;</span></span>}&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Home</span> /&gt;</span>} /&gt;
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span></span>
+&lt;/<span class="hljs-title class_">Suspense</span>&gt;
+</code></pre>
+<h3 id="2-컴포넌트-레벨-로딩"><a aria-hidden="true" tabindex="-1" href="#2-컴포넌트-레벨-로딩"><span class="icon icon-link"></span></a>2. 컴포넌트 레벨 로딩</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">InlineLoader</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;py-8 text-center&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;inline-block animate-pulse&quot;</span>&gt;</span>로딩 중...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+&lt;<span class="hljs-title class_">Suspense</span> fallback={<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">InlineLoader</span> /&gt;</span></span>}&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">HeavyComponent</span> /&gt;</span></span>
+&lt;/<span class="hljs-title class_">Suspense</span>&gt;
+</code></pre>
+<h3 id="3-스켈레톤-ui"><a aria-hidden="true" tabindex="-1" href="#3-스켈레톤-ui"><span class="icon icon-link"></span></a>3. 스켈레톤 UI</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">ChartSkeleton</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;space-y-4 animate-pulse&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;h-4 bg-gray-200 rounded w-3/4&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;h-64 bg-gray-200 rounded&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&quot;h-4 bg-gray-200 rounded w-1/2&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+
+&lt;<span class="hljs-title class_">Suspense</span> fallback={<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ChartSkeleton</span> /&gt;</span></span>}&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Chart</span> <span class="hljs-attr">data</span>=<span class="hljs-string">{data}</span> /&gt;</span></span>
+&lt;/<span class="hljs-title class_">Suspense</span>&gt;
+</code></pre>
+<p>스켈레톤 UI는 실제 컴포넌트의 레이아웃과 비슷해서, 로딩 중에도 자연스러운 경험을 제공합니다.</p>
+<h2 id="프리로딩-전략"><a aria-hidden="true" tabindex="-1" href="#프리로딩-전략"><span class="icon icon-link"></span></a>프리로딩 전략</h2>
+<p>코드 스플리팅의 단점은 &quot;로딩 시간&quot;이 생긴다는 것입니다.</p>
+<p>이를 해결하는 방법들은 다음과 같이 있습니다:</p>
+<h3 id="1-마우스-호버-시-프리로드"><a aria-hidden="true" tabindex="-1" href="#1-마우스-호버-시-프리로드"><span class="icon icon-link"></span></a>1. 마우스 호버 시 프리로드</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> { lazy } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">AdminPanel</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/AdminPanel&#x27;</span>));
+
+<span class="hljs-comment">// 프리로드 함수</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">preloadAdminPanel</span> = (<span class="hljs-params"></span>) =&gt; {
+  <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/AdminPanel&#x27;</span>);
+};
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Navigation</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Link</span>
+        <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/admin&quot;</span>
+        <span class="hljs-attr">onMouseEnter</span>=<span class="hljs-string">{preloadAdminPanel}</span>  // <span class="hljs-attr">호버</span> <span class="hljs-attr">시</span> <span class="hljs-attr">미리</span> <span class="hljs-attr">로드</span>
+      &gt;</span>
+        관리자 페이지
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p>링크에 마우스를 올리면 미리 다운로드하여, 클릭 시 즉시 표시됩니다.</p>
+<h3 id="2-네트워크-유휴-시간-활용"><a aria-hidden="true" tabindex="-1" href="#2-네트워크-유휴-시간-활용"><span class="icon icon-link"></span></a>2. 네트워크 유휴 시간 활용</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> { useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-comment">// 첫 화면 로드 후, 브라우저가 한가할 때 다음 페이지 </span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-string">&#x27;requestIdleCallback&#x27;</span> <span class="hljs-keyword">in</span> <span class="hljs-variable language_">window</span>) {
+      <span class="hljs-title function_">requestIdleCallback</span>(<span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/Dashboard&#x27;</span>);
+        <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/Settings&#x27;</span>);
+      });
+    }
+  }, []);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>...<span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span></span>;
+}
+</code></pre>
+<h3 id="3-라우트-변경-예측"><a aria-hidden="true" tabindex="-1" href="#3-라우트-변경-예측"><span class="icon icon-link"></span></a>3. 라우트 변경 예측</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 홈페이지에서 대부분 사용자가 대시보드로 이동한다면</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">HomePage</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> timer = <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/Dashboard&#x27;</span>);
+    }, <span class="hljs-number">3000</span>);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">clearTimeout</span>(timer);
+  }, []);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>홈페이지<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<h2 id="실전-예제-before--after"><a aria-hidden="true" tabindex="-1" href="#실전-예제-before--after"><span class="icon icon-link"></span></a>실전 예제: Before &amp; After</h2>
+<h3 id="before-번들-크기-12mb"><a aria-hidden="true" tabindex="-1" href="#before-번들-크기-12mb"><span class="icon icon-link"></span></a>Before: 번들 크기 1.2MB</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> <span class="hljs-title class_">Chart</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;chart.js&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">PDFViewer</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react-pdf&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">AdminDashboard</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./pages/AdminDashboard&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">UserSettings</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./pages/UserSettings&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">Reports</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./pages/Reports&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Home</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/admin&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">AdminDashboard</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/settings&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">UserSettings</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/reports&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Reports</span> /&gt;</span>} /&gt;
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><strong>문제점:</strong></p>
+<ul>
+<li>첫 로드: 1.2MB (3G 환경 12초? 소요)</li>
+<li>모든 사용자가 관리자 페이지 코드 다운로드</li>
+<li>Chart.js, PDF 라이브러리 항상 포함</li>
+</ul>
+<h3 id="after-초기-번들-150kb"><a aria-hidden="true" tabindex="-1" href="#after-초기-번들-150kb"><span class="icon icon-link"></span></a>After: 초기 번들 150KB</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> { lazy, <span class="hljs-title class_">Suspense</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">AdminDashboard</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/AdminDashboard&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">UserSettings</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/UserSettings&#x27;</span>));
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">Reports</span> = <span class="hljs-title function_">lazy</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;./pages/Reports&#x27;</span>));
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">PageLoader</span> /&gt;</span>}&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Routes</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Home</span> /&gt;</span>} /&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/admin&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">AdminDashboard</span> /&gt;</span>} /&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/settings&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">UserSettings</span> /&gt;</span>} /&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">&quot;/reports&quot;</span> <span class="hljs-attr">element</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">Reports</span> /&gt;</span>} /&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Routes</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><strong>개선 결과:</strong></p>
+<ul>
+<li>첫 로드: 150KB (3G 환경 1.5로 단축)</li>
+<li>관리자만 AdminDashboard 코드 다운로드</li>
+<li>차트와 PDF는 Reports 페이지에서만 로드</li>
+</ul>
+<h2 id="성능-측정하기"><a aria-hidden="true" tabindex="-1" href="#성능-측정하기"><span class="icon icon-link"></span></a>성능 측정하기</h2>
+<p>코드 스플리팅 효과를 확인하는 방법:</p>
+<h3 id="1-webpack-bundle-analyzer"><a aria-hidden="true" tabindex="-1" href="#1-webpack-bundle-analyzer"><span class="icon icon-link"></span></a>1. Webpack Bundle Analyzer</h3>
+<pre><code class="hljs language-bash">npm install --save-dev webpack-bundle-analyzer
+</code></pre>
+<pre><code class="hljs language-javascript"><span class="hljs-comment">// next.config.js (Next.js의 경우)</span>
+<span class="hljs-keyword">const</span> withBundleAnalyzer = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;@next/bundle-analyzer&#x27;</span>)({
+  <span class="hljs-attr">enabled</span>: process.<span class="hljs-property">env</span>.<span class="hljs-property">ANALYZE</span> === <span class="hljs-string">&#x27;true&#x27;</span>,
+});
+
+<span class="hljs-variable language_">module</span>.<span class="hljs-property">exports</span> = <span class="hljs-title function_">withBundleAnalyzer</span>({
+  <span class="hljs-comment">// ...config</span>
+});
+</code></pre>
+<pre><code class="hljs language-bash">ANALYZE=<span class="hljs-literal">true</span> npm run build
+</code></pre>
+<p>번들 크기를 시각적으로 확인할 수 있습니다.</p>
+<h3 id="2-lighthouse-성능-측정"><a aria-hidden="true" tabindex="-1" href="#2-lighthouse-성능-측정"><span class="icon icon-link"></span></a>2. Lighthouse 성능 측정</h3>
+<p>Chrome DevTools &gt; Lighthouse 탭에서:</p>
+<ul>
+<li>First Contentful Paint (FCP)</li>
+<li>Largest Contentful Paint (LCP)</li>
+<li>Time to Interactive (TTI)</li>
+</ul>
+<p>코드 스플리팅 전후로 이 지표들이 개선되는지 확인합니다.</p>
+<h3 id="3-network-탭-확인"><a aria-hidden="true" tabindex="-1" href="#3-network-탭-확인"><span class="icon icon-link"></span></a>3. Network 탭 확인</h3>
+<p>Chrome DevTools &gt; Network 탭에서:</p>
+<ul>
+<li>초기 로드 시 다운로드되는 파일 개수와 크기</li>
+<li>페이지 이동 시 추가 다운로드되는 청크 파일들</li>
+</ul>
+<h2 id="마치며"><a aria-hidden="true" tabindex="-1" href="#마치며"><span class="icon icon-link"></span></a>마치며</h2>
+<p><strong>적용 기준:</strong></p>
+<ul>
+<li>번들 크기가 500KB 이상일 때</li>
+<li>특정 기능이 일부 사용자에게만 필요할 때</li>
+<li>무거운 라이브러리를 사용할 때</li>
+</ul>
+<p><strong>주의사항:</strong></p>
+<ul>
+<li>너무 작은 컴포넌트는 분리하지 말 것</li>
+<li>첫 화면에 필요한 컴포넌트는 분리하지 말 것</li>
+<li>로딩 상태(Suspense fallback)를 항상 제공할 것</li>
+</ul>
+<p>Next.js나 Vite 같은 최신 도구들은 대부분 자동으로 코드 스플리팅을 해주지만,
+라이브러리 레벨이나 컴포넌트 레벨에서는 직접 판단해야 합니다.</p></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="h-28"></div><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right" href="/posts/frontend/react-conditional-rendering-patterns/"><div class="text-sm text-muted-foreground mb-2">다음 글 →</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">React 조건부 렌더링 패턴: Switch문 vs 컴포넌트 기반 접근법</div></a></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-91788950a704a307.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-91788950a704a307.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d5ebba4595249be0.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"rq94cetZS17rr6VXyxt_m\",\"p\":\"\",\"c\":[\"\",\"posts\",\"frontend\",\"react-code-splitting-lazy-loading\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"frontend\",\"d\"],{\"children\":[[\"slug\",\"react-code-splitting-lazy-loading\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d5ebba4595249be0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"frontend\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"react-code-splitting-lazy-loading\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T300b,"])</script><script>self.__next_f.push([1,"\n## 왜 코드 스플리팅이 필요한가?\n\nReact 앱을 배포하고 나면, 모든 JavaScript 코드가 하나의 큰 번들 파일로 합쳐집니다.\n앱이 작을 때는 문제없지만, 기능이 추가될수록 번들 크기는 계속 커집니다.\n\n문제는 사용자가 첫 화면을 보기 위해 앱 전체를 다운로드해야 한다는 것입니다.\n\n로그인 페이지를 보려는 사용자가 관리자 대시보드, 설정 페이지, 통계 차트 라이브러리까지 모두 다운로드해야 한다면? 너무 낭비라 생각합니다.\n\n이럴 때 필요한 코드만 필요한 시점에 로드하는 것이 코드 스플리팅!\n\n## 코드 스플리팅이 필요한 신호\n\n### 1. 번들 크기가 500KB를 넘어갈 때\n\n```bash\n# 빌드 후 번들 크기 확인\nnpm run build\n\n# 출력 예시\nFile sizes after gzip:\n  1.2 MB  build/static/js/main.abc123.js  #크다..\n  50 KB   build/static/css/main.def456.css\n```\n\n일반적으로 gzip 압축 후 번들 크기가 500KB를 넘어가면, 코드 스플리팅을 고려해야 합니다.\n모바일 3G 환경에서는 1MB 다운로드에 10초 이상 걸릴 수 있습니다.\n\n### 2. 특정 페이지나 기능을 일부 사용자만 사용할 때\n\n```typescript\n//  모든 사용자가 관리자 페이지 코드를 다운로드\nimport AdminDashboard from './pages/AdminDashboard';\nimport UserDashboard from './pages/UserDashboard';\n\nfunction App() {\n  return (\n    \u003cRoutes\u003e\n      \u003cRoute path=\"/user\" element={\u003cUserDashboard /\u003e} /\u003e\n      \u003cRoute path=\"/admin\" element={\u003cAdminDashboard /\u003e} /\u003e\n    \u003c/Routes\u003e\n  );\n}\n```\n\n일반 사용자는 관리자 페이지에 접근조차 하지 않는데, 해당 코드를 다운로드하는 건 낭비입니다.\n\n### 3. 무거운 라이브러리를 사용할 때\n\n```typescript\n// 차트가 필요 없는 페이지에서도 Chart.js 다운로드\nimport { Chart } from 'chart.js';  \nimport { PDFViewer } from 'react-pdf'; \nimport { Editor } from '@monaco-editor/react'; \n```\n\n차트, PDF 뷰어, 코드 에디터 같은 무거운 라이브러리는 필요한 페이지에서만 로드해야 합니다.\n\n## React.lazy()와 Suspense 사용법\n\n### 기본 구조\n\n```typescript\nimport { lazy, Suspense } from 'react';\n\n// 동적 import로 코드 스플리팅\nconst AdminDashboard = lazy(() =\u003e import('./pages/AdminDashboard'));\n\nfunction App() {\n  return (\n    \u003cSuspense fallback={\u003cLoadingSpinner /\u003e}\u003e\n      \u003cRoutes\u003e\n        \u003cRoute path=\"/admin\" element={\u003cAdminDashboard /\u003e} /\u003e\n      \u003c/Routes\u003e\n    \u003c/Suspense\u003e\n  );\n}\n```\n\n`lazy()`로 감싼 컴포넌트는 별도의 청크 파일로 분리되어, 해당 라우트에 접근할 때만 다운로드됩니다.\n\n### 라우트 기반 스플리팅\n\n가장 흔하고 효과적인 패턴입니다.\n\n```typescript\nimport { lazy, Suspense } from 'react';\nimport { Routes, Route } from 'react-router-dom';\n\n// 각 페이지를 별도로 분리\nconst Home = lazy(() =\u003e import('./pages/Home'));\nconst About = lazy(() =\u003e import('./pages/About'));\nconst Dashboard = lazy(() =\u003e import('./pages/Dashboard'));\nconst Settings = lazy(() =\u003e import('./pages/Settings'));\n\nfunction App() {\n  return (\n    \u003cSuspense fallback={\u003cPageLoader /\u003e}\u003e\n      \u003cRoutes\u003e\n        \u003cRoute path=\"/\" element={\u003cHome /\u003e} /\u003e\n        \u003cRoute path=\"/about\" element={\u003cAbout /\u003e} /\u003e\n        \u003cRoute path=\"/dashboard\" element={\u003cDashboard /\u003e} /\u003e\n        \u003cRoute path=\"/settings\" element={\u003cSettings /\u003e} /\u003e\n      \u003c/Routes\u003e\n    \u003c/Suspense\u003e\n  );\n}\n```\n\n**빌드 결과:**\n```\nmain.js (50KB) - 앱 코어\nhome.js (30KB)\nabout.js (20KB)\ndashboard.js (100KB)\nsettings.js (80KB)\n```\n\n이제 홈페이지 방문자는 50KB + 30KB = 80KB만 다운로드하면 됩니다. (기존: 280KB)\n\n### 컴포넌트 레벨 스플리팅\n\n특정 기능이 무거울 때 사용합니다.\n\n```typescript\nimport { lazy, Suspense, useState } from 'react';\n\n// 차트 컴포넌트를 lazy로 분리\nconst HeavyChart = lazy(() =\u003e import('./components/HeavyChart'));\n\nfunction Dashboard() {\n  const [showChart, setShowChart] = useState(false);\n\n  return (\n    \u003cdiv\u003e\n      \u003ch1\u003e대시보드\u003c/h1\u003e\n\n      \u003cbutton onClick={() =\u003e setShowChart(true)}\u003e\n        차트 보기\n      \u003c/button\u003e\n\n      {showChart \u0026\u0026 (\n        \u003cSuspense fallback={\u003cdiv\u003e차트 로딩 중...\u003c/div\u003e}\u003e\n          \u003cHeavyChart /\u003e\n        \u003c/Suspense\u003e\n      )}\n    \u003c/div\u003e\n  );\n}\n```\n\n사용자가 \"차트 보기\" 버튼을 누를 때만 차트 라이브러리를 다운로드합니다.\n\n## 언제 코드 스플리팅을 적용할까?\n\n### 적용하면 좋은 경우\n\n1. **라우트별 분리**\n   - 모든 페이지를 한 번에 로드할 필요 없음\n   - 가장 확실한 효과\n\n2. **권한별 분리**\n   ```typescript\n   const AdminPanel = lazy(() =\u003e import('./admin/AdminPanel'));\n   const UserPanel = lazy(() =\u003e import('./user/UserPanel'));\n\n   function Dashboard({ role }: { role: 'admin' | 'user' }) {\n     return (\n       \u003cSuspense fallback={\u003cLoading /\u003e}\u003e\n         {role === 'admin' ? \u003cAdminPanel /\u003e : \u003cUserPanel /\u003e}\n       \u003c/Suspense\u003e\n     );\n   }\n   ```\n\n3. **무거운 라이브러리**\n   ```typescript\n   const PDFViewer = lazy(() =\u003e import('./components/PDFViewer'));\n   const VideoEditor = lazy(() =\u003e import('./components/VideoEditor'));\n   const CodeEditor = lazy(() =\u003e import('./components/CodeEditor'));\n   ```\n\n4. **모달/다이얼로그**\n   ```typescript\n   const SettingsModal = lazy(() =\u003e import('./modals/SettingsModal'));\n\n   function App() {\n     const [showSettings, setShowSettings] = useState(false);\n\n     return (\n       \u003c\u003e\n         \u003cbutton onClick={() =\u003e setShowSettings(true)}\u003e설정\u003c/button\u003e\n         {showSettings \u0026\u0026 (\n           \u003cSuspense fallback={null}\u003e\n             \u003cSettingsModal onClose={() =\u003e setShowSettings(false)} /\u003e\n           \u003c/Suspense\u003e\n         )}\n       \u003c/\u003e\n     );\n   }\n   ```\n\n### 적용하지 말아야 할 경우\n\n1. **작은 컴포넌트 (\u003c 10KB)**\n   ```typescript\n   // 불필요한 분리 - 오히려 HTTP 요청만 늘어남\n   const Button = lazy(() =\u003e import('./components/Button'));\n   ```\n\n2. **첫 화면에 바로 보이는 컴포넌트**\n   ```typescript\n   // 첫 화면 깜빡임 발생\n   const Header = lazy(() =\u003e import('./components/Header'));\n   const Hero = lazy(() =\u003e import('./components/Hero'));\n   ```\n\n3. **자주 함께 사용되는 컴포넌트**\n   ```typescript\n   // 항상 같이 쓰인다면 분리할 필요 X\n   const Form = lazy(() =\u003e import('./components/Form'));\n   const FormInput = lazy(() =\u003e import('./components/FormInput'));\n   const FormButton = lazy(() =\u003e import('./components/FormButton'));\n   ```\n\n## Suspense Fallback 전략\n\n### 1. 페이지 레벨 로딩\n\n```typescript\nfunction PageLoader() {\n  return (\n    \u003cdiv className=\"flex items-center justify-center min-h-screen\"\u003e\n      \u003cdiv className=\"animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600\" /\u003e\n    \u003c/div\u003e\n  );\n}\n\n\u003cSuspense fallback={\u003cPageLoader /\u003e}\u003e\n  \u003cRoutes\u003e\n    \u003cRoute path=\"/\" element={\u003cHome /\u003e} /\u003e\n  \u003c/Routes\u003e\n\u003c/Suspense\u003e\n```\n\n### 2. 컴포넌트 레벨 로딩\n\n```typescript\nfunction InlineLoader() {\n  return (\n    \u003cdiv className=\"py-8 text-center\"\u003e\n      \u003cdiv className=\"inline-block animate-pulse\"\u003e로딩 중...\u003c/div\u003e\n    \u003c/div\u003e\n  );\n}\n\n\u003cSuspense fallback={\u003cInlineLoader /\u003e}\u003e\n  \u003cHeavyComponent /\u003e\n\u003c/Suspense\u003e\n```\n\n### 3. 스켈레톤 UI\n\n```typescript\nfunction ChartSkeleton() {\n  return (\n    \u003cdiv className=\"space-y-4 animate-pulse\"\u003e\n      \u003cdiv className=\"h-4 bg-gray-200 rounded w-3/4\"\u003e\u003c/div\u003e\n      \u003cdiv className=\"h-64 bg-gray-200 rounded\"\u003e\u003c/div\u003e\n      \u003cdiv className=\"h-4 bg-gray-200 rounded w-1/2\"\u003e\u003c/div\u003e\n    \u003c/div\u003e\n  );\n}\n\n\u003cSuspense fallback={\u003cChartSkeleton /\u003e}\u003e\n  \u003cChart data={data} /\u003e\n\u003c/Suspense\u003e\n```\n\n스켈레톤 UI는 실제 컴포넌트의 레이아웃과 비슷해서, 로딩 중에도 자연스러운 경험을 제공합니다.\n\n## 프리로딩 전략\n\n코드 스플리팅의 단점은 \"로딩 시간\"이 생긴다는 것입니다. \n\n이를 해결하는 방법들은 다음과 같이 있습니다:\n\n### 1. 마우스 호버 시 프리로드\n\n```typescript\nimport { lazy } from 'react';\n\nconst AdminPanel = lazy(() =\u003e import('./pages/AdminPanel'));\n\n// 프리로드 함수\nconst preloadAdminPanel = () =\u003e {\n  import('./pages/AdminPanel');\n};\n\nfunction Navigation() {\n  return (\n    \u003cnav\u003e\n      \u003cLink\n        to=\"/admin\"\n        onMouseEnter={preloadAdminPanel}  // 호버 시 미리 로드\n      \u003e\n        관리자 페이지\n      \u003c/Link\u003e\n    \u003c/nav\u003e\n  );\n}\n```\n\n링크에 마우스를 올리면 미리 다운로드하여, 클릭 시 즉시 표시됩니다.\n\n### 2. 네트워크 유휴 시간 활용\n\n```typescript\nimport { useEffect } from 'react';\n\nfunction App() {\n  useEffect(() =\u003e {\n    // 첫 화면 로드 후, 브라우저가 한가할 때 다음 페이지 \n    if ('requestIdleCallback' in window) {\n      requestIdleCallback(() =\u003e {\n        import('./pages/Dashboard');\n        import('./pages/Settings');\n      });\n    }\n  }, []);\n\n  return \u003cRoutes\u003e...\u003c/Routes\u003e;\n}\n```\n\n### 3. 라우트 변경 예측\n\n```typescript\n// 홈페이지에서 대부분 사용자가 대시보드로 이동한다면\nfunction HomePage() {\n  useEffect(() =\u003e {\n    const timer = setTimeout(() =\u003e {\n      import('./pages/Dashboard');\n    }, 3000);\n\n    return () =\u003e clearTimeout(timer);\n  }, []);\n\n  return \u003cdiv\u003e홈페이지\u003c/div\u003e;\n}\n```\n\n## 실전 예제: Before \u0026 After\n\n### Before: 번들 크기 1.2MB\n\n```typescript\nimport Chart from 'chart.js';\nimport { PDFViewer } from 'react-pdf';\nimport AdminDashboard from './pages/AdminDashboard';\nimport UserSettings from './pages/UserSettings';\nimport Reports from './pages/Reports';\n\nfunction App() {\n  return (\n    \u003cRoutes\u003e\n      \u003cRoute path=\"/\" element={\u003cHome /\u003e} /\u003e\n      \u003cRoute path=\"/admin\" element={\u003cAdminDashboard /\u003e} /\u003e\n      \u003cRoute path=\"/settings\" element={\u003cUserSettings /\u003e} /\u003e\n      \u003cRoute path=\"/reports\" element={\u003cReports /\u003e} /\u003e\n    \u003c/Routes\u003e\n  );\n}\n```\n\n**문제점:**\n- 첫 로드: 1.2MB (3G 환경 12초? 소요)\n- 모든 사용자가 관리자 페이지 코드 다운로드\n- Chart.js, PDF 라이브러리 항상 포함\n\n### After: 초기 번들 150KB\n\n```typescript\nimport { lazy, Suspense } from 'react';\n\nconst AdminDashboard = lazy(() =\u003e import('./pages/AdminDashboard'));\nconst UserSettings = lazy(() =\u003e import('./pages/UserSettings'));\nconst Reports = lazy(() =\u003e import('./pages/Reports'));\n\nfunction App() {\n  return (\n    \u003cSuspense fallback={\u003cPageLoader /\u003e}\u003e\n      \u003cRoutes\u003e\n        \u003cRoute path=\"/\" element={\u003cHome /\u003e} /\u003e\n        \u003cRoute path=\"/admin\" element={\u003cAdminDashboard /\u003e} /\u003e\n        \u003cRoute path=\"/settings\" element={\u003cUserSettings /\u003e} /\u003e\n        \u003cRoute path=\"/reports\" element={\u003cReports /\u003e} /\u003e\n      \u003c/Routes\u003e\n    \u003c/Suspense\u003e\n  );\n}\n```\n\n**개선 결과:**\n- 첫 로드: 150KB (3G 환경 1.5로 단축)\n- 관리자만 AdminDashboard 코드 다운로드\n- 차트와 PDF는 Reports 페이지에서만 로드\n\n## 성능 측정하기\n\n코드 스플리팅 효과를 확인하는 방법:\n\n### 1. Webpack Bundle Analyzer\n\n```bash\nnpm install --save-dev webpack-bundle-analyzer\n```\n\n```javascript\n// next.config.js (Next.js의 경우)\nconst withBundleAnalyzer = require('@next/bundle-analyzer')({\n  enabled: process.env.ANALYZE === 'true',\n});\n\nmodule.exports = withBundleAnalyzer({\n  // ...config\n});\n```\n\n```bash\nANALYZE=true npm run build\n```\n\n번들 크기를 시각적으로 확인할 수 있습니다.\n\n### 2. Lighthouse 성능 측정\n\nChrome DevTools \u003e Lighthouse 탭에서:\n- First Contentful Paint (FCP)\n- Largest Contentful Paint (LCP)\n- Time to Interactive (TTI)\n\n코드 스플리팅 전후로 이 지표들이 개선되는지 확인합니다.\n\n### 3. Network 탭 확인\n\nChrome DevTools \u003e Network 탭에서:\n- 초기 로드 시 다운로드되는 파일 개수와 크기\n- 페이지 이동 시 추가 다운로드되는 청크 파일들\n\n## 마치며\n\n**적용 기준:**\n- 번들 크기가 500KB 이상일 때\n- 특정 기능이 일부 사용자에게만 필요할 때\n- 무거운 라이브러리를 사용할 때\n\n**주의사항:**\n- 너무 작은 컴포넌트는 분리하지 말 것\n- 첫 화면에 필요한 컴포넌트는 분리하지 말 것\n- 로딩 상태(Suspense fallback)를 항상 제공할 것\n\nNext.js나 Vite 같은 최신 도구들은 대부분 자동으로 코드 스플리팅을 해주지만,\n라이브러리 레벨이나 컴포넌트 레벨에서는 직접 판단해야 합니다.\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"React 코드 스플리팅과 Lazy Loading: 언제, 왜 써야 할까?\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2026년 1월 12일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"React\",{\"href\":\"/tags/React\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"React\"}],[\"$\",\"$L3\",\"frontend\",{\"href\":\"/tags/frontend\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"frontend\"}],[\"$\",\"$L3\",\"성능최적화\",{\"href\":\"/tags/%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"성능최적화\"}],[\"$\",\"$L3\",\"CodeSplitting\",{\"href\":\"/tags/CodeSplitting\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"CodeSplitting\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"div\",null,{\"className\":\"h-28\"}],[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/react-conditional-rendering-patterns\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"다음 글 →\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"React 조건부 렌더링 패턴: Switch문 vs 컴포넌트 기반 접근법\"}]]}]]}]}]\n1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"React 코드 스플리팅과 Lazy Loading: 언제, 왜 써야 할까? | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"번들 크기를 줄이고 초기 로딩 속도를 개선하는 코드 스플리팅\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"React 코드 스플리팅과 Lazy Loading: 언제, 왜 써야 할까?\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"번들 크기를 줄이고 초기 로딩 속도를 개선하는 코드 스플리팅\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2026-01-12\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"React 코드 스플리팅과 Lazy Loading: 언제, 왜 써야 할까?\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"번들 크기를 줄이고 초기 로딩 속도를 개선하는 코드 스플리팅\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>

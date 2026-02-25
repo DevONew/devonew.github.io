@@ -1,0 +1,909 @@
+<!DOCTYPE html><!--rq94cetZS17rr6VXyxt_m--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d5ebba4595249be0.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-91788950a704a307.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-80ecaa68f6a0b226.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>TypeScript 실무 패턴과 고급 타입  | DevONew Blog</title><meta name="description" content=" API, React, 상태관리 타입 패턴과 고급 타입"/><meta property="og:title" content="TypeScript 실무 패턴과 고급 타입 "/><meta property="og:description" content=" API, React, 상태관리 타입 패턴과 고급 타입"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-11-21"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="TypeScript 실무 패턴과 고급 타입 "/><meta name="twitter:description" content=" API, React, 상태관리 타입 패턴과 고급 타입"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">TypeScript 실무 패턴과 고급 타입 </h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 11월 21일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/">프론트엔드</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/TypeScript/">TypeScript</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%ED%83%80%EC%9E%85/">타입</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/study/">study</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><p>시리즈의 마지막은 실무에서 바로 적용할 수 있는 타입 패턴과 고급 타입 기법을 다룹니다.</p>
+<h2 id="시리즈-구성"><a aria-hidden="true" tabindex="-1" href="#시리즈-구성"><span class="icon icon-link"></span></a>시리즈 구성</h2>
+<ul>
+<li><strong>Part 1</strong>: 기본 타입, 객체, 함수, Union/Intersection</li>
+<li><strong>Part 2</strong>: 타입 좁히기와 제네릭</li>
+<li><strong>Part 3</strong>: 유틸리티 타입과 any</li>
+<li><strong>Part 4 (현재 글)</strong>: 실무 패턴과 고급 타입</li>
+</ul>
+<h2 id="실무-api-타입-패턴"><a aria-hidden="true" tabindex="-1" href="#실무-api-타입-패턴"><span class="icon icon-link"></span></a>실무 API 타입 패턴</h2>
+<h3 id="공통-응답-구조"><a aria-hidden="true" tabindex="-1" href="#공통-응답-구조"><span class="icon icon-link"></span></a>공통 응답 구조</h3>
+<p>대부분의 API는 일관된 응답 구조를 가집니다. 이를 타입으로 정의하면 재사용성과 안정성이 높아집니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 API 응답 타입</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">ApiResponse</span>&lt;T&gt; {
+  <span class="hljs-attr">success</span>: <span class="hljs-built_in">boolean</span>;
+  <span class="hljs-attr">data</span>?: T;
+  <span class="hljs-attr">error</span>?: <span class="hljs-title class_">ApiError</span>;
+  <span class="hljs-attr">message</span>?: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">ApiError</span> {
+  <span class="hljs-attr">code</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">details</span>?: <span class="hljs-title class_">Record</span>&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">unknown</span>&gt;;
+  <span class="hljs-attr">timestamp</span>?: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">PaginatedResponse</span>&lt;T&gt; {
+  <span class="hljs-attr">items</span>: T[];
+  <span class="hljs-attr">pagination</span>: {
+    <span class="hljs-attr">page</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-attr">pageSize</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-attr">total</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-attr">totalPages</span>: <span class="hljs-built_in">number</span>;
+    <span class="hljs-attr">hasNext</span>: <span class="hljs-built_in">boolean</span>;
+    <span class="hljs-attr">hasPrevious</span>: <span class="hljs-built_in">boolean</span>;
+  };
+}
+
+<span class="hljs-comment">// 사용 예시</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchUsers</span>(<span class="hljs-params">
+  <span class="hljs-attr">page</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">1</span>,
+  <span class="hljs-attr">pageSize</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">20</span>
+</span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">PaginatedResponse</span>&lt;<span class="hljs-title class_">User</span>&gt;&gt; {
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users?page=<span class="hljs-subst">${page}</span>&amp;pageSize=<span class="hljs-subst">${pageSize}</span>`</span>);
+  <span class="hljs-keyword">return</span> response.<span class="hljs-title function_">json</span>();
+}
+
+<span class="hljs-keyword">const</span> userPage = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchUsers</span>(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);
+userPage.<span class="hljs-property">items</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">user</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">name</span>));
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Page <span class="hljs-subst">${userPage.pagination.page}</span> of <span class="hljs-subst">${userPage.pagination.totalPages}</span>`</span>);
+</code></pre>
+<h3 id="crud-타입-패턴"><a aria-hidden="true" tabindex="-1" href="#crud-타입-패턴"><span class="icon icon-link"></span></a>CRUD 타입 패턴</h3>
+<p>Create, Read, Update, Delete 작업을 위한 타입을 체계적으로 정의합니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 엔티티</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">role</span>: <span class="hljs-string">&#x27;user&#x27;</span> | <span class="hljs-string">&#x27;admin&#x27;</span> | <span class="hljs-string">&#x27;moderator&#x27;</span>;
+  <span class="hljs-attr">createdAt</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">updatedAt</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">lastLoginAt</span>: <span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span>;
+}
+
+<span class="hljs-comment">// Create: id와 타임스탬프 제외</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">CreateUserDTO</span> = <span class="hljs-title class_">Omit</span>&lt;<span class="hljs-title class_">User</span>, <span class="hljs-string">&#x27;id&#x27;</span> | <span class="hljs-string">&#x27;createdAt&#x27;</span> | <span class="hljs-string">&#x27;updatedAt&#x27;</span> | <span class="hljs-string">&#x27;lastLoginAt&#x27;</span>&gt;;
+
+<span class="hljs-comment">// Update: 모든 필드 선택적 (id 제외)</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UpdateUserDTO</span> = <span class="hljs-title class_">Partial</span>&lt;<span class="hljs-title class_">Omit</span>&lt;<span class="hljs-title class_">User</span>, <span class="hljs-string">&#x27;id&#x27;</span> | <span class="hljs-string">&#x27;createdAt&#x27;</span>&gt;&gt;;
+
+<span class="hljs-comment">// List: 목록에 필요한 필드만</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UserListItem</span> = <span class="hljs-title class_">Pick</span>&lt;<span class="hljs-title class_">User</span>, <span class="hljs-string">&#x27;id&#x27;</span> | <span class="hljs-string">&#x27;name&#x27;</span> | <span class="hljs-string">&#x27;email&#x27;</span> | <span class="hljs-string">&#x27;role&#x27;</span>&gt;;
+
+<span class="hljs-comment">// Detail: 전체 정보</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UserDetail</span> = <span class="hljs-title class_">User</span>;
+
+<span class="hljs-comment">// API 함수들</span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getUsers</span>(<span class="hljs-params">
+  <span class="hljs-attr">page</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">1</span>,
+  <span class="hljs-attr">pageSize</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">20</span>
+</span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">PaginatedResponse</span>&lt;<span class="hljs-title class_">UserListItem</span>&gt;&gt; {
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users?page=<span class="hljs-subst">${page}</span>&amp;pageSize=<span class="hljs-subst">${pageSize}</span>`</span>);
+  <span class="hljs-keyword">return</span> response.<span class="hljs-title function_">json</span>();
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">getUser</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">UserDetail</span>&gt; {
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${id}</span>`</span>);
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">result</span>: <span class="hljs-title class_">ApiResponse</span>&lt;<span class="hljs-title class_">UserDetail</span>&gt; = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+
+  <span class="hljs-keyword">if</span> (!result.<span class="hljs-property">success</span> || !result.<span class="hljs-property">data</span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(result.<span class="hljs-property">error</span>?.<span class="hljs-property">message</span> || <span class="hljs-string">&#x27;Failed to fetch user&#x27;</span>);
+  }
+
+  <span class="hljs-keyword">return</span> result.<span class="hljs-property">data</span>;
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">createUser</span>(<span class="hljs-params"><span class="hljs-attr">data</span>: <span class="hljs-title class_">CreateUserDTO</span></span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">User</span>&gt; {
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;/api/users&#x27;</span>, {
+    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
+    <span class="hljs-attr">headers</span>: { <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span> },
+    <span class="hljs-attr">body</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(data)
+  });
+
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">result</span>: <span class="hljs-title class_">ApiResponse</span>&lt;<span class="hljs-title class_">User</span>&gt; = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+
+  <span class="hljs-keyword">if</span> (!result.<span class="hljs-property">success</span> || !result.<span class="hljs-property">data</span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(result.<span class="hljs-property">error</span>?.<span class="hljs-property">message</span> || <span class="hljs-string">&#x27;Failed to create user&#x27;</span>);
+  }
+
+  <span class="hljs-keyword">return</span> result.<span class="hljs-property">data</span>;
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">updateUser</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">data</span>: <span class="hljs-title class_">UpdateUserDTO</span></span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">User</span>&gt; {
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${id}</span>`</span>, {
+    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PATCH&#x27;</span>,
+    <span class="hljs-attr">headers</span>: { <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span> },
+    <span class="hljs-attr">body</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(data)
+  });
+
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">result</span>: <span class="hljs-title class_">ApiResponse</span>&lt;<span class="hljs-title class_">User</span>&gt; = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+
+  <span class="hljs-keyword">if</span> (!result.<span class="hljs-property">success</span> || !result.<span class="hljs-property">data</span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(result.<span class="hljs-property">error</span>?.<span class="hljs-property">message</span> || <span class="hljs-string">&#x27;Failed to update user&#x27;</span>);
+  }
+
+  <span class="hljs-keyword">return</span> result.<span class="hljs-property">data</span>;
+}
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">deleteUser</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">void</span>&gt; {
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${id}</span>`</span>, {
+    <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;DELETE&#x27;</span>
+  });
+
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">result</span>: <span class="hljs-title class_">ApiResponse</span>&lt;<span class="hljs-built_in">void</span>&gt; = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+
+  <span class="hljs-keyword">if</span> (!result.<span class="hljs-property">success</span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(result.<span class="hljs-property">error</span>?.<span class="hljs-property">message</span> || <span class="hljs-string">&#x27;Failed to delete user&#x27;</span>);
+  }
+}
+
+<span class="hljs-comment">// 사용 예시</span>
+<span class="hljs-comment">// 생성</span>
+<span class="hljs-keyword">const</span> newUser = <span class="hljs-keyword">await</span> <span class="hljs-title function_">createUser</span>({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>,
+  <span class="hljs-attr">email</span>: <span class="hljs-string">&#x27;alice@example.com&#x27;</span>,
+  <span class="hljs-attr">role</span>: <span class="hljs-string">&#x27;user&#x27;</span>
+});
+
+<span class="hljs-comment">// 수정 (일부 필드만)</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title function_">updateUser</span>(<span class="hljs-number">1</span>, { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;New Name&#x27;</span> });
+<span class="hljs-keyword">await</span> <span class="hljs-title function_">updateUser</span>(<span class="hljs-number">1</span>, { <span class="hljs-attr">email</span>: <span class="hljs-string">&#x27;new@email.com&#x27;</span>, <span class="hljs-attr">role</span>: <span class="hljs-string">&#x27;admin&#x27;</span> });
+
+<span class="hljs-comment">// 조회</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title function_">getUser</span>(<span class="hljs-number">1</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">name</span>);
+
+<span class="hljs-comment">// 목록</span>
+<span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> <span class="hljs-title function_">getUsers</span>(<span class="hljs-number">1</span>, <span class="hljs-number">10</span>);
+users.<span class="hljs-property">items</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">u</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(u.<span class="hljs-property">name</span>));
+
+<span class="hljs-comment">// 삭제</span>
+<span class="hljs-keyword">await</span> <span class="hljs-title function_">deleteUser</span>(<span class="hljs-number">1</span>);
+</code></pre>
+<h3 id="api-에러-처리-패턴"><a aria-hidden="true" tabindex="-1" href="#api-에러-처리-패턴"><span class="icon icon-link"></span></a>API 에러 처리 패턴</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 에러 타입 정의</span>
+<span class="hljs-keyword">class</span> <span class="hljs-title class_">ApiError</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">Error</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">
+    <span class="hljs-keyword">public</span> <span class="hljs-attr">statusCode</span>: <span class="hljs-built_in">number</span>,
+    <span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span>,
+    <span class="hljs-keyword">public</span> <span class="hljs-attr">code</span>?: <span class="hljs-built_in">string</span>,
+    <span class="hljs-keyword">public</span> <span class="hljs-attr">details</span>?: <span class="hljs-title class_">Record</span>&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">unknown</span>&gt;
+  </span>) {
+    <span class="hljs-variable language_">super</span>(message);
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = <span class="hljs-string">&#x27;ApiError&#x27;</span>;
+  }
+}
+
+<span class="hljs-comment">// 공통 fetch </span>
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> apiFetch&lt;T&gt;(
+  <span class="hljs-attr">url</span>: <span class="hljs-built_in">string</span>,
+  <span class="hljs-attr">options</span>?: <span class="hljs-title class_">RequestInit</span>
+): <span class="hljs-title class_">Promise</span>&lt;T&gt; {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(url, options);
+
+    <span class="hljs-keyword">if</span> (!response.<span class="hljs-property">ok</span>) {
+      <span class="hljs-keyword">const</span> <span class="hljs-attr">error</span>: <span class="hljs-title class_">ApiResponse</span>&lt;<span class="hljs-built_in">never</span>&gt; = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ApiError</span>(
+        response.<span class="hljs-property">status</span>,
+        error.<span class="hljs-property">error</span>?.<span class="hljs-property">message</span> || <span class="hljs-string">&#x27;API request failed&#x27;</span>,
+        error.<span class="hljs-property">error</span>?.<span class="hljs-property">code</span>,
+        error.<span class="hljs-property">error</span>?.<span class="hljs-property">details</span>
+      );
+    }
+
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">result</span>: <span class="hljs-title class_">ApiResponse</span>&lt;T&gt; = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+
+    <span class="hljs-keyword">if</span> (!result.<span class="hljs-property">success</span> || !result.<span class="hljs-property">data</span>) {
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ApiError</span>(
+        <span class="hljs-number">500</span>,
+        result.<span class="hljs-property">error</span>?.<span class="hljs-property">message</span> || <span class="hljs-string">&#x27;Invalid response&#x27;</span>,
+        result.<span class="hljs-property">error</span>?.<span class="hljs-property">code</span>
+      );
+    }
+
+    <span class="hljs-keyword">return</span> result.<span class="hljs-property">data</span>;
+  } <span class="hljs-keyword">catch</span> (error) {
+    <span class="hljs-keyword">if</span> (error <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">ApiError</span>) {
+      <span class="hljs-keyword">throw</span> error;
+    }
+
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">ApiError</span>(
+      <span class="hljs-number">500</span>,
+      error <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">Error</span> ? error.<span class="hljs-property">message</span> : <span class="hljs-string">&#x27;Unknown error&#x27;</span>
+    );
+  }
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">try</span> {
+  <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> apiFetch&lt;<span class="hljs-title class_">User</span>&gt;(<span class="hljs-string">&#x27;/api/users/1&#x27;</span>);
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">name</span>);
+} <span class="hljs-keyword">catch</span> (error) {
+  <span class="hljs-keyword">if</span> (error <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">ApiError</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">`API Error [<span class="hljs-subst">${error.code}</span>]:`</span>, error.<span class="hljs-property">message</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;Status:&#x27;</span>, error.<span class="hljs-property">statusCode</span>);
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;Details:&#x27;</span>, error.<span class="hljs-property">details</span>);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;Unexpected error:&#x27;</span>, error);
+  }
+}
+</code></pre>
+<h2 id="react-컴포넌트-타입-패턴"><a aria-hidden="true" tabindex="-1" href="#react-컴포넌트-타입-패턴"><span class="icon icon-link"></span></a>React 컴포넌트 타입 패턴</h2>
+<h3 id="기본-컴포넌트-props"><a aria-hidden="true" tabindex="-1" href="#기본-컴포넌트-props"><span class="icon icon-link"></span></a>기본 컴포넌트 Props</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 Props</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">ButtonProps</span> {
+  <span class="hljs-attr">children</span>: <span class="hljs-title class_">React</span>.<span class="hljs-property">ReactNode</span>;
+  <span class="hljs-attr">onClick</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">variant</span>?: <span class="hljs-string">&#x27;primary&#x27;</span> | <span class="hljs-string">&#x27;secondary&#x27;</span> | <span class="hljs-string">&#x27;danger&#x27;</span>;
+  <span class="hljs-attr">size</span>?: <span class="hljs-string">&#x27;small&#x27;</span> | <span class="hljs-string">&#x27;medium&#x27;</span> | <span class="hljs-string">&#x27;large&#x27;</span>;
+  <span class="hljs-attr">disabled</span>?: <span class="hljs-built_in">boolean</span>;
+  <span class="hljs-attr">loading</span>?: <span class="hljs-built_in">boolean</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Button</span>(<span class="hljs-params">{
+  children,
+  onClick,
+  variant = <span class="hljs-string">&#x27;primary&#x27;</span>,
+  size = <span class="hljs-string">&#x27;medium&#x27;</span>,
+  disabled = <span class="hljs-literal">false</span>,
+  loading = <span class="hljs-literal">false</span>
+}: <span class="hljs-title class_">ButtonProps</span></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+      <span class="hljs-attr">onClick</span>=<span class="hljs-string">{onClick}</span>
+      <span class="hljs-attr">disabled</span>=<span class="hljs-string">{disabled</span> || <span class="hljs-attr">loading</span>}
+      <span class="hljs-attr">className</span>=<span class="hljs-string">{</span>`<span class="hljs-attr">btn</span> <span class="hljs-attr">btn-</span>${<span class="hljs-attr">variant</span>} <span class="hljs-attr">btn-</span>${<span class="hljs-attr">size</span>}`}
+    &gt;</span>
+      {loading ? &#x27;Loading...&#x27; : children}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// 사용</span>
+&lt;<span class="hljs-title class_">Button</span> onClick={<span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;clicked&#x27;</span>)}&gt;
+  <span class="hljs-title class_">Click</span> me
+&lt;/<span class="hljs-title class_">Button</span>&gt;
+
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Button</span> <span class="hljs-attr">variant</span>=<span class="hljs-string">&quot;danger&quot;</span> <span class="hljs-attr">size</span>=<span class="hljs-string">&quot;large&quot;</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleDelete}</span>&gt;</span>
+  Delete
+<span class="hljs-tag">&lt;/<span class="hljs-name">Button</span>&gt;</span></span>
+</code></pre>
+<h3 id="제네릭-컴포넌트"><a aria-hidden="true" tabindex="-1" href="#제네릭-컴포넌트"><span class="icon icon-link"></span></a>제네릭 컴포넌트</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// List 컴포넌트</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">ListProps</span>&lt;T&gt; {
+  <span class="hljs-attr">items</span>: T[];
+  <span class="hljs-attr">renderItem</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">item</span>: T, <span class="hljs-attr">index</span>: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-title class_">React</span>.<span class="hljs-property">ReactNode</span>;
+  <span class="hljs-attr">keyExtractor</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">item</span>: T</span>) =&gt;</span> <span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">emptyMessage</span>?: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">loading</span>?: <span class="hljs-built_in">boolean</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title class_">List</span>&lt;T&gt;({
+  items,
+  renderItem,
+  keyExtractor,
+  emptyMessage = <span class="hljs-string">&#x27;No items&#x27;</span>,
+  loading = <span class="hljs-literal">false</span>
+}: <span class="hljs-title class_">ListProps</span>&lt;T&gt;) {
+  <span class="hljs-keyword">if</span> (loading) {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+
+  <span class="hljs-keyword">if</span> (items.<span class="hljs-property">length</span> === <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{emptyMessage}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+      {items.map((item, index) =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{keyExtractor(item)}</span>&gt;</span>
+          {renderItem(item, index)}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      ))}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserList</span>(<span class="hljs-params">{ users }: { users: User[] }</span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">List</span>
+      <span class="hljs-attr">items</span>=<span class="hljs-string">{users}</span>
+      <span class="hljs-attr">renderItem</span>=<span class="hljs-string">{(user)</span> =&gt;</span> (
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>{user.name}<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{user.email}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      )}
+      keyExtractor={(user) =&gt; user.id}
+      emptyMessage=&quot;No users found&quot;
+    /&gt;</span>
+  );
+}
+</code></pre>
+<h3 id="폼-타입-패턴"><a aria-hidden="true" tabindex="-1" href="#폼-타입-패턴"><span class="icon icon-link"></span></a>폼 타입 패턴</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 폼 값 정의</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">FormValues</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">terms</span>: <span class="hljs-built_in">boolean</span>;
+}
+
+<span class="hljs-comment">// 에러 타입 (모든 필드 선택적)</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">FormErrors</span> = <span class="hljs-title class_">Partial</span>&lt;<span class="hljs-title class_">Record</span>&lt;keyof <span class="hljs-title class_">FormValues</span>, <span class="hljs-built_in">string</span>&gt;&gt;;
+
+<span class="hljs-comment">// 또는 더 명시적으로</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">FormErrors</span> {
+  <span class="hljs-attr">name</span>?: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>?: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>?: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">terms</span>?: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-comment">// 폼 Props</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">FormProps</span> {
+  <span class="hljs-attr">initialValues</span>?: <span class="hljs-title class_">Partial</span>&lt;<span class="hljs-title class_">FormValues</span>&gt;;
+  <span class="hljs-attr">onSubmit</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">values</span>: <span class="hljs-title class_">FormValues</span></span>) =&gt;</span> <span class="hljs-built_in">void</span> | <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">void</span>&gt;;
+  <span class="hljs-attr">validate</span>?: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">values</span>: <span class="hljs-title class_">FormValues</span></span>) =&gt;</span> <span class="hljs-title class_">FormErrors</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserForm</span>(<span class="hljs-params">{ initialValues, onSubmit, validate }: <span class="hljs-title class_">FormProps</span></span>) {
+  <span class="hljs-keyword">const</span> [values, setValues] = <span class="hljs-title class_">React</span>.<span class="hljs-property">useState</span>&lt;<span class="hljs-title class_">FormValues</span>&gt;({
+    <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;&#x27;</span>,
+    <span class="hljs-attr">email</span>: <span class="hljs-string">&#x27;&#x27;</span>,
+    <span class="hljs-attr">age</span>: <span class="hljs-number">0</span>,
+    <span class="hljs-attr">terms</span>: <span class="hljs-literal">false</span>,
+    ...initialValues
+  });
+
+  <span class="hljs-keyword">const</span> [errors, setErrors] = <span class="hljs-title class_">React</span>.<span class="hljs-property">useState</span>&lt;<span class="hljs-title class_">FormErrors</span>&gt;({});
+  <span class="hljs-keyword">const</span> [isSubmitting, setIsSubmitting] = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+
+  <span class="hljs-keyword">const</span> handleChange = &lt;K <span class="hljs-keyword">extends</span> keyof <span class="hljs-title class_">FormValues</span>&gt;<span class="hljs-function">(<span class="hljs-params">
+    <span class="hljs-attr">field</span>: K,
+    <span class="hljs-attr">value</span>: <span class="hljs-title class_">FormValues</span>[K]
+  </span>) =&gt;</span> {
+    <span class="hljs-title function_">setValues</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> ({ ...prev, [field]: value }));
+    <span class="hljs-comment">// 에러 클리어</span>
+    <span class="hljs-title function_">setErrors</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> ({ ...prev, [field]: <span class="hljs-literal">undefined</span> }));
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleSubmit</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"><span class="hljs-attr">e</span>: <span class="hljs-title class_">React</span>.<span class="hljs-title class_">FormEvent</span></span>) =&gt; {
+    e.<span class="hljs-title function_">preventDefault</span>();
+
+    <span class="hljs-comment">// 검증</span>
+    <span class="hljs-keyword">if</span> (validate) {
+      <span class="hljs-keyword">const</span> validationErrors = <span class="hljs-title function_">validate</span>(values);
+      <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Object</span>.<span class="hljs-title function_">keys</span>(validationErrors).<span class="hljs-property">length</span> &gt; <span class="hljs-number">0</span>) {
+        <span class="hljs-title function_">setErrors</span>(validationErrors);
+        <span class="hljs-keyword">return</span>;
+      }
+    }
+
+    <span class="hljs-title function_">setIsSubmitting</span>(<span class="hljs-literal">true</span>);
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">await</span> <span class="hljs-title function_">onSubmit</span>(values);
+    } <span class="hljs-keyword">catch</span> (error) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error);
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-title function_">setIsSubmitting</span>(<span class="hljs-literal">false</span>);
+    }
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{handleSubmit}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+          <span class="hljs-attr">value</span>=<span class="hljs-string">{values.name}</span>
+          <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> handleChange(&#x27;name&#x27;, e.target.value)}
+        /&gt;
+        {errors.name &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{errors.name}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;email&quot;</span>
+          <span class="hljs-attr">value</span>=<span class="hljs-string">{values.email}</span>
+          <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> handleChange(&#x27;email&#x27;, e.target.value)}
+        /&gt;
+        {errors.email &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{errors.email}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;number&quot;</span>
+          <span class="hljs-attr">value</span>=<span class="hljs-string">{values.age}</span>
+          <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> handleChange(&#x27;age&#x27;, Number(e.target.value))}
+        /&gt;
+        {errors.age &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{errors.age}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+          <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
+          <span class="hljs-attr">checked</span>=<span class="hljs-string">{values.terms}</span>
+          <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> handleChange(&#x27;terms&#x27;, e.target.checked)}
+        /&gt;
+        {errors.terms &amp;&amp; <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>{errors.terms}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">{isSubmitting}</span>&gt;</span>
+        {isSubmitting ? &#x27;Submitting...&#x27; : &#x27;Submit&#x27;}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleSubmit</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"><span class="hljs-attr">values</span>: <span class="hljs-title class_">FormValues</span></span>) =&gt; {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(values);
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">createUser</span>(values);
+  };
+
+  <span class="hljs-keyword">const</span> validate = (<span class="hljs-attr">values</span>: <span class="hljs-title class_">FormValues</span>): <span class="hljs-function"><span class="hljs-params">FormErrors</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> <span class="hljs-attr">errors</span>: <span class="hljs-title class_">FormErrors</span> = {};
+
+    <span class="hljs-keyword">if</span> (!values.<span class="hljs-property">name</span>) {
+      errors.<span class="hljs-property">name</span> = <span class="hljs-string">&#x27;Name is required&#x27;</span>;
+    }
+
+    <span class="hljs-keyword">if</span> (!values.<span class="hljs-property">email</span>) {
+      errors.<span class="hljs-property">email</span> = <span class="hljs-string">&#x27;Email is required&#x27;</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (!<span class="hljs-regexp">/\S+@\S+\.\S+/</span>.<span class="hljs-title function_">test</span>(values.<span class="hljs-property">email</span>)) {
+      errors.<span class="hljs-property">email</span> = <span class="hljs-string">&#x27;Email is invalid&#x27;</span>;
+    }
+
+    <span class="hljs-keyword">if</span> (values.<span class="hljs-property">age</span> &lt; <span class="hljs-number">18</span>) {
+      errors.<span class="hljs-property">age</span> = <span class="hljs-string">&#x27;Must be 18 or older&#x27;</span>;
+    }
+
+    <span class="hljs-keyword">if</span> (!values.<span class="hljs-property">terms</span>) {
+      errors.<span class="hljs-property">terms</span> = <span class="hljs-string">&#x27;You must accept the terms&#x27;</span>;
+    }
+
+    <span class="hljs-keyword">return</span> errors;
+  };
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserForm</span> <span class="hljs-attr">onSubmit</span>=<span class="hljs-string">{handleSubmit}</span> <span class="hljs-attr">validate</span>=<span class="hljs-string">{validate}</span> /&gt;</span></span>;
+}
+</code></pre>
+<h3 id="이벤트-핸들러-타입"><a aria-hidden="true" tabindex="-1" href="#이벤트-핸들러-타입"><span class="icon icon-link"></span></a>이벤트 핸들러 타입</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 공통 이벤트 핸들러 타입</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">InputProps</span> {
+  <span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">onChange</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">e</span>: <span class="hljs-title class_">React</span>.<span class="hljs-title class_">ChangeEvent</span>&lt;<span class="hljs-title class_">HTMLInputElement</span>&gt;</span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">onBlur</span>?: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">e</span>: <span class="hljs-title class_">React</span>.<span class="hljs-title class_">FocusEvent</span>&lt;<span class="hljs-title class_">HTMLInputElement</span>&gt;</span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">onFocus</span>?: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">e</span>: <span class="hljs-title class_">React</span>.<span class="hljs-title class_">FocusEvent</span>&lt;<span class="hljs-title class_">HTMLInputElement</span>&gt;</span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">SelectProps</span> {
+  <span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">onChange</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">e</span>: <span class="hljs-title class_">React</span>.<span class="hljs-title class_">ChangeEvent</span>&lt;<span class="hljs-title class_">HTMLSelectElement</span>&gt;</span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">options</span>: <span class="hljs-title class_">Array</span>&lt;{ <span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span>; <span class="hljs-attr">label</span>: <span class="hljs-built_in">string</span> }&gt;;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">TextAreaProps</span> {
+  <span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">onChange</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">e</span>: <span class="hljs-title class_">React</span>.<span class="hljs-title class_">ChangeEvent</span>&lt;<span class="hljs-title class_">HTMLTextAreaElement</span>&gt;</span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">rows</span>?: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// 커스텀 핸들러 (합성 이벤트 대신 값만 받기)</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">CustomInputProps</span> {
+  <span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">onChange</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span></span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">onBlur</span>?: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">CustomInput</span>(<span class="hljs-params">{ value, onChange, onBlur }: <span class="hljs-title class_">CustomInputProps</span></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+      <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span>
+      <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>
+      <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> onChange(e.target.value)}
+      onBlur={onBlur}
+    /&gt;</span>
+  );
+}
+</code></pre>
+<h3 id="context-타입-패턴"><a aria-hidden="true" tabindex="-1" href="#context-타입-패턴"><span class="icon icon-link"></span></a>Context 타입 패턴</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// Context 타입 정의</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">AuthContextType</span> {
+  <span class="hljs-attr">user</span>: <span class="hljs-title class_">User</span> | <span class="hljs-literal">null</span>;
+  <span class="hljs-attr">isAuthenticated</span>: <span class="hljs-built_in">boolean</span>;
+  <span class="hljs-attr">isLoading</span>: <span class="hljs-built_in">boolean</span>;
+  <span class="hljs-attr">login</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">password</span>: <span class="hljs-built_in">string</span></span>) =&gt;</span> <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">void</span>&gt;;
+  <span class="hljs-attr">logout</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">updateProfile</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">updates</span>: <span class="hljs-title class_">Partial</span>&lt;<span class="hljs-title class_">User</span>&gt;</span>) =&gt;</span> <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-built_in">void</span>&gt;;
+}
+
+<span class="hljs-comment">// Context 생성 - undefined 허용</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">AuthContext</span> = <span class="hljs-title class_">React</span>.<span class="hljs-property">createContext</span>&lt;<span class="hljs-title class_">AuthContextType</span> | <span class="hljs-literal">undefined</span>&gt;(
+  <span class="hljs-literal">undefined</span>
+);
+
+<span class="hljs-comment">// Provider 컴포넌트</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">AuthProviderProps</span> {
+  <span class="hljs-attr">children</span>: <span class="hljs-title class_">React</span>.<span class="hljs-property">ReactNode</span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">AuthProvider</span>(<span class="hljs-params">{ children }: <span class="hljs-title class_">AuthProviderProps</span></span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title class_">React</span>.<span class="hljs-property">useState</span>&lt;<span class="hljs-title class_">User</span> | <span class="hljs-literal">null</span>&gt;(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [isLoading, setIsLoading] = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">login</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"><span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">password</span>: <span class="hljs-built_in">string</span></span>) =&gt; {
+    <span class="hljs-title function_">setIsLoading</span>(<span class="hljs-literal">true</span>);
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title function_">loginAPI</span>(email, password);
+      <span class="hljs-title function_">setUser</span>(user);
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-title function_">setIsLoading</span>(<span class="hljs-literal">false</span>);
+    }
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">logout</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-title function_">setUser</span>(<span class="hljs-literal">null</span>);
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">updateProfile</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"><span class="hljs-attr">updates</span>: <span class="hljs-title class_">Partial</span>&lt;<span class="hljs-title class_">User</span>&gt;</span>) =&gt; {
+    <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;No user logged in&#x27;</span>);
+    <span class="hljs-keyword">const</span> updated = <span class="hljs-keyword">await</span> <span class="hljs-title function_">updateUserAPI</span>(user.<span class="hljs-property">id</span>, updates);
+    <span class="hljs-title function_">setUser</span>(updated);
+  };
+
+  <span class="hljs-keyword">const</span> <span class="hljs-attr">value</span>: <span class="hljs-title class_">AuthContextType</span> = {
+    user,
+    <span class="hljs-attr">isAuthenticated</span>: user !== <span class="hljs-literal">null</span>,
+    isLoading,
+    login,
+    logout,
+    updateProfile
+  };
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">AuthContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>&gt;</span>{children}<span class="hljs-tag">&lt;/<span class="hljs-name">AuthContext.Provider</span>&gt;</span></span>;
+}
+
+<span class="hljs-comment">// Custom Hook</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useAuth</span>(<span class="hljs-params"></span>): <span class="hljs-title class_">AuthContextType</span> {
+  <span class="hljs-keyword">const</span> context = <span class="hljs-title class_">React</span>.<span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">AuthContext</span>);
+
+  <span class="hljs-keyword">if</span> (context === <span class="hljs-literal">undefined</span>) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;useAuth must be used within AuthProvider&#x27;</span>);
+  }
+
+  <span class="hljs-keyword">return</span> context;
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ProfilePage</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { user, updateProfile, logout } = <span class="hljs-title function_">useAuth</span>();
+
+  <span class="hljs-keyword">if</span> (!user) {
+    <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Please login<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  }
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{user.name}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> updateProfile({ name: &#x27;New Name&#x27; })}&gt;
+        Update Name
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{logout}</span>&gt;</span>Logout<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h2 id="상태-관리-타입-패턴"><a aria-hidden="true" tabindex="-1" href="#상태-관리-타입-패턴"><span class="icon icon-link"></span></a>상태 관리 타입 패턴</h2>
+<h3 id="zustand-패턴"><a aria-hidden="true" tabindex="-1" href="#zustand-패턴"><span class="icon icon-link"></span></a>Zustand 패턴</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> create <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;zustand&#x27;</span>;
+
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">StoreState</span> {
+
+  <span class="hljs-attr">count</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">user</span>: <span class="hljs-title class_">User</span> | <span class="hljs-literal">null</span>;
+  <span class="hljs-attr">theme</span>: <span class="hljs-string">&#x27;light&#x27;</span> | <span class="hljs-string">&#x27;dark&#x27;</span>;
+
+  <span class="hljs-comment">// 액션</span>
+  <span class="hljs-attr">increment</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">decrement</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">reset</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">setUser</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">user</span>: <span class="hljs-title class_">User</span> | <span class="hljs-literal">null</span></span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">toggleTheme</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-comment">// Store 생성</span>
+<span class="hljs-keyword">const</span> useStore = create&lt;<span class="hljs-title class_">StoreState</span>&gt;(<span class="hljs-function">(<span class="hljs-params">set</span>) =&gt;</span> ({
+  <span class="hljs-comment">// 초기 상태</span>
+  <span class="hljs-attr">count</span>: <span class="hljs-number">0</span>,
+  <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span>,
+  <span class="hljs-attr">theme</span>: <span class="hljs-string">&#x27;light&#x27;</span>,
+
+  <span class="hljs-comment">// 액션</span>
+  <span class="hljs-attr">increment</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">set</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> ({ <span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span> + <span class="hljs-number">1</span> })),
+  <span class="hljs-attr">decrement</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">set</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> ({ <span class="hljs-attr">count</span>: state.<span class="hljs-property">count</span> - <span class="hljs-number">1</span> })),
+  <span class="hljs-attr">reset</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">set</span>({ <span class="hljs-attr">count</span>: <span class="hljs-number">0</span> }),
+  <span class="hljs-attr">setUser</span>: <span class="hljs-function">(<span class="hljs-params">user</span>) =&gt;</span> <span class="hljs-title function_">set</span>({ user }),
+  <span class="hljs-attr">toggleTheme</span>: <span class="hljs-function">() =&gt;</span>
+    <span class="hljs-title function_">set</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> ({
+      <span class="hljs-attr">theme</span>: state.<span class="hljs-property">theme</span> === <span class="hljs-string">&#x27;light&#x27;</span> ? <span class="hljs-string">&#x27;dark&#x27;</span> : <span class="hljs-string">&#x27;light&#x27;</span>
+    }))
+}));
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> count = <span class="hljs-title function_">useStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">count</span>);
+  <span class="hljs-keyword">const</span> increment = <span class="hljs-title function_">useStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">increment</span>);
+  <span class="hljs-keyword">const</span> decrement = <span class="hljs-title function_">useStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">decrement</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{increment}</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{decrement}</span>&gt;</span>-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="redux-toolkit-패턴"><a aria-hidden="true" tabindex="-1" href="#redux-toolkit-패턴"><span class="icon icon-link"></span></a>Redux Toolkit 패턴</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">import</span> { createSlice, <span class="hljs-title class_">PayloadAction</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@reduxjs/toolkit&#x27;</span>;
+
+<span class="hljs-comment">// 상태 타입</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">UserState</span> {
+  <span class="hljs-attr">currentUser</span>: <span class="hljs-title class_">User</span> | <span class="hljs-literal">null</span>;
+  <span class="hljs-attr">users</span>: <span class="hljs-title class_">User</span>[];
+  <span class="hljs-attr">loading</span>: <span class="hljs-built_in">boolean</span>;
+  <span class="hljs-attr">error</span>: <span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span>;
+}
+
+<span class="hljs-comment">// 초기 상태</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">initialState</span>: <span class="hljs-title class_">UserState</span> = {
+  <span class="hljs-attr">currentUser</span>: <span class="hljs-literal">null</span>,
+  <span class="hljs-attr">users</span>: [],
+  <span class="hljs-attr">loading</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-attr">error</span>: <span class="hljs-literal">null</span>
+};
+
+<span class="hljs-comment">// Slice 생성</span>
+<span class="hljs-keyword">const</span> userSlice = <span class="hljs-title function_">createSlice</span>({
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;user&#x27;</span>,
+  initialState,
+  <span class="hljs-attr">reducers</span>: {
+    <span class="hljs-attr">setLoading</span>: <span class="hljs-function">(<span class="hljs-params">state, <span class="hljs-attr">action</span>: <span class="hljs-title class_">PayloadAction</span>&lt;<span class="hljs-built_in">boolean</span>&gt;</span>) =&gt;</span> {
+      state.<span class="hljs-property">loading</span> = action.<span class="hljs-property">payload</span>;
+    },
+
+    <span class="hljs-attr">setError</span>: <span class="hljs-function">(<span class="hljs-params">state, <span class="hljs-attr">action</span>: <span class="hljs-title class_">PayloadAction</span>&lt;<span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span>&gt;</span>) =&gt;</span> {
+      state.<span class="hljs-property">error</span> = action.<span class="hljs-property">payload</span>;
+    },
+
+    <span class="hljs-attr">setCurrentUser</span>: <span class="hljs-function">(<span class="hljs-params">state, <span class="hljs-attr">action</span>: <span class="hljs-title class_">PayloadAction</span>&lt;<span class="hljs-title class_">User</span> | <span class="hljs-literal">null</span>&gt;</span>) =&gt;</span> {
+      state.<span class="hljs-property">currentUser</span> = action.<span class="hljs-property">payload</span>;
+    },
+
+    <span class="hljs-attr">setUsers</span>: <span class="hljs-function">(<span class="hljs-params">state, <span class="hljs-attr">action</span>: <span class="hljs-title class_">PayloadAction</span>&lt;<span class="hljs-title class_">User</span>[]&gt;</span>) =&gt;</span> {
+      state.<span class="hljs-property">users</span> = action.<span class="hljs-property">payload</span>;
+    },
+
+    <span class="hljs-attr">addUser</span>: <span class="hljs-function">(<span class="hljs-params">state, <span class="hljs-attr">action</span>: <span class="hljs-title class_">PayloadAction</span>&lt;<span class="hljs-title class_">User</span>&gt;</span>) =&gt;</span> {
+      state.<span class="hljs-property">users</span>.<span class="hljs-title function_">push</span>(action.<span class="hljs-property">payload</span>);
+    },
+
+    <span class="hljs-attr">updateUser</span>: <span class="hljs-function">(<span class="hljs-params">
+      state,
+      <span class="hljs-attr">action</span>: <span class="hljs-title class_">PayloadAction</span>&lt;{ id: <span class="hljs-built_in">number</span>; updates: Partial&lt;User&gt; }&gt;
+    </span>) =&gt;</span> {
+      <span class="hljs-keyword">const</span> { id, updates } = action.<span class="hljs-property">payload</span>;
+      <span class="hljs-keyword">const</span> user = state.<span class="hljs-property">users</span>.<span class="hljs-title function_">find</span>(<span class="hljs-function">(<span class="hljs-params">u</span>) =&gt;</span> u.<span class="hljs-property">id</span> === id);
+      <span class="hljs-keyword">if</span> (user) {
+        <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">assign</span>(user, updates);
+      }
+    },
+
+    <span class="hljs-attr">deleteUser</span>: <span class="hljs-function">(<span class="hljs-params">state, <span class="hljs-attr">action</span>: <span class="hljs-title class_">PayloadAction</span>&lt;<span class="hljs-built_in">number</span>&gt;</span>) =&gt;</span> {
+      state.<span class="hljs-property">users</span> = state.<span class="hljs-property">users</span>.<span class="hljs-title function_">filter</span>(<span class="hljs-function">(<span class="hljs-params">u</span>) =&gt;</span> u.<span class="hljs-property">id</span> !== action.<span class="hljs-property">payload</span>);
+    }
+  }
+});
+
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> {
+  setLoading,
+  setError,
+  setCurrentUser,
+  setUsers,
+  addUser,
+  updateUser,
+  deleteUser
+} = userSlice.<span class="hljs-property">actions</span>;
+
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> userSlice.<span class="hljs-property">reducer</span>;
+
+<span class="hljs-comment">// Thunk 예시</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchUsers</span> = (<span class="hljs-params"></span>) =&gt; <span class="hljs-title function_">async</span> (<span class="hljs-attr">dispatch</span>: <span class="hljs-title class_">AppDispatch</span>) =&gt; {
+  <span class="hljs-title function_">dispatch</span>(<span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">true</span>));
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> <span class="hljs-title function_">getUsersAPI</span>();
+    <span class="hljs-title function_">dispatch</span>(<span class="hljs-title function_">setUsers</span>(users));
+  } <span class="hljs-keyword">catch</span> (error) {
+    <span class="hljs-title function_">dispatch</span>(<span class="hljs-title function_">setError</span>(error <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">Error</span> ? error.<span class="hljs-property">message</span> : <span class="hljs-string">&#x27;Unknown error&#x27;</span>));
+  } <span class="hljs-keyword">finally</span> {
+    <span class="hljs-title function_">dispatch</span>(<span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>));
+  }
+};
+</code></pre>
+<h2 id="고급-타입-패턴"><a aria-hidden="true" tabindex="-1" href="#고급-타입-패턴"><span class="icon icon-link"></span></a>고급 타입 패턴</h2>
+<h3 id="mapped-types"><a aria-hidden="true" tabindex="-1" href="#mapped-types"><span class="icon icon-link"></span></a>Mapped Types</h3>
+<p>객체의 모든 키를 순회하며 새로운 타입을 만듭니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 모든 속성을 선택적으로</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Optional</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T]?: T[P];
+};
+
+<span class="hljs-comment">// 모든 속성을 nullable로</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Nullable</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T]: T[P] | <span class="hljs-literal">null</span>;
+};
+
+<span class="hljs-comment">// 특정 키만 선택적으로</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">PartialBy</span>&lt;T, K <span class="hljs-keyword">extends</span> keyof T&gt; = <span class="hljs-title class_">Omit</span>&lt;T, K&gt; &amp; <span class="hljs-title class_">Partial</span>&lt;<span class="hljs-title class_">Pick</span>&lt;T, K&gt;&gt;;
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// name과 email만 선택적</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UserWithOptionalContact</span> = <span class="hljs-title class_">PartialBy</span>&lt;<span class="hljs-title class_">User</span>, <span class="hljs-string">&#x27;name&#x27;</span> | <span class="hljs-string">&#x27;email&#x27;</span>&gt;;
+<span class="hljs-comment">// { id: number; age: number; name?: string; email?: string }</span>
+
+<span class="hljs-comment">// 함수 타입을 Promise로 변환</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Promisify</span>&lt;T&gt; = {
+  [P <span class="hljs-keyword">in</span> keyof T]: T[P] <span class="hljs-title function_">extends</span> (...<span class="hljs-attr">args</span>: infer A) =&gt; infer R
+    ? <span class="hljs-function">(<span class="hljs-params">...<span class="hljs-attr">args</span>: A</span>) =&gt;</span> <span class="hljs-title class_">Promise</span>&lt;R&gt;
+    : T[P];
+};
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">SyncAPI</span> {
+  <span class="hljs-attr">getUser</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-title class_">User</span>;
+  <span class="hljs-attr">deleteUser</span>: <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">void</span>;
+  <span class="hljs-attr">count</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">AsyncAPI</span> = <span class="hljs-title class_">Promisify</span>&lt;<span class="hljs-title class_">SyncAPI</span>&gt;;
+<span class="hljs-comment">// {</span>
+<span class="hljs-comment">//   getUser: (id: number) =&gt; Promise&lt;User&gt;;</span>
+<span class="hljs-comment">//   deleteUser: (id: number) =&gt; Promise&lt;void&gt;;</span>
+<span class="hljs-comment">//   count: number;</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+<h3 id="conditional-types"><a aria-hidden="true" tabindex="-1" href="#conditional-types"><span class="icon icon-link"></span></a>Conditional Types</h3>
+<p>조건에 따라 다른 타입을 반환합니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 조건부 타입</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">IsString</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span> ? <span class="hljs-literal">true</span> : <span class="hljs-literal">false</span>;
+
+<span class="hljs-keyword">type</span> A = <span class="hljs-title class_">IsString</span>&lt;<span class="hljs-built_in">string</span>&gt;; <span class="hljs-comment">// true</span>
+<span class="hljs-keyword">type</span> B = <span class="hljs-title class_">IsString</span>&lt;<span class="hljs-built_in">number</span>&gt;; <span class="hljs-comment">// false</span>
+
+<span class="hljs-comment">// 실용적 예시: NonNullable</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">NonNullable</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-literal">null</span> | <span class="hljs-literal">undefined</span> ? <span class="hljs-built_in">never</span> : T;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">T1</span> = <span class="hljs-title class_">NonNullable</span>&lt;<span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span>&gt;; <span class="hljs-comment">// string</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">T2</span> = <span class="hljs-title class_">NonNullable</span>&lt;<span class="hljs-built_in">number</span> | <span class="hljs-literal">undefined</span>&gt;; <span class="hljs-comment">// number</span>
+
+<span class="hljs-comment">// 중첩 조건부 타입</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">TypeName</span>&lt;T&gt; =
+  T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">string</span> ? <span class="hljs-string">&#x27;string&#x27;</span> :
+  T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">number</span> ? <span class="hljs-string">&#x27;number&#x27;</span> :
+  T <span class="hljs-keyword">extends</span> <span class="hljs-built_in">boolean</span> ? <span class="hljs-string">&#x27;boolean&#x27;</span> :
+  T <span class="hljs-keyword">extends</span> <span class="hljs-literal">undefined</span> ? <span class="hljs-string">&#x27;undefined&#x27;</span> :
+  T <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Function</span> ? <span class="hljs-string">&#x27;function&#x27;</span> :
+  <span class="hljs-string">&#x27;object&#x27;</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">T3</span> = <span class="hljs-title class_">TypeName</span>&lt;<span class="hljs-built_in">string</span>&gt;; <span class="hljs-comment">// &#x27;string&#x27;</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">T4</span> = <span class="hljs-title class_">TypeName</span>&lt;<span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>&gt;; <span class="hljs-comment">// &#x27;function&#x27;</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">T5</span> = <span class="hljs-title class_">TypeName</span>&lt;{}&gt;; <span class="hljs-comment">// &#x27;object&#x27;</span>
+
+<span class="hljs-comment">// Flatten 타입 (배열을 펼침)</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Flatten</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Array</span>&lt;infer U&gt; ? U : T;
+
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">T6</span> = <span class="hljs-title class_">Flatten</span>&lt;<span class="hljs-built_in">string</span>[]&gt;; <span class="hljs-comment">// string</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">T7</span> = <span class="hljs-title class_">Flatten</span>&lt;<span class="hljs-built_in">number</span>&gt;; <span class="hljs-comment">// number</span>
+
+<span class="hljs-comment">// 깊은 readonly</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">DeepReadonly</span>&lt;T&gt; = {
+  <span class="hljs-keyword">readonly</span> [P <span class="hljs-keyword">in</span> keyof T]: T[P] <span class="hljs-keyword">extends</span> <span class="hljs-built_in">object</span>
+    ? <span class="hljs-title class_">DeepReadonly</span>&lt;T[P]&gt;
+    : T[P];
+};
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">profile</span>: {
+    <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+    <span class="hljs-attr">settings</span>: {
+      <span class="hljs-attr">theme</span>: <span class="hljs-built_in">string</span>;
+    };
+  };
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ReadonlyUser</span> = <span class="hljs-title class_">DeepReadonly</span>&lt;<span class="hljs-title class_">User</span>&gt;;
+<span class="hljs-comment">// {</span>
+<span class="hljs-comment">//   readonly id: number;</span>
+<span class="hljs-comment">//   readonly profile: {</span>
+<span class="hljs-comment">//     readonly name: string;</span>
+<span class="hljs-comment">//     readonly settings: {</span>
+<span class="hljs-comment">//       readonly theme: string;</span>
+<span class="hljs-comment">//     };</span>
+<span class="hljs-comment">//   };</span>
+<span class="hljs-comment">// }</span>
+</code></pre>
+<h2 id="실무-팁-정리"><a aria-hidden="true" tabindex="-1" href="#실무-팁-정리"><span class="icon icon-link"></span></a>실무 팁 정리</h2>
+<h3 id="1-타입-우선-개발"><a aria-hidden="true" tabindex="-1" href="#1-타입-우선-개발"><span class="icon icon-link"></span></a>1. 타입 우선 개발</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 타입부터 정의</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">TodoItem</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">title</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">completed</span>: <span class="hljs-built_in">boolean</span>;
+  <span class="hljs-attr">createdAt</span>: <span class="hljs-title class_">Date</span>;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">TodoState</span> {
+  <span class="hljs-attr">items</span>: <span class="hljs-title class_">TodoItem</span>[];
+  <span class="hljs-attr">filter</span>: <span class="hljs-string">&#x27;all&#x27;</span> | <span class="hljs-string">&#x27;active&#x27;</span> | <span class="hljs-string">&#x27;completed&#x27;</span>;
+}
+
+<span class="hljs-comment">// 그 다음 구현</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">TodoList</span>(<span class="hljs-params">{ items, filter }: { items: TodoItem[]; filter: TodoState[<span class="hljs-string">&#x27;filter&#x27;</span>] }</span>) {
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<h3 id="2-타입-재사용"><a aria-hidden="true" tabindex="-1" href="#2-타입-재사용"><span class="icon icon-link"></span></a>2. 타입 재사용</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 공통 타입은 별도 파일로</span>
+<span class="hljs-comment">// types/common.ts</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">PaginatedResponse</span>&lt;T&gt; { <span class="hljs-comment">/* ... */</span> }
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">ApiResponse</span>&lt;T&gt; { <span class="hljs-comment">/* ... */</span> }
+
+<span class="hljs-comment">// types/user.ts</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> { <span class="hljs-comment">/* ... */</span> }
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">type</span> <span class="hljs-title class_">CreateUserDTO</span> = <span class="hljs-title class_">Omit</span>&lt;<span class="hljs-title class_">User</span>, <span class="hljs-string">&#x27;id&#x27;</span> | <span class="hljs-string">&#x27;createdAt&#x27;</span>&gt;;
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">User</span>, <span class="hljs-title class_">CreateUserDTO</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@/types/user&#x27;</span>;
+<span class="hljs-keyword">import</span> { <span class="hljs-title class_">PaginatedResponse</span> } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@/types/common&#x27;</span>;
+</code></pre>
+<h3 id="3-타입-좁히기-우선"><a aria-hidden="true" tabindex="-1" href="#3-타입-좁히기-우선"><span class="icon icon-link"></span></a>3. 타입 좁히기 우선</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// as 남발</span>
+<span class="hljs-keyword">const</span> element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;myId&#x27;</span>) <span class="hljs-keyword">as</span> <span class="hljs-title class_">HTMLInputElement</span>;
+
+<span class="hljs-comment">// 타입 가드 사용</span>
+<span class="hljs-keyword">const</span> element = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;myId&#x27;</span>);
+<span class="hljs-keyword">if</span> (element <span class="hljs-keyword">instanceof</span> <span class="hljs-title class_">HTMLInputElement</span>) {
+  element.<span class="hljs-property">value</span> = <span class="hljs-string">&#x27;test&#x27;</span>;
+}
+</code></pre>
+<h2 id="마치며"><a aria-hidden="true" tabindex="-1" href="#마치며"><span class="icon icon-link"></span></a>마치며</h2>
+<p>매번 정리 해야지 해야지 하다 이번에 좀 더 차분하게 정리 할 수 있어서 좋았습니다.
+TypeScript를 처음 접하면 타입 정의가 번거롭게 느껴지지만, 한번 제대로 정의해두면:</p>
+<ul>
+<li>자동완성으로 개발 속도 향상</li>
+<li>리팩토링이 안전하고 쉬워짐</li>
+<li>런타임 에러가 컴파일 타임에 잡힘</li>
+<li>코드가 문서화되어 협업이 쉬워짐
+같은 좋은 점들이 있다고 생각합니다!</li>
+</ul>
+<p>이 시리즈가 TS를 실무에서 효과적으로 사용하는 데 도움이 되길..!</p></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group" href="/posts/frontend/react-hooks-part1/"><div class="text-sm text-muted-foreground mb-2">← 이전 글</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">React Hooks 모음 1</div></a><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right" href="/posts/frontend/typescript-advanced-part1/"><div class="text-sm text-muted-foreground mb-2">다음 글 →</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">TypeScript 유틸리티 타입과 any</div></a></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-91788950a704a307.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-91788950a704a307.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d5ebba4595249be0.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"rq94cetZS17rr6VXyxt_m\",\"p\":\"\",\"c\":[\"\",\"posts\",\"frontend\",\"typescript-advanced-part2\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"frontend\",\"d\"],{\"children\":[[\"slug\",\"typescript-advanced-part2\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d5ebba4595249be0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"frontend\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"typescript-advanced-part2\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T53e2,"])</script><script>self.__next_f.push([1,"\n시리즈의 마지막은 실무에서 바로 적용할 수 있는 타입 패턴과 고급 타입 기법을 다룹니다.\n\n## 시리즈 구성\n\n- **Part 1**: 기본 타입, 객체, 함수, Union/Intersection\n- **Part 2**: 타입 좁히기와 제네릭\n- **Part 3**: 유틸리티 타입과 any\n- **Part 4 (현재 글)**: 실무 패턴과 고급 타입\n\n## 실무 API 타입 패턴\n\n### 공통 응답 구조\n\n대부분의 API는 일관된 응답 구조를 가집니다. 이를 타입으로 정의하면 재사용성과 안정성이 높아집니다.\n\n```typescript\n// 기본 API 응답 타입\ninterface ApiResponse\u003cT\u003e {\n  success: boolean;\n  data?: T;\n  error?: ApiError;\n  message?: string;\n}\n\ninterface ApiError {\n  code: string;\n  message: string;\n  details?: Record\u003cstring, unknown\u003e;\n  timestamp?: string;\n}\n\ninterface PaginatedResponse\u003cT\u003e {\n  items: T[];\n  pagination: {\n    page: number;\n    pageSize: number;\n    total: number;\n    totalPages: number;\n    hasNext: boolean;\n    hasPrevious: boolean;\n  };\n}\n\n// 사용 예시\nasync function fetchUsers(\n  page: number = 1,\n  pageSize: number = 20\n): Promise\u003cPaginatedResponse\u003cUser\u003e\u003e {\n  const response = await fetch(`/api/users?page=${page}\u0026pageSize=${pageSize}`);\n  return response.json();\n}\n\nconst userPage = await fetchUsers(1, 10);\nuserPage.items.forEach(user =\u003e console.log(user.name));\nconsole.log(`Page ${userPage.pagination.page} of ${userPage.pagination.totalPages}`);\n```\n\n### CRUD 타입 패턴\n\nCreate, Read, Update, Delete 작업을 위한 타입을 체계적으로 정의합니다.\n\n```typescript\n// 기본 엔티티\ninterface User {\n  id: number;\n  name: string;\n  email: string;\n  role: 'user' | 'admin' | 'moderator';\n  createdAt: string;\n  updatedAt: string;\n  lastLoginAt: string | null;\n}\n\n// Create: id와 타임스탬프 제외\ntype CreateUserDTO = Omit\u003cUser, 'id' | 'createdAt' | 'updatedAt' | 'lastLoginAt'\u003e;\n\n// Update: 모든 필드 선택적 (id 제외)\ntype UpdateUserDTO = Partial\u003cOmit\u003cUser, 'id' | 'createdAt'\u003e\u003e;\n\n// List: 목록에 필요한 필드만\ntype UserListItem = Pick\u003cUser, 'id' | 'name' | 'email' | 'role'\u003e;\n\n// Detail: 전체 정보\ntype UserDetail = User;\n\n// API 함수들\nasync function getUsers(\n  page: number = 1,\n  pageSize: number = 20\n): Promise\u003cPaginatedResponse\u003cUserListItem\u003e\u003e {\n  const response = await fetch(`/api/users?page=${page}\u0026pageSize=${pageSize}`);\n  return response.json();\n}\n\nasync function getUser(id: number): Promise\u003cUserDetail\u003e {\n  const response = await fetch(`/api/users/${id}`);\n  const result: ApiResponse\u003cUserDetail\u003e = await response.json();\n\n  if (!result.success || !result.data) {\n    throw new Error(result.error?.message || 'Failed to fetch user');\n  }\n\n  return result.data;\n}\n\nasync function createUser(data: CreateUserDTO): Promise\u003cUser\u003e {\n  const response = await fetch('/api/users', {\n    method: 'POST',\n    headers: { 'Content-Type': 'application/json' },\n    body: JSON.stringify(data)\n  });\n\n  const result: ApiResponse\u003cUser\u003e = await response.json();\n\n  if (!result.success || !result.data) {\n    throw new Error(result.error?.message || 'Failed to create user');\n  }\n\n  return result.data;\n}\n\nasync function updateUser(id: number, data: UpdateUserDTO): Promise\u003cUser\u003e {\n  const response = await fetch(`/api/users/${id}`, {\n    method: 'PATCH',\n    headers: { 'Content-Type': 'application/json' },\n    body: JSON.stringify(data)\n  });\n\n  const result: ApiResponse\u003cUser\u003e = await response.json();\n\n  if (!result.success || !result.data) {\n    throw new Error(result.error?.message || 'Failed to update user');\n  }\n\n  return result.data;\n}\n\nasync function deleteUser(id: number): Promise\u003cvoid\u003e {\n  const response = await fetch(`/api/users/${id}`, {\n    method: 'DELETE'\n  });\n\n  const result: ApiResponse\u003cvoid\u003e = await response.json();\n\n  if (!result.success) {\n    throw new Error(result.error?.message || 'Failed to delete user');\n  }\n}\n\n// 사용 예시\n// 생성\nconst newUser = await createUser({\n  name: 'Alice',\n  email: 'alice@example.com',\n  role: 'user'\n});\n\n// 수정 (일부 필드만)\nawait updateUser(1, { name: 'New Name' });\nawait updateUser(1, { email: 'new@email.com', role: 'admin' });\n\n// 조회\nconst user = await getUser(1);\nconsole.log(user.name);\n\n// 목록\nconst users = await getUsers(1, 10);\nusers.items.forEach(u =\u003e console.log(u.name));\n\n// 삭제\nawait deleteUser(1);\n```\n\n### API 에러 처리 패턴\n\n```typescript\n// 에러 타입 정의\nclass ApiError extends Error {\n  constructor(\n    public statusCode: number,\n    message: string,\n    public code?: string,\n    public details?: Record\u003cstring, unknown\u003e\n  ) {\n    super(message);\n    this.name = 'ApiError';\n  }\n}\n\n// 공통 fetch \nasync function apiFetch\u003cT\u003e(\n  url: string,\n  options?: RequestInit\n): Promise\u003cT\u003e {\n  try {\n    const response = await fetch(url, options);\n\n    if (!response.ok) {\n      const error: ApiResponse\u003cnever\u003e = await response.json();\n      throw new ApiError(\n        response.status,\n        error.error?.message || 'API request failed',\n        error.error?.code,\n        error.error?.details\n      );\n    }\n\n    const result: ApiResponse\u003cT\u003e = await response.json();\n\n    if (!result.success || !result.data) {\n      throw new ApiError(\n        500,\n        result.error?.message || 'Invalid response',\n        result.error?.code\n      );\n    }\n\n    return result.data;\n  } catch (error) {\n    if (error instanceof ApiError) {\n      throw error;\n    }\n\n    throw new ApiError(\n      500,\n      error instanceof Error ? error.message : 'Unknown error'\n    );\n  }\n}\n\n// 사용\ntry {\n  const user = await apiFetch\u003cUser\u003e('/api/users/1');\n  console.log(user.name);\n} catch (error) {\n  if (error instanceof ApiError) {\n    console.error(`API Error [${error.code}]:`, error.message);\n    console.error('Status:', error.statusCode);\n    console.error('Details:', error.details);\n  } else {\n    console.error('Unexpected error:', error);\n  }\n}\n```\n\n## React 컴포넌트 타입 패턴\n\n### 기본 컴포넌트 Props\n\n```typescript\n// 기본 Props\ninterface ButtonProps {\n  children: React.ReactNode;\n  onClick: () =\u003e void;\n  variant?: 'primary' | 'secondary' | 'danger';\n  size?: 'small' | 'medium' | 'large';\n  disabled?: boolean;\n  loading?: boolean;\n}\n\nfunction Button({\n  children,\n  onClick,\n  variant = 'primary',\n  size = 'medium',\n  disabled = false,\n  loading = false\n}: ButtonProps) {\n  return (\n    \u003cbutton\n      onClick={onClick}\n      disabled={disabled || loading}\n      className={`btn btn-${variant} btn-${size}`}\n    \u003e\n      {loading ? 'Loading...' : children}\n    \u003c/button\u003e\n  );\n}\n\n// 사용\n\u003cButton onClick={() =\u003e console.log('clicked')}\u003e\n  Click me\n\u003c/Button\u003e\n\n\u003cButton variant=\"danger\" size=\"large\" onClick={handleDelete}\u003e\n  Delete\n\u003c/Button\u003e\n```\n\n### 제네릭 컴포넌트\n\n```typescript\n// List 컴포넌트\ninterface ListProps\u003cT\u003e {\n  items: T[];\n  renderItem: (item: T, index: number) =\u003e React.ReactNode;\n  keyExtractor: (item: T) =\u003e string | number;\n  emptyMessage?: string;\n  loading?: boolean;\n}\n\nfunction List\u003cT\u003e({\n  items,\n  renderItem,\n  keyExtractor,\n  emptyMessage = 'No items',\n  loading = false\n}: ListProps\u003cT\u003e) {\n  if (loading) {\n    return \u003cdiv\u003eLoading...\u003c/div\u003e;\n  }\n\n  if (items.length === 0) {\n    return \u003cdiv\u003e{emptyMessage}\u003c/div\u003e;\n  }\n\n  return (\n    \u003cul\u003e\n      {items.map((item, index) =\u003e (\n        \u003cli key={keyExtractor(item)}\u003e\n          {renderItem(item, index)}\n        \u003c/li\u003e\n      ))}\n    \u003c/ul\u003e\n  );\n}\n\n// 사용\ninterface User {\n  id: number;\n  name: string;\n  email: string;\n}\n\nfunction UserList({ users }: { users: User[] }) {\n  return (\n    \u003cList\n      items={users}\n      renderItem={(user) =\u003e (\n        \u003cdiv\u003e\n          \u003ch3\u003e{user.name}\u003c/h3\u003e\n          \u003cp\u003e{user.email}\u003c/p\u003e\n        \u003c/div\u003e\n      )}\n      keyExtractor={(user) =\u003e user.id}\n      emptyMessage=\"No users found\"\n    /\u003e\n  );\n}\n```\n\n### 폼 타입 패턴\n\n```typescript\n// 폼 값 정의\ninterface FormValues {\n  name: string;\n  email: string;\n  age: number;\n  terms: boolean;\n}\n\n// 에러 타입 (모든 필드 선택적)\ntype FormErrors = Partial\u003cRecord\u003ckeyof FormValues, string\u003e\u003e;\n\n// 또는 더 명시적으로\ninterface FormErrors {\n  name?: string;\n  email?: string;\n  age?: string;\n  terms?: string;\n}\n\n// 폼 Props\ninterface FormProps {\n  initialValues?: Partial\u003cFormValues\u003e;\n  onSubmit: (values: FormValues) =\u003e void | Promise\u003cvoid\u003e;\n  validate?: (values: FormValues) =\u003e FormErrors;\n}\n\nfunction UserForm({ initialValues, onSubmit, validate }: FormProps) {\n  const [values, setValues] = React.useState\u003cFormValues\u003e({\n    name: '',\n    email: '',\n    age: 0,\n    terms: false,\n    ...initialValues\n  });\n\n  const [errors, setErrors] = React.useState\u003cFormErrors\u003e({});\n  const [isSubmitting, setIsSubmitting] = React.useState(false);\n\n  const handleChange = \u003cK extends keyof FormValues\u003e(\n    field: K,\n    value: FormValues[K]\n  ) =\u003e {\n    setValues(prev =\u003e ({ ...prev, [field]: value }));\n    // 에러 클리어\n    setErrors(prev =\u003e ({ ...prev, [field]: undefined }));\n  };\n\n  const handleSubmit = async (e: React.FormEvent) =\u003e {\n    e.preventDefault();\n\n    // 검증\n    if (validate) {\n      const validationErrors = validate(values);\n      if (Object.keys(validationErrors).length \u003e 0) {\n        setErrors(validationErrors);\n        return;\n      }\n    }\n\n    setIsSubmitting(true);\n    try {\n      await onSubmit(values);\n    } catch (error) {\n      console.error(error);\n    } finally {\n      setIsSubmitting(false);\n    }\n  };\n\n  return (\n    \u003cform onSubmit={handleSubmit}\u003e\n      \u003cdiv\u003e\n        \u003cinput\n          type=\"text\"\n          value={values.name}\n          onChange={(e) =\u003e handleChange('name', e.target.value)}\n        /\u003e\n        {errors.name \u0026\u0026 \u003cspan\u003e{errors.name}\u003c/span\u003e}\n      \u003c/div\u003e\n\n      \u003cdiv\u003e\n        \u003cinput\n          type=\"email\"\n          value={values.email}\n          onChange={(e) =\u003e handleChange('email', e.target.value)}\n        /\u003e\n        {errors.email \u0026\u0026 \u003cspan\u003e{errors.email}\u003c/span\u003e}\n      \u003c/div\u003e\n\n      \u003cdiv\u003e\n        \u003cinput\n          type=\"number\"\n          value={values.age}\n          onChange={(e) =\u003e handleChange('age', Number(e.target.value))}\n        /\u003e\n        {errors.age \u0026\u0026 \u003cspan\u003e{errors.age}\u003c/span\u003e}\n      \u003c/div\u003e\n\n      \u003cdiv\u003e\n        \u003cinput\n          type=\"checkbox\"\n          checked={values.terms}\n          onChange={(e) =\u003e handleChange('terms', e.target.checked)}\n        /\u003e\n        {errors.terms \u0026\u0026 \u003cspan\u003e{errors.terms}\u003c/span\u003e}\n      \u003c/div\u003e\n\n      \u003cbutton type=\"submit\" disabled={isSubmitting}\u003e\n        {isSubmitting ? 'Submitting...' : 'Submit'}\n      \u003c/button\u003e\n    \u003c/form\u003e\n  );\n}\n\n// 사용\nfunction App() {\n  const handleSubmit = async (values: FormValues) =\u003e {\n    console.log(values);\n    await createUser(values);\n  };\n\n  const validate = (values: FormValues): FormErrors =\u003e {\n    const errors: FormErrors = {};\n\n    if (!values.name) {\n      errors.name = 'Name is required';\n    }\n\n    if (!values.email) {\n      errors.email = 'Email is required';\n    } else if (!/\\S+@\\S+\\.\\S+/.test(values.email)) {\n      errors.email = 'Email is invalid';\n    }\n\n    if (values.age \u003c 18) {\n      errors.age = 'Must be 18 or older';\n    }\n\n    if (!values.terms) {\n      errors.terms = 'You must accept the terms';\n    }\n\n    return errors;\n  };\n\n  return \u003cUserForm onSubmit={handleSubmit} validate={validate} /\u003e;\n}\n```\n\n### 이벤트 핸들러 타입\n\n```typescript\n// 공통 이벤트 핸들러 타입\ninterface InputProps {\n  value: string;\n  onChange: (e: React.ChangeEvent\u003cHTMLInputElement\u003e) =\u003e void;\n  onBlur?: (e: React.FocusEvent\u003cHTMLInputElement\u003e) =\u003e void;\n  onFocus?: (e: React.FocusEvent\u003cHTMLInputElement\u003e) =\u003e void;\n}\n\ninterface SelectProps {\n  value: string;\n  onChange: (e: React.ChangeEvent\u003cHTMLSelectElement\u003e) =\u003e void;\n  options: Array\u003c{ value: string; label: string }\u003e;\n}\n\ninterface TextAreaProps {\n  value: string;\n  onChange: (e: React.ChangeEvent\u003cHTMLTextAreaElement\u003e) =\u003e void;\n  rows?: number;\n}\n\n// 커스텀 핸들러 (합성 이벤트 대신 값만 받기)\ninterface CustomInputProps {\n  value: string;\n  onChange: (value: string) =\u003e void;\n  onBlur?: () =\u003e void;\n}\n\nfunction CustomInput({ value, onChange, onBlur }: CustomInputProps) {\n  return (\n    \u003cinput\n      type=\"text\"\n      value={value}\n      onChange={(e) =\u003e onChange(e.target.value)}\n      onBlur={onBlur}\n    /\u003e\n  );\n}\n```\n\n### Context 타입 패턴\n\n```typescript\n// Context 타입 정의\ninterface AuthContextType {\n  user: User | null;\n  isAuthenticated: boolean;\n  isLoading: boolean;\n  login: (email: string, password: string) =\u003e Promise\u003cvoid\u003e;\n  logout: () =\u003e void;\n  updateProfile: (updates: Partial\u003cUser\u003e) =\u003e Promise\u003cvoid\u003e;\n}\n\n// Context 생성 - undefined 허용\nconst AuthContext = React.createContext\u003cAuthContextType | undefined\u003e(\n  undefined\n);\n\n// Provider 컴포넌트\ninterface AuthProviderProps {\n  children: React.ReactNode;\n}\n\nfunction AuthProvider({ children }: AuthProviderProps) {\n  const [user, setUser] = React.useState\u003cUser | null\u003e(null);\n  const [isLoading, setIsLoading] = React.useState(true);\n\n  const login = async (email: string, password: string) =\u003e {\n    setIsLoading(true);\n    try {\n      const user = await loginAPI(email, password);\n      setUser(user);\n    } finally {\n      setIsLoading(false);\n    }\n  };\n\n  const logout = () =\u003e {\n    setUser(null);\n  };\n\n  const updateProfile = async (updates: Partial\u003cUser\u003e) =\u003e {\n    if (!user) throw new Error('No user logged in');\n    const updated = await updateUserAPI(user.id, updates);\n    setUser(updated);\n  };\n\n  const value: AuthContextType = {\n    user,\n    isAuthenticated: user !== null,\n    isLoading,\n    login,\n    logout,\n    updateProfile\n  };\n\n  return \u003cAuthContext.Provider value={value}\u003e{children}\u003c/AuthContext.Provider\u003e;\n}\n\n// Custom Hook\nfunction useAuth(): AuthContextType {\n  const context = React.useContext(AuthContext);\n\n  if (context === undefined) {\n    throw new Error('useAuth must be used within AuthProvider');\n  }\n\n  return context;\n}\n\n// 사용\nfunction ProfilePage() {\n  const { user, updateProfile, logout } = useAuth();\n\n  if (!user) {\n    return \u003cdiv\u003ePlease login\u003c/div\u003e;\n  }\n\n  return (\n    \u003cdiv\u003e\n      \u003ch1\u003e{user.name}\u003c/h1\u003e\n      \u003cbutton onClick={() =\u003e updateProfile({ name: 'New Name' })}\u003e\n        Update Name\n      \u003c/button\u003e\n      \u003cbutton onClick={logout}\u003eLogout\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n## 상태 관리 타입 패턴\n\n### Zustand 패턴\n\n```typescript\nimport create from 'zustand';\n\n\ninterface StoreState {\n\n  count: number;\n  user: User | null;\n  theme: 'light' | 'dark';\n\n  // 액션\n  increment: () =\u003e void;\n  decrement: () =\u003e void;\n  reset: () =\u003e void;\n  setUser: (user: User | null) =\u003e void;\n  toggleTheme: () =\u003e void;\n}\n\n// Store 생성\nconst useStore = create\u003cStoreState\u003e((set) =\u003e ({\n  // 초기 상태\n  count: 0,\n  user: null,\n  theme: 'light',\n\n  // 액션\n  increment: () =\u003e set((state) =\u003e ({ count: state.count + 1 })),\n  decrement: () =\u003e set((state) =\u003e ({ count: state.count - 1 })),\n  reset: () =\u003e set({ count: 0 }),\n  setUser: (user) =\u003e set({ user }),\n  toggleTheme: () =\u003e\n    set((state) =\u003e ({\n      theme: state.theme === 'light' ? 'dark' : 'light'\n    }))\n}));\n\n// 사용\nfunction Counter() {\n  const count = useStore((state) =\u003e state.count);\n  const increment = useStore((state) =\u003e state.increment);\n  const decrement = useStore((state) =\u003e state.decrement);\n\n  return (\n    \u003cdiv\u003e\n      \u003cp\u003eCount: {count}\u003c/p\u003e\n      \u003cbutton onClick={increment}\u003e+\u003c/button\u003e\n      \u003cbutton onClick={decrement}\u003e-\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### Redux Toolkit 패턴\n\n```typescript\nimport { createSlice, PayloadAction } from '@reduxjs/toolkit';\n\n// 상태 타입\ninterface UserState {\n  currentUser: User | null;\n  users: User[];\n  loading: boolean;\n  error: string | null;\n}\n\n// 초기 상태\nconst initialState: UserState = {\n  currentUser: null,\n  users: [],\n  loading: false,\n  error: null\n};\n\n// Slice 생성\nconst userSlice = createSlice({\n  name: 'user',\n  initialState,\n  reducers: {\n    setLoading: (state, action: PayloadAction\u003cboolean\u003e) =\u003e {\n      state.loading = action.payload;\n    },\n\n    setError: (state, action: PayloadAction\u003cstring | null\u003e) =\u003e {\n      state.error = action.payload;\n    },\n\n    setCurrentUser: (state, action: PayloadAction\u003cUser | null\u003e) =\u003e {\n      state.currentUser = action.payload;\n    },\n\n    setUsers: (state, action: PayloadAction\u003cUser[]\u003e) =\u003e {\n      state.users = action.payload;\n    },\n\n    addUser: (state, action: PayloadAction\u003cUser\u003e) =\u003e {\n      state.users.push(action.payload);\n    },\n\n    updateUser: (\n      state,\n      action: PayloadAction\u003c{ id: number; updates: Partial\u003cUser\u003e }\u003e\n    ) =\u003e {\n      const { id, updates } = action.payload;\n      const user = state.users.find((u) =\u003e u.id === id);\n      if (user) {\n        Object.assign(user, updates);\n      }\n    },\n\n    deleteUser: (state, action: PayloadAction\u003cnumber\u003e) =\u003e {\n      state.users = state.users.filter((u) =\u003e u.id !== action.payload);\n    }\n  }\n});\n\n\nexport const {\n  setLoading,\n  setError,\n  setCurrentUser,\n  setUsers,\n  addUser,\n  updateUser,\n  deleteUser\n} = userSlice.actions;\n\n\nexport default userSlice.reducer;\n\n// Thunk 예시\nexport const fetchUsers = () =\u003e async (dispatch: AppDispatch) =\u003e {\n  dispatch(setLoading(true));\n  try {\n    const users = await getUsersAPI();\n    dispatch(setUsers(users));\n  } catch (error) {\n    dispatch(setError(error instanceof Error ? error.message : 'Unknown error'));\n  } finally {\n    dispatch(setLoading(false));\n  }\n};\n```\n\n## 고급 타입 패턴\n\n### Mapped Types\n\n객체의 모든 키를 순회하며 새로운 타입을 만듭니다.\n\n```typescript\n// 모든 속성을 선택적으로\ntype Optional\u003cT\u003e = {\n  [P in keyof T]?: T[P];\n};\n\n// 모든 속성을 nullable로\ntype Nullable\u003cT\u003e = {\n  [P in keyof T]: T[P] | null;\n};\n\n// 특정 키만 선택적으로\ntype PartialBy\u003cT, K extends keyof T\u003e = Omit\u003cT, K\u003e \u0026 Partial\u003cPick\u003cT, K\u003e\u003e;\n\ninterface User {\n  id: number;\n  name: string;\n  email: string;\n  age: number;\n}\n\n// name과 email만 선택적\ntype UserWithOptionalContact = PartialBy\u003cUser, 'name' | 'email'\u003e;\n// { id: number; age: number; name?: string; email?: string }\n\n// 함수 타입을 Promise로 변환\ntype Promisify\u003cT\u003e = {\n  [P in keyof T]: T[P] extends (...args: infer A) =\u003e infer R\n    ? (...args: A) =\u003e Promise\u003cR\u003e\n    : T[P];\n};\n\ninterface SyncAPI {\n  getUser: (id: number) =\u003e User;\n  deleteUser: (id: number) =\u003e void;\n  count: number;\n}\n\ntype AsyncAPI = Promisify\u003cSyncAPI\u003e;\n// {\n//   getUser: (id: number) =\u003e Promise\u003cUser\u003e;\n//   deleteUser: (id: number) =\u003e Promise\u003cvoid\u003e;\n//   count: number;\n// }\n```\n\n### Conditional Types\n\n조건에 따라 다른 타입을 반환합니다.\n\n```typescript\n// 기본 조건부 타입\ntype IsString\u003cT\u003e = T extends string ? true : false;\n\ntype A = IsString\u003cstring\u003e; // true\ntype B = IsString\u003cnumber\u003e; // false\n\n// 실용적 예시: NonNullable\ntype NonNullable\u003cT\u003e = T extends null | undefined ? never : T;\n\ntype T1 = NonNullable\u003cstring | null\u003e; // string\ntype T2 = NonNullable\u003cnumber | undefined\u003e; // number\n\n// 중첩 조건부 타입\ntype TypeName\u003cT\u003e =\n  T extends string ? 'string' :\n  T extends number ? 'number' :\n  T extends boolean ? 'boolean' :\n  T extends undefined ? 'undefined' :\n  T extends Function ? 'function' :\n  'object';\n\ntype T3 = TypeName\u003cstring\u003e; // 'string'\ntype T4 = TypeName\u003c() =\u003e void\u003e; // 'function'\ntype T5 = TypeName\u003c{}\u003e; // 'object'\n\n// Flatten 타입 (배열을 펼침)\ntype Flatten\u003cT\u003e = T extends Array\u003cinfer U\u003e ? U : T;\n\ntype T6 = Flatten\u003cstring[]\u003e; // string\ntype T7 = Flatten\u003cnumber\u003e; // number\n\n// 깊은 readonly\ntype DeepReadonly\u003cT\u003e = {\n  readonly [P in keyof T]: T[P] extends object\n    ? DeepReadonly\u003cT[P]\u003e\n    : T[P];\n};\n\ninterface User {\n  id: number;\n  profile: {\n    name: string;\n    settings: {\n      theme: string;\n    };\n  };\n}\n\ntype ReadonlyUser = DeepReadonly\u003cUser\u003e;\n// {\n//   readonly id: number;\n//   readonly profile: {\n//     readonly name: string;\n//     readonly settings: {\n//       readonly theme: string;\n//     };\n//   };\n// }\n```\n\n\n\n## 실무 팁 정리\n\n### 1. 타입 우선 개발\n\n```typescript\n// 타입부터 정의\ninterface TodoItem {\n  id: string;\n  title: string;\n  completed: boolean;\n  createdAt: Date;\n}\n\ninterface TodoState {\n  items: TodoItem[];\n  filter: 'all' | 'active' | 'completed';\n}\n\n// 그 다음 구현\nfunction TodoList({ items, filter }: { items: TodoItem[]; filter: TodoState['filter'] }) {\n  // ...\n}\n```\n\n### 2. 타입 재사용\n\n```typescript\n// 공통 타입은 별도 파일로\n// types/common.ts\nexport interface PaginatedResponse\u003cT\u003e { /* ... */ }\nexport interface ApiResponse\u003cT\u003e { /* ... */ }\n\n// types/user.ts\nexport interface User { /* ... */ }\nexport type CreateUserDTO = Omit\u003cUser, 'id' | 'createdAt'\u003e;\n\n// 사용\nimport { User, CreateUserDTO } from '@/types/user';\nimport { PaginatedResponse } from '@/types/common';\n```\n\n### 3. 타입 좁히기 우선\n\n```typescript\n// as 남발\nconst element = document.getElementById('myId') as HTMLInputElement;\n\n// 타입 가드 사용\nconst element = document.getElementById('myId');\nif (element instanceof HTMLInputElement) {\n  element.value = 'test';\n}\n```\n\n## 마치며\n\n매번 정리 해야지 해야지 하다 이번에 좀 더 차분하게 정리 할 수 있어서 좋았습니다. \nTypeScript를 처음 접하면 타입 정의가 번거롭게 느껴지지만, 한번 제대로 정의해두면:\n-  자동완성으로 개발 속도 향상\n-  리팩토링이 안전하고 쉬워짐\n-  런타임 에러가 컴파일 타임에 잡힘\n-  코드가 문서화되어 협업이 쉬워짐\n같은 좋은 점들이 있다고 생각합니다!\n\n이 시리즈가 TS를 실무에서 효과적으로 사용하는 데 도움이 되길..!\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"TypeScript 실무 패턴과 고급 타입 \"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 11월 21일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"프론트엔드\",{\"href\":\"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"프론트엔드\"}],[\"$\",\"$L3\",\"TypeScript\",{\"href\":\"/tags/TypeScript\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"TypeScript\"}],[\"$\",\"$L3\",\"타입\",{\"href\":\"/tags/%ED%83%80%EC%9E%85\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"타입\"}],[\"$\",\"$L3\",\"study\",{\"href\":\"/tags/study\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"study\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/react-hooks-part1\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"← 이전 글\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"React Hooks 모음 1\"}]]}],[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/typescript-advanced-part1\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"다음 글 →\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"TypeScript 유틸리티 타입과 any\"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"TypeScript 실무 패턴과 고급 타입  | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\" API, React, 상태관리 타입 패턴과 고급 타입\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"TypeScript 실무 패턴과 고급 타입 \"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\" API, React, 상태관리 타입 패턴과 고급 타입\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-11-21\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"TypeScript 실무 패턴과 고급 타입 \"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\" API, React, 상태관리 타입 패턴과 고급 타입\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>

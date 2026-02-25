@@ -1,0 +1,498 @@
+<!DOCTYPE html><!--rq94cetZS17rr6VXyxt_m--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d5ebba4595249be0.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-91788950a704a307.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-80ecaa68f6a0b226.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>모던 React 상태 관리에 대하여 | DevONew Blog</title><meta name="description" content="Zustand, Jotai, Context API 등 모던 React 상태 관리 라이브러리"/><meta property="og:title" content="모던 React 상태 관리에 대하여"/><meta property="og:description" content="Zustand, Jotai, Context API 등 모던 React 상태 관리 라이브러리"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2026-01-07"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="모던 React 상태 관리에 대하여"/><meta name="twitter:description" content="Zustand, Jotai, Context API 등 모던 React 상태 관리 라이브러리"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">모던 React 상태 관리에 대하여</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2026년 1월 7일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/React/">React</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC/">상태관리</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Zustand/">Zustand</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Jotai/">Jotai</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Recoil/">Recoil</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Redux/">Redux</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Context%20API/">Context API</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><h2 id="들어가며"><a aria-hidden="true" tabindex="-1" href="#들어가며"><span class="icon icon-link"></span></a>들어가며</h2>
+<p>React 애플리케이션을 개발하다 보면 반드시 마주치게 되는 문제가 있습니다. 바로 상태 관리입니다.</p>
+<p>처음에는 간단해 보입니다. React가 제공하는 <code>useState</code>로 충분하죠:</p>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(count + 1)}&gt;{count}<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>;
+}
+</code></pre>
+<p>하지만 애플리케이션이 성장하면서 문제가 시작됩니다. 로그인한 사용자 정보를 Header, Sidebar, Profile 페이지에서 모두 사용해야 한다면? 장바구니 상태를 상품 목록과 결제 페이지에서 동시에 관리해야 한다면?</p>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Layout</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span> <span class="hljs-attr">setUser</span>=<span class="hljs-string">{setUser}</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Sidebar</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">UserMenu</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">UserProfile</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span> <span class="hljs-attr">onLogout</span>=<span class="hljs-string">{()</span> =&gt;</span> setUser(null)} /&gt;
+      <span class="hljs-tag">&lt;/<span class="hljs-name">UserMenu</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Sidebar</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span></span>;
+}
+</code></pre>
+<p><code>useState</code>는 로컬 상태를 관리하는 데는 훌륭하지만, 컴포넌트 트리 전체에서 공유해야 하는 전역 상태를 다루기에는 적합하지 않습니다. 상태를 최상위 컴포넌트로 끌어올리고, props로 전달하고, 중간 컴포넌트들은 사용하지도 않는 데이터를 전달만 하는 역할이 되어버립니다.</p>
+<p>이것이 바로 상태 관리 라이브러리가 필요한 이유입니다.</p>
+<p>2016년 Redux가 등장한 이후, React 생태계의 상태 관리는 빠르게 진화해왔습니다. 2019년 Hooks의 등장으로 Context API가 실용적으로 사용 가능해졌고, 이후 Zustand, Jotai, Recoil 같은 현대적인 라이브러리들이 등장하면서 개발자들에게 더 많은 선택지가 생겼습니다.</p>
+<p>그렇다면 2026년 현재, 우리는 어떤 상태 관리 솔루션을 선택해야 할까요?</p>
+<h2 id="왜-상태-관리가-필요한가"><a aria-hidden="true" tabindex="-1" href="#왜-상태-관리가-필요한가"><span class="icon icon-link"></span></a>왜 상태 관리가 필요한가?</h2>
+<p>React의 기본 원칙은 단방향 데이터 흐름입니다. 부모 컴포넌트에서 자식 컴포넌트로 props를 전달하는 구조죠. 하지만 애플리케이션이 커지면서 다음과 같은 문제에 직면하게 됩니다:</p>
+<h3 id="1-props-drilling-문제"><a aria-hidden="true" tabindex="-1" href="#1-props-drilling-문제"><span class="icon icon-link"></span></a>1. Props Drilling 문제</h3>
+<pre><code class="hljs language-jsx">&lt;<span class="hljs-title class_">App</span> user={user}&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Layout</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">Sidebar</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">UserMenu</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">UserProfile</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{user}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">UserMenu</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Sidebar</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">Layout</span>&gt;</span></span>
+&lt;/<span class="hljs-title class_">App</span>&gt;
+</code></pre>
+<p>중간 컴포넌트들은 <code>user</code> 데이터를 사용하지도 않으면서 단지 전달만 하고 있습니다. 코드의 유지보수성이 떨어지고, 컴포넌트의 재사용성도 저하됩니다.</p>
+<h3 id="2-컴포넌트-간-상태-공유"><a aria-hidden="true" tabindex="-1" href="#2-컴포넌트-간-상태-공유"><span class="icon icon-link"></span></a>2. 컴포넌트 간 상태 공유</h3>
+<p>로그인한 사용자 정보, 테마 설정, 쇼핑몰의 장바구니처럼 여러 컴포넌트에서 동시에 접근하고 수정해야 하는 데이터가 있습니다. 이런 데이터를 각 컴포넌트의 로컬 상태로 관리하면 동기화 문제가 발생합니다.</p>
+<h3 id="3-복잡한-상태-로직"><a aria-hidden="true" tabindex="-1" href="#3-복잡한-상태-로직"><span class="icon icon-link"></span></a>3. 복잡한 상태 로직</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-comment">// 복잡해지는 useState와 useEffect</span>
+<span class="hljs-keyword">const</span> [data, setData] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+<span class="hljs-keyword">const</span> [loading, setLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">false</span>);
+<span class="hljs-keyword">const</span> [error, setError] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+<span class="hljs-keyword">const</span> [filters, setFilters] = <span class="hljs-title function_">useState</span>({});
+<span class="hljs-keyword">const</span> [sorting, setSorting] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;asc&#x27;</span>);
+
+<span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-comment">// 데이터 페칭 로직</span>
+}, [filters, sorting]);
+
+<span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+  <span class="hljs-comment">// 또 다른 side effect</span>
+}, [data]);
+</code></pre>
+<p>비즈니스 로직이 복잡해질수록 useState와 useEffect가 난무하게 되고, 상태 업데이트의 흐름을 추적하기 어려워집니다.</p>
+<h3 id="4-성능-최적화"><a aria-hidden="true" tabindex="-1" href="#4-성능-최적화"><span class="icon icon-link"></span></a>4. 성능 최적화</h3>
+<p>불필요한 리렌더링을 방지하기 위해 React.memo, useMemo, useCallback을 도입하지만, 이것만으로는 한계가 있습니다. 특히 전역 상태가 변경될 때 해당 상태를 사용하지 않는 컴포넌트까지 리렌더링되는 문제를 해결하기는 쉽지 않습니다.</p>
+<h2 id="상태-관리의-두-가지-관점"><a aria-hidden="true" tabindex="-1" href="#상태-관리의-두-가지-관점"><span class="icon icon-link"></span></a>상태 관리의 두 가지 관점</h2>
+<p>상태 관리를 논할 때 반드시 구분해야 할 개념이 있습니다:</p>
+<ul>
+<li>클라이언트 상태 (Client State): UI 상태, 폼 입력값, 모달 열림/닫힘 등 클라이언트에서만 관리하는 상태</li>
+<li>서버 상태 (Server State): API로부터 받아온 데이터, 캐싱이 필요한 원격 데이터</li>
+</ul>
+<p>과거에는 Redux로 모든 것을 관리했지만, 지금은 서버 상태는 TanStack Query,React Query나 SWR로, 클라이언트 상태는 가벼운 라이브러리로 분리하는 것이 일반적입니다.</p>
+<p>이제 본격적으로 각 상태 관리 라이브러리의 특징과 사용 사례를 살펴보겠습니다.</p>
+<h2 id="1-context-api---react의-내장-솔루션"><a aria-hidden="true" tabindex="-1" href="#1-context-api---react의-내장-솔루션"><span class="icon icon-link"></span></a>1. Context API - React의 내장 솔루션</h2>
+<p>Context API는 별도의 라이브러리 없이 전역 상태를 관리할 수 있는 방법입니다.</p>
+<h3 id="특징"><a aria-hidden="true" tabindex="-1" href="#특징"><span class="icon icon-link"></span></a>특징</h3>
+<ul>
+<li>추가 의존성 없음 (React 내장)</li>
+<li>간단한 전역 상태 관리에 적합</li>
+<li>Provider/Consumer 패턴</li>
+</ul>
+<h3 id="코드-예제"><a aria-hidden="true" tabindex="-1" href="#코드-예제"><span class="icon icon-link"></span></a>코드 예제</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-comment">// 1. Context 생성</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">UserContext</span> = <span class="hljs-title function_">createContext</span>(<span class="hljs-literal">null</span>);
+
+<span class="hljs-comment">// 2. Provider로 감싸기</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">user</span>, <span class="hljs-attr">setUser</span> }}&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Header</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">MainContent</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">UserContext.Provider</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// 3. 어디서든 useContext로 접근</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Header</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { user, setUser } = <span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">UserContext</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+      {user ? (
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setUser(null)}&gt;로그아웃<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      ) : (
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setUser({ name: &#x27;사용자&#x27; })}&gt;로그인<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      )}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="한계점"><a aria-hidden="true" tabindex="-1" href="#한계점"><span class="icon icon-link"></span></a>한계점</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">const</span> <span class="hljs-title class_">ThemeContext</span> = <span class="hljs-title function_">createContext</span>();
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [theme, setTheme] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;light&#x27;</span>);
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-comment">// theme이나 user 중 하나만 바뀌어도</span>
+  <span class="hljs-comment">// 모든 Consumer가 리렌더링됩니다</span>
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ThemeContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">theme</span>, <span class="hljs-attr">setTheme</span>, <span class="hljs-attr">user</span>, <span class="hljs-attr">setUser</span> }}&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ComponentA</span> /&gt;</span> {/* theme만 사용 */}
+      <span class="hljs-tag">&lt;<span class="hljs-name">ComponentB</span> /&gt;</span> {/* user만 사용 */}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ThemeContext.Provider</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><code>theme</code>이 변경되면 <code>user</code>만 사용하는 컴포넌트도 리렌더링됩니다. 이를 해결하려면 Context를 분리하거나 useMemo를 과도하게 사용해야 하는데, 이는 코드를 복잡하게 만듭니다.</p>
+<h3 id="언제-사용할까"><a aria-hidden="true" tabindex="-1" href="#언제-사용할까"><span class="icon icon-link"></span></a>언제 사용할까?</h3>
+<ul>
+<li>테마, 언어 설정 같은 단순한 전역 상태</li>
+<li>자주 변경되지 않는 데이터</li>
+<li>작은 규모의 앱</li>
+</ul>
+<h2 id="2-zustand"><a aria-hidden="true" tabindex="-1" href="#2-zustand"><span class="icon icon-link"></span></a>2. Zustand</h2>
+<p>Zustand는 독일어로 &quot;상태&quot;를 의미하며, 이름처럼 상태 관리에 집중한 가볍고 직관적인 라이브러리입니다.</p>
+<h3 id="특징-1"><a aria-hidden="true" tabindex="-1" href="#특징-1"><span class="icon icon-link"></span></a>특징</h3>
+<ul>
+<li>보일러플레이트가 거의 없음</li>
+<li>번들 크기가 작음 (1KB)</li>
+<li>Provider 없이 사용 가능</li>
+<li>미들웨어 지원 (persist, devtools 등)</li>
+</ul>
+<h3 id="코드-예제-1"><a aria-hidden="true" tabindex="-1" href="#코드-예제-1"><span class="icon icon-link"></span></a>코드 예제</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">import</span> { create } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;zustand&#x27;</span>;
+
+<span class="hljs-comment">// 1. 스토어 생성 </span>
+<span class="hljs-keyword">const</span> useUserStore = <span class="hljs-title function_">create</span>(<span class="hljs-function">(<span class="hljs-params">set</span>) =&gt;</span> ({
+  <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span>,
+  <span class="hljs-attr">setUser</span>: <span class="hljs-function">(<span class="hljs-params">user</span>) =&gt;</span> <span class="hljs-title function_">set</span>({ user }),
+  <span class="hljs-attr">logout</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">set</span>({ <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span> }),
+}));
+
+<span class="hljs-comment">// 2. 어디서든 훅처럼 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Header</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> user = <span class="hljs-title function_">useUserStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">user</span>);
+  <span class="hljs-keyword">const</span> logout = <span class="hljs-title function_">useUserStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">logout</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+      {user ? (
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{logout}</span>&gt;</span>로그아웃<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      ) : (
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>로그인<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      )}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// 3. 필요한 상태만 구독 </span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// user가 변경될 때만 리렌더링</span>
+  <span class="hljs-keyword">const</span> user = <span class="hljs-title function_">useUserStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">user</span>);
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{user?.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<h3 id="예제-장바구니"><a aria-hidden="true" tabindex="-1" href="#예제-장바구니"><span class="icon icon-link"></span></a>예제: 장바구니</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">const</span> useCartStore = <span class="hljs-title function_">create</span>(<span class="hljs-function">(<span class="hljs-params">set, get</span>) =&gt;</span> ({
+  <span class="hljs-attr">items</span>: [],
+
+  <span class="hljs-attr">addItem</span>: <span class="hljs-function">(<span class="hljs-params">product</span>) =&gt;</span> <span class="hljs-title function_">set</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> ({
+    <span class="hljs-attr">items</span>: [...state.<span class="hljs-property">items</span>, { ...product, <span class="hljs-attr">quantity</span>: <span class="hljs-number">1</span> }]
+  })),
+
+  <span class="hljs-attr">removeItem</span>: <span class="hljs-function">(<span class="hljs-params">productId</span>) =&gt;</span> <span class="hljs-title function_">set</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> ({
+    <span class="hljs-attr">items</span>: state.<span class="hljs-property">items</span>.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span> item.<span class="hljs-property">id</span> !== productId)
+  })),
+
+  <span class="hljs-attr">updateQuantity</span>: <span class="hljs-function">(<span class="hljs-params">productId, quantity</span>) =&gt;</span> <span class="hljs-title function_">set</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> ({
+    <span class="hljs-attr">items</span>: state.<span class="hljs-property">items</span>.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">item</span> =&gt;</span>
+      item.<span class="hljs-property">id</span> === productId ? { ...item, quantity } : item
+    )
+  })),
+
+  <span class="hljs-comment">// getter 함수도 정의 가능</span>
+  <span class="hljs-attr">getTotalPrice</span>: <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> items = <span class="hljs-title function_">get</span>().<span class="hljs-property">items</span>;
+    <span class="hljs-keyword">return</span> items.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">sum, item</span>) =&gt;</span> sum + item.<span class="hljs-property">price</span> * item.<span class="hljs-property">quantity</span>, <span class="hljs-number">0</span>);
+  },
+
+  <span class="hljs-attr">clearCart</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">set</span>({ <span class="hljs-attr">items</span>: [] }),
+}));
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Cart</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> items = <span class="hljs-title function_">useCartStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">items</span>);
+  <span class="hljs-keyword">const</span> removeItem = <span class="hljs-title function_">useCartStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">removeItem</span>);
+  <span class="hljs-keyword">const</span> getTotalPrice = <span class="hljs-title function_">useCartStore</span>(<span class="hljs-function">(<span class="hljs-params">state</span>) =&gt;</span> state.<span class="hljs-property">getTotalPrice</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      {items.map(item =&gt; (
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>&gt;</span>
+          {item.name} x {item.quantity}
+          <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> removeItem(item.id)}&gt;삭제<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      ))}
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>총 금액: {getTotalPrice()}원<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="persist-미들웨어"><a aria-hidden="true" tabindex="-1" href="#persist-미들웨어"><span class="icon icon-link"></span></a>Persist 미들웨어</h3>
+<p>localStorage나 sessionStorage에 상태를 자동으로 저장하고 복원해주는 미들웨어입니다. 페이지를 새로고침해도 상태가 유지됩니다.</p>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">import</span> { create } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;zustand&#x27;</span>;
+<span class="hljs-keyword">import</span> { persist } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;zustand/middleware&#x27;</span>;
+
+<span class="hljs-comment">// localStorage에 자동 저장/복원</span>
+<span class="hljs-keyword">const</span> useSettingsStore = <span class="hljs-title function_">create</span>(
+  <span class="hljs-title function_">persist</span>(
+    <span class="hljs-function">(<span class="hljs-params">set</span>) =&gt;</span> ({
+      <span class="hljs-attr">theme</span>: <span class="hljs-string">&#x27;light&#x27;</span>,
+      <span class="hljs-attr">language</span>: <span class="hljs-string">&#x27;ko&#x27;</span>,
+      <span class="hljs-attr">setTheme</span>: <span class="hljs-function">(<span class="hljs-params">theme</span>) =&gt;</span> <span class="hljs-title function_">set</span>({ theme }),
+      <span class="hljs-attr">setLanguage</span>: <span class="hljs-function">(<span class="hljs-params">language</span>) =&gt;</span> <span class="hljs-title function_">set</span>({ language }),
+    }),
+    {
+      <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;app-settings&#x27;</span>,
+    }
+  )
+);
+</code></pre>
+<h3 id="언제-사용할까-1"><a aria-hidden="true" tabindex="-1" href="#언제-사용할까-1"><span class="icon icon-link"></span></a>언제 사용할까?</h3>
+<ul>
+<li>대부분의 경우</li>
+<li>간단하고 빠른 전역 상태 관리가 필요할 때</li>
+<li>Redux는 과하고 Context는 부족할 때</li>
+<li>번들 크기를 최소화하고 싶을 때</li>
+</ul>
+<h2 id="3-recoil"><a aria-hidden="true" tabindex="-1" href="#3-recoil"><span class="icon icon-link"></span></a>3. Recoil</h2>
+<p>Recoil은 Facebook에서 만든 상태 관리 라이브러리로, React의 내부 동작 방식을 깊이 이해하고 설계되었습니다.</p>
+<h3 id="특징-2"><a aria-hidden="true" tabindex="-1" href="#특징-2"><span class="icon icon-link"></span></a>특징</h3>
+<ul>
+<li>Atom과 Selector를 사용한 세분화된 상태 관리</li>
+<li>React Concurrent Mode와 완벽한 호환</li>
+<li>Devtools 지원</li>
+<li>비동기 상태 처리에 강점</li>
+</ul>
+<h3 id="코드-예제-2"><a aria-hidden="true" tabindex="-1" href="#코드-예제-2"><span class="icon icon-link"></span></a>코드 예제</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">import</span> { atom, selector, useRecoilState, useRecoilValue } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;recoil&#x27;</span>;
+
+<span class="hljs-comment">// 1. Atom 정의</span>
+<span class="hljs-keyword">const</span> userState = <span class="hljs-title function_">atom</span>({
+  <span class="hljs-attr">key</span>: <span class="hljs-string">&#x27;userState&#x27;</span>, 
+  <span class="hljs-attr">default</span>: <span class="hljs-literal">null</span>,
+});
+
+<span class="hljs-keyword">const</span> todoListState = <span class="hljs-title function_">atom</span>({
+  <span class="hljs-attr">key</span>: <span class="hljs-string">&#x27;todoListState&#x27;</span>,
+  <span class="hljs-attr">default</span>: [],
+});
+
+<span class="hljs-comment">// 2. Selector (derived state)</span>
+<span class="hljs-keyword">const</span> completedTodosSelector = <span class="hljs-title function_">selector</span>({
+  <span class="hljs-attr">key</span>: <span class="hljs-string">&#x27;completedTodosSelector&#x27;</span>,
+  <span class="hljs-attr">get</span>: <span class="hljs-function">(<span class="hljs-params">{ get }</span>) =&gt;</span> {
+    <span class="hljs-keyword">const</span> todos = <span class="hljs-title function_">get</span>(todoListState);
+    <span class="hljs-keyword">return</span> todos.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">todo</span> =&gt;</span> todo.<span class="hljs-property">completed</span>);
+  },
+});
+
+<span class="hljs-comment">// 3. 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">TodoStats</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> completedTodos = <span class="hljs-title function_">useRecoilValue</span>(completedTodosSelector);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>완료된 할 일: {completedTodos.length}개<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useRecoilState</span>(userState);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      {user ? user.name : &#x27;로그인 필요&#x27;}
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setUser(null)}&gt;로그아웃<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="비동기-selector"><a aria-hidden="true" tabindex="-1" href="#비동기-selector"><span class="icon icon-link"></span></a>비동기 Selector</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">const</span> currentUserQuery = <span class="hljs-title function_">selector</span>({
+  <span class="hljs-attr">key</span>: <span class="hljs-string">&#x27;currentUserQuery&#x27;</span>,
+  <span class="hljs-attr">get</span>: <span class="hljs-title function_">async</span> ({ get }) =&gt; {
+    <span class="hljs-keyword">const</span> userId = <span class="hljs-title function_">get</span>(userIdState);
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${userId}</span>`</span>);
+    <span class="hljs-keyword">return</span> response.<span class="hljs-title function_">json</span>();
+  },
+});
+
+<span class="hljs-comment">// Suspense와 함께 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">CurrentUserInfo</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> user = <span class="hljs-title function_">useRecoilValue</span>(currentUserQuery);
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{user.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">RecoilRoot</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">div</span>&gt;</span>로딩중...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>}&gt;
+        <span class="hljs-tag">&lt;<span class="hljs-name">CurrentUserInfo</span> /&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">RecoilRoot</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="언제-사용할까-2"><a aria-hidden="true" tabindex="-1" href="#언제-사용할까-2"><span class="icon icon-link"></span></a>언제 사용할까?</h3>
+<ul>
+<li>Facebook/Meta 생태계와의 통합이 필요할 때</li>
+<li>React Concurrent Mode를 적극 활용하는 앱</li>
+<li>복잡한 비동기 의존성이 있는 경우</li>
+<li>실험적 기능을 사용해도 괜찮을 때 (아직 1.0 미만)</li>
+</ul>
+<h2 id="4-jotai"><a aria-hidden="true" tabindex="-1" href="#4-jotai"><span class="icon icon-link"></span></a>4. Jotai</h2>
+<p>Jotai는 Recoil에서 영감을 받아 만들어진 라이브러리로, 상태를 atom이라는 작은 단위로 쪼개서 관리합니다. Recoil보다 더 가볍고 간단합니다.</p>
+<h3 id="특징-3"><a aria-hidden="true" tabindex="-1" href="#특징-3"><span class="icon icon-link"></span></a>특징</h3>
+<ul>
+<li>Bottom-up 접근 (atom 조합)</li>
+<li>불필요한 리렌더링 최소화</li>
+<li>TypeScript와 궁합이 좋음</li>
+<li>React Suspense와 자연스러운 통합</li>
+</ul>
+<h3 id="코드-예제-3"><a aria-hidden="true" tabindex="-1" href="#코드-예제-3"><span class="icon icon-link"></span></a>코드 예제</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">import</span> { atom, useAtom } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;jotai&#x27;</span>;
+
+<span class="hljs-comment">// 1. atom 정의 (primitive values)</span>
+<span class="hljs-keyword">const</span> userAtom = <span class="hljs-title function_">atom</span>(<span class="hljs-literal">null</span>);
+<span class="hljs-keyword">const</span> themeAtom = <span class="hljs-title function_">atom</span>(<span class="hljs-string">&#x27;light&#x27;</span>);
+
+<span class="hljs-comment">// 2. derived atom (computed value)</span>
+<span class="hljs-keyword">const</span> userNameAtom = <span class="hljs-title function_">atom</span>(
+  <span class="hljs-function">(<span class="hljs-params">get</span>) =&gt;</span> <span class="hljs-title function_">get</span>(userAtom)?.<span class="hljs-property">name</span> ?? <span class="hljs-string">&#x27;Guest&#x27;</span>
+);
+
+<span class="hljs-comment">// 3. 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Header</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useAtom</span>(userAtom);
+  <span class="hljs-keyword">const</span> [userName] = <span class="hljs-title function_">useAtom</span>(userNameAtom); <span class="hljs-comment">// read-only</span>
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+      안녕하세요, {userName}님
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setUser(null)}&gt;로그아웃<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ThemeToggle</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [theme, setTheme] = <span class="hljs-title function_">useAtom</span>(themeAtom);
+
+  <span class="hljs-comment">// user 상태 변경과 무관하게 독립적으로 동작</span>
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setTheme(theme === &#x27;light&#x27; ? &#x27;dark&#x27; : &#x27;light&#x27;)}&gt;
+      테마 변경
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="async-atom"><a aria-hidden="true" tabindex="-1" href="#async-atom"><span class="icon icon-link"></span></a>Async Atom</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">import</span> { atom } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;jotai&#x27;</span>;
+
+<span class="hljs-comment">// 비동기 atom</span>
+<span class="hljs-keyword">const</span> userIdAtom = <span class="hljs-title function_">atom</span>(<span class="hljs-number">1</span>);
+
+<span class="hljs-keyword">const</span> userAtom = <span class="hljs-title function_">atom</span>(<span class="hljs-title function_">async</span> (get) =&gt; {
+  <span class="hljs-keyword">const</span> userId = <span class="hljs-title function_">get</span>(userIdAtom);
+  <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${userId}</span>`</span>);
+  <span class="hljs-keyword">return</span> response.<span class="hljs-title function_">json</span>();
+});
+
+<span class="hljs-comment">// Suspense와 함께 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [user] = <span class="hljs-title function_">useAtom</span>(userAtom); <span class="hljs-comment">// Suspense가 로딩 처리</span>
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{user.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Suspense</span> <span class="hljs-attr">fallback</span>=<span class="hljs-string">{</span>&lt;<span class="hljs-attr">div</span>&gt;</span>로딩중...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>}&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">UserProfile</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Suspense</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="zustand-vs-jotai"><a aria-hidden="true" tabindex="-1" href="#zustand-vs-jotai"><span class="icon icon-link"></span></a>Zustand vs Jotai</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-comment">// Zustand: Top-down (하나의 큰 store)</span>
+<span class="hljs-keyword">const</span> useStore = <span class="hljs-title function_">create</span>(<span class="hljs-function">(<span class="hljs-params">set</span>) =&gt;</span> ({
+  <span class="hljs-attr">user</span>: <span class="hljs-literal">null</span>,
+  <span class="hljs-attr">theme</span>: <span class="hljs-string">&#x27;light&#x27;</span>,
+  <span class="hljs-attr">cart</span>: [],
+  <span class="hljs-comment">// 모든 상태가 한 곳에</span>
+}));
+
+<span class="hljs-comment">// Jotai: Bottom-up (작은 atom들의 조합)</span>
+<span class="hljs-keyword">const</span> userAtom = <span class="hljs-title function_">atom</span>(<span class="hljs-literal">null</span>);
+<span class="hljs-keyword">const</span> themeAtom = <span class="hljs-title function_">atom</span>(<span class="hljs-string">&#x27;light&#x27;</span>);
+<span class="hljs-keyword">const</span> cartAtom = <span class="hljs-title function_">atom</span>([]);
+<span class="hljs-comment">// 필요한 atom만 import해서 사용</span>
+</code></pre>
+<h3 id="언제-사용할까-3"><a aria-hidden="true" tabindex="-1" href="#언제-사용할까-3"><span class="icon icon-link"></span></a>언제 사용할까?</h3>
+<ul>
+<li>상태가 독립적으로 존재하고 조합되는 경우</li>
+<li>React Suspense를 적극 활용하고 싶을 때</li>
+<li>세밀한 리렌더링 제어가 필요할 때</li>
+<li>TypeScript를 사용하는 프로젝트</li>
+</ul>
+<h2 id="5-tanstack-query-react-query---서버-상태-관리의-표준"><a aria-hidden="true" tabindex="-1" href="#5-tanstack-query-react-query---서버-상태-관리의-표준"><span class="icon icon-link"></span></a>5. TanStack Query (React Query) - 서버 상태 관리의 표준</h2>
+<p>TanStack Query는 클라이언트 상태가 아닌 <strong>서버 상태</strong>를 관리하는 라이브러리입니다.</p>
+<h3 id="특징-4"><a aria-hidden="true" tabindex="-1" href="#특징-4"><span class="icon icon-link"></span></a>특징</h3>
+<ul>
+<li>자동 캐싱, 백그라운드 업데이트</li>
+<li>Optimistic updates</li>
+<li>무한 스크롤, 페이지네이션 지원</li>
+<li>전역 상태 라이브러리와 함께 사용</li>
+</ul>
+<h3 id="코드-예제-4"><a aria-hidden="true" tabindex="-1" href="#코드-예제-4"><span class="icon icon-link"></span></a>코드 예제</h3>
+<pre><code class="hljs language-jsx"><span class="hljs-keyword">import</span> { useQuery, useMutation, useQueryClient } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@tanstack/react-query&#x27;</span>;
+
+<span class="hljs-comment">// 1. 데이터 페칭</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> { <span class="hljs-attr">data</span>: user, isLoading, error } = <span class="hljs-title function_">useQuery</span>({
+    <span class="hljs-attr">queryKey</span>: [<span class="hljs-string">&#x27;user&#x27;</span>, userId],
+    <span class="hljs-attr">queryFn</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${userId}</span>`</span>).<span class="hljs-title function_">then</span>(<span class="hljs-function"><span class="hljs-params">res</span> =&gt;</span> res.<span class="hljs-title function_">json</span>()),
+    <span class="hljs-attr">staleTime</span>: <span class="hljs-number">5000</span>, <span class="hljs-comment">// 5초간 fresh</span>
+  });
+
+  <span class="hljs-keyword">if</span> (isLoading) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>로딩중...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (error) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>에러 발생!<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{user.name}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+
+<span class="hljs-comment">// 2. Mutation</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">UpdateUserButton</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> queryClient = <span class="hljs-title function_">useQueryClient</span>();
+
+  <span class="hljs-keyword">const</span> mutation = <span class="hljs-title function_">useMutation</span>({
+    <span class="hljs-attr">mutationFn</span>: <span class="hljs-function">(<span class="hljs-params">newName</span>) =&gt;</span>
+      <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${userId}</span>`</span>, {
+        <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;PATCH&#x27;</span>,
+        <span class="hljs-attr">body</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ <span class="hljs-attr">name</span>: newName }),
+      }),
+    <span class="hljs-attr">onSuccess</span>: <span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-comment">// 캐시 무효화 및 리페칭</span>
+      queryClient.<span class="hljs-title function_">invalidateQueries</span>([<span class="hljs-string">&#x27;user&#x27;</span>, userId]);
+    },
+  });
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> mutation.mutate(&#x27;새 이름&#x27;)}&gt;
+      이름 변경
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// 3. Optimistic Updates</span>
+<span class="hljs-keyword">const</span> mutation = <span class="hljs-title function_">useMutation</span>({
+  <span class="hljs-attr">mutationFn</span>: updateTodo,
+  <span class="hljs-attr">onMutate</span>: <span class="hljs-title function_">async</span> (newTodo) =&gt; {
+    <span class="hljs-comment">// 이전 쿼리 취소</span>
+    <span class="hljs-keyword">await</span> queryClient.<span class="hljs-title function_">cancelQueries</span>([<span class="hljs-string">&#x27;todos&#x27;</span>]);
+
+    <span class="hljs-comment">// 이전 값 백업</span>
+    <span class="hljs-keyword">const</span> previousTodos = queryClient.<span class="hljs-title function_">getQueryData</span>([<span class="hljs-string">&#x27;todos&#x27;</span>]);
+
+    <span class="hljs-comment">// Optimistic update</span>
+    queryClient.<span class="hljs-title function_">setQueryData</span>([<span class="hljs-string">&#x27;todos&#x27;</span>], <span class="hljs-function">(<span class="hljs-params">old</span>) =&gt;</span> [...old, newTodo]);
+
+    <span class="hljs-keyword">return</span> { previousTodos };
+  },
+  <span class="hljs-attr">onError</span>: <span class="hljs-function">(<span class="hljs-params">err, newTodo, context</span>) =&gt;</span> {
+    <span class="hljs-comment">// 실패 시 롤백</span>
+    queryClient.<span class="hljs-title function_">setQueryData</span>([<span class="hljs-string">&#x27;todos&#x27;</span>], context.<span class="hljs-property">previousTodos</span>);
+  },
+});
+</code></pre>
+<h3 id="언제-사용할까-4"><a aria-hidden="true" tabindex="-1" href="#언제-사용할까-4"><span class="icon icon-link"></span></a>언제 사용할까?</h3>
+<ul>
+<li>API 데이터를 다루는 모든 경우</li>
+<li>캐싱, 동기화, 백그라운드 업데이트가 필요할 때</li>
+<li>Redux로 서버 상태를 관리하고 있다면 꼭 고려해보세요</li>
+</ul></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><div class="h-28"></div><div class="h-28"></div></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-91788950a704a307.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-91788950a704a307.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d5ebba4595249be0.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"rq94cetZS17rr6VXyxt_m\",\"p\":\"\",\"c\":[\"\",\"posts\",\"frontend\",\"react-state-management\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"frontend\",\"d\"],{\"children\":[[\"slug\",\"react-state-management\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d5ebba4595249be0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"frontend\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"react-state-management\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T3de0,"])</script><script>self.__next_f.push([1,"\n## 들어가며\n\nReact 애플리케이션을 개발하다 보면 반드시 마주치게 되는 문제가 있습니다. 바로 상태 관리입니다.\n\n처음에는 간단해 보입니다. React가 제공하는 `useState`로 충분하죠:\n\n```jsx\nfunction Counter() {\n  const [count, setCount] = useState(0);\n  return \u003cbutton onClick={() =\u003e setCount(count + 1)}\u003e{count}\u003c/button\u003e;\n}\n```\n\n하지만 애플리케이션이 성장하면서 문제가 시작됩니다. 로그인한 사용자 정보를 Header, Sidebar, Profile 페이지에서 모두 사용해야 한다면? 장바구니 상태를 상품 목록과 결제 페이지에서 동시에 관리해야 한다면?\n\n```jsx\nfunction App() {\n  const [user, setUser] = useState(null);\n\n  return \u003cLayout user={user} setUser={setUser}\u003e\n    \u003cSidebar user={user}\u003e\n      \u003cUserMenu user={user}\u003e\n        \u003cUserProfile user={user} onLogout={() =\u003e setUser(null)} /\u003e\n      \u003c/UserMenu\u003e\n    \u003c/Sidebar\u003e\n  \u003c/Layout\u003e;\n}\n```\n\n`useState`는 로컬 상태를 관리하는 데는 훌륭하지만, 컴포넌트 트리 전체에서 공유해야 하는 전역 상태를 다루기에는 적합하지 않습니다. 상태를 최상위 컴포넌트로 끌어올리고, props로 전달하고, 중간 컴포넌트들은 사용하지도 않는 데이터를 전달만 하는 역할이 되어버립니다.\n\n이것이 바로 상태 관리 라이브러리가 필요한 이유입니다.\n\n2016년 Redux가 등장한 이후, React 생태계의 상태 관리는 빠르게 진화해왔습니다. 2019년 Hooks의 등장으로 Context API가 실용적으로 사용 가능해졌고, 이후 Zustand, Jotai, Recoil 같은 현대적인 라이브러리들이 등장하면서 개발자들에게 더 많은 선택지가 생겼습니다.\n\n그렇다면 2026년 현재, 우리는 어떤 상태 관리 솔루션을 선택해야 할까요?\n\n## 왜 상태 관리가 필요한가?\n\nReact의 기본 원칙은 단방향 데이터 흐름입니다. 부모 컴포넌트에서 자식 컴포넌트로 props를 전달하는 구조죠. 하지만 애플리케이션이 커지면서 다음과 같은 문제에 직면하게 됩니다:\n\n### 1. Props Drilling 문제\n\n```jsx\n\u003cApp user={user}\u003e\n  \u003cLayout user={user}\u003e\n    \u003cSidebar user={user}\u003e\n      \u003cUserMenu user={user}\u003e\n        \u003cUserProfile user={user} /\u003e\n      \u003c/UserMenu\u003e\n    \u003c/Sidebar\u003e\n  \u003c/Layout\u003e\n\u003c/App\u003e\n```\n\n중간 컴포넌트들은 `user` 데이터를 사용하지도 않으면서 단지 전달만 하고 있습니다. 코드의 유지보수성이 떨어지고, 컴포넌트의 재사용성도 저하됩니다.\n\n### 2. 컴포넌트 간 상태 공유\n\n로그인한 사용자 정보, 테마 설정, 쇼핑몰의 장바구니처럼 여러 컴포넌트에서 동시에 접근하고 수정해야 하는 데이터가 있습니다. 이런 데이터를 각 컴포넌트의 로컬 상태로 관리하면 동기화 문제가 발생합니다.\n\n### 3. 복잡한 상태 로직\n\n```jsx\n// 복잡해지는 useState와 useEffect\nconst [data, setData] = useState(null);\nconst [loading, setLoading] = useState(false);\nconst [error, setError] = useState(null);\nconst [filters, setFilters] = useState({});\nconst [sorting, setSorting] = useState('asc');\n\nuseEffect(() =\u003e {\n  // 데이터 페칭 로직\n}, [filters, sorting]);\n\nuseEffect(() =\u003e {\n  // 또 다른 side effect\n}, [data]);\n```\n\n비즈니스 로직이 복잡해질수록 useState와 useEffect가 난무하게 되고, 상태 업데이트의 흐름을 추적하기 어려워집니다.\n\n### 4. 성능 최적화\n\n불필요한 리렌더링을 방지하기 위해 React.memo, useMemo, useCallback을 도입하지만, 이것만으로는 한계가 있습니다. 특히 전역 상태가 변경될 때 해당 상태를 사용하지 않는 컴포넌트까지 리렌더링되는 문제를 해결하기는 쉽지 않습니다.\n\n## 상태 관리의 두 가지 관점\n\n상태 관리를 논할 때 반드시 구분해야 할 개념이 있습니다:\n\n- 클라이언트 상태 (Client State): UI 상태, 폼 입력값, 모달 열림/닫힘 등 클라이언트에서만 관리하는 상태\n- 서버 상태 (Server State): API로부터 받아온 데이터, 캐싱이 필요한 원격 데이터\n\n과거에는 Redux로 모든 것을 관리했지만, 지금은 서버 상태는 TanStack Query,React Query나 SWR로, 클라이언트 상태는 가벼운 라이브러리로 분리하는 것이 일반적입니다.\n\n이제 본격적으로 각 상태 관리 라이브러리의 특징과 사용 사례를 살펴보겠습니다.\n\n## 1. Context API - React의 내장 솔루션\n\nContext API는 별도의 라이브러리 없이 전역 상태를 관리할 수 있는 방법입니다.\n\n### 특징\n- 추가 의존성 없음 (React 내장)\n- 간단한 전역 상태 관리에 적합\n- Provider/Consumer 패턴\n\n### 코드 예제\n\n```jsx\n// 1. Context 생성\nconst UserContext = createContext(null);\n\n// 2. Provider로 감싸기\nfunction App() {\n  const [user, setUser] = useState(null);\n\n  return (\n    \u003cUserContext.Provider value={{ user, setUser }}\u003e\n      \u003cHeader /\u003e\n      \u003cMainContent /\u003e\n    \u003c/UserContext.Provider\u003e\n  );\n}\n\n// 3. 어디서든 useContext로 접근\nfunction Header() {\n  const { user, setUser } = useContext(UserContext);\n\n  return (\n    \u003cheader\u003e\n      {user ? (\n        \u003cbutton onClick={() =\u003e setUser(null)}\u003e로그아웃\u003c/button\u003e\n      ) : (\n        \u003cbutton onClick={() =\u003e setUser({ name: '사용자' })}\u003e로그인\u003c/button\u003e\n      )}\n    \u003c/header\u003e\n  );\n}\n```\n\n### 한계점\n\n\n```jsx\nconst ThemeContext = createContext();\n\nfunction App() {\n  const [theme, setTheme] = useState('light');\n  const [user, setUser] = useState(null);\n\n  // theme이나 user 중 하나만 바뀌어도\n  // 모든 Consumer가 리렌더링됩니다\n  return (\n    \u003cThemeContext.Provider value={{ theme, setTheme, user, setUser }}\u003e\n      \u003cComponentA /\u003e {/* theme만 사용 */}\n      \u003cComponentB /\u003e {/* user만 사용 */}\n    \u003c/ThemeContext.Provider\u003e\n  );\n}\n```\n\n`theme`이 변경되면 `user`만 사용하는 컴포넌트도 리렌더링됩니다. 이를 해결하려면 Context를 분리하거나 useMemo를 과도하게 사용해야 하는데, 이는 코드를 복잡하게 만듭니다.\n\n### 언제 사용할까?\n- 테마, 언어 설정 같은 단순한 전역 상태\n- 자주 변경되지 않는 데이터\n- 작은 규모의 앱\n\n## 2. Zustand \n\nZustand는 독일어로 \"상태\"를 의미하며, 이름처럼 상태 관리에 집중한 가볍고 직관적인 라이브러리입니다.\n\n### 특징\n- 보일러플레이트가 거의 없음\n- 번들 크기가 작음 (1KB)\n- Provider 없이 사용 가능\n- 미들웨어 지원 (persist, devtools 등)\n\n### 코드 예제\n\n```jsx\nimport { create } from 'zustand';\n\n// 1. 스토어 생성 \nconst useUserStore = create((set) =\u003e ({\n  user: null,\n  setUser: (user) =\u003e set({ user }),\n  logout: () =\u003e set({ user: null }),\n}));\n\n// 2. 어디서든 훅처럼 사용\nfunction Header() {\n  const user = useUserStore((state) =\u003e state.user);\n  const logout = useUserStore((state) =\u003e state.logout);\n\n  return (\n    \u003cheader\u003e\n      {user ? (\n        \u003cbutton onClick={logout}\u003e로그아웃\u003c/button\u003e\n      ) : (\n        \u003cbutton\u003e로그인\u003c/button\u003e\n      )}\n    \u003c/header\u003e\n  );\n}\n\n// 3. 필요한 상태만 구독 \nfunction UserProfile() {\n  // user가 변경될 때만 리렌더링\n  const user = useUserStore((state) =\u003e state.user);\n  return \u003cdiv\u003e{user?.name}\u003c/div\u003e;\n}\n```\n\n### 예제: 장바구니\n\n```jsx\nconst useCartStore = create((set, get) =\u003e ({\n  items: [],\n\n  addItem: (product) =\u003e set((state) =\u003e ({\n    items: [...state.items, { ...product, quantity: 1 }]\n  })),\n\n  removeItem: (productId) =\u003e set((state) =\u003e ({\n    items: state.items.filter(item =\u003e item.id !== productId)\n  })),\n\n  updateQuantity: (productId, quantity) =\u003e set((state) =\u003e ({\n    items: state.items.map(item =\u003e\n      item.id === productId ? { ...item, quantity } : item\n    )\n  })),\n\n  // getter 함수도 정의 가능\n  getTotalPrice: () =\u003e {\n    const items = get().items;\n    return items.reduce((sum, item) =\u003e sum + item.price * item.quantity, 0);\n  },\n\n  clearCart: () =\u003e set({ items: [] }),\n}));\n\n// 사용\nfunction Cart() {\n  const items = useCartStore((state) =\u003e state.items);\n  const removeItem = useCartStore((state) =\u003e state.removeItem);\n  const getTotalPrice = useCartStore((state) =\u003e state.getTotalPrice);\n\n  return (\n    \u003cdiv\u003e\n      {items.map(item =\u003e (\n        \u003cdiv key={item.id}\u003e\n          {item.name} x {item.quantity}\n          \u003cbutton onClick={() =\u003e removeItem(item.id)}\u003e삭제\u003c/button\u003e\n        \u003c/div\u003e\n      ))}\n      \u003cdiv\u003e총 금액: {getTotalPrice()}원\u003c/div\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### Persist 미들웨어\n\nlocalStorage나 sessionStorage에 상태를 자동으로 저장하고 복원해주는 미들웨어입니다. 페이지를 새로고침해도 상태가 유지됩니다.\n\n```jsx\nimport { create } from 'zustand';\nimport { persist } from 'zustand/middleware';\n\n// localStorage에 자동 저장/복원\nconst useSettingsStore = create(\n  persist(\n    (set) =\u003e ({\n      theme: 'light',\n      language: 'ko',\n      setTheme: (theme) =\u003e set({ theme }),\n      setLanguage: (language) =\u003e set({ language }),\n    }),\n    {\n      name: 'app-settings',\n    }\n  )\n);\n```\n\n### 언제 사용할까?\n- 대부분의 경우\n- 간단하고 빠른 전역 상태 관리가 필요할 때\n- Redux는 과하고 Context는 부족할 때\n- 번들 크기를 최소화하고 싶을 때\n\n## 3. Recoil\n\nRecoil은 Facebook에서 만든 상태 관리 라이브러리로, React의 내부 동작 방식을 깊이 이해하고 설계되었습니다.\n\n### 특징\n- Atom과 Selector를 사용한 세분화된 상태 관리\n- React Concurrent Mode와 완벽한 호환\n- Devtools 지원\n- 비동기 상태 처리에 강점\n\n### 코드 예제\n\n```jsx\nimport { atom, selector, useRecoilState, useRecoilValue } from 'recoil';\n\n// 1. Atom 정의\nconst userState = atom({\n  key: 'userState', \n  default: null,\n});\n\nconst todoListState = atom({\n  key: 'todoListState',\n  default: [],\n});\n\n// 2. Selector (derived state)\nconst completedTodosSelector = selector({\n  key: 'completedTodosSelector',\n  get: ({ get }) =\u003e {\n    const todos = get(todoListState);\n    return todos.filter(todo =\u003e todo.completed);\n  },\n});\n\n// 3. 사용\nfunction TodoStats() {\n  const completedTodos = useRecoilValue(completedTodosSelector);\n\n  return \u003cdiv\u003e완료된 할 일: {completedTodos.length}개\u003c/div\u003e;\n}\n\nfunction UserProfile() {\n  const [user, setUser] = useRecoilState(userState);\n\n  return (\n    \u003cdiv\u003e\n      {user ? user.name : '로그인 필요'}\n      \u003cbutton onClick={() =\u003e setUser(null)}\u003e로그아웃\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### 비동기 Selector\n\n```jsx\nconst currentUserQuery = selector({\n  key: 'currentUserQuery',\n  get: async ({ get }) =\u003e {\n    const userId = get(userIdState);\n    const response = await fetch(`/api/users/${userId}`);\n    return response.json();\n  },\n});\n\n// Suspense와 함께 사용\nfunction CurrentUserInfo() {\n  const user = useRecoilValue(currentUserQuery);\n  return \u003cdiv\u003e{user.name}\u003c/div\u003e;\n}\n\nfunction App() {\n  return (\n    \u003cRecoilRoot\u003e\n      \u003cSuspense fallback={\u003cdiv\u003e로딩중...\u003c/div\u003e}\u003e\n        \u003cCurrentUserInfo /\u003e\n      \u003c/Suspense\u003e\n    \u003c/RecoilRoot\u003e\n  );\n}\n```\n\n### 언제 사용할까?\n- Facebook/Meta 생태계와의 통합이 필요할 때\n- React Concurrent Mode를 적극 활용하는 앱\n- 복잡한 비동기 의존성이 있는 경우\n- 실험적 기능을 사용해도 괜찮을 때 (아직 1.0 미만)\n\n## 4. Jotai\n\nJotai는 Recoil에서 영감을 받아 만들어진 라이브러리로, 상태를 atom이라는 작은 단위로 쪼개서 관리합니다. Recoil보다 더 가볍고 간단합니다.\n\n### 특징\n- Bottom-up 접근 (atom 조합)\n- 불필요한 리렌더링 최소화\n- TypeScript와 궁합이 좋음\n- React Suspense와 자연스러운 통합\n\n### 코드 예제\n\n```jsx\nimport { atom, useAtom } from 'jotai';\n\n// 1. atom 정의 (primitive values)\nconst userAtom = atom(null);\nconst themeAtom = atom('light');\n\n// 2. derived atom (computed value)\nconst userNameAtom = atom(\n  (get) =\u003e get(userAtom)?.name ?? 'Guest'\n);\n\n// 3. 사용\nfunction Header() {\n  const [user, setUser] = useAtom(userAtom);\n  const [userName] = useAtom(userNameAtom); // read-only\n\n  return (\n    \u003cheader\u003e\n      안녕하세요, {userName}님\n      \u003cbutton onClick={() =\u003e setUser(null)}\u003e로그아웃\u003c/button\u003e\n    \u003c/header\u003e\n  );\n}\n\nfunction ThemeToggle() {\n  const [theme, setTheme] = useAtom(themeAtom);\n\n  // user 상태 변경과 무관하게 독립적으로 동작\n  return (\n    \u003cbutton onClick={() =\u003e setTheme(theme === 'light' ? 'dark' : 'light')}\u003e\n      테마 변경\n    \u003c/button\u003e\n  );\n}\n```\n\n### Async Atom\n\n```jsx\nimport { atom } from 'jotai';\n\n// 비동기 atom\nconst userIdAtom = atom(1);\n\nconst userAtom = atom(async (get) =\u003e {\n  const userId = get(userIdAtom);\n  const response = await fetch(`/api/users/${userId}`);\n  return response.json();\n});\n\n// Suspense와 함께 사용\nfunction UserProfile() {\n  const [user] = useAtom(userAtom); // Suspense가 로딩 처리\n  return \u003cdiv\u003e{user.name}\u003c/div\u003e;\n}\n\nfunction App() {\n  return (\n    \u003cSuspense fallback={\u003cdiv\u003e로딩중...\u003c/div\u003e}\u003e\n      \u003cUserProfile /\u003e\n    \u003c/Suspense\u003e\n  );\n}\n```\n\n### Zustand vs Jotai\n\n```jsx\n// Zustand: Top-down (하나의 큰 store)\nconst useStore = create((set) =\u003e ({\n  user: null,\n  theme: 'light',\n  cart: [],\n  // 모든 상태가 한 곳에\n}));\n\n// Jotai: Bottom-up (작은 atom들의 조합)\nconst userAtom = atom(null);\nconst themeAtom = atom('light');\nconst cartAtom = atom([]);\n// 필요한 atom만 import해서 사용\n```\n\n### 언제 사용할까?\n- 상태가 독립적으로 존재하고 조합되는 경우\n- React Suspense를 적극 활용하고 싶을 때\n- 세밀한 리렌더링 제어가 필요할 때\n- TypeScript를 사용하는 프로젝트\n\n## 5. TanStack Query (React Query) - 서버 상태 관리의 표준\n\nTanStack Query는 클라이언트 상태가 아닌 **서버 상태**를 관리하는 라이브러리입니다.\n\n### 특징\n- 자동 캐싱, 백그라운드 업데이트\n- Optimistic updates\n- 무한 스크롤, 페이지네이션 지원\n- 전역 상태 라이브러리와 함께 사용\n\n### 코드 예제\n\n```jsx\nimport { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';\n\n// 1. 데이터 페칭\nfunction UserProfile({ userId }) {\n  const { data: user, isLoading, error } = useQuery({\n    queryKey: ['user', userId],\n    queryFn: () =\u003e fetch(`/api/users/${userId}`).then(res =\u003e res.json()),\n    staleTime: 5000, // 5초간 fresh\n  });\n\n  if (isLoading) return \u003cdiv\u003e로딩중...\u003c/div\u003e;\n  if (error) return \u003cdiv\u003e에러 발생!\u003c/div\u003e;\n\n  return \u003cdiv\u003e{user.name}\u003c/div\u003e;\n}\n\n// 2. Mutation\nfunction UpdateUserButton({ userId }) {\n  const queryClient = useQueryClient();\n\n  const mutation = useMutation({\n    mutationFn: (newName) =\u003e\n      fetch(`/api/users/${userId}`, {\n        method: 'PATCH',\n        body: JSON.stringify({ name: newName }),\n      }),\n    onSuccess: () =\u003e {\n      // 캐시 무효화 및 리페칭\n      queryClient.invalidateQueries(['user', userId]);\n    },\n  });\n\n  return (\n    \u003cbutton onClick={() =\u003e mutation.mutate('새 이름')}\u003e\n      이름 변경\n    \u003c/button\u003e\n  );\n}\n\n// 3. Optimistic Updates\nconst mutation = useMutation({\n  mutationFn: updateTodo,\n  onMutate: async (newTodo) =\u003e {\n    // 이전 쿼리 취소\n    await queryClient.cancelQueries(['todos']);\n\n    // 이전 값 백업\n    const previousTodos = queryClient.getQueryData(['todos']);\n\n    // Optimistic update\n    queryClient.setQueryData(['todos'], (old) =\u003e [...old, newTodo]);\n\n    return { previousTodos };\n  },\n  onError: (err, newTodo, context) =\u003e {\n    // 실패 시 롤백\n    queryClient.setQueryData(['todos'], context.previousTodos);\n  },\n});\n```\n\n### 언제 사용할까?\n- API 데이터를 다루는 모든 경우\n- 캐싱, 동기화, 백그라운드 업데이트가 필요할 때\n- Redux로 서버 상태를 관리하고 있다면 꼭 고려해보세요\n\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"모던 React 상태 관리에 대하여\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2026년 1월 7일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"React\",{\"href\":\"/tags/React\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"React\"}],[\"$\",\"$L3\",\"상태관리\",{\"href\":\"/tags/%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"상태관리\"}],[\"$\",\"$L3\",\"Zustand\",{\"href\":\"/tags/Zustand\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Zustand\"}],[\"$\",\"$L3\",\"Jotai\",{\"href\":\"/tags/Jotai\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Jotai\"}],[\"$\",\"$L3\",\"Recoil\",{\"href\":\"/tags/Recoil\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Recoil\"}],[\"$\",\"$L3\",\"Redux\",{\"href\":\"/tags/Redux\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Redux\"}],[\"$\",\"$L3\",\"Context API\",{\"href\":\"/tags/Context%20API\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Context API\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"div\",null,{\"className\":\"h-28\"}],[\"$\",\"div\",null,{\"className\":\"h-28\"}]]}]}]\n1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"모던 React 상태 관리에 대하여 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Zustand, Jotai, Context API 등 모던 React 상태 관리 라이브러리\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"모던 React 상태 관리에 대하여\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"Zustand, Jotai, Context API 등 모던 React 상태 관리 라이브러리\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2026-01-07\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"모던 React 상태 관리에 대하여\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"Zustand, Jotai, Context API 등 모던 React 상태 관리 라이브러리\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>

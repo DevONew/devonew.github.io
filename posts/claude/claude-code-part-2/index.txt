@@ -1,0 +1,382 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d5ebba4595249be0.css","style"]
+0:{"P":null,"b":"rq94cetZS17rr6VXyxt_m","p":"","c":["","posts","claude","claude-code-part-2",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","claude","d"],{"children":[["slug","claude-code-part-2","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d5ebba4595249be0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","claude","d"],"$L8",{"children":[["slug","claude-code-part-2","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T2042,
+Part 1에서는 Claude Code의 차별점과 기본 사용법을 배웠다. Part 2에서는 Claude Code의 고급 기능을 다룰것이다.
+
+## AI를 프로젝트에 학습시키기
+
+Claude Code의 진짜 힘은 **프로젝트별로 AI를 학습**시킬 수 있다는 점이다.
+
+### .claude/ 디렉토리: 팀의 AI 지식 베이스
+
+```
+your-project/
+├── .claude/
+│   ├── agents/           # 서브에이전트
+│   │   ├── code-reviewer.md
+│   │   └── test-runner.md
+│   ├── skills/           # 워크플로우 지식
+│   │   ├── coding-style/
+│   │   ├── git-workflow/
+│   │   └── deployment/
+│   └── prompts/          # 재사용 프롬프트
+└── ...
+```
+
+이 디렉토리를 **Git에 커밋**하면:
+- 팀 전체가 같은 AI 경험 공유
+- 신입이 와도 즉시 팀 규칙 학습됨
+- 프로젝트 컨텍스트가 코드와 함께 버전 관리됨
+
+## 서브에이전트 (Sub-agents)
+
+### 서브에이전트란?
+
+서브에이전트는 **특정 작업을 처리하는 특화된 AI 워커**다. 마치 팀에서 각자 전문 분야가 있는 개발자들처럼, 각 서브에이전트는 자신의 역할에 최적화된 지침과 도구를 가진다.
+
+### 왜 서브에이전트인가?
+
+**1. 컨텍스트 보존**
+
+각 서브에이전트는 별도 컨텍스트에서 작동합니다:
+
+```
+주 대화: "인증 모듈 리팩토링해줘"
+  ↓
+서브에이전트 (code-reviewer): 별도 컨텍스트에서 리뷰
+  ↓
+주 대화: 리뷰 결과만 받음 (세부 과정은 주 컨텍스트 오염 안 함)
+```
+
+**2. 특화된 전문성**
+
+각 서브에이전트는 특정 도메인에 집중:
+- **code-reviewer**: 코드 품질, 보안, 베스트 프랙티스
+- **debugger**: 루트 원인 분석, 에러 해결
+- **test-runner**: 테스트 실행, 실패 수정
+
+**3. 재사용성**
+
+한 번 만들면 모든 프로젝트에서 재사용 가능하다.
+
+### 서브에이전트 생성하기
+
+```bash
+/agents
+```
+
+대화형 메뉴가 열립니다:
+- 모든 서브에이전트 보기
+- 새 서브에이전트 생성
+- 기존 서브에이전트 편집
+- 도구 권한 관리
+
+**권장 방법**: Claude에게 먼저 생성 요청
+
+```bash
+/agents
+> code-reviewer 서브에이전트 만들어줘
+
+Claude가 자동으로:
+1. 적절한 description 작성
+2. 필요한 도구 선택 (Read, Grep, Glob, Bash)
+3. 시스템 프롬프트 생성
+```
+
+### 서브에이전트 파일 구조
+
+서브에이전트는 마크다운 파일로 저장된다:
+
+```markdown
+---
+name: code-reviewer
+description: 코드 품질, 보안, 유지보수성 리뷰. 코드 작성/수정 직후 자동 사용.
+tools: Read, Grep, Glob, Bash
+model: sonnet
+---
+
+시니어 코드 리뷰어로서 높은 품질 기준을 보장한다.
+
+호출 시:
+1. git diff로 최근 변경사항 확인
+2. 수정된 파일에 집중
+3. 즉시 리뷰 시작
+
+리뷰 우선순위:
+- 심각한 문제 (반드시 수정)
+- 경고 (수정 권장)
+- 제안 (개선 고려)
+```
+
+### 저장 위치
+
+| 유형 | 위치 | 범위 |
+|------|------|------|
+| 프로젝트 | `.claude/agents/` | 현재 프로젝트 (팀 공유) |
+| 개인 | `~/.claude/agents/` | 모든 프로젝트 (개인용) |
+
+### 서브에이전트 사용하기
+
+**자동 위임**
+
+Claude가 자동으로 적절한 서브에이전트 호출:
+
+```bash
+> 최근 변경사항 코드 리뷰해줘
+[자동으로 code-reviewer 서브에이전트 사용]
+```
+
+**명시적 호출**
+
+특정 서브에이전트를 직접 요청:
+
+```bash
+> code-reviewer 서브에이전트로 PR 리뷰해줘
+> test-runner 서브에이전트로 실패한 테스트 고쳐줘
+> debugger 서브에이전트로 이 에러 조사해줘
+```
+
+### 실전 서브에이전트 예시
+
+**디버거**
+
+```markdown
+---
+name: debugger
+description: 에러, 테스트 실패, 예상치 못한 동작 디버깅. 문제 발생 시 자동 사용.
+tools: Read, Edit, Bash, Grep, Glob
+---
+
+루트 원인 분석 전문 디버거입니다.
+
+호출 시:
+1. 에러 메시지와 스택 트레이스 캡처
+2. 재현 단계 식별
+3. 실패 위치 격리
+4. 최소한의 수정 구현
+5. 솔루션 검증
+
+각 문제에 대해:
+- 루트 원인 설명
+- 진단을 뒷받침하는 증거
+- 구체적인 코드 수정
+- 테스트 접근법
+- 재발 방지 권장사항
+```
+
+**테스트 러너**
+
+```markdown
+---
+name: test-runner  
+description: 테스트 자동 실행 및 실패 수정. 코드 변경 후 자동 사용.
+tools: Bash, Read, Edit, Grep
+---
+
+테스트 자동화 전문가입니다.
+
+코드 변경 감지 시:
+1. 관련 테스트 자동 실행
+2. 실패 시 원인 분석
+3. 원래 테스트 의도 유지하며 수정
+4. 재실행으로 검증
+```
+
+## Agent Skills
+
+### Agent Skills란?
+
+Agent Skills는 **팀의 워크플로우와 규칙을 AI에게 가르치는 방법**입니다. 서브에이전트가 "누구"라면, Skills는 "무엇을 어떻게"를 정의합니다.
+
+### Skills가 호출되는 방식
+
+Skills는 **자동으로 발견**됩니다:
+
+```
+사용자: "새 컴포넌트 만들어줘"
+  ↓
+Claude: "team-coding-style" Skill 발견
+  ↓
+Claude: Skill 지침 읽고 자동 적용
+  ↓
+결과: 팀 스타일 가이드를 따르는 컴포넌트
+```
+
+### Skill 생성하기
+
+**Personal Skill (개인용)**
+```bash
+mkdir -p ~/.claude/skills/my-skill
+```
+
+**Project Skill (팀 공유)**
+```bash
+mkdir -p .claude/skills/team-coding-style
+```
+
+### SKILL.md 작성
+
+```markdown
+---
+name: team-coding-style
+description: 우리 팀 코딩 스타일. 모든 코드 작성 시 자동 적용.
+---
+
+# 팀 코딩 스타일 가이드
+
+## React 컴포넌트
+
+1. **함수형 컴포넌트 사용** (클래스형 X)
+2. **Props는 interface로 정의**
+3. **파일명은 PascalCase** (Button.tsx)
+4. **styled-components 사용** (CSS 파일 X)
+
+```typescript
+// ✅ 좋은 예
+interface ButtonProps {
+  label: string;
+  onClick: () => void;
+}
+
+export const Button: React.FC<ButtonProps> = ({ label, onClick }) => {
+  return <StyledButton onClick={onClick}>{label}</StyledButton>;
+};
+```
+
+## 네이밍
+
+- 변수/함수: camelCase
+- 상수: UPPER_SNAKE_CASE
+- 타입/인터페이스: PascalCase
+
+## API 호출
+
+- axios 사용 (fetch X)
+- /api 폴더에 집중
+- 에러 처리 필수
+```
+
+### 팀과 Skills 공유
+
+```bash
+# 1. Skill 생성
+mkdir -p .claude/skills/git-workflow
+
+# 2. SKILL.md 작성
+# (커밋 메시지 규칙, 브랜치 전략 등)
+
+# 3. Git 커밋
+git add .claude/
+git commit -m "Add team Git workflow Skill"
+git push
+
+# 4. 팀원이 자동으로 받기
+git pull
+# 이제 Claude는 팀 Git 규칙 자동 적용
+```
+
+### 실전 Skill 예시: Git 워크플로우
+
+```markdown
+---
+name: git-workflow
+description: 팀 Git 커밋/PR 규칙. 커밋 메시지 작성 시 자동 적용.
+---
+
+# Git 워크플로우
+
+## 브랜치 전략
+
+- `main`: 프로덕션
+- `develop`: 개발
+- `feature/기능명`: 기능 개발
+- `hotfix/문제명`: 긴급 수정
+
+## 커밋 메시지
+
+```
+type: subject (50자 이내)
+
+body (선택사항)
+
+Refs: #이슈번호
+```
+
+**Type**:
+- feat: 새 기능
+- fix: 버그 수정
+- docs: 문서
+- refactor: 리팩토링
+- test: 테스트
+
+**예시**:
+```
+feat: 사용자 프로필 편집 기능 추가
+
+- 프로필 이미지 업로드
+- 닉네임/소개 수정
+- 유효성 검사 추가
+
+Refs: #123
+```
+```
+
+이제 Claude는:
+- 커밋 메시지를 자동으로 팀 형식으로 작성
+- 적절한 브랜치 이름 제안
+- PR 템플릿 자동 작성
+
+### Skill 도구 권한 제한
+
+보안을 위해 Skill이 사용할 도구를 제한할 수 있습니다:
+
+```markdown
+---
+name: safe-file-reader
+description: 읽기 전용 파일 접근. 변경 없이 확인만 필요할 때 사용.
+allowed-tools: Read, Grep, Glob
+---
+
+# Safe File Reader
+
+읽기 전용 파일 접근을 제공합니다.
+
+## Instructions
+1. Read로 파일 내용 확인
+2. Grep으로 파일 내 검색
+3. Glob으로 패턴별 파일 찾기
+
+파일 수정은 불가능합니다.
+```
+
+이 Skill이 활성화되면 Claude는 **권한 요청 없이** Read, Grep, Glob만 사용합니다.
+
+**참고 자료**:
+- [Claude Code 공식 문서](https://code.claude.com/docs)
+- [서브에이전트 가이드](https://code.claude.com/docs/ko/sub-agents)
+- [Agent Skills 가이드](https://code.claude.com/docs/ko/skills)d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"Claude Code 시작하기2"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2026년 2월 24일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","Claude",{"href":"/tags/Claude","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Claude"}],["$","$L3","AI",{"href":"/tags/AI","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"AI"}],["$","$L3","개발",{"href":"/tags/%EA%B0%9C%EB%B0%9C","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"개발"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","div",null,{"className":"h-28"}],["$","div",null,{"className":"h-28"}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"Claude Code 시작하기2 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법."}],["$","meta","2",{"property":"og:title","content":"Claude Code 시작하기2"}],["$","meta","3",{"property":"og:description","content":"서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법."}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-02-24"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"Claude Code 시작하기2"}],["$","meta","8",{"name":"twitter:description","content":"서브에이전트로 특화된 AI 워커를 만들고, Skills로 팀 규칙을 학습시키는 방법."}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

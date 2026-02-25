@@ -1,0 +1,973 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d5ebba4595249be0.css","style"]
+0:{"P":null,"b":"rq94cetZS17rr6VXyxt_m","p":"","c":["","posts","frontend","typescript-basics-part1",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","frontend","d"],{"children":[["slug","typescript-basics-part1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d5ebba4595249be0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","frontend","d"],"$L8",{"children":[["slug","typescript-basics-part1","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T5924,
+JavaScript에서 TypeScript로 넘어오면서 가장 헷갈리는 부분이 바로 타입입니다. 
+이 시리즈는 총 4부작으로 구성되어 있으며, 처음엔 TypeScript의 기초 타입을 다룹니다.
+
+## 시리즈 구성
+
+- **Part 1 (현재 글)**: 기본 타입, 객체, 함수, Union/Intersection
+- **Part 2**: 타입 좁히기와 제네릭
+- **Part 3**: 유틸리티 타입과 any 
+- **Part 4**: 실무 패턴과 고급 타입
+
+## 기본 타입 (Primitive Types)
+
+TypeScript의 기본 타입부터 차근차근 살펴보겠습니다. JavaScript의 기본 타입에 대응하지만, 명시적으로 타입을 선언할 수 있습니다.
+
+### 기본 타입 정의
+
+```typescript
+// 문자열 (String)
+const name: string = 'Alice';
+const greeting: string = `Hello, ${name}`;
+
+// Number - 정수와 실수를 구분하지 않음
+const age: number = 25;
+const price: number = 19.99;
+const binary: number = 0b1010; // 2진수: 10
+const hex: number = 0xf00d; // 16진수: 61453
+
+// Boolean
+const isActive: boolean = true;
+const hasPermission: boolean = false;
+
+// null과 undefined
+const nothing: null = null;
+const notDefined: undefined = undefined;
+
+// symbol (ES6) - 고유한 값을 만들 때 사용
+const sym: symbol = Symbol('unique');
+const sym2: symbol = Symbol('unique');
+console.log(sym === sym2); // false
+
+// bigint  - 매우 큰 정수를 다룰 때 사용 실무에서 쓰는거 잘 못봄
+const bigNumber: bigint = 100n;
+const anotherBig: bigint = BigInt(9007199254740991);
+```
+
+실무 팁: `strictNullChecks` 옵션을 켜면 `null`과 `undefined`를 명시적으로 처리해야 합니다. 이 옵션은 런타임 에러를 방지하는데 매우 중요합니다.
+첫 회사에서 배포 시 이걸 끄고 작업했었습니다. 까먹고 있다가 하나하나 다시 타입들을 정리했었습니다🥲
+
+```typescript
+// tsconfig.json에서 "strictNullChecks": true 설정 시
+let name: string = 'Alice';
+name = null; // 에러! 
+
+// null을 허용하려면 명시적으로 선언
+let nullableName: string | null = 'Bob';
+nullableName = null; 
+
+// undefined도 마찬가지
+let optionalValue: number | undefined = 42;
+optionalValue = undefined;
+```
+
+### 배열 타입
+
+배열은 두 가지 방법으로 타입을 지정할 수 있습니다.
+
+```typescript
+// 타입[]  
+const numbers: number[] = [1, 2, 3, 4, 5];
+const names: string[] = ['Alice', 'Bob', 'Charlie'];
+
+// Array<타입> - 제네릭 방식
+const scores: Array<number> = [90, 85, 95];
+const emails: Array<string> = ['a@test.com', 'b@test.com'];
+
+// 다차원 배열
+const matrix: number[][] = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+// 혼합 타입 배열 -타입 안정성이 떨어지기 때문에 권장 x
+const mixed: (string | number)[] = ['Alice', 25, 'Bob', 30];
+
+// 읽기 전용 배열
+const readonlyArr: readonly number[] = [1, 2, 3];
+readonlyArr.push(4); // 에러!
+
+// ReadonlyArray 타입
+const readonlyArr2: ReadonlyArray<string> = ['a', 'b', 'c'];
+readonlyArr2[0] = 'z'; // 에러!
+```
+
+**실무 활용**: React에서 상태를 불변으로 관리할 때 readonly 사용
+
+```typescript
+interface State {
+  readonly items: readonly string[];
+}
+
+// 나쁜 예: 원본 배열 변경
+function addItemBad(state: State, item: string): State {
+  state.items.push(item); // 에러!
+  return state;
+}
+
+// 좋은 예: 새 배열을 반환
+function addItem(state: State, item: string): State {
+  return {
+    items: [...state.items, item]
+  };
+}
+
+// 사용 예시
+let myState: State = { items: ['item1', 'item2'] };
+myState = addItem(myState, 'item3');
+console.log(myState.items); // ['item1', 'item2', 'item3']
+```
+
+### 튜플 (Tuple)
+
+튜플은 고정된 개수와 타입의 배열을 표현합니다. 배열과 달리 각 위치의 타입이 정해져 있습니다.(좀 더 빡빡한 버전)
+
+```typescript
+// 기본 튜플
+const user: [string, number] = ['Alice', 25];
+const user2: [string, number] = [25, 'Alice']; // 에러! 타입 순서 불일치
+
+// 튜플 요소 접근
+const name = user[0]; // string 타입
+const age = user[1];  // number 타입
+
+// 라벨이 있는 튜플 - 가독성 향상
+type User = [name: string, age: number, isAdmin: boolean];
+const admin: User = ['Alice', 25, true];
+
+// 선택적 요소 (마지막만 가능)
+type Response = [status: number, data: string, error?: string];
+const success: Response = [200, 'OK'];
+const failure: Response = [500, 'Server Error', 'Internal error'];
+
+// Rest 요소 (나머지 요소)
+type StringNumberBooleans = [string, number, ...boolean[]];
+const example1: StringNumberBooleans = ['hello', 1, true, false, true];
+const example2: StringNumberBooleans = ['world', 2]; // boolean[]은 비어있어도 OK
+
+```
+
+**왜 튜플을 사용할까?**
+
+튜플은 여러 값을 묶어서 반환 할 때 유용합니다. 객체를 만들기에는 과하고, 배열로는 타입 안정성이 떨어질 때 사용합니다.
+
+```typescript
+// 배열 사용 시 - 타입 안정성 부족
+function getUserBad(id: number): (User | Error | null)[] {
+  try {
+    const user = fetchUser(id);
+    return [user, null];
+  } catch (error) {
+    return [null, error as Error];
+  }
+}
+
+const result = getUserBad(1);
+const user = result[0]; // User | Error | null - 어떤 타입인지 불명확
+
+// 튜플 사용 시 - 명확한 타입
+function getUser(id: number): [User | null, Error | null] {
+  try {
+    const user = fetchUser(id);
+    return [user, null];
+  } catch (error) {
+    return [null, error as Error];
+  }
+}
+
+const [user, error] = getUser(1);
+// user: User | null
+// error: Error | null
+
+if (error) {
+  console.error(error.message); // error는 Error 타입
+} else if (user) {
+  console.log(user.name); // user는 User 타입
+}
+```
+
+## 객체 타입
+
+객체의 형태를 정의하는 방법은 크게 두 가지: `interface`와 `type` 입니다.
+
+### Interface vs Type Alias
+
+```typescript
+// Interface
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+// Type Alias
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+};
+```
+
+**언제 무엇을 사용할까?**
+
+둘 다 객체 타입을 정의할 수 있지만, 상황에 따라 적합한 것이 다릅니다.
+
+**Interface를 사용하는 경우:**
+
+1. 객체의 형태를 정의할 때
+2. 확장(extends)이 필요할 때
+3. 선언 병합(declaration merging)이 필요할 때
+
+```typescript
+// 1. 객체 형태 정의
+interface Animal {
+  name: string;
+  age: number;
+}
+
+// 2. 확장 (extends)
+interface Dog extends Animal {
+  bark(): void;
+}
+
+const myDog: Dog = {
+  name: 'Bobby',
+  age: 3,
+  bark() {
+    console.log('Woof!');
+  }
+};
+
+// 3. 선언 병합 - 같은 이름의 interface를 여러 번 선언하면 자동으로 병합
+interface User {
+  id: number;
+}
+
+interface User {
+  name: string;
+}
+
+// 자동으로 병합
+const user: User = {
+  id: 1,
+  name: 'Alice'
+};
+```
+
+
+```typescript
+// 예: Express의 Request 타입에 사용자 정의 속성 추가
+declare global {
+  namespace Express {
+    interface Request {
+      userId?: number;
+      isAuthenticated?: boolean;
+    }
+  }
+}
+
+// 이제 req.userId를 타입 안전하게 사용 가능
+app.use((req, res, next) => {
+  req.userId = 123; // OK
+  next();
+});
+```
+
+**Type Alias를 사용하는 경우:**
+
+1. Union, Intersection 타입
+2. Tuple, Primitive 타입에 이름 붙일 때
+3. 복잡한 타입 조합
+
+```typescript
+// 1. Union 타입
+type Status = 'pending' | 'approved' | 'rejected';
+
+// 2. Intersection 타입
+type Admin = User & {
+  role: 'admin';
+  permissions: string[];
+};
+
+// 3. Tuple
+type Point = [number, number];
+type RGB = [red: number, green: number, blue: number];
+
+// 4. Primitive 타입에 이름 붙이기
+type ID = string | number;
+type Email = string;
+
+// 5. Mapped type
+type Readonly<T> = {
+  readonly [P in keyof T]: T[P];
+};
+
+// 6. 조건부 타입
+type NonNullable<T> = T extends null | undefined ? never : T;
+```
+
+정리: 객체 형태는 `interface`, Union/Intersection/복잡한 타입은 `type`을 사용하는 것이 일반적입니다.
+
+### 선택적 프로퍼티와 읽기 전용
+
+```typescript
+interface User {
+  id: number;              // 필수
+  name: string;            // 필수
+  email?: string;          // 선택적 ?
+  readonly createdAt: Date; // 읽기 전용
+  age?: number;            // 선택적
+}
+
+const user: User = {
+  id: 1,
+  name: 'Alice',
+  createdAt: new Date()
+  // email과 age는 없어도 OK
+};
+
+// 선택적 속성 추가 가능
+user.email = 'alice@example.com';
+
+//  읽기 전용 속성 변경 불가
+user.createdAt = new Date(); // 에러!
+
+// 선택적 속성 안전하게 사용하기
+function sendEmail(user: User) {
+  // 나쁜 예
+  console.log(user.email.toLowerCase()); // user.email이 undefined면 에러!
+
+  // 좋은 예 1: 옵셔널 체이닝
+  console.log(user.email?.toLowerCase());
+
+  // 좋은 예 2: 타입 가드
+  if (user.email) {
+    console.log(user.email.toLowerCase());
+  }
+
+  // 좋은 예 3: 기본값
+  const email = user.email ?? 'no-email@example.com';
+  console.log(email.toLowerCase());
+}
+```
+
+readonly의 깊이 제한: `readonly`는 첫번째 단계만 적용됩니다.
+
+```typescript
+interface User {
+  readonly profile: {
+    name: string;
+    age: number;
+  };
+}
+
+const user: User = {
+  profile: { name: 'Alice', age: 25 }
+};
+
+// profile 자체를 변경할 수 없음
+user.profile = { name: 'Bob', age: 30 }; // 에러!
+
+// 하지만 profile의 속성은 변경 가능
+user.profile.name = 'Bob'; 
+user.profile.age = 30; 
+
+// 완전한 불변성을 원한다면 중첩된 readonly 사용
+interface User {
+  readonly profile: {
+    readonly name: string;
+    readonly age: number;
+  };
+}
+```
+
+### 인덱스 시그니처
+
+동적 프로퍼티를 가진 객체의 타입을 정의합니다. 런타임에 어떤 키가 들어올지 모를 때 사용합니다.
+
+```typescript
+// 문자열 인덱스
+interface StringMap {
+  [key: string]: string;
+}
+
+const translations: StringMap = {
+  hello: '안녕하세요',
+  goodbye: '안녕히 가세요',
+  thanks: '감사합니다'
+};
+
+console.log(translations['hello']); // '안녕하세요'
+console.log(translations['anything']); // undefined (하지만 타입은 string)
+
+// 숫자 인덱스
+interface NumberMap {
+  [index: number]: string;
+}
+
+const items: NumberMap = {
+  0: 'first',
+  1: 'second',
+  2: 'third'
+};
+
+// 혼합 (특정 키 + 인덱스)
+interface Config {
+  port: number;              // 필수 속성
+  [key: string]: number | string; // 추가 속성은 number 또는 string
+}
+
+const config: Config = {
+  port: 3000,
+  host: 'localhost',
+  timeout: 5000,
+  name: 'my-app'
+};
+```
+
+주의사항: 인덱스 시그니처는 타입 안정성을 약화시킵니다.
+
+```typescript
+interface StringMap {
+  [key: string]: string;
+}
+
+const map: StringMap = {
+  name: 'Alice'
+};
+
+// 존재하지 않는 키에 접근해도 타입은 string
+const value = map['nonexistent']; // 타입: string (실제 값: undefined)
+console.log(value.toUpperCase()); // 런타임 에러!
+```
+
+더 나은 방법: `Record` 유틸리티 타입 사용
+
+```typescript
+// Record<키 타입, 값 타입>
+type ErrorMessages = Record<string, string>;
+
+const errors: ErrorMessages = {
+  required: '필수 항목입니다',
+  email: '이메일 형식이 올바르지 않습니다'
+};
+
+// 또는 더 타입 안전하게
+type ErrorCode = 'required' | 'email' | 'minLength';
+type ErrorMessages = Record<ErrorCode, string>;
+
+const errors: ErrorMessages = {
+  required: '필수 항목입니다',
+  email: '이메일 형식이 올바르지 않습니다',
+  minLength: '최소 8자 이상 입력해주세요'
+  // 모든 ErrorCode를 다 정의해야 함
+};
+```
+
+## 함수 타입
+
+함수의 매개변수와 반환값에 타입을 지정할 수 있습니다.
+
+### 함수 선언과 타입
+
+```typescript
+// 기본 함수 타입
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+// 화살표 함수
+const multiply = (a: number, b: number): number => {
+  return a * b;
+};
+
+// 단축형
+const divide = (a: number, b: number): number => a / b;
+
+// 함수 타입 정의
+type MathOperation = (a: number, b: number) => number;
+
+const subtract: MathOperation = (a, b) => a - b;
+// 타입이 이미 정의되어 있어서 매개변수 타입 추론 가능
+
+// interface로도 정의 가능
+interface Calculator {
+  (a: number, b: number): number;
+}
+
+const modulo: Calculator = (a, b) => a % b;
+```
+
+### 선택적 매개변수와 기본값
+
+```typescript
+// 선택적 매개변수 (끝에 위치해야 함)
+function greet(name: string, greeting?: string): string {
+  return `${greeting || 'Hello'}, ${name}!`;
+}
+
+greet('Alice'); // "Hello, Alice!"
+greet('Bob', 'Hi'); // "Hi, Bob!"
+
+// 기본값 매개변수 (타입 추론 가능)
+function createUser(name: string, age: number = 18) {
+  return { id: Date.now(), name, age };
+}
+
+createUser('Alice'); // age는 18
+createUser('Bob', 25); // age는 25
+
+// 선택적 매개변수와 기본값의 차이
+function test1(value?: number) {
+  console.log(value); // undefined 또는 number
+}
+
+function test2(value: number = 0) {
+  console.log(value); // 항상 number (undefined면 0으로 대체)
+}
+
+test1(); // undefined
+test2(); // 0
+```
+
+### Rest 매개변수
+
+```typescript
+// Rest 매개변수는 항상 배열
+function sum(...numbers: number[]): number {
+  return numbers.reduce((total, n) => total + n, 0);
+}
+
+sum(1, 2, 3, 4, 5); // 15
+
+// 일반 매개변수와 Rest 매개변수 혼합
+function multiply(factor: number, ...numbers: number[]): number[] {
+  return numbers.map(n => n * factor);
+}
+
+multiply(2, 1, 2, 3); // [2, 4, 6]
+
+// Rest 매개변수는 마지막에만 올 수 있음
+function invalid(...numbers: number[], factor: number) { } // 에러
+```
+
+### void, never, unknown 반환 타입
+
+```typescript
+// void - 반환값이 없음 (undefined는 반환 가능)
+function log(message: string): void {
+  console.log(message);
+  // return 문이 없거나 return;만 가능
+}
+
+function voidExample(): void {
+  return undefined;
+  return null; // 에러
+  return 0; // 에러
+}
+
+// never - 절대 반환하지 않음 (함수가 끝나지 않음)
+function throwError(message: string): never {
+  throw new Error(message);
+  // 이 함수는 항상 예외를 던지므로 절대 정상 종료되지 않음
+}
+
+function infiniteLoop(): never {
+  while (true) {
+    // 무한 루프
+  }
+}
+
+// never의 유용한 활용: 타입 좁히기
+function assertNever(value: never): never {
+  throw new Error(`Unexpected value: ${value}`);
+}
+
+type Shape = 'circle' | 'square';
+
+function getArea(shape: Shape) {
+  switch (shape) {
+    case 'circle':
+      return Math.PI * 10 * 10;
+    case 'square':
+      return 10 * 10;
+    default:
+      return assertNever(shape); // 모든 case를 다 처리했다면 여기는 never
+  }
+}
+
+// unknown - 타입 안전한 any (Part 3에서 자세히 다룸)
+function parseJSON(json: string): unknown {
+  return JSON.parse(json);
+}
+
+const result = parseJSON('{"name": "Alice"}');
+// result.name; // 에러 unknown 타입은 바로 사용 불가
+
+// 타입 체크 후 사용
+if (typeof result === 'object' && result !== null && 'name' in result) {
+  console.log((result as { name: string }).name);
+}
+```
+
+### 함수 오버로딩
+
+같은 이름의 함수에 여러 시그니처를 제공합니다. 입력 타입에 따라 출력 타입이 달라질 때 유용합니다.
+
+```typescript
+// 오버로드 시그니처들
+function format(value: string): string;
+function format(value: number): string;
+function format(value: Date): string;
+
+// 구현 시그니처 (모든 경우를 처리)
+function format(value: string | number | Date): string {
+  if (typeof value === 'string') {
+    return value.toUpperCase();
+  }
+  if (typeof value === 'number') {
+    return value.toFixed(2);
+  }
+  return value.toISOString();
+}
+
+// 사용
+format('hello'); // "HELLO" 
+format(42); // "42.00"
+format(new Date()); // "2024-10-08T..."
+format(true); // 에러 boolean은 오버로드에 없음
+
+// 실무 예시: 단일 ID 또는 여러 ID를 받는 함수
+function fetchData(id: number): Promise<User>;
+function fetchData(ids: number[]): Promise<User[]>;
+
+async function fetchData(input: number | number[]): Promise<User | User[]> {
+  if (Array.isArray(input)) {
+    return Promise.all(input.map(id => fetchUser(id)));
+  }
+  return fetchUser(input);
+}
+
+// 타입이 정확하게 추론됨
+const user = await fetchData(1); // Promise<User>
+const users = await fetchData([1, 2, 3]); // Promise<User[]>
+```
+
+## Union과 Intersection 타입
+
+### Union Types (|) - "또는"
+
+여러 타입 중 **하나**를 가질 수 있습니다.
+
+```typescript
+// 기본 Union
+type ID = string | number;
+
+let userId: ID = 123;
+userId = 'abc-123'; // 둘 다 가능
+
+// 리터럴 타입 Union (가장 많이 사용)
+type Status = 'idle' | 'loading' | 'success' | 'error';
+
+let currentStatus: Status = 'idle';
+currentStatus = 'loading'; // 
+currentStatus = 'pending'; // 에러! 'pending'은 Status 타입이 아님
+
+function handleStatus(status: Status) {
+  switch (status) {
+    case 'idle':
+      return '대기 중';
+    case 'loading':
+      return '로딩 중...';
+    case 'success':
+      return '완료!';
+    case 'error':
+      return '오류 발생';
+    // 모든 case를 다 처리했으므로 default 불필요
+  }
+}
+```
+
+**실무 활용**: API 응답 상태 관리
+
+```typescript
+type LoadingState = { status: 'loading' };
+type SuccessState = { status: 'success'; data: User };
+type ErrorState = { status: 'error'; error: string };
+
+type RequestState = LoadingState | SuccessState | ErrorState;
+
+function renderUser(state: RequestState) {
+  switch (state.status) {
+    case 'loading':
+      return <Spinner />;
+    case 'success':
+      return <UserProfile user={state.data} />; // data는 SuccessState에만 있음
+    case 'error':
+      return <ErrorMessage message={state.error} />; // error는 ErrorState에만 있음
+  }
+}
+```
+
+### Discriminated Union (태그된 유니온)
+
+**공통 속성(discriminant)**으로 타입을 구분하는 패턴입니다. TypeScript가 타입을 자동으로 좁혀줍니다.
+
+```typescript
+// 기본 패턴
+type Circle = {
+  kind: 'circle';  // discriminant (구분자)
+  radius: number;
+};
+
+type Rectangle = {
+  kind: 'rectangle';  // discriminant
+  width: number;
+  height: number;
+};
+
+type Triangle = {
+  kind: 'triangle';  // discriminant
+  base: number;
+  height: number;
+};
+
+type Shape = Circle | Rectangle | Triangle;
+
+function getArea(shape: Shape): number {
+  switch (shape.kind) {
+    case 'circle':
+      // 이 블록 안에서 shape는 Circle 타입
+      return Math.PI * shape.radius ** 2;
+
+    case 'rectangle':
+      // 이 블록 안에서 shape는 Rectangle 타입
+      return shape.width * shape.height;
+
+    case 'triangle':
+      // 이 블록 안에서 shape는 Triangle 타입
+      return (shape.base * shape.height) / 2;
+  }
+}
+
+const circle: Shape = { kind: 'circle', radius: 10 };
+const rect: Shape = { kind: 'rectangle', width: 20, height: 15 };
+
+console.log(getArea(circle)); // 314.159...
+console.log(getArea(rect)); // 300
+```
+
+**실무 예시**: 제네릭 Result 타입
+
+```typescript
+type Success<T> = {
+  type: 'success';
+  data: T;
+};
+
+type Failure = {
+  type: 'error';
+  error: string;
+  code?: number;
+};
+
+type Result<T> = Success<T> | Failure;
+
+function handleResult<T>(result: Result<T>) {
+  if (result.type === 'success') {
+    // result는 Success<T> 타입으로 좁혀짐
+    console.log('데이터:', result.data);
+    processData(result.data); // T 타입
+  } else {
+    // result는 Failure 타입으로 좁혀짐
+    console.error('에러:', result.error);
+    if (result.code) {
+      console.error('에러 코드:', result.code);
+    }
+  }
+}
+
+// 사용
+const userResult: Result<User> = await fetchUser(1);
+handleResult(userResult);
+```
+
+### Intersection Types (&) - "그리고"
+
+여러 타입을 모두 만족해야 합니다. 타입을 합칩니다.
+
+```typescript
+// 기본 Intersection
+type Person = {
+  name: string;
+  age: number;
+};
+
+type Employee = {
+  employeeId: number;
+  department: string;
+};
+
+type Worker = Person & Employee;
+
+const worker: Worker = {
+  name: 'Alice',
+  age: 30,
+  employeeId: 12345,
+  department: 'Engineering'
+  // 모든 속성이 필요함
+};
+
+// 하나라도 빠지면 에러
+const incomplete: Worker = {
+  name: 'Bob',
+  age: 25
+  // 에러- employeeId와 department가 없음
+};
+```
+
+Mixin 패턴: 공통 속성을 재사용
+
+```typescript
+// 타임스탬프 기능
+interface Timestamped {
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+// 소프트 삭제 기능
+interface SoftDeletable {
+  deletedAt?: Date;
+  isDeleted: boolean;
+}
+
+// 페이지네이션 정보
+interface Paginated {
+  page: number;
+  pageSize: number;
+  total: number;
+}
+
+// 조합해서 사용
+type Post = {
+  id: number;
+  title: string;
+  content: string;
+} & Timestamped & SoftDeletable;
+
+type PostList = {
+  posts: Post[];
+} & Paginated;
+
+const post: Post = {
+  id: 1,
+  title: 'Hello',
+  content: 'World',
+  createdAt: new Date(),
+  updatedAt: new Date(),
+  isDeleted: false
+};
+
+const postList: PostList = {
+  posts: [post],
+  page: 1,
+  pageSize: 10,
+  total: 100
+};
+```
+
+**실무 활용**: 컴포넌트 props 합성
+
+```typescript
+// 기본 버튼 props
+type ButtonBaseProps = {
+  children: React.ReactNode;
+  onClick: () => void;
+};
+
+// 스타일 관련 props
+type StyledProps = {
+  variant: 'primary' | 'secondary';
+  size: 'small' | 'medium' | 'large';
+};
+
+// 로딩 상태 props
+type LoadableProps = {
+  loading?: boolean;
+  disabled?: boolean;
+};
+
+// 모두 합쳐서 버튼 컴포넌트 props 생성
+type ButtonProps = ButtonBaseProps & StyledProps & LoadableProps;
+
+function Button(props: ButtonProps) {
+  // 모든 props 사용 가능
+  const { children, onClick, variant, size, loading, disabled } = props;
+  // ...
+}
+```
+
+### Union vs Intersection 비교
+
+```typescript
+// Union: A 또는 B
+type A = { name: string };
+type B = { age: number };
+type UnionAB = A | B;
+
+const union1: UnionAB = { name: 'Alice' }; // A만 만족
+const union2: UnionAB = { age: 25 }; // B만
+const union3: UnionAB = { name: 'Bob', age: 30 }; // 둘 다 
+const union4: UnionAB = {}; // 둘 다 만족하지 않음
+
+// Intersection: A 그리고 B
+type IntersectionAB = A & B;
+
+const intersection1: IntersectionAB = { name: 'Alice' }; // age 없음
+const intersection2: IntersectionAB = { age: 25 }; // name 없음
+const intersection3: IntersectionAB = { name: 'Bob', age: 30 }; // 둘 다 있음
+```
+
+## 마치며
+
+Part 1에서는 TypeScript의 기초 타입 시스템을 다뤘습니다.
+사실 타입 정리는 한번쯤 다시 정리 하고 싶었는데 정리 하니 좀 간결해진거 같아서 좋습니다. 
+실무에서 왜 이때 이걸 썼는지 이해도 가구요,. 
+
+
+**다음 Part 2에서는**:
+- 타입 좁히기 (Type Narrowing)
+- 사용자 정의 타입 가드
+- 제네릭의 모든 것
+- 실무 제네릭 패턴
+
+를 할 예정입니다.
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"TypeScript 기초 타입 학습"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 10월 8일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","프론트엔드",{"href":"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"프론트엔드"}],["$","$L3","TypeScript",{"href":"/tags/TypeScript","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"TypeScript"}],["$","$L3","타입",{"href":"/tags/%ED%83%80%EC%9E%85","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"타입"}],["$","$L3","study",{"href":"/tags/study","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"study"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/frontend/typescript-basics-part2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"TypeScript 타입 좁히기와 제네릭"}]]}],["$","$L3",null,{"href":"/posts/computer-science/data-structures-fundamentals-part2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"자료구조 학습 2: 비선형 자료구조"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"TypeScript 기초 타입 학습 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"TypeScript의 기본 타입부터 객체, 함수, Union/Intersection"}],["$","meta","2",{"property":"og:title","content":"TypeScript 기초 타입 학습"}],["$","meta","3",{"property":"og:description","content":"TypeScript의 기본 타입부터 객체, 함수, Union/Intersection"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-10-08"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"TypeScript 기초 타입 학습"}],["$","meta","8",{"name":"twitter:description","content":"TypeScript의 기본 타입부터 객체, 함수, Union/Intersection"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

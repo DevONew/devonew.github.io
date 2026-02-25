@@ -1,0 +1,902 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d5ebba4595249be0.css","style"]
+0:{"P":null,"b":"rq94cetZS17rr6VXyxt_m","p":"","c":["","posts","frontend","typescript-advanced-part1",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","frontend","d"],{"children":[["slug","typescript-advanced-part1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d5ebba4595249be0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","frontend","d"],"$L8",{"children":[["slug","typescript-advanced-part1","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T4f8e,
+Part 2에서는 타입 좁히기와 제네릭을 다뤘습니다. Part 3에서는 TypeScript가 제공하는 유틸리티 타입과 any를 안전하게 다루는 방법을 다룹니다.
+
+
+## 시리즈 구성
+
+- **Part 1**: 기본 타입, 객체, 함수, Union/Intersection
+- **Part 2**: 타입 좁히기와 제네릭
+- **Part 3 (현재 글)**: 유틸리티 타입과 any
+- **Part 4**: 실무 패턴과 고급 타입
+
+## 유틸리티 타입
+
+TypeScript가 제공하는 내장 유틸리티 타입들은 기존 타입을 변환하여 새로운 타입을 만듭니다.
+
+### Partial<T>
+
+모든 속성을 optional으로 만듭니다.
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+  address: string;
+}
+
+// 원하는것 - 모든 필드가 선택적이 됨
+type PartialUser = Partial<User>;
+// {
+//   id?: number;
+//   name?: string;
+//   email?: string;
+//   age?: number;
+//   address?: string;
+// }
+
+// 일부 필드만 업데이트할 때 유용
+const updates: Partial<User> = {
+  name: 'Bob',
+  age: 30
+  // id, email, address는 없어도 OK
+};
+```
+
+ 업데이트 함수
+
+```typescript
+// 모든 필드를 받음
+function updateUserBad(id: number, updates: User): User {
+  const currentUser = getUserById(id);
+  return { ...currentUser, ...updates };
+  // 문제: id, name 등을 모두 제공해야 함
+}
+
+// Partial 사용
+function updateUser(id: number, updates: Partial<User>): User {
+  const currentUser = getUserById(id);
+  return { ...currentUser, ...updates };
+}
+
+// 사용
+updateUser(1, { name: 'New Name' }); // 이름만 변경
+updateUser(1, { age: 26, email: 'new@example.com' }); // 여러 필드 변경
+updateUser(1, {}); // 아무것도 변경 안함
+
+// React setState와 유사한 패턴
+function setState<T>(state: T, updates: Partial<T>): T {
+  return { ...state, ...updates };
+}
+
+const user = { id: 1, name: 'Alice', age: 25 };
+const newUser = setState(user, { age: 26 }); // { id: 1, name: 'Alice', age: 26 }
+```
+
+Partial의 한계 - 한단계에서만 적용
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  profile: {
+    bio: string;
+    avatar: string;
+  };
+}
+
+type PartialUser = Partial<User>;
+// {
+//   id?: number;
+//   name?: string;
+//   profile?: {  // optional
+//     bio: string;      // 여전히 필수
+//     avatar: string;   // 여전히 필수
+//   };
+// }
+
+// 깊은 Partial이 필요하면 직접 구현
+type DeepPartial<T> = {
+  [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
+};
+
+type DeepPartialUser = DeepPartial<User>;
+// {
+//   id?: number;
+//   name?: string;
+//   profile?: {
+//     bio?: string;      //optional
+//     avatar?: string;   // optional
+//   };
+// }
+```
+
+### Required<T>
+
+반대도 있어야겠죠. 모든 속성을 필수로 만듭니다. 
+
+```typescript
+interface Config {
+  host?: string;
+  port?: number;
+  timeout?: number;
+  debug?: boolean;
+}
+
+// 모든 필드가 필수가 됨
+type RequiredConfig = Required<Config>;
+// {
+//   host: string;
+//   port: number;
+//   timeout: number;
+//   debug: boolean;
+// }
+
+// 기본값이 있어야함
+const defaultConfig: Required<Config> = {
+  host: 'localhost',
+  port: 3000,
+  timeout: 5000,
+  debug: false
+};
+
+function createConfig(config: Config = {}): Required<Config> {
+  return {
+    host: config.host ?? defaultConfig.host,
+    port: config.port ?? defaultConfig.port,
+    timeout: config.timeout ?? defaultConfig.timeout,
+    debug: config.debug ?? defaultConfig.debug
+  };
+}
+
+// 사용
+const config1 = createConfig(); // 모든 필드가 기본값
+const config2 = createConfig({ port: 8080 }); // port만 변경, 나머지는 기본값
+```
+
+### Readonly<T>
+
+모든 속성을 읽기 전용으로 만듭니다.
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+}
+
+type ReadonlyUser = Readonly<User>;
+// {
+//   readonly id: number;
+//   readonly name: string;
+//   readonly email: string;
+// }
+
+const user: ReadonlyUser = {
+  id: 1,
+  name: 'Alice',
+  email: 'alice@example.com'
+};
+
+user.name = 'Bob'; // 에러
+```
+
+불변 상태 관리
+
+```typescript
+// Redux/Zustand 같은 상태 관리
+interface AppState {
+  count: number;
+  user: User | null;
+  theme: 'light' | 'dark';
+}
+
+// 상태는 읽기 전용으로 관리
+type ImmutableState = Readonly<AppState>;
+
+function reducer(state: ImmutableState, action: Action): ImmutableState {
+  // state.count = 10; // 에러
+
+  // 새 객체 - 근데 실무에서는 사실 switch와 case문을 안쓰니깐..
+  switch (action.type) {
+    case 'INCREMENT':
+      return { ...state, count: state.count + 1 };
+
+    case 'SET_USER':
+      return { ...state, user: action.payload };
+
+    case 'TOGGLE_THEME':
+      return { ...state, theme: state.theme === 'light' ? 'dark' : 'light' };
+
+    default:
+      return state;
+  }
+}
+
+// React Props도 기본적으로 Readonly
+interface ButtonProps {
+  label: string;
+  onClick: () => void;
+}
+
+function Button(props: Readonly<ButtonProps>) {
+  // props.label = 'New Label'; // 에러
+  return <button onClick={props.onClick}>{props.label}</button>;
+}
+```
+
+### Pick<T, K>
+
+특정 속성만 선택합니다.
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+  address: string;
+  phone: string;
+}
+
+// id와 name만 
+type UserPreview = Pick<User, 'id' | 'name'>;
+// { id: number; name: string }
+
+// 로그인 응답용 타입
+type LoginResponse = Pick<User, 'id' | 'name' | 'email'>;
+// { id: number; name: string; email: string }
+
+const preview: UserPreview = {
+  id: 1,
+  name: 'Alice'
+  // email, age 등은 필요 X
+};
+```
+
+API 응답 타입 정의
+
+```typescript
+// 전체 User 타입
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+  role: 'user' | 'admin';
+  createdAt: Date;
+  updatedAt: Date;
+  lastLoginAt: Date | null;
+}
+
+// 목록 조회용 (간단한 정보만)
+type UserListItem = Pick<User, 'id' | 'name' | 'email' | 'role'>;
+
+// 프로필 조회용 (비밀번호 제외)
+type UserProfile = Pick<User, 'id' | 'name' | 'email' | 'createdAt' | 'lastLoginAt'>;
+
+// 인증 토큰용 (최소 정보)
+type TokenPayload = Pick<User, 'id' | 'role'>;
+
+// API 함수
+async function getUserList(): Promise<UserListItem[]> {
+  const response = await fetch('/api/users');
+  return response.json();
+}
+
+async function getUserProfile(id: number): Promise<UserProfile> {
+  const response = await fetch(`/api/users/${id}/profile`);
+  return response.json();
+}
+```
+
+### Omit<T, K>
+
+특정 속성을 제외합니다. Pick의 반대.
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+}
+
+// password 제외
+type PublicUser = Omit<User, 'password'>;
+// { id: number; name: string; email: string }
+
+// 여러 필드 제외
+type UserWithoutMeta = Omit<User, 'id' | 'createdAt' | 'updatedAt'>;
+```
+
+ DTO (Data Transfer Object) 생성
+
+```typescript
+interface User {
+  id: number;
+  name: string;
+  email: string;
+  password: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+// API 응답에서 민감한 정보 제외
+type UserDTO = Omit<User, 'password'>;
+
+function getUserDTO(user: User): UserDTO {
+  const { password, ...rest } = user;
+  return rest;
+}
+
+// 생성 시 자동 생성 필드 제외
+type CreateUserDTO = Omit<User, 'id' | 'createdAt' | 'updatedAt'>;
+
+async function createUser(data: CreateUserDTO): Promise<User> {
+  const user: User = {
+    ...data,
+    id: generateId(),
+    createdAt: new Date(),
+    updatedAt: new Date()
+  };
+
+  await saveToDatabase(user);
+  return user;
+}
+
+// 사용
+const newUser = await createUser({
+  name: 'Alice',
+  email: 'alice@example.com',
+  password: 'hashed_password'
+  // id, createdAt, updatedAt는 필요 없음
+});
+
+// 업데이트용 DTO (id 제외, 나머지 선택적)
+type UpdateUserDTO = Partial<Omit<User, 'id' | 'createdAt'>>;
+
+async function updateUser(id: number, data: UpdateUserDTO): Promise<User> {
+  const user = await getUserById(id);
+  return {
+    ...user,
+    ...data,
+    updatedAt: new Date()
+  };
+}
+
+// 사용
+await updateUser(1, { name: 'New Name' });
+await updateUser(1, { email: 'new@email.com', password: 'new_hash' });
+```
+
+### Record<K, T>
+
+키-값 쌍의 타입을 정의합니다.
+
+```typescript
+// 기본 사용
+type UserMap = Record<number, User>;
+
+const users: UserMap = {
+  1: { id: 1, name: 'Alice', email: 'alice@example.com' },
+  2: { id: 2, name: 'Bob', email: 'bob@example.com' }
+};
+
+// 문자열 키
+type ErrorMessages = Record<string, string>;
+
+const errors: ErrorMessages = {
+  required: '필수 입력 항목입니다',
+  email: '올바른 이메일 형식이 아닙니다',
+  minLength: '최소 8자 이상 입력해주세요'
+};
+```
+
+리터럴 유니온 키
+
+```typescript
+// 상태별 설정
+type Status = 'pending' | 'approved' | 'rejected';
+
+type StatusConfig = Record<Status, {
+  label: string;
+  color: string;
+  icon: string;
+}>;
+
+const statusConfig: StatusConfig = {
+  pending: { label: '대기중', color: 'yellow', icon: 'clock' },
+  approved: { label: '승인됨', color: 'green', icon: 'check' },
+  rejected: { label: '거부됨', color: 'red', icon: 'x' }
+  // 모든 Status 값을 다 정의해야 함
+};
+
+// 함수형 컴포넌트 props
+function StatusBadge({ status }: { status: Status }) {
+  const config = statusConfig[status];
+  return (
+    <span style={{ color: config.color }}>
+      <Icon name={config.icon} />
+      {config.label}
+    </span>
+  );
+}
+
+type Language = 'ko' | 'en' | 'ja';
+type TranslationKey = 'greeting' | 'farewell' | 'thanks';
+
+type Translations = Record<Language, Record<TranslationKey, string>>;
+
+const translations: Translations = {
+  ko: {
+    greeting: '안녕하세요',
+    farewell: '안녕히 가세요',
+    thanks: '감사합니다'
+  },
+  en: {
+    greeting: 'Hello',
+    farewell: 'Goodbye',
+    thanks: 'Thank you'
+  },
+  ja: {
+    greeting: 'こんにちは',
+    farewell: 'さようなら',
+    thanks: 'ありがとう'
+  }
+};
+
+function translate(lang: Language, key: TranslationKey): string {
+  return translations[lang][key];
+}
+```
+
+### Extract<T, U>와 Exclude<T, U>
+
+Union 타입에서 특정 타입을 추출하거나 제외합니다.
+
+```typescript
+type T1 = 'a' | 'b' | 'c' | 'd';
+type T2 = 'a' | 'c' | 'e';
+
+// Extract: 교집합 
+type Common = Extract<T1, T2>; // 'a' | 'c'
+
+// Exclude: 차집합 
+type Unique = Exclude<T1, T2>; // 'b' | 'd'
+
+//  null/undefined 제거
+type Value = string | number | null | undefined;
+type NonNullableValue = Exclude<Value, null | undefined>; // string | number
+
+// TypeScript 내장 NonNullable과 같음
+type NonNullable<T> = Exclude<T, null | undefined>;
+```
+
+이벤트 타입 필터링
+
+```typescript
+// 모든 이벤트 타입
+type AllEvents = 'click' | 'scroll' | 'resize' | 'keydown' | 'keyup' | 'mousemove';
+
+// 마우스 이벤트만 추출
+type MouseEvent = Extract<AllEvents, 'click' | 'mousemove'>; // 'click' | 'mousemove'
+
+// 마우스 이벤트 제외
+type NonMouseEvent = Exclude<AllEvents, MouseEvent>;
+// 'scroll' | 'resize' | 'keydown' | 'keyup'
+
+// 함수 시그니처에서 특정 타입만 추출
+type Fn1 = () => void;
+type Fn2 = (x: number) => void;
+type Fn3 = (x: string, y: number) => void;
+
+type AllFn = Fn1 | Fn2 | Fn3;
+
+// void를 반환하는 함수만 추출
+type VoidFn = Extract<AllFn, (...args: any[]) => void>;
+// Fn1 | Fn2 | Fn3 (모두 void 반환)
+
+// 매개변수가 없는 함수만 추출
+type NoArgsFn = Extract<AllFn, () => any>;
+// Fn1
+```
+
+### ReturnType<T>와 Parameters<T>
+
+함수 타입에서 반환 타입과 매개변수 타입을 추출합니다.
+
+```typescript
+// ReturnType: 함수의 반환 타입 추출
+function getUser() {
+  return { id: 1, name: 'Alice', email: 'alice@example.com' };
+}
+
+type User = ReturnType<typeof getUser>;
+// { id: number; name: string; email: string }
+
+// async 함수
+async function fetchData() {
+  return { data: 'hello' };
+}
+
+type FetchReturn = ReturnType<typeof fetchData>;
+// Promise<{ data: string }>
+
+// Promise를 벗기려면 Awaited 사용 
+type FetchData = Awaited<ReturnType<typeof fetchData>>;
+// { data: string }
+
+//함수의 매개변수 타입 추출 (튜플)
+function createUser(name: string, age: number, email: string) {
+  return { id: Date.now(), name, age, email };
+}
+
+type CreateUserParams = Parameters<typeof createUser>;
+// [name: string, age: number, email: string]
+
+const params: CreateUserParams = ['Alice', 25, 'alice@example.com'];
+const user = createUser(...params);
+```
+
+함수 래퍼 (Wrapper)
+
+```typescript
+// 로깅 추가
+function withLogging<T extends (...args: any[]) => any>(fn: T) {
+  return (...args: Parameters<T>): ReturnType<T> => {
+    console.log(`[${fn.name}] Called with:`, args);
+    const result = fn(...args);
+    console.log(`[${fn.name}] Returned:`, result);
+    return result;
+  };
+}
+
+// 사용
+const add = (a: number, b: number) => a + b;
+const loggedAdd = withLogging(add);
+
+loggedAdd(2, 3);
+// [add] Called with: [2, 3]
+// [add] Returned: 5
+
+function memoize<T extends (...args: any[]) => any>(fn: T) {
+  const cache = new Map<string, ReturnType<T>>();
+
+  return (...args: Parameters<T>): ReturnType<T> => {
+    const key = JSON.stringify(args);
+
+    if (cache.has(key)) {
+      console.log('Cache hit!');
+      return cache.get(key)!;
+    }
+
+    const result = fn(...args);
+    cache.set(key, result);
+    return result;
+  };
+}
+
+// 사용
+const expensiveCalculation = (n: number) => {
+  console.log('Computing...');
+  return n * n;
+};
+
+const memoized = memoize(expensiveCalculation);
+
+memoized(5); // "Computing..." >25
+memoized(5); // "Cache hit!" >25
+```
+
+## any 
+
+`any`는 TypeScript의 타입 시스템을 완전히 우회하는 역할을 합니다. 
+하지만 애니를 남발할 경우 TS를 사용하는 의미가 없다고 생각합니다. 
+
+### any가 위험한 이유
+
+```typescript
+let data: any = 'hello';
+
+data.toUpperCase(); 
+data.toFixed(); // 런타임 에러
+data.nonExistentMethod(); // 런타임 에러
+data.property.nested.deep.value; // 런타임 에러
+
+// 컴파일에 잡히지 않는 버그
+function processUser(user: any) {
+  console.log(user.name.toUpperCase()); // user.name이 없으면
+  console.log(user.age + 1); // age가 문자열이면
+  return user.email.toLowerCase(); // email이 없으면
+}
+
+processUser({}); //  런타임 에러
+processUser({ name: 123 }); // 런타임 에러
+processUser({ name: 'Alice', age: '25' }); // NaN
+
+// 타입 추론 망가뜨림
+const result: any = fetchData();
+const value = result.data; 
+const doubled = value * 2; 
+const upper = value.toUpperCase(); // 싹다 any 타입
+
+```
+
+### unknown: 안전한 any
+
+`unknown`은 any와 비슷하지만 타입 체크를 강제합니다.
+
+```typescript
+
+let value: unknown = 'hello';
+
+// 타입 체크 없이는 사용 불가
+value.toUpperCase(); // 에러
+value.length; // 에러
+value(); // 에러
+
+// 타입 체크 후 사용 가능
+if (typeof value === 'string') {
+  console.log(value.toUpperCase()); // 스트링으로 유추
+}
+
+// 여러 타입 체크
+function processUnknown(value: unknown) {
+  if (typeof value === 'string') {
+    return value.toUpperCase();
+  }
+
+  if (typeof value === 'number') {
+    return value.toFixed(2);
+  }
+
+  if (Array.isArray(value)) {
+    return value.length;
+  }
+
+  return 'Unknown type';
+}
+```
+
+JSON 파싱
+
+```typescript
+// any 사용
+function parseJSONBad(json: string): any {
+  return JSON.parse(json);
+}
+
+const data = parseJSONBad('{"name": "Alice"}');
+console.log(data.name); // 타입 안전하지 않음
+
+// unknown + 타입 가드
+function safeJsonParse(json: string): unknown {
+  try {
+    return JSON.parse(json);
+  } catch {
+    return null;
+  }
+}
+
+const data = safeJsonParse('{"name": "Alice"}');
+
+// 타입 가드로 안전하게 사용
+if (isUser(data)) {
+  console.log(data.name); // User 타입
+  console.log(data.email);
+}
+
+// API 응답
+async function fetchAPI(url: string): Promise<unknown> {
+  const response = await fetch(url);
+  return response.json();
+}
+
+const result = await fetchAPI('/api/user');
+
+if (isUser(result)) {
+  console.log(result.email);
+}
+```
+
+### any를 unknown으로 대체하기
+
+```typescript
+// any 사용
+function processDataBad(data: any) {
+  return data.value * 2;
+}
+
+// unknown + 타입 가드
+function processData(data: unknown): number {
+  if (
+    typeof data === 'object' &&
+    data !== null &&
+    'value' in data &&
+    typeof (data as { value: unknown }).value === 'number'
+  ) {
+    return (data as { value: number }).value * 2;
+  }
+
+  throw new Error('Invalid data format');
+}
+
+// 또는 타입 가드 함수로 분리
+interface DataWithValue {
+  value: number;
+}
+
+function isDataWithValue(data: unknown): data is DataWithValue {
+  return (
+    typeof data === 'object' &&
+    data !== null &&
+    'value' in data &&
+    typeof (data as DataWithValue).value === 'number'
+  );
+}
+
+function processDataBetter(data: unknown): number {
+  if (isDataWithValue(data)) {
+    return data.value * 2; 
+  }
+
+  throw new Error('Invalid data format');
+}
+```
+
+### Type Assertion 최소화
+
+타입 단언(`as`)은 컴파일러를 속이는 것이므로 최소화해야 합니다.
+
+```typescript
+const user = JSON.parse(userString) as User;
+console.log(user.name); // user가 User 타입이 아니면 에러!
+
+// 검증 후 사용
+function parseUser(json: string): User | null {
+  try {
+    const data = JSON.parse(json);
+    if (isUser(data)) {
+      return data;
+    }
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+const user = parseUser(userString);
+if (user) {
+  console.log(user.name); 
+}
+
+
+const element = document.getElementById('myId') as HTMLInputElement;
+element.value = 'test'; // element가 input이 아니면..?
+
+
+const element = document.getElementById('myId');
+if (element instanceof HTMLInputElement) {
+  element.value = 'test';
+}
+
+// 또는 옵셔널 체이닝
+const value = (element as HTMLInputElement | null)?.value;
+```
+
+### 제네릭으로 대체하기
+
+```typescript
+
+function wrapInArrayBad(value: any): any[] {
+  return [value];
+}
+
+const nums = wrapInArrayBad(42); // any[]
+const first = nums[0]; // any
+
+// 제네릭 사용
+function wrapInArray<T>(value: T): T[] {
+  return [value];
+}
+
+const nums = wrapInArray(42); // number[]
+const first = nums[0]; // number
+
+function mapObjectBad(obj: any, fn: any): any {
+  const result: any = {};
+  for (const key in obj) {
+    result[key] = fn(obj[key]);
+  }
+  return result;
+}
+
+function mapObject<T extends Record<string, any>, U>(
+  obj: T,
+  fn: (value: T[keyof T]) => U
+): Record<keyof T, U> {
+  const result = {} as Record<keyof T, U>;
+  for (const key in obj) {
+    result[key] = fn(obj[key]);
+  }
+  return result;
+}
+
+const nums = { a: 1, b: 2, c: 3 };
+const doubled = mapObject(nums, x => x * 2);
+// Record<"a" | "b" | "c", number>
+```
+
+### any가 허용되는 경우
+
+완전히 피할 수 없는 경우도 있습니다. 이럴 경우 주석으로 남기는 방법을 선택합니다. 
+
+```typescript
+// 외부 라이브러리 타입이 없을 때 (임시)
+declare module 'some-untyped-library' {
+  export function doSomething(param: any): any;
+}
+// 더 나은 방법: @types 패키지 만들거나 기여 - 아직은 와닿지 않음
+
+//정말  동적인 데이터 (주석으로 명시)
+/**
+ * 모든 타입의 데이터를 로깅합니다.
+ * @param data - 로깅할 데이터 (타입 제한 없음)
+ */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function logAnything(data: any): void {
+  console.log(JSON.stringify(data, null, 2));
+}
+
+// 테스트일 경우
+const mockFn = jest.fn() as any;
+
+// 단계적 마이그레이션 (TODO 남기기)
+const complexData: any = getVeryComplexNestedData();
+```
+
+## 마치며
+
+3편 에서는 유틸리티 타입과 any 정복을 다뤘습니다.
+사실 any를 남발하며 사용 할 때가 있었는데 결국 마지막 상용 배포 단계 시 모두 이 사실을 잊고 있다가 결국 에러가 떠 타입을 하나하나 지정했었습니다. 
+이 때 이후 가급적 급한 경우 아니면 any를 지양하고 있으며 개인적으로는 제네릭보단 as 또는 unknown을 많이 쓰고 있습니다. 
+제네릭도 열심히 공부해서 실전에 써먹을 기회가 오길..!~~사실 제네릭이 좀 더 유용한거 같습니다. 유연해서~~
+
+
+다음 Part 4에서는:
+- 실무 API 타입 정의 패턴
+- React 컴포넌트 타입 패턴
+- 상태 관리 타입 (Redux/Zustand)
+- Mapped Types, Conditional Types, Template Literal Types
+
+마지막 차례입니다.
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"TypeScript 유틸리티 타입과 any"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 11월 21일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","프론트엔드",{"href":"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"프론트엔드"}],["$","$L3","TypeScript",{"href":"/tags/TypeScript","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"TypeScript"}],["$","$L3","유틸리티타입",{"href":"/tags/%EC%9C%A0%ED%8B%B8%EB%A6%AC%ED%8B%B0%ED%83%80%EC%9E%85","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"유틸리티타입"}],["$","$L3","any",{"href":"/tags/any","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"any"}],["$","$L3","study",{"href":"/tags/study","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"study"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/frontend/typescript-advanced-part2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"TypeScript 실무 패턴과 고급 타입 "}]]}],["$","$L3",null,{"href":"/posts/frontend/typescript-basics-part2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"TypeScript 타입 좁히기와 제네릭"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"TypeScript 유틸리티 타입과 any | DevONew Blog"}],["$","meta","1",{"name":"description","content":"내장 유틸리티 타입 활용법과 any 다루기"}],["$","meta","2",{"property":"og:title","content":"TypeScript 유틸리티 타입과 any"}],["$","meta","3",{"property":"og:description","content":"내장 유틸리티 타입 활용법과 any 다루기"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-11-21"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"TypeScript 유틸리티 타입과 any"}],["$","meta","8",{"name":"twitter:description","content":"내장 유틸리티 타입 활용법과 any 다루기"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

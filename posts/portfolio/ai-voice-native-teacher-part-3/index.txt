@@ -1,0 +1,228 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-91788950a704a307.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d5ebba4595249be0.css","style"]
+0:{"P":null,"b":"rq94cetZS17rr6VXyxt_m","p":"","c":["","posts","portfolio","ai-voice-native-teacher-part-3",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","portfolio","d"],{"children":[["slug","ai-voice-native-teacher-part-3","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d5ebba4595249be0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","portfolio","d"],"$L8",{"children":[["slug","ai-voice-native-teacher-part-3","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T2c99,
+## Part 2에서는...
+
+Part 2에서는 음성 인식과 AI 대화 처리를 구현했습니다. Part 3에서는 대화 히스토리 관리, 프롬프트 캐싱을 통한 비용 절감, 그리고 사용량 제한 기능 구현을 다루겠습니다.
+(12월 23일 사용 횟수 제한 로직 수정 및 블로그 수정)
+
+## 대화 히스토리 관리
+
+프로젝트 초반에는 대화가 이어지지 않고 사용자가 말할 때마다 언어 설정부터 다시 물어보는 문제가 있었습니다. 이는 AI가 이전 대화를 전혀 기억하지 못했기 때문입니다.
+
+대화 내용을 배열로 관리하여 AI가 이전 대화를 기억하도록 구현했습니다.
+
+```typescript
+// app/hooks/useChatHandler.ts
+const [conversationHistory, setConversationHistory] = useState<Array<{
+  role: 'user' | 'assistant'
+  content: string
+}>>([]);
+
+// 새 대화 추가
+setConversationHistory(prev => [
+  ...prev,
+  { role: 'user', content: userMessage },
+  { role: 'assistant', content: aiResponse }
+]);
+```
+
+이제 AI가 이전 대화를 기억하여 "그거 말고 다른 거"처럼 맥락을 포함한 질문에도 답변할 수 있게 되었습니다. 또한 사용자가 반복적으로 실수하는 발음이나 문법 패턴을 파악하여 더 개인화된 피드백을 제공할 수 있습니다.
+
+## Prompt Caching으로 API 비용 절감
+
+Claude API의 Prompt Caching 기능을 활용하여 API 비용을 대폭 절감했습니다. 시스템 프롬프트는 "당신은 친절한 원어민 언어 튜터입니다..."로 시작하는 약 2000 토큰의 긴 지시사항인데, 이를 매번 새로 처리하면 비용이 크게 증가합니다.
+
+```typescript
+// app/api/chat/route.ts
+system: [
+  {
+    type: "text",
+    text: SYSTEM_PROMPT,  // 약 2000 토큰의 긴 프롬프트
+    cache_control: { type: "ephemeral" }
+  }
+]
+```
+
+일반 방식으로는 시스템 프롬프트 2000 토큰에 대해 매 호출마다 $3/M의 비용이 발생하여 10회 호출 시 $0.06가 소요됩니다. 그러나 Prompt Caching을 적용하면 첫 호출은 $0.006의 정상 비용이 발생하지만, 이후 9회는 캐시된 프롬프트를 사용하여 2000 토큰 × $0.30/M = $0.0006으로 처리됩니다. 결과적으로 10회 호출에 $0.0114만 소요되어 약 81%의 비용을 절감할 수 있습니다.
+
+캐시는 5분 동안 유효하며, 5분 내에 다시 호출하면 캐시가 재사용됩니다. 비용 절감뿐만 아니라 캐시된 프롬프트는 처리 속도도 빠르기 때문에 응답 시간도 개선되었습니다.
+
+## AudioContext 싱글톤 패턴
+
+Web Audio API를 사용할 때 AudioContext를 여러 개 생성하면 메모리 누수와 배터리 소비 증가 문제가 발생합니다. 전역에서 단 하나의 AudioContext만 유지하도록 싱글톤 패턴을 구현했습니다.
+
+```typescript
+// app/utils/audio-context.ts
+let audioContextInstance: AudioContext | null = null
+
+export function getAudioContext(): AudioContext {
+  if (!audioContextInstance) {
+    const AudioContextClass =
+      window.AudioContext || (window as any).webkitAudioContext
+    audioContextInstance = new AudioContextClass() as AudioContext
+  }
+  return audioContextInstance
+}
+```
+
+이 함수는 처음 호출 시에만 새로운 AudioContext를 생성하고, 이후에는 동일한 인스턴스를 반환합니다. 브라우저 호환성을 위해 webkit 접두사도 지원합니다. 이를 통해 마이크 입력 분석, TTS 오디오 재생 등 모든 오디오 작업이 하나의 AudioContext를 공유하게 되어 시스템 리소스를 효율적으로 사용할 수 있습니다.
+
+## TTS 응답 LRU 캐싱
+
+동일한 텍스트에 대해 TTS API를 반복 호출하는 것은 비효율적입니다. 인사말이나 자주 사용되는 표현은 캐시하여 재사용하도록 LRU 캐시를 구현했습니다.
+
+```typescript
+// app/utils/tts-cache.ts
+const MAX_CACHE_SIZE = 50
+const ttsCache = new Map<string, CacheEntry>()
+
+function hashText(text: string): string {
+  let hash = 0
+  for (let i = 0; i < text.length; i++) {
+    const char = text.charCodeAt(i)
+    hash = (hash << 5) - hash + char
+    hash = hash & hash
+  }
+  return Math.abs(hash).toString(36)
+}
+
+export function getTTSFromCache(text: string): Blob | null {
+  const hash = hashText(text)
+  const entry = ttsCache.get(hash)
+
+  if (entry) {
+    entry.timestamp = Date.now()  // LRU 업데이트
+    return entry.blob
+  }
+  return null
+}
+```
+
+텍스트를 간단한 해시 함수로 변환하여 키로 사용하며, 최대 50개의 응답을 캐시합니다. 캐시가 가득 차면 가장 오래된 항목을 자동으로 제거하는 LRU 방식을 사용합니다. "안녕하세요", "Hello" 같은 반복되는 인사말에 즉시 응답할 수 있어 사용자 경험이 크게 개선되었고, TTS API 비용도 약 50% 절감되었습니다.
+
+## 사용량 제한과 비밀번호 모달
+
+![비밀번호 모달](/image/modal.png)
+
+이 프로젝트는 친구의 요청으로 시작되었고, 해당 친구가 우선적으로 사용할 수 있어야 했습니다. 많은 사람들이 애플리케이션을 사용하면서 API 비용이 계속 증가하는 상황에서 필요한 사람이 원활하게 사용할 수 있도록 우선순위를 보장하기 위해 사용량 제한 기능을 추가했습니다. 백엔드 서버 없이 혼자 개발하는 상황에서 간단하게 무분별한 사용을 막을 방법이 필요했습니다.
+
+### 사용량 추적
+
+로컬 스토리지를 활용하여 사용자의 대화 횟수를 추적합니다.
+
+```typescript
+// app/utils/usage-limit.ts
+const MAX_FREE_USES = 5
+const STORAGE_KEY = 'voice_app_usage_count'
+
+export function incrementUsage(): void {
+  if (typeof window === 'undefined') return
+  if (isAuthenticated()) return  // 인증된 사용자는 카운트 안 함
+
+  const usageData = localStorage.getItem(STORAGE_KEY)
+  const currentCount = usageData ? parseInt(usageData, 10) : 0
+  localStorage.setItem(STORAGE_KEY, (currentCount + 1).toString())
+}
+```
+
+5회 이상 사용 시 비밀번호 입력 모달이 표시됩니다. 인증된 사용자는 무제한으로 사용할 수 있으며, sessionStorage에 인증 상태를 저장하여 브라우저를 닫으면 다시 인증이 필요합니다.
+
+### 모달에만 Emotion을 사용한 이유
+
+프로젝트 전체는 Tailwind CSS와 Emotion이 함께 사용되고 있습니다. 처음에는 모달 컴포넌트도 다른 컴포넌트처럼 Tailwind CSS로 작성하려 했으나, 모달 부분에서 Tailwind 스타일이 제대로 적용되지 않는 문제가 발생했습니다. 인라인 스타일로 임시 해결했다가 유지보수성을 고려하여 모달 컴포넌트만 Emotion로 리팩토링했습니다.
+
+```typescript
+// app/components/PasswordModal.tsx
+import { css } from '@emotion/react'
+
+const submitButtonStyles = (disabled: boolean) => css`
+  width: 100%;
+  background-color: ${disabled ? '#d1d5db' : '#000000'};
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: ${disabled ? 'not-allowed' : 'pointer'};
+
+  &:hover {
+    background-color: ${disabled ? '#d1d5db' : '#1f2937'};
+  }
+`
+```
+
+함수형 스타일을 통해 disabled 상태에 따라 배경색과 커서 모양을 동적으로 변경할 수 있습니다. Emotion의 템플릿 리터럴 문법은 일반 CSS와 유사하여 가독성이 좋고, 자동 벤더 프리픽스와 미디어 쿼리도 지원합니다.
+
+### 비밀번호 검증 API
+
+서버 사이드에서 비밀번호를 검증하여 클라이언트에서 비밀번호가 노출되지 않도록 했습니다.
+
+```typescript
+// app/api/verify/route.ts
+export async function POST(request: Request) {
+  const { password } = await request.json()
+  const correctPassword = process.env.OWNER_PASSWORD || 'demo123'
+  const isValid = password === correctPassword
+
+  return Response.json({
+    valid: isValid,
+    message: isValid ? '인증 성공' : '비밀번호가 틀렸습니다'
+  })
+}
+```
+
+환경 변수에 실제 비밀번호를 저장하고, API 라우트에서만 접근합니다. 클라이언트 코드에는 절대 비밀번호가 포함되지 않아 보안이 유지됩니다.
+
+## 아쉬운 점
+
+### 실시간 STT 스트리밍 구현 부재
+
+현재 Web Speech API는 단일 언어만 지원하여 ElevenLabs STT로 전환했으나, 녹음 완료 후 전송 방식이라 응답 지연이 발생합니다. 사용자가 말을 마치고 나서야 음성 인식이 시작되기 때문에 실시간으로 텍스트가 화면에 나타나지 않습니다.
+
+WebSocket 기반 실시간 스트리밍을 구현하려면 별도 백엔드 서버가 필요합니다. Node.js나 Express 서버를 추가하여 마이크 입력을 실시간으로 ElevenLabs에 전송하고 중간 결과를 받아오면, 사용자가 말하는 동안 화면에 텍스트가 타이핑되는 것처럼 보이는 더 나은 경험을 제공할 수 있을 것입니다.
+
+### 대화 히스토리 저장
+
+현재 대화 히스토리는 메모리에만 저장되어 페이지를 새로고침하면 모든 대화 내용이 사라집니다. 세션이 끝나면 AI와 나눴던 대화를 다시 볼 수 없어 복습이 불가능합니다.
+
+DB에 대화 내용을 저장하면 이전 대화를 불러와서 복습할 수 있고, 장기적인 학습 진행 상황도 추적할 수 있을 것입니다. 특히 사용자가 반복적으로 실수하는 발음이나 문법 패턴을 분석하여 "지난주에 3번 틀린 표현을 다시 연습해볼까요?"와 같은 맞춤형 피드백을 제공하는 기능도 추가할 수 있습니다. 학습 데이터를 시각화하여 "이번 달 프랑스어 대화 10회, 평균 대화 시간 5분"과 같은 학습 통계도 제공할 수 있을 것입니다.
+
+### 로그인 기반 사용자 인증
+
+현재는 로컬 스토리지 기반의 간단한 사용량 제한과 비밀번호 모달로만 관리하고 있습니다. 백엔드 서버가 없어 제대로 된 로그인 시스템을 구축하기 어려웠습니다.
+
+백엔드 서버를 도입하면 현재의 간단한 비밀번호 모달 방식을 제대로 된 로그인 서비스로 전환할 수 있습니다. 사용자별로 이용 내역을 관리하고, 학습 진도와 성취도를 저장하며, 개인화된 학습 경험을 제공할 수 있습니다.
+
+## 마치며
+
+이 프로젝트는 이전에 진행했던 대선 카토그램보다 훨씬 복잡한 개인 프로젝트였습니다. Next.js, React, Web Audio API, AI API 통합 등 프론트엔드 개발의 여러 측면을 깊이 있게 경험할 수 있었습니다. 특히 기존에 구독 중인 Claude API와 ElevenLabs API를 조합하여 실용적인 언어 학습 도구를 만들 수 있다는 것을 확인했습니다.
+
+개발 과정에서 Claude Code를 활용했는데, 프롬프트 작성 방법과 플랜 모드 같은 부가적인 기능을 어떻게 사용하느냐에 따라 생성되는 코드의 퀄리티가 확실하게 차이가 났습니다. AI 도구를 단순히 사용하는 것을 넘어 제대로 활용하는 방법을 더 공부해야겠다는 생각이 들었습니다.
+
+다음 토이 프로젝트는 혼자가 아닌 다른 사람들과 협업하면서 진행해보고 싶습니다. 또한 프론트엔드뿐만 아니라 백엔드도 직접 개발하여 풀스택 개발 경험을 쌓고, 실시간 통신이나 데이터베이스 설계 같은 부분도 다뤄보고 싶습니다.
+
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"AI 음성 원어민 선생님 만들기 Part 3: 최적화와 사용 제한 구현"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 12월 23일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","포트폴리오",{"href":"/tags/%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"포트폴리오"}],["$","$L3","AI",{"href":"/tags/AI","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"AI"}],["$","$L3","Next.js",{"href":"/tags/Next.js","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Next.js"}],["$","$L3","React",{"href":"/tags/React","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"React"}],["$","$L3","ElevenLabs",{"href":"/tags/ElevenLabs","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"ElevenLabs"}],["$","$L3","Claude",{"href":"/tags/Claude","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Claude"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/frontend/react-conditional-rendering-patterns","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"React 조건부 렌더링 패턴: Switch문 vs 컴포넌트 기반 접근법"}]]}],["$","$L3",null,{"href":"/posts/portfolio/ai-voice-native-teacher-part-2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"AI 음성 원어민 선생님 만들기 Part 2: 음성 인식과 AI 대화 처리"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"AI 음성 원어민 선생님 만들기 Part 3: 최적화와 사용 제한 구현 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","meta","2",{"property":"og:title","content":"AI 음성 원어민 선생님 만들기 Part 3: 최적화와 사용 제한 구현"}],["$","meta","3",{"property":"og:description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-12-23"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"AI 음성 원어민 선생님 만들기 Part 3: 최적화와 사용 제한 구현"}],["$","meta","8",{"name":"twitter:description","content":"다국어 음성 학습 웹 애플리케이션"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

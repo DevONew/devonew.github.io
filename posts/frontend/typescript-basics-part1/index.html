@@ -1,0 +1,841 @@
+<!DOCTYPE html><!--rq94cetZS17rr6VXyxt_m--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d5ebba4595249be0.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-91788950a704a307.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-80ecaa68f6a0b226.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>TypeScript 기초 타입 학습 | DevONew Blog</title><meta name="description" content="TypeScript의 기본 타입부터 객체, 함수, Union/Intersection"/><meta property="og:title" content="TypeScript 기초 타입 학습"/><meta property="og:description" content="TypeScript의 기본 타입부터 객체, 함수, Union/Intersection"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-10-08"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="TypeScript 기초 타입 학습"/><meta name="twitter:description" content="TypeScript의 기본 타입부터 객체, 함수, Union/Intersection"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">TypeScript 기초 타입 학습</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 10월 8일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/">프론트엔드</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/TypeScript/">TypeScript</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%ED%83%80%EC%9E%85/">타입</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/study/">study</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><p>JavaScript에서 TypeScript로 넘어오면서 가장 헷갈리는 부분이 바로 타입입니다.
+이 시리즈는 총 4부작으로 구성되어 있으며, 처음엔 TypeScript의 기초 타입을 다룹니다.</p>
+<h2 id="시리즈-구성"><a aria-hidden="true" tabindex="-1" href="#시리즈-구성"><span class="icon icon-link"></span></a>시리즈 구성</h2>
+<ul>
+<li><strong>Part 1 (현재 글)</strong>: 기본 타입, 객체, 함수, Union/Intersection</li>
+<li><strong>Part 2</strong>: 타입 좁히기와 제네릭</li>
+<li><strong>Part 3</strong>: 유틸리티 타입과 any</li>
+<li><strong>Part 4</strong>: 실무 패턴과 고급 타입</li>
+</ul>
+<h2 id="기본-타입-primitive-types"><a aria-hidden="true" tabindex="-1" href="#기본-타입-primitive-types"><span class="icon icon-link"></span></a>기본 타입 (Primitive Types)</h2>
+<p>TypeScript의 기본 타입부터 차근차근 살펴보겠습니다. JavaScript의 기본 타입에 대응하지만, 명시적으로 타입을 선언할 수 있습니다.</p>
+<h3 id="기본-타입-정의"><a aria-hidden="true" tabindex="-1" href="#기본-타입-정의"><span class="icon icon-link"></span></a>기본 타입 정의</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 문자열 (String)</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span> = <span class="hljs-string">&#x27;Alice&#x27;</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-attr">greeting</span>: <span class="hljs-built_in">string</span> = <span class="hljs-string">`Hello, <span class="hljs-subst">${name}</span>`</span>;
+
+<span class="hljs-comment">// Number - 정수와 실수를 구분하지 않음</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">25</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-attr">price</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">19.99</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-attr">binary</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">0b1010</span>; <span class="hljs-comment">// 2진수: 10</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">hex</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">0xf00d</span>; <span class="hljs-comment">// 16진수: 61453</span>
+
+<span class="hljs-comment">// Boolean</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">isActive</span>: <span class="hljs-built_in">boolean</span> = <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-attr">hasPermission</span>: <span class="hljs-built_in">boolean</span> = <span class="hljs-literal">false</span>;
+
+<span class="hljs-comment">// null과 undefined</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">nothing</span>: <span class="hljs-literal">null</span> = <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-attr">notDefined</span>: <span class="hljs-literal">undefined</span> = <span class="hljs-literal">undefined</span>;
+
+<span class="hljs-comment">// symbol (ES6) - 고유한 값을 만들 때 사용</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">sym</span>: <span class="hljs-built_in">symbol</span> = <span class="hljs-title class_">Symbol</span>(<span class="hljs-string">&#x27;unique&#x27;</span>);
+<span class="hljs-keyword">const</span> <span class="hljs-attr">sym2</span>: <span class="hljs-built_in">symbol</span> = <span class="hljs-title class_">Symbol</span>(<span class="hljs-string">&#x27;unique&#x27;</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(sym === sym2); <span class="hljs-comment">// false</span>
+
+<span class="hljs-comment">// bigint  - 매우 큰 정수를 다룰 때 사용 실무에서 쓰는거 잘 못봄</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">bigNumber</span>: <span class="hljs-built_in">bigint</span> = <span class="hljs-number">100n</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-attr">anotherBig</span>: <span class="hljs-built_in">bigint</span> = <span class="hljs-title class_">BigInt</span>(<span class="hljs-number">9007199254740991</span>);
+</code></pre>
+<p>실무 팁: <code>strictNullChecks</code> 옵션을 켜면 <code>null</code>과 <code>undefined</code>를 명시적으로 처리해야 합니다. 이 옵션은 런타임 에러를 방지하는데 매우 중요합니다.
+첫 회사에서 배포 시 이걸 끄고 작업했었습니다. 까먹고 있다가 하나하나 다시 타입들을 정리했었습니다🥲</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// tsconfig.json에서 &quot;strictNullChecks&quot;: true 설정 시</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span> = <span class="hljs-string">&#x27;Alice&#x27;</span>;
+name = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 에러! </span>
+
+<span class="hljs-comment">// null을 허용하려면 명시적으로 선언</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">nullableName</span>: <span class="hljs-built_in">string</span> | <span class="hljs-literal">null</span> = <span class="hljs-string">&#x27;Bob&#x27;</span>;
+nullableName = <span class="hljs-literal">null</span>; 
+
+<span class="hljs-comment">// undefined도 마찬가지</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">optionalValue</span>: <span class="hljs-built_in">number</span> | <span class="hljs-literal">undefined</span> = <span class="hljs-number">42</span>;
+optionalValue = <span class="hljs-literal">undefined</span>;
+</code></pre>
+<h3 id="배열-타입"><a aria-hidden="true" tabindex="-1" href="#배열-타입"><span class="icon icon-link"></span></a>배열 타입</h3>
+<p>배열은 두 가지 방법으로 타입을 지정할 수 있습니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 타입[]  </span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">numbers</span>: <span class="hljs-built_in">number</span>[] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>];
+<span class="hljs-keyword">const</span> <span class="hljs-attr">names</span>: <span class="hljs-built_in">string</span>[] = [<span class="hljs-string">&#x27;Alice&#x27;</span>, <span class="hljs-string">&#x27;Bob&#x27;</span>, <span class="hljs-string">&#x27;Charlie&#x27;</span>];
+
+<span class="hljs-comment">// Array&lt;타입&gt; - 제네릭 방식</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">scores</span>: <span class="hljs-title class_">Array</span>&lt;<span class="hljs-built_in">number</span>&gt; = [<span class="hljs-number">90</span>, <span class="hljs-number">85</span>, <span class="hljs-number">95</span>];
+<span class="hljs-keyword">const</span> <span class="hljs-attr">emails</span>: <span class="hljs-title class_">Array</span>&lt;<span class="hljs-built_in">string</span>&gt; = [<span class="hljs-string">&#x27;a@test.com&#x27;</span>, <span class="hljs-string">&#x27;b@test.com&#x27;</span>];
+
+<span class="hljs-comment">// 다차원 배열</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">matrix</span>: <span class="hljs-built_in">number</span>[][] = [
+  [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>],
+  [<span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-number">6</span>],
+  [<span class="hljs-number">7</span>, <span class="hljs-number">8</span>, <span class="hljs-number">9</span>]
+];
+
+<span class="hljs-comment">// 혼합 타입 배열 -타입 안정성이 떨어지기 때문에 권장 x</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">mixed</span>: (<span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span>)[] = [<span class="hljs-string">&#x27;Alice&#x27;</span>, <span class="hljs-number">25</span>, <span class="hljs-string">&#x27;Bob&#x27;</span>, <span class="hljs-number">30</span>];
+
+<span class="hljs-comment">// 읽기 전용 배열</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">readonlyArr</span>: <span class="hljs-keyword">readonly</span> <span class="hljs-built_in">number</span>[] = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>];
+readonlyArr.<span class="hljs-title function_">push</span>(<span class="hljs-number">4</span>); <span class="hljs-comment">// 에러!</span>
+
+<span class="hljs-comment">// ReadonlyArray 타입</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">readonlyArr2</span>: <span class="hljs-title class_">ReadonlyArray</span>&lt;<span class="hljs-built_in">string</span>&gt; = [<span class="hljs-string">&#x27;a&#x27;</span>, <span class="hljs-string">&#x27;b&#x27;</span>, <span class="hljs-string">&#x27;c&#x27;</span>];
+readonlyArr2[<span class="hljs-number">0</span>] = <span class="hljs-string">&#x27;z&#x27;</span>; <span class="hljs-comment">// 에러!</span>
+</code></pre>
+<p><strong>실무 활용</strong>: React에서 상태를 불변으로 관리할 때 readonly 사용</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">State</span> {
+  <span class="hljs-keyword">readonly</span> <span class="hljs-attr">items</span>: <span class="hljs-keyword">readonly</span> <span class="hljs-built_in">string</span>[];
+}
+
+<span class="hljs-comment">// 나쁜 예: 원본 배열 변경</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">addItemBad</span>(<span class="hljs-params"><span class="hljs-attr">state</span>: <span class="hljs-title class_">State</span>, <span class="hljs-attr">item</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-title class_">State</span> {
+  state.<span class="hljs-property">items</span>.<span class="hljs-title function_">push</span>(item); <span class="hljs-comment">// 에러!</span>
+  <span class="hljs-keyword">return</span> state;
+}
+
+<span class="hljs-comment">// 좋은 예: 새 배열을 반환</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">addItem</span>(<span class="hljs-params"><span class="hljs-attr">state</span>: <span class="hljs-title class_">State</span>, <span class="hljs-attr">item</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-title class_">State</span> {
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">items</span>: [...state.<span class="hljs-property">items</span>, item]
+  };
+}
+
+<span class="hljs-comment">// 사용 예시</span>
+<span class="hljs-keyword">let</span> <span class="hljs-attr">myState</span>: <span class="hljs-title class_">State</span> = { <span class="hljs-attr">items</span>: [<span class="hljs-string">&#x27;item1&#x27;</span>, <span class="hljs-string">&#x27;item2&#x27;</span>] };
+myState = <span class="hljs-title function_">addItem</span>(myState, <span class="hljs-string">&#x27;item3&#x27;</span>);
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(myState.<span class="hljs-property">items</span>); <span class="hljs-comment">// [&#x27;item1&#x27;, &#x27;item2&#x27;, &#x27;item3&#x27;]</span>
+</code></pre>
+<h3 id="튜플-tuple"><a aria-hidden="true" tabindex="-1" href="#튜플-tuple"><span class="icon icon-link"></span></a>튜플 (Tuple)</h3>
+<p>튜플은 고정된 개수와 타입의 배열을 표현합니다. 배열과 달리 각 위치의 타입이 정해져 있습니다.(좀 더 빡빡한 버전)</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 튜플</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">user</span>: [<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>] = [<span class="hljs-string">&#x27;Alice&#x27;</span>, <span class="hljs-number">25</span>];
+<span class="hljs-keyword">const</span> <span class="hljs-attr">user2</span>: [<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>] = [<span class="hljs-number">25</span>, <span class="hljs-string">&#x27;Alice&#x27;</span>]; <span class="hljs-comment">// 에러! 타입 순서 불일치</span>
+
+<span class="hljs-comment">// 튜플 요소 접근</span>
+<span class="hljs-keyword">const</span> name = user[<span class="hljs-number">0</span>]; <span class="hljs-comment">// string 타입</span>
+<span class="hljs-keyword">const</span> age = user[<span class="hljs-number">1</span>];  <span class="hljs-comment">// number 타입</span>
+
+<span class="hljs-comment">// 라벨이 있는 튜플 - 가독성 향상</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">User</span> = [<span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">isAdmin</span>: <span class="hljs-built_in">boolean</span>];
+<span class="hljs-keyword">const</span> <span class="hljs-attr">admin</span>: <span class="hljs-title class_">User</span> = [<span class="hljs-string">&#x27;Alice&#x27;</span>, <span class="hljs-number">25</span>, <span class="hljs-literal">true</span>];
+
+<span class="hljs-comment">// 선택적 요소 (마지막만 가능)</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Response</span> = [<span class="hljs-attr">status</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">data</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">error</span>?: <span class="hljs-built_in">string</span>];
+<span class="hljs-keyword">const</span> <span class="hljs-attr">success</span>: <span class="hljs-title class_">Response</span> = [<span class="hljs-number">200</span>, <span class="hljs-string">&#x27;OK&#x27;</span>];
+<span class="hljs-keyword">const</span> <span class="hljs-attr">failure</span>: <span class="hljs-title class_">Response</span> = [<span class="hljs-number">500</span>, <span class="hljs-string">&#x27;Server Error&#x27;</span>, <span class="hljs-string">&#x27;Internal error&#x27;</span>];
+
+<span class="hljs-comment">// Rest 요소 (나머지 요소)</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">StringNumberBooleans</span> = [<span class="hljs-built_in">string</span>, <span class="hljs-built_in">number</span>, ...<span class="hljs-built_in">boolean</span>[]];
+<span class="hljs-keyword">const</span> <span class="hljs-attr">example1</span>: <span class="hljs-title class_">StringNumberBooleans</span> = [<span class="hljs-string">&#x27;hello&#x27;</span>, <span class="hljs-number">1</span>, <span class="hljs-literal">true</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">true</span>];
+<span class="hljs-keyword">const</span> <span class="hljs-attr">example2</span>: <span class="hljs-title class_">StringNumberBooleans</span> = [<span class="hljs-string">&#x27;world&#x27;</span>, <span class="hljs-number">2</span>]; <span class="hljs-comment">// boolean[]은 비어있어도 OK</span>
+
+</code></pre>
+<p><strong>왜 튜플을 사용할까?</strong></p>
+<p>튜플은 여러 값을 묶어서 반환 할 때 유용합니다. 객체를 만들기에는 과하고, 배열로는 타입 안정성이 떨어질 때 사용합니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 배열 사용 시 - 타입 안정성 부족</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getUserBad</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>): (<span class="hljs-title class_">User</span> | <span class="hljs-title class_">Error</span> | <span class="hljs-literal">null</span>)[] {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> user = <span class="hljs-title function_">fetchUser</span>(id);
+    <span class="hljs-keyword">return</span> [user, <span class="hljs-literal">null</span>];
+  } <span class="hljs-keyword">catch</span> (error) {
+    <span class="hljs-keyword">return</span> [<span class="hljs-literal">null</span>, error <span class="hljs-keyword">as</span> <span class="hljs-title class_">Error</span>];
+  }
+}
+
+<span class="hljs-keyword">const</span> result = <span class="hljs-title function_">getUserBad</span>(<span class="hljs-number">1</span>);
+<span class="hljs-keyword">const</span> user = result[<span class="hljs-number">0</span>]; <span class="hljs-comment">// User | Error | null - 어떤 타입인지 불명확</span>
+
+<span class="hljs-comment">// 튜플 사용 시 - 명확한 타입</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getUser</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>): [<span class="hljs-title class_">User</span> | <span class="hljs-literal">null</span>, <span class="hljs-title class_">Error</span> | <span class="hljs-literal">null</span>] {
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">const</span> user = <span class="hljs-title function_">fetchUser</span>(id);
+    <span class="hljs-keyword">return</span> [user, <span class="hljs-literal">null</span>];
+  } <span class="hljs-keyword">catch</span> (error) {
+    <span class="hljs-keyword">return</span> [<span class="hljs-literal">null</span>, error <span class="hljs-keyword">as</span> <span class="hljs-title class_">Error</span>];
+  }
+}
+
+<span class="hljs-keyword">const</span> [user, error] = <span class="hljs-title function_">getUser</span>(<span class="hljs-number">1</span>);
+<span class="hljs-comment">// user: User | null</span>
+<span class="hljs-comment">// error: Error | null</span>
+
+<span class="hljs-keyword">if</span> (error) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error.<span class="hljs-property">message</span>); <span class="hljs-comment">// error는 Error 타입</span>
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (user) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">name</span>); <span class="hljs-comment">// user는 User 타입</span>
+}
+</code></pre>
+<h2 id="객체-타입"><a aria-hidden="true" tabindex="-1" href="#객체-타입"><span class="icon icon-link"></span></a>객체 타입</h2>
+<p>객체의 형태를 정의하는 방법은 크게 두 가지: <code>interface</code>와 <code>type</code> 입니다.</p>
+<h3 id="interface-vs-type-alias"><a aria-hidden="true" tabindex="-1" href="#interface-vs-type-alias"><span class="icon icon-link"></span></a>Interface vs Type Alias</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// Interface</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">email</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-comment">// Type Alias</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Product</span> = {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">price</span>: <span class="hljs-built_in">number</span>;
+};
+</code></pre>
+<p><strong>언제 무엇을 사용할까?</strong></p>
+<p>둘 다 객체 타입을 정의할 수 있지만, 상황에 따라 적합한 것이 다릅니다.</p>
+<p><strong>Interface를 사용하는 경우:</strong></p>
+<ol>
+<li>객체의 형태를 정의할 때</li>
+<li>확장(extends)이 필요할 때</li>
+<li>선언 병합(declaration merging)이 필요할 때</li>
+</ol>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 1. 객체 형태 정의</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">Animal</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// 2. 확장 (extends)</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">Dog</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Animal</span> {
+  <span class="hljs-title function_">bark</span>(): <span class="hljs-built_in">void</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">myDog</span>: <span class="hljs-title class_">Dog</span> = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Bobby&#x27;</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">3</span>,
+  <span class="hljs-title function_">bark</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Woof!&#x27;</span>);
+  }
+};
+
+<span class="hljs-comment">// 3. 선언 병합 - 같은 이름의 interface를 여러 번 선언하면 자동으로 병합</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-comment">// 자동으로 병합</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">user</span>: <span class="hljs-title class_">User</span> = {
+  <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>
+};
+</code></pre>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 예: Express의 Request 타입에 사용자 정의 속성 추가</span>
+<span class="hljs-keyword">declare</span> <span class="hljs-variable language_">global</span> {
+  <span class="hljs-keyword">namespace</span> <span class="hljs-title class_">Express</span> {
+    <span class="hljs-keyword">interface</span> <span class="hljs-title class_">Request</span> {
+      <span class="hljs-attr">userId</span>?: <span class="hljs-built_in">number</span>;
+      <span class="hljs-attr">isAuthenticated</span>?: <span class="hljs-built_in">boolean</span>;
+    }
+  }
+}
+
+<span class="hljs-comment">// 이제 req.userId를 타입 안전하게 사용 가능</span>
+app.<span class="hljs-title function_">use</span>(<span class="hljs-function">(<span class="hljs-params">req, res, next</span>) =&gt;</span> {
+  req.<span class="hljs-property">userId</span> = <span class="hljs-number">123</span>; <span class="hljs-comment">// OK</span>
+  <span class="hljs-title function_">next</span>();
+});
+</code></pre>
+<p><strong>Type Alias를 사용하는 경우:</strong></p>
+<ol>
+<li>Union, Intersection 타입</li>
+<li>Tuple, Primitive 타입에 이름 붙일 때</li>
+<li>복잡한 타입 조합</li>
+</ol>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 1. Union 타입</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Status</span> = <span class="hljs-string">&#x27;pending&#x27;</span> | <span class="hljs-string">&#x27;approved&#x27;</span> | <span class="hljs-string">&#x27;rejected&#x27;</span>;
+
+<span class="hljs-comment">// 2. Intersection 타입</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Admin</span> = <span class="hljs-title class_">User</span> &amp; {
+  <span class="hljs-attr">role</span>: <span class="hljs-string">&#x27;admin&#x27;</span>;
+  <span class="hljs-attr">permissions</span>: <span class="hljs-built_in">string</span>[];
+};
+
+<span class="hljs-comment">// 3. Tuple</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Point</span> = [<span class="hljs-built_in">number</span>, <span class="hljs-built_in">number</span>];
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">RGB</span> = [<span class="hljs-attr">red</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">green</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">blue</span>: <span class="hljs-built_in">number</span>];
+
+<span class="hljs-comment">// 4. Primitive 타입에 이름 붙이기</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">ID</span> = <span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span>;
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Email</span> = <span class="hljs-built_in">string</span>;
+
+<span class="hljs-comment">// 5. Mapped type</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Readonly</span>&lt;T&gt; = {
+  <span class="hljs-keyword">readonly</span> [P <span class="hljs-keyword">in</span> keyof T]: T[P];
+};
+
+<span class="hljs-comment">// 6. 조건부 타입</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">NonNullable</span>&lt;T&gt; = T <span class="hljs-keyword">extends</span> <span class="hljs-literal">null</span> | <span class="hljs-literal">undefined</span> ? <span class="hljs-built_in">never</span> : T;
+</code></pre>
+<p>정리: 객체 형태는 <code>interface</code>, Union/Intersection/복잡한 타입은 <code>type</code>을 사용하는 것이 일반적입니다.</p>
+<h3 id="선택적-프로퍼티와-읽기-전용"><a aria-hidden="true" tabindex="-1" href="#선택적-프로퍼티와-읽기-전용"><span class="icon icon-link"></span></a>선택적 프로퍼티와 읽기 전용</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;              <span class="hljs-comment">// 필수</span>
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;            <span class="hljs-comment">// 필수</span>
+  <span class="hljs-attr">email</span>?: <span class="hljs-built_in">string</span>;          <span class="hljs-comment">// 선택적 ?</span>
+  <span class="hljs-keyword">readonly</span> <span class="hljs-attr">createdAt</span>: <span class="hljs-title class_">Date</span>; <span class="hljs-comment">// 읽기 전용</span>
+  <span class="hljs-attr">age</span>?: <span class="hljs-built_in">number</span>;            <span class="hljs-comment">// 선택적</span>
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">user</span>: <span class="hljs-title class_">User</span> = {
+  <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>,
+  <span class="hljs-attr">createdAt</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>()
+  <span class="hljs-comment">// email과 age는 없어도 OK</span>
+};
+
+<span class="hljs-comment">// 선택적 속성 추가 가능</span>
+user.<span class="hljs-property">email</span> = <span class="hljs-string">&#x27;alice@example.com&#x27;</span>;
+
+<span class="hljs-comment">//  읽기 전용 속성 변경 불가</span>
+user.<span class="hljs-property">createdAt</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>(); <span class="hljs-comment">// 에러!</span>
+
+<span class="hljs-comment">// 선택적 속성 안전하게 사용하기</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sendEmail</span>(<span class="hljs-params"><span class="hljs-attr">user</span>: <span class="hljs-title class_">User</span></span>) {
+  <span class="hljs-comment">// 나쁜 예</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">email</span>.<span class="hljs-title function_">toLowerCase</span>()); <span class="hljs-comment">// user.email이 undefined면 에러!</span>
+
+  <span class="hljs-comment">// 좋은 예 1: 옵셔널 체이닝</span>
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">email</span>?.<span class="hljs-title function_">toLowerCase</span>());
+
+  <span class="hljs-comment">// 좋은 예 2: 타입 가드</span>
+  <span class="hljs-keyword">if</span> (user.<span class="hljs-property">email</span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(user.<span class="hljs-property">email</span>.<span class="hljs-title function_">toLowerCase</span>());
+  }
+
+  <span class="hljs-comment">// 좋은 예 3: 기본값</span>
+  <span class="hljs-keyword">const</span> email = user.<span class="hljs-property">email</span> ?? <span class="hljs-string">&#x27;no-email@example.com&#x27;</span>;
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(email.<span class="hljs-title function_">toLowerCase</span>());
+}
+</code></pre>
+<p>readonly의 깊이 제한: <code>readonly</code>는 첫번째 단계만 적용됩니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-keyword">readonly</span> <span class="hljs-attr">profile</span>: {
+    <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+    <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+  };
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">user</span>: <span class="hljs-title class_">User</span> = {
+  <span class="hljs-attr">profile</span>: { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">25</span> }
+};
+
+<span class="hljs-comment">// profile 자체를 변경할 수 없음</span>
+user.<span class="hljs-property">profile</span> = { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Bob&#x27;</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> }; <span class="hljs-comment">// 에러!</span>
+
+<span class="hljs-comment">// 하지만 profile의 속성은 변경 가능</span>
+user.<span class="hljs-property">profile</span>.<span class="hljs-property">name</span> = <span class="hljs-string">&#x27;Bob&#x27;</span>; 
+user.<span class="hljs-property">profile</span>.<span class="hljs-property">age</span> = <span class="hljs-number">30</span>; 
+
+<span class="hljs-comment">// 완전한 불변성을 원한다면 중첩된 readonly 사용</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">User</span> {
+  <span class="hljs-keyword">readonly</span> <span class="hljs-attr">profile</span>: {
+    <span class="hljs-keyword">readonly</span> <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+    <span class="hljs-keyword">readonly</span> <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+  };
+}
+</code></pre>
+<h3 id="인덱스-시그니처"><a aria-hidden="true" tabindex="-1" href="#인덱스-시그니처"><span class="icon icon-link"></span></a>인덱스 시그니처</h3>
+<p>동적 프로퍼티를 가진 객체의 타입을 정의합니다. 런타임에 어떤 키가 들어올지 모를 때 사용합니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 문자열 인덱스</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">StringMap</span> {
+  [<span class="hljs-attr">key</span>: <span class="hljs-built_in">string</span>]: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">translations</span>: <span class="hljs-title class_">StringMap</span> = {
+  <span class="hljs-attr">hello</span>: <span class="hljs-string">&#x27;안녕하세요&#x27;</span>,
+  <span class="hljs-attr">goodbye</span>: <span class="hljs-string">&#x27;안녕히 가세요&#x27;</span>,
+  <span class="hljs-attr">thanks</span>: <span class="hljs-string">&#x27;감사합니다&#x27;</span>
+};
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(translations[<span class="hljs-string">&#x27;hello&#x27;</span>]); <span class="hljs-comment">// &#x27;안녕하세요&#x27;</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(translations[<span class="hljs-string">&#x27;anything&#x27;</span>]); <span class="hljs-comment">// undefined (하지만 타입은 string)</span>
+
+<span class="hljs-comment">// 숫자 인덱스</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">NumberMap</span> {
+  [<span class="hljs-attr">index</span>: <span class="hljs-built_in">number</span>]: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">items</span>: <span class="hljs-title class_">NumberMap</span> = {
+  <span class="hljs-number">0</span>: <span class="hljs-string">&#x27;first&#x27;</span>,
+  <span class="hljs-number">1</span>: <span class="hljs-string">&#x27;second&#x27;</span>,
+  <span class="hljs-number">2</span>: <span class="hljs-string">&#x27;third&#x27;</span>
+};
+
+<span class="hljs-comment">// 혼합 (특정 키 + 인덱스)</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">Config</span> {
+  <span class="hljs-attr">port</span>: <span class="hljs-built_in">number</span>;              <span class="hljs-comment">// 필수 속성</span>
+  [<span class="hljs-attr">key</span>: <span class="hljs-built_in">string</span>]: <span class="hljs-built_in">number</span> | <span class="hljs-built_in">string</span>; <span class="hljs-comment">// 추가 속성은 number 또는 string</span>
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">config</span>: <span class="hljs-title class_">Config</span> = {
+  <span class="hljs-attr">port</span>: <span class="hljs-number">3000</span>,
+  <span class="hljs-attr">host</span>: <span class="hljs-string">&#x27;localhost&#x27;</span>,
+  <span class="hljs-attr">timeout</span>: <span class="hljs-number">5000</span>,
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;my-app&#x27;</span>
+};
+</code></pre>
+<p>주의사항: 인덱스 시그니처는 타입 안정성을 약화시킵니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">interface</span> <span class="hljs-title class_">StringMap</span> {
+  [<span class="hljs-attr">key</span>: <span class="hljs-built_in">string</span>]: <span class="hljs-built_in">string</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">map</span>: <span class="hljs-title class_">StringMap</span> = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>
+};
+
+<span class="hljs-comment">// 존재하지 않는 키에 접근해도 타입은 string</span>
+<span class="hljs-keyword">const</span> value = map[<span class="hljs-string">&#x27;nonexistent&#x27;</span>]; <span class="hljs-comment">// 타입: string (실제 값: undefined)</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value.<span class="hljs-title function_">toUpperCase</span>()); <span class="hljs-comment">// 런타임 에러!</span>
+</code></pre>
+<p>더 나은 방법: <code>Record</code> 유틸리티 타입 사용</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// Record&lt;키 타입, 값 타입&gt;</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ErrorMessages</span> = <span class="hljs-title class_">Record</span>&lt;<span class="hljs-built_in">string</span>, <span class="hljs-built_in">string</span>&gt;;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">errors</span>: <span class="hljs-title class_">ErrorMessages</span> = {
+  <span class="hljs-attr">required</span>: <span class="hljs-string">&#x27;필수 항목입니다&#x27;</span>,
+  <span class="hljs-attr">email</span>: <span class="hljs-string">&#x27;이메일 형식이 올바르지 않습니다&#x27;</span>
+};
+
+<span class="hljs-comment">// 또는 더 타입 안전하게</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ErrorCode</span> = <span class="hljs-string">&#x27;required&#x27;</span> | <span class="hljs-string">&#x27;email&#x27;</span> | <span class="hljs-string">&#x27;minLength&#x27;</span>;
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ErrorMessages</span> = <span class="hljs-title class_">Record</span>&lt;<span class="hljs-title class_">ErrorCode</span>, <span class="hljs-built_in">string</span>&gt;;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">errors</span>: <span class="hljs-title class_">ErrorMessages</span> = {
+  <span class="hljs-attr">required</span>: <span class="hljs-string">&#x27;필수 항목입니다&#x27;</span>,
+  <span class="hljs-attr">email</span>: <span class="hljs-string">&#x27;이메일 형식이 올바르지 않습니다&#x27;</span>,
+  <span class="hljs-attr">minLength</span>: <span class="hljs-string">&#x27;최소 8자 이상 입력해주세요&#x27;</span>
+  <span class="hljs-comment">// 모든 ErrorCode를 다 정의해야 함</span>
+};
+</code></pre>
+<h2 id="함수-타입"><a aria-hidden="true" tabindex="-1" href="#함수-타입"><span class="icon icon-link"></span></a>함수 타입</h2>
+<p>함수의 매개변수와 반환값에 타입을 지정할 수 있습니다.</p>
+<h3 id="함수-선언과-타입"><a aria-hidden="true" tabindex="-1" href="#함수-선언과-타입"><span class="icon icon-link"></span></a>함수 선언과 타입</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 함수 타입</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">add</span>(<span class="hljs-params"><span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span></span>): <span class="hljs-built_in">number</span> {
+  <span class="hljs-keyword">return</span> a + b;
+}
+
+<span class="hljs-comment">// 화살표 함수</span>
+<span class="hljs-keyword">const</span> multiply = (<span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span>): <span class="hljs-function"><span class="hljs-params">number</span> =&gt;</span> {
+  <span class="hljs-keyword">return</span> a * b;
+};
+
+<span class="hljs-comment">// 단축형</span>
+<span class="hljs-keyword">const</span> divide = (<span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span>): <span class="hljs-function"><span class="hljs-params">number</span> =&gt;</span> a / b;
+
+<span class="hljs-comment">// 함수 타입 정의</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">MathOperation</span> = <span class="hljs-function">(<span class="hljs-params"><span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span></span>) =&gt;</span> <span class="hljs-built_in">number</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">subtract</span>: <span class="hljs-title class_">MathOperation</span> = <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a - b;
+<span class="hljs-comment">// 타입이 이미 정의되어 있어서 매개변수 타입 추론 가능</span>
+
+<span class="hljs-comment">// interface로도 정의 가능</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">Calculator</span> {
+  (<span class="hljs-attr">a</span>: <span class="hljs-built_in">number</span>, <span class="hljs-attr">b</span>: <span class="hljs-built_in">number</span>): <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">modulo</span>: <span class="hljs-title class_">Calculator</span> = <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a % b;
+</code></pre>
+<h3 id="선택적-매개변수와-기본값"><a aria-hidden="true" tabindex="-1" href="#선택적-매개변수와-기본값"><span class="icon icon-link"></span></a>선택적 매개변수와 기본값</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 선택적 매개변수 (끝에 위치해야 함)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">greet</span>(<span class="hljs-params"><span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">greeting</span>?: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">string</span> {
+  <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${greeting || <span class="hljs-string">&#x27;Hello&#x27;</span>}</span>, <span class="hljs-subst">${name}</span>!`</span>;
+}
+
+<span class="hljs-title function_">greet</span>(<span class="hljs-string">&#x27;Alice&#x27;</span>); <span class="hljs-comment">// &quot;Hello, Alice!&quot;</span>
+<span class="hljs-title function_">greet</span>(<span class="hljs-string">&#x27;Bob&#x27;</span>, <span class="hljs-string">&#x27;Hi&#x27;</span>); <span class="hljs-comment">// &quot;Hi, Bob!&quot;</span>
+
+<span class="hljs-comment">// 기본값 매개변수 (타입 추론 가능)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">createUser</span>(<span class="hljs-params"><span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>, <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">18</span></span>) {
+  <span class="hljs-keyword">return</span> { <span class="hljs-attr">id</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>(), name, age };
+}
+
+<span class="hljs-title function_">createUser</span>(<span class="hljs-string">&#x27;Alice&#x27;</span>); <span class="hljs-comment">// age는 18</span>
+<span class="hljs-title function_">createUser</span>(<span class="hljs-string">&#x27;Bob&#x27;</span>, <span class="hljs-number">25</span>); <span class="hljs-comment">// age는 25</span>
+
+<span class="hljs-comment">// 선택적 매개변수와 기본값의 차이</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">test1</span>(<span class="hljs-params"><span class="hljs-attr">value</span>?: <span class="hljs-built_in">number</span></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value); <span class="hljs-comment">// undefined 또는 number</span>
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">test2</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">number</span> = <span class="hljs-number">0</span></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(value); <span class="hljs-comment">// 항상 number (undefined면 0으로 대체)</span>
+}
+
+<span class="hljs-title function_">test1</span>(); <span class="hljs-comment">// undefined</span>
+<span class="hljs-title function_">test2</span>(); <span class="hljs-comment">// 0</span>
+</code></pre>
+<h3 id="rest-매개변수"><a aria-hidden="true" tabindex="-1" href="#rest-매개변수"><span class="icon icon-link"></span></a>Rest 매개변수</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// Rest 매개변수는 항상 배열</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sum</span>(<span class="hljs-params">...<span class="hljs-attr">numbers</span>: <span class="hljs-built_in">number</span>[]</span>): <span class="hljs-built_in">number</span> {
+  <span class="hljs-keyword">return</span> numbers.<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">total, n</span>) =&gt;</span> total + n, <span class="hljs-number">0</span>);
+}
+
+<span class="hljs-title function_">sum</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>); <span class="hljs-comment">// 15</span>
+
+<span class="hljs-comment">// 일반 매개변수와 Rest 매개변수 혼합</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">multiply</span>(<span class="hljs-params"><span class="hljs-attr">factor</span>: <span class="hljs-built_in">number</span>, ...<span class="hljs-attr">numbers</span>: <span class="hljs-built_in">number</span>[]</span>): <span class="hljs-built_in">number</span>[] {
+  <span class="hljs-keyword">return</span> numbers.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">n</span> =&gt;</span> n * factor);
+}
+
+<span class="hljs-title function_">multiply</span>(<span class="hljs-number">2</span>, <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>); <span class="hljs-comment">// [2, 4, 6]</span>
+
+<span class="hljs-comment">// Rest 매개변수는 마지막에만 올 수 있음</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">invalid</span>(<span class="hljs-params">...<span class="hljs-attr">numbers</span>: <span class="hljs-built_in">number</span>[], <span class="hljs-attr">factor</span>: <span class="hljs-built_in">number</span></span>) { } <span class="hljs-comment">// 에러</span>
+</code></pre>
+<h3 id="void-never-unknown-반환-타입"><a aria-hidden="true" tabindex="-1" href="#void-never-unknown-반환-타입"><span class="icon icon-link"></span></a>void, never, unknown 반환 타입</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// void - 반환값이 없음 (undefined는 반환 가능)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">log</span>(<span class="hljs-params"><span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">void</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(message);
+  <span class="hljs-comment">// return 문이 없거나 return;만 가능</span>
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">voidExample</span>(<span class="hljs-params"></span>): <span class="hljs-built_in">void</span> {
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">undefined</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>; <span class="hljs-comment">// 에러</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; <span class="hljs-comment">// 에러</span>
+}
+
+<span class="hljs-comment">// never - 절대 반환하지 않음 (함수가 끝나지 않음)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">throwError</span>(<span class="hljs-params"><span class="hljs-attr">message</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">never</span> {
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(message);
+  <span class="hljs-comment">// 이 함수는 항상 예외를 던지므로 절대 정상 종료되지 않음</span>
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">infiniteLoop</span>(<span class="hljs-params"></span>): <span class="hljs-built_in">never</span> {
+  <span class="hljs-keyword">while</span> (<span class="hljs-literal">true</span>) {
+    <span class="hljs-comment">// 무한 루프</span>
+  }
+}
+
+<span class="hljs-comment">// never의 유용한 활용: 타입 좁히기</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">assertNever</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">never</span></span>): <span class="hljs-built_in">never</span> {
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">`Unexpected value: <span class="hljs-subst">${value}</span>`</span>);
+}
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Shape</span> = <span class="hljs-string">&#x27;circle&#x27;</span> | <span class="hljs-string">&#x27;square&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getArea</span>(<span class="hljs-params"><span class="hljs-attr">shape</span>: <span class="hljs-title class_">Shape</span></span>) {
+  <span class="hljs-keyword">switch</span> (shape) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;circle&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-property">PI</span> * <span class="hljs-number">10</span> * <span class="hljs-number">10</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;square&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-number">10</span> * <span class="hljs-number">10</span>;
+    <span class="hljs-attr">default</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-title function_">assertNever</span>(shape); <span class="hljs-comment">// 모든 case를 다 처리했다면 여기는 never</span>
+  }
+}
+
+<span class="hljs-comment">// unknown - 타입 안전한 any (Part 3에서 자세히 다룸)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">parseJSON</span>(<span class="hljs-params"><span class="hljs-attr">json</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">unknown</span> {
+  <span class="hljs-keyword">return</span> <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(json);
+}
+
+<span class="hljs-keyword">const</span> result = <span class="hljs-title function_">parseJSON</span>(<span class="hljs-string">&#x27;{&quot;name&quot;: &quot;Alice&quot;}&#x27;</span>);
+<span class="hljs-comment">// result.name; // 에러 unknown 타입은 바로 사용 불가</span>
+
+<span class="hljs-comment">// 타입 체크 후 사용</span>
+<span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> result === <span class="hljs-string">&#x27;object&#x27;</span> &amp;&amp; result !== <span class="hljs-literal">null</span> &amp;&amp; <span class="hljs-string">&#x27;name&#x27;</span> <span class="hljs-keyword">in</span> result) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>((result <span class="hljs-keyword">as</span> { <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span> }).<span class="hljs-property">name</span>);
+}
+</code></pre>
+<h3 id="함수-오버로딩"><a aria-hidden="true" tabindex="-1" href="#함수-오버로딩"><span class="icon icon-link"></span></a>함수 오버로딩</h3>
+<p>같은 이름의 함수에 여러 시그니처를 제공합니다. 입력 타입에 따라 출력 타입이 달라질 때 유용합니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 오버로드 시그니처들</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">format</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span></span>): <span class="hljs-built_in">string</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">format</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">number</span></span>): <span class="hljs-built_in">string</span>;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">format</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-title class_">Date</span></span>): <span class="hljs-built_in">string</span>;
+
+<span class="hljs-comment">// 구현 시그니처 (모든 경우를 처리)</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">format</span>(<span class="hljs-params"><span class="hljs-attr">value</span>: <span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span> | <span class="hljs-title class_">Date</span></span>): <span class="hljs-built_in">string</span> {
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> value === <span class="hljs-string">&#x27;string&#x27;</span>) {
+    <span class="hljs-keyword">return</span> value.<span class="hljs-title function_">toUpperCase</span>();
+  }
+  <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> value === <span class="hljs-string">&#x27;number&#x27;</span>) {
+    <span class="hljs-keyword">return</span> value.<span class="hljs-title function_">toFixed</span>(<span class="hljs-number">2</span>);
+  }
+  <span class="hljs-keyword">return</span> value.<span class="hljs-title function_">toISOString</span>();
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-title function_">format</span>(<span class="hljs-string">&#x27;hello&#x27;</span>); <span class="hljs-comment">// &quot;HELLO&quot; </span>
+<span class="hljs-title function_">format</span>(<span class="hljs-number">42</span>); <span class="hljs-comment">// &quot;42.00&quot;</span>
+<span class="hljs-title function_">format</span>(<span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>()); <span class="hljs-comment">// &quot;2024-10-08T...&quot;</span>
+<span class="hljs-title function_">format</span>(<span class="hljs-literal">true</span>); <span class="hljs-comment">// 에러 boolean은 오버로드에 없음</span>
+
+<span class="hljs-comment">// 실무 예시: 단일 ID 또는 여러 ID를 받는 함수</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-params"><span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span></span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">User</span>&gt;;
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-params"><span class="hljs-attr">ids</span>: <span class="hljs-built_in">number</span>[]</span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">User</span>[]&gt;;
+
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-params"><span class="hljs-attr">input</span>: <span class="hljs-built_in">number</span> | <span class="hljs-built_in">number</span>[]</span>): <span class="hljs-title class_">Promise</span>&lt;<span class="hljs-title class_">User</span> | <span class="hljs-title class_">User</span>[]&gt; {
+  <span class="hljs-keyword">if</span> (<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">isArray</span>(input)) {
+    <span class="hljs-keyword">return</span> <span class="hljs-title class_">Promise</span>.<span class="hljs-title function_">all</span>(input.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">id</span> =&gt;</span> <span class="hljs-title function_">fetchUser</span>(id)));
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">fetchUser</span>(input);
+}
+
+<span class="hljs-comment">// 타입이 정확하게 추론됨</span>
+<span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchData</span>(<span class="hljs-number">1</span>); <span class="hljs-comment">// Promise&lt;User&gt;</span>
+<span class="hljs-keyword">const</span> users = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchData</span>([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>]); <span class="hljs-comment">// Promise&lt;User[]&gt;</span>
+</code></pre>
+<h2 id="union과-intersection-타입"><a aria-hidden="true" tabindex="-1" href="#union과-intersection-타입"><span class="icon icon-link"></span></a>Union과 Intersection 타입</h2>
+<h3 id="union-types----또는"><a aria-hidden="true" tabindex="-1" href="#union-types----또는"><span class="icon icon-link"></span></a>Union Types (|) - &quot;또는&quot;</h3>
+<p>여러 타입 중 <strong>하나</strong>를 가질 수 있습니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 Union</span>
+<span class="hljs-keyword">type</span> <span class="hljs-variable constant_">ID</span> = <span class="hljs-built_in">string</span> | <span class="hljs-built_in">number</span>;
+
+<span class="hljs-keyword">let</span> <span class="hljs-attr">userId</span>: <span class="hljs-variable constant_">ID</span> = <span class="hljs-number">123</span>;
+userId = <span class="hljs-string">&#x27;abc-123&#x27;</span>; <span class="hljs-comment">// 둘 다 가능</span>
+
+<span class="hljs-comment">// 리터럴 타입 Union (가장 많이 사용)</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Status</span> = <span class="hljs-string">&#x27;idle&#x27;</span> | <span class="hljs-string">&#x27;loading&#x27;</span> | <span class="hljs-string">&#x27;success&#x27;</span> | <span class="hljs-string">&#x27;error&#x27;</span>;
+
+<span class="hljs-keyword">let</span> <span class="hljs-attr">currentStatus</span>: <span class="hljs-title class_">Status</span> = <span class="hljs-string">&#x27;idle&#x27;</span>;
+currentStatus = <span class="hljs-string">&#x27;loading&#x27;</span>; <span class="hljs-comment">// </span>
+currentStatus = <span class="hljs-string">&#x27;pending&#x27;</span>; <span class="hljs-comment">// 에러! &#x27;pending&#x27;은 Status 타입이 아님</span>
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">handleStatus</span>(<span class="hljs-params"><span class="hljs-attr">status</span>: <span class="hljs-title class_">Status</span></span>) {
+  <span class="hljs-keyword">switch</span> (status) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;idle&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;대기 중&#x27;</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;loading&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;로딩 중...&#x27;</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;success&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;완료!&#x27;</span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;error&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="hljs-string">&#x27;오류 발생&#x27;</span>;
+    <span class="hljs-comment">// 모든 case를 다 처리했으므로 default 불필요</span>
+  }
+}
+</code></pre>
+<p><strong>실무 활용</strong>: API 응답 상태 관리</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">LoadingState</span> = { <span class="hljs-attr">status</span>: <span class="hljs-string">&#x27;loading&#x27;</span> };
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">SuccessState</span> = { <span class="hljs-attr">status</span>: <span class="hljs-string">&#x27;success&#x27;</span>; <span class="hljs-attr">data</span>: <span class="hljs-title class_">User</span> };
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ErrorState</span> = { <span class="hljs-attr">status</span>: <span class="hljs-string">&#x27;error&#x27;</span>; <span class="hljs-attr">error</span>: <span class="hljs-built_in">string</span> };
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">RequestState</span> = <span class="hljs-title class_">LoadingState</span> | <span class="hljs-title class_">SuccessState</span> | <span class="hljs-title class_">ErrorState</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">renderUser</span>(<span class="hljs-params"><span class="hljs-attr">state</span>: <span class="hljs-title class_">RequestState</span></span>) {
+  <span class="hljs-keyword">switch</span> (state.<span class="hljs-property">status</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;loading&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Spinner</span> /&gt;</span></span>;
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;success&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">UserProfile</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{state.data}</span> /&gt;</span></span>; <span class="hljs-comment">// data는 SuccessState에만 있음</span>
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;error&#x27;</span>:
+      <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ErrorMessage</span> <span class="hljs-attr">message</span>=<span class="hljs-string">{state.error}</span> /&gt;</span></span>; <span class="hljs-comment">// error는 ErrorState에만 있음</span>
+  }
+}
+</code></pre>
+<h3 id="discriminated-union-태그된-유니온"><a aria-hidden="true" tabindex="-1" href="#discriminated-union-태그된-유니온"><span class="icon icon-link"></span></a>Discriminated Union (태그된 유니온)</h3>
+<p>**공통 속성(discriminant)**으로 타입을 구분하는 패턴입니다. TypeScript가 타입을 자동으로 좁혀줍니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 패턴</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Circle</span> = {
+  <span class="hljs-attr">kind</span>: <span class="hljs-string">&#x27;circle&#x27;</span>;  <span class="hljs-comment">// discriminant (구분자)</span>
+  <span class="hljs-attr">radius</span>: <span class="hljs-built_in">number</span>;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Rectangle</span> = {
+  <span class="hljs-attr">kind</span>: <span class="hljs-string">&#x27;rectangle&#x27;</span>;  <span class="hljs-comment">// discriminant</span>
+  <span class="hljs-attr">width</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">height</span>: <span class="hljs-built_in">number</span>;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Triangle</span> = {
+  <span class="hljs-attr">kind</span>: <span class="hljs-string">&#x27;triangle&#x27;</span>;  <span class="hljs-comment">// discriminant</span>
+  <span class="hljs-attr">base</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">height</span>: <span class="hljs-built_in">number</span>;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Shape</span> = <span class="hljs-title class_">Circle</span> | <span class="hljs-title class_">Rectangle</span> | <span class="hljs-title class_">Triangle</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">getArea</span>(<span class="hljs-params"><span class="hljs-attr">shape</span>: <span class="hljs-title class_">Shape</span></span>): <span class="hljs-built_in">number</span> {
+  <span class="hljs-keyword">switch</span> (shape.<span class="hljs-property">kind</span>) {
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;circle&#x27;</span>:
+      <span class="hljs-comment">// 이 블록 안에서 shape는 Circle 타입</span>
+      <span class="hljs-keyword">return</span> <span class="hljs-title class_">Math</span>.<span class="hljs-property">PI</span> * shape.<span class="hljs-property">radius</span> ** <span class="hljs-number">2</span>;
+
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;rectangle&#x27;</span>:
+      <span class="hljs-comment">// 이 블록 안에서 shape는 Rectangle 타입</span>
+      <span class="hljs-keyword">return</span> shape.<span class="hljs-property">width</span> * shape.<span class="hljs-property">height</span>;
+
+    <span class="hljs-keyword">case</span> <span class="hljs-string">&#x27;triangle&#x27;</span>:
+      <span class="hljs-comment">// 이 블록 안에서 shape는 Triangle 타입</span>
+      <span class="hljs-keyword">return</span> (shape.<span class="hljs-property">base</span> * shape.<span class="hljs-property">height</span>) / <span class="hljs-number">2</span>;
+  }
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">circle</span>: <span class="hljs-title class_">Shape</span> = { <span class="hljs-attr">kind</span>: <span class="hljs-string">&#x27;circle&#x27;</span>, <span class="hljs-attr">radius</span>: <span class="hljs-number">10</span> };
+<span class="hljs-keyword">const</span> <span class="hljs-attr">rect</span>: <span class="hljs-title class_">Shape</span> = { <span class="hljs-attr">kind</span>: <span class="hljs-string">&#x27;rectangle&#x27;</span>, <span class="hljs-attr">width</span>: <span class="hljs-number">20</span>, <span class="hljs-attr">height</span>: <span class="hljs-number">15</span> };
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">getArea</span>(circle)); <span class="hljs-comment">// 314.159...</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title function_">getArea</span>(rect)); <span class="hljs-comment">// 300</span>
+</code></pre>
+<p><strong>실무 예시</strong>: 제네릭 Result 타입</p>
+<pre><code class="hljs language-typescript"><span class="hljs-keyword">type</span> <span class="hljs-title class_">Success</span>&lt;T&gt; = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;success&#x27;</span>;
+  <span class="hljs-attr">data</span>: T;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Failure</span> = {
+  <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;error&#x27;</span>;
+  <span class="hljs-attr">error</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">code</span>?: <span class="hljs-built_in">number</span>;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Result</span>&lt;T&gt; = <span class="hljs-title class_">Success</span>&lt;T&gt; | <span class="hljs-title class_">Failure</span>;
+
+<span class="hljs-keyword">function</span> handleResult&lt;T&gt;(<span class="hljs-attr">result</span>: <span class="hljs-title class_">Result</span>&lt;T&gt;) {
+  <span class="hljs-keyword">if</span> (result.<span class="hljs-property">type</span> === <span class="hljs-string">&#x27;success&#x27;</span>) {
+    <span class="hljs-comment">// result는 Success&lt;T&gt; 타입으로 좁혀짐</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;데이터:&#x27;</span>, result.<span class="hljs-property">data</span>);
+    <span class="hljs-title function_">processData</span>(result.<span class="hljs-property">data</span>); <span class="hljs-comment">// T 타입</span>
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// result는 Failure 타입으로 좁혀짐</span>
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;에러:&#x27;</span>, result.<span class="hljs-property">error</span>);
+    <span class="hljs-keyword">if</span> (result.<span class="hljs-property">code</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;에러 코드:&#x27;</span>, result.<span class="hljs-property">code</span>);
+    }
+  }
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">userResult</span>: <span class="hljs-title class_">Result</span>&lt;<span class="hljs-title class_">User</span>&gt; = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetchUser</span>(<span class="hljs-number">1</span>);
+<span class="hljs-title function_">handleResult</span>(userResult);
+</code></pre>
+<h3 id="intersection-types----그리고"><a aria-hidden="true" tabindex="-1" href="#intersection-types----그리고"><span class="icon icon-link"></span></a>Intersection Types (&amp;) - &quot;그리고&quot;</h3>
+<p>여러 타입을 모두 만족해야 합니다. 타입을 합칩니다.</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 Intersection</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Person</span> = {
+  <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span>;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Employee</span> = {
+  <span class="hljs-attr">employeeId</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">department</span>: <span class="hljs-built_in">string</span>;
+};
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Worker</span> = <span class="hljs-title class_">Person</span> &amp; <span class="hljs-title class_">Employee</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">worker</span>: <span class="hljs-title class_">Worker</span> = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">30</span>,
+  <span class="hljs-attr">employeeId</span>: <span class="hljs-number">12345</span>,
+  <span class="hljs-attr">department</span>: <span class="hljs-string">&#x27;Engineering&#x27;</span>
+  <span class="hljs-comment">// 모든 속성이 필요함</span>
+};
+
+<span class="hljs-comment">// 하나라도 빠지면 에러</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">incomplete</span>: <span class="hljs-title class_">Worker</span> = {
+  <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Bob&#x27;</span>,
+  <span class="hljs-attr">age</span>: <span class="hljs-number">25</span>
+  <span class="hljs-comment">// 에러- employeeId와 department가 없음</span>
+};
+</code></pre>
+<p>Mixin 패턴: 공통 속성을 재사용</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 타임스탬프 기능</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">Timestamped</span> {
+  <span class="hljs-attr">createdAt</span>: <span class="hljs-title class_">Date</span>;
+  <span class="hljs-attr">updatedAt</span>: <span class="hljs-title class_">Date</span>;
+}
+
+<span class="hljs-comment">// 소프트 삭제 기능</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">SoftDeletable</span> {
+  <span class="hljs-attr">deletedAt</span>?: <span class="hljs-title class_">Date</span>;
+  <span class="hljs-attr">isDeleted</span>: <span class="hljs-built_in">boolean</span>;
+}
+
+<span class="hljs-comment">// 페이지네이션 정보</span>
+<span class="hljs-keyword">interface</span> <span class="hljs-title class_">Paginated</span> {
+  <span class="hljs-attr">page</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">pageSize</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">total</span>: <span class="hljs-built_in">number</span>;
+}
+
+<span class="hljs-comment">// 조합해서 사용</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">Post</span> = {
+  <span class="hljs-attr">id</span>: <span class="hljs-built_in">number</span>;
+  <span class="hljs-attr">title</span>: <span class="hljs-built_in">string</span>;
+  <span class="hljs-attr">content</span>: <span class="hljs-built_in">string</span>;
+} &amp; <span class="hljs-title class_">Timestamped</span> &amp; <span class="hljs-title class_">SoftDeletable</span>;
+
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">PostList</span> = {
+  <span class="hljs-attr">posts</span>: <span class="hljs-title class_">Post</span>[];
+} &amp; <span class="hljs-title class_">Paginated</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">post</span>: <span class="hljs-title class_">Post</span> = {
+  <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">title</span>: <span class="hljs-string">&#x27;Hello&#x27;</span>,
+  <span class="hljs-attr">content</span>: <span class="hljs-string">&#x27;World&#x27;</span>,
+  <span class="hljs-attr">createdAt</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>(),
+  <span class="hljs-attr">updatedAt</span>: <span class="hljs-keyword">new</span> <span class="hljs-title class_">Date</span>(),
+  <span class="hljs-attr">isDeleted</span>: <span class="hljs-literal">false</span>
+};
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">postList</span>: <span class="hljs-title class_">PostList</span> = {
+  <span class="hljs-attr">posts</span>: [post],
+  <span class="hljs-attr">page</span>: <span class="hljs-number">1</span>,
+  <span class="hljs-attr">pageSize</span>: <span class="hljs-number">10</span>,
+  <span class="hljs-attr">total</span>: <span class="hljs-number">100</span>
+};
+</code></pre>
+<p><strong>실무 활용</strong>: 컴포넌트 props 합성</p>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// 기본 버튼 props</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ButtonBaseProps</span> = {
+  <span class="hljs-attr">children</span>: <span class="hljs-title class_">React</span>.<span class="hljs-property">ReactNode</span>;
+  <span class="hljs-attr">onClick</span>: <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">void</span>;
+};
+
+<span class="hljs-comment">// 스타일 관련 props</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">StyledProps</span> = {
+  <span class="hljs-attr">variant</span>: <span class="hljs-string">&#x27;primary&#x27;</span> | <span class="hljs-string">&#x27;secondary&#x27;</span>;
+  <span class="hljs-attr">size</span>: <span class="hljs-string">&#x27;small&#x27;</span> | <span class="hljs-string">&#x27;medium&#x27;</span> | <span class="hljs-string">&#x27;large&#x27;</span>;
+};
+
+<span class="hljs-comment">// 로딩 상태 props</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">LoadableProps</span> = {
+  <span class="hljs-attr">loading</span>?: <span class="hljs-built_in">boolean</span>;
+  <span class="hljs-attr">disabled</span>?: <span class="hljs-built_in">boolean</span>;
+};
+
+<span class="hljs-comment">// 모두 합쳐서 버튼 컴포넌트 props 생성</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">ButtonProps</span> = <span class="hljs-title class_">ButtonBaseProps</span> &amp; <span class="hljs-title class_">StyledProps</span> &amp; <span class="hljs-title class_">LoadableProps</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Button</span>(<span class="hljs-params"><span class="hljs-attr">props</span>: <span class="hljs-title class_">ButtonProps</span></span>) {
+  <span class="hljs-comment">// 모든 props 사용 가능</span>
+  <span class="hljs-keyword">const</span> { children, onClick, variant, size, loading, disabled } = props;
+  <span class="hljs-comment">// ...</span>
+}
+</code></pre>
+<h3 id="union-vs-intersection-비교"><a aria-hidden="true" tabindex="-1" href="#union-vs-intersection-비교"><span class="icon icon-link"></span></a>Union vs Intersection 비교</h3>
+<pre><code class="hljs language-typescript"><span class="hljs-comment">// Union: A 또는 B</span>
+<span class="hljs-keyword">type</span> A = { <span class="hljs-attr">name</span>: <span class="hljs-built_in">string</span> };
+<span class="hljs-keyword">type</span> B = { <span class="hljs-attr">age</span>: <span class="hljs-built_in">number</span> };
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">UnionAB</span> = A | B;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">union1</span>: <span class="hljs-title class_">UnionAB</span> = { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span> }; <span class="hljs-comment">// A만 만족</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">union2</span>: <span class="hljs-title class_">UnionAB</span> = { <span class="hljs-attr">age</span>: <span class="hljs-number">25</span> }; <span class="hljs-comment">// B만</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">union3</span>: <span class="hljs-title class_">UnionAB</span> = { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Bob&#x27;</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> }; <span class="hljs-comment">// 둘 다 </span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">union4</span>: <span class="hljs-title class_">UnionAB</span> = {}; <span class="hljs-comment">// 둘 다 만족하지 않음</span>
+
+<span class="hljs-comment">// Intersection: A 그리고 B</span>
+<span class="hljs-keyword">type</span> <span class="hljs-title class_">IntersectionAB</span> = A &amp; B;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">intersection1</span>: <span class="hljs-title class_">IntersectionAB</span> = { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Alice&#x27;</span> }; <span class="hljs-comment">// age 없음</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">intersection2</span>: <span class="hljs-title class_">IntersectionAB</span> = { <span class="hljs-attr">age</span>: <span class="hljs-number">25</span> }; <span class="hljs-comment">// name 없음</span>
+<span class="hljs-keyword">const</span> <span class="hljs-attr">intersection3</span>: <span class="hljs-title class_">IntersectionAB</span> = { <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;Bob&#x27;</span>, <span class="hljs-attr">age</span>: <span class="hljs-number">30</span> }; <span class="hljs-comment">// 둘 다 있음</span>
+</code></pre>
+<h2 id="마치며"><a aria-hidden="true" tabindex="-1" href="#마치며"><span class="icon icon-link"></span></a>마치며</h2>
+<p>Part 1에서는 TypeScript의 기초 타입 시스템을 다뤘습니다.
+사실 타입 정리는 한번쯤 다시 정리 하고 싶었는데 정리 하니 좀 간결해진거 같아서 좋습니다.
+실무에서 왜 이때 이걸 썼는지 이해도 가구요,.</p>
+<p><strong>다음 Part 2에서는</strong>:</p>
+<ul>
+<li>타입 좁히기 (Type Narrowing)</li>
+<li>사용자 정의 타입 가드</li>
+<li>제네릭의 모든 것</li>
+<li>실무 제네릭 패턴</li>
+</ul>
+<p>를 할 예정입니다.</p></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group" href="/posts/frontend/typescript-basics-part2/"><div class="text-sm text-muted-foreground mb-2">← 이전 글</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">TypeScript 타입 좁히기와 제네릭</div></a><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right" href="/posts/computer-science/data-structures-fundamentals-part2/"><div class="text-sm text-muted-foreground mb-2">다음 글 →</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">자료구조 학습 2: 비선형 자료구조</div></a></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-91788950a704a307.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-91788950a704a307.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d5ebba4595249be0.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"rq94cetZS17rr6VXyxt_m\",\"p\":\"\",\"c\":[\"\",\"posts\",\"frontend\",\"typescript-basics-part1\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"frontend\",\"d\"],{\"children\":[[\"slug\",\"typescript-basics-part1\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d5ebba4595249be0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"frontend\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"typescript-basics-part1\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T5924,"])</script><script>self.__next_f.push([1,"\nJavaScript에서 TypeScript로 넘어오면서 가장 헷갈리는 부분이 바로 타입입니다. \n이 시리즈는 총 4부작으로 구성되어 있으며, 처음엔 TypeScript의 기초 타입을 다룹니다.\n\n## 시리즈 구성\n\n- **Part 1 (현재 글)**: 기본 타입, 객체, 함수, Union/Intersection\n- **Part 2**: 타입 좁히기와 제네릭\n- **Part 3**: 유틸리티 타입과 any \n- **Part 4**: 실무 패턴과 고급 타입\n\n## 기본 타입 (Primitive Types)\n\nTypeScript의 기본 타입부터 차근차근 살펴보겠습니다. JavaScript의 기본 타입에 대응하지만, 명시적으로 타입을 선언할 수 있습니다.\n\n### 기본 타입 정의\n\n```typescript\n// 문자열 (String)\nconst name: string = 'Alice';\nconst greeting: string = `Hello, ${name}`;\n\n// Number - 정수와 실수를 구분하지 않음\nconst age: number = 25;\nconst price: number = 19.99;\nconst binary: number = 0b1010; // 2진수: 10\nconst hex: number = 0xf00d; // 16진수: 61453\n\n// Boolean\nconst isActive: boolean = true;\nconst hasPermission: boolean = false;\n\n// null과 undefined\nconst nothing: null = null;\nconst notDefined: undefined = undefined;\n\n// symbol (ES6) - 고유한 값을 만들 때 사용\nconst sym: symbol = Symbol('unique');\nconst sym2: symbol = Symbol('unique');\nconsole.log(sym === sym2); // false\n\n// bigint  - 매우 큰 정수를 다룰 때 사용 실무에서 쓰는거 잘 못봄\nconst bigNumber: bigint = 100n;\nconst anotherBig: bigint = BigInt(9007199254740991);\n```\n\n실무 팁: `strictNullChecks` 옵션을 켜면 `null`과 `undefined`를 명시적으로 처리해야 합니다. 이 옵션은 런타임 에러를 방지하는데 매우 중요합니다.\n첫 회사에서 배포 시 이걸 끄고 작업했었습니다. 까먹고 있다가 하나하나 다시 타입들을 정리했었습니다🥲\n\n```typescript\n// tsconfig.json에서 \"strictNullChecks\": true 설정 시\nlet name: string = 'Alice';\nname = null; // 에러! \n\n// null을 허용하려면 명시적으로 선언\nlet nullableName: string | null = 'Bob';\nnullableName = null; \n\n// undefined도 마찬가지\nlet optionalValue: number | undefined = 42;\noptionalValue = undefined;\n```\n\n### 배열 타입\n\n배열은 두 가지 방법으로 타입을 지정할 수 있습니다.\n\n```typescript\n// 타입[]  \nconst numbers: number[] = [1, 2, 3, 4, 5];\nconst names: string[] = ['Alice', 'Bob', 'Charlie'];\n\n// Array\u003c타입\u003e - 제네릭 방식\nconst scores: Array\u003cnumber\u003e = [90, 85, 95];\nconst emails: Array\u003cstring\u003e = ['a@test.com', 'b@test.com'];\n\n// 다차원 배열\nconst matrix: number[][] = [\n  [1, 2, 3],\n  [4, 5, 6],\n  [7, 8, 9]\n];\n\n// 혼합 타입 배열 -타입 안정성이 떨어지기 때문에 권장 x\nconst mixed: (string | number)[] = ['Alice', 25, 'Bob', 30];\n\n// 읽기 전용 배열\nconst readonlyArr: readonly number[] = [1, 2, 3];\nreadonlyArr.push(4); // 에러!\n\n// ReadonlyArray 타입\nconst readonlyArr2: ReadonlyArray\u003cstring\u003e = ['a', 'b', 'c'];\nreadonlyArr2[0] = 'z'; // 에러!\n```\n\n**실무 활용**: React에서 상태를 불변으로 관리할 때 readonly 사용\n\n```typescript\ninterface State {\n  readonly items: readonly string[];\n}\n\n// 나쁜 예: 원본 배열 변경\nfunction addItemBad(state: State, item: string): State {\n  state.items.push(item); // 에러!\n  return state;\n}\n\n// 좋은 예: 새 배열을 반환\nfunction addItem(state: State, item: string): State {\n  return {\n    items: [...state.items, item]\n  };\n}\n\n// 사용 예시\nlet myState: State = { items: ['item1', 'item2'] };\nmyState = addItem(myState, 'item3');\nconsole.log(myState.items); // ['item1', 'item2', 'item3']\n```\n\n### 튜플 (Tuple)\n\n튜플은 고정된 개수와 타입의 배열을 표현합니다. 배열과 달리 각 위치의 타입이 정해져 있습니다.(좀 더 빡빡한 버전)\n\n```typescript\n// 기본 튜플\nconst user: [string, number] = ['Alice', 25];\nconst user2: [string, number] = [25, 'Alice']; // 에러! 타입 순서 불일치\n\n// 튜플 요소 접근\nconst name = user[0]; // string 타입\nconst age = user[1];  // number 타입\n\n// 라벨이 있는 튜플 - 가독성 향상\ntype User = [name: string, age: number, isAdmin: boolean];\nconst admin: User = ['Alice', 25, true];\n\n// 선택적 요소 (마지막만 가능)\ntype Response = [status: number, data: string, error?: string];\nconst success: Response = [200, 'OK'];\nconst failure: Response = [500, 'Server Error', 'Internal error'];\n\n// Rest 요소 (나머지 요소)\ntype StringNumberBooleans = [string, number, ...boolean[]];\nconst example1: StringNumberBooleans = ['hello', 1, true, false, true];\nconst example2: StringNumberBooleans = ['world', 2]; // boolean[]은 비어있어도 OK\n\n```\n\n**왜 튜플을 사용할까?**\n\n튜플은 여러 값을 묶어서 반환 할 때 유용합니다. 객체를 만들기에는 과하고, 배열로는 타입 안정성이 떨어질 때 사용합니다.\n\n```typescript\n// 배열 사용 시 - 타입 안정성 부족\nfunction getUserBad(id: number): (User | Error | null)[] {\n  try {\n    const user = fetchUser(id);\n    return [user, null];\n  } catch (error) {\n    return [null, error as Error];\n  }\n}\n\nconst result = getUserBad(1);\nconst user = result[0]; // User | Error | null - 어떤 타입인지 불명확\n\n// 튜플 사용 시 - 명확한 타입\nfunction getUser(id: number): [User | null, Error | null] {\n  try {\n    const user = fetchUser(id);\n    return [user, null];\n  } catch (error) {\n    return [null, error as Error];\n  }\n}\n\nconst [user, error] = getUser(1);\n// user: User | null\n// error: Error | null\n\nif (error) {\n  console.error(error.message); // error는 Error 타입\n} else if (user) {\n  console.log(user.name); // user는 User 타입\n}\n```\n\n## 객체 타입\n\n객체의 형태를 정의하는 방법은 크게 두 가지: `interface`와 `type` 입니다.\n\n### Interface vs Type Alias\n\n```typescript\n// Interface\ninterface User {\n  id: number;\n  name: string;\n  email: string;\n}\n\n// Type Alias\ntype Product = {\n  id: number;\n  name: string;\n  price: number;\n};\n```\n\n**언제 무엇을 사용할까?**\n\n둘 다 객체 타입을 정의할 수 있지만, 상황에 따라 적합한 것이 다릅니다.\n\n**Interface를 사용하는 경우:**\n\n1. 객체의 형태를 정의할 때\n2. 확장(extends)이 필요할 때\n3. 선언 병합(declaration merging)이 필요할 때\n\n```typescript\n// 1. 객체 형태 정의\ninterface Animal {\n  name: string;\n  age: number;\n}\n\n// 2. 확장 (extends)\ninterface Dog extends Animal {\n  bark(): void;\n}\n\nconst myDog: Dog = {\n  name: 'Bobby',\n  age: 3,\n  bark() {\n    console.log('Woof!');\n  }\n};\n\n// 3. 선언 병합 - 같은 이름의 interface를 여러 번 선언하면 자동으로 병합\ninterface User {\n  id: number;\n}\n\ninterface User {\n  name: string;\n}\n\n// 자동으로 병합\nconst user: User = {\n  id: 1,\n  name: 'Alice'\n};\n```\n\n\n```typescript\n// 예: Express의 Request 타입에 사용자 정의 속성 추가\ndeclare global {\n  namespace Express {\n    interface Request {\n      userId?: number;\n      isAuthenticated?: boolean;\n    }\n  }\n}\n\n// 이제 req.userId를 타입 안전하게 사용 가능\napp.use((req, res, next) =\u003e {\n  req.userId = 123; // OK\n  next();\n});\n```\n\n**Type Alias를 사용하는 경우:**\n\n1. Union, Intersection 타입\n2. Tuple, Primitive 타입에 이름 붙일 때\n3. 복잡한 타입 조합\n\n```typescript\n// 1. Union 타입\ntype Status = 'pending' | 'approved' | 'rejected';\n\n// 2. Intersection 타입\ntype Admin = User \u0026 {\n  role: 'admin';\n  permissions: string[];\n};\n\n// 3. Tuple\ntype Point = [number, number];\ntype RGB = [red: number, green: number, blue: number];\n\n// 4. Primitive 타입에 이름 붙이기\ntype ID = string | number;\ntype Email = string;\n\n// 5. Mapped type\ntype Readonly\u003cT\u003e = {\n  readonly [P in keyof T]: T[P];\n};\n\n// 6. 조건부 타입\ntype NonNullable\u003cT\u003e = T extends null | undefined ? never : T;\n```\n\n정리: 객체 형태는 `interface`, Union/Intersection/복잡한 타입은 `type`을 사용하는 것이 일반적입니다.\n\n### 선택적 프로퍼티와 읽기 전용\n\n```typescript\ninterface User {\n  id: number;              // 필수\n  name: string;            // 필수\n  email?: string;          // 선택적 ?\n  readonly createdAt: Date; // 읽기 전용\n  age?: number;            // 선택적\n}\n\nconst user: User = {\n  id: 1,\n  name: 'Alice',\n  createdAt: new Date()\n  // email과 age는 없어도 OK\n};\n\n// 선택적 속성 추가 가능\nuser.email = 'alice@example.com';\n\n//  읽기 전용 속성 변경 불가\nuser.createdAt = new Date(); // 에러!\n\n// 선택적 속성 안전하게 사용하기\nfunction sendEmail(user: User) {\n  // 나쁜 예\n  console.log(user.email.toLowerCase()); // user.email이 undefined면 에러!\n\n  // 좋은 예 1: 옵셔널 체이닝\n  console.log(user.email?.toLowerCase());\n\n  // 좋은 예 2: 타입 가드\n  if (user.email) {\n    console.log(user.email.toLowerCase());\n  }\n\n  // 좋은 예 3: 기본값\n  const email = user.email ?? 'no-email@example.com';\n  console.log(email.toLowerCase());\n}\n```\n\nreadonly의 깊이 제한: `readonly`는 첫번째 단계만 적용됩니다.\n\n```typescript\ninterface User {\n  readonly profile: {\n    name: string;\n    age: number;\n  };\n}\n\nconst user: User = {\n  profile: { name: 'Alice', age: 25 }\n};\n\n// profile 자체를 변경할 수 없음\nuser.profile = { name: 'Bob', age: 30 }; // 에러!\n\n// 하지만 profile의 속성은 변경 가능\nuser.profile.name = 'Bob'; \nuser.profile.age = 30; \n\n// 완전한 불변성을 원한다면 중첩된 readonly 사용\ninterface User {\n  readonly profile: {\n    readonly name: string;\n    readonly age: number;\n  };\n}\n```\n\n### 인덱스 시그니처\n\n동적 프로퍼티를 가진 객체의 타입을 정의합니다. 런타임에 어떤 키가 들어올지 모를 때 사용합니다.\n\n```typescript\n// 문자열 인덱스\ninterface StringMap {\n  [key: string]: string;\n}\n\nconst translations: StringMap = {\n  hello: '안녕하세요',\n  goodbye: '안녕히 가세요',\n  thanks: '감사합니다'\n};\n\nconsole.log(translations['hello']); // '안녕하세요'\nconsole.log(translations['anything']); // undefined (하지만 타입은 string)\n\n// 숫자 인덱스\ninterface NumberMap {\n  [index: number]: string;\n}\n\nconst items: NumberMap = {\n  0: 'first',\n  1: 'second',\n  2: 'third'\n};\n\n// 혼합 (특정 키 + 인덱스)\ninterface Config {\n  port: number;              // 필수 속성\n  [key: string]: number | string; // 추가 속성은 number 또는 string\n}\n\nconst config: Config = {\n  port: 3000,\n  host: 'localhost',\n  timeout: 5000,\n  name: 'my-app'\n};\n```\n\n주의사항: 인덱스 시그니처는 타입 안정성을 약화시킵니다.\n\n```typescript\ninterface StringMap {\n  [key: string]: string;\n}\n\nconst map: StringMap = {\n  name: 'Alice'\n};\n\n// 존재하지 않는 키에 접근해도 타입은 string\nconst value = map['nonexistent']; // 타입: string (실제 값: undefined)\nconsole.log(value.toUpperCase()); // 런타임 에러!\n```\n\n더 나은 방법: `Record` 유틸리티 타입 사용\n\n```typescript\n// Record\u003c키 타입, 값 타입\u003e\ntype ErrorMessages = Record\u003cstring, string\u003e;\n\nconst errors: ErrorMessages = {\n  required: '필수 항목입니다',\n  email: '이메일 형식이 올바르지 않습니다'\n};\n\n// 또는 더 타입 안전하게\ntype ErrorCode = 'required' | 'email' | 'minLength';\ntype ErrorMessages = Record\u003cErrorCode, string\u003e;\n\nconst errors: ErrorMessages = {\n  required: '필수 항목입니다',\n  email: '이메일 형식이 올바르지 않습니다',\n  minLength: '최소 8자 이상 입력해주세요'\n  // 모든 ErrorCode를 다 정의해야 함\n};\n```\n\n## 함수 타입\n\n함수의 매개변수와 반환값에 타입을 지정할 수 있습니다.\n\n### 함수 선언과 타입\n\n```typescript\n// 기본 함수 타입\nfunction add(a: number, b: number): number {\n  return a + b;\n}\n\n// 화살표 함수\nconst multiply = (a: number, b: number): number =\u003e {\n  return a * b;\n};\n\n// 단축형\nconst divide = (a: number, b: number): number =\u003e a / b;\n\n// 함수 타입 정의\ntype MathOperation = (a: number, b: number) =\u003e number;\n\nconst subtract: MathOperation = (a, b) =\u003e a - b;\n// 타입이 이미 정의되어 있어서 매개변수 타입 추론 가능\n\n// interface로도 정의 가능\ninterface Calculator {\n  (a: number, b: number): number;\n}\n\nconst modulo: Calculator = (a, b) =\u003e a % b;\n```\n\n### 선택적 매개변수와 기본값\n\n```typescript\n// 선택적 매개변수 (끝에 위치해야 함)\nfunction greet(name: string, greeting?: string): string {\n  return `${greeting || 'Hello'}, ${name}!`;\n}\n\ngreet('Alice'); // \"Hello, Alice!\"\ngreet('Bob', 'Hi'); // \"Hi, Bob!\"\n\n// 기본값 매개변수 (타입 추론 가능)\nfunction createUser(name: string, age: number = 18) {\n  return { id: Date.now(), name, age };\n}\n\ncreateUser('Alice'); // age는 18\ncreateUser('Bob', 25); // age는 25\n\n// 선택적 매개변수와 기본값의 차이\nfunction test1(value?: number) {\n  console.log(value); // undefined 또는 number\n}\n\nfunction test2(value: number = 0) {\n  console.log(value); // 항상 number (undefined면 0으로 대체)\n}\n\ntest1(); // undefined\ntest2(); // 0\n```\n\n### Rest 매개변수\n\n```typescript\n// Rest 매개변수는 항상 배열\nfunction sum(...numbers: number[]): number {\n  return numbers.reduce((total, n) =\u003e total + n, 0);\n}\n\nsum(1, 2, 3, 4, 5); // 15\n\n// 일반 매개변수와 Rest 매개변수 혼합\nfunction multiply(factor: number, ...numbers: number[]): number[] {\n  return numbers.map(n =\u003e n * factor);\n}\n\nmultiply(2, 1, 2, 3); // [2, 4, 6]\n\n// Rest 매개변수는 마지막에만 올 수 있음\nfunction invalid(...numbers: number[], factor: number) { } // 에러\n```\n\n### void, never, unknown 반환 타입\n\n```typescript\n// void - 반환값이 없음 (undefined는 반환 가능)\nfunction log(message: string): void {\n  console.log(message);\n  // return 문이 없거나 return;만 가능\n}\n\nfunction voidExample(): void {\n  return undefined;\n  return null; // 에러\n  return 0; // 에러\n}\n\n// never - 절대 반환하지 않음 (함수가 끝나지 않음)\nfunction throwError(message: string): never {\n  throw new Error(message);\n  // 이 함수는 항상 예외를 던지므로 절대 정상 종료되지 않음\n}\n\nfunction infiniteLoop(): never {\n  while (true) {\n    // 무한 루프\n  }\n}\n\n// never의 유용한 활용: 타입 좁히기\nfunction assertNever(value: never): never {\n  throw new Error(`Unexpected value: ${value}`);\n}\n\ntype Shape = 'circle' | 'square';\n\nfunction getArea(shape: Shape) {\n  switch (shape) {\n    case 'circle':\n      return Math.PI * 10 * 10;\n    case 'square':\n      return 10 * 10;\n    default:\n      return assertNever(shape); // 모든 case를 다 처리했다면 여기는 never\n  }\n}\n\n// unknown - 타입 안전한 any (Part 3에서 자세히 다룸)\nfunction parseJSON(json: string): unknown {\n  return JSON.parse(json);\n}\n\nconst result = parseJSON('{\"name\": \"Alice\"}');\n// result.name; // 에러 unknown 타입은 바로 사용 불가\n\n// 타입 체크 후 사용\nif (typeof result === 'object' \u0026\u0026 result !== null \u0026\u0026 'name' in result) {\n  console.log((result as { name: string }).name);\n}\n```\n\n### 함수 오버로딩\n\n같은 이름의 함수에 여러 시그니처를 제공합니다. 입력 타입에 따라 출력 타입이 달라질 때 유용합니다.\n\n```typescript\n// 오버로드 시그니처들\nfunction format(value: string): string;\nfunction format(value: number): string;\nfunction format(value: Date): string;\n\n// 구현 시그니처 (모든 경우를 처리)\nfunction format(value: string | number | Date): string {\n  if (typeof value === 'string') {\n    return value.toUpperCase();\n  }\n  if (typeof value === 'number') {\n    return value.toFixed(2);\n  }\n  return value.toISOString();\n}\n\n// 사용\nformat('hello'); // \"HELLO\" \nformat(42); // \"42.00\"\nformat(new Date()); // \"2024-10-08T...\"\nformat(true); // 에러 boolean은 오버로드에 없음\n\n// 실무 예시: 단일 ID 또는 여러 ID를 받는 함수\nfunction fetchData(id: number): Promise\u003cUser\u003e;\nfunction fetchData(ids: number[]): Promise\u003cUser[]\u003e;\n\nasync function fetchData(input: number | number[]): Promise\u003cUser | User[]\u003e {\n  if (Array.isArray(input)) {\n    return Promise.all(input.map(id =\u003e fetchUser(id)));\n  }\n  return fetchUser(input);\n}\n\n// 타입이 정확하게 추론됨\nconst user = await fetchData(1); // Promise\u003cUser\u003e\nconst users = await fetchData([1, 2, 3]); // Promise\u003cUser[]\u003e\n```\n\n## Union과 Intersection 타입\n\n### Union Types (|) - \"또는\"\n\n여러 타입 중 **하나**를 가질 수 있습니다.\n\n```typescript\n// 기본 Union\ntype ID = string | number;\n\nlet userId: ID = 123;\nuserId = 'abc-123'; // 둘 다 가능\n\n// 리터럴 타입 Union (가장 많이 사용)\ntype Status = 'idle' | 'loading' | 'success' | 'error';\n\nlet currentStatus: Status = 'idle';\ncurrentStatus = 'loading'; // \ncurrentStatus = 'pending'; // 에러! 'pending'은 Status 타입이 아님\n\nfunction handleStatus(status: Status) {\n  switch (status) {\n    case 'idle':\n      return '대기 중';\n    case 'loading':\n      return '로딩 중...';\n    case 'success':\n      return '완료!';\n    case 'error':\n      return '오류 발생';\n    // 모든 case를 다 처리했으므로 default 불필요\n  }\n}\n```\n\n**실무 활용**: API 응답 상태 관리\n\n```typescript\ntype LoadingState = { status: 'loading' };\ntype SuccessState = { status: 'success'; data: User };\ntype ErrorState = { status: 'error'; error: string };\n\ntype RequestState = LoadingState | SuccessState | ErrorState;\n\nfunction renderUser(state: RequestState) {\n  switch (state.status) {\n    case 'loading':\n      return \u003cSpinner /\u003e;\n    case 'success':\n      return \u003cUserProfile user={state.data} /\u003e; // data는 SuccessState에만 있음\n    case 'error':\n      return \u003cErrorMessage message={state.error} /\u003e; // error는 ErrorState에만 있음\n  }\n}\n```\n\n### Discriminated Union (태그된 유니온)\n\n**공통 속성(discriminant)**으로 타입을 구분하는 패턴입니다. TypeScript가 타입을 자동으로 좁혀줍니다.\n\n```typescript\n// 기본 패턴\ntype Circle = {\n  kind: 'circle';  // discriminant (구분자)\n  radius: number;\n};\n\ntype Rectangle = {\n  kind: 'rectangle';  // discriminant\n  width: number;\n  height: number;\n};\n\ntype Triangle = {\n  kind: 'triangle';  // discriminant\n  base: number;\n  height: number;\n};\n\ntype Shape = Circle | Rectangle | Triangle;\n\nfunction getArea(shape: Shape): number {\n  switch (shape.kind) {\n    case 'circle':\n      // 이 블록 안에서 shape는 Circle 타입\n      return Math.PI * shape.radius ** 2;\n\n    case 'rectangle':\n      // 이 블록 안에서 shape는 Rectangle 타입\n      return shape.width * shape.height;\n\n    case 'triangle':\n      // 이 블록 안에서 shape는 Triangle 타입\n      return (shape.base * shape.height) / 2;\n  }\n}\n\nconst circle: Shape = { kind: 'circle', radius: 10 };\nconst rect: Shape = { kind: 'rectangle', width: 20, height: 15 };\n\nconsole.log(getArea(circle)); // 314.159...\nconsole.log(getArea(rect)); // 300\n```\n\n**실무 예시**: 제네릭 Result 타입\n\n```typescript\ntype Success\u003cT\u003e = {\n  type: 'success';\n  data: T;\n};\n\ntype Failure = {\n  type: 'error';\n  error: string;\n  code?: number;\n};\n\ntype Result\u003cT\u003e = Success\u003cT\u003e | Failure;\n\nfunction handleResult\u003cT\u003e(result: Result\u003cT\u003e) {\n  if (result.type === 'success') {\n    // result는 Success\u003cT\u003e 타입으로 좁혀짐\n    console.log('데이터:', result.data);\n    processData(result.data); // T 타입\n  } else {\n    // result는 Failure 타입으로 좁혀짐\n    console.error('에러:', result.error);\n    if (result.code) {\n      console.error('에러 코드:', result.code);\n    }\n  }\n}\n\n// 사용\nconst userResult: Result\u003cUser\u003e = await fetchUser(1);\nhandleResult(userResult);\n```\n\n### Intersection Types (\u0026) - \"그리고\"\n\n여러 타입을 모두 만족해야 합니다. 타입을 합칩니다.\n\n```typescript\n// 기본 Intersection\ntype Person = {\n  name: string;\n  age: number;\n};\n\ntype Employee = {\n  employeeId: number;\n  department: string;\n};\n\ntype Worker = Person \u0026 Employee;\n\nconst worker: Worker = {\n  name: 'Alice',\n  age: 30,\n  employeeId: 12345,\n  department: 'Engineering'\n  // 모든 속성이 필요함\n};\n\n// 하나라도 빠지면 에러\nconst incomplete: Worker = {\n  name: 'Bob',\n  age: 25\n  // 에러- employeeId와 department가 없음\n};\n```\n\nMixin 패턴: 공통 속성을 재사용\n\n```typescript\n// 타임스탬프 기능\ninterface Timestamped {\n  createdAt: Date;\n  updatedAt: Date;\n}\n\n// 소프트 삭제 기능\ninterface SoftDeletable {\n  deletedAt?: Date;\n  isDeleted: boolean;\n}\n\n// 페이지네이션 정보\ninterface Paginated {\n  page: number;\n  pageSize: number;\n  total: number;\n}\n\n// 조합해서 사용\ntype Post = {\n  id: number;\n  title: string;\n  content: string;\n} \u0026 Timestamped \u0026 SoftDeletable;\n\ntype PostList = {\n  posts: Post[];\n} \u0026 Paginated;\n\nconst post: Post = {\n  id: 1,\n  title: 'Hello',\n  content: 'World',\n  createdAt: new Date(),\n  updatedAt: new Date(),\n  isDeleted: false\n};\n\nconst postList: PostList = {\n  posts: [post],\n  page: 1,\n  pageSize: 10,\n  total: 100\n};\n```\n\n**실무 활용**: 컴포넌트 props 합성\n\n```typescript\n// 기본 버튼 props\ntype ButtonBaseProps = {\n  children: React.ReactNode;\n  onClick: () =\u003e void;\n};\n\n// 스타일 관련 props\ntype StyledProps = {\n  variant: 'primary' | 'secondary';\n  size: 'small' | 'medium' | 'large';\n};\n\n// 로딩 상태 props\ntype LoadableProps = {\n  loading?: boolean;\n  disabled?: boolean;\n};\n\n// 모두 합쳐서 버튼 컴포넌트 props 생성\ntype ButtonProps = ButtonBaseProps \u0026 StyledProps \u0026 LoadableProps;\n\nfunction Button(props: ButtonProps) {\n  // 모든 props 사용 가능\n  const { children, onClick, variant, size, loading, disabled } = props;\n  // ...\n}\n```\n\n### Union vs Intersection 비교\n\n```typescript\n// Union: A 또는 B\ntype A = { name: string };\ntype B = { age: number };\ntype UnionAB = A | B;\n\nconst union1: UnionAB = { name: 'Alice' }; // A만 만족\nconst union2: UnionAB = { age: 25 }; // B만\nconst union3: UnionAB = { name: 'Bob', age: 30 }; // 둘 다 \nconst union4: UnionAB = {}; // 둘 다 만족하지 않음\n\n// Intersection: A 그리고 B\ntype IntersectionAB = A \u0026 B;\n\nconst intersection1: IntersectionAB = { name: 'Alice' }; // age 없음\nconst intersection2: IntersectionAB = { age: 25 }; // name 없음\nconst intersection3: IntersectionAB = { name: 'Bob', age: 30 }; // 둘 다 있음\n```\n\n## 마치며\n\nPart 1에서는 TypeScript의 기초 타입 시스템을 다뤘습니다.\n사실 타입 정리는 한번쯤 다시 정리 하고 싶었는데 정리 하니 좀 간결해진거 같아서 좋습니다. \n실무에서 왜 이때 이걸 썼는지 이해도 가구요,. \n\n\n**다음 Part 2에서는**:\n- 타입 좁히기 (Type Narrowing)\n- 사용자 정의 타입 가드\n- 제네릭의 모든 것\n- 실무 제네릭 패턴\n\n를 할 예정입니다.\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"TypeScript 기초 타입 학습\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 10월 8일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"프론트엔드\",{\"href\":\"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"프론트엔드\"}],[\"$\",\"$L3\",\"TypeScript\",{\"href\":\"/tags/TypeScript\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"TypeScript\"}],[\"$\",\"$L3\",\"타입\",{\"href\":\"/tags/%ED%83%80%EC%9E%85\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"타입\"}],[\"$\",\"$L3\",\"study\",{\"href\":\"/tags/study\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"study\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/typescript-basics-part2\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"← 이전 글\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"TypeScript 타입 좁히기와 제네릭\"}]]}],[\"$\",\"$L3\",null,{\"href\":\"/posts/computer-science/data-structures-fundamentals-part2\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"다음 글 →\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"자료구조 학습 2: 비선형 자료구조\"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"TypeScript 기초 타입 학습 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"TypeScript의 기본 타입부터 객체, 함수, Union/Intersection\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"TypeScript 기초 타입 학습\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"TypeScript의 기본 타입부터 객체, 함수, Union/Intersection\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-10-08\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"TypeScript 기초 타입 학습\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"TypeScript의 기본 타입부터 객체, 함수, Union/Intersection\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>
