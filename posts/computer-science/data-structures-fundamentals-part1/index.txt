@@ -1,0 +1,937 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-baddb248eed804d7.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-baddb248eed804d7.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d5ebba4595249be0.css","style"]
+0:{"P":null,"b":"xhDJKdtZl1520r4UfLDLj","p":"","c":["","posts","computer-science","data-structures-fundamentals-part1",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","computer-science","d"],{"children":[["slug","data-structures-fundamentals-part1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d5ebba4595249be0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","computer-science","d"],"$L8",{"children":[["slug","data-structures-fundamentals-part1","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T58eb,
+자료구조는 데이터를 효율적으로 저장하고 관리하기 위한 방법론입니다. 올바른 자료구조를 선택하는 것은 알고리즘의 성능을 결정하는 핵심 요소입니다.
+
+이 글에서는 선형 자료구조들을 다룹니다. 2탄에서는 트리, 힙, 그래프와 같은 비선형 자료구조를 다룰 예정입니다.
+
+## 배열 (Array)
+
+배열은 가장 기본적이면서도 강력한 자료구조입니다. 연속된 메모리 공간에 동일한 타입의 데이터를 저장합니다.
+
+### 메모리 구조
+
+배열의 가장 큰 특징은 **연속된 메모리 할당**입니다. 각 요소가 메모리상에서 바로 옆에 위치하기 때문에, 시작 주소와 인덱스만 알면 O(1) 시간에 어떤 요소든 접근할 수 있습니다.
+
+```
+인덱스:  [0]  [1]  [2]  [3]  [4]
+값:      10   20   30   40   50
+메모리:  100  104  108  10C  110  (16진수 주소)
+         ↑
+      시작 주소
+
+접근 공식: 주소 = 시작주소 + (인덱스 × 요소크기)
+예: arr[2] = 0x100 + (2 × 4) = 0x108
+```
+
+### 정적 배열 vs 동적 배열
+
+**정적 배열 (Static Array)**:
+- 크기가 컴파일 타임에 고정됨
+- 스택 메모리에 할당 (빠름)
+- 크기 변경 불가능
+
+```javascript
+// C/Java 스타일 (개념적 예시)
+int arr[5]; // 크기 5로 고정
+```
+
+**동적 배열 (Dynamic Array)**:
+- 크기가 런타임에 변경 가능
+- 힙 메모리에 할당
+- 내부적으로 크기 부족 시 재할당 (일반적으로 2배 확장)
+- JavaScript의 Array, Java의 ArrayList, C++의 vector
+
+```javascript
+// JavaScript의 동적 배열
+const arr = [10, 20, 30];
+arr.push(40); // 자동으로 크기 확장
+```
+
+**동적 배열의 확장 과정**:
+```
+초기 (용량: 4, 사용: 3)
+[10][20][30][ ]
+
+push(40) - 용량 충분, O(1)
+[10][20][30][40]
+
+push(50) - 용량 부족!
+1. 새 배열 생성 (용량 8)
+2. 기존 요소 복사 - O(n)
+3. 50 추가
+[10][20][30][40][50][ ][ ][ ]
+```
+
+### 캐시 지역성 (Cache Locality)
+
+배열의 연속된 메모리 구조는 CPU 캐시를 효율적으로 활용합니다:
+
+1. **공간 지역성 (Spatial Locality)**: 한 요소에 접근하면 인접 요소들도 캐시에 로드됨
+2. **시간 지역성 (Temporal Locality)**: 최근 접근한 데이터는 다시 접근할 가능성이 높음
+
+```javascript
+// 캐시 친화적 - 순차 접근
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[i]; // 다음 요소가 이미 캐시에 있을 가능성 높음
+}
+
+// 캐시 비친화적 - 랜덤 접근
+for (let i = 0; i < arr.length; i++) {
+  sum += arr[randomIndex()]; // 매번 메모리 접근 필요
+}
+```
+
+### 시간 복잡도
+
+| 연산 | 시간 복잡도 |
+|------|------------|
+| 접근 (Access) | O(1) |
+| 검색 (Search) | O(n) |
+| 삽입 (Insert) | O(n) |
+| 삭제 (Delete) | O(n) |
+
+### 장단점
+
+**장점:**
+- 빠른 인덱스 접근
+- 캐시 지역성(Cache Locality)이 좋아 메모리 접근 효율적
+- 구현이 간단하고 직관적
+
+**단점:**
+- 크기 변경이 어려움 (정적 배열의 경우)
+- 중간 요소 삽입/삭제 시 O(n) 시간 소요
+- 메모리 낭비 가능성 (사용하지 않는 공간)
+
+### 사용 사례
+
+- 순차적 데이터 저장
+- 빠른 인덱스 접근이 필요한 경우
+- 크기가 고정되어 있거나 예측 가능한 경우
+
+### 코드 예시
+
+```javascript
+// 배열의 기본 연산
+const numbers = [10, 20, 30, 40, 50];
+
+// O(1) - 인덱스 접근
+console.log(numbers[2]); // 30
+
+// O(n) - 선형 검색
+const index = numbers.indexOf(30); // 2
+
+// O(n) - 중간 삽입 (요소 이동 필요)
+numbers.splice(2, 0, 25); // [10, 20, 25, 30, 40, 50]
+
+// O(n) - 중간 삭제 (요소 이동 필요)
+numbers.splice(2, 1); // [10, 20, 30, 40, 50]
+
+// O(1) - 끝에 추가 (동적 배열, 재할당 제외)
+numbers.push(60); // [10, 20, 30, 40, 50, 60]
+```
+
+---
+
+## 연결 리스트 (Linked List)
+
+연결 리스트는 노드들이 포인터로 연결된 선형 자료구조입니다. 각 노드는 데이터와 다음 노드를 가리키는 포인터로 구성됩니다.
+
+### 노드 구조
+
+연결 리스트의 기본 단위는 **노드(Node)**입니다. 배열과 달리 메모리상에서 불연속적으로 배치되며, 포인터를 통해 연결됩니다.
+
+```javascript
+// 단일 연결 리스트 노드
+class Node {
+  constructor(data) {
+    this.data = data;      // 실제 데이터
+    this.next = null;      // 다음 노드 참조
+  }
+}
+
+// 이중 연결 리스트 노드
+class DoublyNode {
+  constructor(data) {
+    this.data = data;
+    this.prev = null;      // 이전 노드 참조
+    this.next = null;      // 다음 노드 참조
+  }
+}
+```
+
+### 종류와 시각화
+
+**1. 단일 연결 리스트 (Singly Linked List)**
+
+각 노드가 다음 노드만 가리키며, 한 방향으로만 순회 가능합니다.
+
+```
+Head
+ ↓
+[10|●]→[20|●]→[30|●]→[40|null]
+ data next
+
+메모리 구조 (비연속적):
+주소: 0x200  0x150  0x300  0x100
+값:   [10]   [20]   [30]   [40]
+      ↓      ↓      ↓
+다음: 0x150  0x300  0x100  null
+```
+
+**2. 이중 연결 리스트 (Doubly Linked List)**
+
+각 노드가 이전과 다음 노드를 모두 가리키며, 양방향 순회가 가능합니다.
+
+```
+       Head
+        ↓
+null←[●|10|●]↔[●|20|●]↔[●|30|●]→null
+     prev data next
+
+장점: 양방향 탐색, 노드 삭제가 용이
+단점: 메모리 사용량 증가 (포인터 2개)
+```
+
+**3. 원형 연결 리스트 (Circular Linked List)**
+
+마지막 노드가 첫 번째 노드를 가리켜 순환 구조를 형성합니다.
+
+```
+    Head
+     ↓
+    [10]→[20]→[30]→[40]
+     ↑              ↓
+     └──────────────┘
+
+사용 예: 라운드 로빈 스케줄링, 순환 버퍼
+```
+
+### 배열 vs 연결 리스트 비교
+
+```
+배열:
+메모리: [10][20][30][40] (연속)
+접근: O(1), 삽입/삭제: O(n)
+크기: 고정 또는 재할당 필요
+
+연결 리스트:
+메모리: [10]→[20]→[30]→[40] (비연속)
+접근: O(n), 삽입/삭제: O(1) (위치를 알 때)
+크기: 동적 확장 용이
+```
+
+### 시간 복잡도
+
+| 연산 | 시간 복잡도 |
+|------|------------|
+| 접근 (Access) | O(n) |
+| 검색 (Search) | O(n) |
+| 삽입 (Insert) | O(1)* |
+| 삭제 (Delete) | O(1)* |
+
+*위치를 알고 있을 때의 시간 복잡도
+
+### 장단점
+
+**장점:**
+- 동적 크기 조정 용이
+- 삽입/삭제가 효율적 (O(1), 위치를 알고 있을 때)
+- 메모리 효율적 사용 (필요한 만큼만 할당)
+
+**단점:**
+- 인덱스 접근 불가능 (O(n) 시간 소요)
+- 추가 메모리 필요 (포인터 저장)
+- 캐시 지역성이 낮음
+
+### 사용 사례
+
+- 동적 메모리 할당이 필요한 경우
+- 빈번한 삽입/삭제가 발생하는 경우
+- 크기를 예측할 수 없는 데이터
+- 스택, 큐의 구현
+
+### 코드 예시
+
+```javascript
+class LinkedList {
+  constructor() {
+    this.head = null;
+    this.size = 0;
+  }
+
+  // O(1) - 맨 앞에 삽입
+  prepend(data) {
+    const newNode = new Node(data);
+    newNode.next = this.head;
+    this.head = newNode;
+    this.size++;
+  }
+
+  // O(n) - 맨 끝에 삽입 (tail 포인터 없이)
+  append(data) {
+    const newNode = new Node(data);
+    if (!this.head) {
+      this.head = newNode;
+      return;
+    }
+    let current = this.head;
+    while (current.next) {
+      current = current.next;
+    }
+    current.next = newNode;
+    this.size++;
+  }
+
+  // O(1) - 특정 노드 다음에 삽입 (노드를 알 때)
+  insertAfter(node, data) {
+    const newNode = new Node(data);
+    newNode.next = node.next;
+    node.next = newNode;
+    this.size++;
+  }
+
+  // O(1) - 맨 앞 삭제
+  removeFirst() {
+    if (!this.head) return null;
+    const removed = this.head;
+    this.head = this.head.next;
+    this.size--;
+    return removed.data;
+  }
+}
+
+// 사용 예시
+const list = new LinkedList();
+list.prepend(10);  // [10]
+list.append(20);   // [10]→[20]
+list.prepend(5);   // [5]→[10]→[20]
+```
+
+**실제 활용 예시**:
+```javascript
+// 브라우저 히스토리 (이중 연결 리스트)
+class BrowserHistory {
+  constructor() {
+    this.current = null;
+  }
+
+  visit(url) {
+    const page = new DoublyNode(url);
+    if (this.current) {
+      this.current.next = page;
+      page.prev = this.current;
+    }
+    this.current = page;
+  }
+
+  back() {
+    if (this.current?.prev) {
+      this.current = this.current.prev;
+      return this.current.data;
+    }
+  }
+
+  forward() {
+    if (this.current?.next) {
+      this.current = this.current.next;
+      return this.current.data;
+    }
+  }
+}
+```
+
+---
+
+## 스택 (Stack)
+
+스택은 LIFO(Last In First Out) 원칙을 따르는 선형 자료구조입니다. 마지막에 추가된 요소가 가장 먼저 제거됩니다.
+
+### LIFO 동작 원리
+
+스택은 접시를 쌓는 것과 같습니다. 가장 마지막에 놓은 접시를 가장 먼저 꺼내게 됩니다.
+
+```
+초기 상태:        push(1)         push(3)         push(7)
+                ┌───┐           ┌───┐           ┌───┐
+                │ 1 │           │ 3 │           │ 7 │  ← top
+                └───┘           ├───┤           ├───┤
+                                │ 1 │           │ 3 │
+                                └───┘           ├───┤
+                                                │ 1 │
+                                                └───┘
+
+pop() → 7       pop() → 3       pop() → 1
+                ┌───┐
+                │ 3 │  ← top
+                ├───┤           ┌───┐
+                │ 1 │           │ 1 │  ← top
+                └───┘           └───┘           Empty
+```
+
+### 주요 연산
+
+- **push(item)**: 스택의 맨 위에 요소 추가 (O(1))
+- **pop()**: 스택의 맨 위 요소 제거 및 반환 (O(1))
+- **peek/top()**: 스택의 맨 위 요소 확인 (제거하지 않음) (O(1))
+- **isEmpty()**: 스택이 비어있는지 확인 (O(1))
+
+### 함수 호출 스택 (Call Stack)
+
+프로그램 실행 시 함수 호출은 스택으로 관리됩니다. 이는 재귀와 함수 호출 순서를 이해하는 핵심입니다.
+
+```javascript
+function first() {
+  console.log("first 시작");
+  second();
+  console.log("first 끝");
+}
+
+function second() {
+  console.log("second 시작");
+  third();
+  console.log("second 끝");
+}
+
+function third() {
+  console.log("third 실행");
+}
+
+first();
+```
+
+**호출 스택 변화**:
+```
+1. first() 호출     2. second() 호출    3. third() 호출
+   ┌───────┐          ┌───────┐           ┌───────┐
+   │first()│          │second()│          │third()│
+   └───────┘          ├───────┤           ├───────┤
+                      │first()│           │second()│
+                      └───────┘           ├───────┤
+                                          │first()│
+                                          └───────┘
+
+4. third() 종료     5. second() 종료    6. first() 종료
+   ┌───────┐          ┌───────┐
+   │second()│          │first()│
+   ├───────┤          └───────┘          Empty
+   │first()│
+   └───────┘
+```
+
+**출력 순서**:
+```
+first 시작
+second 시작
+third 실행
+second 끝
+first 끝
+```
+
+### 스택 오버플로우 (Stack Overflow)
+
+호출 스택의 크기는 제한되어 있습니다. 무한 재귀나 너무 깊은 재귀는 스택 오버플로우를 발생시킵니다.
+
+```javascript
+// 스택 오버플로우 예시
+function infiniteRecursion() {
+  infiniteRecursion(); // 종료 조건 없음!
+}
+// infiniteRecursion(); // RangeError: Maximum call stack size exceeded
+
+// 올바른 재귀 (종료 조건 있음)
+function factorial(n) {
+  if (n <= 1) return 1;  // 종료 조건
+  return n * factorial(n - 1);
+}
+```
+
+### 사용 사례
+
+- **함수 호출 스택**: 프로그램 실행 시 함수 호출 관리
+- **실행 취소(Undo) 기능**: 이전 상태 복원
+- **괄호 검사**: 수식의 괄호 짝 맞추기
+- **DFS (깊이 우선 탐색)**: 그래프 순회 알고리즘
+- **역순 문자열**: 문자열 뒤집기
+- **후위 표기법 계산**: 수식 계산
+
+### 실제 활용 예시
+
+**1. 브라우저 뒤로가기**
+```
+방문 스택:
+┌───┐
+│ D │ ← 현재 페이지
+├───┤
+│ C │
+├───┤
+│ B │
+├───┤
+│ A │
+└───┘
+
+뒤로가기 클릭 → pop() → D 제거, C로 이동
+뒤로가기 클릭 → pop() → C 제거, B로 이동
+```
+
+**2. 괄호 검사**
+```javascript
+function isValidParentheses(str) {
+  const stack = [];
+  const pairs = { '(': ')', '{': '}', '[': ']' };
+
+  for (const char of str) {
+    if (char in pairs) {
+      stack.push(char);  // 여는 괄호
+    } else if (Object.values(pairs).includes(char)) {
+      if (pairs[stack.pop()] !== char) {
+        return false;  // 짝이 맞지 않음
+      }
+    }
+  }
+  return stack.length === 0;
+}
+
+isValidParentheses("({[]})");  // true
+isValidParentheses("({[})");   // false
+```
+
+**3. 실행 취소 (Undo) 기능**
+```javascript
+class TextEditor {
+  constructor() {
+    this.text = "";
+    this.history = [];  // 실행 취소 스택
+  }
+
+  type(char) {
+    this.history.push(this.text);
+    this.text += char;
+  }
+
+  undo() {
+    if (this.history.length > 0) {
+      this.text = this.history.pop();
+    }
+  }
+}
+
+const editor = new TextEditor();
+editor.type('H');  // "H"
+editor.type('i');  // "Hi"
+editor.undo();     // "H"
+editor.undo();     // ""
+```
+
+---
+
+## 큐 (Queue)
+
+큐는 FIFO(First In First Out) 원칙을 따르는 선형 자료구조입니다. 먼저 추가된 요소가 먼저 제거됩니다.
+
+### FIFO 동작 원리
+
+큐는 줄서기와 같습니다. 먼저 온 사람이 먼저 서비스를 받습니다.
+
+```
+초기 상태:  Empty
+
+enqueue(10)
+Front                    Rear
+  ↓                       ↓
+[10]
+
+enqueue(20)
+Front                    Rear
+  ↓                       ↓
+[10][20]
+
+enqueue(30)
+Front                    Rear
+  ↓                       ↓
+[10][20][30]
+
+dequeue() → 10
+     Front          Rear
+       ↓             ↓
+       [20][30]
+
+dequeue() → 20
+          Front & Rear
+               ↓
+              [30]
+```
+
+### 주요 연산
+
+- **enqueue(item)**: 큐의 뒤에 요소 추가 (O(1))
+- **dequeue()**: 큐의 앞 요소 제거 및 반환 (O(1))
+- **front/peek()**: 큐의 앞 요소 확인 (제거하지 않음) (O(1))
+- **isEmpty()**: 큐가 비어있는지 확인 (O(1))
+
+### 큐의 변형
+
+**1. 원형 큐 (Circular Queue)**
+
+배열로 큐를 구현할 때, dequeue 후 앞 공간이 낭비되는 문제를 해결합니다.
+
+```
+일반 큐의 문제:
+[  ][  ][10][20][30]  ← front=2, rear=4, 앞 공간 낭비
+    ↑           ↑
+  낭비         사용중
+
+원형 큐:
+   front (2)
+      ↓
+    [30][  ][  ][10][20]
+          ↑
+       rear (0)
+
+인덱스를 순환: (index + 1) % capacity
+```
+
+**2. 우선순위 큐 (Priority Queue)**
+
+우선순위가 높은 요소가 먼저 나가며, 일반적으로 힙으로 구현합니다.
+
+```
+일반 큐:        우선순위 큐 (숫자가 작을수록 우선):
+enqueue(5)     enqueue(5, priority=3)
+enqueue(3)     enqueue(3, priority=1)  ← 높은 우선순위
+enqueue(7)     enqueue(7, priority=2)
+
+dequeue()      dequeue()
+→ 5 (FIFO)     → 3 (우선순위 1이 가장 높음)
+               → 7 (우선순위 2)
+               → 5 (우선순위 3)
+```
+
+**3. 덱 (Deque, Double-ended Queue)**
+
+양쪽 끝에서 삽입/삭제가 모두 가능한 자료구조입니다.
+
+```
+        addFront()    addRear()
+            ↓            ↓
+    Front [10][20][30] Rear
+            ↑            ↑
+      removeFront()  removeRear()
+
+활용: 슬라이딩 윈도우, 회문 검사
+```
+
+```javascript
+// Deque 예시
+class Deque {
+  constructor() {
+    this.items = [];
+  }
+
+  addFront(item) { this.items.unshift(item); }  // 앞에 추가
+  addRear(item) { this.items.push(item); }      // 뒤에 추가
+  removeFront() { return this.items.shift(); }  // 앞에서 제거
+  removeRear() { return this.items.pop(); }     // 뒤에서 제거
+}
+```
+
+### 사용 사례
+
+- **작업 스케줄링**: CPU 작업 관리, 프린터 대기열
+- **BFS (너비 우선 탐색)**: 그래프 순회 알고리즘
+- **캐시 구현**: LRU 캐시
+- **비동기 처리**: 메시지 큐, 이벤트 처리
+- **버퍼링**: 데이터 스트림 관리
+
+### 코드 예시
+
+```javascript
+// 연결 리스트 기반 큐 구현
+class Queue {
+  constructor() {
+    this.front = null;
+    this.rear = null;
+    this.size = 0;
+  }
+
+  // O(1) - 뒤에 추가
+  enqueue(data) {
+    const newNode = new Node(data);
+    if (this.isEmpty()) {
+      this.front = this.rear = newNode;
+    } else {
+      this.rear.next = newNode;
+      this.rear = newNode;
+    }
+    this.size++;
+  }
+
+  // O(1) - 앞에서 제거
+  dequeue() {
+    if (this.isEmpty()) return null;
+    const removed = this.front.data;
+    this.front = this.front.next;
+    if (!this.front) this.rear = null;
+    this.size--;
+    return removed;
+  }
+
+  peek() {
+    return this.front?.data;
+  }
+
+  isEmpty() {
+    return this.size === 0;
+  }
+}
+
+// 실제 활용: 작업 스케줄러
+class TaskScheduler {
+  constructor() {
+    this.queue = new Queue();
+  }
+
+  addTask(task) {
+    this.queue.enqueue(task);
+    console.log(`작업 추가: ${task}`);
+  }
+
+  processTasks() {
+    while (!this.queue.isEmpty()) {
+      const task = this.queue.dequeue();
+      console.log(`작업 처리: ${task}`);
+    }
+  }
+}
+
+const scheduler = new TaskScheduler();
+scheduler.addTask("이메일 전송");
+scheduler.addTask("파일 다운로드");
+scheduler.addTask("데이터 백업");
+scheduler.processTasks();
+// 출력:
+// 작업 처리: 이메일 전송
+// 작업 처리: 파일 다운로드
+// 작업 처리: 데이터 백업
+```
+
+---
+
+## 해시 테이블 (Hash Table)
+
+해시 테이블은 키-값 쌍을 저장하는 자료구조로, 해시 함수를 사용하여 키를 인덱스로 변환합니다.
+
+### 동작 원리
+
+해시 테이블은 키를 빠르게 값으로 매핑하기 위해 해시 함수를 사용합니다.
+
+```
+1. 키 입력: "John"
+2. 해시 함수 적용: hash("John") = 2
+3. 인덱스 2에 값 저장/조회
+
+해시 함수 예시 (간단한 버전):
+hash(key) = (각 문자의 ASCII 값 합) % 배열크기
+
+"John" → (74+111+104+110) % 10 = 399 % 10 = 9
+"Alice" → (65+108+105+99+101) % 10 = 478 % 10 = 8
+```
+
+**시각화**:
+```
+키: "Alice" → hash("Alice") = 1
+
+Index  Buckets
+  0  → null
+  1  → [Alice: 30]  ← 저장 위치
+  2  → null
+  3  → [Bob: 25]
+  4  → null
+  ...
+```
+
+### 해시 함수의 동작 예시
+
+```javascript
+// 간단한 해시 함수 구현
+function simpleHash(key, tableSize) {
+  let hash = 0;
+  for (let i = 0; i < key.length; i++) {
+    hash += key.charCodeAt(i);
+  }
+  return hash % tableSize;
+}
+
+// 예시
+simpleHash("John", 10);   // 9
+simpleHash("Alice", 10);  // 8
+simpleHash("Bob", 10);    // 1
+```
+
+### 해시 충돌 해결
+
+서로 다른 키가 같은 해시 값을 가지는 경우를 **해시 충돌(Hash Collision)**이라고 합니다.
+
+```
+예시: hash("John") = 2, hash("Jane") = 2  ← 충돌!
+```
+
+**1. 체이닝 (Chaining)**
+
+같은 인덱스에 연결 리스트로 여러 값을 저장합니다.
+
+```
+Index  Buckets (Linked List)
+  0  → [Eve:28]
+  1  → [Alice:30] → [Bob:35] → [Charlie:40]  ← 체이닝
+  2  → [John:25]
+  3  → null
+```
+
+```javascript
+class HashTableChaining {
+  constructor(size = 10) {
+    this.table = new Array(size);
+  }
+
+  set(key, value) {
+    const index = this.hash(key);
+    if (!this.table[index]) {
+      this.table[index] = [];
+    }
+    // 같은 키가 있으면 업데이트, 없으면 추가
+    const bucket = this.table[index];
+    const existing = bucket.find(item => item.key === key);
+    if (existing) {
+      existing.value = value;
+    } else {
+      bucket.push({ key, value });
+    }
+  }
+
+  get(key) {
+    const index = this.hash(key);
+    const bucket = this.table[index];
+    if (!bucket) return undefined;
+    const item = bucket.find(item => item.key === key);
+    return item?.value;
+  }
+}
+```
+
+**장점**: 구현이 간단, 삭제가 용이
+**단점**: 추가 메모리 필요 (포인터), 최악의 경우 O(n)
+
+**2. 개방 주소법 (Open Addressing)**
+
+충돌 발생 시 다른 빈 슬롯을 찾아 저장합니다.
+
+**(a) 선형 탐사 (Linear Probing)**
+```
+hash(key) = 2, 이미 차 있음
+→ 2+1=3 확인 → 차 있음
+→ 2+2=4 확인 → 비어있음, 저장!
+
+Index  값
+  0  → [A]
+  1  → [B]
+  2  → [C]  ← hash("X") = 2, 충돌
+  3  → [D]  ← 차 있음
+  4  → [X]  ← 여기에 저장
+```
+
+**(b) 이차 탐사 (Quadratic Probing)**
+```
+충돌 시: (hash + 1²), (hash + 2²), (hash + 3²)...
+클러스터링 감소
+```
+
+**(c) 이중 해싱 (Double Hashing)**
+```
+두 번째 해시 함수 사용:
+index = (hash1(key) + i * hash2(key)) % size
+```
+
+### 로드 팩터 (Load Factor)
+
+로드 팩터 = (저장된 항목 수) / (테이블 크기)
+
+```
+테이블 크기: 10, 저장된 항목: 7
+로드 팩터 = 7 / 10 = 0.7 (70%)
+
+일반적으로 로드 팩터가 0.7~0.75를 초과하면
+테이블 크기를 확장 (재해싱, Rehashing)
+```
+
+재해싱 과정:
+1. 더 큰 테이블 생성 (보통 2배)
+2. 기존 모든 항목을 새 테이블에 재삽입
+3. 기존 테이블 제거
+
+### 시간 복잡도
+
+| 연산 | 평균 | 최악 |
+|------|------|------|
+| 검색 | O(1) | O(n) |
+| 삽입 | O(1) | O(n) |
+| 삭제 | O(1) | O(n) |
+
+### 좋은 해시 함수의 조건
+
+1. **결정성**: 같은 입력에 항상 같은 출력
+2. **균등 분포**: 해시 값이 고르게 분포
+3. **효율성**: 빠른 계산
+4. **충돌 최소화**: 서로 다른 키에 대해 다른 해시 값
+
+### 사용 사례
+
+- **데이터베이스 인덱싱**
+- **캐싱**: 빠른 데이터 접근
+- **중복 검사**: 고유성 확인
+- **심볼 테이블**: 컴파일러, 인터프리터
+- **Set, Map 자료구조**
+
+---
+
+## 시간 복잡도 비교
+
+| 자료구조 | 접근 | 검색 | 삽입 | 삭제 |
+|---------|------|------|------|------|
+| 배열 | O(1) | O(n) | O(n) | O(n) |
+| 연결 리스트 | O(n) | O(n) | O(1) | O(1) |
+| 스택 | O(n) | O(n) | O(1) | O(1) |
+| 큐 | O(n) | O(n) | O(1) | O(1) |
+| 해시 테이블 | - | O(1) | O(1) | O(1) |
+
+---
+
+## 다음 편 예고
+
+Part 2에서는 **트리, 힙, 그래프**와 같은 비선형 자료구조를 다룰 예정입니다. 이들은 계층적 구조와 복잡한 관계를 표현하는 데 최적화되어 있으며, 고급 알고리즘의 기초가 됩니다.
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"자료구조 학습 1: 선형 자료구조"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2025년 9월 14일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","Computer Science",{"href":"/tags/Computer%20Science","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Computer Science"}],["$","$L3","자료구조",{"href":"/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"자료구조"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","$L3",null,{"href":"/posts/computer-science/data-structures-fundamentals-part2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"← 이전 글"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"자료구조 학습 2: 비선형 자료구조"}]]}],["$","$L3",null,{"href":"/posts/portfolio/election-map-cartogram-part-2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"2025 대선 지도 - 카토그램 만들기 Part 2: 후보자 카드 연동 및 회고"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"자료구조 학습 1: 선형 자료구조 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등"}],["$","meta","2",{"property":"og:title","content":"자료구조 학습 1: 선형 자료구조"}],["$","meta","3",{"property":"og:description","content":"자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2025-09-14"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"자료구조 학습 1: 선형 자료구조"}],["$","meta","8",{"name":"twitter:description","content":"자료구조 학습 - 배열, 연결 리스트, 스택, 큐, 해시 테이블 등"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"
