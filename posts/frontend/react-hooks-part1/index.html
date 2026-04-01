@@ -1,0 +1,624 @@
+<!DOCTYPE html><!--GTAr_W1bTdY9ozH79YcNo--><html lang="ko"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/_next/static/css/d5ebba4595249be0.css" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js"/><script src="/_next/static/chunks/4bd1b696-c023c6e3521b1417.js" async=""></script><script src="/_next/static/chunks/255-fe5c522e6d28d73f.js" async=""></script><script src="/_next/static/chunks/main-app-bdb7cdcf0fbe007a.js" async=""></script><script src="/_next/static/chunks/619-ba102abea3e3d0e4.js" async=""></script><script src="/_next/static/chunks/129-baddb248eed804d7.js" async=""></script><script src="/_next/static/chunks/app/layout-01445a0075f6b145.js" async=""></script><script src="/_next/static/chunks/23-80ecaa68f6a0b226.js" async=""></script><script src="/_next/static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js" async=""></script><title>React Hooks 모음 1 | DevONew Blog</title><meta name="description" content="useState, useEffect, useRef, useContext"/><meta property="og:title" content="React Hooks 모음 1"/><meta property="og:description" content="useState, useEffect, useRef, useContext"/><meta property="og:type" content="article"/><meta property="article:published_time" content="2025-11-24"/><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="React Hooks 모음 1"/><meta name="twitter:description" content="useState, useEffect, useRef, useContext"/><link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;👾&lt;/text&gt;&lt;/svg&gt;"/><script src="/_next/static/chunks/polyfills-42372ed130431b0a.js" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","theme","system",null,["light","dark"],null,true,true)</script><header class="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b"><div class="container mx-auto flex justify-between items-center py-4 px-6"><a class="flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-5 w-5" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Blog</a><nav class="flex items-center gap-6"><a class="text-sm hover:text-primary transition-colors" href="/">홈</a><a class="text-sm hover:text-primary transition-colors" href="/tags/">태그</a><a class="text-sm hover:text-primary transition-colors" href="/about/">소개</a><a href="https://github.com/DevONew" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github h-5 w-5" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg></a><button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 w-10" type="button" id="radix-_R_mdb_" aria-haspopup="menu" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" aria-hidden="true"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path></svg><span class="sr-only">Toggle theme</span></button></nav></div></header><main class="container mx-auto py-8 px-6"><main><div class="max-w-4xl mx-auto px-4 py-8"><article><header class="mb-12"><h1 class="text-5xl font-bold mb-6">React Hooks 모음 1</h1><div class="flex flex-wrap items-center gap-4"><div class="flex items-center gap-2 text-muted-foreground"><span>📅</span><time>2025년 11월 24일</time></div><div class="flex flex-wrap gap-2"><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C/">프론트엔드</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/React/">React</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/Hooks/">Hooks</a><a class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors" href="/tags/JavaScript/">JavaScript</a></div></div></header><div class="prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline"><p>React Hooks는 함수형 컴포넌트에서 상태 관리와 사이드 이펙트를 다룰 수 있게 해주는 강력한 도구입니다.</p>
+<p>이 글에서는 가장 자주 사용하는 4가지 기본 Hooks를 실전 예제와 함께 살펴봅니다.</p>
+<h2 id="usestate---상태-관리의-기본"><a aria-hidden="true" tabindex="-1" href="#usestate---상태-관리의-기본"><span class="icon icon-link"></span></a>useState - 상태 관리의 기본</h2>
+<p>가장 기본적이면서도 가장 많이 사용하는 Hook입니다.</p>
+<h3 id="기본-사용법"><a aria-hidden="true" tabindex="-1" href="#기본-사용법"><span class="icon icon-link"></span></a>기본 사용법</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(count + 1)}&gt;+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(count - 1)}&gt;-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><strong>핵심 개념:</strong></p>
+<ul>
+<li><code>useState</code>는 <code>[현재값, 업데이트함수]</code> 배열을 반환</li>
+<li>초기값은 첫 렌더링 때만 사용됨</li>
+<li>상태가 변경되면 컴포넌트가 리렌더링됨</li>
+</ul>
+<h3 id="함수형-업데이트"><a aria-hidden="true" tabindex="-1" href="#함수형-업데이트"><span class="icon icon-link"></span></a>함수형 업데이트</h3>
+<p>상태 업데이트를 연속으로 두 번 호출하면 어떻게 될까요? 값이 아닌 함수를 전달하는 &#x27;함수형 업데이트&#x27;를 사용하면 이런 문제를 해결할 수 있습니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-comment">// 나쁜 예: 이전 상태에 의존하는 경우</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleIncrement</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-title function_">setCount</span>(count + <span class="hljs-number">1</span>);
+    <span class="hljs-title function_">setCount</span>(count + <span class="hljs-number">1</span>); <span class="hljs-comment">// 두 번 증가? 아니요, 한 번만 증가!</span>
+  };
+
+  <span class="hljs-comment">// 좋은 예: 함수형 업데이트</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleIncrementTwice</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-title function_">setCount</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> prev + <span class="hljs-number">1</span>);
+    <span class="hljs-title function_">setCount</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> prev + <span class="hljs-number">1</span>); <span class="hljs-comment">// 제대로 두 번 증가</span>
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleIncrement}</span>&gt;</span>+1 (잘못된 방법)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{handleIncrementTwice}</span>&gt;</span>+2 (올바른 방법)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><strong>왜 함수형 업데이트를 써야 할까?</strong></p>
+<ul>
+<li>이전 상태를 기반으로 업데이트할 때 안전</li>
+<li>useEffect 의존성 배열에서 상태를 제외 가능</li>
+<li>클로저 문제 해결</li>
+</ul>
+<h3 id="객체-상태-관리"><a aria-hidden="true" tabindex="-1" href="#객체-상태-관리"><span class="icon icon-link"></span></a>객체 상태 관리</h3>
+<p>객체 타입의 상태를 업데이트할 때는 주의가 필요합니다. React는 얕은 비교(shallow comparison)를 하기 때문에 객체의 일부만 변경하면 나머지 필드가 사라집니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">UserForm</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>({
+    <span class="hljs-attr">name</span>: <span class="hljs-string">&#x27;&#x27;</span>,
+    <span class="hljs-attr">email</span>: <span class="hljs-string">&#x27;&#x27;</span>,
+    <span class="hljs-attr">age</span>: <span class="hljs-number">0</span>
+  });
+
+  <span class="hljs-comment">// 나쁜 예: 일부만 업데이트하면 나머지 사라짐</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleNameChange</span> = (<span class="hljs-params">e</span>) =&gt; {
+    <span class="hljs-title function_">setUser</span>({ <span class="hljs-attr">name</span>: e.<span class="hljs-property">target</span>.<span class="hljs-property">value</span> }); <span class="hljs-comment">// email과 age가 사라짐!</span>
+  };
+
+  <span class="hljs-comment">// 좋은 예: spread 연산자로 병합</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleChange</span> = (<span class="hljs-params">field</span>) =&gt; <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
+    <span class="hljs-title function_">setUser</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> ({
+      ...prev,
+      [field]: e.<span class="hljs-property">target</span>.<span class="hljs-property">value</span>
+    }));
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{user.name}</span>
+        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange(</span>&#x27;<span class="hljs-attr">name</span>&#x27;)}
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Name&quot;</span>
+      /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{user.email}</span>
+        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange(</span>&#x27;<span class="hljs-attr">email</span>&#x27;)}
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Email&quot;</span>
+      /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;number&quot;</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{user.age}</span>
+        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{handleChange(</span>&#x27;<span class="hljs-attr">age</span>&#x27;)}
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Age&quot;</span>
+      /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{JSON.stringify(user, null, 2)}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="배열-상태-관리"><a aria-hidden="true" tabindex="-1" href="#배열-상태-관리"><span class="icon icon-link"></span></a>배열 상태 관리</h3>
+<p>배열 상태를 다룰 때는 원본을 직접 수정하지 말고, 새로운 배열을 만들어 반환해야 합니다. 실무에서 가장 많이 사용하는 CRUD 패턴을 살펴보겠습니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">TodoList</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [todos, setTodos] = <span class="hljs-title function_">useState</span>([]);
+  <span class="hljs-keyword">const</span> [input, setInput] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;&#x27;</span>);
+
+  <span class="hljs-comment">// 추가</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">addTodo</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-keyword">if</span> (!input.<span class="hljs-title function_">trim</span>()) <span class="hljs-keyword">return</span>;
+    <span class="hljs-title function_">setTodos</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> [...prev, {
+      <span class="hljs-attr">id</span>: <span class="hljs-title class_">Date</span>.<span class="hljs-title function_">now</span>(),
+      <span class="hljs-attr">text</span>: input,
+      <span class="hljs-attr">completed</span>: <span class="hljs-literal">false</span>
+    }]);
+    <span class="hljs-title function_">setInput</span>(<span class="hljs-string">&#x27;&#x27;</span>);
+  };
+
+  <span class="hljs-comment">// 토글</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">toggleTodo</span> = (<span class="hljs-params">id</span>) =&gt; {
+    <span class="hljs-title function_">setTodos</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> prev.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">todo</span> =&gt;</span>
+      todo.<span class="hljs-property">id</span> === id
+        ? { ...todo, <span class="hljs-attr">completed</span>: !todo.<span class="hljs-property">completed</span> }
+        : todo
+    ));
+  };
+
+  <span class="hljs-comment">// 삭제</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">deleteTodo</span> = (<span class="hljs-params">id</span>) =&gt; {
+    <span class="hljs-title function_">setTodos</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> prev.<span class="hljs-title function_">filter</span>(<span class="hljs-function"><span class="hljs-params">todo</span> =&gt;</span> todo.<span class="hljs-property">id</span> !== id));
+  };
+
+  <span class="hljs-comment">// 수정</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">updateTodo</span> = (<span class="hljs-params">id, newText</span>) =&gt; {
+    <span class="hljs-title function_">setTodos</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> prev.<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">todo</span> =&gt;</span>
+      todo.<span class="hljs-property">id</span> === id
+        ? { ...todo, <span class="hljs-attr">text</span>: newText }
+        : todo
+    ));
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{input}</span>
+        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> setInput(e.target.value)}
+        onKeyPress={(e) =&gt; e.key === &#x27;Enter&#x27; &amp;&amp; addTodo()}
+      /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{addTodo}</span>&gt;</span>Add<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+        {todos.map(todo =&gt; (
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">key</span>=<span class="hljs-string">{todo.id}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+              <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span>
+              <span class="hljs-attr">checked</span>=<span class="hljs-string">{todo.completed}</span>
+              <span class="hljs-attr">onChange</span>=<span class="hljs-string">{()</span> =&gt;</span> toggleTodo(todo.id)}
+            /&gt;
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span>
+              <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span>
+                <span class="hljs-attr">textDecoration:</span> <span class="hljs-attr">todo.completed</span> ? &#x27;<span class="hljs-attr">line-through</span>&#x27; <span class="hljs-attr">:</span> &#x27;<span class="hljs-attr">none</span>&#x27;
+              }}
+            &gt;</span>
+              {todo.text}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> deleteTodo(todo.id)}&gt;Delete<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        ))}
+      <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="lazy-initialization"><a aria-hidden="true" tabindex="-1" href="#lazy-initialization"><span class="icon icon-link"></span></a>Lazy Initialization</h3>
+<p>초기값 계산이 비용이 큰 경우, 함수를 전달하면 첫 렌더링 때만 실행됩니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">ExpensiveComponent</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-comment">// 매번 실행됨</span>
+  <span class="hljs-keyword">const</span> [data, setData] = <span class="hljs-title function_">useState</span>(<span class="hljs-title function_">computeExpensiveValue</span>());
+
+  <span class="hljs-comment">// 첫 렌더링 때만 실행</span>
+  <span class="hljs-keyword">const</span> [data, setData] = <span class="hljs-title function_">useState</span>(<span class="hljs-function">() =&gt;</span> <span class="hljs-title function_">computeExpensiveValue</span>());
+
+  <span class="hljs-comment">// 실무 예시: localStorage에서 읽기</span>
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> saved = <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">getItem</span>(<span class="hljs-string">&#x27;user&#x27;</span>);
+    <span class="hljs-keyword">return</span> saved ? <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(saved) : <span class="hljs-literal">null</span>;
+  });
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>{/* ... */}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<h2 id="useeffect---사이드-이펙트-처리"><a aria-hidden="true" tabindex="-1" href="#useeffect---사이드-이펙트-처리"><span class="icon icon-link"></span></a>useEffect - 사이드 이펙트 처리</h2>
+<p>컴포넌트가 렌더링된 후 실행되는 코드를 작성합니다.</p>
+<h3 id="기본-사용법-1"><a aria-hidden="true" tabindex="-1" href="#기본-사용법-1"><span class="icon icon-link"></span></a>기본 사용법</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { useState, useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">PageTitle</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-comment">// 매 렌더링마다 실행</span>
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">document</span>.<span class="hljs-property">title</span> = <span class="hljs-string">`Count: <span class="hljs-subst">${count}</span>`</span>;
+  });
+
+  <span class="hljs-comment">// 마운트 시에만 실행 (빈 배열)</span>
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Component mounted&#x27;</span>);
+  }, []);
+
+  <span class="hljs-comment">// count가 변경될 때만 실행</span>
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-variable language_">document</span>.<span class="hljs-property">title</span> = <span class="hljs-string">`Count: <span class="hljs-subst">${count}</span>`</span>;
+  }, [count]);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(c =&gt; c + 1)}&gt;Increment<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<p><strong>의존성 배열 규칙:</strong></p>
+<ul>
+<li>없음: 매 렌더링마다 실행</li>
+<li><code>[]</code>: 마운트 시에만 실행</li>
+<li><code>[dep1, dep2]</code>: 의존성이 변경될 때 실행</li>
+</ul>
+<h3 id="클린업-함수"><a aria-hidden="true" tabindex="-1" href="#클린업-함수"><span class="icon icon-link"></span></a>클린업 함수</h3>
+<p>useEffect 내부에서 타이머, 이벤트 리스너, 네트워크 요청 등을 시작했다면 반드시 정리(cleanup)해야 합니다. 그렇지 않으면 메모리 누수가 발생할 수 있습니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Timer</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [seconds, setSeconds] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> interval = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-title function_">setSeconds</span>(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s + <span class="hljs-number">1</span>);
+    }, <span class="hljs-number">1000</span>);
+
+    <span class="hljs-comment">// 클린업 함수: 언마운트 시 또는 다음 effect 실행 전에 호출</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-built_in">clearInterval</span>(interval);
+    };
+  }, []); <span class="hljs-comment">// 빈 배열이므로 마운트/언마운트 시에만</span>
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Seconds: {seconds}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<p><strong>클린업이 필요한 경우:</strong></p>
+<ul>
+<li>setInterval, setTimeout</li>
+<li>이벤트 리스너</li>
+<li>WebSocket 연결</li>
+<li>subscription</li>
+<li>외부 라이브러리 정리</li>
+</ul>
+<h3 id="데이터-fetching"><a aria-hidden="true" tabindex="-1" href="#데이터-fetching"><span class="icon icon-link"></span></a>데이터 fetching</h3>
+<p>API 호출은 useEffect에서 자주 사용되는 패턴입니다. 하지만 컴포넌트가 언마운트되거나 userId가 변경되는 상황을 처리해야 합니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">UserProfile</span>(<span class="hljs-params">{ userId }</span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [loading, setLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+  <span class="hljs-keyword">const</span> [error, setError] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-comment">// cleanup을 위한 flag</span>
+    <span class="hljs-keyword">let</span> cancelled = <span class="hljs-literal">false</span>;
+
+    <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">fetchUser</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-keyword">try</span> {
+        <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">true</span>);
+        <span class="hljs-title function_">setError</span>(<span class="hljs-literal">null</span>);
+        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">`/api/users/<span class="hljs-subst">${userId}</span>`</span>);
+        <span class="hljs-keyword">const</span> data = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+
+        <span class="hljs-keyword">if</span> (!cancelled) {
+          <span class="hljs-title function_">setUser</span>(data);
+        }
+      } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-keyword">if</span> (!cancelled) {
+          <span class="hljs-title function_">setError</span>(err.<span class="hljs-property">message</span>);
+        }
+      } <span class="hljs-keyword">finally</span> {
+        <span class="hljs-keyword">if</span> (!cancelled) {
+          <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>);
+        }
+      }
+    }
+
+    <span class="hljs-title function_">fetchUser</span>();
+
+    <span class="hljs-comment">// 클린업: 컴포넌트 언마운트나 userId 변경 시</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> {
+      cancelled = <span class="hljs-literal">true</span>;
+    };
+  }, [userId]);
+
+  <span class="hljs-keyword">if</span> (loading) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (error) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Error: {error}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (!user) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>No user found<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{user.name}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{user.email}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="이벤트-리스너"><a aria-hidden="true" tabindex="-1" href="#이벤트-리스너"><span class="icon icon-link"></span></a>이벤트 리스너</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">WindowSize</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [size, setSize] = <span class="hljs-title function_">useState</span>({
+    <span class="hljs-attr">width</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerWidth</span>,
+    <span class="hljs-attr">height</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerHeight</span>
+  });
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">handleResize</span> = (<span class="hljs-params"></span>) =&gt; {
+      <span class="hljs-title function_">setSize</span>({
+        <span class="hljs-attr">width</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerWidth</span>,
+        <span class="hljs-attr">height</span>: <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerHeight</span>
+      });
+    };
+
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;resize&#x27;</span>, handleResize);
+
+    <span class="hljs-comment">// 클린업</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;resize&#x27;</span>, handleResize);
+    };
+  }, []);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      Width: {size.width}px, Height: {size.height}px
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="localstorage-동기화"><a aria-hidden="true" tabindex="-1" href="#localstorage-동기화"><span class="icon icon-link"></span></a>localStorage 동기화</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">useLocalStorage</span>(<span class="hljs-params">key, initialValue</span>) {
+  <span class="hljs-comment">// lazy initialization으로 localStorage 읽기</span>
+  <span class="hljs-keyword">const</span> [value, setValue] = <span class="hljs-title function_">useState</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> item = <span class="hljs-variable language_">window</span>.<span class="hljs-property">localStorage</span>.<span class="hljs-title function_">getItem</span>(key);
+      <span class="hljs-keyword">return</span> item ? <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">parse</span>(item) : initialValue;
+    } <span class="hljs-keyword">catch</span> (error) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error);
+      <span class="hljs-keyword">return</span> initialValue;
+    }
+  });
+
+  <span class="hljs-comment">// value가 변경될 때 localStorage에 저장</span>
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-variable language_">window</span>.<span class="hljs-property">localStorage</span>.<span class="hljs-title function_">setItem</span>(key, <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(value));
+    } <span class="hljs-keyword">catch</span> (error) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(error);
+    }
+  }, [key, value]);
+
+  <span class="hljs-keyword">return</span> [value, setValue];
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [name, setName] = <span class="hljs-title function_">useLocalStorage</span>(<span class="hljs-string">&#x27;name&#x27;</span>, <span class="hljs-string">&#x27;&#x27;</span>);
+  <span class="hljs-keyword">const</span> [theme, setTheme] = <span class="hljs-title function_">useLocalStorage</span>(<span class="hljs-string">&#x27;theme&#x27;</span>, <span class="hljs-string">&#x27;light&#x27;</span>);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span>
+        <span class="hljs-attr">value</span>=<span class="hljs-string">{name}</span>
+        <span class="hljs-attr">onChange</span>=<span class="hljs-string">{(e)</span> =&gt;</span> setName(e.target.value)}
+      /&gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setTheme(theme === &#x27;light&#x27; ? &#x27;dark&#x27; : &#x27;light&#x27;)}&gt;
+        Toggle Theme
+      <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h2 id="useref---값-유지하기"><a aria-hidden="true" tabindex="-1" href="#useref---값-유지하기"><span class="icon icon-link"></span></a>useRef - 값 유지하기</h2>
+<p>useRef는 두 가지 주요 용도가 있습니다: (1) DOM 요소에 직접 접근하기, (2) 렌더링과 무관하게 값을 저장하기.</p>
+<h3 id="dom-접근"><a aria-hidden="true" tabindex="-1" href="#dom-접근"><span class="icon icon-link"></span></a>DOM 접근</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { useRef, useEffect } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">AutoFocusInput</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> inputRef = <span class="hljs-title function_">useRef</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-comment">// 마운트 시 자동 포커스</span>
+    inputRef.<span class="hljs-property">current</span>.<span class="hljs-title function_">focus</span>();
+  }, []);
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{inputRef}</span> /&gt;</span></span>;
+}
+
+<span class="hljs-comment">// 실무 예시: 스크롤 제어</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ScrollToTop</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> topRef = <span class="hljs-title function_">useRef</span>(<span class="hljs-literal">null</span>);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">scrollToTop</span> = (<span class="hljs-params"></span>) =&gt; {
+    topRef.<span class="hljs-property">current</span>?.<span class="hljs-title function_">scrollIntoView</span>({ <span class="hljs-attr">behavior</span>: <span class="hljs-string">&#x27;smooth&#x27;</span> });
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">{topRef}</span>&gt;</span>Top of the page<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      {/* 긴 컨텐츠 */}
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{scrollToTop}</span>&gt;</span>Scroll to Top<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="이전-값-저장"><a aria-hidden="true" tabindex="-1" href="#이전-값-저장"><span class="icon icon-link"></span></a>이전 값 저장</h3>
+<p>useRef의 강력한 활용법 중 하나는 &#x27;이전 값&#x27;을 기억하는 것입니다. ref는 리렌더링되어도 값이 유지되기 때문에 가능합니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">usePrevious</span>(<span class="hljs-params">value</span>) {
+  <span class="hljs-keyword">const</span> ref = <span class="hljs-title function_">useRef</span>();
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    ref.<span class="hljs-property">current</span> = value;
+  }, [value]);
+
+  <span class="hljs-keyword">return</span> ref.<span class="hljs-property">current</span>;
+}
+
+<span class="hljs-comment">// 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">Counter</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> prevCount = <span class="hljs-title function_">usePrevious</span>(count);
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Current: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Previous: {prevCount}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(c =&gt; c + 1)}&gt;+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="값-변경-감지하지-않기"><a aria-hidden="true" tabindex="-1" href="#값-변경-감지하지-않기"><span class="icon icon-link"></span></a>값 변경 감지하지 않기</h3>
+<p>useState와 달리 useRef는 값이 변경되어도 리렌더링을 일으키지 않습니다. 이 특성을 활용하면 클로저 문제를 해결할 수 있습니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">Timer</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> [count, setCount] = <span class="hljs-title function_">useState</span>(<span class="hljs-number">0</span>);
+  <span class="hljs-keyword">const</span> countRef = <span class="hljs-title function_">useRef</span>(count);
+
+  <span class="hljs-comment">// ref 업데이트는 리렌더링을 발생시키지 않음</span>
+  countRef.<span class="hljs-property">current</span> = count;
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> interval = <span class="hljs-built_in">setInterval</span>(<span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-comment">// 최신 count 값 사용 (클로저 문제 해결)</span>
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&#x27;Current count:&#x27;</span>, countRef.<span class="hljs-property">current</span>);
+    }, <span class="hljs-number">1000</span>);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-function">() =&gt;</span> <span class="hljs-built_in">clearInterval</span>(interval);
+  }, []); <span class="hljs-comment">// 의존성 배열이 비어있어도 최신 값 접근 가능</span>
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Count: {count}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> setCount(c =&gt; c + 1)}&gt;+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="렌더링-횟수-추적"><a aria-hidden="true" tabindex="-1" href="#렌더링-횟수-추적"><span class="icon icon-link"></span></a>렌더링 횟수 추적</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">RenderCounter</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> renderCount = <span class="hljs-title function_">useRef</span>(<span class="hljs-number">0</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    renderCount.<span class="hljs-property">current</span> += <span class="hljs-number">1</span>;
+  });
+
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Render count: {renderCount.current}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+}
+</code></pre>
+<h2 id="usecontext---전역-상태-관리"><a aria-hidden="true" tabindex="-1" href="#usecontext---전역-상태-관리"><span class="icon icon-link"></span></a>useContext - 전역 상태 관리</h2>
+<p>props를 여러 단계를 거쳐 전달하는 것을 &#x27;props drilling&#x27;이라고 합니다. useContext를 사용하면 이를 해결하고 전역 상태를 쉽게 공유할 수 있습니다.</p>
+<h3 id="기본-사용법-2"><a aria-hidden="true" tabindex="-1" href="#기본-사용법-2"><span class="icon icon-link"></span></a>기본 사용법</h3>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">import</span> { createContext, useContext, useState } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;react&#x27;</span>;
+
+<span class="hljs-comment">// Context 생성</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title class_">ThemeContext</span> = <span class="hljs-title function_">createContext</span>();
+
+<span class="hljs-comment">// Provider 컴포넌트</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ThemeProvider</span>(<span class="hljs-params">{ children }</span>) {
+  <span class="hljs-keyword">const</span> [theme, setTheme] = <span class="hljs-title function_">useState</span>(<span class="hljs-string">&#x27;light&#x27;</span>);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-title function_">toggleTheme</span> = (<span class="hljs-params"></span>) =&gt; {
+    <span class="hljs-title function_">setTheme</span>(<span class="hljs-function"><span class="hljs-params">prev</span> =&gt;</span> prev === <span class="hljs-string">&#x27;light&#x27;</span> ? <span class="hljs-string">&#x27;dark&#x27;</span> : <span class="hljs-string">&#x27;light&#x27;</span>);
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ThemeContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{{</span> <span class="hljs-attr">theme</span>, <span class="hljs-attr">toggleTheme</span> }}&gt;</span>
+      {children}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ThemeContext.Provider</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// Hook으로 Context 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useTheme</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> context = <span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">ThemeContext</span>);
+  <span class="hljs-keyword">if</span> (!context) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;useTheme must be used within ThemeProvider&#x27;</span>);
+  }
+  <span class="hljs-keyword">return</span> context;
+}
+
+<span class="hljs-comment">// 컴포넌트에서 사용</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ThemedButton</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> { theme, toggleTheme } = <span class="hljs-title function_">useTheme</span>();
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>
+      <span class="hljs-attr">onClick</span>=<span class="hljs-string">{toggleTheme}</span>
+      <span class="hljs-attr">style</span>=<span class="hljs-string">{{</span>
+        <span class="hljs-attr">background:</span> <span class="hljs-attr">theme</span> === <span class="hljs-string">&#x27;light&#x27;</span> ? &#x27;#<span class="hljs-attr">fff</span>&#x27; <span class="hljs-attr">:</span> &#x27;#<span class="hljs-attr">333</span>&#x27;,
+        <span class="hljs-attr">color:</span> <span class="hljs-attr">theme</span> === <span class="hljs-string">&#x27;light&#x27;</span> ? &#x27;#<span class="hljs-attr">000</span>&#x27; <span class="hljs-attr">:</span> &#x27;#<span class="hljs-attr">fff</span>&#x27;
+      }}
+    &gt;</span>
+      Toggle Theme (Current: {theme})
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-comment">// App</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">App</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ThemeProvider</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ThemedButton</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ThemeProvider</span>&gt;</span></span>
+  );
+}
+</code></pre>
+<h3 id="인증-context"><a aria-hidden="true" tabindex="-1" href="#인증-context"><span class="icon icon-link"></span></a>인증 Context</h3>
+<p>실무에서 가장 많이 사용되는 패턴 중 하나는 인증(Authentication) Context입니다. 로그인 상태를 전역적으로 관리할 수 있습니다.</p>
+<pre><code class="hljs language-javascript"><span class="hljs-keyword">const</span> <span class="hljs-title class_">AuthContext</span> = <span class="hljs-title function_">createContext</span>();
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">AuthProvider</span>(<span class="hljs-params">{ children }</span>) {
+  <span class="hljs-keyword">const</span> [user, setUser] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">null</span>);
+  <span class="hljs-keyword">const</span> [loading, setLoading] = <span class="hljs-title function_">useState</span>(<span class="hljs-literal">true</span>);
+
+  <span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-comment">// 초기 인증 상태 확인</span>
+    <span class="hljs-title function_">checkAuth</span>();
+  }, []);
+
+  <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">checkAuth</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;/api/auth/me&#x27;</span>);
+      <span class="hljs-keyword">if</span> (response.<span class="hljs-property">ok</span>) {
+        <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+        <span class="hljs-title function_">setUser</span>(user);
+      }
+    } <span class="hljs-keyword">catch</span> (error) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;Auth check failed:&#x27;</span>, error);
+    } <span class="hljs-keyword">finally</span> {
+      <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>);
+    }
+  }
+
+  <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">login</span>(<span class="hljs-params">email, password</span>) {
+    <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;/api/auth/login&#x27;</span>, {
+      <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span>,
+      <span class="hljs-attr">headers</span>: { <span class="hljs-string">&#x27;Content-Type&#x27;</span>: <span class="hljs-string">&#x27;application/json&#x27;</span> },
+      <span class="hljs-attr">body</span>: <span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>({ email, password })
+    });
+
+    <span class="hljs-keyword">if</span> (response.<span class="hljs-property">ok</span>) {
+      <span class="hljs-keyword">const</span> user = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();
+      <span class="hljs-title function_">setUser</span>(user);
+      <span class="hljs-keyword">return</span> user;
+    }
+
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;Login failed&#x27;</span>);
+  }
+
+  <span class="hljs-keyword">async</span> <span class="hljs-keyword">function</span> <span class="hljs-title function_">logout</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">await</span> <span class="hljs-title function_">fetch</span>(<span class="hljs-string">&#x27;/api/auth/logout&#x27;</span>, { <span class="hljs-attr">method</span>: <span class="hljs-string">&#x27;POST&#x27;</span> });
+    <span class="hljs-title function_">setUser</span>(<span class="hljs-literal">null</span>);
+  }
+
+  <span class="hljs-keyword">const</span> value = {
+    user,
+    loading,
+    login,
+    logout,
+    <span class="hljs-attr">isAuthenticated</span>: !!user
+  };
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">AuthContext.Provider</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{value}</span>&gt;</span>
+      {children}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">AuthContext.Provider</span>&gt;</span></span>
+  );
+}
+
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">useAuth</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-keyword">const</span> context = <span class="hljs-title function_">useContext</span>(<span class="hljs-title class_">AuthContext</span>);
+  <span class="hljs-keyword">if</span> (!context) {
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Error</span>(<span class="hljs-string">&#x27;useAuth must be used within AuthProvider&#x27;</span>);
+  }
+  <span class="hljs-keyword">return</span> context;
+}
+
+<span class="hljs-comment">// 보호된 라우트</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">ProtectedRoute</span>(<span class="hljs-params">{ children }</span>) {
+  <span class="hljs-keyword">const</span> { isAuthenticated, loading } = <span class="hljs-title function_">useAuth</span>();
+
+  <span class="hljs-keyword">if</span> (loading) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>Loading...<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>;
+  <span class="hljs-keyword">if</span> (!isAuthenticated) <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Navigate</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;/login&quot;</span> /&gt;</span></span>;
+
+  <span class="hljs-keyword">return</span> children;
+}
+</code></pre>
+<h2 id="다음-글에서는"><a aria-hidden="true" tabindex="-1" href="#다음-글에서는"><span class="icon icon-link"></span></a>다음 글에서는...</h2>
+<p>2부에서는 더 고급 Hooks와 실무 패턴을 다뤄볼까 합니다:</p>
+<ul>
+<li><strong>useReducer</strong>: 복잡한 상태 로직 관리</li>
+<li><strong>useMemo &amp; useCallback</strong>: 성능 최적화</li>
+<li><strong>커스텀 Hooks</strong>: 로직 재사용</li>
+<li><strong>Hooks 규칙과 베스트 프랙티스</strong></li>
+<li><strong>오래된 패턴들과 최신 대안</strong></li>
+</ul></div><nav class="mt-12 pt-8 border-t"><div class="grid grid-cols-1 md:grid-cols-2 gap-6"><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group" href="/posts/frontend/react-hooks-part2/"><div class="text-sm text-muted-foreground mb-2">← 이전 글</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">React Hooks 모음 2</div></a><a class="flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right" href="/posts/frontend/typescript-advanced-part2/"><div class="text-sm text-muted-foreground mb-2">다음 글 →</div><div class="font-medium group-hover:text-primary transition-colors line-clamp-2">TypeScript 실무 패턴과 고급 타입 </div></a></div></nav><nav class="mt-8 pt-8 border-t"><a class="text-primary hover:underline inline-flex items-center gap-2" href="/">← 홈으로 돌아가기</a></nav></article></div></main><!--$--><!--/$--></main><footer class="border-t mt-8 py-6 px-6"><div class="container mx-auto text-center"><p class="text-sm text-muted-foreground">© <!-- -->2026<!-- --> DevONew Blog. All rights reserved.</p></div></footer><script src="/_next/static/chunks/webpack-e2f8d3f9321d86eb.js" id="_R_" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,"1:\"$Sreact.fragment\"\n2:I[1901,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-baddb248eed804d7.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeProvider\"]\n3:I[2619,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"\"]\n4:I[2235,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"129\",\"static/chunks/129-baddb248eed804d7.js\",\"177\",\"static/chunks/app/layout-01445a0075f6b145.js\"],\"ThemeToggle\"]\n5:I[9766,[],\"\"]\n6:I[8924,[],\"\"]\nc:I[7150,[],\"\"]\n:HL[\"/_next/static/css/d5ebba4595249be0.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"0:{\"P\":null,\"b\":\"GTAr-W1bTdY9ozH79YcNo\",\"p\":\"\",\"c\":[\"\",\"posts\",\"frontend\",\"react-hooks-part1\",\"\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"posts\",{\"children\":[[\"category\",\"frontend\",\"d\"],{\"children\":[[\"slug\",\"react-hooks-part1\",\"d\"],{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/d5ebba4595249be0.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"ko\",\"suppressHydrationWarning\":true,\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L2\",null,{\"attribute\":\"class\",\"defaultTheme\":\"system\",\"enableSystem\":true,\"disableTransitionOnChange\":true,\"children\":[[\"$\",\"header\",null,{\"className\":\"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex justify-between items-center py-4 px-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors\",\"children\":[[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-file-text h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"1rqfz7\",{\"d\":\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"}],[\"$\",\"path\",\"tnqrlb\",{\"d\":\"M14 2v4a2 2 0 0 0 2 2h4\"}],[\"$\",\"path\",\"b1mrlr\",{\"d\":\"M10 9H8\"}],[\"$\",\"path\",\"t4e002\",{\"d\":\"M16 13H8\"}],[\"$\",\"path\",\"z1uh3a\",{\"d\":\"M16 17H8\"}],\"$undefined\"]}],\"Blog\"]}],[\"$\",\"nav\",null,{\"className\":\"flex items-center gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"홈\"}],[\"$\",\"$L3\",null,{\"href\":\"/tags\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"태그\"}],[\"$\",\"$L3\",null,{\"href\":\"/about\",\"className\":\"text-sm hover:text-primary transition-colors\",\"children\":\"소개\"}],[\"$\",\"a\",null,{\"href\":\"https://github.com/DevONew\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"className\":\"hover:text-primary transition-colors\",\"aria-label\":\"GitHub\",\"children\":[\"$\",\"svg\",null,{\"ref\":\"$undefined\",\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":24,\"height\":24,\"viewBox\":\"0 0 24 24\",\"fill\":\"none\",\"stroke\":\"currentColor\",\"strokeWidth\":2,\"strokeLinecap\":\"round\",\"strokeLinejoin\":\"round\",\"className\":\"lucide lucide-github h-5 w-5\",\"aria-hidden\":\"true\",\"children\":[[\"$\",\"path\",\"tonef\",{\"d\":\"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4\"}],[\"$\",\"path\",\"9comsn\",{\"d\":\"M9 18c-4.51 2-5-2-7-2\"}],\"$undefined\"]}]}],[\"$\",\"$L4\",null,{}]]}]]}]}],[\"$\",\"main\",null,{\"className\":\"container mx-auto py-8 px-6\",\"children\":[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":404}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]}],[\"$\",\"footer\",null,{\"className\":\"border-t mt-8 py-6 px-6\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto text-center\",\"children\":[\"$\",\"p\",null,{\"className\":\"text-sm text-muted-foreground\",\"children\":[\"© \",2026,\" DevONew Blog. All rights reserved.\"]}]}]}]]}]}]}]]}],{\"children\":[\"posts\",\"$L7\",{\"children\":[[\"category\",\"frontend\",\"d\"],\"$L8\",{\"children\":[[\"slug\",\"react-hooks-part1\",\"d\"],\"$L9\",{\"children\":[\"__PAGE__\",\"$La\",{},null,false]},null,false]},null,false]},null,false]},null,false],\"$Lb\",false]],\"m\":\"$undefined\",\"G\":[\"$c\",[]],\"s\":false,\"S\":true}\n"])</script><script>self.__next_f.push([1,"e:I[4431,[],\"OutletBoundary\"]\n10:I[5278,[],\"AsyncMetadataOutlet\"]\n12:I[4431,[],\"ViewportBoundary\"]\n14:I[4431,[],\"MetadataBoundary\"]\n15:\"$Sreact.suspense\"\n7:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n8:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\n9:[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}]\na:[\"$\",\"$1\",\"c\",{\"children\":[\"$Ld\",null,[\"$\",\"$Le\",null,{\"children\":[\"$Lf\",[\"$\",\"$L10\",null,{\"promise\":\"$@11\"}]]}]]}]\nb:[\"$\",\"$1\",\"h\",{\"children\":[null,[[\"$\",\"$L12\",null,{\"children\":\"$L13\"}],null],[\"$\",\"$L14\",null,{\"children\":[\"$\",\"div\",null,{\"hidden\":true,\"children\":[\"$\",\"$15\",null,{\"fallback\":null,\"children\":\"$L16\"}]}]}]]}]\n"])</script><script>self.__next_f.push([1,"17:I[6905,[\"619\",\"static/chunks/619-ba102abea3e3d0e4.js\",\"23\",\"static/chunks/23-80ecaa68f6a0b226.js\",\"529\",\"static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js\"],\"default\"]\n18:T3f6b,"])</script><script>self.__next_f.push([1,"\nReact Hooks는 함수형 컴포넌트에서 상태 관리와 사이드 이펙트를 다룰 수 있게 해주는 강력한 도구입니다.\n\n이 글에서는 가장 자주 사용하는 4가지 기본 Hooks를 실전 예제와 함께 살펴봅니다.\n\n## useState - 상태 관리의 기본\n\n가장 기본적이면서도 가장 많이 사용하는 Hook입니다.\n\n### 기본 사용법\n\n```javascript\nimport { useState } from 'react';\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  return (\n    \u003cdiv\u003e\n      \u003cp\u003eCount: {count}\u003c/p\u003e\n      \u003cbutton onClick={() =\u003e setCount(count + 1)}\u003e+\u003c/button\u003e\n      \u003cbutton onClick={() =\u003e setCount(count - 1)}\u003e-\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n**핵심 개념:**\n- `useState`는 `[현재값, 업데이트함수]` 배열을 반환\n- 초기값은 첫 렌더링 때만 사용됨\n- 상태가 변경되면 컴포넌트가 리렌더링됨\n\n### 함수형 업데이트\n\n상태 업데이트를 연속으로 두 번 호출하면 어떻게 될까요? 값이 아닌 함수를 전달하는 '함수형 업데이트'를 사용하면 이런 문제를 해결할 수 있습니다.\n\n```javascript\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  // 나쁜 예: 이전 상태에 의존하는 경우\n  const handleIncrement = () =\u003e {\n    setCount(count + 1);\n    setCount(count + 1); // 두 번 증가? 아니요, 한 번만 증가!\n  };\n\n  // 좋은 예: 함수형 업데이트\n  const handleIncrementTwice = () =\u003e {\n    setCount(prev =\u003e prev + 1);\n    setCount(prev =\u003e prev + 1); // 제대로 두 번 증가\n  };\n\n  return (\n    \u003cdiv\u003e\n      \u003cp\u003eCount: {count}\u003c/p\u003e\n      \u003cbutton onClick={handleIncrement}\u003e+1 (잘못된 방법)\u003c/button\u003e\n      \u003cbutton onClick={handleIncrementTwice}\u003e+2 (올바른 방법)\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n**왜 함수형 업데이트를 써야 할까?**\n- 이전 상태를 기반으로 업데이트할 때 안전\n- useEffect 의존성 배열에서 상태를 제외 가능\n- 클로저 문제 해결\n\n### 객체 상태 관리\n\n객체 타입의 상태를 업데이트할 때는 주의가 필요합니다. React는 얕은 비교(shallow comparison)를 하기 때문에 객체의 일부만 변경하면 나머지 필드가 사라집니다.\n\n```javascript\nfunction UserForm() {\n  const [user, setUser] = useState({\n    name: '',\n    email: '',\n    age: 0\n  });\n\n  // 나쁜 예: 일부만 업데이트하면 나머지 사라짐\n  const handleNameChange = (e) =\u003e {\n    setUser({ name: e.target.value }); // email과 age가 사라짐!\n  };\n\n  // 좋은 예: spread 연산자로 병합\n  const handleChange = (field) =\u003e (e) =\u003e {\n    setUser(prev =\u003e ({\n      ...prev,\n      [field]: e.target.value\n    }));\n  };\n\n  return (\n    \u003cform\u003e\n      \u003cinput\n        value={user.name}\n        onChange={handleChange('name')}\n        placeholder=\"Name\"\n      /\u003e\n      \u003cinput\n        value={user.email}\n        onChange={handleChange('email')}\n        placeholder=\"Email\"\n      /\u003e\n      \u003cinput\n        type=\"number\"\n        value={user.age}\n        onChange={handleChange('age')}\n        placeholder=\"Age\"\n      /\u003e\n      \u003cp\u003e{JSON.stringify(user, null, 2)}\u003c/p\u003e\n    \u003c/form\u003e\n  );\n}\n```\n\n### 배열 상태 관리\n\n배열 상태를 다룰 때는 원본을 직접 수정하지 말고, 새로운 배열을 만들어 반환해야 합니다. 실무에서 가장 많이 사용하는 CRUD 패턴을 살펴보겠습니다.\n\n```javascript\nfunction TodoList() {\n  const [todos, setTodos] = useState([]);\n  const [input, setInput] = useState('');\n\n  // 추가\n  const addTodo = () =\u003e {\n    if (!input.trim()) return;\n    setTodos(prev =\u003e [...prev, {\n      id: Date.now(),\n      text: input,\n      completed: false\n    }]);\n    setInput('');\n  };\n\n  // 토글\n  const toggleTodo = (id) =\u003e {\n    setTodos(prev =\u003e prev.map(todo =\u003e\n      todo.id === id\n        ? { ...todo, completed: !todo.completed }\n        : todo\n    ));\n  };\n\n  // 삭제\n  const deleteTodo = (id) =\u003e {\n    setTodos(prev =\u003e prev.filter(todo =\u003e todo.id !== id));\n  };\n\n  // 수정\n  const updateTodo = (id, newText) =\u003e {\n    setTodos(prev =\u003e prev.map(todo =\u003e\n      todo.id === id\n        ? { ...todo, text: newText }\n        : todo\n    ));\n  };\n\n  return (\n    \u003cdiv\u003e\n      \u003cinput\n        value={input}\n        onChange={(e) =\u003e setInput(e.target.value)}\n        onKeyPress={(e) =\u003e e.key === 'Enter' \u0026\u0026 addTodo()}\n      /\u003e\n      \u003cbutton onClick={addTodo}\u003eAdd\u003c/button\u003e\n      \u003cul\u003e\n        {todos.map(todo =\u003e (\n          \u003cli key={todo.id}\u003e\n            \u003cinput\n              type=\"checkbox\"\n              checked={todo.completed}\n              onChange={() =\u003e toggleTodo(todo.id)}\n            /\u003e\n            \u003cspan\n              style={{\n                textDecoration: todo.completed ? 'line-through' : 'none'\n              }}\n            \u003e\n              {todo.text}\n            \u003c/span\u003e\n            \u003cbutton onClick={() =\u003e deleteTodo(todo.id)}\u003eDelete\u003c/button\u003e\n          \u003c/li\u003e\n        ))}\n      \u003c/ul\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### Lazy Initialization\n\n초기값 계산이 비용이 큰 경우, 함수를 전달하면 첫 렌더링 때만 실행됩니다.\n\n```javascript\nfunction ExpensiveComponent() {\n  // 매번 실행됨\n  const [data, setData] = useState(computeExpensiveValue());\n\n  // 첫 렌더링 때만 실행\n  const [data, setData] = useState(() =\u003e computeExpensiveValue());\n\n  // 실무 예시: localStorage에서 읽기\n  const [user, setUser] = useState(() =\u003e {\n    const saved = localStorage.getItem('user');\n    return saved ? JSON.parse(saved) : null;\n  });\n\n  return \u003cdiv\u003e{/* ... */}\u003c/div\u003e;\n}\n```\n\n## useEffect - 사이드 이펙트 처리\n\n컴포넌트가 렌더링된 후 실행되는 코드를 작성합니다.\n\n### 기본 사용법\n\n```javascript\nimport { useState, useEffect } from 'react';\n\nfunction PageTitle() {\n  const [count, setCount] = useState(0);\n\n  // 매 렌더링마다 실행\n  useEffect(() =\u003e {\n    document.title = `Count: ${count}`;\n  });\n\n  // 마운트 시에만 실행 (빈 배열)\n  useEffect(() =\u003e {\n    console.log('Component mounted');\n  }, []);\n\n  // count가 변경될 때만 실행\n  useEffect(() =\u003e {\n    document.title = `Count: ${count}`;\n  }, [count]);\n\n  return (\n    \u003cdiv\u003e\n      \u003cp\u003eCount: {count}\u003c/p\u003e\n      \u003cbutton onClick={() =\u003e setCount(c =\u003e c + 1)}\u003eIncrement\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n**의존성 배열 규칙:**\n- 없음: 매 렌더링마다 실행\n- `[]`: 마운트 시에만 실행\n- `[dep1, dep2]`: 의존성이 변경될 때 실행\n\n### 클린업 함수\n\nuseEffect 내부에서 타이머, 이벤트 리스너, 네트워크 요청 등을 시작했다면 반드시 정리(cleanup)해야 합니다. 그렇지 않으면 메모리 누수가 발생할 수 있습니다.\n\n```javascript\nfunction Timer() {\n  const [seconds, setSeconds] = useState(0);\n\n  useEffect(() =\u003e {\n    const interval = setInterval(() =\u003e {\n      setSeconds(s =\u003e s + 1);\n    }, 1000);\n\n    // 클린업 함수: 언마운트 시 또는 다음 effect 실행 전에 호출\n    return () =\u003e {\n      clearInterval(interval);\n    };\n  }, []); // 빈 배열이므로 마운트/언마운트 시에만\n\n  return \u003cdiv\u003eSeconds: {seconds}\u003c/div\u003e;\n}\n```\n\n**클린업이 필요한 경우:**\n- setInterval, setTimeout\n- 이벤트 리스너\n- WebSocket 연결\n- subscription\n- 외부 라이브러리 정리\n\n### 데이터 fetching\n\nAPI 호출은 useEffect에서 자주 사용되는 패턴입니다. 하지만 컴포넌트가 언마운트되거나 userId가 변경되는 상황을 처리해야 합니다.\n\n```javascript\nfunction UserProfile({ userId }) {\n  const [user, setUser] = useState(null);\n  const [loading, setLoading] = useState(true);\n  const [error, setError] = useState(null);\n\n  useEffect(() =\u003e {\n    // cleanup을 위한 flag\n    let cancelled = false;\n\n    async function fetchUser() {\n      try {\n        setLoading(true);\n        setError(null);\n        const response = await fetch(`/api/users/${userId}`);\n        const data = await response.json();\n\n        if (!cancelled) {\n          setUser(data);\n        }\n      } catch (err) {\n        if (!cancelled) {\n          setError(err.message);\n        }\n      } finally {\n        if (!cancelled) {\n          setLoading(false);\n        }\n      }\n    }\n\n    fetchUser();\n\n    // 클린업: 컴포넌트 언마운트나 userId 변경 시\n    return () =\u003e {\n      cancelled = true;\n    };\n  }, [userId]);\n\n  if (loading) return \u003cdiv\u003eLoading...\u003c/div\u003e;\n  if (error) return \u003cdiv\u003eError: {error}\u003c/div\u003e;\n  if (!user) return \u003cdiv\u003eNo user found\u003c/div\u003e;\n\n  return (\n    \u003cdiv\u003e\n      \u003ch1\u003e{user.name}\u003c/h1\u003e\n      \u003cp\u003e{user.email}\u003c/p\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### 이벤트 리스너\n\n```javascript\nfunction WindowSize() {\n  const [size, setSize] = useState({\n    width: window.innerWidth,\n    height: window.innerHeight\n  });\n\n  useEffect(() =\u003e {\n    const handleResize = () =\u003e {\n      setSize({\n        width: window.innerWidth,\n        height: window.innerHeight\n      });\n    };\n\n    window.addEventListener('resize', handleResize);\n\n    // 클린업\n    return () =\u003e {\n      window.removeEventListener('resize', handleResize);\n    };\n  }, []);\n\n  return (\n    \u003cdiv\u003e\n      Width: {size.width}px, Height: {size.height}px\n    \u003c/div\u003e\n  );\n}\n```\n\n### localStorage 동기화\n\n```javascript\nfunction useLocalStorage(key, initialValue) {\n  // lazy initialization으로 localStorage 읽기\n  const [value, setValue] = useState(() =\u003e {\n    try {\n      const item = window.localStorage.getItem(key);\n      return item ? JSON.parse(item) : initialValue;\n    } catch (error) {\n      console.error(error);\n      return initialValue;\n    }\n  });\n\n  // value가 변경될 때 localStorage에 저장\n  useEffect(() =\u003e {\n    try {\n      window.localStorage.setItem(key, JSON.stringify(value));\n    } catch (error) {\n      console.error(error);\n    }\n  }, [key, value]);\n\n  return [value, setValue];\n}\n\n// 사용\nfunction App() {\n  const [name, setName] = useLocalStorage('name', '');\n  const [theme, setTheme] = useLocalStorage('theme', 'light');\n\n  return (\n    \u003cdiv\u003e\n      \u003cinput\n        value={name}\n        onChange={(e) =\u003e setName(e.target.value)}\n      /\u003e\n      \u003cbutton onClick={() =\u003e setTheme(theme === 'light' ? 'dark' : 'light')}\u003e\n        Toggle Theme\n      \u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n## useRef - 값 유지하기\n\nuseRef는 두 가지 주요 용도가 있습니다: (1) DOM 요소에 직접 접근하기, (2) 렌더링과 무관하게 값을 저장하기.\n\n### DOM 접근\n\n```javascript\nimport { useRef, useEffect } from 'react';\n\nfunction AutoFocusInput() {\n  const inputRef = useRef(null);\n\n  useEffect(() =\u003e {\n    // 마운트 시 자동 포커스\n    inputRef.current.focus();\n  }, []);\n\n  return \u003cinput ref={inputRef} /\u003e;\n}\n\n// 실무 예시: 스크롤 제어\nfunction ScrollToTop() {\n  const topRef = useRef(null);\n\n  const scrollToTop = () =\u003e {\n    topRef.current?.scrollIntoView({ behavior: 'smooth' });\n  };\n\n  return (\n    \u003cdiv\u003e\n      \u003cdiv ref={topRef}\u003eTop of the page\u003c/div\u003e\n      {/* 긴 컨텐츠 */}\n      \u003cbutton onClick={scrollToTop}\u003eScroll to Top\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### 이전 값 저장\n\nuseRef의 강력한 활용법 중 하나는 '이전 값'을 기억하는 것입니다. ref는 리렌더링되어도 값이 유지되기 때문에 가능합니다.\n\n```javascript\nfunction usePrevious(value) {\n  const ref = useRef();\n\n  useEffect(() =\u003e {\n    ref.current = value;\n  }, [value]);\n\n  return ref.current;\n}\n\n// 사용\nfunction Counter() {\n  const [count, setCount] = useState(0);\n  const prevCount = usePrevious(count);\n\n  return (\n    \u003cdiv\u003e\n      \u003cp\u003eCurrent: {count}\u003c/p\u003e\n      \u003cp\u003ePrevious: {prevCount}\u003c/p\u003e\n      \u003cbutton onClick={() =\u003e setCount(c =\u003e c + 1)}\u003e+\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### 값 변경 감지하지 않기\n\nuseState와 달리 useRef는 값이 변경되어도 리렌더링을 일으키지 않습니다. 이 특성을 활용하면 클로저 문제를 해결할 수 있습니다.\n\n```javascript\nfunction Timer() {\n  const [count, setCount] = useState(0);\n  const countRef = useRef(count);\n\n  // ref 업데이트는 리렌더링을 발생시키지 않음\n  countRef.current = count;\n\n  useEffect(() =\u003e {\n    const interval = setInterval(() =\u003e {\n      // 최신 count 값 사용 (클로저 문제 해결)\n      console.log('Current count:', countRef.current);\n    }, 1000);\n\n    return () =\u003e clearInterval(interval);\n  }, []); // 의존성 배열이 비어있어도 최신 값 접근 가능\n\n  return (\n    \u003cdiv\u003e\n      \u003cp\u003eCount: {count}\u003c/p\u003e\n      \u003cbutton onClick={() =\u003e setCount(c =\u003e c + 1)}\u003e+\u003c/button\u003e\n    \u003c/div\u003e\n  );\n}\n```\n\n### 렌더링 횟수 추적\n\n```javascript\nfunction RenderCounter() {\n  const renderCount = useRef(0);\n\n  useEffect(() =\u003e {\n    renderCount.current += 1;\n  });\n\n  return \u003cdiv\u003eRender count: {renderCount.current}\u003c/div\u003e;\n}\n```\n\n## useContext - 전역 상태 관리\n\nprops를 여러 단계를 거쳐 전달하는 것을 'props drilling'이라고 합니다. useContext를 사용하면 이를 해결하고 전역 상태를 쉽게 공유할 수 있습니다.\n\n### 기본 사용법\n\n```javascript\nimport { createContext, useContext, useState } from 'react';\n\n// Context 생성\nconst ThemeContext = createContext();\n\n// Provider 컴포넌트\nfunction ThemeProvider({ children }) {\n  const [theme, setTheme] = useState('light');\n\n  const toggleTheme = () =\u003e {\n    setTheme(prev =\u003e prev === 'light' ? 'dark' : 'light');\n  };\n\n  return (\n    \u003cThemeContext.Provider value={{ theme, toggleTheme }}\u003e\n      {children}\n    \u003c/ThemeContext.Provider\u003e\n  );\n}\n\n// Hook으로 Context 사용\nfunction useTheme() {\n  const context = useContext(ThemeContext);\n  if (!context) {\n    throw new Error('useTheme must be used within ThemeProvider');\n  }\n  return context;\n}\n\n// 컴포넌트에서 사용\nfunction ThemedButton() {\n  const { theme, toggleTheme } = useTheme();\n\n  return (\n    \u003cbutton\n      onClick={toggleTheme}\n      style={{\n        background: theme === 'light' ? '#fff' : '#333',\n        color: theme === 'light' ? '#000' : '#fff'\n      }}\n    \u003e\n      Toggle Theme (Current: {theme})\n    \u003c/button\u003e\n  );\n}\n\n// App\nfunction App() {\n  return (\n    \u003cThemeProvider\u003e\n      \u003cThemedButton /\u003e\n    \u003c/ThemeProvider\u003e\n  );\n}\n```\n\n### 인증 Context\n\n실무에서 가장 많이 사용되는 패턴 중 하나는 인증(Authentication) Context입니다. 로그인 상태를 전역적으로 관리할 수 있습니다.\n\n```javascript\nconst AuthContext = createContext();\n\nfunction AuthProvider({ children }) {\n  const [user, setUser] = useState(null);\n  const [loading, setLoading] = useState(true);\n\n  useEffect(() =\u003e {\n    // 초기 인증 상태 확인\n    checkAuth();\n  }, []);\n\n  async function checkAuth() {\n    try {\n      const response = await fetch('/api/auth/me');\n      if (response.ok) {\n        const user = await response.json();\n        setUser(user);\n      }\n    } catch (error) {\n      console.error('Auth check failed:', error);\n    } finally {\n      setLoading(false);\n    }\n  }\n\n  async function login(email, password) {\n    const response = await fetch('/api/auth/login', {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ email, password })\n    });\n\n    if (response.ok) {\n      const user = await response.json();\n      setUser(user);\n      return user;\n    }\n\n    throw new Error('Login failed');\n  }\n\n  async function logout() {\n    await fetch('/api/auth/logout', { method: 'POST' });\n    setUser(null);\n  }\n\n  const value = {\n    user,\n    loading,\n    login,\n    logout,\n    isAuthenticated: !!user\n  };\n\n  return (\n    \u003cAuthContext.Provider value={value}\u003e\n      {children}\n    \u003c/AuthContext.Provider\u003e\n  );\n}\n\nfunction useAuth() {\n  const context = useContext(AuthContext);\n  if (!context) {\n    throw new Error('useAuth must be used within AuthProvider');\n  }\n  return context;\n}\n\n// 보호된 라우트\nfunction ProtectedRoute({ children }) {\n  const { isAuthenticated, loading } = useAuth();\n\n  if (loading) return \u003cdiv\u003eLoading...\u003c/div\u003e;\n  if (!isAuthenticated) return \u003cNavigate to=\"/login\" /\u003e;\n\n  return children;\n}\n```\n\n## 다음 글에서는...\n\n2부에서는 더 고급 Hooks와 실무 패턴을 다뤄볼까 합니다:\n- **useReducer**: 복잡한 상태 로직 관리\n- **useMemo \u0026 useCallback**: 성능 최적화\n- **커스텀 Hooks**: 로직 재사용\n- **Hooks 규칙과 베스트 프랙티스**\n- **오래된 패턴들과 최신 대안**\n\n\n"])</script><script>self.__next_f.push([1,"d:[\"$\",\"main\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"max-w-4xl mx-auto px-4 py-8\",\"children\":[\"$\",\"article\",null,{\"children\":[[\"$\",\"header\",null,{\"className\":\"mb-12\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"text-5xl font-bold mb-6\",\"children\":\"React Hooks 모음 1\"}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap items-center gap-4\",\"children\":[[\"$\",\"div\",null,{\"className\":\"flex items-center gap-2 text-muted-foreground\",\"children\":[[\"$\",\"span\",null,{\"children\":\"📅\"}],[\"$\",\"time\",null,{\"children\":\"2025년 11월 24일\"}]]}],[\"$\",\"div\",null,{\"className\":\"flex flex-wrap gap-2\",\"children\":[[\"$\",\"$L3\",\"프론트엔드\",{\"href\":\"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"프론트엔드\"}],[\"$\",\"$L3\",\"React\",{\"href\":\"/tags/React\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"React\"}],[\"$\",\"$L3\",\"Hooks\",{\"href\":\"/tags/Hooks\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"Hooks\"}],[\"$\",\"$L3\",\"JavaScript\",{\"href\":\"/tags/JavaScript\",\"className\":\"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors\",\"children\":\"JavaScript\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline\",\"children\":[\"$\",\"$L17\",null,{\"content\":\"$18\"}]}],\"$L19\",\"$L1a\"]}]}]}]\n"])</script><script>self.__next_f.push([1,"19:[\"$\",\"nav\",null,{\"className\":\"mt-12 pt-8 border-t\",\"children\":[\"$\",\"div\",null,{\"className\":\"grid grid-cols-1 md:grid-cols-2 gap-6\",\"children\":[[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/react-hooks-part2\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"← 이전 글\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"React Hooks 모음 2\"}]]}],[\"$\",\"$L3\",null,{\"href\":\"/posts/frontend/typescript-advanced-part2\",\"className\":\"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right\",\"children\":[[\"$\",\"div\",null,{\"className\":\"text-sm text-muted-foreground mb-2\",\"children\":\"다음 글 →\"}],[\"$\",\"div\",null,{\"className\":\"font-medium group-hover:text-primary transition-colors line-clamp-2\",\"children\":\"TypeScript 실무 패턴과 고급 타입 \"}]]}]]}]}]\n"])</script><script>self.__next_f.push([1,"1a:[\"$\",\"nav\",null,{\"className\":\"mt-8 pt-8 border-t\",\"children\":[\"$\",\"$L3\",null,{\"href\":\"/\",\"className\":\"text-primary hover:underline inline-flex items-center gap-2\",\"children\":\"← 홈으로 돌아가기\"}]}]\n"])</script><script>self.__next_f.push([1,"13:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\nf:null\n"])</script><script>self.__next_f.push([1,"1b:I[622,[],\"IconMark\"]\n"])</script><script>self.__next_f.push([1,"11:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"React Hooks 모음 1 | DevONew Blog\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"useState, useEffect, useRef, useContext\"}],[\"$\",\"meta\",\"2\",{\"property\":\"og:title\",\"content\":\"React Hooks 모음 1\"}],[\"$\",\"meta\",\"3\",{\"property\":\"og:description\",\"content\":\"useState, useEffect, useRef, useContext\"}],[\"$\",\"meta\",\"4\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"$\",\"meta\",\"5\",{\"property\":\"article:published_time\",\"content\":\"2025-11-24\"}],[\"$\",\"meta\",\"6\",{\"name\":\"twitter:card\",\"content\":\"summary\"}],[\"$\",\"meta\",\"7\",{\"name\":\"twitter:title\",\"content\":\"React Hooks 모음 1\"}],[\"$\",\"meta\",\"8\",{\"name\":\"twitter:description\",\"content\":\"useState, useEffect, useRef, useContext\"}],[\"$\",\"link\",\"9\",{\"rel\":\"icon\",\"href\":\"data:image/svg+xml,\u003csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22\u003e\u003ctext y=%22.9em%22 font-size=%2290%22\u003e👾\u003c/text\u003e\u003c/svg\u003e\"}],[\"$\",\"$L1b\",\"10\",{}]],\"error\":null,\"digest\":\"$undefined\"}\n"])</script><script>self.__next_f.push([1,"16:\"$11:metadata\"\n"])</script></body></html>
