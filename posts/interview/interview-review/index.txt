@@ -1,0 +1,181 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-baddb248eed804d7.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","129","static/chunks/129-baddb248eed804d7.js","177","static/chunks/app/layout-01445a0075f6b145.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/d5ebba4595249be0.css","style"]
+0:{"P":null,"b":"xDfXk-FhYInEDjisXnSMl","p":"","c":["","posts","interview","interview-review",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","interview","d"],{"children":[["slug","interview-review","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d5ebba4595249be0.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","interview","d"],"$L8",{"children":[["slug","interview-review","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","23","static/chunks/23-80ecaa68f6a0b226.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-d3f34894c54af9a0.js"],"default"]
+18:T14e6,
+내 경력은 스타트업 1군데, 그리고 언론사 내 개발부서 한 군데로 총 2년 7개월의 경력이 있다. 주니어와 이제 막 경력직으로 넘어가는 시기로 볼 수 있다.
+
+사실 기술 스택이 이것저것 섞여있기도 하고 3년 미만이라면 주니어라고 생각한다. 
+
+그치만 지금부터가 커리어의 방향등을 결정하고 밀고 나가야하는 중요한 시기라 생각해 이직을 결심하게 되었다. 
+
+회사별로 면접 때 나온 질문들을 간단히 요약해 정리했고 당연히 회사의 이름은 공개하지 않았다. 
+
+특정할 수 있는 정보 또한 생략했다. 과제나 테스트에 대한 내용도 당연히 생략한다.
+
+대부분의 인터뷰는 1차 기술면접, 2차 인성면접(컬처핏)으로 진행된다.
+
+주로 물어봤던 것은
+
+- 이력서에 기술한 내용
+- 기술에 대한 내용 (웹에 대한 이해, 자바스크립트, 리액트 일부, 타입스크립트 일부 등)
+- 인성, 협업에 대한 내용
+- 과제나 코딩테스트가 있었다면 그 풀이에 대한 내용
+- 질문
+
+
+크게 이 정도가 될 것 같다.
+
+---
+
+## 1. A사
+
+처음부터 굉장히 좋은 회사로부터 서류 합격을 했고 면접을 보았다. 
+
+면접 분위기는 다른 면접 후기들처럼 편안한 분위기 속에서 진행 되었고 정말 나이스하게 진행되었다. 
+
+오랜만에 면접이라 그런지 감이 잘 잡히지 않았는데 면접 방향과 공부 방향을 잘잡는 계기가 되었다. 
+
+### 1차
+
+**이력서에 대한 내용**
+
+- 본인의 의견이 들어간 프로젝트가 있는지 
+
+**기술**
+
+- 클로저와 실행 컨텍스트
+- 이벤트루프에 대한 설명
+- 자바스크립트의 불변성과 동시성
+- 의존성 주입이란?
+
+**인성**
+
+- 이직 사유
+- 업무를 하면 어떻게 성장할 수 있을지
+- AI 툴 관련 이야기
+
+---
+
+## 2. B사
+
+음. 막 팀빌딩이 이루어지는 회사, 즉 완전 스타트업이었다. 
+
+백엔드 개발자분과 hr부서 직원이 들어왔는데 기술스택이 달라서 그런지 기술적인 질문보단 인적 사항 질문과 회사 생활 위주의 질문을 많이 하셨다. 
+
+**이력서에 대한 내용**
+
+- 대학교가 어디에 있는지 
+- 1년 5개월의 공백기 동안 무엇을 했는지 
+- 처음부터 끝까지 계획한 프로젝트가 있는지
+
+**인성**
+
+- 이직 사유
+- 회사 bm에 대해 얼마나 관심 있는지
+- 본인들의 프로젝트를 맡게 된다면 얼마만에 끝낼수 있는지 
+- 커뮤니케이션이 중요한데 잘하는 지
+
+---
+
+## 3. C사
+
+B사를 보고 오후에 C사 면접을 보러갔다. 
+
+솔직히 말하면 좀 부끄러운데 지금까지 너무 쉬운 면접만 봐 방심하고 있다가 이 회사 면접에서 호되게 데였다. 
+
+그렇지만 정말 많이 배웠고 공부 방향을 다시한번 설정하고 깊게 생각하게 되는 계기가 되었다. 
+
+CTO와 PL과 인터뷰를 진행했는데 어처구니없게도 나는 PL이 기획자님인줄 알았다. ~~앞으로 절대 안잊을듯 PL은 시니어개발자다~~
+
+**이력서에 대한 내용 일부**
+- 최적화 경험이 있는지
+- 사실 그외 더 물어보셨던거 같은데 완전 멘붕해서 기술적인 내용만 기억난다. 
+
+**기술**
+
+- typescript에서 omit이 무엇인지 
+- css의 풀네임
+- css의 우선순위는 어떻게 되는지
+- 호이스팅이란 무엇인지 
+- 리액트에서 왜 클래스를 쓰지 않는지 
+- 리액트에서는 객체 지향 언어라는 말이 왜 나오지 않는지 
+- 리액트에서 어떻게 객체 지향 방식을 쓰는지
+- 절차 지향 언어란?
+- 절차 지향 언어와 php
+- html의 풀네임
+- 리액트에서 ssr의 장점
+- seo의 풀네임
+- ssr과 csr의 설명
+- ssr 과정. 화면에 보이는 과정 
+- ssr에서 자바스크립트는 어떻게 되는지 
+
+**인성**
+
+- react가 vue보다 나은점
+- react로 굳이 프로젝트를 해야할 때 본인을 어떻게 설득할것인지
+
+---
+
+## 4. D사
+
+면접다운 면접을 보았다. 면접관은 hr 1명, CTO, 프론트엔드 개발자 1명으로 인터뷰를 봤으며 무난한 면접을 보았다. 
+
+### 1차
+
+**이력서에 대한 내용**
+
+- 처음부터 끝까지 설계한 프로젝트가 있는지
+- 대학교는 어디에 있는지
+- 1년 5개월의 공백기가 있는데 이시기엔 뭘했는지
+- robot.txt 관련
+- 협업은 어떤식으로 이루어졌는지
+- 이력서의 내용과 기술을 섞어서 물어보셨으므로 기술로 넘어간다. 
+
+**기술**
+
+- tailwindcss와 scss의 차이점
+- ssr과 scr에 대한 설명 
+- 이벤트루프 
+- AI로 개발을 해본 적 있는지
+
+**인성**
+
+- 프로젝트가 80퍼정도 완성 되었고 내일이 데드라인일때 어떤 선택을 할것인지
+- 개발 공부는 어떻게 하는지 
+- 비개발자들에게 개발 플로우에 대해 설명해야할때 어떻게 할것인지 
+- 이직 사유 
+
+---
+
+12월 말부터 1월 중순까지의 인터뷰를 정리해보았다. 
+
+앞으로 면접은 더 볼것이고 과제나 코테도 볼거 같은데 어떤 질문들이 나올지 궁금해진다. 
+
+준비했던 것도 많이 물어보시지만 의외로 새로운 것들도 상당히 나와서 공부할 것들이 차차 생긴다. 
+
+면접 나오는대로 더 추가할 예정..
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"주니어 프론트엔드 개발자 면접 후기"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2026년 1월 21일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","면접",{"href":"/tags/%EB%A9%B4%EC%A0%91","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"면접"}],["$","$L3","취업",{"href":"/tags/%EC%B7%A8%EC%97%85","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"취업"}],["$","$L3","회고",{"href":"/tags/%ED%9A%8C%EA%B3%A0","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"회고"}],["$","$L3","프론트엔드",{"href":"/tags/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"프론트엔드"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","div",null,{"className":"h-28"}],["$","div",null,{"className":"h-28"}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"주니어 프론트엔드 개발자 면접 후기 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"프론트엔드 개발자 면접 경험과 질문 정리"}],["$","meta","2",{"property":"og:title","content":"주니어 프론트엔드 개발자 면접 후기"}],["$","meta","3",{"property":"og:description","content":"프론트엔드 개발자 면접 경험과 질문 정리"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-01-21"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"주니어 프론트엔드 개발자 면접 후기"}],["$","meta","8",{"name":"twitter:description","content":"프론트엔드 개발자 면접 경험과 질문 정리"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"
