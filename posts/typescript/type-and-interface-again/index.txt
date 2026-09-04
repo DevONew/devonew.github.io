@@ -1,0 +1,172 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/5a8e9525e2362ef7.css","style"]
+0:{"P":null,"b":"fDbnyWvaUQhb94qL38jsS","p":"","c":["","posts","typescript","type-and-interface-again",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","typescript","d"],{"children":[["slug","type-and-interface-again","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5a8e9525e2362ef7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","typescript","d"],"$L8",{"children":[["slug","type-and-interface-again","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],"default"]
+18:T1bbd,
+<figure class="text-center">
+  <img src="/image/think.webp" alt="THINK" class="mx-auto" />
+  <figcaption>
+    <small>THINK, DevONew!, THINK!</small>
+  </figcaption>
+</figure>
+
+## type과 interface에 대해 알려주세요.
+
+또는 "type과 interface는 어떻게 쓰시나요"는 면접에 가면 생각보다 자주 듣는 질문이다. 어느정도 답변은 할 수 있지만 늘 그렇게 만족스러운 대답을 한건 아닌 느낌이 자주 든다.
+우선 면접관들의 표정이 미묘(..)했다는 점과 **이런 질문을 괜히 하지 않기 때문이다**. 그래서 이번 기회에 다시 한번 진득하게 공부를 했는데 생각보다 충격적이었다.
+나는 `type`과 `interface`는 취향차이라고 생각했는데 **설계철학**에 따라 철저하게 다르게 생긴 것이었다.
+그러니까 사실 저런 질문들의 의도는 " 이 둘의 차이(문법 차이)를 알고 있는가"가 아니라 **"이 두 개가 왜 다른 목적으로 만들어졌는지 이해하고 있는가"** 였다.
+
+둘 다 코드에서 변수나 함수의 타입을 미리 선언해두는 문법이지만 어떤게 다른지 또 어떤 목적으로 설계된건지 한번 살펴보자.
+
+## type - 타입 별칭 선언(Type Alias Declaration)
+
+`type`은 기존 타입 표현식에 식별자를 바인딩 하는것이다. 즉 이미 존재하는 타입(또는 타입 조합)에 별칭(alias)를 붙이는것이다.
+우변엔 원시 타입, 객체, 유니온(|), 인터섹션(&), 함수 시그니처, 조건부 타입, 매핑 타입까지 전부 허용된다.
+
+```ts
+type Age = number;
+
+type ID = string | number;
+
+type Handler = (e: Event) => void;
+
+type Partial<T> = { [K in keyof T]?: T[K] };
+
+type User = {
+  id: string;
+  name: string;
+};
+```
+
+핵심은 **별칭**이다. `type Age = number`라고 해도 Age가 새로운 타입을 만든게 아니라 number를 가리키는 또 다른 이름일 뿐이다.
+컴파일러 입장에서는 Age는 number의 구조적으로 동일한 참조일 뿐이라 타입 체크 시 완전 치환이 가능하다.
+
+## interface - 객체 타입 선언(Object Type DEclaration)
+
+`interface`는 JS에 원래 없던 개념이다. TS가 객체지향언어의 인터페이스 개념을 가져오게 되면서 만든 문법이다.
+그래서 오직 객체의 형태만 기술할 수 있다.( 다른 말로는 구조 계약을 명시한다고 한다.)
+
+```ts
+interface User {
+  id: string;
+  name: string;
+}
+```
+
+겉보기엔 `type`으로 쓴 객체와 똑같아보이지만 `interface`는 "이 객체는 이런 속성을 가진다"는 계약(구조)을 선언하는 문법이라 유니온이나 원시타입 별칭 같은 건 불가하다.
+
+## 결정적인 차이
+
+다 아는 내용이고 너무나 명확한 차이지만 그럼에도 정리해본다.
+
+#### 1. type의 표현 범위가 훨씬 넓다.
+
+위에서 언급 했듯이 `interface`는 객체 모양만 기술 가능하지만 `type`은 여러 **고급 타입 조작**이 가능하다.
+
+#### 2. 확장 메커니즘이 다르다.
+
+`interface`는 객체지향언어의 인터페이스를 가져왔기 때문에 `extends`로 상속 체인을 형성한다.
+
+```ts
+interface Extended extends Base {
+  name: string;
+}
+```
+
+`type`은 인터섹션(&)으로 구조적 병합을 한다.
+
+```ts
+type Base = { id: string };
+type Extended = Base & { name: string };
+```
+
+#### 3. 타입체커의 에러 리포팅 방식이 다르다.
+
+**충돌 처리 방식**이 다른데 `interface` 같은 경우, 타입충돌을 즉시 에러로 알려주고 `type`은 `never`로 계산해버려 에러없이 그냥 못쓰는 타입이 된다.
+이게 대규모 코드베이스에서는 은근히 디버깅 비용을 늘리는 지점이 된다고 한다.
+따라서 TS공식 문서에서는 명시적으로 에러 메세지가 필요할때는 `interface`를 권장한다.
+
+```ts
+interface Person {
+  name: string;
+}
+interface Person {
+  name: number;
+} // 에러 뜸: 같은 속성, 다른 타입이라 충돌
+
+type Person1 = { name: string };
+type Person2 = { name: number };
+type Staff = Person1 & Person2;
+declare const staffer: Staff;
+staffer.name; // 타입이 never로 조용히 계산됨
+```
+
+#### 4. 선언 병합은 interface만 가능하다.
+
+`interface`는 TS 컴파일러가 두 선언을 하나의 타입으로 자동 병합해준다.
+
+```ts
+interface Window {
+  customProp: string;
+}
+interface Window {
+  anotherProp: number;
+}
+```
+
+`type`의 경우 동일 스코프에서 재선언 시 `Duplicate identifier` 에러가 나는데
+그렇기 때문에 외부 라이브러리의 타입정의 확장을 할 때는 `interface`가 필수다.
+
+## 언제 무엇을 써야할까?
+
+실무에서 흔한 컨벤션 중 하나는, 컴포넌트 props처럼 유니온이나 `Pick`/`Omit` 조합이 자꾸 섞이는 곳은 `type`, API 응답 모델 처럼
+객체 정의하는 곳엔 `interface`로 권장한다.
+
+## 잠깐 성능 차이가 있나?
+
+이걸 쓰다 보니 갑자기 생각이 났는데 성능 차이가 있을까? 그래서 약간의 서치를 해본 결과,
+**대규모의 코드베이스에서는 성능차이가 실제로 있다는것을 발견했다!**
+
+[TypeScript 공식 퍼포먼스 위키](https://github.com/microsoft/TypeScript/wiki/Performance)와 [Sentry의 실제 사례](https://blog.sentry.io/slow-and-steady-converting-sentrys-entire-frontend-to-typescript/)에 따르면 `type`의 인터섹션(&)을 남발하면 코드베이스가 커질수록 타입 체크 속도가 느려진다고 한다. Sentry는 실제로 React 앱 곳곳에서 HTML 타입을 인터섹션으로 확장하던 패턴 때문에 IDE와 `tsc` 속도가 심하게 느려졌던 적이 있고, 이를 `interface extends`로 바꿔서 개선했다.
+`interface`는 내부적으로 병합된 하나의 flat 구조로 캐싱되는 반면 `type`의 인터섹션(&)은 매번 재계산이 들어가기 때문이다.
+
+그리고 성능과는 좀 다른 얘기긴 한데 `interface`가 훨씬 익숙한 문법이기 때문에 편하다고 한다.
+실제로 이 생각을 리액트 진영에서도 채택해 "기본은 `interface`, `type`은 필요해지면 바꾼다"는 전략을 쓴다.
+
+## 결론
+
+팀 프로젝트 세팅글에 잠깐 짧게 썼었는데 어딘가에 기록하지 않으면 그대로 까먹을거 같아서 블로그에 정리해봤다.
+생각보다 합리적인 배경들이라 이해하는데 더 쉬웠던거 같다.
+차이를 무작정 달달 외웠을땐 자주 헷갈렸는데 이렇게 배경부터 보니 더 이상 헷갈릴 일은 없을듯 싶다.
+
+## 출처
+
+- [TypeScript Handbook — Object Types (Type Aliases vs Interfaces)](https://www.typescriptlang.org/docs/handbook/2/objects.html)
+- [TypeScript Performance Wiki](https://github.com/microsoft/TypeScript/wiki/Performance)
+- [Sentry Blog — Slow and Steady: Converting Sentry's Entire Frontend to TypeScript](https://blog.sentry.io/slow-and-steady-converting-sentrys-entire-frontend-to-typescript/)
+- [Ben Ilegbodu — TypeScript React props: interfaces vs type aliases](https://www.benmvp.com/blog/typescript-react-props-interfaces-type-aliases/)
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"type과 interface 다시 생각하기"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2026년 5월 20일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","TypeScript",{"href":"/tags/TypeScript","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"TypeScript"}],["$","$L3","Frontend",{"href":"/tags/Frontend","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Frontend"}],["$","$L3","타입",{"href":"/tags/%ED%83%80%EC%9E%85","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"타입"}],["$","$L3","React",{"href":"/tags/React","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"React"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","div",null,{"className":"h-28"}],["$","$L3",null,{"href":"/posts/claude/claude-code-part-2","className":"flex flex-col justify-center h-28 px-6 py-4 rounded-lg border border-border hover:bg-accent/50 transition-colors group md:text-right","children":[["$","div",null,{"className":"text-sm text-muted-foreground mb-2","children":"다음 글 →"}],["$","div",null,{"className":"font-medium group-hover:text-primary transition-colors line-clamp-2","children":"Claude로 개발하기"}]]}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"type과 interface 다시 생각하기 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"괜히 물어보는게 아님. 두번 생각하기"}],["$","meta","2",{"property":"og:title","content":"type과 interface 다시 생각하기"}],["$","meta","3",{"property":"og:description","content":"괜히 물어보는게 아님. 두번 생각하기"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-05-20"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"type과 interface 다시 생각하기"}],["$","meta","8",{"name":"twitter:description","content":"괜히 물어보는게 아님. 두번 생각하기"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

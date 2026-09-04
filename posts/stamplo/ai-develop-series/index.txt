@@ -1,0 +1,195 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/5a8e9525e2362ef7.css","style"]
+0:{"P":null,"b":"fDbnyWvaUQhb94qL38jsS","p":"","c":["","posts","stamplo","ai-develop-series",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","stamplo","d"],{"children":[["slug","ai-develop-series","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5a8e9525e2362ef7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","stamplo","d"],"$L8",{"children":[["slug","ai-develop-series","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],"default"]
+18:T241a,
+> AI 시리즈는 총 3편으로 되어있으며 이번 stamplo 프로젝트를 하며 적용했던 AI 스킬들에 대해 정리 해보았습니다.
+> 단순 사용보단 효율적인 나만의 플로우와 검증 방법에 대한 고민을 적어봤습니다.
+
+## MCP를 만나기까지
+
+퍼블리싱을 할때 주로 사용하는 워크플로우에 대해 서술해보았다.
+물론 더 새로운 방법이 있을 수도 있고 좋은 스킬이 나왔을 수도 있지만, 우선은 내가 일하기에 효율적이고 자주 사용한 방법이다.
+
+처음엔 AI가 이미지를 읽을 수 있게 되면서, 화면을 캡처해서 첨부하고 "이대로 개발해달라"고 요청한 적이 많았다.  
+하지만 캡처하고, 정해진 폴더에 저장하고, 필요하면 편집하거나 파일명까지 바꿔주는 과정이 매번 부가적인 일로 따라붙었다.
+이 비효율적이고 귀찮은 작업들을 어떻게 타파할지 찾아보던 도중 **MCP**에 대해 알게 되었다.
+
+> MCP란  
+> 2024년 11월 25일 Anthropic이 발표한 개방형 프로토콜로 LLM 모델이 외부 앱과 연동할 수 있게 하는 스펙
+
+이걸 잘 이용하면 내가 원하는 작업을 훨씬 수월하게 이용할 수 있다고 생각해 그때부터 MCP를 공부하면서 나름의 워크플로우를 미리 설계해두고 있었다. (당시 퇴사한 상태라 다음 회사에 가면 적용해볼 생각이었다.)  
+그러다 Stamplo 프로젝트에 들어가게 됐는데, 마침 팀에서 쓰는 디자인 툴이 Figma였고 여기에도 MCP를 연결할 수 있어서, 미리 짜둔 워크플로우를 실전에 적용해볼 수 있었다.
+
+## 1. Figma MCP 연동하기
+
+본격적인 작업을 하기 앞서서 내가 쓰는 ai와 Figma를 연동을 한다.
+나는 claude code를 사용중이었고 연동하는 방법은 친절하게도 피그마 디자인 페이지에 들어가보면 오른쪽 상단에 MCP 연결 섹션에 나와있다.
+
+<figure class="text-center">
+  <img
+    src="/image/mcp.png"
+    alt="MCP 섹션을 클릭하면 나오는 가이드"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>MCP 섹션을 클릭하면 나오는 가이드</small>
+  </figcaption>
+</figure>
+
+```bash
+claude plugin install figma@claude-plugins-official
+```
+
+가이드대로 터미널에 실행한 뒤 claude 서버 내에서 /mcp 명령어를 실행해본다.
+
+<figure class="text-center">
+  <img
+    src="/image/mcp-term.png"
+    alt="현재 나는 연결 되어있다"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>현재 나는 연결 되어있다</small>
+  </figcaption>
+</figure>
+
+제일 처음 접속 시 연결이 안되어있는데 연결하고 알려주는대로 인증하고 권한 승인을 하면 연결이 된다.  
+그리고 한가지 더 확인 해야되는 점이 터미널은 연결이 되어있어도 vscode내 클로드 플러그인을 사용해 개발을 하고 있다면 이 플러그인에서도 연동이 되었는지 확인을 한다.
+일단 처음 이 방법을 설계하고 실행했을 당시엔 터미널과 플러그인 사이에 싱크오류가 있었기 때문에 더블 체크를 했어야됐던 기억이 있다.
+
+이렇게 연결이 되고 나면, **Figma 파일 링크만 넘겨줘도 Claude Code가 해당 노드의 레이아웃, 컴포넌트, 스타일 값을 직접 읽어올 수 있다.**
+
+## 2. MD 작성하기
+
+만들어야 할 MD 문서는 크게 두 유형으로 나뉜다.
+
+- **전반적인 코드 컨벤션과 규칙을 담은 MD 파일** — 프로젝트 전체에 적용되는 규칙
+- **페이지별 지시 MD 파일** — 페이지마다 다른, 반응형 규칙이나 컴포넌트 재사용 지점 같은 구체적인 개별 지시
+
+### 코드 컨벤션과 디자인 시스템 MD
+
+프로젝트 전체에 적용되는 규칙은 [이 블로그 포스팅 글](/claude-code-part-2/)을 참고 하면 된다. 아무래도 시간이 지나다 보니 업데이트가 많이 되어 조금씩은 변했지만 전반적으로 저 틀을 유지하고 있다.
+
+아 그리고 하나 더 추가하자면 이제 기존 컴포넌트들을 모아둔 MD를 만든다. 컴포넌트 하나가 완성되면 하나씩 컴포넌트를 추가 하게 하는데 이는 이름이 겹치고 똑같은 컴포넌트를 만드는 것을 방지하고 기존 컴포넌트를 재사용하게 하는데에 목적이 있다.
+새로운 컴포넌트를 만들기 전 이 컴포넌트 파일을 참고하게 하고 없다면 새로운 컴포넌트를 만드는 식으로 써두면 더 좋다.
+
+### 페이지별 지시 MD
+
+페이지별 지시 MD 파일은 다음과 같은 규칙을 가지고 있다.
+
+1. md 하나당 한 페이지로 제한하기
+2. 최대한 잘게 쪼개서 업무를 분배하기
+3. 반응형이나 유의해야할 패턴이 있다면 설명 넣기
+
+쪼개는 이유는 여러 가지다. 두루뭉실하게 지시하는 것보다 훨씬 결과물이
+확실하게 나오고, 태스크가 나눠져 있으면 나중에 디버깅하기도 쉬우며,
+토큰도 절약되어 효율적으로 사용할 수 있기 때문이다.
+
+**작업 흐름은 초안 → plan mode 순이다. 초안에는 페이지 개요를 간단히
+넣고 `<task>` 부분만 상세히 쓴다. 나머지 디테일은 plan mode 단계에서 채워진다.**
+
+다음은 내가 실제로 사용한 MD 문서이다.
+
+```md
+## 작업 전 학습 리스트
+
+- /md/ai-development-guardrails.md (개발 가이드라인)
+- /md/design-system-guide.md (디자인 시스템)
+- /md/coding-guide.md (코딩 스타일 및 팀 컨벤션)
+- 참고할 컴포넌트/페이지 파일 경로
+- 참고할 외부 링크 (MCP로 연결된 Figma 링크)
+
+## 페이지 개요
+
+브로셔 페이지는 우선 퍼블리싱과 간단한 컴포넌트 분리 작업만 진행한다.
+현재 페이지엔 헤더가 없지만 레이아웃 상 자동으로 포함될 예정이라 별도로
+만들지 않는다. 전체 페이지는 이미지, 인디케이터, 레이아웃 세 개의
+컴포넌트로 구성되며, 이번엔 퍼블리싱 작업만 진행한다.
+
+- 홀수 px 값은 되도록 짝수 px로 반올림해서 구현한다.
+
+## 반응형 규칙
+
+디자이너와 협의한 사항들을 넣는다.
+
+1. 화면 폭이 좁아질 때 컴포넌트가 같이 줄어드나요, 아니면 고정 크기로
+   유지되나요?
+   → 같이 줄어들어야 합니다.
+2. 최대 너비 고정하고 그 이후엔 양쪽 마진만 늘어나는 방식으로
+   구현하시는 건가요?
+   → 네, 최대 너비 값을 고정하고 늘어나는 방식으로 구현하는 걸로
+   생각했어요.
+
+## 작업 플랜
+
+<task1>
+Figma: [브로셔 이미지 프레임](https://www.figma.com/design/kOAJevPAjCIHpCFnSpSJiU/Stamply?node-id=412-4&m=dev)
+
+브로셔 이미지를 넣을 수 있는 컴포넌트를 만들어줘. `public/images` 폴더에
+image_brochure1, 2, 3이 있어. 좌우 터치해서 이미지가 바뀌어야 함.
+</task1>
+
+<task2>
+Figma: [인디케이터 프레임](https://www.figma.com/design/kOAJevPAjCIHpCFnSpSJiU/Stamply?node-id=412-6&m=dev)
+
+인디케이터. 터치해도 이동하지 않고 보여주기만 하는 용도. 각 페이지일 때
+인디케이터가 활성 표시되고, 최대 10개, 1장일 때 표시하지 않음.
+</task2>
+
+<task3>
+Figma: [가이드 오버레이 프레임](https://www.figma.com/design/kOAJevPAjCIHpCFnSpSJiU/Stamply?node-id=190-1719&m=dev)
+
+최상단 지원 안내 가이드 오버레이. 최초 진입 시에만 보이고, 어디를 눌러도
+사라져야 함.
+</task3>
+... (생략)
+```
+
+그 외에 반응형 규칙이나 애매한 지점들은 명시를 해줌으로써 ai가 임의로 작업하지 않게 막아둔다.  
+컴포넌트도 마찬가지로, 목록 MD를 먼저 확인하게 해서 새로 만들기 전에 기존 자산부터 찾아 쓰도록 범위를 좁혔다.
+
+## 3. 결과 확인 후 추가 수정
+
+보통 이렇게 태스크를 잘게 쪼개면 전반적으로 크게 틀어지는 일은 없다.
+대신 프롬프팅에 따라 빠진 부분이 종종 생긴다.
+
+빠진 부분은 대부분 두 가지 원인이다.
+
+- 협의가 안 된 부분 — 다시 협의한 뒤 더 간단한 태스크로 만들어 반복한다.
+- 프롬프팅을 놓친 부분 — 마찬가지로 태스크를 다시 쪼개 반복한다.
+
+그 외 디자인이 아직 정해지지 않았거나 임의로 판단해야 하는 부분은, 우선 목업 버전으로 뼈대만 만들어달라고 한 뒤 확인하고 나서 정교하게
+작업해달라고 요청하는 방식도 쓴다.
+
+## 마치며
+
+엄청나게 복잡하게 말한 것 같지만 사실 별거 없다. 초반에 가이드 MD만 잘 만들어두면 후반으로 갈수록 빛을 발한다.
+MCP 연동하기 → 프로젝트 전반적인 MD 만들기 → 페이지별 MD 만들기 → 필요하면 수정하기. 간단하게 말하면 이렇게 된다.  
+아마 크게 혁신적인 방법이 나오지 않는 이상 앞으로도 이 방식을 베이스로 계속 다듬어갈 생각이다.
+
+\+ 최근엔 오케스트레이션부터 화면 확인, 그 자리에서 수정까지 되는 ADE인 Orca를 살펴보며 3번을 좀 더 효율적으로 하는 방법에 대해 찾는 중이다. (Orca에 대해서는 조만간 따로 정리할 예정)
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"내가 프로젝트에서 AI로 퍼블리싱한 방법"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2026년 6월 1일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","Stamplo",{"href":"/tags/Stamplo","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Stamplo"}],["$","$L3","Team Project",{"href":"/tags/Team%20Project","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Team Project"}],["$","$L3","AI",{"href":"/tags/AI","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"AI"}],["$","$L3","UI",{"href":"/tags/UI","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"UI"}],["$","$L3","Frontend",{"href":"/tags/Frontend","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Frontend"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","div",null,{"className":"h-28"}],["$","div",null,{"className":"h-28"}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"내가 프로젝트에서 AI로 퍼블리싱한 방법 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"Stamplo 팀 프로젝트 속 AI 개발 시리즈 1편"}],["$","meta","2",{"property":"og:title","content":"내가 프로젝트에서 AI로 퍼블리싱한 방법"}],["$","meta","3",{"property":"og:description","content":"Stamplo 팀 프로젝트 속 AI 개발 시리즈 1편"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-06-01"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"내가 프로젝트에서 AI로 퍼블리싱한 방법"}],["$","meta","8",{"name":"twitter:description","content":"Stamplo 팀 프로젝트 속 AI 개발 시리즈 1편"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

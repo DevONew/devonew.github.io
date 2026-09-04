@@ -1,0 +1,437 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/5a8e9525e2362ef7.css","style"]
+0:{"P":null,"b":"fDbnyWvaUQhb94qL38jsS","p":"","c":["","posts","stamplo","mission-page-animation",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","stamplo","d"],{"children":[["slug","mission-page-animation","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5a8e9525e2362ef7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","stamplo","d"],"$L8",{"children":[["slug","mission-page-animation","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],"default"]
+18:T4147,
+<figure class="text-center">
+  <img
+    src="/image/stamplo/new-animation-mission.gif"
+    alt="미션 완료 후 미션 페이지"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>애니메이션이 들어간 최종 버전</small>
+  </figcaption>
+</figure>
+
+## 애니메이션을 맡게 된 이유
+
+우선 1차 mvp가 필수 기능 개발 및 구현이었다면 2차 mvp는 이제 리팩토링과 2순위 기능 추가 개발 그리고 UI·UX 고도화였다.
+애니메이션도 그 고도화 항목 중 하나였고, 1차 mvp 이후 받은 피드백에도 애니메이션 요청이 있었다.
+우리는 어드민 페이지와 유저 페이지 양쪽 다 애니메이션을 넣기로 했었는데, 나는 유저사이드 쪽을 맡기로 팀원과 협의했다.
+평소 여러 앱을 쓰면서 인터랙션을 직접 구현해보고 싶었지만 실무에서는 애니메이션을 다뤄볼 기회가 적었기 때문에 이번이 좋은 기회였다.
+
+## 구현 해야 할 것들
+
+<figure class="text-center">
+  <img
+    src="/image/stamplo/animation-meeting.png"
+    alt="구현 리스트 회의록"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>구현 리스트 회의록</small>
+  </figcaption>
+</figure>
+
+유저 사이드에는 총 4 챕터가 있는데 입장하기, 브로셔페이지, 미션페이지, 리워드(미션완료 페이지)가 있다.  
+다른 페이지들은 특별한 이슈가 없었고 다 무난하게 구현했기 때문에 간략하게 정리, 생략하고 공을 많이 들인 **미션 페이지**를 상세히 써볼려고 한다.
+
+## 입장하기와 브로셔 페이지
+
+여기서는 상대적으로 애니메이션이 간단하게 들어가있다.
+우선 사용자 경험을 고려 했을때 입장하기는 사실 상 별 정보가 없기에 빨리 다음 페이지로 넘어갈 것을 고려해 애니메이션 fade-out을 제거했다.
+
+**입장하기 페이지**
+
+```tsx
+// components/user/entry/EntryClient.tsx
+const EntryClient = ({
+  eventId,
+  posterImageUrl,
+  hasBrochure,
+}: EntryClientProps) => {
+  const destination = `/event/${eventId}/${hasBrochure ? "brochure" : "mission"}`;
+
+  return (
+    <main className="h-full overflow-hidden bg-white flex justify-center">
+      <div className="w-full max-w-100.5 h-full flex flex-col items-center justify-center px-12 pb-10 pt-14 min-h-0">
+        <div className="animate-fade-up min-h-0 w-full flex justify-center">
+          <EventPoster
+            src={posterImageUrl}
+            width={300}
+            height={440}
+            maxHeight="min(440px, calc(100vh - 136px))"
+          />
+        </div>
+
+        <div className="mt-5.5 w-full max-w-76 animate-fade-up-delay-1">
+          <Link href={destination}>
+            <ThemedButton className="w-full active:scale-97 transition-transform">
+              시작하기
+            </ThemedButton>
+          </Link>
+        </div>
+
+        <p className="... animate-fade-up-delay-2">powered by stamplo</p>
+      </div>
+    </main>
+  );
+};
+```
+
+```css
+/* app/globals.css */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fade-up 0.5s ease-out both;
+  }
+  .animate-fade-up-delay-1 {
+    animation: fade-up 0.5s ease-out both;
+    animation-delay: 150ms;
+  }
+  .animate-fade-up-delay-2 {
+    animation: fade-up 0.5s ease-out both;
+    animation-delay: 300ms;
+  }
+}
+```
+
+**질문1: motion으로도 충분히 만들 수 있는 애니메이션인데 왜 그냥 CSS로 구현했는가.**  
+음...정말 굳이라서 생각해서 쓰지 않았다. 진입 애니메이션은 한번 재생되고 끝나기 때문에 언제 끝났는지 코드가 알 필요가 없다.
+또한 css로 구현할 수 있는것이기 때문에 앞으로 나오는 애니메이션 코드들은 웬만해선 css로 구현 했다.
+
+반대로 브로셔 페이지는 슬라이드 페이지에서 바로 미션 페이지로 넘어가는 것이 흐름이 뚝 끊기고 어색하여 exit 애니메이션이 필요하다고 판단해 motion을 사용했다.
+
+**브로셔 페이지**
+
+```tsx
+// components/user/brochure/BrochureClient.tsx
+const [exiting, setExiting] = useState(false);
+const isLastPage = images.length > 0 && currentIndex === images.length - 1;
+
+useEffect(() => {
+  if (isLastPage) {
+    router.prefetch(`/event/${eventId}/mission`);
+  }
+}, [isLastPage, eventId, router]);
+
+const handleGoMission = () =>
+  !exiting &&
+  (setExiting(true),
+  setTimeout(() => router.push(`/event/${eventId}/mission`), 300));
+
+return (
+  <AnimatePresence>
+    {!exiting && (
+      <motion.div
+        key="brochure-content"
+        className={cn(
+          "bg-gomin-white flex flex-col items-center pt-4 pb-[calc(2.5rem+env(safe-area-inset-bottom))]",
+          showGuide ? "" : "animate-fade-in",
+        )}
+        exit={{ opacity: 0, transition: { duration: 0.35, ease: "easeIn" } }}
+      >
+        {/* ...슬라이더, 인디케이터, FloatingActionButton... */}
+      </motion.div>
+    )}
+  </AnimatePresence>
+);
+```
+
+**질문2: prefetch를 쓴 이유는?**  
+exit 애니메이션이 끝난 뒤에야 라우팅이 시작돼서, 그 300ms만큼 다음 페이지 로딩도 늦게 시작됐다. 그래서 버튼을 누르는 시점이
+아니라 **마지막 장에 도달한 시점**에 미리 다음 페이지를 받아두기로 했다. exit 애니메이션이 재생되는 동안 로딩이 백그라운드에서
+함께 끝나, 라우팅되는 순간 화면이 바로 뜬다.
+
+**질문3: `<Link>`는 왜 안썼는가?**  
+링크 컴포넌트를 안 쓴 이유는 "클릭 즉시 이동"이 아니라 "애니메이션 끝나고 이동"이 필요해서, 라우트 타이밍 때문에, 이동 시점을 코드가 직접 제어할 수 있는 router.push를 썼다.
+참고로 `<Link>` 컴포넌트 안에 이 prefetch가 [내장되어있다고 한다](https://nextjs.org/docs/app/api-reference/components/link).
+
+PR: [#268 feat: 엔트리/브로셔 페이지 진입·퇴장 애니메이션 추가](https://github.com/gomin-people/Stamplo/pull/268)
+
+## 미션 페이지
+
+<figure class="text-center">
+  <img
+    src="/image/stamplo/bug-ani.gif"
+    alt="아오 이게 아닌데"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>아오 이게 아닌데</small>
+  </figcaption>
+</figure>
+
+미션 페이지는 지난번 [브로셔 페이지 포스팅](/posts/stamplo/brochure-overlay-ssr/) 마냥 여러 전략을 고려했다.
+**우선 애니메이션을 그냥 넣었을 때는 qr을 찍고 미션 페이지로 돌아올때마다 모든 스탬프의 애니메이션이 동작했다...
+당연히 원하지 않는 동작이고 제일 최근에 클리어한 미션 스탬프만 애니메이션이 되어야 한다.**
+
+원하는 바를 위해선 가장 최근에 완료된 미션이 무엇인지부터 알아야 했는데, 미션 목록 API는 항상 최신 완료 상태를 통째로 내려줄 뿐 그중 무엇이 방금 새로 찍힌 건지는 알려주지 않는다.
+**새로 찍힌 미션 하나만 정확히 특정하는 것**이 시작이라고 생각했다.
+
+### 해결 방법 1. useRef 사용하기
+
+가장 먼저 떠올린 방법은 useRef를 이용하는 것이었다. 기존 상태, 이전 완료 미션 목록을 저장해두고, 새 랜더와 비교해서 새로 늘어난 ID를 찾아 클라이언트 상태만으로 해결 할려고 했다.
+
+하지만 QR을 찍고 미션 페이지로 돌아오는 방식이 `router.push()`가 아니라 `window.location.assign()`였다.  
+이게 왜 문제냐면 페이지가 새로 로드되기 때문에 React 컴포넌트 트리 자체가 통째로 사라지므로 `useRef`의 값도 이전 상태와 함께 초기화된다. 따라서 탈락..ㅜㅜㅜㅜ
+
+**`window.location.assign()`을 썼던 이유:** `router.push()`를 쓰면 모바일에서 카메라 스트림이 붙어있게 되는 문제가 있어 의도적으로 하드 네비게이션을 쓰고 있다고 한다.  
+PR: [#85 Feat: QR 체크 페이지 완료](https://github.com/gomin-people/Stamplo/pull/85)
+
+### 해결 방법 2. — sessionStorage 시용하기
+
+페이지가 완전 새로 마운트라는 가정 뒤에서도 살아남을 수 있는 sessionStorage도 검토했다.
+기술적으로는 가능했지만, 이 하나의 값을 동기시키고 별도 저장소를 새로 들여오는 게 과하다고 판단해 이것도 패스~
+
+### <mark>해결 방법 3. — URL 쿼리스트링 (`?newMission=id`) 넣기</mark>
+
+**결국 현재 구조에선 클라이언트에서 처리 하기 어렵다고 판단하고 서버에서 처리하기로 했다.**  
+QR 스캔 시 호출하는 `/api/v1/qr/mission-check/[token]` 응답에는 이미 방금 완료된 `mission.id`가 들어있었다.
+이 값을 미션 페이지 이동 시 쿼리스트링에 실어 보내는 것으로 해결했다.
+
+**1. 응답에서 `missionId`를 꺼낸다 — `completeMissionFromQr.ts`**
+
+```diff
+ type CompleteMissionFromQrResult =
+   | {
+       type: "completed"; // 미션 완료
++      missionId: number;
+     }
+   | { ... };
+
+ if (response.status === 201) {
+-  return { type: "completed" };
++  return {
++    type: "completed",
++    missionId: (body as { data?: { mission?: { id?: number } } })?.data
++      ?.mission?.id as number,
++  };
+ }
+```
+
+**2. 페이지 안 카메라로 스캔한 경우 — `QrCheckClient.tsx`**
+
+```diff
+ if (missionCheckResult.type === "completed") {
+-  navigateToMissionPage();
++  window.location.assign(
++    `/event/${currentEventId}/mission?newMission=${missionCheckResult.missionId}`
++  );
+   return;
+ }
+
+- navigateToMissionPage: () => {
+-   window.location.assign(`/event/${eventId}/mission`);
+- },
+```
+
+**3. 네이티브 카메라로 직접 QR을 찍은 경우 — `app/api/v1/qr/mission-check/[token]/route.ts`**
+
+```diff
+ return NextResponse.redirect(
+-  new URL(`/event/${missionCheckData.qrCode.events_id}/mission`, request.url)
++  new URL(
++    `/event/${missionCheckData.qrCode.events_id}/mission?newMission=${missionCheckData.qrCode.missions_id}`,
++    request.url
++  )
+ );
+```
+
+두 경로 모두 같은 형태의 `?newMission=id`를 만들어 미션 페이지로 넘긴다.  
+이 두 경로를 쓴 이유는 4번째 방법으로 인해 썼다.
+
+**4. 미션 페이지(서버 컴포넌트)가 쿼리스트링을 읽어 내려준다 — `mission/page.tsx`**
+
+```diff
+ type PageProps = {
+   params: Promise<{ eventId: string }>;
++  searchParams: Promise<{ newMission?: string }>;
+ };
+
+-export default async function MissionPage({ params }: PageProps) {
++export default async function MissionPage({ params, searchParams }: PageProps) {
+   const { eventId: eventIdParam } = await params;
++  const { newMission } = await searchParams;
++  const newlyStampedId = newMission ? Number(newMission) : null;
+   // ...
+   return (
+     <MissionPageClient
+       eventId={eventIdParam}
+       initialMissions={initialMissions}
+       initialParticipant={initialParticipant}
++      newlyStampedId={newlyStampedId}
+     />
+   );
+ }
+```
+
+### 해결 방법 4. — 스토어를 이용하기
+
+이후, qr 카메라 페이지 쪽에서 `window.location.assign()`로 인해 뒤로가기 로직이 먹히지 않는 버그가 발생했고 그래서 qr 촬영 페이지를 qr 모달로 바꾸게 되었다.
+이로 인해 애니메이션을 구현하는 방법에도 영향이 가게 되어 일부분을 수정하게 되었다.
+
+위에서 말했듯 qr을 찍는 방법이 폰 내 네이티브 카메라로 찍는 방법과 웹 내 우리가 구현한 카메라로 찍는 게 있는데 후자 케이스를 **콜백 + 전역 스토어**로 바꾸게 되었다.
+
+**1. 웹 카메라(`QrCheckClient`)는 페이지 이동 대신 콜백을 호출한다**
+
+```diff
+ if (missionCheckResult.type === "completed") {
+-  window.location.assign(
+-    `/event/${currentEventId}/mission?newMission=${missionCheckResult.missionId}`
+-  );
++  navigateToMissionPage(missionCheckResult.missionId); // = onMissionComplete
+   return;
+ }
+```
+
+**2. 미션 페이지가 이 콜백을 받아 zustand 스토어에 바로 꽂는다 —
+`MissionPageClient.tsx`**
+
+```diff
+   // QR 체크 안내
+-  window.location.assign(`/event/${eventId}/qr-check`);
++  setIsQrCheckOpen(true);
+
++  const handleMissionComplete = (missionId: number) => {
++    queryClient.invalidateQueries({ queryKey: ["participant", "missions"] });
++    setNewlyStampedMissionId(missionId);
++  };
+
++  <QrCheckModal
++    isOpen={isQrCheckOpen}
++    onClose={() => setIsQrCheckOpen(false)}
++    eventId={eventId}
++    onMissionComplete={handleMissionComplete}
++  />
+```
+
+네이티브 카메라로 직접 QR을 스캔하는 경로(모달을 거치지 않는 경로)는
+여전히 서버가 `?newMission=id`를 내려주므로, 그 값도 같은 스토어로
+흡수하도록 폴백을 남겨뒀다.
+
+```ts
+// MissionPageClient.tsx
+useEffect(() => {
+  if (newlyStampedId != null) setNewlyStampedMissionId(newlyStampedId);
+}, [newlyStampedId, setNewlyStampedMissionId]);
+```
+
+### 빵빠레 붙이기
+
+마지막으로 모든 미션을 완료하면 빵빠레가 터지는 모션을 넣고 싶었다.  
+`canvas-confetti` 라이브러리를 사용했는데 별도 렌더링 없이 canvas에 직접
+그려서 React 리렌더와 무관하게 동작하고, 번들 크기가 가볍고 커스터마이징이
+자유롭다는 장점이 있다.
+`MissionPageClient`에 직접 넣었더니 코드가 너무 방대해져서 `useCelebration` 훅으로 분리했다.
+
+```ts
+// hooks/useCelebration.ts
+export function useCelebration() {
+  const hasCelebrationFired = useHasCelebrationFired();
+  const markCelebrationFired = useMarkCelebrationFired();
+
+  const handleStampReady = () => {
+    if (hasCelebrationFired) return;
+    markCelebrationFired();
+
+    setTimeout(() => setShowCelebration(true), 600); // 축하 메시지 shake
+
+    setTimeout(() => {
+      import("canvas-confetti").then(({ default: confetti }) => {
+        confetti({
+          particleCount: 60,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0, y: 0.7 },
+        });
+        confetti({
+          particleCount: 60,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1, y: 0.7 },
+        });
+      });
+    }, 800);
+  };
+
+  return { showCelebration, handleStampReady };
+}
+```
+
+마지막 미션 완료 여부를 확인하고 각 타이밍을 개별로 조절하기엔 복잡해서,
+도장 애니메이션 → shake → 빵파레까지를 `setTimeout` 하나의 흐름으로 묶어
+처리했다.
+
+`canvas-confetti`는 모든 미션을 완료했을 때만 필요한 드문 케이스라
+`import("canvas-confetti")`로 동적 import했다. gzip 기준 7KB 정도라
+로딩 지연은 체감되지 않았다.
+
+### 빵파레도 스토어로 관리하기
+
+기존에는 onStampReady가 MissionStamp에만 연결되어 있어 리스트 뷰에서 빵빠레가 발생하지 않은 걸 발견했다.
+MissionItem에도 동일하게 onStampReady를 추가하고, 중복 방지 로직을 useRef 대신 zustand 스토어(hasCelebrationFired)로 교체해 뷰 전환 시 재실행을 막았다.
+
+```ts
+// stores/user.ts
+export const userStore = create(
+  combine(
+    {
+      newlyStampedMissionId: null as number | null,
+      hasCelebrationFired: false,
+    },
+    (set) => ({
+      clearNewlyStampedMissionId: () =>
+        set({ newlyStampedMissionId: null, hasCelebrationFired: false }),
+      markCelebrationFired: () => set({ hasCelebrationFired: true }),
+    }),
+  ),
+);
+```
+
+PR: [#269 feat: feat: 미션 페이지 애니메이션 추가](https://github.com/gomin-people/Stamplo/pull/269)  
+PR: [#281 feat: QRCheck 페이지 모달로 변경](https://github.com/gomin-people/Stamplo/pull/281)  
+PR: [#284 fix(user): 리스트 뷰에서 마지막 미션 완료 시 빵빠레 미실행 버그 수정](https://github.com/gomin-people/Stamplo/pull/284)
+
+### 마치며
+
+길고 긴 애니메이션 작업이 끝났다.
+사실 이 밖에도 구현한 애니메이션이 더 있지만, 상대적으로 기초적인 부분이라 여기서는 중요하게 생각한 것들만 세부적으로 정리했다. (나머지는 기초적인 부분이니까 ez)
+애니메이션을 이만큼 붙여보면서 가장 크게 느낀 건 타이밍 이슈였다. 타이밍을 맞추는 게 생각보다 훨씬 까다로웠고, 이 문제 때문에 끝내 구현하지 못한 부분도 있다. SSR 특성상 useEffect가 가장 늦게 실행되다 보니, 그 안에서 타이밍을 맞추는 게 유독 어려웠다.
+그래도 미션 스탬프가 찍히는 부분에서는 꽤 좋은 반응을 들어서 나름 뿌듯했다. 성능을 고려해 타협한 지점들이 있어 아쉬움도 남지만, 원했던 타격감은 잘 살아난 것 같아 만족스럽다.
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"유저 사이드 페이지 애니메이션 구현하기"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2026년 6월 17일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","Stamplo",{"href":"/tags/Stamplo","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Stamplo"}],["$","$L3","Team Project",{"href":"/tags/Team%20Project","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Team Project"}],["$","$L3","Frontend",{"href":"/tags/Frontend","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Frontend"}],["$","$L3","Troubleshooting",{"href":"/tags/Troubleshooting","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Troubleshooting"}],["$","$L3","Next.js",{"href":"/tags/Next.js","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Next.js"}],["$","$L3","Zustand",{"href":"/tags/Zustand","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Zustand"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","div",null,{"className":"h-28"}],["$","div",null,{"className":"h-28"}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"유저 사이드 페이지 애니메이션 구현하기 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"Stamplo 팀 프로젝트 - 미션 애니메이션 설계와 상태관리"}],["$","meta","2",{"property":"og:title","content":"유저 사이드 페이지 애니메이션 구현하기"}],["$","meta","3",{"property":"og:description","content":"Stamplo 팀 프로젝트 - 미션 애니메이션 설계와 상태관리"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-06-17"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"유저 사이드 페이지 애니메이션 구현하기"}],["$","meta","8",{"name":"twitter:description","content":"Stamplo 팀 프로젝트 - 미션 애니메이션 설계와 상태관리"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

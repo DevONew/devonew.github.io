@@ -1,0 +1,120 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/5a8e9525e2362ef7.css","style"]
+0:{"P":null,"b":"fDbnyWvaUQhb94qL38jsS","p":"","c":["","posts","stamplo","schedule-estimation-retro",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","stamplo","d"],{"children":[["slug","schedule-estimation-retro","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5a8e9525e2362ef7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","stamplo","d"],"$L8",{"children":[["slug","schedule-estimation-retro","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],"default"]
+18:T17e0,
+> 이번 포스팅은 개발보단 협업 도중 일어날 수 있는 일(그러나 일어나면 안되는)을 정리 해보았습니다.
+
+## 개요
+
+우리 팀은 PM의 주도 하에 플래닝 포커로 각 페이지의 작업량을 점수로 매겼다.
+1포인트를 6시간으로 환산해서 파트별 합계를 냈고, 나는 사용자 페이지와 관리자 페이지 양쪽 다 경험해보고 싶은 욕심에 가장 많은 페이지를 가져갔다.  
+(사용자에게 보여져 인터렉션을 하는 것과 그래도 CRUD를 만들어보는 어드민 페이지 둘 다 가치가 있다고 판단했기에..근데 지금 생각해보면 많이 만든다고 좋은건 아닌데..)
+
+<figure class="text-center">
+  <img
+    src="/image/stamplo/schedule.png"
+    alt="일정 산정 스케줄표"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>평균 8.7개를 가져가면 좋지만 제일 많이 가져간 나..</small>
+  </figcaption>
+</figure>
+
+문제는 실제 개발을 들어가고 두번째 PR을 올릴 때였다. 갑자기 내가 맡은 페이지의 일정이 생각보다 늘어질 일이 발생했다.
+
+## 왜 일정이 늘어났을까?
+
+일정이 밀리게 된 이유에는 여러가지 원인이 있었는데
+
+#### 1. 내가 담당한 페이지의 예상치 못한 개발 공수가 늘어나 일정 산정 한 것 보다 더 많은 시간이 필요하게 되었다.
+
+1차 mvp에서 내가 담당한 페이지는 입장 페이지, 브로셔 페이지, 그리고 관리자 페이지의 행사 CRUD 였는데 차례대로 개발 공수가 늘어났다.
+우선 입장 페이지에서는 [블로그 다른 포스팅](/troubleshooting-cookie/)에 있던 것처럼 쿠키 검증 하는 로직이 아예 바뀌었다.
+그리고 다음 포스팅에 나올 브로셔 페이지에서는 오버레이 쪽을 어떻게 구현할 지 또 디자인 수정 사항이 꽤나 많았다.
+그리고 관리자 페이지의 경우에는..
+
+#### 2. 멘토 피드백을 받고 나서 내가 담당한 행사 생성 CRUD의 방향이 아예 바뀌었다.
+
+이 프로젝트를 하는 동안 코드잇에서 붙여준 현업 멘토님이 있었는데 멘토링 시간 중 행사생성 페이지쪽에 대한 세세한 피드백이 들어왔다.
+지금 만든 이 행사생성 CRUD는 단순 CRUD보단 에디터 쪽에 가깝다, 에디터 입장에서 UI/UX가 어떻게 플로우가 흘러야하는지 그런 것들을 반영하다 보니 담당한 관리자 페이지들의 기획과 디자인이 아예 바뀌었다.
+
+#### 3. 코드리뷰가 생각보다 더 오래 걸렸다.
+
+아무리 약간의 개발 공수가 늘어난다고 해도 코드를 짜는 시간 자체는 그렇게까지 많이 늘지 않았다.
+오히려 코드리뷰 하는 부분에서 생각보다 시간이 더 소요 되었다.
+다들 리뷰를 굉장히 꼼꼼하게 보고 또 그거에 대한 질문과 상대방을 납득시키는 과정, 중요한 에러 수정, 그리고 그외 완성도를 위한 세세한 수정들까지 다 마친 뒤에야 approve 되었다.
+
+#### 4. 그 외
+
+14일이라는 짧은 1차 MVP 기간 안에서는 모든 코드를 완벽하게 이해하고 넘어가기보다, 우선 동작하는 걸 먼저 만들고 이후 리뷰나 질문을 받으며 이해를 채워나가는 쪽을 택한 부분도 있었다.
+나중에 질문이 들어왔을 때 바로 답하지 못하고 다시 코드를 들여다본 뒤 답변하느라 시간이 걸린 순간도 있었다.
+또한 일정을 잡을 때 "본인의 순수 개발 속도"만을 염두하고 계산했지, 리뷰를 받으며 내가 놓친 스펙을 다시 파악하고 반영하는 시간은 계산에 없었다...
+
+그렇다보니 전반적인 일정을 고려했을때 밀릴 것이 확실히 보였다.
+
+## 해결을 위한 SOS, 그리고 재분배
+
+다행히 개발 초반에 이대로는 일정 안에 끝내기 어렵겠다고 판단해서 생각이 들자마자 내가 할 수 있는 범위와 무리인 점을 다시 정리하고 팀원들에게 알렸다.
+
+<figure class="text-center">
+  <img
+    src="/image/stamplo/fail.png"
+    alt="재산정을 요청한 메시지"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>일정 실패의 현장</small>
+  </figcaption>
+</figure>
+
+혼자 끌어안지 않고 먼저 말한 덕분에 팀원들과 순위와 일정을 다시 논의할 수 있었다.
+관리자 페이지 생성 화면은 원래 3개 스텝으로 구성돼 있었는데, 나는 2스텝(브로셔 업로드)와 행사 생성 API 연동 로직을 맡고 1스텝·3스텝은 다른 팀원이 맡는 식으로 다시 나눴다.
+사진에서는 원래는 3스텝을 맡았으나 2스텝 담당 팀원이 3스텝에 있는 라이브러리를 개발하고 있어 협의 하에 2스텝을 가져오게 되었다.
+
+<figure class="text-center">
+  <img
+    src="/image/stamplo/re-schedule.jpeg"
+    alt="재분배된 작업 분담"
+    class="mx-auto"
+    style="max-width: 320px;"
+  />
+  <figcaption>
+    <small>PM의 역할 재분배</small>
+  </figcaption>
+</figure>
+
+## 마치며
+
+간만에 거하게 실패를 하며 많은 것을 배우고 느꼈다. 실무에서 배운게 아니라 팀플을 하면서 겪은 해프닝인게 정말 다행이다.
+
+정리를 해보자면:
+
+- **일정 산정에는 개발 경험치가 그대로 반영된다.** 아는 만큼 그 페이지에 뭐가 필요한지 보인다. 이번에 놓친 스펙들도 결국 겪어보지 않아서 안 보였던 부분이었고, 이 감각은 더 많이 개발해보는 것 말고는 채울 방법이 없다고 느꼈다.
+- **버퍼는 선택이 아니라 필수다.** 개발적이든 개발 외적이든 일정이 밀릴 확률은 항상 있다. 구현 시간만 딱 맞춰 잡지 말고, 그 확률을 고려해 여유를 둔 기간을 잡는 게 맞다.
+- **좋은 팀원들을 만나 운이 좋았다.** 일정이 밀릴거 같다는 것을 숨기지 않고 초반에 얘기했을 때, 팀원들은 탓하기보다 으쌰으쌰 하며 바로 같이 재분배를 고민해줬다. 실무가 아닌 팀 프로젝트였지만, 이런 팀원들을 만난 게 감사했다.
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"일정 산정이 실패한 이유"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2026년 5월 28일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","Stamplo",{"href":"/tags/Stamplo","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Stamplo"}],["$","$L3","Team Project",{"href":"/tags/Team%20Project","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Team Project"}],["$","$L3","Retrospective",{"href":"/tags/Retrospective","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Retrospective"}],["$","$L3","Project Management",{"href":"/tags/Project%20Management","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Project Management"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","div",null,{"className":"h-28"}],["$","div",null,{"className":"h-28"}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"일정 산정이 실패한 이유 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"Stamplo 팀 프로젝트 - 일정산정은 어렵다"}],["$","meta","2",{"property":"og:title","content":"일정 산정이 실패한 이유"}],["$","meta","3",{"property":"og:description","content":"Stamplo 팀 프로젝트 - 일정산정은 어렵다"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-05-28"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"일정 산정이 실패한 이유"}],["$","meta","8",{"name":"twitter:description","content":"Stamplo 팀 프로젝트 - 일정산정은 어렵다"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"

@@ -1,0 +1,270 @@
+1:"$Sreact.fragment"
+2:I[1901,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeProvider"]
+3:I[2619,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],""]
+4:I[2235,["619","static/chunks/619-ba102abea3e3d0e4.js","356","static/chunks/356-8266862225a16a8c.js","177","static/chunks/app/layout-1cdf95f93cf0a973.js"],"ThemeToggle"]
+5:I[9766,[],""]
+6:I[8924,[],""]
+c:I[7150,[],""]
+:HL["/_next/static/css/5a8e9525e2362ef7.css","style"]
+0:{"P":null,"b":"fDbnyWvaUQhb94qL38jsS","p":"","c":["","posts","stamplo","troubleshooting-cookie",""],"i":false,"f":[[["",{"children":["posts",{"children":[["category","stamplo","d"],{"children":[["slug","troubleshooting-cookie","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/5a8e9525e2362ef7.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"ko","suppressHydrationWarning":true,"children":["$","body",null,{"children":["$","$L2",null,{"attribute":"class","defaultTheme":"system","enableSystem":true,"disableTransitionOnChange":true,"children":[["$","header",null,{"className":"sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b","children":["$","div",null,{"className":"container mx-auto flex justify-between items-center py-4 px-6","children":[["$","$L3",null,{"href":"/","className":"flex items-center gap-2 text-xl font-bold hover:text-primary transition-colors","children":[["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-file-text h-5 w-5","aria-hidden":"true","children":[["$","path","1rqfz7",{"d":"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"}],["$","path","tnqrlb",{"d":"M14 2v4a2 2 0 0 0 2 2h4"}],["$","path","b1mrlr",{"d":"M10 9H8"}],["$","path","t4e002",{"d":"M16 13H8"}],["$","path","z1uh3a",{"d":"M16 17H8"}],"$undefined"]}],"Blog"]}],["$","nav",null,{"className":"flex items-center gap-6","children":[["$","$L3",null,{"href":"/","className":"text-sm hover:text-primary transition-colors","children":"홈"}],["$","$L3",null,{"href":"/tags","className":"text-sm hover:text-primary transition-colors","children":"태그"}],["$","$L3",null,{"href":"/about","className":"text-sm hover:text-primary transition-colors","children":"소개"}],["$","a",null,{"href":"https://github.com/DevONew","target":"_blank","rel":"noopener noreferrer","className":"hover:text-primary transition-colors","aria-label":"GitHub","children":["$","svg",null,{"ref":"$undefined","xmlns":"http://www.w3.org/2000/svg","width":24,"height":24,"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":2,"strokeLinecap":"round","strokeLinejoin":"round","className":"lucide lucide-github h-5 w-5","aria-hidden":"true","children":[["$","path","tonef",{"d":"M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"}],["$","path","9comsn",{"d":"M9 18c-4.51 2-5-2-7-2"}],"$undefined"]}]}],["$","$L4",null,{}]]}]]}]}],["$","main",null,{"className":"container mx-auto py-8 px-6","children":["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"border-t mt-8 py-6 px-6","children":["$","div",null,{"className":"container mx-auto text-center","children":["$","p",null,{"className":"text-sm text-muted-foreground","children":["© ",2026," DevONew Blog. All rights reserved."]}]}]}]]}]}]}]]}],{"children":["posts","$L7",{"children":[["category","stamplo","d"],"$L8",{"children":[["slug","troubleshooting-cookie","d"],"$L9",{"children":["__PAGE__","$La",{},null,false]},null,false]},null,false]},null,false]},null,false],"$Lb",false]],"m":"$undefined","G":["$c",[]],"s":false,"S":true}
+e:I[4431,[],"OutletBoundary"]
+10:I[5278,[],"AsyncMetadataOutlet"]
+12:I[4431,[],"ViewportBoundary"]
+14:I[4431,[],"MetadataBoundary"]
+15:"$Sreact.suspense"
+7:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+8:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$Ld",null,["$","$Le",null,{"children":["$Lf",["$","$L10",null,{"promise":"$@11"}]]}]]}]
+b:["$","$1","h",{"children":[null,[["$","$L12",null,{"children":"$L13"}],null],["$","$L14",null,{"children":["$","div",null,{"hidden":true,"children":["$","$15",null,{"fallback":null,"children":"$L16"}]}]}]]}]
+17:I[6905,["619","static/chunks/619-ba102abea3e3d0e4.js","158","static/chunks/158-754d87112097c4d1.js","529","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-3bf28f13425f6336.js"],"default"]
+18:T32e7,
+<figure class="text-center">
+  <img src="/image/stamplo/entry.png" alt="입장 페이지" class="mx-auto" />
+  <figcaption>
+    <small>개발을 하면서 제일 많이 보게 될 입장 페이지</small>
+  </figcaption>
+</figure>
+
+## 문제 상황
+
+위 페이지는 행사 입장하기 페이지, 즉 참여자가 행사 입장 QR을 찍으면 가장 먼저 보여지는 페이지다.
+이 페이지(`event/[eventId]/page.tsx`)에서는 [기능명세서](https://sassy-alyssum-ef3.notion.site/1-38e2ee2a5ce18059b585edb682f80f54)에 나와 있듯이 여기서 임시ID를 담은 쿠키를 발급하고(최초 접속) 조회 후 쿠키가 있다면(재접속 시) 재사용한다. 그와 동시에 `event(eventId, posterImageUrl)` 데이터도 내려주는 방식이었다.
+이 다음에 문제가 되는데, 이 페이지는 방문자에게 쿠키가 없으면 새로 발급해서 통과시키는 구조라, QR을 찍었든 안 찍었든 이 URL에 도달하기만 하면 똑같이 참여자로 등록된다.
+**그래서 QR을 찍으면 자동으로 오게 되는 이 입장 URL을, 누군가 그대로 복사해서 다른 사람에게 공유하면 행사에 참여하지 않은 사람도 그대로 입장하게 되는 게 문제였다.**
+
+## 해결 방법 - API를 분리하고 리다이렉트로 풀어보기
+
+<figure class="text-center">
+  <img
+    src="/image/stamplo/no-access.webp"
+    alt="qr-required 페이지"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>/event/{eventId}로 들어왔을때 보이는 /qr-required 페이지</small>
+  </figcaption>
+</figure>
+
+이 문제를 막기 위해 팀원들과 회의 끝에 처음엔 중간에 [랜딩(행사를 소개하거나 또는 stamplo를 홍보하는) 페이지](https://app.notion.com/p/QR-3683b767ded4804d88fdc5c3b8756a1f?source=copy_link)를 두는 방법을 생각했다.
+
+> QR스캔 → 랜딩 페이지 진입 → 랜딩 페이지에서 API로 쿠키 설정 후 리다이렉트 → 입장 페이지로 이동.
+
+하지만 이 방식은 화면이 실제로 한 번 렌더링되는 만큼, QR 페이지 →
+랜딩 페이지 → 이벤트 페이지 순서로 브라우저 히스토리에 그대로 남는다는
+문제가 있었다.
+
+그래서 위 아이디어의 핵심들-**API 분리 + 리다이렉트**-을 활용해서 서버가 즉시 응답으로 처리하는 **HTTP
+리다이렉트**로 방향을 바꿨다.
+
+> /api/v1/qr/entry/[token] : QR이 실제로 가리키는 URL로 여기서는 쿠키 설정과 리다이렉트 담당.
+
+이 응답은 HTML이 아니라 "302 + 목적지 주소"뿐이라, 브라우저는 이를 사용자가 본 화면으로 취급하지 않는다.
+그래서 브라우저에는 `/event/{eventId}`만 남게 되고, 히스토리에도 `/api/v1/qr/entry/{token}`이(가) 쌓이지 않는다.
+
+**분리 이전**
+
+```ts
+// app/api/v1/qr/entry/[token]/route.ts (분리 이전)
+
+// 쿠키 있으면 기존 참여자 재사용
+if (currentParticipant) {
+  const response = ok({
+    event,
+    participant: currentParticipant,
+    qr_code: qrCode,
+  });
+  setParticipantCookie(response, currentParticipant.event_user_id);
+  return response;
+}
+
+// 쿠키 없으면(또는 재사용 실패) 새 참여자 생성
+const response = ok({ event, participant, qr_code: qrCode });
+setParticipantCookie(response, participant.event_user_id);
+return response;
+```
+
+**분리 이후**
+
+```ts
+// app/api/v1/qr/entry/[token]/route.ts (분리 이후)
+
+// 재접속: 쿠키가 있고 그 쿠키가 가리키는 참여자가 이미 존재하는 경우
+// → 새로 만들지 않고 기존 참여자로 쿠키만 다시 설정
+if (currentParticipant) {
+  const response = NextResponse.redirect(
+    new URL(`/event/${event.id}`, request.url),
+  );
+  setParticipantCookie(response, currentParticipant.event_user_id);
+  return response;
+}
+
+// 최초 접속: 쿠키가 없거나, 있어도 가리키는 참여자가 없는 경우
+// → participant_users에 새로 insert
+// ... participant_users insert ...
+
+const response = NextResponse.redirect(
+  new URL(`/event/${event.id}`, request.url),
+);
+setParticipantCookie(response, participant.event_user_id);
+return response;
+```
+
+> features/qr/entry/api/entry.ts : 쿠키 유무를 검증하고 데이터를 내려주는 담당.
+
+쿠키 저장소에서 PARTICIPANT_COOKIE_NAME(값은 "event_user_id")이라는 이름의 쿠키를 꺼내 검증을 한다.
+쿠키가 없거나(undefined) 요청에 실패 한다면 이미지에 보이는 페이지(`/qr-required`)로 보낸다.
+쿠키검증에 성공한다면 event를 가져오는 api에 fetch 요청을 보내고 쿠키를 헤더에 담는다.( 이 이슈는 아래 따로 적어두었다.)
+
+```ts
+// features/qr/entry/api/entry.ts
+export async function getEntryEvent(eventId: string): Promise<StamplyEvent> {
+  const cookieStore = await cookies();
+  const participantCookie = cookieStore.get(PARTICIPANT_COOKIE_NAME);
+
+  if (!participantCookie) {
+    redirect("/qrRequired"); // 쿠키 없으면 여기서 차단
+  }
+
+  const res = await fetch(`${baseUrl}/api/v1/participant/events/${eventId}`, {
+    headers: {
+      Cookie: `${PARTICIPANT_COOKIE_NAME}=${participantCookie.value}`,
+    },
+    cache: "no-store",
+  });
+
+  if (!res.ok) {
+    redirect("/qrRequired");
+  }
+
+  const { data: event } = (await res.json()) as ApiDataResponse<StamplyEvent>;
+  return event;
+}
+```
+
+따라서 전반적인 플로우는 이렇게 된다.
+
+> QR 스캔 → /api/v1/qr/entry/{token} 진입 (QR이 발행한 실제 URL)
+> → 쿠키 설정 + 즉시 리다이렉트 → /event/{eventId} (여기서 쿠키를 검증하며 데이터 조회)
+
+PR: [PR #54 — feat(user): 이벤트 진입 페이지 구현 및 테마 컬러 적용](https://github.com/gomin-people/Stamplo/pull/54)
+
+## 물론 한계가 있긴 하다.
+
+#### /api/v1/qr/entry/{token}를 아는경우
+
+히스토리가 안보이게 조치를 해놓긴 했으나 만약 `/api/v1/qr/entry/{token}`URL를 안다면 접속은 가능하다.  
+그러나 **이 설계는 "완전 차단"이 목표가 아니라 "QR을 거치지 않고 들어오는 걸 충분히 어렵게 만드는" 정도로 범위를 좁히는데 의의**를 두었다.
+이 페이지를 사용하는 유저층은 모바일 브라우저로 들어오는 행사 참여자층인데 PC 개발자도구처럼 쉽게 확인할 수단이 마땅치 않다.
+또한 `/api/v1/qr/entry/{token}`이라는 주소 자체가 QR 이미지 안에만 인코딩돼 있고 그 어디에 외부로 유출되어 있지 않으니 알아내기 힘들다.
+
+#### QR 이미지를 사진으로 찍어 공유하는 경우
+
+URL 공유는 고사하고 QR 자체를 사진으로 찍어 전달하면, 받는 사람도 그 사진을 스캔해서 들어올 수 있다.
+서버 입장에서는 QR을 직접 스캔한 것인지 사진을 다시 스캔한 것인지 구분할 방법이 없고, 이건 URL 공유보다 막기가 더 어려운 경로다.
+하지만 **Stamplo의 리워드는 오프라인 현장에서 확인하고 지급되는 것이므로, 몇 명이 QR을 더 스캔하든 실제 리워드는 참여자 본인이 행사장에 와야만 받을 수 있다.**
+훗날 서비스가 확장이 되고 리워드 지급 형식이 바뀌게 된다면 그떄는 위치 공유같은 기능을 넣지 않을까 싶다.
+
+## 두번째 문제 상황 개요
+
+일단 위 [PR #54](https://github.com/gomin-people/Stamplo/pull/54)를 올렸을때 얘기다.
+페이지가 데이터를 가져올 때, 쿠키를 수동으로 꺼내 요청 헤더에 실어 보내는 방식으로 짠것을 볼 수 있는데
+
+```ts
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+const res = await fetch(`${baseUrl}/api/v1/participant/events/${eventId}`, {
+  headers: {
+    Cookie: `${PARTICIPANT_COOKIE_NAME}=${participantCookie.value}`,
+  },
+  cache: "no-store",
+});
+```
+
+이 부분에서 리뷰에 팀원에게 코멘트가 달렸다.
+
+<figure class="text-center">
+  <img
+    src="/image/stamplo/wrong-answer.png"
+    alt="리뷰 코멘트"
+    class="mx-auto"
+  />
+  <figcaption>
+    <small>이때 설명을 잘했어야됐는데..</small>
+  </figcaption>
+</figure>
+
+우선 코멘트의 Pn은 뒤 숫자가 낮을수록 필수 수정해달라는 의미였는데 그런 의미에서 P2는 (반필수적으로) 수정 해달라는 의미였다.
+팀원의 판단으로는 api(같은 api 아님)를 요청하는 다른 곳에서는 {baseUrl}를 붙이지 않아도 되는데 여기서는 왜 코드를 맞춰 쓰지 않았는지,
+또한 같은 앱 내 인데 왜 서버에서 서버로 fetch인건지 의문을 가졌던거 같다.
+
+당시 내가 했던 것은 이 일에 대해 정확하게 이해하고 설명을 하기보단 결국 baseUrl을 빼지 않아서 시작됐던 일이니 baseUrl을 제거하고 빌드를 해봤고 별다른 에러 없이 잘 나오는 것을 확인하고 baseUrl을 제거했다.
+
+## 터진 문제
+
+머지 후 배포 환경에서 테스트를 하는데 입장 페이지가 아예 뜨지 않는 문제가 발생했다.
+화면은 빈 화면이 뜨고 네트워크 상에서도 500에러라고만 잡히기 때문에 무엇이 문제였는지 감이 잡히지 않았다.
+또한 PR 직전에 페이지가 뜨는 것 까지 확인 하고 PR 도중엔 로직과 관련 없는 파일들만 제거한 터라 더 감이 잡히지 않던 도중,
+혹시나 하고 마지막 {baseUrl}를 원복했다.
+
+## 해결 방법 - {baseUrl} 다시 원복하기, 그런데 왜..?
+
+우선 {baseUrl} 원복하니 문제는 일단락 되었다. 하지만 이걸 PR에 뭐라고 설명해야 되는지 좀 막막했다.
+이유야 알고 있지만 그리고 또 설명 했지만(서버에서 서버로 fetch) 이 설명은 납득이 가지 않는 설명이었고 좀 더 근본적이고 정확하게 설명을 해야됐다.
+
+> 브라우저의 fetch는 현재 페이지의 origin을 알고 있어 상대경로를 자동으로 절대 URL로 완성한다.
+> 반면 서버 컴포넌트가 실행되는 Node.js 환경의 fetch는 origin를 전혀 모른다.
+> 서버는 자신이 어느 도메인/포트로 서비스되는지 알 방법이 없으므로, /api/... 같은 상대경로는 완전한 URL이 되지 못하고 파싱 단계에서 실패한다.
+> NEXT_PUBLIC_BASE_URL은 이 origin을 환경변수로 명시해줘야한다. (더 자세한 설명은 [PR #59](https://github.com/gomin-people/Stamplo/pull/59) 참조)
+
+그렇게 차분히 왜 절대경로가 필요한지, 서버에서 서버로라는 뜻은 무엇인지 설명을 남겨 해결을 하게 되었다.
+
+PR: [PR #59 — fix: 엔트리 페이지 안나오는 에러 fix](https://github.com/gomin-people/Stamplo/pull/59)
+
+## proxy.ts로 사전차단하기
+
+(6월 17일 추가) 이후 시간이 지난 뒤 `proxy.ts`의 matcher에 eventId를 포함시켜 프록시에서 쿠키 검증하는 것을 추가했다.
+
+```diff
+- if (pathname.match(/^\/event\/[^/]+\/(brochure|detail)/)) {
++ if (pathname.match(/^\/event\/[^/]+($|\/(brochure|detail))/)) {
+    const participantCookie = request.cookies.get(PARTICIPANT_COOKIE_NAME);
+    if (!participantCookie) {
+      return NextResponse.redirect(new URL("/qr-required", request.url));
+    }
+  }
+
+  export const config = {
+    matcher: [
+      "/admin",
+      "/admin/:path*",
++     "/event/:eventId",
+      "/event/:eventId/brochure",
+      "/event/:eventId/detail",
+    ],
+  };
+```
+
+이렇게 코드를 구성하면 DB 접근 없이 쿠키 존재 여부 만으로 의도된 url 차단을 할 수 있다.
+이중으로 그러나 역할이 다른 검증을 두어 로직을 강화시켰다. (proxy는 DB 없이 쿠키 유무만 보는 빠른 1차 필터, `entry.ts`는 그 쿠키가 실제로 유효한 참여자를 가리키는지 확인하는 정밀한 2차 검증)
+
+PR: [PR #289 — refactor: 코드 컨벤션 정리 및 입장 QR 성능 개선](https://github.com/gomin-people/Stamplo/pull/289)
+
+## 마치며
+
+**기획자와 개발자가 섞인 시선에서 기획을 설계하고 그리고 그 기획대로 개발하는 것은 도메인에 대해 한층 더 이해하는 시간이 되었다.**
+
+그러나 두 번째 이슈 같은 경우엔 참 많은 생각이 들었다. **우선 내가 쓰는 기술에 대해 더 확신을 가져야겠다고 생각한다.**
+그리고 그 확신을 가지려면 단순 주입식 암기로 공부하는 것이 아니라, 원리를 심도 있게 파고들며 이해하는 공부가 필요하다.
+남에게 정확하게 설명하고 납득시킬 수 있으려면 내가 먼저 정확하게 알아야 한다.
+
+**또한 결국 내가 하는 업무이기 때문에, 코드리뷰는 능동적으로 받아들여야겠다는 생각도 가지게 되었다.**
+지금은 팀 프로젝트고 실제 업무는 아니지만, 실무에서 화면이 안 나오는 것은 아주 크리티컬한 에러다. 결국 내가 책임을 지는 것이기 때문에 확실하고 신중하게 코드를 대해야 한다.
+또한 테스트는 여러 방면에서 해야 한다는 걸 알고 있었는데 이번에 방심했다. 다시 한번 리마인드하며 여러 교훈을 얻어갔던 PR이었다.
+d:["$","main",null,{"children":["$","div",null,{"className":"max-w-4xl mx-auto px-4 py-8","children":["$","article",null,{"children":[["$","header",null,{"className":"mb-12","children":[["$","h1",null,{"className":"text-5xl font-bold mb-6","children":"쿠키 기반 QR 인증 설계하기"}],["$","div",null,{"className":"flex flex-wrap items-center gap-4","children":[["$","div",null,{"className":"flex items-center gap-2 text-muted-foreground","children":[["$","span",null,{"children":"📅"}],["$","time",null,{"children":"2026년 5월 26일"}]]}],["$","div",null,{"className":"flex flex-wrap gap-2","children":[["$","$L3","Stamplo",{"href":"/tags/Stamplo","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Stamplo"}],["$","$L3","Team Project",{"href":"/tags/Team%20Project","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Team Project"}],["$","$L3","Frontend",{"href":"/tags/Frontend","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Frontend"}],["$","$L3","Troubleshooting",{"href":"/tags/Troubleshooting","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Troubleshooting"}],["$","$L3","Architecture",{"href":"/tags/Architecture","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Architecture"}],["$","$L3","Cookie",{"href":"/tags/Cookie","className":"inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-accent text-accent-foreground hover:bg-accent/80 transition-colors","children":"Cookie"}]]}]]}]]}],["$","div",null,{"className":"prose dark:prose-invert prose-lg max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-p:leading-relaxed prose-p:text-foreground/90 prose-pre:bg-muted prose-pre:border prose-pre:border-border prose-pre:text-foreground prose-code:text-sm prose-code:font-mono prose-code:text-foreground prose-a:text-primary prose-a:no-underline hover:prose-a:underline","children":["$","$L17",null,{"content":"$18"}]}],"$L19","$L1a"]}]}]}]
+19:["$","nav",null,{"className":"mt-12 pt-8 border-t","children":["$","div",null,{"className":"grid grid-cols-1 md:grid-cols-2 gap-6","children":[["$","div",null,{"className":"h-28"}],["$","div",null,{"className":"h-28"}]]}]}]
+1a:["$","nav",null,{"className":"mt-8 pt-8 border-t","children":["$","$L3",null,{"href":"/","className":"text-primary hover:underline inline-flex items-center gap-2","children":"← 홈으로 돌아가기"}]}]
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+f:null
+1b:I[622,[],"IconMark"]
+11:{"metadata":[["$","title","0",{"children":"쿠키 기반 QR 인증 설계하기 | DevONew Blog"}],["$","meta","1",{"name":"description","content":"Stamplo 팀 프로젝트 - 쿠키 기반 QR 인증 설계 및 트러블슈팅"}],["$","meta","2",{"property":"og:title","content":"쿠키 기반 QR 인증 설계하기"}],["$","meta","3",{"property":"og:description","content":"Stamplo 팀 프로젝트 - 쿠키 기반 QR 인증 설계 및 트러블슈팅"}],["$","meta","4",{"property":"og:type","content":"article"}],["$","meta","5",{"property":"article:published_time","content":"2026-05-26"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"쿠키 기반 QR 인증 설계하기"}],["$","meta","8",{"name":"twitter:description","content":"Stamplo 팀 프로젝트 - 쿠키 기반 QR 인증 설계 및 트러블슈팅"}],["$","link","9",{"rel":"icon","href":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"}],["$","$L1b","10",{}]],"error":null,"digest":"$undefined"}
+16:"$11:metadata"
